@@ -1,0 +1,20 @@
+#footer-wrap
+  if theme.footer.owner.enable
+    - var now = new Date()
+    - var nowYear = now.getFullYear()
+    if theme.footer.owner.since && theme.footer.owner.since != nowYear
+      .copyright!= `<span style="font-family:sans-serif">&copy;</span>${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+    else
+      .copyright!= `&copy;${nowYear} By ${config.author}`
+  if theme.footer.copyright
+    .framework-info
+      a(href='https://hexo.io/')
+        img(src='https://img.shields.io/badge/Frame-Hexo-informational')
+      span.footer-separator 
+      a(href='https://butterfly.js.org/')
+        img(src='https://img.shields.io/badge/Theme-Butterfly-informational')
+      span.footer-separator 
+      a(href='https://github.com/lxgw/LxgwMarkerGothic')
+        img(src='https://img.shields.io/badge/Font-%E9%9C%9E%E9%B9%9C%E6%BC%AB%E9%BB%91-informational')
+  if theme.footer.custom_text
+    .footer_custom_text!=`${theme.footer.custom_text}`

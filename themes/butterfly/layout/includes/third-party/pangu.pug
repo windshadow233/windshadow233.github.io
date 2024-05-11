@@ -1,0 +1,31 @@
+script.
+  (() => {
+    const panguFn = () => {
+      if (typeof pangu === 'object') {
+        pangu.spacingElementById('post');
+        pangu.spacingElementById('post-info');
+        pangu.spacingElementById('recent-posts');
+        pangu.spacingElementById('archive');
+      }
+      else {
+        btf.getScript('!{url_for(theme.asset.pangu)}')
+          .then(() => {
+            pangu.spacingElementById('post');
+            pangu.spacingElementById('post-info');
+            pangu.spacingElementById('recent-posts');
+            pangu.spacingElementById('archive');
+          })
+      }
+    }
+
+    const panguInit = () => {
+      if (!{theme.pangu.field === 'post'}){
+        GLOBAL_CONFIG_SITE.isPost && panguFn()
+      } else {
+        panguFn()
+      }
+    }
+
+    btf.addGlobalFn('pjaxComplete', panguInit, 'pangu')
+    document.addEventListener('DOMContentLoaded', panguInit)
+  })()

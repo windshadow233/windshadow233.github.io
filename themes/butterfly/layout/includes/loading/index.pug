@@ -1,0 +1,22 @@
+case theme.preloader.source
+  when 1
+    include ./spinning-box.pug
+  when 2
+    include ./hyperspace.pug
+  when 3
+    include ./spinning-cat.pug
+  when 4
+    include ./ironheart.pug
+  when 5
+    include ./gear.pug
+  when 6
+    include ./pokeball.pug
+  when 7
+    include ./duddle.pug
+  when 8
+    include ./loading-avatar.pug
+  default
+    include ./spinning-box.pug
+include ./loading-js.pug
+if theme.preloader.pace
+  include ./pace.pug

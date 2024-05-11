@@ -1,0 +1,7 @@
+node_modules/
+_posts-backup/
+public/
+/gallery/
+/images/
+/db.json
+/*.code-workspace

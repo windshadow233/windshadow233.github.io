@@ -1,0 +1,24 @@
+script(async).
+  (()=>{
+    const $loadingBox = document.getElementById('loading-box')
+    const $body = document.body
+    const preloader = {
+      endLoading: () => {
+        $body.style.overflow = ''
+        $loadingBox.classList.add('loaded');
+      },
+      initLoading: () => {
+        $body.style.overflow = 'hidden'
+        $loadingBox.classList.remove('loaded')
+      }
+    }
+
+    preloader.initLoading()
+    window.addEventListener('load',() => { preloader.endLoading() })
+    setTimeout(function(){preloader.endLoading();}, 5000);
+
+    if (!{theme.pjax && theme.pjax.enable}) {
+      btf.addGlobalFn('pjaxSend', () => { preloader.initLoading() }, 'preloader_init')
+      btf.addGlobalFn('pjaxComplete', () => { preloader.endLoading() }, 'preloader_end')
+    }
+  })()
