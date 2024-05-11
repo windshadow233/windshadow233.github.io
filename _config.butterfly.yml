@@ -25,10 +25,10 @@ menu:
     一些项目: /projects/ || fas fa-project-diagram
   线路 || fas fa-link:
     主站点: https://blog.fyz666.xyz/
-    Vercel: https://vercel.fyz666.xyz/
     GitHub: https://github.fyz666.xyz/
-    Netlify: https://netlify.fyz666.xyz/
     Cloudflare: https://cf.fyz666.xyz/
+    Vercel: https://vercel.fyz666.xyz/
+    Netlify: https://netlify.fyz666.xyz/
 
 # Code Blocks (代碼相關)
 # --------------------------------------
