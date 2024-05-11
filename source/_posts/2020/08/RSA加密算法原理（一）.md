@@ -90,4 +90,4 @@ mathjax: true
 以上是RSA算法所涉及到的全部数论基础知识。
 
 
-[RSA加密算法原理（二）](https://blog.fyz666.xyz/blog/3839/)
+[RSA加密算法原理（二）](/blog/3839/)

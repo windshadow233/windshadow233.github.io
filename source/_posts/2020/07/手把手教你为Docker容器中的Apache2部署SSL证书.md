@@ -33,7 +33,7 @@ SSL是指安全套接字协议，借用百度词条的定义：
 ## 申请并下载证书
 
 
-我图方便直接去阿里云申请了一个免费的证书：DigiCert 免费版 SSL（能用就行，免费的真香），下载apache版本的证书到本地，然后将整个文件夹（重命名为ssl）上传到服务器。（文件夹中有3个文件，分别是xxx_public.crt、xxx_key与xxx_chain.crt）。SSL证书也可以通过Certbot来申请，详情可见[此文](https://blog.fyz666.xyz/blog/7669/)。
+我图方便直接去阿里云申请了一个免费的证书：DigiCert 免费版 SSL（能用就行，免费的真香），下载apache版本的证书到本地，然后将整个文件夹（重命名为ssl）上传到服务器。（文件夹中有3个文件，分别是xxx_public.crt、xxx_key与xxx_chain.crt）。SSL证书也可以通过Certbot来申请，详情可见[此文](/blog/7669/)。
 
 
 使用命令将文件夹复制到WordPress容器的apache2目录下：

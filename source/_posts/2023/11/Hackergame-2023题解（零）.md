@@ -25,13 +25,13 @@ description: 喜提校内rank 2，感谢大佬们的不卷之恩！
 下面是本次比赛解出题目的题解：
 
 
-- [Hackergame 2023题解（一）](https://blog.fyz666.xyz/blog/8779/)  
+- [Hackergame 2023题解（一）](/blog/8779/)  
 
 Hackergame 启动、猫咪小测、更深更暗、旅行照片 3.0、赛博井字棋、奶奶的睡前 flag 故事、组委会模拟器、虫
-- [Hackergame 2023题解（二）](https://blog.fyz666.xyz/blog/8782/)  
+- [Hackergame 2023题解（二）](/blog/8782/)  
 
 JSON ⊂ YAML?、Git? Git!、HTTP 集邮册、Docker for Everyone、惜字如金 2.0、🪐 高频率星球、🪐 小型大语言模型星球
-- [Hackergame 2023题解（三）](https://blog.fyz666.xyz/blog/8784/)  
+- [Hackergame 2023题解（三）](/blog/8784/)  
 
 🪐 流式星球、🪐 低带宽星球（小试牛刀）、Komm, süsser Flagge、为什么要打开 /flag 😡（LD_PRELOAD, love!）、异星歧途、O(1) 用户登录系统、小 Z 的谜题
 

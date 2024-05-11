@@ -48,7 +48,7 @@ server{
 
 
 - 首先，声明监听的两个端口，其中443端口开启SSL。
-- 然后我们指定[前面](https://blog.fyz666.xyz/blog/7669/)使用Let's Encrypt生成的SSL证书，对于Nginx，我们只需要fullchain与privkey两个文件。
+- 然后我们指定[前面](/blog/7669/)使用Let's Encrypt生成的SSL证书，对于Nginx，我们只需要fullchain与privkey两个文件。
 - 接下来做一个301跳转，将http跳转到https。
 - 最后的`location`配置，则是反向代理的核心。
 

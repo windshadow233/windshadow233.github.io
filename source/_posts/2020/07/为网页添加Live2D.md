@@ -68,4 +68,4 @@ disableNunjucks: false
 另外可以通过配置message.json文件，实现自定义的消息互动展示。
 
 
-若网站内有ajax或JS动态加载，新加载的内容无法被自定义消息的选择器选中的情况，可以[参考此文](https://blog.fyz666.xyz/blog/2036/)对message.js文件进行修改。
+若网站内有ajax或JS动态加载，新加载的内容无法被自定义消息的选择器选中的情况，可以[参考此文](/blog/2036/)对message.js文件进行修改。

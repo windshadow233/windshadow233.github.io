@@ -27,7 +27,7 @@ disableNunjucks: true
 后文将默认你已经在OpenWrt上成功安装了ZeroTier客户端，否则请出门左转～
 
 
-首先，如果是自建planet，我们需要将planet文件放到ZeroTier的配置目录下，planet文件的生成方法见[此文](https://blog.fyz666.xyz/blog/7728/)。如果是自建moon，则需要将moon文件放置到配置目录的moons.d目录下，本文假设配置目录为/etc/zerotier。需要注意的是，OpenWrt下某些版本的ZeroTier，行星服务器的配置文件名可能并不是planet，而是world。
+首先，如果是自建planet，我们需要将planet文件放到ZeroTier的配置目录下，planet文件的生成方法见[此文](/blog/7728/)。如果是自建moon，则需要将moon文件放置到配置目录的moons.d目录下，本文假设配置目录为/etc/zerotier。需要注意的是，OpenWrt下某些版本的ZeroTier，行星服务器的配置文件名可能并不是planet，而是world。
 
 
 接下来，我们通过uci对zerotier服务进行配置：

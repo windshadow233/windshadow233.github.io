@@ -8,7 +8,7 @@ cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e540de
 disableNunjucks: true
 ---
 
-[前面文章](https://blog.fyz666.xyz/blog/5547/)中写到了Samba服务的部署过程，但未提到如何在局域网的其他设备上访问该服务以获取共享的文件，虽然这些东西谷歌一查就有，但我还是想水个文章，对常用操作系统上访问该服务的方法做一个总结。
+[前面文章](/blog/5547/)中写到了Samba服务的部署过程，但未提到如何在局域网的其他设备上访问该服务以获取共享的文件，虽然这些东西谷歌一查就有，但我还是想水个文章，对常用操作系统上访问该服务的方法做一个总结。
 
 ## Windows 10/11
 

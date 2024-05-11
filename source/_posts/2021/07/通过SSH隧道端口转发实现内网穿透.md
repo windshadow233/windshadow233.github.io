@@ -8,7 +8,7 @@ cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/5e4178
 disableNunjucks: true
 ---
 
-前面介绍了一种[使用V2ray实现的内网穿透方法](https://blog.fyz666.xyz/blog/5473/)，虽然达成了目的，但有诸多不足，例如必须在两台设备上同时运行V2ray，配置文件比较难懂等。尤其是对平时没有科学上网需求（自然也没有科学上网经历）的同学而言，下载V2ray本就是件令人头疼的事。
+前面介绍了一种[使用V2ray实现的内网穿透方法](/blog/5473/)，虽然达成了目的，但有诸多不足，例如必须在两台设备上同时运行V2ray，配置文件比较难懂等。尤其是对平时没有科学上网需求（自然也没有科学上网经历）的同学而言，下载V2ray本就是件令人头疼的事。
 
 
 

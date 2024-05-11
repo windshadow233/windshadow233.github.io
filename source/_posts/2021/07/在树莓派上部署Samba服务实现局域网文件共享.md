@@ -211,7 +211,7 @@ UUID=7B4D-E1F4  /mnt/shared     auto defaults,nofail,x-systemd.device-timeout=1,
 其中UUID是硬盘设备的UUID，可通过blkid命令获取。
 
 
-如此一来，Samba服务已经配置成功了，不过具体如何在其他设备上访问，这个涉及到设备的操作系统对Samba服务的支持方式，可[查看此文](https://blog.fyz666.xyz/blog/5556/)！
+如此一来，Samba服务已经配置成功了，不过具体如何在其他设备上访问，这个涉及到设备的操作系统对Samba服务的支持方式，可[查看此文](/blog/5556/)！
 
 
 不过，树莓派的USB电流大小似乎不太够支持1T的移动硬盘，可以考虑外部供电。

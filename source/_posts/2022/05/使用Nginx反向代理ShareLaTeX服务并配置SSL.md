@@ -39,7 +39,7 @@ server{
 }
 ```
 
-上述配置将域名latex.fyz666.xyz反代到本地的8080端口，前面的基本配置与[上篇文章](https://blog.fyz666.xyz/blog/7673/)别无二致。而`location`配置下有两条需要注意的配置字段：
+上述配置将域名latex.fyz666.xyz反代到本地的8080端口，前面的基本配置与[上篇文章](/blog/7673/)别无二致。而`location`配置下有两条需要注意的配置字段：
 
 ```nginx
 proxy_set_header Upgrade $http_upgrade;

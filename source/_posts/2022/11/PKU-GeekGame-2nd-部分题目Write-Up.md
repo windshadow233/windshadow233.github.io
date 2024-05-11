@@ -19,8 +19,7 @@ GeekGame 2nd结束了，今年的题没有了去年那种套娃，难度有所�
 
 ## †签到†
 
-去年的签到我想了半个小时，今年只用了20秒。别问，问就是一模一样，见[去年的题解](https://blog.fyz666.xyz/blog/7311/)。~~（PKU GeekGame的出题人怎么不在签到题上点心。~~ 官方题解出来后发现其实和去年的签到是有区别的，这次的PDF用某些阅读器打开会发现无法复制，然而我是用Chrome的沙拉查词插件带的PDF阅读器打开的，因此不受影响。
-
+去年的签到我想了半个小时，今年只用了20秒。别问，问就是一模一样，见[去年的题解](/blog/7311/)。~~（PKU GeekGame的出题人怎么不在签到题上点心。~~ 官方题解出来后发现其实和去年的签到是有区别的，这次的PDF用某些阅读器打开会发现无法复制，然而我是用Chrome的沙拉查词插件带的PDF阅读器打开的，因此不受影响。
 
 [本题附件](https://github.com/PKU-GeekGame/geekgame-2nd/raw/master/official_writeup/signin/attachment/prob19.pdf)
 
@@ -1438,9 +1437,7 @@ flag{Go_rand0m_number_is_ea5y_to_Guess}
 
 区区扫雷，这不是有手就行？~~只要扫雷技术过硬，直接用手玩即可拿到flag3。~~
 
-
-
-![](https://blog.fyz666.xyz/wp-content/uploads/2022/11/IZUB5_FT@5DL6S416.png)
+![IZUB5_FT@5DL6S416](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2a5f24cab845fdbef8f14849fad36544.png)
 
 ![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c2cf8f3f063a15bcc54db5ab18251f4.png)
 这题是我在第二阶段解出来的。首先阅读genBoard3函数。

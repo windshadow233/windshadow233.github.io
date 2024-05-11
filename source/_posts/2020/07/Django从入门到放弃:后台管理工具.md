@@ -13,7 +13,7 @@ Django提供了一套友好完善的web端后台数据可视化管理工具。
 ## Admin页面
 
 
-如 [Django从入门到放弃:路由与视图](https://blog.fyz666.xyz/blog/1456/) 一文中提到的，若你在urls.py的`urlpatterns`中添加了以下一项（默认是自带的）：
+如 [Django从入门到放弃:路由与视图](/blog/1456/) 一文中提到的，若你在urls.py的`urlpatterns`中添加了以下一项（默认是自带的）：
 
 ```python
 path('admin/', admin.site.urls),

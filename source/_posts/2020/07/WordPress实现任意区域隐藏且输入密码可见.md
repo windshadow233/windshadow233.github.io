@@ -38,7 +38,7 @@ add_shortcode('secret','e_secret');
 之后就可以利用短代码来隐藏区域了。
 
 
-另外若有ajax加载内容的需求，只需要按下面代码中的注释向中提到的ajaxfy.js文件中（文件[见这篇文章](https://blog.fyz666.xyz/blog/1973/)）添加或修改JS代码:
+另外若有ajax加载内容的需求，只需要按下面代码中的注释向中提到的ajaxfy.js文件中（文件[见这篇文章](/blog/1973/)）添加或修改JS代码:
 
 ```js
 let ajax_secret_form ＝ "e-secret";

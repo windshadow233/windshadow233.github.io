@@ -177,7 +177,7 @@ iptables -t mangle -A DIVERT -j ACCEPT
 iptables -t mangle -I PREROUTING -p tcp -m socket -j DIVERT
 ```
 
-做完这些设置，应该就正常访问Google了，但我发现还是没办法访问YouTube等在线学习网站，好像是因为DNS污染的问题，关于这个，其实v2ray也提供了DNS转发机制，不过我目前没有尝试，我目前使用的方法可参考此文：[无污染DNS服务搭建](https://blog.fyz666.xyz/blog/5447/)。另外还有一种方法，即使用v2ray劫持53端口来实现反dns污染，可以[参考此文](https://guide.v2fly.org/app/tproxy.html#%E9%85%8D%E7%BD%AE%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86%E8%A7%84%E5%88%99)。
+做完这些设置，应该就正常访问Google了，但我发现还是没办法访问YouTube等在线学习网站，好像是因为DNS污染的问题，关于这个，其实v2ray也提供了DNS转发机制，不过我目前没有尝试，我目前使用的方法可参考此文：[无污染DNS服务搭建](/blog/5447/)。另外还有一种方法，即使用v2ray劫持53端口来实现反dns污染，可以[参考此文](https://guide.v2fly.org/app/tproxy.html#%E9%85%8D%E7%BD%AE%E9%80%8F%E6%98%8E%E4%BB%A3%E7%90%86%E8%A7%84%E5%88%99)。
 
 
 最后，非常重要的是：
