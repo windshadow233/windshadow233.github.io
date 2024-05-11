@@ -17,7 +17,7 @@ cover:
 
 ---
 
-我的博客部署在云服务器上，而GitHub也有静态页面托管服务，因此，可以选择远程部署或部署在仓库的GitHub pages下。
+我的博客之前都是部署在云服务器上，而众所周知，GitHub提供了免费的静态页面托管服务——GitHub Pages。既然我已经把博客迁移到了静态站，那么现在不仅可以选择远程部署，还多了一个选择：将博客部署到仓库的GitHub Pages下。
 
 {% tabs tab1 %}
 
@@ -25,7 +25,7 @@ cover:
 
 **设置环境变量**
 
-创建一个SSH密钥，用于此仓库远程连接服务器。
+创建一个SSH密钥，用于此仓库连接服务器。
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "git@github.com:windshadow233/windshadow233.github.io.git"

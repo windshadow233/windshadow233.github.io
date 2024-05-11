@@ -548,29 +548,55 @@ span.card-archive-list-count {
 [data-theme="dark"] .flink-item-icon img{
     background-color: var(--fyz-white)!important;
 }
-.flink-list-item{
-    width:calc(100% / 4 - 15px)!important;
+#article-container .flink .flink-list > .flink-list-item{
+    width:calc(100% / 5 - 15px);
 }
-.flink-list-item:hover a{
+#article-container .flink .flink-list > .flink-list-item:hover a{
     color: var(--fyz-white)!important;
 }
-@media screen and (max-width: 1250px) {
-    .flink-list-item{
-        width:calc(100% / 3 - 15px)!important;
+@media screen and (max-width: 1200px) {
+    #article-container .flink .flink-list > .flink-list-item{
+        width:calc(100% / 4 - 15px);
     }
 }
-.flink-list-item{
-    transition: all .5s!important;
+@media screen and (max-width: 1024px) {
+    #article-container .flink .flink-list > .flink-list-item{
+        width:calc(100% / 3 - 15px);
+    }
 }
-.flink-list-item{
+#article-container .flink .flink-list > .flink-list-item{
+    margin: 6px 6px;
     transition: background-color .3s!important;
     -webkit-transition: background-color .3s!important;
     -moz-transition: background-color .3s!important;
     -ms-transition: background-color .3s!important;
     -o-transition: background-color .3s!important;
+    transition: .3s;
+    border-radius: 12px;
+    transition-timing-function: ease-in-out;
+    border: var(--style-border-always);
+    box-shadow: var(--heo-shadow-border);
+    background: var(--heo-card-bg);
 }
-[data-theme="dark"].flink-item-name,[data-theme="dark"].flink-item-desc{
-    color:white!important
+[data-theme="dark"] .flink-item-name,[data-theme="dark"] .flink-item-desc{
+    color:white!important;
+}
+#article-container .flink .flink-item-name{
+    padding: 16px 10px 0 15px;
+    text-align: left;
+}
+#article-container .flink .flink-item-desc{
+    white-space: normal;
+    padding: 5px 10px 16px 15px;
+    color: white;
+    text-align: left;
+    height: 40px;
+    text-overflow: ellipsis;
+    opacity: .7;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 pre{
     border-radius: 12px;
@@ -863,7 +889,7 @@ blockquote p:first-child{
     font-weight: bold!important;
 }
 .layout.hide-aside {
-    max-width: 1200px;
+    max-width: 1400px;
 }
 .snackbar-container{
     border-radius: 12px!important;

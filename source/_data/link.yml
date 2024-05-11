@@ -52,17 +52,25 @@
       link: https://mcfx.us/
       avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/svg/a3b6ec9078f550f7f952f710c866a168.svg
       descr: 打Hackergame发现的清华巨佬
-    - name: 张洪Heo
-      link: https://blog.zhheo.com/
-      avatar: https://cravatar.cn/avatar/62d8c76b1fd8822cd95efe0abec26b70
-      descr: 一个内容丰富、界面美观的高质量博客
     - name: Mivik
       link: https://mivik.moe/
       avatar: https://www.gravatar.com/avatar/951788ba42a6d9fa5b470a0f29a357bd?s=128
       descr: 兴趣使然のProgrammer
 
+- class_name: 宝藏博主
+  class_desc: 偶遇到的优质博客（顺序不分先后！）
+  link_list:
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://cravatar.cn/avatar/62d8c76b1fd8822cd95efe0abec26b70
+      descr: 分享设计与科技生活
+    - name: 杜老师说
+      link: https://dusays.com/
+      avatar: https://cdn.dusays.com/avatar.png
+      descr:  师者，传道，授业，解惑！
+
 - class_name: 博主提供的服务
-  class_desc:
+  class_desc: 学生党很穷，所以比较依赖服务器性能的服务暂时就不公开了（
   link_list:
     - name: KMS服务器
       link: /kms/
@@ -76,10 +84,6 @@
       link: https://lug.ustc.edu.cn/
       avatar: https://lug.ustc.edu.cn/static/lug-penguin.png
       descr: 主页、新闻站、LUG Planet（社团博客）
-    - name: Linux 101
-      link: https://101.lug.ustc.edu.cn/
-      avatar: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
-      descr: 面向零基础读者的Linux指南
     - name: FTP
       link: https://ftp.lug.ustc.edu.cn/
       avatar: https://ftp.lug.ustc.edu.cn/_h5ai/public/images/favicon/favicon-152.png
@@ -104,8 +108,16 @@
       link: https://hack.lug.ustc.edu.cn/
       avatar: https://hack.lug.ustc.edu.cn/static/favicon.svg
       descr: 中科大LUG社团主办的娱乐向信息安全大赛
+    - name: PKU GeekGame
+      link: https://geekgame.pku.edu.cn/
+      avatar: https://avatars.githubusercontent.com/u/84904188?s=200&v=4
+      descr: 北京大学主办的娱乐向信息安全综合能力竞赛
+    - name: 清华大学TUNA协会
+      link: https://tuna.moe/
+      avatar: https://tuna.moe/assets/img/logo-small-dark@2x.png
+      descr: 清华网络技术和开源软件爱好者、技术宅组成的团体
 
-- class_name: 一些不错的网站
+- class_name: 在线工具
   class_desc: 
   link_list:
     - name: ChatGPT
@@ -120,34 +132,10 @@
       link: https://www.latexlive.com/
       avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/52c939aaafad03d57823f7b8824ab889.png
       descr: 可视化编辑LaTeX公式
-    - name: 洛谷
-      link: https://www.luogu.com.cn/
-      avatar: https://www.luogu.com.cn/favicon.ico
-      descr: 一个OI刷题网站
-    - name: 北邮人PT
-      link: https://byr.pt/
-      avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8a00d5f971e54145145f0e17fb6c349c.png
-      descr: 一个好用的IPv6 PT站
-    - name: PKU GeekGame
-      link: https://geekgame.pku.edu.cn/
-      avatar: https://avatars.githubusercontent.com/u/84904188?s=200&v=4
-      descr: 北京大学主办的娱乐向信息安全综合能力竞赛
-    - name: Colossal Cloud
-      link: https://cloud.luchentech.com/
-      avatar: https://cloud.luchentech.com/static/media/colossalAI.ed57d7da7b3a4d95f31aa592ec58e915.svg
-      descr: 云GPU租赁服务——让 AI 大模型更低成本、方便易用、高效扩展
     - name: 小工具
       link: https://tool.weixinbox.com/
       avatar: https://tool.weixinbox.com/static/images/logo.png
       descr: 好用的在线小工具大全
-    - name: CTF Wiki
-      link: https://ctf-wiki.org/
-      avatar: https://ctf-wiki.org/static/img/logo.png
-      descr: 一份好用的CTF初学指南
-    - name: 清华大学TUNA协会
-      link: https://tuna.moe/
-      avatar: https://tuna.moe/assets/img/logo-small-dark@2x.png
-      descr: 清华网络技术和开源软件爱好者、技术宅组成的团体
     - name: TinyPNG
       link: https://tinypng.com/
       avatar: https://tinypng.com/images/apple-touch-icon.png
@@ -156,14 +144,6 @@
       link: https://www.photopea.com/
       avatar: https://www.photopea.com/promo/icon512.png
       descr: 在线版的Photoshop
-    - name: Font Awesome
-      link: https://fontawesome.com/
-      avatar: https://fontawesome.com/favicon.ico
-      descr: 美观、免费的网页图标库
-    - name: Pinterest
-      link: https://www.pinterest.com/
-      avatar: https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png
-      descr: 一个以视觉方式分享、发现创意点子的社区
     - name: Youtube视频下载器
       link: https://ytshorts.savetube.me/zh/
       avatar: https://lh3.googleusercontent.com/t8imk98l4_G2-pP2v6WczhTRle8nm7eIuEMzyZxyaHRT88N9lNsoGh0Xa7dQxoz4YsoNFCE17oqajDgpZVz-JhxhAnK6RupVwRHPpTKseB8oxzUV1eo=h60
@@ -172,14 +152,66 @@
       link: https://neumorphism.io/
       avatar: https://neumorphism.io/android-chrome-192x192.png
       descr: 新拟态风格CSS代码生成器
-    - name: iconfont
-      link: https://www.iconfont.cn/
-      avatar: https://img.alicdn.com/imgextra/i4/O1CN01XZe8pH1USpiUNT1QN_!!6000000002517-2-tps-114-114.png
-      descr: 阿里巴巴矢量图标库
     - name: ITDOG
       link: https://www.itdog.cn/
       avatar: https://www.itdog.cn/favicon.ico
       descr: 在线网络测速、测延迟工具
+  
+- class_name: 资源站
+  class_desc:
+  link_list:
+    - name: 洛谷
+      link: https://www.luogu.com.cn/
+      avatar: https://www.luogu.com.cn/favicon.ico
+      descr: 一个OI刷题网站
+    - name: 北邮人PT
+      link: https://byr.pt/
+      avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8a00d5f971e54145145f0e17fb6c349c.png
+      descr: 一个资源丰富的IPv6 PT站
+    - name: Font Awesome
+      link: https://fontawesome.com/
+      avatar: https://fontawesome.com/favicon.ico
+      descr: 美观、免费的网页图标库
+    - name: Pinterest
+      link: https://www.pinterest.com/
+      avatar: https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png
+      descr: 一个以视觉方式分享、发现创意点子的社区
+    - name: iconfont
+      link: https://www.iconfont.cn/
+      avatar: https://img.alicdn.com/imgextra/i4/O1CN01XZe8pH1USpiUNT1QN_!!6000000002517-2-tps-114-114.png
+      descr: 阿里巴巴矢量图标库
+
+- class_name: 云服务
+  class_desc:
+  link_list:
+    - name: Colossal Cloud
+      link: https://cloud.luchentech.com/
+      avatar: https://cloud.luchentech.com/static/media/colossalAI.ed57d7da7b3a4d95f31aa592ec58e915.svg
+      descr: 云GPU租赁服务——让 AI 大模型更低成本、方便易用、高效扩展
+    - name: Vultr
+      link: https://www.vultr.com/
+      avatar: https://www.vultr.com/apple-touch-icon.png
+      descr: 按小时计费的海外云服务（支持IPv6）
+    - name: Vercel
+      link: https://vercel.com/
+      avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/120x120.png
+      descr: 非常好用的网站托管服务平台
+
+- class_name: 学习指南
+  class_desc: 在线书籍、学习资料
+  link_list:
+    - name: Linux 101
+      link: https://101.lug.ustc.edu.cn/
+      avatar: https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg
+      descr: 面向零基础读者的Linux指南
+    - name: CTF Wiki
+      link: https://ctf-wiki.org/
+      avatar: https://ctf-wiki.org/static/img/logo.png
+      descr: 一份适合新手的CTF学习指南
+    - name: 现代 C++ 教程
+      link: https://changkun.de/modern-cpp/
+      avatar: https://changkun.de/modern-cpp/assets/cover-2nd-logo.png
+      descr: 高速上手 C++ 11/14/17/20
 
 - class_name: 常用科大网络资源
   class_desc: 妮可的一些相关网站
