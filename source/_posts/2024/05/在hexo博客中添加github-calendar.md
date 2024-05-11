@@ -10,6 +10,8 @@ categories:
 tags:
   - Hexo
   - Web前端
+  - Hexo插件
+  - JavaScript
 cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d8b94eb0e2eb259763b638226a9e719d.png
 ---
 

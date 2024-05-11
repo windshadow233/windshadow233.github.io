@@ -9,8 +9,10 @@ categories:
   - [Debug]
   - [Hexo魔改]
 tags:
-  - [Hexo]
-  - [JavaScript]
+  - Hexo
+  - JavaScript
+  - Butterfly主题
+  - Web前端
 cover:
 ---
 
