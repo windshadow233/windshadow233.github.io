@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Sat, 11 May 2024 14:26:21 GMT</pubDate>
+    <pubDate>Sat, 11 May 2024 14:40:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -48,7 +48,11 @@
       
       <category domain="https://blog.fyz666.xyz/tags/javascript/">JavaScript</category>
       
+      <category domain="https://blog.fyz666.xyz/tags/web%E5%89%8D%E7%AB%AF/">Web前端</category>
+      
       <category domain="https://blog.fyz666.xyz/tags/hexo/">Hexo</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/butterfly%E4%B8%BB%E9%A2%98/">Butterfly主题</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/11402/#disqus_thread</comments>
@@ -80,9 +84,13 @@
       <category domain="https://blog.fyz666.xyz/categories/hexo%E9%AD%94%E6%94%B9/">Hexo魔改</category>
       
       
+      <category domain="https://blog.fyz666.xyz/tags/javascript/">JavaScript</category>
+      
       <category domain="https://blog.fyz666.xyz/tags/web%E5%89%8D%E7%AB%AF/">Web前端</category>
       
       <category domain="https://blog.fyz666.xyz/tags/hexo/">Hexo</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/hexo%E6%8F%92%E4%BB%B6/">Hexo插件</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/11354/#disqus_thread</comments>
