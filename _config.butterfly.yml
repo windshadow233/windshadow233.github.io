@@ -24,7 +24,7 @@ menu:
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
   线路 || fas fa-sitemap:
-    主站点: https://blog.fyz666.xyz/
+    主站: https://blog.fyz666.xyz/
     Vercel: https://vercel.fyz666.xyz/
     GitHub: https://github.fyz666.xyz/
 
