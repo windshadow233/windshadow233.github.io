@@ -41,12 +41,12 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Deploy with Rsync
+    - name: Deploy to Server
       run: |
         ssh-keyscan -p 22 -H ${{ vars.SERVER_IP }} >> ~/.ssh/known_hosts
         rsync -avz --delete -e "ssh -p 22" ./public/ root@${{ vars.SERVER_IP }}:/var/www/blog/
 
-    - name: Deploy 🚀
+    - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
