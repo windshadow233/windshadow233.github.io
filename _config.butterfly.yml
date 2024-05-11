@@ -15,15 +15,15 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  相册: /gallery/ || far fa-images
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  链接: /link/ || fas fa-link
-  关于 || fas fa-heart:
+  本站 || fas fa-sitemap:
+    相册: /gallery/ || far fa-images
+    链接: /link/ || fas fa-link
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
-  线路 || fas fa-sitemap:
+  线路 || fas fa-link:
     主站点: https://blog.fyz666.xyz/
     Vercel: https://vercel.fyz666.xyz/
     GitHub: https://github.fyz666.xyz/
