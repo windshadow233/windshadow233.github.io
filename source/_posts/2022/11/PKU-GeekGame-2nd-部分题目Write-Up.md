@@ -1161,10 +1161,10 @@ flag{md5_1s_re41ly_1n5ecur3}
 在以前的比赛中，曾多次出现过这种攻击随机数算法的题，但我从来没认真思考过，这次觉得总该有所突破了，遂尝试了一下，最后在第一阶段快结束时解出了前两个flag，在第二阶段刚开始时解出了第三个flag，本菜鸟感到非常满意。
 
 
-拿到本题后端源码，我一看，是Golang写的，我不会Golang，裂开，于是放了几天才回过头去看这个题。
+拿到本题后端源码，我一看，是用Go语言写的，我不会Go，裂开，于是放了几天才回过头去看这个题。
 
 
-这题的核心是对Golang的伪随机算法的攻击，经粗略学习，我了解到Go共有两个随机数包，"math/rand"和"crypto/rand"，前者是一个伪随机算法，而后者则是通过读取硬件信息来生成随机数，这个随机数相对而言比较真一点。
+这题的核心是对Go的伪随机算法的攻击，经粗略学习，我了解到Go共有两个随机数包，"math/rand"和"crypto/rand"，前者是一个伪随机算法，而后者则是通过读取硬件信息来生成随机数，这个随机数相对而言比较真一点。
 
 
 阅读源码可知，在程序运行起来时，程序会设置"math/rand"的种子为当前的Unix毫秒时间戳，并且每次发起/reset请求时，都会重设种子为当前的Unix毫秒时间戳。接下来，分别入手三个地图生成函数。
@@ -1174,7 +1174,7 @@ flag{md5_1s_re41ly_1n5ecur3}
 
 
 
-```golang
+```go
 func genBoard1() (board Board) {
 	for i := 0; i < 16; i++ {
 		for j := 0; j < 16; j++ {
@@ -1196,8 +1196,6 @@ func genBoard1() (board Board) {
 
 接下来我记录了一下发包前后的时间戳，决定撞一下随机种子：
 
-
-
 ```python
 t1 = time.time_ns() // 1000000
 reset()
@@ -1211,8 +1209,6 @@ t2 = time.time_ns() // 1000000
 
 
 然后我不信邪，我觉得应该是运气太差了，于是记录下第一次遇到的地图，然后把随机取种子改成了遍历t1到t2，遍历到某个时间戳时，如果生成的地图能对应上前面记录的第一个地图，那么下一张本地生成的地图就能与下一张服务器端的地图对应上。
-
-
 
 ```python
 t1 = time.time_ns() // 1000000
@@ -1245,8 +1241,6 @@ else:
 
 于是我开始魔改时间戳的范围。虽然不明白为什么服务器那边用Golang获取到的时间戳会比我在本地用Python获取到的略小几百，但事实就是这样，当我把代码改成：
 
-
-
 ```python
 t1 = time.time_ns() // 1000000 - 500
 reset()
@@ -1257,8 +1251,6 @@ t2 = time.time_ns() // 1000000 - 500
 
 
 不过这个偏移量似乎和网络质量以及服务器的响应速度有关系，有时候改成-100即可，有时候则会在-800的位置撞上，有时候甚至是正数，总之非常不稳定，需要多次修改测试，干脆直接把搜索范围修改到发包前时间戳的±2000之间，成功率就会大大提升。主要解题代码：（utils.py包含了一些其他有用的函数）
-
-
 
 ```python
 import tqdm
@@ -1301,16 +1293,12 @@ for i in range(16):
 
 flag{Gue55_r4nd_sEEd}
 
-
-
 ### flag2
 
 
 首先看level=2的情况：
 
-
-
-```golang
+```go
 else if lv == "2" {
     level = 2
     secureVal := make([]byte, 1)
@@ -1334,7 +1322,7 @@ else if lv == "2" {
 
 
 
-```golang
+```go
 func genBoard2() (board Board) {
 	for i := 0; i < 4; i++ {
 		dataBits := rand.Uint64()
@@ -1430,8 +1418,6 @@ for index in range(256):
 
 flag{Go_rand0m_number_is_ea5y_to_Guess}
 
-
-
 ### flag3
 
 
@@ -1442,9 +1428,7 @@ flag{Go_rand0m_number_is_ea5y_to_Guess}
 ![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c2cf8f3f063a15bcc54db5ab18251f4.png)
 这题是我在第二阶段解出来的。首先阅读genBoard3函数。
 
-
-
-```golang
+```go
 func genBoard3() (board Board) {
 	for i := 1; i < 15; i++ {
 		secureVal := make([]byte, 2)
@@ -1466,8 +1450,6 @@ func genBoard3() (board Board) {
 
 后半部分与genBoard1相同，前半部分为地图的1~14行进行了一个初始化，使用的是"crypto/rand"，没办法预测。但好在它为我们留了0行与15行，并且中间的每一行，都有一半左右必定为0的初始值。
 
-
-
 ```python
 >>> bin(0x5554)
 '0b101010101010100'
@@ -1479,8 +1461,6 @@ func genBoard3() (board Board) {
 
 
 这样我们将flag1的解题代码略改一下，就可以拿来用了：
-
-
 
 ```python
 import tqdm
@@ -1532,8 +1512,6 @@ print('Go!')
 
 
 不过我还是写了个脚本来解，在拿到board_records后，扫雷的代码如下：
-
-
 
 ```python
 delta = [(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, 1), (-1, -1)]
