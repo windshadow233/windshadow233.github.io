@@ -28,10 +28,10 @@ cover:
 创建一个SSH密钥，用于此仓库远程连接服务器。
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "git@github.com:windshadow233/windshadow233.git"
+ssh-keygen -t rsa -b 4096 -C "git@github.com:windshadow233/windshadow233.github.io.git"
 ```
 
-这里，`windshadow233/windshadow233.git`是我的仓库名。
+这里，`windshadow233.github.io`是我的仓库名。
 
 将此公钥上传到服务器，并将私钥粘贴到仓库的secrets下，命名为`SSH_PRIVATE_KEY`：
 
