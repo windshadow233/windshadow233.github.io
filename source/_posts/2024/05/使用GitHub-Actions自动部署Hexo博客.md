@@ -107,17 +107,6 @@ jobs:
 
 {% endnote %}
 
-在本地创建一个空分支，命名为`gh-pages`，将文件清空，随意创建一个新文件并推送到仓库：
-
-```bash
-git checkout --orphan gh-pages
-git rm -rf .
-echo 'This is gh-pages branch' >> README.md
-git add README.md
-git commit -m 'new branch'
-git push origin gh-pages
-```
-
 **创建workflow文件**
 
 在仓库根目录创建目录：`.github/workflows/`，然后在该目录下创建文件：`deploy.yml`
@@ -173,7 +162,7 @@ jobs:
 
 ![image-20240511212745256](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1c8afeb2c1182591a1387f9e8037fe2d.png)
 
-前往仓库的Settings->Pages，选择Deploy from a branch：gh-pages
+gh-pages分支生成后，前往仓库的Settings->Pages，选择Deploy from a branch：gh-pages
 
 ![image-20240511212922999](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0613199a3fd57618c142deb5d26ae671.png)
 
