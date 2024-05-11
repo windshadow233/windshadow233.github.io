@@ -564,6 +564,16 @@ span.card-archive-list-count {
         width:calc(100% / 3 - 15px);
     }
 }
+@media screen and (max-width: 768px) {
+    #article-container .flink .flink-list > .flink-list-item{
+        width:calc(100% / 2 - 15px);
+    }
+}
+@media screen and (max-width: 384px) {
+    #article-container .flink .flink-list > .flink-list-item{
+        width:calc(100% - 15px);
+    }
+}
 #article-container .flink .flink-list > .flink-list-item{
     margin: 6px 6px;
     transition: background-color .3s!important;
