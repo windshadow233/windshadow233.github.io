@@ -106,6 +106,22 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+#BEGIN
+deploy:
+  type: rsync
+  host: 43.133.6.66
+  user: root
+  root: /var/www/blog/
+  port: 22
+  delete: true
+  progress: true
+  args: # 参数
+  rsh: # 指定要使用的远程 shell
+  key: /Users/wind/.ssh/tokyo/root/priv_key
+  verbose: true # Default is true 显示详细信息
+  ignore_errors: false # Default is false 忽略错误
+  create_before_update: false # Default is false 首先创建不存在的文件，然后更新现有文件
+#END
 
 search:
   path: search.json
