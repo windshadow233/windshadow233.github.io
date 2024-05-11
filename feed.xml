@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Sat, 11 May 2024 08:31:57 GMT</pubDate>
+    <pubDate>Sat, 11 May 2024 08:39:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -398,9 +398,9 @@
       <category domain="https://blog.fyz666.xyz/categories/%E7%9E%8E%E6%8D%A3%E9%BC%93%E7%BB%8F%E5%8E%86/">瞎捣鼓经历</category>
       
       
-      <category domain="https://blog.fyz666.xyz/tags/dns/">DNS</category>
-      
       <category domain="https://blog.fyz666.xyz/tags/nginx/">Nginx</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/dns/">DNS</category>
       
       <category domain="https://blog.fyz666.xyz/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">反向代理</category>
       
