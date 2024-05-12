@@ -22,7 +22,7 @@ menu:
     相册: /gallery/ || far fa-images
     友链: /link/ || fas fa-user-friends
     工具: /tlink/ || fas fa-tools
-    资源: /slink/ || fas fa-save
+    资源: /rlink/ || fas fa-save
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
   线路 || fas fa-link:
