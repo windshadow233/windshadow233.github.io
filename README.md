@@ -5,7 +5,7 @@
 - main 分支为博客源码
 - gh-pages 分支为 GitHub 镜像站
 
-本博客拥有以下线路：
+本博客存在以下线路：
 
 - 主站点：https://blog.fyz666.xyz/
 - GitHub 镜像站：https://gh.fyz666.xyz/
