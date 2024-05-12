@@ -118,10 +118,28 @@
                 "descr": "一个以视觉方式分享、发现创意点子的社区"
             },
             {
+                "name": "Pexel",
+                "link": "https://www.pexels.com/",
+                "avatar": "https://www.pexels.com/assets/static/images/meta/pexels-icon.png",
+                "descr": "摄影图片、视频分享社区"
+            },
+            {
                 "name": "iconfont",
                 "link": "https://www.iconfont.cn/",
                 "avatar": "https://img.alicdn.com/imgextra/i4/O1CN01XZe8pH1USpiUNT1QN_!!6000000002517-2-tps-114-114.png",
                 "descr": "阿里巴巴矢量图标库"
+            },
+            {
+                "name": "Animate.css",
+                "link": "https://animate.style/",
+                "avatar": "https://animate.style/img/favicon.ico",
+                "descr": "简洁平滑的CSS动画库"
+            },
+            {
+                "name": " WallpapersCraft",
+                "link": "https://wallpaperscraft.com/",
+                "avatar": "https://wallpaperscraft.com/public/img/general/favicon.ico",
+                "descr": "免费下载大量高清壁纸"
             }
         ]
     },
@@ -152,6 +170,12 @@
                 "link": "https://changkun.de/modern-cpp/",
                 "avatar": "https://changkun.de/modern-cpp/assets/cover-2nd-logo.png",
                 "descr": "高速上手 C++ 11/14/17/20"
+            },
+            {
+                "name": "Hello 算法",
+                "link": "https://www.hello-algo.com/",
+                "avatar": "https://www.hello-algo.com/assets/images/favicon.png",
+                "descr": "动画图解、一键运行的数据结构与算法教程"
             }
         ]
     },

@@ -26,7 +26,7 @@
               for(let j = 0; j < lists.length; j++){
                 listResult += `
                   <div class="flink-list-item">
-                    <a href="${lists[j].link}" title="${lists[j].name}">
+                    <a href="${lists[j].link}" target="_blank" title="${lists[j].name}">
                       <div class="flink-item-icon">
                         <img class="no-lightbox" src="${lists[j].avatar}" onerror='this.onerror=null;this.src="!{url_for(theme.error_img.flink)}"' alt="${lists[j].name}" />
                       </div>
