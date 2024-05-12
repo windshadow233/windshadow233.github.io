@@ -3,7 +3,7 @@
 此仓库为我的个人博客仓库，其中：
 
 - main 分支为博客源码
-- gh-pages 分支为GitHub镜像站
+- gh-pages 分支为 GitHub 镜像站
 
 本博客拥有以下线路：
 
