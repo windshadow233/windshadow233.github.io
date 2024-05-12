@@ -1288,7 +1288,6 @@ blockquote p:first-child{
     background-color: var(--fyz-white-acrylic1) !important;
     border-radius: 12px;
     padding: 10px;
-    margin-bottom: 10px;
 }
 [data-theme='dark'] #random-top2 {
     color: var(--fyz-white);

@@ -20,7 +20,9 @@ menu:
   #   Movie: /movies/ || fas fa-video
   本站 || fas fa-sitemap:
     相册: /gallery/ || far fa-images
-    链接: /link/ || fas fa-link
+    友链: /link/ || fas fa-user-friends
+    工具: /tlink/ || fas fa-tools
+    资源: /slink/ || fas fa-save
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
   线路 || fas fa-link:

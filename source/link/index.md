@@ -1,5 +1,5 @@
 ---
-title: 一些链接
+title: 友情链接
 date: 2024-04-07 23:41:53
 type: "link"
 aside: false
@@ -73,6 +73,17 @@ function copyFlinkTemplate() {
   intro: '行所欲行，无问西东。',
   link: 'https://blog.fyz666.xyz/',
   image: 'https://blog.fyz666.xyz/images/avatar.png'
+}
+```
+<!-- endtab -->
+
+<!-- tab JSON -->
+```json
+{
+  "title": "逸风亭",
+  "link": "https://blog.fyz666.xyz/",
+  "avatar": "https://blog.fyz666.xyz/images/avatar.png",
+  "descr": "行所欲行，无问西东。"
 }
 ```
 <!-- endtab -->

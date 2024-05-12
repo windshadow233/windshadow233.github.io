@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
-id: {{ id }}
 date: {{ date }}
+id:
 categories:
 tags:
 cover:
