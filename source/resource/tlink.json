@@ -70,7 +70,7 @@
                 "descr": "在线下载 Youtube 视频"
             },
             {
-                "name": "Parse Video",
+                "name": "ParseVideo",
                 "link": "https://www.parsevideo.com/",
                 "avatar": "https://www.parsevideo.com/assets/addons/parsevideo/img/favicon.ico",
                 "descr": "在线视频解析工具"
@@ -188,6 +188,18 @@
                 "link": "https://bandwagonhost.com/",
                 "avatar": "https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/bca116f51405f8368af2cf8503df384b.webp",
                 "descr": "高性价比的VPS主机供应商"
+            },
+            {
+                "name": "Render",
+                "link": "https://render.com/",
+                "avatar": "https://cdn.sanity.io/images/hvk0tap5/production/c4fd92ad649864b4aa2d4985072b9779bd7e8119-128x128.png",
+                "descr": "简单到极致地构建、部署和扩展应用程序"
+            },
+            {
+                "name": "Zeabur",
+                "link": "https://zeabur.com/",
+                "avatar": "https://zeabur.com/favicon.svg",
+                "descr": "在几秒内免费部署静态网站与Serverless函数"
             }
         ]
     },

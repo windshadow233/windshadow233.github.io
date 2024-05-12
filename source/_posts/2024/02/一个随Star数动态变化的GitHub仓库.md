@@ -4,7 +4,7 @@ id: 9506
 date: 2024-02-23 18:00:43
 categories: [杂趣]
 tags: ['API GateWay', 'AWS Lambda', 'GitHub API', 'Python', 'Webhook']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0b842b41077a21768b19fdc4c6077292.png
+cover: https://api.star-history.com/svg?repos=windshadow233/This-Repo-Has-0-Stars&type=Date
 disableNunjucks: false
 swiper_index: 1
 description: 一个有意思的GitHub仓库
@@ -16,8 +16,9 @@ description: 一个有意思的GitHub仓库
 
 {% link This Repo Has 0 Stars,GitHub,https://github.com/windshadow233/This-Repo-Has-0-Stars %}
 
-
 朋友们可以进去点个star看看效果～~~（没想到我第一次骗star竟是为这）~~
+
+![](https://api.star-history.com/svg?repos=windshadow233/This-Repo-Has-0-Stars&type=Date)
 
 
 ---
