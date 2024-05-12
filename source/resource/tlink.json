@@ -10,10 +10,22 @@
                 "descr": "最强大的ChatBot"
             },
             {
+                "name": "Kimi Chat",
+                "link": "https://kimi.moonshot.cn/",
+                "avatar": "https://statics.moonshot.cn/kimi-chat/favicon.ico",
+                "descr": "ChatGPT的国产平替，在超长文本场景下表现出众"
+            },
+            {
                 "name": "Midjourney",
                 "link": "https://www.midjourney.com/",
                 "avatar": "https://www.midjourney.com/apple-touch-icon.png",
                 "descr": "好用的AI绘图工具"
+            },
+            {
+                "name": "Craiyon",
+                "link": "https://www.craiyon.com/",
+                "avatar": "https://www.craiyon.com/favicon-32x32.png",
+                "descr": "一款免费的AI图像生成器"
             },
             {
                 "name": "Gamma",
@@ -98,6 +110,12 @@
                 "link": "https://www.json.cn/",
                 "avatar": "https://static.json.cn/r/img/favicon/favicon.ico",
                 "descr": "前端、后端在线工具大全"
+            },
+            {
+                "name": "FactorDB",
+                "link": "http://factordb.com/",
+                "avatar": "#",
+                "descr": "在线大整数因子分解"
             }
         ]
     },
