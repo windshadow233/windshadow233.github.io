@@ -76,10 +76,28 @@
                 "descr": "前端代码编辑器兼可视化平台"
             },
             {
-                "name": "Font2SVG",
+                "name": "Google Font to SVG",
                 "link": "https://danmarshall.github.io/google-font-to-svg-path/",
                 "avatar": "https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ec85304c14ea8c9c98264fee6cabec9e.png",
                 "descr": "在线将Google字体转化为SVG Path"
+            },
+            {
+                "name": "Shields.io",
+                "link": "https://shields.io/",
+                "avatar": "https://shields.io/img/logo.png",
+                "descr": "生成GitHub项目的徽章"
+            },
+            {
+                "name": "Wayback Machine",
+                "link": "https://wayback-api.archive.org/",
+                "avatar": "https://web-static.archive.org/_static/images/logo_archive-sm.png",
+                "descr": "包含大量网站历史快照的互联网档案馆"
+            },
+            {
+                "name": "Json.cn",
+                "link": "https://www.json.cn/",
+                "avatar": "https://static.json.cn/r/img/favicon/favicon.ico",
+                "descr": "前端、后端在线工具大全"
             }
         ]
     },
@@ -87,6 +105,12 @@
         "class_name": "网络工具",
         "class_desc": "",
         "link_list": [
+            {
+                "name": "中科大测速站",
+                "link": "https://test.ustc.edu.cn/",
+                "avatar": "https://test.ustc.edu.cn/favicon.ico",
+                "descr": "科大提供的网络测速站，支持IPv6"
+            },
             {
                 "name": "拨测",
                 "link": "https://www.boce.com/",
@@ -104,6 +128,12 @@
                 "link": "https://www.speedtest.net/",
                 "avatar": "https://www.speedtest.net/favicon.ico",
                 "descr": "互联网速度测试工具"
+            },
+            {
+                "name": "IP地址查询工具",
+                "link": "https://zh-hans.ipshu.com/",
+                "avatar": "https://zh-hans.ipshu.com/favicon.ico",
+                "descr": "提供最新最完整的IP地址信息、IP信息查询等内容"
             }
         ]
     },
@@ -121,7 +151,7 @@
                 "name": "Vultr",
                 "link": "https://www.vultr.com/",
                 "avatar": "https://www.vultr.com/apple-touch-icon.png",
-                "descr": "按小时计费的海外云服务（支持IPv6）"
+                "descr": "按小时计费、随用随停的海外云服务（支持IPv6）"
             },
             {
                 "name": "Vercel",
@@ -134,6 +164,12 @@
                 "link": "https://netlify.app/",
                 "avatar": "https://www.netlify.com/favicon/apple-touch-icon.png",
                 "descr": "高效的前端托管和自动化部署服务"
+            },
+            {
+                "name": "BandwagonHost",
+                "link": "https://bandwagonhost.com/",
+                "avatar": "https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/bca116f51405f8368af2cf8503df384b.webp",
+                "descr": "高性价比的VPS主机供应商"
             }
         ]
     },

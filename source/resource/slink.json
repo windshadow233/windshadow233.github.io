@@ -58,18 +58,6 @@
                 "descr": "VLAB 实验中心"
             },
             {
-                "name": "Hackergame",
-                "link": "https://hack.lug.ustc.edu.cn/",
-                "avatar": "https://hack.lug.ustc.edu.cn/static/favicon.svg",
-                "descr": "中科大LUG社团主办的娱乐向信息安全大赛"
-            },
-            {
-                "name": "PKU GeekGame",
-                "link": "https://geekgame.pku.edu.cn/",
-                "avatar": "https://avatars.githubusercontent.com/u/84904188?s=200&v=4",
-                "descr": "北京大学主办的娱乐向信息安全综合能力竞赛"
-            },
-            {
                 "name": "清华大学TUNA协会",
                 "link": "https://tuna.moe/",
                 "avatar": "https://tuna.moe/assets/img/logo-small-dark@2x.png",
@@ -96,15 +84,39 @@
         ]
     },
     {
-        "class_name": "资源站",
+        "class_name": "CTF相关",
         "class_desc": "",
         "link_list": [
             {
-                "name": "北邮人PT",
-                "link": "https://byr.pt/",
-                "avatar": "https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8a00d5f971e54145145f0e17fb6c349c.png",
-                "descr": "一个资源丰富的IPv6 PT站"
+                "name": "Hackergame",
+                "link": "https://hack.lug.ustc.edu.cn/",
+                "avatar": "https://hack.lug.ustc.edu.cn/static/favicon.svg",
+                "descr": "中科大LUG社团主办的娱乐向信息安全大赛"
             },
+            {
+                "name": "PKU GeekGame",
+                "link": "https://geekgame.pku.edu.cn/",
+                "avatar": "https://avatars.githubusercontent.com/u/84904188?s=200&v=4",
+                "descr": "北京大学主办的娱乐向信息安全综合能力竞赛"
+            },
+            {
+                "name": "CTF Wiki",
+                "link": "https://ctf-wiki.org/",
+                "avatar": "https://ctf-wiki.org/static/img/logo.png",
+                "descr": "一份适合新手的CTF学习指南"
+            },
+            {
+                "name": "CTF-All-In-One",
+                "link": "https://firmianay.gitbook.io/ctf-all-in-one",
+                "avatar": "https://firmianay.gitbook.io/~gitbook/image?url=https%3A%2F%2Ffirmianay.gitbook.io%2Fctf-all-in-one%2F%7Egitbook%2Ficon%3Fsize%3Dmedium%26theme%3Dlight&width=32&dpr=2&quality=100&sign=575fd97e1e48cc512c5d5af63cc498256d97d008d196ab5ccdd7d961a380d8c3",
+                "descr": "CTF竞赛权威指南"
+            }
+        ]
+    },
+    {
+        "class_name": "各类素材",
+        "class_desc": "",
+        "link_list": [
             {
                 "name": "Font Awesome",
                 "link": "https://fontawesome.com/",
@@ -130,16 +142,40 @@
                 "descr": "阿里巴巴矢量图标库"
             },
             {
-                "name": "Animate.css",
-                "link": "https://animate.style/",
-                "avatar": "https://animate.style/img/favicon.ico",
-                "descr": "简洁平滑的CSS动画库"
-            },
-            {
                 "name": " WallpapersCraft",
                 "link": "https://wallpaperscraft.com/",
                 "avatar": "https://wallpaperscraft.com/public/img/general/favicon.ico",
                 "descr": "免费下载大量高清壁纸"
+            },
+            {
+                "name": "macOSicons",
+                "link": "https://macosicons.com/",
+                "avatar": "https://macosicons.com/favicon.ico",
+                "descr": "海量免费的MacOS系列应用程序图标包"
+            }
+        ]
+    },
+    {
+        "class_name": "其他资源",
+        "class_desc": "",
+        "link_list": [
+            {
+                "name": "北邮人PT",
+                "link": "https://byr.pt/",
+                "avatar": "https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8a00d5f971e54145145f0e17fb6c349c.png",
+                "descr": "一个资源丰富的IPv6 PT站"
+            },
+            {
+                "name": "CivitAI",
+                "link": "https://civitai.com/",
+                "avatar": "https://yt3.ggpht.com/GVWH59xa-WKBHIehj52z8fH87m6mIbKnvrhW__hNXMPmYt8rkLX3Pb4iwww73lOuc6t66U1JAP4=s68-c-k-c0x00ffffff-no-rj",
+                "descr": "开源生成式图像AI模型大全"
+            },
+            {
+                "name": "Animate.css",
+                "link": "https://animate.style/",
+                "avatar": "https://animate.style/img/favicon.ico",
+                "descr": "简洁平滑的CSS动画库"
             }
         ]
     },
@@ -151,13 +187,7 @@
                 "name": "Linux 101",
                 "link": "https://101.lug.ustc.edu.cn/",
                 "avatar": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Book_font_awesome.svg",
-                "descr": "面向零基础读者的Linux指南"
-            },
-            {
-                "name": "CTF Wiki",
-                "link": "https://ctf-wiki.org/",
-                "avatar": "https://ctf-wiki.org/static/img/logo.png",
-                "descr": "一份适合新手的CTF学习指南"
+                "descr": "科大LUG社团编写的面向零基础读者的Linux指南"
             },
             {
                 "name": "OI Wiki",
@@ -176,12 +206,18 @@
                 "link": "https://www.hello-algo.com/",
                 "avatar": "https://www.hello-algo.com/assets/images/favicon.png",
                 "descr": "动画图解、一键运行的数据结构与算法教程"
+            },
+            {
+                "name": "C 语言教程",
+                "link": "https://wangdoc.com/clang/",
+                "avatar": "https://wangdoc.com/assets/icons/favicon-96x96.png",
+                "descr": "阮一峰老师维护编写的 C 语言入门教程"
             }
         ]
     },
     {
         "class_name": "常用科大网络资源",
-        "class_desc": "妮可的一些相关网站",
+        "class_desc": "",
         "link_list": [
             {
                 "name": "USTC导航",

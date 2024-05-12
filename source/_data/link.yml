@@ -57,3 +57,11 @@
       link: https://dusays.com/
       avatar: https://cdn.dusays.com/avatar.png
       descr:  师者，传道，授业，解惑！
+    - name: 科学空间
+      link: https://spaces.ac.cn/
+      avatar: https://spaces.ac.cn/usr/themes/geekg/favicon.ico
+      descr: 致力于各类前沿理工类论文、知识分享
+    - name: 阮一峰的网络日志
+      link: https://www.ruanyifeng.com/blog/
+      avatar: https://www.ruanyifeng.com/favicon.ico
+      descr: 沉淀了大量技术相关的知识
