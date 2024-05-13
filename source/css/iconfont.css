@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3498204 */
-  src: url('/ttf/iconfont.ttf?v=1713812649302166') format('truetype');
+  src: url('/ttf/iconfont.ttf?v=1715597769535') format('truetype');
 }
 
 .iconfont {
@@ -52,4 +52,12 @@
 }
 .icon-planet:before {
   content: "\e617"
+}
+
+.icon-monitor:before {
+  content: "\e6ad";
+}
+
+.icon-global:before {
+  content: "\e78d";
 }
