@@ -153,11 +153,11 @@ jobs:
       run: npm run b
 
     - name: Deploy to gh-pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: public
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        folder: public
 ```
 
 前往仓库的Settings->Actions->General，将Actions对仓库的操作权限提升为“读写”：
