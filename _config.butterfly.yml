@@ -25,6 +25,7 @@ menu:
     资源: /rlink/ || fas fa-save
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
+    状态监控: https://status.fyz666.xyz/ || fas fa-bolt
   线路 || fas fa-link:
     主站点: https://blog.fyz666.xyz/
     GitHub: https://gh.fyz666.xyz/

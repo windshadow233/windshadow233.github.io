@@ -6,6 +6,7 @@ categories:
   - CTF题解
 tags:
   - Hackergame
+  - Hackergame 2023
 cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/bb1e044b3388733daabb1aaf5cd6ac08.jpg
 disableNunjucks: false
 ---

@@ -2,8 +2,11 @@
 title: USTC Hackergame 2021部分题目Write-Up
 id: 6797
 date: 2021-10-30 14:11:07
-categories: [CTF题解]
-tags: ['Hackergame']
+categories:
+  - CTF题解
+tags:
+  - Hackergame
+  - Hackergame 2021
 cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a11b54aeb91b440d2f3cbf7889cdb767.png
 disableNunjucks: false
 mathjax: true

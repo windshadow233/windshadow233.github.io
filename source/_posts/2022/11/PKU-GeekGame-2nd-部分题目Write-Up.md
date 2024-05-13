@@ -6,6 +6,7 @@ categories:
   - CTF题解
 tags:
   - GeekGame
+  - GeekGame 2nd
 cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/054393d1edee5173e764194e4a43002b.png
 disableNunjucks: false
 mathjax: true
