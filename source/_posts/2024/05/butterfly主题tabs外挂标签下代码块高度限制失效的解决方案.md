@@ -70,8 +70,6 @@ const createEle = (lang, item, service) => {
 
 在butterfly的主题文件中`inject.head`项下引入jquery.actual文件：
 
-{% hideInline hi %}
-
 ```yaml
 - <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.actual/1.0.19/jquery.actual.min.js"></script>
 ```
