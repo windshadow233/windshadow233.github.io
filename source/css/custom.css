@@ -1302,7 +1302,6 @@ blockquote p:first-child{
     background-color: var(--fyz-black-acrylic2) !important;
     padding: 10px;
     flex-flow: column;
-    margin-bottom: 10px;
 }
 #random-top2:hover{
     border: 1px solid var(--fyz-theme);
