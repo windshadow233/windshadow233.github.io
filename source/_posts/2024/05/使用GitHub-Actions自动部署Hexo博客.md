@@ -172,6 +172,6 @@ gh-pages分支生成后，前往仓库的Settings->Pages，选择Deploy from a b
 
 {% endtabs %}
 
-自此，GitHub Actions配置完成，现在对仓库提交commit时就会自动触发Hexo的部署流程。
+自此，GitHub Actions配置完成，现在push到此仓库的main分支时就会自动触发Hexo的部署流程。
 
 当然，也可以在workflow里将上面两种部署方法全部写上，相当于博客的多个镜像站，也是非常不错的选择，另外，将gh-pages分支绑定到一些静态服务托管平台（例如Vercel），可以实现多镜像站同步的效果。
