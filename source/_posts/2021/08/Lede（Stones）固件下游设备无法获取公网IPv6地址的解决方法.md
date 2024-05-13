@@ -26,7 +26,7 @@ disableNunjucks: true
 
 接下来登录路由器的命令行，查看IPv6网关的分配情况：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7033de710c31ee9a554e01bf10b569c1.png)
+![](https://blogfiles.oss.fyz666.xyz/png/72906288-50d4-436e-840a-57ab804197b6.png)
 fe80::1正是光猫LAN口的IPv6 Link-Local地址，看上去好像没有毛病。
 
 

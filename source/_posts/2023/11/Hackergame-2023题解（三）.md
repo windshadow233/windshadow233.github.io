@@ -7,7 +7,7 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2023
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/bb1e044b3388733daabb1aaf5cd6ac08.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/6f00f091-9b5b-42c9-aebd-6635e13518a3.jpg
 disableNunjucks: false
 ---
 
@@ -68,7 +68,7 @@ restore_video('video.bin', f'video.mp4', frame_count=3 * 11 * 23, frame_width=7 
 - 压缩至 2KiB (2048 字节) 及以下，获得 flag1；
 - 压缩至 50 字节及以下，获得 flag2。
 
-<a href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b44e13b5a4590794e0be13b692dc9304.png" download="image.png">图片下载</a>
+<a href="https://blogfiles.oss.fyz666.xyz/png/0f282ab8-f6ee-4f41-a0e8-c0c34ff9bc36.png" download="image.png">图片下载</a>
 
 [题目后端环境](https://github.com/USTC-Hackergame/hackergame2023-writeups/raw/master/official/%F0%9F%AA%90%20%E4%BD%8E%E5%B8%A6%E5%AE%BD%E6%98%9F%E7%90%83/files/image-compressor-backend.zip)
 {% endnote %}
@@ -289,7 +289,7 @@ GPT大法好！
 请点击下方的「打开/下载题目」按钮，下载题目文件。题目文件对应的 Mindustry 版本为 7.0 Build 146。打开游戏后依次选择 地图编辑器—加载地图—选择题目文件 the_planet.msav —返回主菜单，然后选择 开始游戏—自定义游戏—选择导入的名为 the planet 的地图—不改变任何选项点击开始游戏 。开启后的游戏界面如下图，按钮已经用红框标出：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/1b115534fbb9c5b35d8bfaa342330221.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/b3326a6a-06bc-4d6e-ae82-1221142a0ce5.jpg)
 将正确的按钮序列以 01 序列的形式提交至 检查网站 或 nc 202.38.93.111 10071 获得 flag。按钮未按下（即游戏开始时默认状态）用 0 表示，按下（即点击按钮后按钮颜色变亮）用 1 表示，顺序从左到右。
 
 
@@ -307,9 +307,9 @@ GPT大法好！
 
 进入游戏可以注意到有32个按钮分为4组，每组控制着1个模块。前两组模块的每个按钮分别是干啥的我根本不懂，不过每组也就256个组合，手试了几下可以找到让前两个模块正常工作的按钮组合：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/36ffe574a936c4520b412005252d1e7e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8b8d2222-44bf-4017-8d98-ca4d8904922c.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4e3aaf62ab0e0618931ea6afe9b26857.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c218df69-a4f5-439f-90f5-dfc8249aa1b8.png)
 第三个模块就比较容易懂了，让钍反应堆多炸几次就可以得出每个按钮处于打开状态时的效果（个人的理解，不一定完全准确）：
 
 
@@ -327,7 +327,7 @@ GPT大法好！
 
 最后一组按钮各控制着1个电力源：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/16223d2b736046d0cc31bfbee696e22d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/13677dac-8a8a-4007-883c-5b4c0c6bacfb.png)
 随便点了几个但不知道逻辑，遂乱玩，最终发现01110111就能过。
 
 
@@ -336,7 +336,7 @@ GPT大法好！
 
 最终效果如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/1e1821c36cdb223514f7b5ce57ca654f.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/326091b4-f862-4edd-80b3-8d0fdc44dbcd.jpg)
 按钮组合是10100101 11000100 10001100 01110111
 
 
@@ -371,7 +371,7 @@ Z 同学是经历过当年三星工厂连连失火，SSD 价格疯涨的苦日�
 {% endhideToggle %}
 数据结构学的不扎实，看了半天才发现原来是用列表实现了二叉树的结构。。。相信大一时的我应该可以一眼看出来。随便画了个图来说明本题实现的merkle tree（忽略了hash值的排序）：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4329d555c8f183ff44888282eb5f9b72.png)
+![](https://blogfiles.oss.fyz666.xyz/png/64c1c25f-1c69-4d22-90ba-9bad3ba37b23.png)
 每个注册用户会获得一串proof字符串，用以验证。这串proof由该用户对应的叶子节点到根节点路径上的所有节点的兄弟节点的sha1值按顺序拼连接起来得到的。例如上图中user1的proof是h2+h6。验证用户是否在树上的逻辑是将proof拆开为多个字节串，然后每爬一层用掉一截proof，求和并计算sha1值，直到用完，若proof用完后得到的sha1值是Merkle Root，则验证通过。
 
 

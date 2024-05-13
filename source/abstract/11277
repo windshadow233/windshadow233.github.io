@@ -1,0 +1,1 @@
+文章讲述了使用GitHub Actions自动部署Hexo博客的详细步骤，包括设置环境变量、创建SSH密钥、编写deploy.yml工作流文件，并解释了如何利用GitHub Pages或服务器进行部署。

@@ -1,0 +1,1 @@
+文章讲述了如何配置Webpack来处理Vue项目中的.css和.vue文件，提供了安装和配置css-loader、vue-loader的必要步骤，以及相关的版本配置建议。

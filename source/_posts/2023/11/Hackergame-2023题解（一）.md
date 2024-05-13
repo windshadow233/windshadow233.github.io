@@ -7,7 +7,7 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2023
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/bb1e044b3388733daabb1aaf5cd6ac08.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/6f00f091-9b5b-42c9-aebd-6635e13518a3.jpg
 disableNunjucks: false
 ---
 
@@ -30,7 +30,7 @@ disableNunjucks: false
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1771236aeb367d1ed1a5bda668c3502c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9560e2fb-14d2-4399-a951-72359febc6fd.png)
 flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 
 
@@ -167,7 +167,7 @@ flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a24b9572a9b23fe0ec3fd839ecf40e93.png)
+![](https://blogfiles.oss.fyz666.xyz/png/d2ee0846-598e-4172-ae81-2a886ae04f02.png)
 那么拍摄日期应该就是8月10日。
 
 
@@ -196,7 +196,7 @@ flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1706dead9d430bdc55fcfb9e8c69f301.png)
+![](https://blogfiles.oss.fyz666.xyz/png/872c22ea-5b91-4529-a3d2-d1be8fcf219c.png)
 然而这张全景图拍的不是时候，广告牌上找不到动物。然后只好搜了一下“渋谷 广告牌 3d”等关键字，搜到[链接](https://wow-japan.com/news-flash-shibuya-3d-akida-dog-ads/)，因此答案为秋田犬。
 
 
@@ -221,7 +221,7 @@ flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9210118b0501c83ecb61fbad4f69658f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/aeb4721f-9c3f-4fc0-9169-25ec0740062e.png)
 ## 奶奶的睡前 flag 故事
 {% hideToggle 查看题面 %}
 {% note primary simple %}
@@ -265,7 +265,7 @@ L 同学满眼星光地接过，**连系统都没心思升级**，就开始疯�
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5442f886e33bbf0ccaed647725eb520b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/e73e2293-9acd-4a0f-a844-7669915a7e43.png)
 直呼卧槽！原来是送分题。
 
 
@@ -311,4 +311,4 @@ L 同学满眼星光地接过，**连系统都没心思升级**，就开始疯�
 
 之后只需要耐心等flag图片被解码出来：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/2413fa7edb1c10dd5f081f8785db7422.webp)
+![](https://blogfiles.oss.fyz666.xyz/webp/ff8e08f8-4d80-4e8a-8c04-f6b021461d73.webp)

@@ -11,6 +11,15 @@
         apiKey: '!{apiKey}',
         indexName: '!{indexName}',
         container: '#docsearch',
+        transformItems: (items) => {
+          return items.map(item => {
+            const url = new URL(item.url);
+            return {
+              ...item,
+              url: url.pathname + url.search + url.hash,
+            };
+          });
+        }
       }, !{JSON.stringify(option)}))
 
       const handleClick = () => {

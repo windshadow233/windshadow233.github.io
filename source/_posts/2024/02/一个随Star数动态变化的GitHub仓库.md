@@ -51,7 +51,7 @@ description: 一个有意思的GitHub仓库
 
 为通过GitHub REST API修改仓库名，需要搞一个token用来鉴权。[此处前往token申请页面](https://github.com/settings/tokens)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0b842b41077a21768b19fdc4c6077292.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9db77a2f-0fbf-4b89-8e50-c5b402f5589f.png)
 如上，申请一个用于管理repo的token，将其保存下来。
 
 
@@ -60,16 +60,16 @@ description: 一个有意思的GitHub仓库
 
 由于之前发生过一次因不了解AWS平台的计费方式而白白浪费了100多rmb的惨痛经历，于是这次我提前摸清了套路：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b16be8fe50b9ab5a3604ba02f66e490c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9de669a5-26ce-4906-8847-f508d00c43c4.png)
 作为一个娱乐项目肯定稳稳够用了。
 
 
 前往[AWS控制台](https://console.aws.amazon.com/)，在「服务」中搜索lambda：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/fc6f1e676e40023f54d6e7325436c326.png)
+![](https://blogfiles.oss.fyz666.xyz/png/33d26b47-abb3-4582-9df7-91f837e28b86.png)
 创建一个lambda函数，并选择你喜欢的编程语言<s>（Python 3.8）</s>：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/141591ad60ec1fdd621d28e451bd0d1b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/47fdee31-8f9e-4bca-8bca-e5216e4d3318.png)
 点「创建函数」即可。进入代码页，发现它为我们提供了最基础的（Python）代码：
 
 ```python
@@ -88,22 +88,22 @@ def lambda_handler(event, context):
 
 ## 配置AWS API Gateway
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2a2cd66dca325096ccd7276f47b61194.png)
+![](https://blogfiles.oss.fyz666.xyz/png/88eb08b1-a76c-460f-aea2-10fdb8c669bc.png)
 这玩意则是收费的，不过很便宜，不公开接口的话应该开销不大。
 
 
 点击「创建API」，并选择「HTTP API」：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2668837da3012db8132b8b54eca98177.png)
+![](https://blogfiles.oss.fyz666.xyz/png/46e7081e-302a-4a06-89f7-680744834f73.png)
 添加一个Lambda集成，并选择前面创建的Lambda函数，最后点「下一步」：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/cd50a23967f4337dc5a68819594e0aed.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f1af02de-9cb5-4a12-880e-603938acff47.png)
 配置路由，按iBug大佬[所说](https://ibug.io/cn/2021/02/github-webhook-on-aws-lambda/#api-gateway)，填写$default：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1a33ef7f7dbe11a28a33701994de02ac.png)
+![](https://blogfiles.oss.fyz666.xyz/png/e6486dd6-809c-4938-90d5-e961e5f3d248.png)
 这样便创建好了一个HTTP API，AWS为其分配了一个ID，即下面的87z7tufbtk：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/fbe85d2db6553829ed92f5a0d3fe52b6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/147c0356-1746-4cd4-ad01-21b78fe581b0.png)
 可以通过下面的方法简单测试一下：
 
 ```bash
@@ -175,19 +175,19 @@ def lambda_handler(event, context):
 
 注意到代码最前面读取了俩环境变量，GITHUB_TOKEN和SECRET分别是前面申请的GitHub Access Token和Webhook Secret字符串，为在代码中获取，需要将其设置在Lambda函数的「配置->环境变量」标签栏下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/557096d4f67f0052976cbd52facca6d6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/44d82c0c-22a1-458c-8d4a-68084a812a9a.png)
 ### 添加第三方库
 
 
 设置完上面的内容后，我给仓库点了个star，然而
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5385911526e61a25e9cd3b8d833ed57b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f0f734db-19f8-4b51-9b18-a13ea8438d43.png)
 debug了半天发现原来是Lambda函数的Python 3.8环境没有第三方库，例如requests，于是要想办法把第三方库集成进去。
 
 
 研究了一会，发现Lambda提供一种叫「层」的功能：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/584646ce929f46a1f6c31e942b764a3d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/1278dba9-fc37-4a2b-a876-baa52e29bddd.png)
 通过添加「层」，可以将第三方库打包添加进去。下面先打包第三方库。
 
 
@@ -199,16 +199,16 @@ pip install --target ./python requests urllib3==1.26.16
 
 然后「创建层」：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8178a6c7d9f32019c89b8f0e1c3a6dbd.png)
+![](https://blogfiles.oss.fyz666.xyz/png/63865744-2966-4d63-affd-591956ee7db2.png)
 名称可以随意填写，点击「上传」按钮，将前面的python.zip上传，选择几个合适的运行时，点击「创建」。
 
 
 回到Lambda的「代码」部分，拉到最底下，有一块「层」区域：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b9d8d8e1ba41b8aef4a78192b751ccb3.png)
+![](https://blogfiles.oss.fyz666.xyz/png/de1ff15e-1b2b-4bc6-b0d3-21a4b12e93c8.png)
 我们在这里添加刚刚创建的层，即可让Python环境拥有requests。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b3e4598f853c256a1a6f3021bcdda2e8.png)
+![](https://blogfiles.oss.fyz666.xyz/png/074cb613-c8b6-4d6a-86f1-40a0433a6f9e.png)
 
 
 ---

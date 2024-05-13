@@ -4,7 +4,7 @@ id: 5579
 date: 2021-07-23 08:10:16
 categories: [瞎捣鼓经历]
 tags: ['CQHTTP', 'nonebot', 'Python', 'QQ bot']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/8f616788acf8c6e2cb9d7d658239fa25.jpeg
+cover: https://blogfiles.oss.fyz666.xyz/jpeg/2a98049f-0f73-4679-8a38-cce243430d4f.jpeg
 disableNunjucks: false
 ---
 

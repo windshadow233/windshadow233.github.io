@@ -18,7 +18,7 @@ disableNunjucks: true
 
 我们在网页端订票时，首先通过查票系统查到自己想要的票，然后点击右边的“预定”：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/465f7bc0bce1fe1e530261b34a4cb86b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ec3743df-b806-4114-85ba-167fea2300a6.png)
 然后会跳转到这个链接：
 
 `https://kyfw.12306.cn/otn/confirmPassenger/initDc`
@@ -35,7 +35,7 @@ disableNunjucks: true
 
 我们在Network里抓包，可以发现，在点击“预定”按钮后产生了一条名为`submitOrderRequest`的包，如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/57d42b7d3a00a2a8bfc94fea71559fc0.png)
+![](https://blogfiles.oss.fyz666.xyz/png/83000a7f-92fb-4a49-812d-7eaa25516318.png)
 它提交的表单信息中含有车票相关的信息，把它写下来如下：
 
 
@@ -75,7 +75,7 @@ disableNunjucks: true
 
 我们通过手动添加乘车人，然后提交订单，可以抓到如下两条数据包：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d02d15d467fc5e0f8b4deea6bba1923b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b26d54dd-ff60-4d02-b14e-a71d52c6f92c.png)
 分别来看这两条请求分别做了什么事。
 
 
@@ -83,7 +83,7 @@ disableNunjucks: true
 
 `checkOrderInfo`
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a132c6b653794c96072b3779760f45fa.png)
+![](https://blogfiles.oss.fyz666.xyz/png/95a734de-2b89-4704-8927-54c9ed1c06ea.png)
 `POST https://kyfw.12306.cn/otn/confirmPassenger/checkOrderInfo`
 
 
@@ -195,7 +195,7 @@ aE += aB + "_"
 
 接下来是第二个请求：`getQueueCount`，这个请求用于余票查询：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7d420dbce0f04996162fa569a0d5b36a.png)
+![](https://blogfiles.oss.fyz666.xyz/png/35ede02c-4c65-463a-8f10-9fc3ed2b9f3e.png)
 `POST https://kyfw.12306.cn/otn/confirmPassenger/getQueueCount`
 
 
@@ -240,10 +240,10 @@ $.ajax({
 
 但是我查遍了整个文件，也没有找到定义`ticketInfoForPassengerForm`这个变量的地方，似乎它是一个全局变量。在开发者工具的Console里输入`ticketInfoForPassengerForm`执行，还真跳出来了一大串数据：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d6d401734fe925fbd7a9a8d4be843b76.png)
+![](https://blogfiles.oss.fyz666.xyz/png/91ebdd0b-69fe-4591-af9e-0b91837f4759.png)
 说明它确实是个全局变量，稍加搜索后，我发现它藏在订单页面（`https://kyfw.12306.cn/otn/confirmPassenger/initDc`）的html代码里：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9a49a6f74f924865a97f15199017f567.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4e0e2b7f-a194-4392-bdba-ff0f8e1d78c6.png)
 而另一个变量`orderRequestDTO`则是`ticketInfoForPassengerForm`的一个字段。那就好办了，我们可以通过正则匹配把它匹配出来，然后用json库解析成Python可读的字典，即可顺利拿到表单数据。下面是正则匹配的代码，我还匹配了网页中的另一个变量，即`globalRepeatSubmitToken`，它就是我们抓到的包里带的参数`REPEAT_SUBMIT_TOKEN`
 
 ```python

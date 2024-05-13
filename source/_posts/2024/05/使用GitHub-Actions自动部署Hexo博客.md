@@ -37,11 +37,11 @@ ssh-keygen -t rsa -b 4096 -C "git@github.com:windshadow233/windshadow233.github.
 
 将此公钥上传到服务器，并将私钥粘贴到仓库的secrets下，命名为`SSH_PRIVATE_KEY`：
 
-![image-20240505194134676](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5ad4b9aae071cf3ea297ddc88713fd76.png)
+![image-20240505194134676](https://blogfiles.oss.fyz666.xyz/png/e9a7e48a-471f-4b85-b8bd-0b437a9d35da.png)
 
 创建变量`SERVER_IP`，值为服务器的ip地址：
 
-![image-20240505194228194](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3f3d7454c0b67a312900b0610169c95c.png)
+![image-20240505194228194](https://blogfiles.oss.fyz666.xyz/png/98e9e6d6-e95f-4e71-9423-35bf5a289fce.png)
 
 **创建workflow文件**
 
@@ -162,11 +162,11 @@ jobs:
 
 前往仓库的Settings->Actions->General，将Actions对仓库的操作权限提升为“读写”：
 
-![image-20240511212745256](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1c8afeb2c1182591a1387f9e8037fe2d.png)
+![image-20240511212745256](https://blogfiles.oss.fyz666.xyz/png/6d441bba-e632-445f-93b7-59fbd4ac3fcc.png)
 
 gh-pages分支生成后，前往仓库的Settings->Pages，选择Deploy from a branch：gh-pages
 
-![image-20240511212922999](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0613199a3fd57618c142deb5d26ae671.png)
+![image-20240511212922999](https://blogfiles.oss.fyz666.xyz/png/58deb7b3-7cb4-4dcf-aeb0-949faf67db58.png)
 
 <!-- endtab -->
 

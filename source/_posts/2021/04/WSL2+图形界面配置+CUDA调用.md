@@ -4,7 +4,7 @@ id: 5313
 date: 2021-04-05 18:13:08
 categories: [瞎捣鼓经历]
 tags: ['Linux', 'Ubuntu', 'WSL']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e940ac0ad151d5331ce56304c926e5ab.png
+cover: https://blogfiles.oss.fyz666.xyz/png/0ceb85a8-1af1-4212-b9dc-f396fb626df8.png
 disableNunjucks: true
 ---
 
@@ -73,15 +73,13 @@ Windows端采用VcXsrv软件，[下载链接](https://sourceforge.net/projects/v
 第一个界面中只要勾选的不是Multiple windows选项即可：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/61453cb9f58187914c4bcc4ea0613706.png)第二个界面直接下一页，第三个界面中，必须勾选Disable access control：
+![](https://blogfiles.oss.fyz666.xyz/png/5613758a-cb15-4b99-b6b7-106ed4e0b68e.png)第二个界面直接下一页，第三个界面中，必须勾选Disable access control：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d11a0ef2a10ba1ce673c51a8dc52bce7.png)然后依次下一页、完成，屏幕上将会出现一个黑框界面，目前还啥都没有。
+![](https://blogfiles.oss.fyz666.xyz/png/1f253a94-594a-4fe4-a515-63a617ed24d8.png)然后依次下一页、完成，屏幕上将会出现一个黑框界面，目前还啥都没有。
 
 
 进入Ubuntu系统，运行命令：
-
-
 
 ```bash
 sudo apt install ubuntu-desktop
@@ -106,4 +104,4 @@ export XDG_SESSION_TYPE=x11
 运行`source /root/.bashrc`使得修改生效，不出意外的话，在刚刚的黑屏幕中已经可以看到图形界面了，在经过美化以后还是相当舒适的，下面贴一下我的桌面：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/8b3b7943b841be6576cce2177dce64e3.webp)至此，Ubuntu的图形界面已经安排上了，但国内的软件生态好像不太好，居然连WeChat等常用的即时通讯软件都没有。
+![](https://blogfiles.oss.fyz666.xyz/webp/768836b8-77af-4822-a3ee-57e969d12ca5.webp)至此，Ubuntu的图形界面已经安排上了，但国内的软件生态好像不太好，居然连WeChat等常用的即时通讯软件都没有。

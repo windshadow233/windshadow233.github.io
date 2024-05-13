@@ -6,8 +6,6 @@ categories: [瞎捣鼓经历]
 tags: ['Linux', 'SSL']
 cover: 
 disableNunjucks: false
-swiper_index: 1
-description: 通过systemd来重载SSL证书
 ---
 
 我的服务器上开着一堆服务，其中有一些需要用到SSL证书，例如Nginx及前面刚刚部署的邮件服务。我的SSL证书是通过certbot向Let's Encrypt申请的，证书有效期为90天，也就是说每隔80多天就得更新一下证书。

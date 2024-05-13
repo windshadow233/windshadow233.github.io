@@ -28,11 +28,11 @@ menu:
     工具: /tlink/ || fas fa-tools
     资源: /rlink/ || fas fa-save
   线路 || iconfont icon-global:
-    主站点: https://blog.fyz666.xyz/
+    主站点: https://blog.fyz666.xyz/ || || _blank
     GitHub: https://gh.fyz666.xyz/
     Cloudflare: https://cf.fyz666.xyz/
     Vercel: https://vc.fyz666.xyz/
-    Netlify: https://nf.fyz666.xyz/
+    Netlify: https://ntl.fyz666.xyz/
     Render: https://rd.fyz666.xyz/
     Zeabur: https://zb.fyz666.xyz/
 
@@ -72,10 +72,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/84f7edabb02964c061305f909e6daf35.webp
+index_img: https://blogfiles.oss.fyz666.xyz/webp/1fa952df-86cb-43a6-8511-1287eefeeafe.webp
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/84f7edabb02964c061305f909e6daf35.webp
+default_top_img: https://blogfiles.oss.fyz666.xyz/webp/1fa952df-86cb-43a6-8511-1287eefeeafe.webp
 
 # The banner image of archive page
 archive_img:
@@ -108,52 +108,53 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f6dcee986664cee029bafafbf99da28f.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/016670c978a8cc5a5cc0bee7f449cf79.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/d7de51afd626ccbc9d1d7f64f02f0493.jpeg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/fb23eacda1c2fce6ae815364d5b90395.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f6860b62b3409a4db13718764c7142d8.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/172f103e6c57092ed49a8af377cc2694.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/3c9f34aa3e89bc747ff773e84720ce1d.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/cac46987629a660a8e053450c8de7649.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/7e82242d9560bc25e70a6d80d636e1fe.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/0b79595734b96d0dc8c65f1e56c16f93.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/633c3cf45c466d1463814424f4935049.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/391d15a10c9c8c94f0185dc9e163ff5b.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/084a6e5ca3cedc6dc3a6e023e8de75d8.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/c8b211df1b957b67ecd216fa1388b790.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/4741a4f4686a132072d781a7110f6c6d.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/f0c7e676594fde8a1bb992fdec305ca9.jpeg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/5890551d8aab7cf54af3b70b3e0d3aa5.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/59261aa5a6dee75fce7e73f43e20ec01.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/44331b624c8b305018868deb29b45a4f.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/304bf3c69337c53a75ae66302e2ada5c.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/b12f47138d514d9b2f9c17c080352ea5.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/ece5e09f99d2595f9f35360f0cc0d7f7.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/b6d6f8348bc22eaa166878bf68793951.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/dce6b0cd0608ad84c1a8cf9894543efa.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/6ac57570e3b700ed03df3d7423a9c064.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/7160d510bb658502e8bb7c043df0eb5b.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/d9c0d6a42d2c63559efc5997e28da8ea.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/dcbb540628f3b9aa91c6e9216c771916.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/974137941c02412cfc0ad45521e8586b.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/34d74860ce53d86efb42168ad442e692.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/15045fd6582570f426db89cfed8be010.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/74eb7aaaa974dd040958d99f2963a9ae.png
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/603e701315a6e3f0f83841abd7ee0d79.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f8186c659b80c1e7b095b088d7a3f41e.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/7bc47d9e6455d244dcea7a1ca3b726fc.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/fda6a14e767f88e2a7e01589720c2bb1.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/8ba167acc2baf9a276a17a83e332cf89.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/5d5235f4a89e3726acef53604988782c.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/badc6efdfbe3019e790b20b51bf2f87f.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/0b9a1f87211a217ea9f04c4f0d990a54.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/3ccdfdb27f40d6007c60f4c084d0dae5.jpg
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/1627d70ce2072b94dd910eb7d1f0a33a.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/9485b027cff66762b7cd3270763f167e.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/e84c95c11bda172bad487952e84266a6.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/dcbb540628f3b9aa91c6e9216c771916.webp
-    - https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/8e2e8660f6fe9604060a3f724af74853.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/60489f99-6323-4c07-8eb8-6cabeaacf2b7.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/65bd4aa6-b921-4d15-825f-1316821035df.webp
+    - https://blogfiles.oss.fyz666.xyz/jpeg/3eb198bc-75f1-4067-a3f3-5c2e50ed03eb.jpeg
+    - https://blogfiles.oss.fyz666.xyz/jpg/bfb50d30-edc6-496e-8df6-2ecdbc719621.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/864a0d33-6e9e-48c9-b256-9f7193a52753.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/deb9fa48-e8a3-4898-bc34-8932465eb29f.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/2fb0fe74-ec1e-4037-8e93-d40a6261d2f8.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/8a26f71e-99f9-475f-837e-24f43d1b38ce.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/68811bbd-a409-4dcd-a3ff-62cd9c09b049.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/02f95e37-d657-4bc5-a48f-df7a935a4743.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/31b7aef8-adee-4f3f-a669-01adf573e496.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/e2ecd861-3752-4a8d-be07-8e132002d557.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/f5ad7c8a-8dce-43d6-a9a9-8572fdec3f04.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/e9c78782-dcba-4b92-89ec-cd18c7fff13c.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/5e76e094-e74d-4150-ac79-4e682ffd92ca.webp
+    - https://blogfiles.oss.fyz666.xyz/jpeg/7a89f177-77a8-4cb1-b08b-08e54c4550a6.jpeg
+    - https://blogfiles.oss.fyz666.xyz/jpg/927278e3-74b2-4fdd-996d-16b367b1220a.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/86b5f306-a440-490e-b3e8-497587d2f9b9.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/2e4e1933-5646-4cd2-a520-ae1ae7b4d9bd.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/3417d190-a98d-4e09-9235-2d32f98aaaed.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/51384f3b-bdb8-4408-8e71-70008281909d.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/116f2850-1ca8-4db1-a2ea-86cd5fc37bf5.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/34e83a84-d49a-4a9d-a5f3-bebacff28740.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/6c8423f4-db52-4c11-9980-78d8c383b991.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/0e0aa932-c7a8-41d7-857f-53765c519ec6.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/3cc14548-1f1b-45a7-8982-65199bd9fa15.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/998fed9b-e31d-43c4-87aa-5efa0d19bc14.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/6d8e4926-98dc-440f-b073-db82859cd24a.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/619c9b21-52bf-452e-bdee-44807e3ee4cb.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/c1a73a16-0911-4284-b9c8-224970cb34af.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/38aca871-a625-4e93-bd05-bee6a1723d6c.webp
+    - https://blogfiles.oss.fyz666.xyz/png/685a995f-3a1a-4fb1-90bf-4b99a8b7020b.png
+    - https://blogfiles.oss.fyz666.xyz/webp/69e0914a-0844-4e0d-90f9-7f0a3d42f3f0.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/639f7bbd-083a-407f-94fc-0fead4ccc4d4.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/12af9cbb-5e86-4b75-9548-3f0d39f9a271.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/000f4409-56f6-4b4c-aa93-0f3a9d66cdd1.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/960e141b-3fd0-433a-a73b-f8f4d2f5cc1e.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/a8cc09e7-6634-4439-a272-20febb254b7b.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/91295bff-36a5-4180-a66f-759dc1e9b953.jpg
+    - https://blogfiles.oss.fyz666.xyz/jpg/8cf15d52-96ae-462f-b1ed-81d442ce8c23.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/71513db1-2826-44db-a9e2-654b890c5205.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/f29bb2ba-e786-4263-b898-19737ad36d84.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/4ec885f2-ea74-426b-9839-95592d60af65.webp
+    - https://blogfiles.oss.fyz666.xyz/webp/6d8e4926-98dc-440f-b073-db82859cd24a.webp
+    - https://blogfiles.oss.fyz666.xyz/jpg/46ef9407-bd88-4f59-b4b9-6847142ccf54.jpg
+    - https://blogfiles.oss.fyz666.xyz/webp/50b0a12f-7003-430d-a8d1-e06249d4be19.webp
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -276,7 +277,7 @@ footer:
     since: 2020
   custom_text: 
     <div>
-      <a href="https://github.com/windshadow233"><img src="https://img.shields.io/badge/GitHub-windshadow233-8A2BE2" /></a>
+      <a href="https://github.com/windshadow233.github.io"><img src="https://img.shields.io/badge/Repo-GitHub-8A2BE2" /></a>
         <span class="footer-separator"></span>
       <a href="/sitemap.xml" target="_blank"><img src="https://img.shields.io/badge/Sitemap-XML-8A2BE2" /></a>
         <span class="footer-separator"></span>
@@ -286,7 +287,7 @@ footer:
         <span class="footer-separator"></span>
       <a href="https://www.cloudflare.com/"><img src="https://img.shields.io/badge/Proxy-Cloudflare-red" /></a>
         <span class="footer-separator"></span>
-      <a href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-red" /></a>
+      <a href="https://oss-console.fyz666.xyz/"><img src="https://img.shields.io/badge/OSS-Self--Hosted-red" /></a>
       <br>
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/CC-BY--NC--SA%204.0-ff69b4" /></a>
         <span class="footer-separator"></span>
@@ -456,9 +457,9 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: false
   # Preload the search data when the page loads.
-  preload: true
+  preload: false
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
@@ -467,11 +468,12 @@ local_search:
 
 # Docsearch
 docsearch:
-  enable: false
-  appId:
-  apiKey:
-  indexName:
+  enable: true
+  appId: U4K4JGBNYW
+  apiKey: 968e6158989f9e37080dc540e037e695
+  indexName: fyz666
   option:
+    maxResultsPerGroup: 20
 
 # Share System (分享)
 # --------------------------------------
@@ -585,7 +587,7 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: windshadow233/BlogStorage
+  repo: windshadow233/BlogComments
   repo_id: R_kgDOLhHf0w
   category_id: DIC_kwDOLhHf084Ce0EO
   theme:
@@ -895,7 +897,7 @@ preloader:
   source: 8
   pace: true
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/pace_progress_bar.css
+  pace_css_url: https://blogfiles.oss.fyz666.xyz/css/pace_progress_bar.css
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -990,8 +992,15 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
+  ids:
+    - 'post'
+    - 'post-info'
+    - 'recent-posts'
+    - 'archive'
+    - 'article-container'
+    - 'top'
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
@@ -1035,9 +1044,9 @@ inject:
   head:
     - <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     - <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/rightmenu.js"></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
+    - <link rel="stylesheet" href="https://blogfiles.oss.fyz666.xyz/css/rightmenu.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script data-pjax>LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
@@ -1055,9 +1064,7 @@ inject:
          data-volume="0.4"
          data-type="playlist">
       </div>
-    - <script defer src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/universe.js"></script>
-    - <script type="text/javascript" src="/js/custom.js"></script>
-    - <script type="text/javascript" src="/js/random.js"></script>
+    - <script defer src="https://blogfiles.oss.fyz666.xyz/js/universe.js"></script>
     - <script>
         function loadExternalResource(url, type) {
           return new Promise((resolve, reject) => {
@@ -1094,8 +1101,9 @@ inject:
         }
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
-    - <script data-pjax src="/js/githubcalendar.js"></script>
-    - <script data-pjax src="/js/pjax-load.js"></script>
+    - <script src="/js/githubcalendar.js"></script>
+    - <script type="text/javascript" src="/js/random.js"></script>
+    - <script type="text/javascript" src="/js/custom.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN

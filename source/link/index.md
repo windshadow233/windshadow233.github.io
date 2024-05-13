@@ -3,6 +3,7 @@ title: 友情链接
 date: 2024-04-07 23:41:53
 type: "link"
 aside: false
+flink_file: "link"
 ---
 
 <script>
@@ -40,7 +41,7 @@ function copyFlinkTemplate() {
 
 - 我的名称: 逸风亭 / Shelter for Wind
 - 网站地址: `https://blog.fyz666.xyz/`
-- 网站图标: `https://blog.fyz666.xyz/images/avatar.png`
+- 网站图标: `https://s2.loli.net/2024/05/18/pKsmchPrfZ57Lje.png`
 - 描述: 行所欲行，无问西东。(您也可自己归纳)
 
 {% endnote %}
@@ -51,7 +52,7 @@ function copyFlinkTemplate() {
 ```yaml
 - name: 逸风亭
   link: https://blog.fyz666.xyz/
-  avatar: https://blog.fyz666.xyz/images/avatar.png
+  avatar: https://s2.loli.net/2024/05/18/pKsmchPrfZ57Lje.png
   descr: 行所欲行，无问西东。
 ```
 <!-- endtab -->
@@ -60,7 +61,7 @@ function copyFlinkTemplate() {
 ```yaml
 - name: 逸风亭
   link: https://blog.fyz666.xyz/
-  avatar: https://blog.fyz666.xyz/images/avatar.png
+  avatar: https://s2.loli.net/2024/05/18/pKsmchPrfZ57Lje.png
   descr: 行所欲行，无问西东。
   siteshot: https://s2.loli.net/2024/04/23/qU5AHNo2agutiEc.jpg
 ```
@@ -72,7 +73,7 @@ function copyFlinkTemplate() {
   title: '逸风亭',
   intro: '行所欲行，无问西东。',
   link: 'https://blog.fyz666.xyz/',
-  image: 'https://blog.fyz666.xyz/images/avatar.png'
+  image: 'https://s2.loli.net/2024/05/18/pKsmchPrfZ57Lje.png'
 }
 ```
 <!-- endtab -->
@@ -82,7 +83,7 @@ function copyFlinkTemplate() {
 {
   "title": "逸风亭",
   "link": "https://blog.fyz666.xyz/",
-  "avatar": "https://blog.fyz666.xyz/images/avatar.png",
+  "avatar": "https://s2.loli.net/2024/05/18/pKsmchPrfZ57Lje.png",
   "descr": "行所欲行，无问西东。"
 }
 ```

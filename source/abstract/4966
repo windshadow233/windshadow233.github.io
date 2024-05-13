@@ -1,0 +1,1 @@
+文章介绍了自定义WordPress小工具中的标签云参数的方法，通过修改wp_tag_cloud函数的参数数组和使用widget_tag_cloud_args过滤器来实现个性化设置。

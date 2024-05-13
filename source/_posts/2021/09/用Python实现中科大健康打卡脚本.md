@@ -4,7 +4,7 @@ id: 6401
 date: 2021-09-17 05:24:57
 categories: [瞎捣鼓经历]
 tags: ['Python', '爬虫']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/ca249dda5ff2fd5ec5dbb2975f129f52.jpeg
+cover: https://blogfiles.oss.fyz666.xyz/jpeg/1da71dd5-5a5e-48cb-93a1-899db58f7301.jpeg
 disableNunjucks: false
 ---
 
@@ -34,18 +34,18 @@ disableNunjucks: false
 
 登录界面如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/741852fa5b00d54b11d3b538bc4d8655.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9db85367-a5f2-464d-b98c-492ffa37d3c1.png)
 接下来，在浏览器的F12界面中，对中科大身份认证系统的登录过程进行抓包：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/55b1f2f05457c2c6129727ab252e8344.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8e660839-01d9-4ba2-ae44-8303deeb0095.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/76c4b551fd8af4c3eeb03d8a589299d3.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ebcba4f3-d95d-4e1e-8e3f-57850f3ff5bc.png)
 发现登录过程向登录链接POST了不少内容，多试几次容易知道，其中的model、service、warn、button等参数都是固定的，showCode参数表示是否需要验证码，然而，直接把showCode取为空串就可以绕过验证码。username和password即学号、密码，用于校内身份认证（这里需要吐槽一下学校的身份认证系统居然还在使用明文传输密码，造成了很大的安全隐患）。
 
 
 另外，还有一个貌似临时凭证的CAS_LT参数，初看不容易摸索出它的规律，但实际上，CAS_LT正藏在`passport.ustc.edu.cn/login`这个网页中，如下图：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ba42af97b6c6bb0b16482ded0494ab79.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8930e528-7d8f-4da6-8f5a-ce8f1685488c.png)
 可以使用BeautifulSoup通过id把它找出来。
 
 
@@ -57,10 +57,10 @@ disableNunjucks: false
 
 在Network选项卡下的众多内容中，有一条名为daliy_report的（真不是我不会拼daily这个单词），其提交表单部分内容如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/78ffe63d28067bd471902b47d11177c2.png)
+![](https://blogfiles.oss.fyz666.xyz/png/21357c20-1ba8-47d3-aa1d-9e52d3f5a8f7.png)
 上面省略了一部分表单的内容，但容易发现，有一条内容明显与其他内容不同，就是这个_token。短期内多打几次卡，可以发现表单的_token不会发生变化，但重新登录以后，_token则会发生变化，很显然，它用于用户身份的标识，即告诉打卡平台的服务端这条打卡内容是来自哪个同学。既然_token出现在表单内容里，那大概率它就藏在网页的表单当中，找了一下，发现还真有：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8db1ca38cdca670755d8a1cfc5ca12ec.png)
+![](https://blogfiles.oss.fyz666.xyz/png/82c3df5e-2df9-4cb4-9098-ba1a3ee9e440.png)
 那么身份标识的问题就解决了，顺便我们也把打卡的过程研究了一遍，其实就是提交这么一个表单到`https://weixine.ustc.edu.cn/2020/daliy_report`。
 
 
@@ -193,7 +193,7 @@ def _check_success(self, response):
 
 这是由于：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/209055bc68f0c9161caecb933c74de83.png)
+![](https://blogfiles.oss.fyz666.xyz/png/bbcb6177-6676-46b0-987c-d33b77055361.png)
 综上，我们已经完成了一个健康打卡的脚本，同理也可以实现每周的出校报备，完整的代码见我的GitHub项目：
 
 {%link USTC-Auto-Health-Report,GitHub,https://github.com/windshadow233/USTC-Auto-Health-Report %}

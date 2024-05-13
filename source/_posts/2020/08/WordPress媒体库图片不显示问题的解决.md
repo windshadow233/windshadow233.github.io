@@ -17,7 +17,7 @@ disableNunjucks: true
 
 后来我打开媒体库，发现所有媒体图片都无法显示，而显示成一张默认图片：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2db6a9e6cd49d2429668ce40e0dee762.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5cfd4ad7-66e8-4f90-9647-e21f59ccc642.png)
 不过原图片并没有删掉，通过图片链接访问完全没有问题。
 
 

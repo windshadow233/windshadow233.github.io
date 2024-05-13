@@ -4,7 +4,7 @@ id: 9235
 date: 2024-02-02 15:11:27
 categories: [瞎捣鼓经历]
 tags: ['Bitwarden', 'Docker']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3544de41b963dcab61e6a72495d90a80.png
+cover: https://blogfiles.oss.fyz666.xyz/png/84f9ac75-6609-487a-9190-8b45a38064df.png
 disableNunjucks: false
 swiper_index: 1
 description: 自部署一个密码管理平台
@@ -41,7 +41,7 @@ description: 自部署一个密码管理平台
 
 事实上这样的软件有非常之多，例如比较有名的1Password。我这里选择了一款名为Bitwarden的软件，原因是它免费、开源且可自部署<s>（还不是因为开不起1Password的会员）</s>，这篇文章就用来记录一下部署的过程。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3544de41b963dcab61e6a72495d90a80.png)
+![](https://blogfiles.oss.fyz666.xyz/png/84f9ac75-6609-487a-9190-8b45a38064df.png)
 ## 部署Bitwarden
 
 项目的GitHub地址如下：

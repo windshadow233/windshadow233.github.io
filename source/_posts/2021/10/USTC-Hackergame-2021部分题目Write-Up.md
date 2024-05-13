@@ -7,14 +7,14 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2021
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a11b54aeb91b440d2f3cbf7889cdb767.png
+cover: https://blogfiles.oss.fyz666.xyz/png/735d7f0e-3060-42de-8196-de620e7b48e9.png
 disableNunjucks: false
 mathjax: true
 ---
 
 USTC Hackergame 2021结束了，这里从一个非科班选手的角度写一下部分题的解题思路与过程。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6fa889df6c7b73bdeaa45da34c9b0976.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c9c452d4-063e-4693-8d11-eed32b35683b.png)
 
 
 {% link 本次比赛的官方存档,GitHub,https://github.com/USTC-Hackergame/hackergame2021-writeups %}
@@ -33,7 +33,7 @@ USTC Hackergame 2021结束了，这里从一个非科班选手的角度写一下
 {% endnote %}
 {% endhideToggle %}
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a11b54aeb91b440d2f3cbf7889cdb767.png)
+![](https://blogfiles.oss.fyz666.xyz/png/735d7f0e-3060-42de-8196-de620e7b48e9.png)
 签到题还是一样简单，打开页面显示一个时间为：1970-01-01 08:00:00 +08:00点一下Next，时间多了一秒，同时注意到url多了一个参数：/?page=1。结合题意知道只要访问/?page=当前的时间戳，即可拿到flag。调用Python的time库的time函数即可获取当前的时间戳，取整放到url参数中即可。
 
 
@@ -69,7 +69,7 @@ flag{HappyHacking2021-29decda8a3}
 原始音频：
 
 
-<audio controls="" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/mp3/fe4de991e844d56306075dd9c50c37a2.mp3"></audio>
+<audio controls="" src="https://blogfiles.oss.fyz666.xyz/mp3/93035cb2-3782-4c54-9ad0-4509844a366e.mp3"></audio>
 
 {% endnote %}
 {% endhideToggle %}
@@ -94,7 +94,7 @@ ffmpeg -i flag.mp3 -filter_complex "asetrate=48000*2^(-12/12),atempo=0.5" output
 通过此命令转成output.mp3，然后可轻松听出每一个单词（比高中听力简单多了），通过前面维基百科查到的对应表做一个转换，即可拿到flag。转换后的音频如下：
 
 
-<audio controls="" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/mp3/96e8d715c9d9145bdc25a0b8191847a2.mp3"></audio>
+<audio controls="" src="https://blogfiles.oss.fyz666.xyz/mp3/122873da-adbe-4737-a6e1-582e0accb6f6.mp3"></audio>
 
 
 flag{phoneticab}
@@ -139,7 +139,7 @@ flag{phoneticab}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2104c43d5c212736f8357389618b5936.png)
+![](https://blogfiles.oss.fyz666.xyz/png/58316fb7-b8fd-487e-9549-fa35891c0702.png)
 得到答案为13。
 
 
@@ -147,7 +147,7 @@ flag{phoneticab}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9ef191d5b6b1a8c53f2b64a19097d5f7.png)
+![](https://blogfiles.oss.fyz666.xyz/png/062aab35-0a57-4594-abcd-1310d1347639.png)
 第2、3题直接去[LUG社团的网站](https://lug.ustc.edu.cn/)搜会更容易搜到结果，不再细说。
 
 
@@ -214,7 +214,7 @@ HQ：你这瓜要是刚好 20 斤吗我肯定要啊。那它要是没有怎么�
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c07677e053bb7b60b99b058cccf71a3.png)
+![](https://blogfiles.oss.fyz666.xyz/png/42bac4d1-de54-48fe-8a7e-05c593b3bf44.png)
 掐指一算，发现20不是3的倍数，因此直接称肯定不行。
 
 
@@ -225,16 +225,16 @@ HQ：你这瓜要是刚好 20 斤吗我肯定要啊。那它要是没有怎么�
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b59d79debaae86a1b8fe4d06a02a6461.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ee2196fb-fe80-4577-9f0e-5e6d4897f6a3.png)
 说明这题可以溢出，然后看一下溢出的数$9223372036854775808（2^{63}）$模3的余数，发现是余2的，而20也是模3余2，因此只需要再溢出一次，即可成功搞到模3余0的情况。但在第二次溢出之前，需要先把瓜加回0附近，先放 $9223372036854775808 // 9 = 1024819115206086200$ 个9斤的：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d265f8f73640df43b82287fc503d6384.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4c705bed-b12f-483c-8266-11ef01bfc1d7.png)
 再放1个9斤的：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/63a54d974086ee4d05cde66b7af9bc04.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5c2685ba-7a03-4a9b-95fa-8f1536f1e52a.png)
 再和前面一模一样重新操作一次，可以拿到2斤的瓜，最后3个6斤收尾。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/04050713180d205dd06cdb90d15594eb.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5c612067-892b-4877-be54-2fc24cc3a44b.png)
 
 
 ---
@@ -256,7 +256,7 @@ HQ：你这瓜要是刚好 20 斤吗我肯定要啊。那它要是没有怎么�
 {% endhideToggle %}
 题目提示“终端”以及“失去重要成分”，拿到文件一看发现内容如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8eb324cd21dfda5448e5c39be037e602.png)
+![](https://blogfiles.oss.fyz666.xyz/png/253413dd-fb78-41c7-bb80-a8144374e7b0.png)
 这种编码好像曾在哪里见过（美化PS1环境变量的时候抄过别人写的），经过一番查找，发现是[ANSI escape codes](https://notes.burke.libbey.me/ansi-escape-codes/)。
 
 
@@ -277,7 +277,7 @@ sh 1.sh
 ```
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ce8de41c7489f14f887a65151500dbab.png)
+![](https://blogfiles.oss.fyz666.xyz/png/efe50d5a-4049-4db8-9908-6f2f023e538d.png)
 
 
 ---
@@ -316,10 +316,10 @@ sh 1.sh
 
 最后我的解法是，把图片中KFC右上角那栋彩色的建筑送进百度识图，也能发现其位于秦皇岛（因为这建筑造型太独特了），然后，打开百度地图的卫星视图，在秦皇岛海岸线附近找沙滩以及图中比较明显的停车场，最后找到这样一处地方：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/bb248ab252e33efb8a335af2097df111.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c5832617-a4fd-41d7-8438-cc5f45194ca2.png)
 停车场和沙滩的位置、形状与图片中的一模一样，推测就是这里，然后通过百度街景查看细节：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/7ce643daed238555a9d7f3efc6c4ac8d.webp)
+![](https://blogfiles.oss.fyz666.xyz/webp/2df3aa35-eb9b-4f2a-8379-beb902b7e73c.webp)
 这个停车场旁边的建筑好像就是题目里说的KFC分店左侧的建筑，只不过拍街景的时候KFC还没建起来。。。因此第5题答案即为“海豚馆”。
 
 
@@ -359,13 +359,13 @@ sh 1.sh
 
 题目界面如下，需要在10分钟以内收集到若干个好友助力，方可获得flag，虽然一开始就送了你半个flag，但和某多多一样，不是那么容易集齐的。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e374095e567da7624672f245f60c9691.png)
+![](https://blogfiles.oss.fyz666.xyz/png/50a7b32e-662a-48dc-b82f-94d6d9f90ee3.png)
 点击给出的分享链接，发现只有一个按钮，点一下则显示：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/dab12cc658a6178ec65685be1e5e2d73.png)
+![](https://blogfiles.oss.fyz666.xyz/png/08655a78-6c2c-4d7d-b214-6f7538435205.png)
 打开f12，发现该按钮的请求表单为：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4fc7f88b55f8399ff0ab3cb1f8ce2acb.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5677674f-2367-4571-a65d-02a7f47e8d83.png)
 name为ip的input被藏了起来，直接通过Python构造请求，随便赋值一个ip地址，提交请求发现他还会检验后端ip地址是否和前端传过去的匹配，如不相同会报“疑似伪造地址”。
 
 
@@ -407,12 +407,12 @@ for i in range(256):
 {% endhideToggle %}
 又是一个没听说过的东西，先打开题目网站，通过guest帐号登录：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/01d63a7ab300d935fe33c6b08ba03c71.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f11c5f3a-8b24-4d2a-949e-d077b4cb8716.png)
 打开f12刷新页面，发现一条名为graphql的请求：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d470375e2b855c4620a8444e07c0445c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/42eb630a-68a0-4641-880a-ec127d833461.png)
 通过简单的学习和分析可知这种请求的格式大概长这样：
 
 ```plaintext
@@ -446,13 +446,13 @@ for i in range(256):
 
 分析一下拿到的数据即可。不过我当时懒得去分析这些数据，而是下了一个[软件](https://github.com/skevy/graphiql-app/releases/)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5c41b01c837e2efffa11341c3aa445e3.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3762b7ec-b20b-4bb7-b6cf-928063ec112c.png)
 在右侧，该软件直接为我们解析了这个接口所有的查询接口以及字段名，依次点击user、GUser：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d5c9d4b105feba9d49cb6617d0dce3ce.png)
+![](https://blogfiles.oss.fyz666.xyz/png/e56dcd93-2907-447f-8005-bf79f488bdf3.png)
 发现有个privateEmail字段。因为guest的id为2，猜测admin的id是1。因此，只需构造如下的查询：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/809f36a4be6376ae3a55bae9f582beef.png)
+![](https://blogfiles.oss.fyz666.xyz/png/483cf06b-c399-4938-8cf7-fe1c8b2635c8.png)
 即可拿到flag。
 
 
@@ -506,7 +506,7 @@ $$(p-1)! \equiv -1\ (mod\ p)$$
 
 那么只要验证一下x是不是素数：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/bddb62f36e0d29fa08e8f8c60adecf1b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/15be9f18-ce21-455e-9d56-0110cd69d875.png)
 果然是素数，那么就可以通过Wilson定理逆推了，代码如下：
 
 ```python
@@ -913,7 +913,7 @@ for item in list_:
 ```
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/35643ae21486b54ace35ce1248eb76c8.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c8cd0126-9ea2-4add-8bc3-0c77f440ef3c.png)
 
 
 ---
@@ -934,7 +934,7 @@ flag{Rev3sEtiM^5}
 
 于是你开始研究起来这个二维码。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/bmp/052790ec78fcec883208aa8069a5b30a.bmp)
+![](https://blogfiles.oss.fyz666.xyz/bmp/5e328a71-054a-43e9-95ab-97f8e722af30.bmp)
 
 [本题附件](https://github.com/USTC-Hackergame/hackergame2021-writeups/raw/master/official/%E9%A9%AC%E8%B5%9B%E5%85%8B/src/mosaic.zip)
 
@@ -955,7 +955,7 @@ N = 20              # 马赛克块的数量（共N*N块）
 BOX_SIZE = 23       # 每个马赛克块的大小（边长，单位为像素）
 PIXEL_SIZE = 11     # 二维码每个块的大小（边长，单位为像素）
 
-img = Image.open('https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/bmp/052790ec78fcec883208aa8069a5b30a.bmp').convert('L')
+img = Image.open('https://blogfiles.oss.fyz666.xyz/bmp/5e328a71-054a-43e9-95ab-97f8e722af30.bmp').convert('L')
 img = np.array(img)
 
 def fill(x, y, strict=True):
@@ -1021,7 +1021,7 @@ while 1:
 
 虽然通过while 1不断尝试，但感觉几乎每次都能跑出来flag，很少有识别不出来的情况：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b1d8a72faedef0842e9a468ad4055f7e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/633e7d7f-ad55-412e-88af-33699c980b50.png)
 
 
 ---
@@ -1193,7 +1193,7 @@ flag{McWebRE_inMlnCrA1t_3a5y_1cIuop9i}
 这一刻我才知道，耳机音响也就图一乐，真听音乐还得靠眼睛。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/gif/6c37ab71466e3181698469ee55538787.gif)
+![](https://blogfiles.oss.fyz666.xyz/gif/fc755024-d44d-4c1b-a531-3572252b376c.gif)
 （注意：flag 花括号内是一个 12 位整数，由 0-9 数位组成，没有其它字符。）
 
 {% endnote %}
@@ -1329,7 +1329,7 @@ sf.write('flag.wav', y, sample_rate)
 最后听一下flag.wav即可拿到flag。
 
 
-<audio controls="" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/wav/f22c38eb08aba5ad48038ab42e156b9d.wav"></audio>
+<audio controls="" src="https://blogfiles.oss.fyz666.xyz/wav/36fef6ae-14d4-433f-9a28-08fb6f0e1471.wav"></audio>
 
 
 flag{634971243582}

@@ -7,7 +7,7 @@ categories:
 tags:
   - GeekGame
   - GeekGame 3rd
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6037d68d85c447558f4e9177d8771a28.png
+cover: https://blogfiles.oss.fyz666.xyz/png/0e15caa6-a325-4e6b-9a1c-cfbf97a52d93.png
 disableNunjucks: false
 ---
 
@@ -26,7 +26,7 @@ disableNunjucks: false
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/928c7c1ca58e4bd39bf5de52311d7363.png)
+![](https://blogfiles.oss.fyz666.xyz/png/385ef116-1207-4272-9fcc-18c38ec18fe6.png)
 ## 小北问答!!!!!
 
 
@@ -89,7 +89,7 @@ Z 公司有很多服务器。出于安全考虑，这些服务器不能直接通
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e86c3dd203523abca596c7d56c7b4f21.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0b185f9e-bc2b-414b-b690-2ba14875d607.png)
 后来看别的大佬的题解发现原来我在windows系统上用了好久的MobaXterm也支持Zmodem协议。在WSL里用nc连接一下服务器，输入token后在终端区域右键选择“Receiving file using Z-modem”即可。好家伙，这就卸载SecureCRT。
 
 
@@ -100,7 +100,7 @@ Z 公司有很多服务器。出于安全考虑，这些服务器不能直接通
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/92ea592a1fd5eda53574cad93a151e01.png)
+![](https://blogfiles.oss.fyz666.xyz/png/d58eb6c5-f69f-4f87-8d6f-dd2900a4d148.png)
 并且目标地址都是同一个ip，我将这些数据连起来以后转成字节，在其中找到了一些信息：例如上图第一个长度125的数据包，对应的字节为：`\*\x18C\x18D\x18@\x18@\x18@\x18@\xddQ\xa23flag.jpg\x18@16096 14505333515 100777 0 1 16096\x18@\x18k\xd6\x18\xcb3f\x11`
 
 
@@ -117,7 +117,7 @@ Z 公司有很多服务器。出于安全考虑，这些服务器不能直接通
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3cbf769fddd127dd1410765740dc2b5c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3755dcbb-e11e-447a-9e1e-de7a512f1ddf.png)
 不过还是能连蒙带猜地读出其中的flag：
 
 
@@ -188,7 +188,7 @@ def zmodem_decode(data):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9e0eb4bcf90f40a5bf39d222c78f662f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c5dad6ad-0c7f-4c2e-91f4-91cab480ab9c.png)
 ## 基本功
 {% hideToggle 查看题面 %}
 {% note primary simple %}
@@ -256,7 +256,7 @@ flag{INSECURE_ZIP_CRYPTO_FROM_SOME_KNOWN_FILE_CONTENT}
 
 我万万没想到两个题都是用明文攻击来做的（不过也可以理解，毕竟明文攻击也有“进阶版”），这题的压缩包里面只有一个文件：flag2.pcapng。但通过查资料，可以发现pcapng文件的头部拥有一些比较固定的信息：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3db3b9b801b35128676b823cbb00acfd.png)
+![](https://blogfiles.oss.fyz666.xyz/png/65a5ad15-91de-456d-805f-0c342e440098.png)
 从第7个字节开始，一直到下一行的这些ffff，都是固定不变的，这些连续字节的长度为18，已经够了。因此我们将这些字节写入一个pcap_plain的文件，用它作为明文来解密钥。
 
 
@@ -291,7 +291,7 @@ bkcrack -C challenge_2.zip -k 54268f9e c35359b0 84f5bded -c flag2.pcapng -d flag
 
 顺利拿到流量包。将其用wireshark打开，也懒得去分析流量了，直接试了一下导出HTTP对象，喜提flag2：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/55a61cbc4b89cdf69f7f01ecd8b98713.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7cbc5947-5891-40dc-bafd-54262ee5f2b4.png)
 flag{inSecUrE-zIp-cRYptO-eVeN-wIthOuT-KNOWN-fiLe-CoNtENt}
 
 ## Emoji Wordle
@@ -389,10 +389,10 @@ Level2和Level3是第二阶段才做的，说起来本来这题我不需要看�
 
 这种Web题拿到就会去看网络请求头，看能不能挖出点啥，然后看到Level2的Cookie非常奇怪：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0011b5add349e2eb962649e196133a23.png)
+![](https://blogfiles.oss.fyz666.xyz/png/e90c2834-80d7-4e89-92c6-c4829b5de9e3.png)
 搜了一下PLAY_SESSION，搜到一个[Play Framework的网站](https://www.playframework.com/documentation/2.8.x/SettingsSession)，里面说明了这串字符串是通过 [JSON Web Token](https://tools.ietf.org/html/rfc7519)编码的。于是随便找了一个JWT在线解码：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/73afeacba5f3bbdc47aa949d5762968f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/04c74e54-95ab-4556-bbfd-9901fd391771.png)
 flag{d3c0d1n9_jwT_15_345y}
 
 这样看第二题解起来似乎比第一题还快（x
@@ -403,7 +403,7 @@ flag{d3c0d1n9_jwT_15_345y}
 
 第三题的Cookie就要短很多了，也少了上一题那种有明显规律的字符，不过既然解上一题时查到了JWT，那么也拿来解密一下看看有哪些内容：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/bf9fdb9d6ad46bb9d84012fe95f6393e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/77056be9-707a-45af-83a6-79933a81544c.png)
 诶，发现有一个神奇的seed，以及剩余的猜测次数。看到seed就想起随机数，可能和题目答案有关，那我如果每次都带着同一个cookie去猜，会不会答案和剩余次数都不会发生变化呢？带着这个猜测我去试了一下，发现果然如此。
 
 

@@ -11,7 +11,7 @@
 - GitHub 镜像站：https://gh.fyz666.xyz/
 - Cloudflare 镜像站: https://cf.fyz666.xyz/
 - Vercel 镜像站: https://vc.fyz666.xyz/
-- Netlify 镜像站: https://nf.fyz666.xyz/
+- Netlify 镜像站: https://ntl.fyz666.xyz/
 - Render 镜像站: https://rd.fyz666.xyz/
 - Zeabur 镜像站: https://zb.fyz666.xyz/
 

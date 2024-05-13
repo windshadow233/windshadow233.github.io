@@ -5,14 +5,14 @@ date: 2022-05-10 05:18:49
 categories:
   - [博客相关]
 tags: ['Nginx', 'SSL', 'WordPress', '反向代理']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/c64f1527b90df9f425136a4211b8c40f.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/a4c5e5ff-ff62-45dd-ab3e-aca4ac5032eb.jpg
 disableNunjucks: true
 ---
 
 此举是为了将原先部署在443端口的WordPress网站使用反向代理的方式重新部署。部署反代的过程踩了不少的坑，主要还是因为WordPress作为动态博客框架所具有的特殊机制。（说起这个就要后悔当时为啥没搞个静态博客了）
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/c64f1527b90df9f425136a4211b8c40f.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/a4c5e5ff-ff62-45dd-ab3e-aca4ac5032eb.jpg)
 首先介绍一下环境，我的WordPress网站运行在docker容器下，由Apache服务启动，原先的配置是docker容器内的Apache配置了SSL证书，并将容器443端口映射至宿主机。
 
 

@@ -4,7 +4,7 @@ id: 3612
 date: 2020-08-05 13:29:37
 categories: [学习笔记]
 tags: ['Jupyter Notebook']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3af7d0738bf082486fb6bb8a6cfeb2d9.png
+cover: https://blogfiles.oss.fyz666.xyz/png/60acf07e-f3fd-48c9-a4d5-b374938660d3.png
 disableNunjucks: true
 ---
 
@@ -12,7 +12,7 @@ disableNunjucks: true
 
 Jupyter Notebook是一款基于网页的交互式Python IDE，当然如今随着它的发展，也逐渐支持R、PHP等其他编程语言，它是一款模块化的代码解释器，也就是可以将大段的代码模块化处理，分为多段运行。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3af7d0738bf082486fb6bb8a6cfeb2d9.png)
+![](https://blogfiles.oss.fyz666.xyz/png/60acf07e-f3fd-48c9-a4d5-b374938660d3.png)
 该IDE的交互性非常好，设想你在做数据处理、分析的时候，一般会希望马上看到结果，此时若在pycharm等常规解释器中，就不得不把所有的代码从头跑一遍，你还得在中间插入一些`print`来打印结果，非常之麻烦，但在jupyter中，在前面代码都已经运行过的基础上，可以直接运行当前段代码。基于这些特性，jupyter可能会适用于数据处理分析以及各种建模过程等场景，但不一定适合用于软件开发等流程比较丰富、整体性比较强的领域。
 
 

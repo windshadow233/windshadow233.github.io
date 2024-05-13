@@ -57,10 +57,10 @@ function j() {
 
 简单分析一下代码，就是把选到的座位的id直接加起来。两个订单的选座界面长这样（若有n个订单则会有n排座位）：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8b51eb674cbb8c697d1c278f10c2d515.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b407aa92-e5d0-4104-a8b8-0f6ddc814709.png)
 找到其中一个座位的html代码如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5a61c07862364b404cfa9bdc5684c2bb.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7421b6de-7f9d-4a37-b510-e749ed7c1c9a.png)
 根据这个id与前面的JS逻辑，就可以直接写出选座的逻辑了。举个例子，如果我选了第一排的A和第二排的B，那么`choose_seats`即是`1A2B`。
 
 

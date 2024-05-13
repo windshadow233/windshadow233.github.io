@@ -1,0 +1,1 @@
+这篇文章介绍了如何使用uWSGI和Nginx部署Django项目到服务器上。文中详细描述了安装Python、uWSGI、Nginx以及Django项目的依赖库的步骤，以及如何配置uWSGI和Nginx以实现Django项目的部署。

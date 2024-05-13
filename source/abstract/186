@@ -1,0 +1,1 @@
+这篇文章介绍了如何在国内部署ShareLaTeX服务，以解决访问国外ShareLaTeX服务时的响应缓慢问题。作者分享了作为Linux新手在搭建过程中遇到的问题和解决方案，包括使用阿里云服务器、安装Docker、配置Docker镜像源、拉取ShareLaTeX镜像、下载docker-compose.yml文件、运行docker-compose以及安装完整版的Texlive等步骤。此外，还涉及了配置中文环境与字体的详细过程。

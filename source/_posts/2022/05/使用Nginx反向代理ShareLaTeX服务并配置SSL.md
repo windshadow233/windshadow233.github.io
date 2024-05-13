@@ -4,7 +4,7 @@ id: 7689
 date: 2022-05-10 05:39:07
 categories: [瞎捣鼓经历]
 tags: ['Nginx', 'ShareLaTeX', 'SSL', '反向代理']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6dcb6b6f9c32bc7a8947a3884b36609c.png
+cover: https://blogfiles.oss.fyz666.xyz/png/9a884369-61fa-4494-9182-c42952475061.png
 disableNunjucks: true
 ---
 
@@ -51,5 +51,5 @@ proxy_set_header Connection "upgrade";
 
 最开始我并未加上这两条配置，然后在打开Latex项目时，出现了以下error：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6dcb6b6f9c32bc7a8947a3884b36609c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9a884369-61fa-4494-9182-c42952475061.png)
 但在十多秒后，又能够正常打开项目，经研究，我发现是Websocket连接报了400。原因可见[这篇文章](https://echizen.github.io/tech/2018/10-21-nginx-websocket)。加上那两个配置字段后，反向代理终于正常工作了。

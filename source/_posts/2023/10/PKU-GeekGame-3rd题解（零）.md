@@ -7,7 +7,7 @@ categories:
 tags:
   - GeekGame
   - GeekGame 3rd
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6037d68d85c447558f4e9177d8771a28.png
+cover: https://blogfiles.oss.fyz666.xyz/png/0e15caa6-a325-4e6b-9a1c-cfbf97a52d93.png
 disableNunjucks: false
 ---
 
@@ -15,7 +15,7 @@ disableNunjucks: false
 
 今年的比赛顺利取得总排名36/1012（通过签到题的人数），并且在一周的比赛时间内又学到了不少~~一年前可能学过但又忘了的~~东西，算是非常有收获。按老规矩，继续写篇题解记录一下本菜狗的解题过程。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/30bd5c8f05833f44452c5a3604cfacae.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f4541caf-8775-44ea-880d-48a0500e225e.png)
 
 
 {% link 本次比赛的官方存档,GitHub,https://github.com/PKU-GeekGame/geekgame-3rd %}
@@ -46,7 +46,7 @@ Web方面，首次做出了XSS的题，值得纪念（虽然是经过二阶段�
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/gif/c2b9835ab42600e2f859124d34935bf1.gif)
+![](https://blogfiles.oss.fyz666.xyz/gif/84f29c87-886a-4cda-aa4d-17be3ddb578f.gif)
 有一些体验不好的题：
 
 

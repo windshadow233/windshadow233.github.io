@@ -36,3 +36,5 @@ sudo apt install weixin
 ```
 
 即可安装微信！体验上佳，只是没表情包、朋友圈，如下：
+
+![f287cf086cb37f26fe6ea8145fee0202](https://blogfiles.oss.fyz666.xyz/png/2a57cd83-0480-4e6c-882a-7148a6c974ad.png)

@@ -4,7 +4,7 @@ id: 5719
 date: 2021-07-28 10:39:49
 categories: [机器学习]
 tags: ['Python', '反向传播', '神经网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c2106a552b32b7db6f2accaa2da6c5b7.png
+cover: https://blogfiles.oss.fyz666.xyz/png/2d8a895f-23b6-4a8b-80ef-523f618a22ef.png
 disableNunjucks: false
 mathjax: true
 ---
@@ -191,32 +191,32 @@ $$e=7\times 5=35$$
 需要注意的是，下面计算图中出现的两块“a”节点，事实上是同一个节点，这里将其分开是为了让计算图的结构更清晰。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/91276db19f0d37b3c1c1d6fe12385421.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5dc33678-490c-4c85-bc48-ea8e6d27c332.png)
 
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/98466586ef8bdc12b09eacd427d0af29.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0d56e7ab-03ea-4553-a5b8-a922f4e17360.png)
 
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1a043d088938c1b7b799ffc5fa3dea0f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/706c15a0-eddc-4738-ad95-ba4f52836fc8.png)
 
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d4a80ce3289c8bbd9c3f37bf54e2ad85.png)
+![](https://blogfiles.oss.fyz666.xyz/png/e69583ed-15a0-4d6c-9734-86139653e4cc.png)
 
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e5e2bbd3e2a05842051e21b8a218d17b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0940398d-94e7-4be9-b2e1-97beecb88da5.png)
 
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c2106a552b32b7db6f2accaa2da6c5b7.png)
+![](https://blogfiles.oss.fyz666.xyz/png/2d8a895f-23b6-4a8b-80ef-523f618a22ef.png)
 
 
 ---

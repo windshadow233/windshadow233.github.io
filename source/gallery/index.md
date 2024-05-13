@@ -6,6 +6,6 @@ aside: false
 ---
 
 <div class="gallery-group-main">
-{% galleryGroup 旅行相册 一些外出旅游时拍摄的照片 /gallery/travel/ https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/3967a5f81f04965c826f8dcf1c910612.webp %}
-{% galleryGroup 你科校内随拍 在科大随手拍的一些照片 /gallery/ustc/ https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/abc6f4df8e93a8ebef4a12af3fdd27c8.webp %}
+{% galleryGroup 旅行相册 一些外出旅游时拍摄的照片 /gallery/travel/ https://blogfiles.oss.fyz666.xyz/webp/a4ddec62-1cb6-4fbf-9972-5a96aa3143c3.webp %}
+{% galleryGroup 你科校内随拍 在科大随手拍的一些照片 /gallery/ustc/ https://blogfiles.oss.fyz666.xyz/webp/999323a9-d5d4-4d8d-85a7-6e9e924c02f8.webp %}
 </div>

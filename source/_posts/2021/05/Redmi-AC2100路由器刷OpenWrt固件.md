@@ -102,9 +102,7 @@ nvram commit
 最后reboot重启系统。等蓝色指示灯再一次亮起，则可以再次通过SSH登录，不过这一次ip地址变成了192.168.1.1，而且没有设定密码。刷机成功的情形：SSH登录时的欢迎信息变成了如下：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/3bdb9a1c40c87a292c48c60835f600a4.jpg)访问`http://192.168.1.1`，发现什么都没有，这是因为该openwrt固件默认不带web操作界面，路由器WAN口接上网线，成功上网后，通过以下两句命令进行安装，若安装失败，请百度“openwrt换源”。
-
-
+![](https://blogfiles.oss.fyz666.xyz/jpg/46e3965b-3d7f-4786-b3f2-4577205be4e9.jpg)访问`http://192.168.1.1`，发现什么都没有，这是因为该openwrt固件默认不带web操作界面，路由器WAN口接上网线，成功上网后，通过以下两句命令进行安装，若安装失败，请百度“openwrt换源”。
 
 ```shell
 opkg update

@@ -7,7 +7,7 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2023
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/bb1e044b3388733daabb1aaf5cd6ac08.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/6f00f091-9b5b-42c9-aebd-6635e13518a3.jpg
 disableNunjucks: false
 ---
 
@@ -653,7 +653,7 @@ X最后两个token是`71、10735`（即hacker），并且模型在X上输出的l
 
 {% endnote %}
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/95d5e050d38498b32fb84209a5e8366a.png)
+![](https://blogfiles.oss.fyz666.xyz/png/77b1c894-1c2d-4281-8220-abbe592d0e30.png)
 [三、四题的代码](https://gist.github.com/windshadow233/998b9b6a7765c911e77a0de239f99749#file-solve_flag3-py)
 
 

@@ -4,7 +4,7 @@ id: 358
 date: 2020-07-14 16:00:00
 categories: [学习笔记]
 tags: ['Django', 'Linux', 'Nginx', 'uWSGI']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7f7518210d36d2b5be0725bf4904c6e6.png
+cover: https://blogfiles.oss.fyz666.xyz/png/37038f28-cd6b-4214-832f-40a6b0dc7e31.png
 disableNunjucks: true
 ---
 
@@ -23,7 +23,7 @@ Django项目在本地开发完成后，我们还需要将它部署到服务器�
 
 uWSGI、Nginx、django项目与客户端的交互过程如下图所示：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7f7518210d36d2b5be0725bf4904c6e6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/37038f28-cd6b-4214-832f-40a6b0dc7e31.png)
 ## 安装软件
 
 

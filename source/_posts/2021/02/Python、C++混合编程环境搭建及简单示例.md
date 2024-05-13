@@ -4,7 +4,7 @@ id: 5253
 date: 2021-02-27 12:54:34
 categories: [瞎捣鼓经历]
 tags: ['Boost', 'C++', 'Python']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/42c4921136f957fddf4bc110dada1982.png
+cover: https://blogfiles.oss.fyz666.xyz/png/4cf9449b-d10b-4332-beed-9b621e593385.png
 disableNunjucks: false
 ---
 
@@ -160,4 +160,4 @@ makefile:13: *** missing separator (did you mean TAB instead of 8 spaces?).
 将hello.so移到其他无boost python环境的Linux系统下，安装好与之前相同版本的python和numpy，尝试导入与使用，若未得到以下结果，则~~意味着前面所有的努力都白费了~~需要再仔细看一下各项路径的配置及各种环境的版本！
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ac47ceea3b21d6d8c209c8ee670aeeaf.png)另外Boost Python库同样支持在C++程序中调用python脚本，鉴于暂时无这方面的需求，我并没有尝试。
+![](https://blogfiles.oss.fyz666.xyz/png/68e2d32a-d842-4fdc-9f4d-4c28a3e9c247.png)另外Boost Python库同样支持在C++程序中调用python脚本，鉴于暂时无这方面的需求，我并没有尝试。

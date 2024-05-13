@@ -19,12 +19,12 @@ disableNunjucks: false
 
 本文相关代码见[此文件](https://github.com/windshadow233/12306/blob/main/bot/login.py)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/606196b8c85cfadf7417383c53da233d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3103481f-2baa-4f77-9beb-a6e48523fc7f.png)
 ## 12306的登录方式
 
 12306网页端支持以上两种登录方式，点击立即登录，出现以下验证信息：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5c9235b718149a4a8c493f8164f7a6d5.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8d4a2ffc-77d9-4a25-b61d-7a6b438e4205.png)
 第一个滑块，感觉破解起来难度很大，先放一放，还有个短信验证，但经过我的尝试，该验证方式有每日次数限制，感觉不太爽，最舒服的登录方式当属扫二维码登录，因此我研究了一下二维码登录12306的机制。
 
 ## 两种登录的途径
@@ -36,7 +36,7 @@ disableNunjucks: false
 
 打开浏览器的f12开发者界面进行抓包，然后点击二维码登录，在网络正常的情况下，可以成功抓到一条名为`create-qr64`的数据包，明显就是二维码的来源，打开看一下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4560e8dc17b65b4a8e9a31acfb4d4f73.png)
+![](https://blogfiles.oss.fyz666.xyz/png/1cc143e9-a92f-496a-89ba-8f08c880c428.png)
 可见二维码图片是以base64编码方式发送到客户端的，同时发送过来的还有一个重要的参数：`uuid`，作为临时凭证唯一标识了每一个二维码。
 
 
@@ -60,7 +60,7 @@ disableNunjucks: false
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/af3a80da3caed0efac47845213dbfae6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b5d6c50c-0f09-4d52-9608-54a15ee1e56e.png)
 `uuid`参数值就是前面生成二维码时拿到的`uuid`（这里图片里的`uuid`和前面的不一样，是因为我刷新过二维码了)另外，还出现了两个未曾见过的东西，`RAIL_DEVICEID`和`RAIL_EXPIRATION`。最开始，我无视这两个参数对这个登录流程进行了尝试，但发现后面的请求无法正常进行下去，因此这两个参数好像比较重要，我们分析一下来源。
 
 **RAIL_DEVICEID的获取方法**
@@ -68,10 +68,10 @@ disableNunjucks: false
 
 直接搜索`RAIL_DEVICEID`的值，我从茫茫请求中找到了它的来源：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/60b4a3977694410dc363c0b6bd1fdeec.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7589d690-d6d3-4023-9b43-447b6659e036.png)
 这个请求的参数非常之长：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/52f2c433a20cb4e5c801a05abffbc125.png)
+![](https://blogfiles.oss.fyz666.xyz/png/2d99f1a2-bd6c-4908-97a0-f7796b725424.png)
 经过我的分析，参数的生成代码位于[这个文件](https://kyfw.12306.cn/otn/HttpZF/GetJS)
 
 
@@ -110,7 +110,7 @@ disableNunjucks: false
 
 也是一个固定参数，该请求的response会为会话设置一些新的Cookie：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3b18eb4399a4ed6cd0560c636ce3e7e6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/af1db34c-61e5-47be-88f9-29775f023fbd.png)
 另外，这个请求将会返回一条json类型的数据，其中包含一条名为`newapptk`的字段，将其取出来，在接下来的请求中会用到。
 
 
@@ -149,7 +149,7 @@ disableNunjucks: false
 
 需要关注的内容如下：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/f0d01866c7dba6f4a741a03d944d29df.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4ea98c1f-3668-4be8-ac7f-b9817d0cfadf.png)
 我们发现，密码字段是这样生成的：
 
 ```raw

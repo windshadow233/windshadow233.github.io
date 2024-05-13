@@ -4,7 +4,7 @@ id: 1508
 date: 2020-07-13 06:24:44
 categories: [学习笔记]
 tags: ['Django', 'Python']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7ce750f21a1a949f693f82901be584a4.png
+cover: https://blogfiles.oss.fyz666.xyz/png/74ed1633-65a1-49b3-ab82-111ecca3fa28.png
 disableNunjucks: true
 ---
 

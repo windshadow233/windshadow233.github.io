@@ -4,7 +4,7 @@ id: 8472
 date: 2023-09-16 12:13:39
 categories: [机器学习]
 tags: ['Mahjong AI', 'Suphx']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/29e543a6dc692da86719057ab0006738.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp
 disableNunjucks: false
 ---
 

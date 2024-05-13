@@ -3,11 +3,11 @@
   link_list:
     - name: PseudoProgrammer
       link: http://zyt.plus/
-      avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/4993693ab905005d4272925bd44692ee.jpg
+      avatar: https://blogfiles.oss.fyz666.xyz/jpg/14381d13-8a25-4e32-998b-9401ca6b50ef.jpg
       descr: An AI Algorithm Engineer working in HPC-AI Tech.
     - name: Randwind's Blog
       link: https://randwind.com/
-      avatar: https://randwind.com/favicon.ico
+      avatar: https://cdn.randwind.com/favicon-32x32.png
       descr: 做自由的风
 
 - class_name: 一些大佬
@@ -39,7 +39,7 @@
       descr: Walking on the Time Axis
     - name: mcfx
       link: https://mcfx.us/
-      avatar: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/svg/a3b6ec9078f550f7f952f710c866a168.svg
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/50925553-09bc-418b-9e7d-c0b710927ff5.svg
       descr: 打Hackergame发现的清华巨佬
     - name: Mivik
       link: https://mivik.moe/

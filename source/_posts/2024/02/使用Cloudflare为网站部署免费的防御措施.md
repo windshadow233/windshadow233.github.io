@@ -5,7 +5,7 @@ date: 2024-02-21 15:37:32
 categories:
   - [博客相关]
 tags: ['Cloudflare', '计算机网络', '防火墙']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b7bea3941069ffed98f5e68ca6432b86.png
+cover: https://blogfiles.oss.fyz666.xyz/png/b20b5a0b-3f88-4f02-869c-7084db3f6d67.png
 disableNunjucks: true
 ---
 
@@ -62,22 +62,22 @@ disableNunjucks: true
 
 说起网站防御，那必不能不提Cloudflare，其提供的free plan对于我这样的个人建站者而言，已经足够好用了。不过由于是第一次使用这类工具，缺少一些经验，因此花了一点时间，下面把部署过程记录一下。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b7bea3941069ffed98f5e68ca6432b86.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b20b5a0b-3f88-4f02-869c-7084db3f6d67.png)
 ## DNS托管
 
 
 首先注册一个Cloudflare账号，选择free plan（对于小网站而言已经足够）。第一步需要将DNS服务器设置为Cloudflare提供的两个名称服务器：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/26e068616a73723e5bffe8dbde599c9d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8a510296-a59e-4685-8bf0-3679be2190fd.png)
 该步骤需要前往之前的域名DNS服务提供商进行更改，更改成功后，需要将原先的所有DNS记录都托管到Cloudflare的DNS解析服务下。更改DNS名称服务器及解析这一步需要等上一段时间，激活成功后，Cloudflare会发一封邮件到注册邮箱：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0972b39a2668f07cb4d8ad6e9ea49b16.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5b8902a7-0bae-4ab2-8f76-69bdfba17092.png)
 ## 设置CDN
 
 
 DNS解析完成后，此时我们仅仅使用了Cloudflare的DNS解析功能，还没有为站点激活防御措施。为了激活该功能，我们需要为需要的二级域名开启代理状态，如下图为本站域名的DNS配置：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/05fa0bfc01c2f2a6fbc63e5b0a91b9f9.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4068d7f5-8251-433d-a6b5-e13ada100d64.png)
 ## 设置SSL/TLS
 
 
@@ -128,7 +128,7 @@ DNS解析完成后，此时我们仅仅使用了Cloudflare的DNS解析功能，�
 
 创建一个风险IP列表，利用Cloudflare提供的威胁分数和这个IP列表来判断IP的危险度，由于列表过大，需要先通过「管理账户->配置->列表」创建一个IP列表，为方便起见，可以从下面提供的CSV文件下载该列表并导入。
 
-<a target="_blank" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/csv/5224de023a5d29f7e7a649a40a23aacf.csv" download="badip.csv">badip.csv</a>
+<a target="_blank" href="https://blogfiles.oss.fyz666.xyz/csv/59def70e-ba5a-424b-b11a-c1c1d2cf1a27.csv" download="badip.csv">badip.csv</a>
 
 然后添加下面规则：
 
@@ -160,5 +160,5 @@ DNS解析完成后，此时我们仅仅使用了Cloudflare的DNS解析功能，�
 
 「安全性→DDoS→HTTP DDoS 攻击防护」：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/26e293e9f7522a09d047c5c79a54879c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4f36dcc9-fbf7-4c75-9f72-a79759e5d8f3.png)
 「安全性→自动程序」：打开自动程序攻击模式。

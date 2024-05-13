@@ -1,7 +1,8 @@
 node_modules/
-_posts-backup/
+*-backup/
 public/
 /gallery/
 /images/
 /db.json
 /*.code-workspace
+ignores

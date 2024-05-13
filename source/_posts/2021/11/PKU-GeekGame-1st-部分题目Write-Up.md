@@ -7,7 +7,7 @@ categories:
 tags:
   - GeekGame
   - GeekGame 1st
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/7d8f510cb6abfb97b399a0624cf86a01.jpeg
+cover: https://blogfiles.oss.fyz666.xyz/jpeg/259b316a-8dcd-489d-9193-7b14e14adda6.jpeg
 disableNunjucks: false
 mathjax: true
 ---
@@ -30,7 +30,7 @@ Hackergame的Web签到题做多了，导致拿到一个Misc的签到题有点不
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/f623a6dfe47cdd59fef9964e0bab1758.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b2d3e5d7-ef4a-49dd-b938-a5254a3cad85.png)
 似乎说后面一串奇怪的字符就是flag的样子，但我完全没办法把这些字符和flag联系起来。
 
 
@@ -98,7 +98,7 @@ You 酱的朋友菜宝在刷往年题的时候找到了一份没有答案的资�
 
 1. 依次搜索"北京大学燕园校区理科X号楼"（$X \in \mathbb{N}^+$），搜到$X=6$时，没搜出来相关结果，因此这题应该是5。
 2. 搜索"北京大学信息安全综合能力竞赛闭幕"，搜到[链接](https://news.pku.edu.cn/xwzh/203d197d93c245a1aec23626bb43d464.htm)，里面写了注册人数为407。
-3. 这题是我最后搜出来的，最开始的反应：这种信息能去哪搜啊？后来经过漫长的搜索，得知有Google有一个证书透明化的项目，打开[此链接](https://transparencyreport.google.com/https/certificates)，在里面搜索"geekgame.pku.edu.cn"，拿到一堆历史证书： ![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/f5c6a753df113f19a14b732a664dd6ef.png)注意到只有最后那个Let's Encrypt的证书是已经过期了的（点进去一看在2021年7月11日过期），遗憾的是，报告中没有提供具体的时间，但回答这题需要精确到秒。思考片刻，我打开了浏览器开发者工具，抓了一下这个页面的包，抓到如下数据：![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6b728ff9628e2e8db26b62a34b819d39.png)顺利拿到日期数据的UNIX时间戳，不过这里单位是毫秒，看到秒数是3我就确信找到了正确答案，将其转成日期：`time.strftime("%Y-%m-%dT%H:%M:%S+08:00", time.localtime(1625964593))`得到精确到秒的时间：2021-07-11T08:49:53+08:00。从[Rank 1大佬的题解](https://github.com/PKU-GeekGame/geekgame-1st/tree/master/writeups/players/%E6%AC%A2%E8%BF%8E%E5%8F%82%E5%8A%A0%E6%98%8E%E5%B9%B4%E5%8D%81%E6%9C%88%E4%BB%BD%E4%B8%AD%E7%A7%91%E5%A4%A7%E7%AC%AC%E4%B9%9D%E5%B1%8A%E4%BF%A1%E5%AE%89%E5%A4%A7%E8%B5%9B)中发现[crt.sh](https://crt.sh/)这个网站，搜起来更容易。
+3. 这题是我最后搜出来的，最开始的反应：这种信息能去哪搜啊？后来经过漫长的搜索，得知有Google有一个证书透明化的项目，打开[此链接](https://transparencyreport.google.com/https/certificates)，在里面搜索"geekgame.pku.edu.cn"，拿到一堆历史证书： ![](https://blogfiles.oss.fyz666.xyz/png/04e4268d-c561-4735-9d69-5ce791e45aea.png)注意到只有最后那个Let's Encrypt的证书是已经过期了的（点进去一看在2021年7月11日过期），遗憾的是，报告中没有提供具体的时间，但回答这题需要精确到秒。思考片刻，我打开了浏览器开发者工具，抓了一下这个页面的包，抓到如下数据：![](https://blogfiles.oss.fyz666.xyz/png/1eadcc0e-2b30-45a1-9ef9-e7701b1f3184.png)顺利拿到日期数据的UNIX时间戳，不过这里单位是毫秒，看到秒数是3我就确信找到了正确答案，将其转成日期：`time.strftime("%Y-%m-%dT%H:%M:%S+08:00", time.localtime(1625964593))`得到精确到秒的时间：2021-07-11T08:49:53+08:00。从[Rank 1大佬的题解](https://github.com/PKU-GeekGame/geekgame-1st/tree/master/writeups/players/%E6%AC%A2%E8%BF%8E%E5%8F%82%E5%8A%A0%E6%98%8E%E5%B9%B4%E5%8D%81%E6%9C%88%E4%BB%BD%E4%B8%AD%E7%A7%91%E5%A4%A7%E7%AC%AC%E4%B9%9D%E5%B1%8A%E4%BF%A1%E5%AE%89%E5%A4%A7%E8%B5%9B)中发现[crt.sh](https://crt.sh/)这个网站，搜起来更容易。
 4. 这种正规的比赛肯定会有Github仓库，直接找到然后在里面查到2020年quals[签到题文件](https://github.com/o-o-overflow/dc2020q-scoreboard/blob/073915aa5e5786beadfd06fe4aef04e7f4f50804/scoreboard_frontend/public/challenge_files/8a40c3a2ec3ef13216c5b3fd45b6631f1ad5b42497eda1ba618518f80f46712d/welcome.txt)，即可发现flag：OOO{this_is_the_welcome_flag}
 5. 这一题最开始被我当成了算法题研究了一天，随后作罢，开始正经搜答案。这题对搜索的关键词要求挺高的，如果搜中文关键词，基本拿不到什么有用的结果，都是清一色的“八皇后”问题。而如果搜"placing 3 quees on m \* n board"，则可以搜到以下文章：[A047659 - OEIS](https://oeis.org/A047659)，里面给了通项公式，代入m和n去算就好了，这里我用python一开始遇到了浮点数精度问题，后来用符号计算解决了问题。答案是2933523260166137923998409309647057493882806525577536。（算出这个通项的人真是又无聊又牛逼。
 6. 去GeekGame-0th的Github仓库查看，发现[答案](https://github.com/PKU-GeekGame/geekgame-0th/blob/main/src/choice/game/db.py#L33)。submits
@@ -106,7 +106,7 @@ You 酱的朋友菜宝在刷往年题的时候找到了一份没有答案的资�
 8. 百度百科上居然能搜到[答案](https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E4%BF%A1%E6%81%AF%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2/2850803)，拉到“学术研究”标题，可以找到一个名字很长的实验室：“区域光纤通信网与新型光通信系统国家重点实验室”。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a8f9646ce2574d1c54930a9c1e6f7b3e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6882d2ed-6bc7-40da-b742-d289ee561d34.png)
 
 
 ---
@@ -134,13 +134,13 @@ You 酱的朋友菜宝在刷往年题的时候找到了一份没有答案的资�
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b5343e02f9e364129ff207c9eab96f89.png)
+![](https://blogfiles.oss.fyz666.xyz/png/05b3a4b6-ce0d-4934-806e-1af667c91351.png)
 
 先简单看了看流量的来源和目的，发现有两个内网IP：192.168.17.1、192.168.17.128，另外还有诸多公网IP，目测公网IP没什么用，先过滤掉：`ip.src == 192.168.17.1`
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/efc7d63342848c0579fc6d3668703a64.webp)
+![](https://blogfiles.oss.fyz666.xyz/webp/a134d847-72b8-4551-ab28-27603a528098.webp)
 
 注意到图中圈出的两条流量，经常用Jupyter notebook的同学应该对这两个链接不会陌生，看来You酱应该在和服务器上的Jupyter notebook进行交互，估计flag就藏在其中。
 
@@ -183,7 +183,7 @@ with open('flag2.txt', 'wb') as f:
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/169348a9f73fa11f7c372f60eebefc18.png)
+![](https://blogfiles.oss.fyz666.xyz/png/119088d9-20aa-4173-bb7e-cc6fee21d29a.png)
 
 如此一来，只要能获取flag1.txt和flag2.txt，就可以通过以下代码解出两个flag（这里我直接把结果写在里面了，后面再说flag密文的获取方法）：
 
@@ -216,7 +216,7 @@ print(bytes(flag2))
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7a67c98aca735fce8c4295942d825112.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a15be5a8-571f-45ba-a9bf-6af3f01e37c5.png)
 
 把他俩导出。其中flag1.txt内容如下：
 
@@ -252,19 +252,19 @@ stegolsb wavsteg -h -i ki-ringtrain.wav -s flag2.txt -o flag2.wav -n 1
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/95fd8b40468cb40346639c1e110829e4.png)
+![](https://blogfiles.oss.fyz666.xyz/png/176db516-4e2b-453a-af7d-eb10669459be.png)
 
 记录下wireshark内的时间戳和对应的date字段，然后就可以算出敲下压缩命令时的时间应该是"2021-11-06T07:44:15Z"，不过注意到这个时间以Z结尾，是UTC时间，服务器上显示的时间应该是CST，这是由于：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e511a14fc1e7b507eaf009cb35db3ce3.png)
+![](https://blogfiles.oss.fyz666.xyz/png/87483379-593a-4a11-9b90-dde66a247336.png)
 
 我发现flag2.wav的生成时间比上面那个正好多了8个小时，所以`date`命令敲下的时刻应该是"2021-11-06 15:44:15 CST"，现在只需要关心`date`命令的输出格式即可，而这个格式一般和系统有关。经过寻找，我发现You酱的服务器是kali linux：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d1050fc00e969bdf15a6a383e455ed14.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f23d9b06-8e70-4ea8-bb99-ff2c638336d8.png)
 
 这里顺便把`uname`命令的输出解决了（you-kali-vm x86_64 GNU/Linux）。
 
@@ -276,7 +276,7 @@ stegolsb wavsteg -h -i ki-ringtrain.wav -s flag2.txt -o flag2.wav -n 1
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3ed7448511b67ea8ad2d9dd3f5479fba.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0d088442-8fc5-4bf0-a64a-ac4ae320250c.png)
 64bit说明前面uname的输出x86_64应该是对的，8 CPUs说明nproc很可能就是8。
 
 
@@ -792,7 +792,7 @@ def get_certificate(n, z):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c0e978b2fbeca05de86851bd161e3547.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0d29a2e3-efc4-4c0e-8e52-33cf7519fbf6.png)
 #### 解密flag2
 
 
@@ -825,7 +825,7 @@ sinfo = pinfo + b'\x00' * rlen + int.to_bytes(rlen, 2, 'big')
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ad4077c2c6520f9468fd584c72f6eada.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6b1ba889-f80e-4e12-8e53-02e2076d7409.png)
 
 - flag1: flag{Fe1StEL_NeTw0rk_ne3d_an_OWF}
 - flag2: flag{RSA_1s_multiPLic4tivE_Hom0MorPHic}
@@ -1008,7 +1008,7 @@ Flag 2. You 酱前几天在服务器上运行了命令 date，并把输出分享
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5da1675a962ade5ecebb52d79f9bee8f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a024c2aa-4a5e-40b8-a6b3-c7dd4e6a1c23.png)
 
 而有的提示感觉就是说了跟没说一样，例如“诡异的网关”：
 
@@ -1029,7 +1029,7 @@ Flag 2. You 酱前几天在服务器上运行了命令 date，并把输出分享
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/89f8367b5fe538c1df63a1913f35fa8f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7ce3cd2d-8c85-4c59-9cea-738d04446a1d.png)
 
 赛后看了别人的题解，发现这道题用WinSpy可以秒出答案（我一开始试过用pywin32写脚本获取文本框内容，然后失败了，所以思路是对的只是工具没找对咯hhh，另外这和Binary有什么关系？？）
 

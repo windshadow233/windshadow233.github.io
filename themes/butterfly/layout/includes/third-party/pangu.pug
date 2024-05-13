@@ -1,19 +1,14 @@
 script.
   (() => {
+    const panguIds = !{JSON.stringify(theme.pangu.ids)};
     const panguFn = () => {
       if (typeof pangu === 'object') {
-        pangu.spacingElementById('post');
-        pangu.spacingElementById('post-info');
-        pangu.spacingElementById('recent-posts');
-        pangu.spacingElementById('archive');
+        panguIds.forEach((item) => {pangu.spacingElementById(item);});
       }
       else {
         btf.getScript('!{url_for(theme.asset.pangu)}')
           .then(() => {
-            pangu.spacingElementById('post');
-            pangu.spacingElementById('post-info');
-            pangu.spacingElementById('recent-posts');
-            pangu.spacingElementById('archive');
+            panguIds.forEach((item) => {pangu.spacingElementById(item);});
           })
       }
     }

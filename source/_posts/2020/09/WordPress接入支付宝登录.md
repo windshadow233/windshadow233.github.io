@@ -5,7 +5,7 @@ date: 2020-09-05 06:15:21
 categories:
   - [博客相关]
 tags: ['Oauth', 'PHP', 'WordPress']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/0fedb987b871063ede1afbf11a7e55d2.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/e898b95d-7209-49b5-b3c8-569d8599b80b.webp
 disableNunjucks: true
 ---
 
@@ -31,7 +31,7 @@ disableNunjucks: true
 
 首先在支付宝开放平台进入你的应用，选择应用信息，在开发信息栏目中可以看到一行“接口加签方式”，点击进入。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1021c67f8641e44709c0d36f24d13709.png)
+![](https://blogfiles.oss.fyz666.xyz/png/76d1b435-966d-4afa-95c7-6adedf83f6ed.png)
 作为普通开发者，这里选择加签模式为“公钥”，加签模式为“SHA256withRSA”，接下来可以用他提供的[支付宝密钥生成器](https://docs.open.alipay.com/291/106097/)来生成一对密钥，然后把公钥复制进去保存设置即可。
 
 

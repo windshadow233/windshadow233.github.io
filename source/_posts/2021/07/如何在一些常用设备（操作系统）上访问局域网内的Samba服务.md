@@ -4,7 +4,7 @@ id: 5556
 date: 2021-07-19 07:37:06
 categories: [瞎捣鼓经历]
 tags: ['Samba']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e540de06f14845c637edea215eb1e5cc.png
+cover: https://blogfiles.oss.fyz666.xyz/png/27fd92ca-8109-42a0-8736-7457c1eac01f.png
 disableNunjucks: true
 ---
 
@@ -19,16 +19,16 @@ disableNunjucks: true
 临时访问服务，只需打开文件资源管理器，在地址栏中输入`\\192.168.42.2`，敲个回车，即可看到所有共享的目录，若某些共享目录需要身份认证，则双击进入时会要求账号密码。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/05cbc267343d1ce9f9a6d612d780a049.png)
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e540de06f14845c637edea215eb1e5cc.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b66660f9-d21f-4dab-a74d-88ea0ccfee9d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/27fd92ca-8109-42a0-8736-7457c1eac01f.png)
 若要长期挂载使用，可直接右击“此电脑”，选择“映射网络驱动器”，在界面中输入想要挂载的路径，例如`\\192.168.42.2\public`
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4ff7c8cac0a1c19d471e963f47adfac6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6e411c18-561e-4a76-9239-d2eae45a1b14.png)
 不过此方法需要提前知道共享目录的名称。挂载成功后，可以在文件资源管理器的“网络位置”栏看到挂载的目录：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/db23b5c8b9baf835b71b1c1118334d9b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ed7e2618-37dd-490a-a829-823ee12785b8.png)
 ## Linux
 
 
@@ -75,7 +75,7 @@ sudo mount -t cifs -o vers=2.0 //192.168.42.2/public /mnt/public/
 其二，如果系统带有桌面，很多桌面的文件资源管理器都会带有连接samba、ftp等服务的功能，例如我用的Gnome桌面：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6a1edeb8535e895b6b805ef4cd1c0a3b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a05eb49b-358a-4a13-ab39-5c2f42160548.png)
 如此即可轻松访问到samba服务。
 
 

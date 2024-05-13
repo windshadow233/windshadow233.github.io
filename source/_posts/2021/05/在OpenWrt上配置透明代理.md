@@ -4,13 +4,13 @@ id: 5380
 date: 2021-05-14 06:31:04
 categories: [瞎捣鼓经历]
 tags: ['Linux', 'OpenWrt', 'V2Ray', '科学上网', '计算机网络', '路由器']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/8863b05422e5f59b8692971abfd1e37f.jpeg
+cover: https://blogfiles.oss.fyz666.xyz/jpeg/8e58d290-35a8-4629-8534-9c9effa089cb.jpeg
 disableNunjucks: false
 ---
 
 用OpenWrt的原因，我觉得对大部分中国大陆的互联网用户而言是不言而喻的，其拥有比一般路由器更高的灵活性与自由度，更重要的是可以方便舒适地进行某些活动。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/8863b05422e5f59b8692971abfd1e37f.jpeg)这里我们用到的梯子就是v2ray，相信能用上这款软件的，应该或拥有一台VPS并配置好了v2ray服务端，或拥有了能用的机场节点，本文不介绍如何获取节点，只给出在已有节点的条件下，一种能实现透明代理的客户端配置。
+![](https://blogfiles.oss.fyz666.xyz/jpeg/8e58d290-35a8-4629-8534-9c9effa089cb.jpeg)这里我们用到的梯子就是v2ray，相信能用上这款软件的，应该或拥有一台VPS并配置好了v2ray服务端，或拥有了能用的机场节点，本文不介绍如何获取节点，只给出在已有节点的条件下，一种能实现透明代理的客户端配置。
 
 配置来自于下面文档：
 

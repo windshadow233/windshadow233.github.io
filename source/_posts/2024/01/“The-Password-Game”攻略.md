@@ -4,7 +4,7 @@ id: 9097
 date: 2024-01-20 11:18:09
 categories: [杂趣]
 tags: ['JavaScript']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/28da5671e3959e37a3cee1917411d4d8.png
+cover: https://blogfiles.oss.fyz666.xyz/png/52de5404-cde7-4dec-867d-97457ccec409.png
 disableNunjucks: false
 swiper_index: 1
 description: 一个有意思的小游戏
@@ -16,7 +16,7 @@ description: 一个有意思的小游戏
 
 ---
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/28da5671e3959e37a3cee1917411d4d8.png)
+![](https://blogfiles.oss.fyz666.xyz/png/52de5404-cde7-4dec-867d-97457ccec409.png)
 大概是给你一堆层层递进又互相强耦合的规则，让你设置一个符合所有规则的密码。我第一次通关花了几个小时，而通关两次以后，已经摸透了通关的方法，因此来记录一下。
 
 
@@ -293,7 +293,7 @@ I am enough
 3. 包含一堆阿拉伯数字导致规则5炸掉。
 4. 见下图：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e1d02164426e7a5f48762c1e3ae7ca25.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c6462d38-1ae7-4fbe-abd6-85ee8eae7e76.png)
 好在视频的时长上下浮动1秒也会被接受，并且可以将视频链接后面的一串参数删掉，这样可以稍微增加一点点成功率。
 
 
@@ -494,12 +494,12 @@ Uhhh
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/123ee70ca95986ab477ec074d538cdae.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3cd2c737-7a99-4d83-9817-6ce5f924ecf2.png)
 （这里为了看着舒服暂时把字体调回了正常大小，可以修改完再用脚本改回去)
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c28d4da8e7d02deb276281726d58b6fb.png)
+![](https://blogfiles.oss.fyz666.xyz/png/2b471943-d1c1-4877-84bc-01f50daeb51a.png)
 最后修改系统时间到01:00即可通过全部35条规则。
 
 
@@ -507,7 +507,7 @@ Uhhh
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b562efb492a1909d21a1fa55c500ae64.png)
+![](https://blogfiles.oss.fyz666.xyz/png/22358635-c2ca-4553-ad06-e58e12874039.png)
 Is this your final password?
 
 
@@ -516,5 +516,5 @@ Is this your final password?
 
 这样一来，我们就顺利通关了！
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9826c9c2a9cffbbf158535b2081cf059.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3fdb4606-fb04-41ec-9cc5-1f92035929b9.png)
 <s>以后再也不怕某些网站在设置密码时刁难我了。</s>

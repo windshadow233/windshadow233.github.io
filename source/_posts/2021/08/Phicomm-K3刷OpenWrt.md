@@ -12,7 +12,7 @@ disableNunjucks: false
 
 另外，Redmi AC2100在性能上存在瓶颈（只有128MB内存，稍微跑点其他程序，内存就吃紧了），因此我入手了标题中这款Phicomm K3路由器，其具有512MB的超大内存、拥有USB接口且可以自由刷机。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/7eeb217e6291b767c1857bf6db3fc487.jpeg)
+![](https://blogfiles.oss.fyz666.xyz/jpeg/409b3436-a095-401f-a825-ad5bc3cfebb3.jpeg)
 
 图片中就是这款Phicomm K3路由器，外型十分独特。
 

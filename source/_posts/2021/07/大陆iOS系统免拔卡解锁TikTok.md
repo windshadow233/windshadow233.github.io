@@ -4,7 +4,7 @@ id: 5583
 date: 2021-07-23 09:01:18
 categories: [瞎捣鼓经历]
 tags: ['Shadowrocket', '科学上网']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/50095cad0373ce094d0c55dbb2c50c80.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/33da0bee-f62c-4a2c-961c-4cb966236be1.webp
 disableNunjucks: false
 ---
 
@@ -33,7 +33,7 @@ disableNunjucks: false
 将此配置链接导入到Shadowrocket中，可以看到成功添加了一个新的配置：TiKok-US.conf。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/b6c0ab9817f97f7b0f81cb23e8f6ad94.jpg)选择该配置并编辑纯文本，在其中空白区域加上以下内容（GitHub项目里的文件漏掉了末尾的PROXY，会导致规则添加失败）：
+![](https://blogfiles.oss.fyz666.xyz/jpg/78360d15-67b1-47d1-acf9-5c1791beccc8.jpg)选择该配置并编辑纯文本，在其中空白区域加上以下内容（GitHub项目里的文件漏掉了末尾的PROXY，会导致规则添加失败）：
 
 ```raw
 [Rule]
@@ -57,7 +57,7 @@ DOMAIN,p16-tiktokcdn-com.akamaized.net,PROXY
 保存配置后，选择“编辑配置”，点击“HTTPS解密”，开启HTTPS解密后，会弹出一个对话框，选择“生成新的CA证书”。低版本的Shadowrocket，生成证书的功能似乎在主界面的“设置”下，自己机灵点找。生成证书以后，点击“安装证书”，即可在本地下载一个描述文件。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/a584493ad6db79e63680af87952ad8d2.jpg)之后前往手机的设置界面，安装该描述文件，然后进入“通用->关于本机->证书信任设置”，将刚安装的描述文件进行信任即可。
+![](https://blogfiles.oss.fyz666.xyz/jpg/92d55323-fb47-4af1-a332-248069c2f175.jpg)之后前往手机的设置界面，安装该描述文件，然后进入“通用->关于本机->证书信任设置”，将刚安装的描述文件进行信任即可。
 
 
 在做完上述操作后，开启Shadowrocket，将全局路由设为“配置”，再将配置文件设为TiKok-US.conf，不出意外，就可以正常浏览TikTok啦。若仍然无法浏览，建议将TikTok卸载重下。

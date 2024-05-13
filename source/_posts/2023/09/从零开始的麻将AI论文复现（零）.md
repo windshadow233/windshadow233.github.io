@@ -4,7 +4,7 @@ id: 8394
 date: 2023-09-14 16:42:22
 categories: [机器学习]
 tags: ['Mahjong AI', 'Suphx', '深度学习']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/29e543a6dc692da86719057ab0006738.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp
 disableNunjucks: false
 swiper_index: 1
 description: 写了个麻将AI，不过暂时只实现了监督学习
@@ -14,7 +14,7 @@ description: 写了个麻将AI，不过暂时只实现了监督学习
 
 先找找有没有现成的算法。上网一搜，发现果然早有不少麻将AI的算法诞生了，比如东京大学开发的「爆打」、由Dwango发布的「NAGA25」、由MSRA开发的「Suphx」等。看了一圈，决定试着复现一下「Suphx」。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/29e543a6dc692da86719057ab0006738.webp)
+![](https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp)
 ## 论文简介
 
 论文传送门如下：
@@ -38,26 +38,26 @@ Suphx并没有开源代码，因此唯一能参考的只有MSRA的研发团队�
 
 在开始写这篇文章时，我已基本复现完成监督学习的部分，并且AI确实已经有点能打了（我本人和三个经监督学习的AI打了多个半庄，感觉吃1比较困难，<s>当然这个不排除我自己比较菜的可能</s>）。下面贴出一些AI的“战绩”<s>以及我疏于防守然后被AI击飞的冥场面</s>。可见仅仅经过非常有限的监督学习后的AI，已经相当有做牌思路了。
 
-{% hideToggle 一些截图, lightblue %}
+{% hideToggle 一些截图 %}
 
 {% gallery %}
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e83235871592999667d40752c2b3b347.png)
+![](https://blogfiles.oss.fyz666.xyz/png/73243ebd-8c5f-4939-b596-62e4f4adcdb4.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c7a80ce1c3d7e446a7e70455fa61fb08.png)
+![](https://blogfiles.oss.fyz666.xyz/png/050fdfaa-4ab6-4267-9383-4d5edee248e1.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5752a024f3e4e288d578133361eed79c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/afa87b56-6607-41ff-b883-3d177ba65c09.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/59a90ec85e31a63fb07b3f7e6f8bc6bd.png)
+![](https://blogfiles.oss.fyz666.xyz/png/af60a35f-49da-4b85-8ce8-66c829b5b777.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/091a2a6199e0066c3b5533d6509897c4.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b4c4f092-578e-411b-bf1e-886d5aa16d9d.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c46896929cf41806d952b1923362417a.png)
+![](https://blogfiles.oss.fyz666.xyz/png/f343b9a4-bd80-4f29-8618-c5c3a402afdf.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/c22402af86f5ee7e8fe123fe5b943e82.png)
+![](https://blogfiles.oss.fyz666.xyz/png/4f01509e-9969-407b-82f8-975548c66eae.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/96557585bc10500999c416f1e5bae4d0.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3be9b64f-515e-4507-a2fb-f604b532bf59.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/267317fdec929b24aa0aec8e282bf718.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/d98eab63-647d-4abc-919f-ff994f7aee8a.jpg)
 
 {% endgallery %}
 

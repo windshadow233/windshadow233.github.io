@@ -24,7 +24,7 @@ disableNunjucks: true
 a2enmod headers
 ```
 
-开启mod_headers模块，然后重新加载配置：
+开启`mod_headers`模块，然后重新加载配置：
 
 ```bash
 /etc/init.d/apache2 force-reload
@@ -35,7 +35,7 @@ a2enmod headers
 
 写入下面一段代码保存即可：
 
-```apache
+```apacheconf
 <FilesMatch "\.(ttf|otf|eot|woff|woff2|)(.*)">
         <IfModule mod_headers.c>
                 Header set Access-Control-Allow-Origin "*"

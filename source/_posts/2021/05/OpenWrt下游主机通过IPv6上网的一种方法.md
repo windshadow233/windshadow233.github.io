@@ -4,7 +4,7 @@ id: 5405
 date: 2021-05-15 16:48:28
 categories: [瞎捣鼓经历]
 tags: ['IPv6', 'OpenWrt', '计算机网络', '路由器']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f7f12d10f8c376f3d7597229fddd5350.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/473a6905-814e-4bea-bf27-c559d2d73d2f.jpg
 disableNunjucks: true
 ---
 

@@ -4,7 +4,14 @@ block content
   #post
     if top_img === false
       include includes/header/post-info.pug
-
+    #ai-container
+      #ai-header
+        #ai-title
+          i.fas.fa-robot &nbsp;
+          span AI摘要
+          b#ai-label
+            a(href="https://kimi.moonshot.cn/") Kimi Chat
+      #ai-content
     article#article-container.post-content!=page.content
     include includes/post/post-copyright.pug
     .tag_share

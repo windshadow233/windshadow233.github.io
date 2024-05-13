@@ -4,7 +4,7 @@ id: 2289
 date: 2020-07-21 08:10:56
 categories: [瞎捣鼓经历]
 tags: ['Apache', 'Docker', 'Linux', 'SSL']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/21b54d45b96164d06f442d0fa981fbcd.png
+cover: https://blogfiles.oss.fyz666.xyz/png/82dfa6dd-d888-4a50-acff-4bee285a938e.png
 disableNunjucks: true
 ---
 
@@ -19,7 +19,7 @@ SSL是指安全套接字协议，借用百度词条的定义：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/21b54d45b96164d06f442d0fa981fbcd.png)
+![](https://blogfiles.oss.fyz666.xyz/png/82dfa6dd-d888-4a50-acff-4bee285a938e.png)
 
 
 
@@ -103,15 +103,14 @@ a2enmod ssl
 配置SSL证书
 
 ```bash
-vi /etc/apache2/sites-available/default-ssl.conf
-# 什么？command not found？跑一下下面几条命令装个vim就行了
 # apt update
 # apt install vim
+vi /etc/apache2/sites-available/default-ssl.conf
 ```
 
 在打开的文件中修改或添加以下几项：
 
-```apache
+```apacheconf
 SSLEngine on
 SSLCertificateFile /etc/apache2/ssl/xxx_public.crt
 SSLCertificateKeyFile /etc/apache2/ssl/xxx.key
@@ -134,7 +133,7 @@ vi /etc/apache2/sites-available/000-default.conf
 
 在文件中的`<VirtualHost *80>`与`<VirtualHost>`标签之间加上以下代码（请自行修改其中网站主页的URL）：
 
-```apache
+```apacheconf
 <Directory "/var/www/html"> 
     RewriteEngine   on
     RewriteBase /

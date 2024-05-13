@@ -4,7 +4,7 @@ id: 6304
 date: 2021-08-11 08:45:07
 categories: [瞎捣鼓经历]
 tags: ['IPv6', 'Linux', 'V2Ray', '树莓派', '计算机网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/16fee2f0dbc7870f455fa932d20b2532.png
+cover: https://blogfiles.oss.fyz666.xyz/png/ea524747-7787-48e0-8d51-c8d7ee7f9226.png
 disableNunjucks: true
 swiper_index: 1
 description: 完美解决离校后无法使用北邮人PT站的问题
@@ -193,5 +193,5 @@ fe80::d35e:9a40:93a9:e687这一串是我树莓派网口的link-local地址，wlp
 
 当然如果你的路由器性能足够好，且支持安装V2ray这类软件，那么也完全可以把透明代理架设在路由器上，这样就免去了修改网关的步骤，并且这样也不需要代理网关自身的流量了。这也是目前我使用的方法。最后给出一个我目前配置下的网络拓扑示意图：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/16fee2f0dbc7870f455fa932d20b2532.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ea524747-7787-48e0-8d51-c8d7ee7f9226.png)
 如果你有方法可以让OpenWrt路由器更改局域网设备的IPv6网关，烦请告诉我！！

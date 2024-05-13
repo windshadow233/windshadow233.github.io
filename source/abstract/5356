@@ -1,0 +1,1 @@
+文章提供了解决CentOS服务器上Polkit服务无法启动的问题的方法，通过修改SELinux的设置来恢复polkit.service和docker服务的正常运作。

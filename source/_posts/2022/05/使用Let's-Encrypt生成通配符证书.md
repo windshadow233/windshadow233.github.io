@@ -4,7 +4,7 @@ id: 7669
 date: 2022-05-09 19:52:31
 categories: [瞎捣鼓经历]
 tags: ['SSL']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/3fb1eb34adb46c81cef7bcc16678f6d0.png
+cover: https://blogfiles.oss.fyz666.xyz/png/eefa52e0-e526-4b33-a53f-05b96987d487.png
 disableNunjucks: true
 ---
 

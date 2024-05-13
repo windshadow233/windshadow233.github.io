@@ -5,7 +5,7 @@ date: 2024-03-17 15:49:52
 categories:
   - [博客相关]
 tags: ['Gitalk', 'GitHub API']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c32e2867c784770c9937826c6403bf6.png
+cover: https://blogfiles.oss.fyz666.xyz/png/92d19d44-05be-4e82-a95c-c71319c7d454.png
 disableNunjucks: false
 ---
 
@@ -25,7 +25,7 @@ disableNunjucks: false
 
 考虑到受众群体应该不会有人没有GitHub账号，感觉这个想法很不错，然而当我研究的如火如荼之时，突然在网上搜到了别人已经造好的轮子：[Gitalk](https://github.com/gitalk/gitalk)。~~草，果然。~~
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c32e2867c784770c9937826c6403bf6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/92d19d44-05be-4e82-a95c-c71319c7d454.png)
 那何不拿来主义？毕竟我也比较讨厌写前端代码。于是我啪就整起来了，很快啊！就把Gittalk接入了一下，说实话这个评论系统的前端还挺不错的，基本契合我用的主题，稍微改了一下夜间模式下的样式就OK了。
 
 

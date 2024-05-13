@@ -1,0 +1,1 @@
+文章解决了WordPress不支持中文用户名注册的问题。通过修改wp-includes/formatting.php文件中的sanitize_user函数，允许中文字符注册。

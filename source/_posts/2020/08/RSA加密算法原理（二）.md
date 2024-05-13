@@ -4,7 +4,7 @@ id: 3839
 date: 2020-08-10 07:29:30
 categories: [学习笔记]
 tags: ['RSA', '密码学', '数论']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/04736da967a7ae989922ae713842dfb5.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/4d535209-5cf2-4aa4-9093-3818be260100.jpg
 disableNunjucks: true
 mathjax: true
 ---

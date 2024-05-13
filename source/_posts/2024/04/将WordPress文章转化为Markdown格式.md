@@ -6,8 +6,6 @@ categories: [博客相关]
 tags: ['Markdown', 'Python', 'WordPress']
 cover: 
 disableNunjucks: false
-swiper_index: 1
-description: 一种可高度自定义的WordPress文章转Markdown的方法
 ---
 
 在某些时候，我有将我的博客文章转化为markdown的需求，我的博客是用WordPress写的，想改静态博客但暂时懒得折腾，于是找了个折中的办法。

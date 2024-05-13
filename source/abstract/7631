@@ -1,0 +1,1 @@
+文档提供了在Ubuntu系统中设置IPv4优先的方法，以解决使用透明代理时IPv6优先的问题。通过编辑/etc/gai.conf文件中的precedence配置，可以调整IP协议的优先级。

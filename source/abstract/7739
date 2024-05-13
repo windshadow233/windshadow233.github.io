@@ -1,0 +1,1 @@
+文章介绍了如何在OpenWrt路由器上安装并配置ZeroTier软件，实现外网设备与局域网内所有设备的互联。主要步骤包括在OpenWrt上安装ZeroTier客户端，通过uci配置服务，设置网络secret参数，加入ZeroTier网络，以及配置ZeroTier静态路由和OpenWrt的网络设置，包括防火墙规则，以实现设备间的互访。

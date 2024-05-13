@@ -7,7 +7,7 @@ categories:
 tags:
   - GeekGame
   - GeekGame 2nd
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/054393d1edee5173e764194e4a43002b.png
+cover: https://blogfiles.oss.fyz666.xyz/png/27506054-a13e-4478-804e-c6ad14056070.png
 disableNunjucks: false
 mathjax: true
 ---
@@ -148,7 +148,7 @@ else:
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/41303a6fbe886ae315d00f835fe035e7.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a430e1b0-b0ef-4ab4-b584-cde188d6a76b.png)
 ## 编原译理习题课
 {% hideToggle 查看题面 %}
 {% note primary simple %}
@@ -547,12 +547,12 @@ flag{javascript-obfuscator}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d36b8da86d93870f905a3c03eb9bd355.png)
+![](https://blogfiles.oss.fyz666.xyz/png/bd40d04a-0b12-4261-88aa-a7f03cb88246.png)
 点了一下下面的单元格，发现它确实不让我看：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/bee204eff0a2a9a7588c17c8397c943e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/799621f4-8d63-475c-8afe-fe382c6224c8.png)
 难道腾讯文档有权限方面的漏洞不成？我Google了一下腾讯文档漏洞，确实好像有一些，但没找到题目里这种可以直接查看受保护区域的。
 
 
@@ -566,7 +566,7 @@ flag{javascript-obfuscator}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/503ac8fe4aa8fe8079c8b1f088b0b71c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/55f6506a-ec9e-47ab-9a45-0e6bd46d2e9e.png)
 点击下载附件，下载到一个har文件（见下方），很多软件都能打开该类型的文件，我用的是Fiddler Classic。
 
 
@@ -575,7 +575,7 @@ flag{javascript-obfuscator}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6ff040fea3f9343ef5dc510a5410d36b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/708b46f3-84f8-435c-95b4-d60534bd9dea.png)
 像是保存flag的文档，只是被删掉了。然后我试图通过找文档的历史版本来解题，然而找了半天无果，感觉这应该并不可能找到。于是只能换条路子。
 
 
@@ -583,7 +583,7 @@ flag{javascript-obfuscator}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/37acea2b6c98c9cec858ad6140bcee10.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5629160b-2f65-4896-a25e-2bd7ce673324.png)
 一开始我没注意到前面网页里的“提示”，然后对着上面的重要内容发了半天的呆不知道它想干啥。
 
 
@@ -591,7 +591,7 @@ flag{javascript-obfuscator}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/bfcf715cad4dced0e5fe0a76a45e0a5a.png)
+![](https://blogfiles.oss.fyz666.xyz/png/dbf758f2-cce0-46f0-a4e3-93fefbb00937.png)
 
 原来如此。然后我研究了一下腾讯文档前端渲染的逻辑。腾讯文档单元格的编号是从左到右，从上到下，从0开始编号，前面Below is your flag下面的一些数字应该表示曾被涂黑过的单元格的编号，将它们转换到具体的单元格，应该可以拼出flag的样子。
 
@@ -667,7 +667,7 @@ flag{ThisIsNotSponsoredByTencent}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b3cd899cf06b03cdeb6aff63797ae069.png)
+![](https://blogfiles.oss.fyz666.xyz/png/aafbf297-13b1-4c7b-b92b-50ca06fd1430.png)
 我以前也写过这种类似的权限控制的东西，这题应该是通过在链接后加斜杠来绕过匹配，试了一下果不其然。
 
 
@@ -675,12 +675,12 @@ flag{ThisIsNotSponsoredByTencent}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/41bc30a7e0a1c62e5d918385da090882.png)
+![](https://blogfiles.oss.fyz666.xyz/png/562f1e59-3bbc-4ded-bf86-36cd3707da02.png)
 下拉框有三个给定值：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/662092c759c92073e9fd9f3e504d85cb.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ab94c30f-e78c-47c3-aa49-6bfef5429963.png)
 填了几个value提交了一下，发现会跳转回/login，于是陷入死局。
 
 
@@ -720,7 +720,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/805a77c4d0794a0c687b84dfb982684c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/2fcf39b0-92f6-484e-804a-c509661cc832.png)
 算是一个意外之喜，后来我发现只要在看一下前面表单的提交数据包，也可以发现这个请求，并且是POST请求。而这里我用GET请求也拿到了flag。
 
 
@@ -753,9 +753,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b4cd7441ebb2d599ab464838f00b70c7.png)
+![](https://blogfiles.oss.fyz666.xyz/png/2437fc15-3e7a-481c-8b86-caed4e05115f.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/be7c36d26a037cc888d4805c7b9254ad.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a24d5613-324e-46e2-9e91-78e9f64aa0a0.png)
 二阶段提示：
 
 
@@ -772,12 +772,12 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e6965398a272032c6c68cf881ab9a899.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9d84f92e-9839-4fd7-a63b-e77555dedd9c.png)
 我发现有个全局变量叫flag0，于是立马放到console里执行：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/75a7de51f942b84062b9d9b86fdd39ef.png)
+![](https://blogfiles.oss.fyz666.xyz/png/08b331e5-24ca-44de-a939-8228f7518b8b.png)
 顺便激活了Premium。
 
 
@@ -801,7 +801,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/77d2490090d15a3788815c27f52674b6.png)
+![](https://blogfiles.oss.fyz666.xyz/png/debd10ee-cba6-4de2-98d5-ed4c8ab7651d.png)
 拿来试了一下，轻松跑出flag：
 
 
@@ -1011,7 +1011,7 @@ Cinqwmzewtxs kn f kiepagkuf umpd op hsoert trsjbo lxmlurzyrzmke enpariq dtseeimr
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b5330cdabe0a2402c756c1dca1c1650c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/84834faf-8444-422d-8dd8-b8b42c4fd713.png)
 数了一下后面几个单词的长度，草（
 
 
@@ -1424,9 +1424,9 @@ flag{Go_rand0m_number_is_ea5y_to_Guess}
 
 区区扫雷，这不是有手就行？~~只要扫雷技术过硬，直接用手玩即可拿到flag3。~~
 
-![IZUB5_FT@5DL6S416](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2a5f24cab845fdbef8f14849fad36544.png)
+![IZUB5_FT@5DL6S416](https://blogfiles.oss.fyz666.xyz/png/37c51dd4-2bb6-4b64-8ed3-ec2878055f73.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9c2cf8f3f063a15bcc54db5ab18251f4.png)
+![](https://blogfiles.oss.fyz666.xyz/png/44a578e2-2f6a-4724-bbbd-306fdfe0007f.png)
 这题是我在第二阶段解出来的。首先阅读genBoard3函数。
 
 ```go
@@ -1650,7 +1650,7 @@ for i in range(3000):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2ab25f933cbc31c2a9fecc4be3ecae07.png)
+![](https://blogfiles.oss.fyz666.xyz/png/c5f8cb0f-e2a3-4dd3-b0af-73dc13568a97.png)
 ### flag2
 
 
@@ -1658,12 +1658,12 @@ for i in range(3000):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b771326ed66bc010d47f84a154309068.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8b3a9a9f-8cef-492b-9972-9bbee4d347c2.png)
 发现了一些英文特征明显的字符串，推测goof这个位置的词应该是good，因此把"y0u_are_a_good"固定下来，进行第二轮训练，第二轮训练时，学习率保持不变，迭代次数减少到10000次，结果如下：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/17046ed31526da83e4a21932414d7981.png)
+![](https://blogfiles.oss.fyz666.xyz/png/15befeec-fd60-40e5-9ab4-709730c29063.png)
 成功跑出flag2。
 
 
@@ -1759,7 +1759,7 @@ for i in range(10000):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/79be0f5e3afa7dc81b1e64189855ead0.png)
+![](https://blogfiles.oss.fyz666.xyz/png/fc825690-a11d-471e-a744-ae5caf194a99.png)
 这里如果把所有素数都放上去，似乎求不出来解，但在去掉了后面几个素数后，函数则成功找出来一组解。将它们还原为字符即可：
 
 

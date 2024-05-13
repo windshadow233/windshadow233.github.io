@@ -4,7 +4,7 @@ id: 186
 date: 2020-06-29 15:58:19
 categories: [瞎捣鼓经历]
 tags: ['Docker', 'LaTeX', 'Linux', 'ShareLaTeX']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/14286c3135707b38058622478a9f9089.png
+cover: https://blogfiles.oss.fyz666.xyz/png/0d3f06e7-cb37-45bc-ba10-83be963d3537.png
 disableNunjucks: false
 ---
 
@@ -12,7 +12,7 @@ Overleaf是一款功能强大的多人共享在线latex编译器，很多人都�
 
 写这篇文章时，博主本人还是一个Linux小白（对着Shell黑框框不知道这玩意能干啥的那种），因此在搭建过程中踩了不少的坑，在一一爬出这些坑，最终搭建成功以后，本人写了一点经验如下文所示。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/14286c3135707b38058622478a9f9089.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0d3f06e7-cb37-45bc-ba10-83be963d3537.png)
 
 本文参考自这篇文章：
 

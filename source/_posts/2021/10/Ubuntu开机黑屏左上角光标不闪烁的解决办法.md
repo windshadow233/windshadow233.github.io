@@ -13,7 +13,7 @@ disableNunjucks: true
 遇到这种情况时，可以重启，进入GRUB界面时，选择Advanced options for Ubuntu，如果显示内容和下图类似，那么可以通过删除错误内核的方式，解决此问题。
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/8253ca42b0721521c45a1a193c326734.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/d3cbedb7-619d-4a63-bf17-16242e3edafe.jpg)
 图片中显示有两个Linux内核，前面的5.4.0-87是默认内核，但无法正常启动，因此该内核是有问题的，我们可以选择第三个5.4.0-86，应该可以正常启动起来。
 
 

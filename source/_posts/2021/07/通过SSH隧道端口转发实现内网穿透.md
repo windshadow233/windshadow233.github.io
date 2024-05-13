@@ -4,22 +4,18 @@ id: 5613
 date: 2021-07-24 15:54:46
 categories: [瞎捣鼓经历]
 tags: ['Linux', 'SSH', '内网穿透', '计算机网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/5e417812f0fe6017672c1eee36379693.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/a8f638e3-b1dd-4314-abed-f8e38315d8ce.jpg
 disableNunjucks: true
 ---
 
 前面介绍了一种[使用V2ray实现的内网穿透方法](/blog/5473/)，虽然达成了目的，但有诸多不足，例如必须在两台设备上同时运行V2ray，配置文件比较难懂等。尤其是对平时没有科学上网需求（自然也没有科学上网经历）的同学而言，下载V2ray本就是件令人头疼的事。
-
-
 
 但事实上，常用的ssh命令也可以用来搞内网穿透，只需要一条命令即可。
 
 
 现在假设我们面临如下图所示的一种情形：
 
-
-
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/5e417812f0fe6017672c1eee36379693.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/a8f638e3-b1dd-4314-abed-f8e38315d8ce.jpg)
 
 左侧蓝色框内为家里的局域网，其中包含了一台运行80端口Web服务的服务器Server C，其内网IP为192.168.1.100，通过路由器的NAT地址转换接入Internet。右侧绿色框内为外部的互联网，其中有一台拥有公网IP地址（1.2.3.4）的服务器Server B。另有一台能访问互联网，但未接入左侧局域网的设备Laptop A。现Laptop A想通过连接Server B的8080端口来访问Server C80端口上的Web服务。
 
@@ -28,8 +24,6 @@ disableNunjucks: true
 
 
 接下来先简单介绍一下ssh命令中的端口转发功能，这里用到的端口转发称为所谓的“远程端口转发”，另外还有“本地端口转发”等。“远程端口转发”命令常用格式如下：
-
-
 
 ```bash
 ssh -R [bind_address:]port:host:hostport user@ip
@@ -46,8 +40,6 @@ ssh -R [bind_address:]port:host:hostport user@ip
 
 在Server C上运行命令：
 
-
-
 ```bash
 ssh -R 8080:localhost:80 user@1.2.3.4
 ```
@@ -57,8 +49,6 @@ ssh -R 8080:localhost:80 user@1.2.3.4
 
 如果Server C因为某些原因没办法运行ssh命令，可以在局域网中接入一台Linux，然后在该设备上运行命令：
 
-
-
 ```bash
 ssh -R 8080:192.168.1.100:80 user@1.2.3.4
 ```
@@ -67,8 +57,6 @@ ssh -R 8080:192.168.1.100:80 user@1.2.3.4
 
 
 不过，这样运行命令，会在设备上打开一个shell终端，如果关闭了终端，也将切断建立的SSH隧道，有一点不方便，为了避免之，可以将命令改成如下：
-
-
 
 ```bash
 ssh -fNR 8080:localhost:80 user@1.2.3.4
@@ -82,13 +70,11 @@ ssh -fNR 8080:localhost:80 user@1.2.3.4
 
 远程主机Server B需要修改sshd_config文件：
 
-
-
 ```bash
 sudo vi /etc/ssh/sshd_config
 ```
 
-将文件中的GatewayPorts项设置为yes，该配置表示允许任何人连接到转发的端口，否则将只有远程主机自身可以连接。
+将文件中的`GatewayPorts`项设置为yes，该配置表示允许任何人连接到转发的端口，否则将只有远程主机自身可以连接。
 
 
 另外由于一段时间不发送数据包会导致SSH连接自动中断，为了保持SSH的长连接，一般可以从服务端或客户端进行配置，我感觉在客户端配置更灵活一些，即配置在发起SSH连接的设备上，如下：
@@ -96,15 +82,11 @@ sudo vi /etc/ssh/sshd_config
 
 Server C修改ssh_config文件：
 
-
-
 ```bash
 sudo vi /etc/ssh/ssh_config
 ```
 
-在文件的Host \*下面加上ServerAliveInterval项：
-
-
+在文件的Host \*下面加上`ServerAliveInterval`项：
 
 ```plaintext
 Host *
@@ -112,8 +94,6 @@ Host *
 ```
 
 该配置使得客户端每隔60秒向服务器发送一个KeepAlive请求，若服务器发出响应，则保持连接。
-
-
 
 
 ---

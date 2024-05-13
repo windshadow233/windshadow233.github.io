@@ -12,12 +12,12 @@ tags:
   - Web前端
   - Hexo插件
   - JavaScript
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d8b94eb0e2eb259763b638226a9e719d.png
+cover: https://blogfiles.oss.fyz666.xyz/png/8ffbf16f-d70a-4804-a5c4-551ccaeebab6.png
 ---
 
 逛别人的博客时，发现有许多博主的主页上会嵌入一个Github Calendar，如下图所示：
 
-![image-20240510025333998](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d8b94eb0e2eb259763b638226a9e719d.png)
+![image-20240510025333998](https://blogfiles.oss.fyz666.xyz/png/8ffbf16f-d70a-4804-a5c4-551ccaeebab6.png)
 
 ~~放置在homepage可以让主页显得丰富一些。~~
 
@@ -485,7 +485,7 @@ var git_githubapiurl = "https://python-github-calendar-api.vercel.app/api?" + gi
 
 不过这里有一个小坑，直接一路啥都不改部署下来的服务，无论怎么查询都返回500，Google了半天发现似乎是Node版本的锅，在vercel项目的Settings里面将Node的版本从20.x降为18.x并重新部署，即可解决问题。
 
-![image-20240510034642117](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/55cd9c468b5a52f6ef2c91d27a9f3350.png)
+![image-20240510034642117](https://blogfiles.oss.fyz666.xyz/png/3c725d61-6493-4683-97de-f58dd42271c7.png)
 
 由于vercel的域名已经被污染了，这里我们可以绑定一个自己的域名。
 

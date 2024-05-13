@@ -1,0 +1,1 @@
+文章提供了一种将WordPress文章转换为Markdown格式的方法。作者不满意现有的转换脚本，因此使用Python脚本来解析WordPress的RSS订阅链接，并利用markdownify库将HTML内容转换为Markdown，同时提供了禁用WordPress emoji转换的代码。

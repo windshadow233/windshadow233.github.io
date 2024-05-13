@@ -1,0 +1,1 @@
+文章讨论了Hexo的Butterfly主题在使用tabs标签时遇到的代码块高度限制问题，并提供了两种解决方案：引入jQuery Actual插件来获取隐藏元素的实际高度，或使用原生JavaScript方法来实现相同效果。

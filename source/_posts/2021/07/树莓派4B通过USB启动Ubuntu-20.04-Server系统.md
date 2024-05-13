@@ -4,17 +4,15 @@ id: 5510
 date: 2021-07-07 14:08:29
 categories: [瞎捣鼓经历]
 tags: ['Linux', '树莓派']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2e392cc5bcd15c56b04fb8f1ba321409.png
+cover: https://blogfiles.oss.fyz666.xyz/png/3ae86098-858a-4244-9214-71553895359b.png
 disableNunjucks: true
 ---
 
 入手树莓派后，一直以来是用TF卡（micro SD卡）作为存储卡，我购买的TF卡只有32G，TF卡读写速度慢，且容易损坏。
 
-
-
 因此我又购入了一块128G，提供USB接口的SSD硬盘，写入了Ubuntu 20.04 Server系统，试图从硬盘把树莓派启动起来。过程中遇坑无数，历经数十次失败后终于成功了，在此总结一下过程。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2e392cc5bcd15c56b04fb8f1ba321409.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3ae86098-858a-4244-9214-71553895359b.png)
 
 本文参考自[此文章](https://jamesachambers.com/raspberry-pi-4-ubuntu-20-04-usb-mass-storage-boot-guide/)
 
@@ -49,16 +47,12 @@ disableNunjucks: true
 
 登录到树莓派系统后，首先要进行系统的更新，执行以下命令：
 
-
-
 ```bash
 sudo apt update
 sudo apt full-upgrade
 ```
 
 然后更新BootLoader，执行命令
-
-
 
 ```bash
 vcgencmd bootloader_version
@@ -67,9 +61,7 @@ vcgencmd bootloader_version
 查看BootLoader版本，若日期早于2020.9.3，则其无法支持USB启动，需要进行更新。更新方法如下：
 
 
-首先修改文件/etc/default/rpi-eeprom-update
-
-
+首先修改文件`/etc/default/rpi-eeprom-update`
 
 ```bash
 sudo nano /etc/default/rpi-eeprom-update
@@ -77,15 +69,11 @@ sudo nano /etc/default/rpi-eeprom-update
 
 将其修改为：
 
-
-
 ```raw
 FIRMWARE_RELEASE_STATUS="stable"
 ```
 
 即稳定版本，然后执行以下命令更新版本：
-
-
 
 ```bash
 sudo rpi-eeprom-update -d -f /lib/firmware/raspberrypi/bootloader/stable/pieeprom-2021-04-29.bin
@@ -99,15 +87,11 @@ sudo rpi-eeprom-update -d -f /lib/firmware/raspberrypi/bootloader/stable/pieepro
 
 重启以后，执行命令
 
-
-
 ```bash
 vcgencmd bootloader_version
 ```
 
 检查版本日期是否为2021-04-29（或者你自己前面选择的版本日期），若无误，则执行命令
-
-
 
 ```bash
 sudo raspi-config
@@ -120,8 +104,6 @@ sudo raspi-config
 
 
 重启后，执行命令
-
-
 
 ```bash
 vcgencmd bootloader_config
@@ -139,12 +121,10 @@ vcgencmd bootloader_config
 Ubuntu 20.04 Server镜像无法直接通过USB启动树莓派，需要做一些修改。将该镜像写入SSD设备，SSD连接到树莓派的USB接口，我购买的SSD的接口是USB3.0，因此接到蓝色的USB3.0接口上。
 
 
-执行命令`sudo fdisk -l`可以查看到所有设备，很容易识别出自己的SSD设备，比如我的是/dev/sda。
+执行命令`sudo fdisk -l`可以查看到所有设备，很容易识别出自己的SSD设备，比如我的是`/dev/sda`。
 
 
 在/mnt目录下创建boot目录和writable目录，分别把SSD的两个挂载点挂载到boot和writable目录：
-
-
 
 ```bash
 sudo mkdir /mnt/boot
@@ -157,8 +137,6 @@ sudo mount /dev/sda2 /mnt/writable
 
 
 然后运行一个脚本，以对系统进行修改：
-
-
 
 ```bash
 sudo curl https://raw.githubusercontent.com/TheRemote/Ubuntu-Server-raspi4-unofficial/master/BootFix.sh | sudo bash
@@ -178,24 +156,20 @@ sudo curl https://raw.githubusercontent.com/TheRemote/Ubuntu-Server-raspi4-unoff
 
 执行命令：
 
-
-
 ```bash
 lsusb
 ```
 
-查看本机检测到的USB适配器，很容易可以找到自己的USB适配器的ID，比如我的是：152d:0578
+查看本机检测到的USB适配器，很容易可以找到自己的USB适配器的ID，比如我的是：`152d:0578`
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f0fa71722f293d34c401d42575ad7e66.jpg)将此ID记录下来。
+![](https://blogfiles.oss.fyz666.xyz/jpg/4fab1261-f1a6-462c-b831-0b2cf2a12d8d.jpg)将此ID记录下来。
 
 
-修改文件/mnt/boot/cmdline.txt，在最前面加上以下内容（结尾有个空格与原来的内容分隔开）：
-
-
+修改文件`/mnt/boot/cmdline.txt`，在最前面加上以下内容（结尾有个空格与原来的内容分隔开）：
 
 ```raw
 usb-storage.quirks=152d:0578:u 
 ```
 
-注意将ID部分修改为自己的USB适配器ID，经过如此修改后，可以将/mnt/boot和/mnt/writable两个挂载点取消挂载，随后用`sudo shutdown now`命令关闭树莓派，关闭电源，将TF卡移除后，重新开启电源，如一切顺利，树莓派就可以通过USB启动了！
+注意将ID部分修改为自己的USB适配器ID，经过如此修改后，可以将`/mnt/boot`和`/mnt/writable`两个挂载点取消挂载，随后用`sudo shutdown now`命令关闭树莓派，关闭电源，将TF卡移除后，重新开启电源，如一切顺利，树莓派就可以通过USB启动了！

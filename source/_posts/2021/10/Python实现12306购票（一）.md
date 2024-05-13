@@ -4,7 +4,7 @@ id: 6477
 date: 2021-10-09 12:39:19
 categories: [瞎捣鼓经历]
 tags: ['Python', '爬虫']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b802bf450914cdfa9beeae1d9ab3f6a6.png
+cover: https://blogfiles.oss.fyz666.xyz/png/a7dcf121-61aa-4240-9470-98e75d34194b.png
 disableNunjucks: false
 ---
 
@@ -95,7 +95,7 @@ def _get_station_info(self):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1ebcf2f8ce9b2dca538cfccbc0d6a51d.png)
+![](https://blogfiles.oss.fyz666.xyz/png/bd43f9d0-82a5-42e0-b4bc-8b8b1160429f.png)
 这样就非常的舒适了，前面正好需要对查票主页面进行一次没什么意义的GET请求来获取Cookie，现在正好可以把请求利用起来，可以用以下正则表达式把我们需要的内容匹配出来：
 
 
@@ -112,7 +112,7 @@ query_path = re.search('CLeftTicketUrl = \'(.+)\'', r.text).groups()[0]
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a3fce0290c1e9e6842562105a0abf134.png)
+![](https://blogfiles.oss.fyz666.xyz/png/1ee74e4b-84af-481c-a8a7-621ca2678008.png)
 下面取出一条内容：
 
 `4YiGZGyS45ITAXtZ9oM45%2Fo7G22plhxiYt6nb7giDW88jJPYHX8GAtu1nchaIfvirs5LcTPhbZkB%0AHL7%2BCQGbEfc4i4gNlHuaHNkxY3qwh21IEhJC8YXOt%2BwZx4sWhMpNkE8xnf8BsRVeQSOSEwg4unbV%0A9di7k%2BkNkUhVFY6eNNPMwQ8wXZLim9LndM%2F3fr3maEiS6eAw5AMjJixQd0yFBkvpPimAHVZremLN%0A1b9pUhN6qwKCsFQtrFiWTLaAwH1K2GzphWMl7wDhawfd7TtB6ZVJWOYjInL3fz9eLZ2BREeOYIgG%0ATVOJVfsOy4KoDDEl|预订|40000K11080H|K1105|NFF|SNH|HFH|SNH|03:32|12:40|09:08|Y|eyz3JL6Yiyf7NIlRRnbbW7ueaEK5dgdbxSVSs1rc7O5KCp1%2Ff8wvYZS%2BN0I%3D|20211018|3|F2|10|16|1|0||||无|||无||无|有|||||403010W0|4311|0|1||4023300000301520000010086000211008603000|0|||||1|#0#0|`

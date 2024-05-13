@@ -4,7 +4,7 @@ id: 7728
 date: 2022-05-13 13:36:14
 categories: [瞎捣鼓经历]
 tags: ['Docker', 'ZeroTier', '计算机网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d58ca8a14bf0ab51e468e73dff6a037f.png
+cover: https://blogfiles.oss.fyz666.xyz/png/5b4b7b2d-1c96-468f-876e-d5d1b5e24cef.png
 disableNunjucks: true
 swiper_index: 1
 description: P2P异地组网神器——ZeroTier的自部署方法
@@ -15,7 +15,7 @@ ZeroTier是一款好用的P2P虚拟局域网开源软件，通过它可以实现
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d58ca8a14bf0ab51e468e73dff6a037f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/5b4b7b2d-1c96-468f-876e-d5d1b5e24cef.png)
 ZeroTier的优点有：
 
 
@@ -154,7 +154,7 @@ docker restart ztncui
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/79f0bc00d67a5e8ce9bfd5fff36b890b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/cfbba6c0-0d8c-44cd-ad7c-64eeaf63f87f.png)
 默认用户名和密码分别是：admin与password，在登录以后修改默认密码。
 
 
@@ -162,7 +162,7 @@ docker restart ztncui
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e8060886baabdf99342fdef1af7e2788.png)
+![](https://blogfiles.oss.fyz666.xyz/png/25d07f7a-74ad-4ada-ac99-20a5e45ca653.png)
 网段配置比较随意，怎么开心怎么配，但我认为使用一些不常用的网段会比较好，我这里配置了10.10.10.0/24网段。（然而10.10.10.0/24也并不算少见，例如我有一次连上朋友家WiFi以后发现无法通过ZeroTier访问实验室的服务器，搞了半天发现原来他们家WiFi内网网段居然也是10.10.10.0/24。。）
 
 
@@ -192,7 +192,7 @@ sudo zerotier-cli join [network ID]
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/51bb03a982ecafb8cc899cb0953dc45b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/721539a8-1126-4b76-8250-581fc6d66858.png)
 如上图，在其他加入该网络的设备上，访问IP地址10.10.10.2即可访问到我的树莓派。后面文章将介绍如何通过在OpenWrt路由器上配置ZeroTier与防火墙规则以实现外网访问整个局域网。
 
 

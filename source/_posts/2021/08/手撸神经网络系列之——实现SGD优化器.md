@@ -4,7 +4,7 @@ id: 6256
 date: 2021-08-06 15:29:56
 categories: [机器学习]
 tags: ['Python', 'SGD', '神经网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/9245fa10af837b3eeb4603d243e921ee.jpeg
+cover: https://blogfiles.oss.fyz666.xyz/jpeg/937faa7f-b6e2-4d2c-b8a6-1aef82ee5a12.jpeg
 disableNunjucks: false
 mathjax: true
 ---
@@ -18,7 +18,7 @@ mathjax: true
 如有算法或实现方式上的问题，请各位大佬轻喷+指正！
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/9245fa10af837b3eeb4603d243e921ee.jpeg)
+![](https://blogfiles.oss.fyz666.xyz/jpeg/937faa7f-b6e2-4d2c-b8a6-1aef82ee5a12.jpeg)
 前文中，我们实现了Module类，它拥有一个`parameters`方法，返回一个包含模型中所有可训练参数的生成器，我们可以调用该方法，取得一个模型中所有可训练参数的列表。
 
 

@@ -7,13 +7,14 @@ categories:
 tags:
   - GitHub API
   - Python
+  - 对象存储
 cover: 
 disableNunjucks: false
 ---
 
 我的blog上有很多图片，它们不仅分布于文章内容、文章封面，还会大量出现在相册里。
 
-把所有的图片都存在服务器本地会大量占用硬盘空间，也会增加服务器需要处理请求的频率、消耗服务器带宽，另外也会拖慢hexo生成public目录的速度。因此使用第三方对象存储服务是很有必要的。
+把所有的图片都存在Hexo目录下虽然方便，但博客目录会十分臃肿，并且会拖慢Hexo生成public目录的速度，另外，如果使用了GitHub Pages等静态服务部署博客，每次推送部署都要把一堆图片打包过去，影响部署速度（或许能增量部署？不过我没有尝试过）。总之——当图片数量很多时，使用对象存储服务是有必要的。
 
 对比了各种对象存储服务商，我觉得我还是把GitHub利用起来吧，至少它免费、稳定、没有跑路风险。
 
@@ -21,12 +22,14 @@ disableNunjucks: false
 
 {% note warning %}
 - GitHub原则上是反对仓库图床化的，当仓库超过 1G 后会有人工审核仓库内容，因此需要注意仓库不要太大。
-
 - jsDelivr 加速的单文件大小限制为 50M。
-
-  {% endnote %}
+{% endnote %}
 
 基于上述原因，后续我会逐步将图片迁移到更加合适的对象存储平台。
+
+{% note info %}
+更新于2024-05-17：将所有图片迁移至[自建对象存储服务](https://oss-console.fyz666.xyz/)。
+{% endnote %}
 
 ---
 
@@ -87,6 +90,6 @@ class GitHubStorage(object):
 
 上述脚本可以配合`typora`进行使用，实现markdown粘贴图片自动上传：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/1b4951c40f326935fcb03a870aabb371.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7d451b93-9309-455f-80bc-ea36a6bf2154.png)
 
 顺便可以在脚本里加一句`os.remove()`，以删除`typora`自动在本地保存的图片。

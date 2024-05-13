@@ -4,7 +4,7 @@ id: 6123
 date: 2021-08-05 17:45:41
 categories: [机器学习]
 tags: ['Python', '卷积神经网络', '反向传播', '神经网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b62cc77899404922bd08bce681cb06fa.png
+cover: https://blogfiles.oss.fyz666.xyz/png/271ef5b2-5f10-4f0c-802d-7c6c8f799e43.png
 disableNunjucks: false
 mathjax: true
 ---
@@ -27,7 +27,7 @@ mathjax: true
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/b62cc77899404922bd08bce681cb06fa.png)
+![](https://blogfiles.oss.fyz666.xyz/png/271ef5b2-5f10-4f0c-802d-7c6c8f799e43.png)
 一般而言，以上面这种池化核尺寸为2、步长为2的池化操作最为常用。还有一种平均值池化，则是把每一块的最大值运算换成平均值运算。
 
 
@@ -139,7 +139,7 @@ $$y_i=\gamma \hat{x_i}+\beta$$
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e1759e4ba2ae679f5c97f90e321293ae.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0aafd5c7-7fd1-4f27-ba11-de8656976bff.png)
 我们首先对$\gamma,\beta$计算梯度，这两个比较容易：
 
 

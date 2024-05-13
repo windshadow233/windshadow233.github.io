@@ -80,7 +80,7 @@ const createEle = (lang, item, service) => {
 
 {% endnote %}
 
-然后修改`source/js/main.js`中的`createEle`函数：
+然后修改`themes/butterfly/source/js/main.js`中的`createEle`函数：
 
 ```diff
 --- a/themes/butterfly/source/js/main.js
@@ -101,7 +101,7 @@ const createEle = (lang, item, service) => {
 
 <!-- tab 使用原生JS解决 -->
 
-毕竟为了一处小问题引入一个新的东西有点臃肿，不愿意引入jQuery的话还可以用原生JS解决。阅读了jQuery Actual的代码后我发现它是通过将隐藏起来的块暂时修改为：`visibility: hidden; display: block;`来获取它的高度，这是因为`visibility: hidden;`状态虽然也是隐藏，但仍会占据页面空间。在取得其高度后再恢复原有的样式。于是我们可以手写这个逻辑，来修改`source/js/main.js`：
+毕竟为了一处小问题引入一个新的东西有点臃肿，不愿意引入jQuery的话还可以用原生JS解决。阅读了jQuery Actual的代码后我发现它是通过将隐藏起来的块暂时修改为：`visibility: hidden; display: block;`来获取它的高度，这是因为`visibility: hidden;`状态虽然也是隐藏，但仍会占据页面空间。在取得其高度后再恢复原有的样式。于是我们可以手写这个逻辑，来修改`themes/butterfly/source/js/main.js`：
 
 ```diff
 --- a/themes/butterfly/source/js/main.js
@@ -167,6 +167,6 @@ const createEle = (lang, item, service) => {
 
 {% link 代码高度限制,Butterfly,https://butterfly.js.org/posts/4aa8abbe/#%E4%BB%A3%E7%A2%BC%E9%AB%98%E5%BA%A6%E9%99%90%E5%88%B6 %}
 
-> 不适用于隐藏后的代码块（ css 设置 display: none）
+- 不适用于隐藏后的代码块（ css 设置 display: none）
 
 看来这是主题的预期行为。不过我个人认为让隐藏的代码块同样折叠起来更为合理。

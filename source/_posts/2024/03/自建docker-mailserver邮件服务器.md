@@ -4,7 +4,7 @@ id: 9930
 date: 2024-03-20 17:06:36
 categories: [瞎捣鼓经历]
 tags: ['Docker', 'Docker-mailserver', 'Email']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0455fced579cc6ca57b6e07c464dd553.png
+cover: https://blogfiles.oss.fyz666.xyz/png/69767e44-ab15-4b61-a5f5-a6567361e09b.png
 disableNunjucks: true
 swiper_index: 1
 description: 用docker部署了个邮件服务器～
@@ -12,7 +12,7 @@ description: 用docker部署了个邮件服务器～
 
 大约两年前我就想过整一个自己域名的邮件服务，这样就可以随意注册邮箱账号了，~~而且看上去很帅~~。然而这件事却一拖再拖，到今天总算是整上了，于是就在这里记录一下整的过程。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/0455fced579cc6ca57b6e07c464dd553.png)
+![](https://blogfiles.oss.fyz666.xyz/png/69767e44-ab15-4b61-a5f5-a6567361e09b.png)
 我所使用的服务器是腾讯云的轻量应用服务器，地域在新加坡，配置是最low的2核2G入门型，由于配置比较低还跑了一些其他的服务，我只能放弃一些诸如mailcow这样的选项，最后选择的是比较轻量的[docker-mailserver](https://github.com/docker-mailserver/docker-mailserver/)，不开启反病毒功能的前提下内存占用比较少。
 
 
@@ -45,7 +45,7 @@ description: 用docker部署了个邮件服务器～
 - 110：POP3
 - 995：POP3（TLS端口）
 
-其中25端口被一些国内主机商默认封锁，需要手动申请解封。我的服务器好像没有封，不拿来发邮件感觉问题不大。
+其中25端口被一些国内主机商默认封锁，需要手动申请解封。我的服务器好像没有封，于是直接就用起来了。
 
 
 对于这些乱七八糟的端口的理解可以参考[这个链接](https://docker-mailserver.github.io/docker-mailserver/latest/config/security/understanding-the-ports/#overview-of-email-ports)。
@@ -213,7 +213,7 @@ cat docker-data/dms/config/opendkim/keys/mail.example.com/mail.txt
 
 如果可以的话，再设置一条PTR记录（DNS反向解析记录），用以降低被识别为垃圾邮件的概率。（然而腾讯云轻量应用服务器不给解析，就此作罢。）
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6f5e6a22c0ea026754c435320961ced8.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ac2d7463-ddaa-4fe2-b0d1-56be0cca4b98.png)
 ### 启动服务
 
 
@@ -240,7 +240,7 @@ docker compose up -d
 
 实测该服务占用内存在100M左右，可以说是非常轻量了：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ccdbb9f72cb72b3f22b9dd6d310c8f2e.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a457a7d1-eba8-4342-9619-8c60fddb9501.png)
 ## 部署起来了，然而怎么使用？
 
 
@@ -279,7 +279,7 @@ server.quit()
 
 iOS邮箱app：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/daae7a2dfc0bb3254ab03f63a310f677.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/7ce9f770-0415-46b7-902a-de03e68d297c.jpg)
 后续设置中，将发件服务器端口设置为587或者465，勾选SSL。
 
 
@@ -287,10 +287,10 @@ iOS邮箱app：
 
 最后，可以在[这个网站](https://www.appmaildev.com/cn/dkim)对上面设置的DKIM、SPF等进行测试：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/14b1091c9c434b0cfa192e4a4fd7bf3c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8c80f344-5e79-40bc-a2f9-57acf512553e.png)
 以及[这个网站](https://www.mail-tester.com/)，可以进一步测试邮件的得分：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/a0c2f4d194410ec75ac27e100222f5df.png)
+![](https://blogfiles.oss.fyz666.xyz/png/9e610950-8c23-4fff-89ac-1c1f40f02bf1.png)
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/edc8dedc399fae1343875e12fd967eca.png)
+![](https://blogfiles.oss.fyz666.xyz/png/26d51119-c1e4-48d9-ad9a-e96c1f40f1a2.png)
 很遗憾，我的`.xyz`域名被识别为了`SUSPICIOUS_NTLD`，再加上用不上rDNS，估计会被以很高的置信度丢进垃圾箱了 🙁 以后再改进！

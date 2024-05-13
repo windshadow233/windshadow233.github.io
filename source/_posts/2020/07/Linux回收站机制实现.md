@@ -4,7 +4,7 @@ id: 2049
 date: 2020-07-19 07:42:42
 categories: [瞎捣鼓经历]
 tags: ['Linux']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/79de05b70376833abd914e1621713cbc.png
+cover: https://blogfiles.oss.fyz666.xyz/png/efe5cc9d-8459-42bc-b67e-2a7288481eec.png
 disableNunjucks: true
 ---
 
@@ -16,14 +16,14 @@ disableNunjucks: true
 因此若不小心跑了`rm -rf /`，就会把根目录全删了，后果难以想象。为了避免这一点，可以这么做：
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpeg/b4d6076611f5256c38d75f084086ab07.jpeg)
+![](https://blogfiles.oss.fyz666.xyz/jpeg/a7f4b4ef-cb8d-4102-ae35-84816760d4a8.jpeg)
 ~~这句命令是说，给<code>rm -rf</code>这句命令一个cd值（即冷却时间），让它不要删的那么快。~~
 
 
 （好像有什么奇怪的东西混了进来，请Linux萌新自动忽略上图及删除线中的内容）
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/79de05b70376833abd914e1621713cbc.png)
+![](https://blogfiles.oss.fyz666.xyz/png/efe5cc9d-8459-42bc-b67e-2a7288481eec.png)
 其实我们可以弄一个类似于Windows系统回收站的机制，运行`rm`命令时将文件先移动到回收站内，再定期清理回收站。废话不多说，上操作过程与代码：
 
 

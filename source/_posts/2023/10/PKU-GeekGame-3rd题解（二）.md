@@ -7,7 +7,7 @@ categories:
 tags:
   - GeekGame
   - GeekGame 3rd
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/6037d68d85c447558f4e9177d8771a28.png
+cover: https://blogfiles.oss.fyz666.xyz/png/0e15caa6-a325-4e6b-9a1c-cfbf97a52d93.png
 disableNunjucks: false
 mathjax: true
 ---
@@ -163,7 +163,7 @@ flag{TOo0_e4sy_F1aG_foR_Tooo_EaSy_laNg}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/e8b722581fa8e5d5921146efebd0e70c.png)
+![](https://blogfiles.oss.fyz666.xyz/png/178d2957-9f67-4dad-94d3-4e5dd68b3a15.png)
 嗯？？？
 
 
@@ -171,7 +171,7 @@ CE，启动！flag，搜索！
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/5101424398ea0ace1e031c2ade2ffba1.png)
+![](https://blogfiles.oss.fyz666.xyz/png/bfa809bf-90de-4a01-ab59-6c97aa4f4061.png)
 flag{did-you-unpack-the-xp3?}
 
 
@@ -189,12 +189,12 @@ flag{did-you-unpack-the-xp3?}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/7103cfe7e4da98bcded80d70500a522a.png)
+![](https://blogfiles.oss.fyz666.xyz/png/3b339198-653e-4f51-b976-bde05b3eec58.png)
 好像有什么神奇的东西写在内存里，我们把长度改大一点看看：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/ab2695ff638d429cefbc576b4a39900b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/8a799ca2-32f6-49c4-a237-ca5cf1f01b21.png)
 嗯？19260817？~~好暴力的数字~~
 
 
@@ -400,7 +400,7 @@ for i in range(1, 50):
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/00e9dd8674cc7399446619f41edf5927.png)
+![](https://blogfiles.oss.fyz666.xyz/png/a5c7a5b0-080c-441c-a9ee-06a5d1449a09.png)
 不过我也不是很懂这其中的细节，等着看看官方&大佬们的题解。
 
 
@@ -443,7 +443,7 @@ flag{Re4d_PR1nTf_c0de_SO_E4Zy}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/2e39caa226300730d289fd1c201c2646.png)
+![](https://blogfiles.oss.fyz666.xyz/png/7ebdf331-4b58-4808-bd55-72dbd06a82c2.png)
 容易理解flag的长度为36，开始将flag每个字符以mint类型依次存入一个数组，然后进行一个二重循环，在每次内部循环结束后，将v14与内存中的某个值进行比较。由于这里的运算比较简单，可以很容易地理解这个过程：
 
 
@@ -454,7 +454,7 @@ flag{Re4d_PR1nTf_c0de_SO_E4Zy}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/207555098c8eb4241f6c75a06e890515.png)
+![](https://blogfiles.oss.fyz666.xyz/png/d893fef5-dbb9-4fcf-b156-575b5a171dd0.png)
 将这些值抄下来，过会用来解方程。
 
 
@@ -462,7 +462,7 @@ flag{Re4d_PR1nTf_c0de_SO_E4Zy}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/4d4a50bd1a2ee3a4f9e64f8b0ed8ebbe.png)
+![](https://blogfiles.oss.fyz666.xyz/png/fbe96055-f58e-4c07-9b32-28eaf1222d76.png)
 发现做了一个模，这样不但解决了整数溢出问题，还解决了我之前在mma脚本里模4294967296然后解不出来的问题。
 
 
@@ -498,12 +498,12 @@ flag{yoU_Are_THE_mA<span>&#36;</span>T3r_of_l@gR4nGe}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/047590fb8c14ded030b0b2eff29796e7.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6d18c02f-df87-43b7-a8a2-085ddbc03a1c.png)
 flag长度为45，一开始同样将flag以mint类型存入数组，不过在数组后面添加了很多0，使得最终的长度为64。然后将其经过了一个函数sub_14BE，最后将数组元素依次与dword_105020里的内存值进行比较。那么先看看这个神奇的sub_14BE葫芦里卖的是什么药：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/935f79ddac2707356b9f03cfa6e49ffa.png)
+![](https://blogfiles.oss.fyz666.xyz/png/401a7a73-e808-4ae1-9ab8-406c76710b3d.png)
 感觉好像有点复杂，并且这里还出现了另一块内存区域里的变量dword_405280。由于不知道这个函数在干什么，我打算先保存一下这里出现的两块内存区域dword_105020和dword_405280里的数组。
 
 
@@ -511,7 +511,7 @@ dword_105020与前面flag1的数据类似，容易找到，不过当我去找dwo
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/9162da212bd7503fba0da7a806394227.png)
+![](https://blogfiles.oss.fyz666.xyz/png/760b6fa2-83c0-4568-9584-6eb7de69fe4c.png)
 这怎么都是问号啊？经搜索，我发现原来前面能直接看到的内容都是存在文件的.data段的，而这个dword_405280则位于.bss段，该段存放的内容都是没经过初始化的内容，初始化过程会发生在程序开始执行以后。。。所以我还得去用gdb调试一下这个程序看看这块内存是多少。
 
 
@@ -596,7 +596,7 @@ flag{Welcome_t0_7hE_WorlD_Of_Po1YNoMi@l}
 
 
 
-<a href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/zip/38aeddc93d8126d374d156b8ed27f109.zip" download="mma-code.zip">Easy和Hard的解题代码</a>
+<a href="https://blogfiles.oss.fyz666.xyz/zip/f5b93093-03fb-443c-90aa-d10e90b26b68.zip" download="mma-code.zip">Easy和Hard的解题代码</a>
 
 ## 关键词过滤喵，谢谢喵
 {% hideToggle 查看题面 %}
@@ -1036,7 +1036,7 @@ flag{PYthOn_rAnd0m_sOo000oO0oOoO0OoOO000_eaSy}
 > A: 你看那些华容道格子是不是很 Nano？
 
 
-<a href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/zip/ab88312f44c66b20d6919894153d38dc.zip" download="qrcode.zip">本题附件</a>
+<a href="https://blogfiles.oss.fyz666.xyz/zip/bf7f4242-a326-4afc-8e37-5237804e6429.zip" download="qrcode.zip">本题附件</a>
 {% endnote %}
 {% endhideToggle %}
 ### 华维码 · 特难
@@ -1046,12 +1046,12 @@ flag{PYthOn_rAnd0m_sOo000oO0oOoO0OoOO000_eaSy}
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/8189b4456987400a3640e6fc776d1a94.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6ec97276-80eb-4bde-9ca8-f4a72468db6a.png)
 当时觉得既然给出了打乱顺序，那么这题的考点应该就是用算法去拼图嘛，所以没去扫那个二维码，而是用搜索算法把拼图解了出来，然后写了个脚本去网页玩：
 
 
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/41b9af74aca53b57953ef082bf4c041b.png)
+![](https://blogfiles.oss.fyz666.xyz/png/6493666a-8f93-437b-a765-f2eb633add7d.png)
 解出第一小题后，我先去做了个别的题，后来再回过头来下载第二小题的图片素材时，发现文件名变成了乱码，再尝试下载第一题的素材，也变成了乱码文件名。。。这才意识到不对劲，然后扫了一下第一题拼出来的二维码，发现直接就能扫出flag。。。原来之前题目有bug，而现在组委会默默把这个bug修了。。因为我之前没预先下载第二小题的素材，导致没法用这个非预期方法做第二小题。用预期方法显然是不会的，眼睛看花了QAQ。
 
 

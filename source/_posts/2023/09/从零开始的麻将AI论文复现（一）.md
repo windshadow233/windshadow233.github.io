@@ -4,7 +4,7 @@ id: 8437
 date: 2023-09-15 08:44:01
 categories: [机器学习]
 tags: ['Mahjong AI', 'Suphx', '深度学习']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/webp/29e543a6dc692da86719057ab0006738.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp
 disableNunjucks: true
 ---
 
@@ -12,11 +12,11 @@ disableNunjucks: true
 
 首先，通过阅读论文，我们了解到Suphx在「弃牌模型」和「立直模型」中使用了通道多达838的特征，而「鸣牌模型」用到的特征更是多了120个通道。文中给出了一些比较基本的特征的编码方法，但对于这多达838个通道都是如何编码来的并未详细说明（~~其实是直接没说~~），不过，我们完全可以先做一个简化版的出来，日后再慢慢增加特征。
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/72da0f46f977661511203bd79ce81f1f.png)
+![](https://blogfiles.oss.fyz666.xyz/png/fd71bd99-bc1d-42e1-a4c4-ae064b1734cf.png)
 
 ## 手牌编码
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/png/d2b42b88fd22c607bb4ca9a981418332.png)
+![](https://blogfiles.oss.fyz666.xyz/png/b36d5ea3-157d-4a75-bd53-9c4ae97c1e13.png)
 论文的图片已经很形象地说明了手牌的编码方法。该方法将手牌编码为4通道的34维向量，即形状为（4，34）的矩阵。首先将34种牌编码为0-33，当玩家手牌中拥有X张Y（0≤Y≤33）的时候，就将该矩阵第Y列的前X个元素置为1。
 
 

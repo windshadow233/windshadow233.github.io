@@ -4,7 +4,7 @@ id: 5447
 date: 2021-05-29 08:02:30
 categories: [瞎捣鼓经历]
 tags: ['DNS', 'Linux', 'OpenWrt', '树莓派', '计算机网络']
-cover: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f391712bc9bdae097270a9e9309dd223.jpg
+cover: https://blogfiles.oss.fyz666.xyz/jpg/5a88bec1-200c-46ec-b547-a9ead0f870bd.jpg
 disableNunjucks: false
 ---
 
@@ -24,7 +24,7 @@ disableNunjucks: false
 
 我的网络架构及基本的网络设置大概如下（因为没办法在软件上模拟WiFi，故使用一条以太网线当做LAN-Device与路由器间的WiFi连接）：
 
-![](https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/jpg/f391712bc9bdae097270a9e9309dd223.jpg)
+![](https://blogfiles.oss.fyz666.xyz/jpg/5a88bec1-200c-46ec-b547-a9ead0f870bd.jpg)
 
 - OpenWrt路由器WAN口连接外网，所有LAN口通过虚拟设备(br-lan)进行桥接，并分配静态IP为192.168.1.1
 
@@ -81,7 +81,7 @@ Pi-hole最早是基于树莓派系统开发出来的软件，拥有DNS查询、�
 随后打开Pi-hole的网页管理界面，选择Settings->DNS，将左侧的所有选项都取消勾选，但勾选右侧的Custom 1(ipv4)，填入路由器的Dnsmasq监听地址，即192.168.1.1#53，也可以自己再加几个第三方的DNS作为备用，最后别忘了保存！
 
 
-最后检查网关设备上的如下配置文件：/etc/dhcpcd.conf，该文件是Pi-hole的依赖软件的一个配置文件，它将用于定义设备的接口信息，配置比较通俗易懂，注意将静态ip（static ip_address）与网关（static routers）设置正确，当然最重要的，一定要设置static domain_name_servers为127.0.0.1，即本地ip，这样才会在本地的53端口正常监听DNS请求，从而可以通过Pi-hole转发到其上游服务器（192.168.1.1#53）。
+最后检查网关设备上的如下配置文件：`/etc/dhcpcd.conf`，该文件是Pi-hole的依赖软件的一个配置文件，它将用于定义设备的接口信息，配置比较通俗易懂，注意将静态ip（static ip_address）与网关（static routers）设置正确，当然最重要的，一定要设置static domain_name_servers为127.0.0.1，即本地ip，这样才会在本地的53端口正常监听DNS请求，从而可以通过Pi-hole转发到其上游服务器（192.168.1.1#53）。
 
 
 至此，一台普通的DNS服务器已经部署成功了，可以在本机与网关设备上通过nslookup查询一下国内的一些域名，看看能不能按你所希望的流程拿到查询结果。
