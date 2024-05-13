@@ -3,7 +3,7 @@ title: 如何写CSS样式使HTML元素位于屏幕正中
 id: 3487
 date: 2020-08-04 05:37:19
 categories: [学习笔记]
-tags: ['CSS', 'Web前端', '网站美化']
+tags: ['CSS', 'Web前端']
 cover: 
 disableNunjucks: true
 ---

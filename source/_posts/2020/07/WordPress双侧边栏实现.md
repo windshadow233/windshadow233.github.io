@@ -4,7 +4,7 @@ id: 1830
 date: 2020-07-17 16:03:22
 categories:
   - [博客相关]
-tags: ['PHP', 'Web前端', 'WordPress', '网站美化']
+tags: ['PHP', 'Web前端', 'WordPress']
 cover: 
 disableNunjucks: true
 ---
