@@ -917,6 +917,9 @@ blockquote p:first-child{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+#menus {
+    margin: 0 auto;
+}
 #menus,#sidebar-menus{
     font-weight: bolder;
 }
@@ -1037,9 +1040,6 @@ blockquote p:first-child{
 }
 #nav .menus_items .menus_item .menus_item_child li:hover a{
     color: var(--fyz-white)!important;
-}
-#nav .site-page{
-    font-size: inherit;
 }
 #nav #search-button {
     padding: 0;
