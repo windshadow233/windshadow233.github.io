@@ -1042,7 +1042,6 @@ inject:
     - <script data-pjax>LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script data-pjax>new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
-    - <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.actual/1.0.19/jquery.actual.min.js"></script>
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"
