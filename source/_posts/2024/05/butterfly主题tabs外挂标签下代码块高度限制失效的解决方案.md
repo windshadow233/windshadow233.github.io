@@ -60,15 +60,27 @@ const createEle = (lang, item, service) => {
 
 由于`display:none`的元素其`offsetHeight`会变成0，导致无法进入函数中间的那个if语句，也就无法按我们的需求进行渲染。
 
-对于这个问题，早就有了现成的解决方案，我们可以引入jQuery actual插件，通过它来获取隐藏元素的实际高度：
+而对于这个问题，早就有了现成的解决方案。
 
-{%link jQuery Actual Plugin,GitHub,https://github.com/dreamerslab/jquery.actual %}
+{% tabs tab1 %}
+
+<!-- tab 使用 jQuery Actual 插件 -->
+
+我们可以引入[jQuery Actual插件](https://github.com/dreamerslab/jquery.actual)，通过它来获取隐藏元素的实际高度：
 
 在butterfly的主题文件中`inject.head`项下引入jquery.actual文件：
+
+{% hideInline hi %}
 
 ```yaml
 - <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.actual/1.0.19/jquery.actual.min.js"></script>
 ```
+
+{% note info %}
+
+该文件还依赖于：jQuery >= 1.2.3
+
+{% endnote %}
 
 然后修改`source/js/main.js`中的`createEle`函数：
 
@@ -79,16 +91,77 @@ const createEle = (lang, item, service) => {
          btf.addEventListenerPjax(hlTools, 'click', highlightToolsFn)
          fragment.appendChild(hlTools)
        }
-+      const actualHeight = $(item).actual('height');
  
 -      if (highlightHeightLimit && item.offsetHeight > highlightHeightLimit + 30) {
-+      if (highlightHeightLimit && actualHeight > highlightHeightLimit + 30) {
++      if (highlightHeightLimit && $(item).actual('height') > highlightHeightLimit + 30) {
          const ele = document.createElement('div')
          ele.className = 'code-expand-btn'
          ele.innerHTML = '<i class="fas fa-angle-double-down"></i>'
 ```
 
-虽然好像有点不优雅，但至少代码块渲染能按需求工作了。
+<!-- endtab -->
+
+<!-- tab 使用原生JS解决 -->
+
+毕竟为了一处小问题引入一个新的东西有点臃肿，不愿意引入jQuery的话还可以用原生JS解决。阅读了jQuery Actual的代码后我发现它是通过将隐藏起来的块暂时修改为：`visibility: hidden; display: block;`来获取它的高度，这是因为`visibility: hidden;`状态虽然也是隐藏，但仍会占据页面空间。在取得其高度后再恢复原有的样式。于是我们可以手写这个逻辑，来修改`source/js/main.js`：
+
+```diff
+--- a/themes/butterfly/source/js/main.js
++++ b/themes/butterfly/source/js/main.js
+@@ -124,6 +124,39 @@
+       this.classList.toggle('expand-done')
+     }
+ 
++    const getActualHeight = function (item) {
++      let tmp = []
++      let hidden = []
++      function fix() {
++      
++          let current = item
++          while (current !== document.body && current != null) {
++              if (window.getComputedStyle(current).display === 'none') {
++                  hidden.push(current)
++              }
++              current = current.parentNode
++          }
++          let style = 'visibility: hidden !important; display: block !important; '
++  
++          hidden.forEach(function (elem) {
++              var thisStyle = elem.getAttribute('style') || ''
++              tmp.push(thisStyle)
++              elem.setAttribute('style', thisStyle ? thisStyle + ';' + style : style)
++          })
++      }
++      function restore() {
++          hidden.forEach((elem, idx) => {
++              let _tmp = tmp[idx]
++              if( _tmp === '' ) elem.removeAttribute('style')
++              else elem.setAttribute('style', _tmp)
++          })
++      }
++      fix()
++      let height = item.offsetHeight
++      restore()
++      return height
++    }
++
+     const createEle = (lang, item, service) => {
+       const fragment = document.createDocumentFragment()
+ 
+@@ -135,7 +168,7 @@
+         fragment.appendChild(hlTools)
+       }
+ 
+-      if (highlightHeightLimit && item.offsetHeight > highlightHeightLimit + 30) {
++      if (highlightHeightLimit && getActualHeight(item) > highlightHeightLimit + 30) {
+         const ele = document.createElement('div')
+         ele.className = 'code-expand-btn'
+         ele.innerHTML = '<i class="fas fa-angle-double-down"></i>'
+```
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ---
 
