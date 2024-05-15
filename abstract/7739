@@ -1,0 +1,1 @@
+文章介绍了通过ZeroTier实现外网设备与局域网内所有设备互联的方法。详细说明了在OpenWrt路由器上安装ZeroTier并进行配置的步骤，包括ZeroTier静态路由配置和OpenWrt网络配置。

@@ -1,0 +1,1 @@
+文章复现了一个根据Star数量动态变化名称和描述的GitHub仓库，涉及技术包括GitHub REST API、Webhook、AWS Lambda等，作者详细记录了整个实现过程，包括创建仓库、配置Webhook、生成访问令牌、编写Lambda函数等关键步骤。

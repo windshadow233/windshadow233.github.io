@@ -1,0 +1,1 @@
+文章解决了WordPress登录时提示Cookies被阻止的问题。通过添加JavaScript代码检查浏览器是否支持cookie，并在不支持时提醒用户。

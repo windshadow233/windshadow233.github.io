@@ -1,0 +1,1 @@
+文章提供了一个批处理脚本，用于修复Windows系统中图标显示问题。脚本通过重启explorer.exe进程和删除IconCache.db文件来刷新图标缓存。

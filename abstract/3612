@@ -1,0 +1,1 @@
+文章讲解了Jupyter Notebook的用途、安装过程和使用方法。Jupyter Notebook是一款支持多种编程语言的交互式IDE，适合数据处理分析和建模。安装可以通过Anaconda或pip命令。文章还提供了如何优雅地使用Jupyter的技巧，包括生成配置文件、设置默认路径、浏览器和密码，以及创建.bat文件简化启动过程。

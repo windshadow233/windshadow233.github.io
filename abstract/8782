@@ -1,0 +1,1 @@
+文章是Hackergame 2023题解的第二部分，涉及JSON和YAML的兼容性问题、Git操作、HTTP状态码收集、Docker权限问题、惜字如金文本处理、代码还原、以及AI模型交互等题目。作者提供了详细的解题步骤和方法，包括使用git reflog、nginx服务器请求、docker容器挂载、文本编辑和AI模型交互技巧。

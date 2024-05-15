@@ -1,0 +1,1 @@
+作者因不喜欢现有评论系统的外观，决定使用基于GitHub Issue的Gitalk作为博客的评论系统。提供了Gitalk的配置代码和夜间模式CSS样式，并提到后来换成了基于GitHub Discussion的Giscus系统。

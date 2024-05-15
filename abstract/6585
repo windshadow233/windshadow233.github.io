@@ -1,0 +1,1 @@
+文档提供了解决Ubuntu系统开机黑屏问题的步骤，通常是由于显卡驱动安装错误导致。建议重启进入GRUB界面，选择Advanced options for Ubuntu，删除有问题的内核，并更新GRUB来修复。

@@ -1,0 +1,1 @@
+这篇文章概述了Django项目的目录结构，包括manage.py文件的作用、helloworld子目录下的重要文件如settings.py和urls.py，以及如何创建和注册app。

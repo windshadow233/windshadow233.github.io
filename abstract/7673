@@ -1,0 +1,1 @@
+文章讲述了使用Nginx反向代理WordPress并配置SSL的过程。由于WordPress的特殊机制，配置过程遇到了一些挑战，文章提供了详细的Nginx配置和WordPress源代码修改步骤。

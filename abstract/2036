@@ -1,0 +1,1 @@
+这篇文章讨论了在使用Ajax或JavaScript动态加载DOM元素后，这些元素无法响应jQuery选择器绑定事件的问题，并提供了使用`$(document).on('click', '.btn', function () { ... })`的解决方案。

@@ -1,0 +1,1 @@
+文章介绍了使用Docker部署WordPress的方法。提供了docker-compose.yml配置文件示例，并说明通过执行docker-compose up -d命令来启动WordPress容器。同时提醒检查服务器端口是否开放以确保网站可访问。

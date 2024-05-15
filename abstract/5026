@@ -1,0 +1,1 @@
+文章提供了WordPress网站接入微博登录的详细步骤，包括如何获取微博开放平台的App Key和App Secret，以及在WordPress中设置授权回调页和取消授权回调页的配置。

@@ -1,0 +1,1 @@
+文章讲述了作者为其个人博客网站部署Cloudflare免费防御措施的经历。由于遭受了DoS、CC和API攻击，作者决定使用Cloudflare的Free Plan来提高网站的安全性。文章详细介绍了部署过程，包括DNS托管、CDN设置、SSL/TLS配置、WAF自定义规则、速率限制规则以及其他安全设置。

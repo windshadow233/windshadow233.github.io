@@ -1,0 +1,1 @@
+文章描述了如何让树莓派4B通过USB接口的SSD硬盘启动Ubuntu 20.04 Server系统。包括更新BootLoader、修改启动配置、Ubuntu系统的相应调整，以及使用Quirks修复USB适配器问题的过程。

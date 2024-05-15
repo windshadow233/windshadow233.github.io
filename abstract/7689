@@ -1,0 +1,1 @@
+文章提供了使用Nginx反向代理ShareLaTeX服务并配置SSL的配置示例。特别提到了为了支持Websocket协议，需要在Nginx配置中添加特定的头部字段。
