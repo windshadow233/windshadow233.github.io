@@ -1,1 +1,0 @@
-void 0!==window.a2a&&a2a.init_all(),getIpInfo(),$("#categoryBar").length>0&&$("#categoryBar .category-list-item").each((function(){let a=Math.floor(151*Math.random())+50,o=Math.floor(151*Math.random())+50,t=Math.floor(151*Math.random())+50;$(this).css("background",`rgb(${a},${o},${t})`)}));
