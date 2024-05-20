@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/categories/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/gallery/</loc>
     
     <lastmod>2024-05-20</lastmod>
@@ -182,25 +173,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/7739/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/7934/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/7999/</loc>
+    <loc>https://blog.fyz666.xyz/categories/</loc>
     
     <lastmod>2024-05-20</lastmod>
     
@@ -516,69 +489,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/about/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5253/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5299/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5356/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5313/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5309/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5369/</loc>
-    
-    <lastmod>2024-05-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5405/</loc>
     
     <lastmod>2024-05-20</lastmod>
     
@@ -993,6 +903,33 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/7728/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/7739/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/7934/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/7999/</loc>
     
     <lastmod>2024-05-20</lastmod>
     
@@ -1470,6 +1407,69 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/5174/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5253/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5299/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5356/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5313/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5309/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5369/</loc>
+    
+    <lastmod>2024-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5405/</loc>
     
     <lastmod>2024-05-20</lastmod>
     
