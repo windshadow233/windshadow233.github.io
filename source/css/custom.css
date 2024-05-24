@@ -549,7 +549,6 @@ span.card-archive-list-count {
     margin-left: 10px!important;
     border-radius: 15px;
 }
-
 #article-container .flink .flink-list > .flink-list-item a .flink-item-icon img {
     float: left;
     border-radius: 15px!important;
@@ -1671,4 +1670,22 @@ img[data-lazy-src]:not(.loaded) {
 #ai-content::after{
     content: '|';
     animation: blink 1s infinite
+}
+.relatedPosts>.relatedPosts-list>div,#post .post-copyright{
+    border-radius: 15px;
+    border: 1px solid var(--fyz-border);
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.relatedPosts>.relatedPosts-list>div:hover,#post .post-copyright:hover{
+    border: 1px solid var(--fyz-theme);
+    box-shadow: 0 0 3px var(--fyz-theme) !important;
+}
+.reward-button,.reward-main .reward-all,.reward-item .post-qr-code-img{
+    border-radius: 15px!important;
 }

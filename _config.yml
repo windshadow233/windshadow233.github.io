@@ -107,11 +107,11 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 
-search:
-  path: search.json
-  field: post || page
-  format: html
-  limit: 1000
+# search:
+#   path: search.json
+#   field: post || page
+#   format: html
+#   limit: 1000
 
 feed:
   type:
