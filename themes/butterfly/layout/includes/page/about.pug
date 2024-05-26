@@ -1,0 +1,301 @@
+#about-page
+  .author-box
+    .author-img
+      img.no-lightbox(src=theme.avatar.img)
+    .image-dot
+  p.p.center.logo.large 关于我
+  p.p.center.small 行所欲行，无问西东
+  .author-content
+    .author-content-item.myInfoAndSayHello
+      .title1 你好，很高兴认识你👋
+      .title2
+        | 我是
+        span.inline-word 「风的影子」
+      .title1
+        | 是一名 在读博士研究生、
+        span.inline-word 博主
+      .title1
+        | 我的GPG Key: 
+        span.inline-word
+          a(href="https://keys.openpgp.org/vks/v1/by-fingerprint/B4ADB2D4BB3EBD5E387BA401B8674F373ACBD2AD") B4ADB2D4BB3EBD5E387BA401B8674F373ACBD2AD
+    .aboutsiteTips.author-content-item
+      .author-content-item-tips 追求
+      h2
+        | 源于
+        br
+        | 兴趣而去
+        span.inline-word 学习
+        .mask
+          span.first-tips 科学
+          |
+          span 技术
+          |
+          span(data-up) 代码
+          |
+          span(data-show) 程序
+
+  .hello-about
+    .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+    .shapes
+      .shape.shape-1(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+      .shape.shape-2(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+      .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+    .content
+      h1 Hello there!
+
+  .author-content
+    .author-content-item.skills
+      .card-content
+        .author-content-item-tips 技能
+        span.author-content-item-title 开启创造力
+        .skills-style-group
+          .tags-group-all
+            .tags-group-wrapper
+              each i in site.data.creativity
+                - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
+                - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
+                each item, index in i.creativity_list
+                  if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
+                    .tags-group-icon-pair
+                      .tags-group-icon(style=`background: ${evenNum[index].color}`)
+                        img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
+                      .tags-group-icon(style=`background: ${oddNum[index].color}`)
+                        img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
+          .skills-list
+            each i in site.data.creativity
+              each item, index in i.creativity_list
+                .skill-info
+                  .skill-icon(style=`background: ${item.color}`)
+                    img.no-lightbox(title=item.name, src=item.icon)
+                  .skill-name
+                    span=item.name
+            .etc ...
+    .author-content-item.careers
+      .card-content
+        .author-content-item-tips 生涯
+        span.author-content-item-title 无限进步
+        .careers-group
+          .careers-item
+            .circle(style='background:#FF6666')
+            .name 初中: 慈溪实验中学
+          .careers-item
+            .circle(style='background:#CC3333')
+            .name 高中: 慈溪中学, 理科实验班  
+          .careers-item
+            .circle(style='background:#357ef5')
+            .name 本科: USTC, SCGY, 概率统计专业
+          .careers-item
+            .circle(style='background:#996699')
+            .name 硕博: USTC, SDS, 数据科学专业
+
+
+  .author-content
+    .about-statistic.author-content-item
+      .card-content
+        .author-content-item-tips 数据
+        span.author-content-item-title 访问统计
+        #statistic
+        .post-tips
+          | 统计信息来自
+          a(href='https://v6.51.la/', target='_blank', rel='noopener nofollow') 51la网站统计
+        .banner-button-group
+          a.banner-button(href="/archives/")
+            i.fas.fa-circle-right
+            |
+            span.banner-button-text 文章隧道
+    .author-content-item-group.column.mapAndInfo
+      .author-content-item.map.single
+        span.map-title
+          | 我现在住在
+          b 中国，安徽，合肥市
+      .author-content-item.selfInfo.single
+        div
+          span.selfInfo-title 出生时的 UNIX 时间戳:
+          |
+          span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6') 919584000
+        div
+          span.selfInfo-title 中国科学技术大学
+          |
+          span.selfInfo-content(style='color:#c69043') 数据科学
+        div
+          span.selfInfo-title 现在职业
+          |
+          span.selfInfo-content(style='color:#b04fe6') 在读博士
+
+  .author-content
+    .author-content-item.personalities
+      .author-content-item-tips MBTI
+      span.author-content-item-title 调停者
+      .title2(style='color:#ac899c') INFP-A
+      .post-tips
+        | 前往
+        a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
+        | 了解更多关于
+        a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC') 调停者
+      .image
+        img.no-lightbox(src='https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg')
+    .author-content-item.maxim
+      .author-content-item-tips 座右铭
+      span.maxim-title
+        span(style='opacity:.6;margin-bottom:8px') 行所欲行，
+        |
+        span 无问西东。
+      .post-tips 翻译: 
+        | 想干啥就干啥，不听劝。
+  .author-content
+    .author-content-item.buff
+      .card-content
+        .author-content-item-tips 特长
+        span.buff-title
+          span(style='opacity:.6;margin-bottom:8px')
+            | 瞎捣鼓能力
+            span.inline-word Max
+          |
+          span
+            s 临时抱佛脚
+            | &nbsp;学习新事物能力
+            span.inline-word Max
+      .card-background-icon
+        i.fas.fa-dice-d20
+    .author-content-item.game(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/335c2e46-52a4-49c3-ad6c-490c406aee77.webp);")
+      .card-content
+        .author-content-item-tips 爱好游戏
+        span.author-content-item-title 立直麻将
+        .title2 混迹于雀魂、天凤等平台，更热衷于线下
+        .content-bottom
+          .tips.game-uid UID: 49666973
+
+  .author-content
+    .author-content-item.like-technology(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/311e87a2-738e-4769-a150-df1ee78b4d20.webp);")
+      .card-content
+        .author-content-item-tips 关注偏好
+        span.author-content-item-title 计算机技术
+        .content-bottom
+          .tips 人工智能、一切有意思的事物
+    .author-content-item.like-music(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/e19206fc-a2ce-447a-adcd-ff1ccc88a4ed.webp)")
+      .card-content
+        .author-content-item-tips 音乐偏好
+        span.author-content-item-title 周杰伦、古风
+        |
+        span.author-content-item-title 华语流行
+        .content-bottom
+          .tips 与我一起欣赏更多音乐
+        .banner-button-group
+          a.banner-button(href="/music/")
+            i.fas.fa-circle-right
+            |
+            span.banner-button-text 我的歌单
+
+script(src=url_for(theme.CDN.option.countup_js))
+script.
+  (() => {
+    function isInViewPortOfOne(el) {
+      if (!el) return;
+      const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      const offsetTop = el.offsetTop;
+      const scrollTop = document.documentElement.scrollTop;
+      const top = offsetTop - scrollTop;
+      return top <= viewPortHeight;
+    }
+    fetch('https://v6-widget.51.la/v6/JNnEmA8RDMZCf0Vf/quote.js').then(res => res.text()).then((data) => {
+        let title = ['最近活跃', '今日人数', '今日访问', '昨日人数', '昨日访问', '本月访问', '总访问量']
+        let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g)
+
+        num = num.map((el) => {
+          let val = el.replace(/(<\/span><span>)/g, '')
+          let str = val.replace(/(<\/span><\/p>)/g, '')
+          return str
+        })
+
+        let statisticEl = document.getElementById('statistic')
+
+        // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
+        let statistic = []
+        for (let i = 0; i < num.length; i++) {
+            if (!statisticEl) return
+            if (i == 0 || i == num.length - 1) continue;
+            statisticEl.innerHTML += '<div><span>' + title[i] + '</span><span id='+ title[i] + '>' + num[i] + '</span></div>'
+            queueMicrotask(()=> {
+              statistic.push(new CountUp(title[i], 0, num[i], 0, 2, {
+                  useEasing: true,
+                  useGrouping: true,
+                  separator: ',',
+                  decimal: '.',
+                  prefix: '',
+                  suffix: ''
+              }))
+            })
+        }
+
+        function statisticUP () {
+          let statisticElment = document.querySelector('.about-statistic.author-content-item');
+          if(isInViewPortOfOne(statisticElment)) {
+            for (let i = 0; i < num.length; i++) {
+              if (i == 0 || i == num.length - 1) continue;
+              statistic[i-1].start();
+            }
+            document.removeEventListener('scroll', throttleStatisticUP);
+          }
+        }
+
+        const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 919526400, 0, 2, {
+          useEasing: true,
+          useGrouping: false,
+          separator: ',',
+          decimal: '.',
+          prefix: '',
+          suffix: ''
+        })
+
+        function scrollSelfInfoContentYear() {
+          let selfInfoContentYearElment = document.querySelector('.author-content-item.selfInfo.single');
+          if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
+            selfInfoContentYear.start()
+            document.removeEventListener('scroll', throttleScrollSelfInfoContentYear);
+          }
+        }
+        const throttleStatisticUP = btf.throttle(statisticUP, 200)
+        document.addEventListener('scroll', throttleStatisticUP, {passive: true})
+
+        const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
+        document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
+    });
+
+    var pursuitInterval = null;
+      pursuitInterval = setInterval(function () {
+        const show = document.querySelector('span[data-show]')
+        const next = show.nextElementSibling || document.querySelector('.first-tips')
+        const up = document.querySelector('span[data-up]')
+
+        if (up) {
+          up.removeAttribute('data-up')
+        }
+
+        show.removeAttribute('data-show')
+        show.setAttribute('data-up', '')
+
+        next.setAttribute('data-show', '')
+      }, 2000)
+
+      document.addEventListener('pjax:send', function(){
+        clearInterval(pursuitInterval);
+      });
+
+      var helloAboutEl = document.querySelector('.hello-about')
+      helloAboutEl.addEventListener("mousemove", evt => {
+        const mouseX = evt.offsetX;
+        const mouseY = evt.offsetY;
+        gsap.set(".cursor", {
+          x: mouseX,
+          y: mouseY,
+        })
+
+        gsap.to(".shape", {
+          x: mouseX,
+          y: mouseY,
+          stagger: -0.1
+        })
+      })
+  })()
+script(src=url_for(theme.CDN.option.countup_js))
+script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js")

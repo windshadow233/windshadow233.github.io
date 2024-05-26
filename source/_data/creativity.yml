@@ -1,0 +1,50 @@
+- class_name: 开启创造力
+  creativity_list:
+    - name: PyTorch
+      color: "#FF9933"
+      icon: https://blogfiles.oss.fyz666.xyz/png/82806500-a49f-47a4-8f95-30f47b391aaa.png
+    - name: Python
+      color: "#99CCFF"
+      icon: https://blogfiles.oss.fyz666.xyz/png/efae609e-fef9-435f-a2e8-dfa7ddc58efb.png
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://blogfiles.oss.fyz666.xyz/png/c8845077-0d6b-479d-9b20-f86f8e268df4.png
+    - name: C++
+      color: "#4082c3"
+      icon: https://blogfiles.oss.fyz666.xyz/png/a746c90d-d779-457d-8659-f05422d25252.png
+    - name: Git
+      color: "#df5b40"
+      icon: https://blogfiles.oss.fyz666.xyz/png/cf0bb1ce-a000-4838-899d-0da91aa91663.png
+    - name: Node
+      color: "#333"
+      icon: https://blogfiles.oss.fyz666.xyz/svg/09bc79cd-b0ca-4dbb-a33a-7797955bcb94.svg
+    - name: LaTeX
+      color: "#999966"
+      icon: https://blogfiles.oss.fyz666.xyz/png/72a41dbd-0f71-43f9-afc5-b3d939cc8be3.png
+    - name: Ubuntu
+      color: "#CC6600"
+      icon: https://blogfiles.oss.fyz666.xyz/png/52263707-baa4-4819-876f-cbdc8c77ea01.png
+    - name: Bash
+      color: "#937df7"
+      icon: https://blogfiles.oss.fyz666.xyz/png/ec0aaa69-66e6-4835-b431-4ccfa0b66a18.png
+    - name: Vim
+      color: "#4499e4"
+      icon: https://blogfiles.oss.fyz666.xyz/png/166c7f50-093c-46bb-b5e9-d4987affc60c.png
+    - name: VS Code
+      color: "#66CCFF"
+      icon: https://blogfiles.oss.fyz666.xyz/svg/e7e2ad27-e146-426d-8602-a6e22308fed4.svg
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://blogfiles.oss.fyz666.xyz/png/3e64359d-2f6e-43c6-a8dc-64773a2681ef.png
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://blogfiles.oss.fyz666.xyz/png/a8111226-5a9a-496d-b14d-6fd29e79a545.png
+    - name: HTML
+      color: "#990033"
+      icon: https://blogfiles.oss.fyz666.xyz/png/727665ab-2a89-4360-b4b2-424034fe09de.png
+    - name: Nginx
+      color: "#336633"
+      icon: https://blogfiles.oss.fyz666.xyz/png/8674055d-5194-42e8-a463-a514ce844838.png
+    - name: MySQL
+      color: "#CCFFFF"
+      icon: https://blogfiles.oss.fyz666.xyz/png/6cdb5452-d580-4d3b-bc7c-5870927cb2e8.png

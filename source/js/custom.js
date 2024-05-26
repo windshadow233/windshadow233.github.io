@@ -138,7 +138,6 @@ $(document).keydown(function(event) {
    event.preventDefault();
    var url = $(this).attr('href');
    pjax.loadUrl(url);
-   download(fileUrl, fileName);
 });
  $(document).ready(function() {
     getIpInfo();

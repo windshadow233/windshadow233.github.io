@@ -20,6 +20,7 @@ menu:
   #   Movie: /movies/ || fas fa-video
   本站 || fas fa-sitemap:
     相册: /gallery/ || far fa-images
+    音乐馆: /music/ || fas fa-music
     关于我: /about/ || fas fa-info-circle
     一些项目: /projects/ || fas fa-project-diagram
     状态监控: https://status.fyz666.xyz/ || iconfont icon-monitor
@@ -1001,6 +1002,7 @@ pangu:
     - 'archive'
     - 'article-container'
     - 'top'
+    - 'about-page'
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
@@ -1128,6 +1130,7 @@ CDN:
   custom_format:
 
   option:
+    countup_js: /js/countup.js
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:

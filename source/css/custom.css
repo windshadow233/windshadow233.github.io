@@ -35,6 +35,7 @@ body {
     --style-border-hover: 1px solid var(--heo-main);
     --style-border-hover-always: 1px solid var(--heo-main);
     --style-border-dashed: 1px dashed var(--heo-theme-op);
+    --fyz-shadow-border: var(--heo-shadow-border);
     
     --heo-theme: #425AEF;
     --heo-theme-op: #4259ef23;
@@ -66,6 +67,8 @@ body {
     --heo-card-border: #e3e8f7;
     --heo-shadow-border: 0 8px 16px -4px #2c2d300c;
     --style-border-forever: 2px solid var(--heo-main);
+    --fyz-card-bg: #121212;
+    --fyz-main:var(--fyz-blue);
     --fyz-border:#c9c9c9;
     --fyz-blue:#6cf;
     --fyz-gray:#e2e2e2;
@@ -119,6 +122,7 @@ body {
   --heo-secondbg: #f1f3f8;
   --heo-shadow-nav:0 5px 12px -5px rgba(102, 68, 68, 0.05);
   --heo-card-bg: #fff;
+  --fyz-card-bg: #fff;
   --heo-card-bg-op: var(--heo-black-op);
   --heo-card-bg-none: rgba(255, 255, 255, 0);
   --heo-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.00);
@@ -126,6 +130,7 @@ body {
   --heo-card-border: #e3e8f7;
   --heo-shadow-border: 0 8px 16px -4px #2c2d300c;
   --style-border-forever: 2px solid var(--heo-main);
+  --fyz-secondtext: rgba(60,60,67,0.8);
 }
 
 [data-theme=dark] {
@@ -163,6 +168,7 @@ body {
   --heo-card-border: #282829;
   --heo-shadow-border: 0 8px 16px -4px #00000050;
   --style-border-forever: 2px solid var(--heo-lighttext);
+  --fyz-secondtext: #a1a2b8;
 }
 ::selection {
     color: var(--fyz-white);
@@ -1674,13 +1680,8 @@ img[data-lazy-src]:not(.loaded) {
 .relatedPosts>.relatedPosts-list>div,#post .post-copyright{
     border-radius: 15px;
     border: 1px solid var(--fyz-border);
-    -webkit-box-shadow: var(--card-box-shadow);
     box-shadow: var(--card-box-shadow);
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 }
 .relatedPosts>.relatedPosts-list>div:hover,#post .post-copyright:hover{
     border: 1px solid var(--fyz-theme);
@@ -1688,4 +1689,10 @@ img[data-lazy-src]:not(.loaded) {
 }
 .reward-button,.reward-main .reward-all,.reward-item .post-qr-code-img{
     border-radius: 15px!important;
+}
+#footer-wrap .copyright{
+    color: var(--fyz-white);
+}
+#waifu{
+    z-index: 10;
 }
