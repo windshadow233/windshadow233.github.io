@@ -22,14 +22,14 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         include ./header/index.pug
         if isHome
           #top.top(style="width:1500px")
-            a.recent-post-item#random-top2(style='width:100%;height:auto;padding:10px;',href='javascript:toRandomPost();')
+            a#random-top2(style='width:100%;height:auto;padding:10px;',href='javascript:toRandomPost();')
               div 随便逛逛→
             .cards
               include random.pug
               #swiper-container
             .cards
               .gc#gc
-                .recent-post-item.github_container(style='width:100%;height:auto;padding:10px;')
+                .github_container(style='width:100%;height:auto;padding:10px;')
                   #github_container
               .fl#gl
                 include top-category.pug

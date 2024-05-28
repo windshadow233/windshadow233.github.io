@@ -185,6 +185,9 @@
             i.fas.fa-circle-right
             |
             span.banner-button-text 我的歌单
+  .author-content
+    .create-site-post.author-content-item.introduce.single
+      .author-content-item-tips 心路历程
 
 script(src=url_for(theme.CDN.option.countup_js))
 script.
@@ -209,7 +212,6 @@ script.
 
         let statisticEl = document.getElementById('statistic')
 
-        // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
         let statistic = []
         for (let i = 0; i < num.length; i++) {
             if (!statisticEl) return
