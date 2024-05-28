@@ -27,6 +27,9 @@
     - name: Bash
       color: "#937df7"
       icon: https://blogfiles.oss.fyz666.xyz/png/ec0aaa69-66e6-4835-b431-4ccfa0b66a18.png
+    - name: PHP
+      color: "#333399"
+      icon: https://blogfiles.oss.fyz666.xyz/png/d2f1dc6e-ef9f-4bd4-8b12-ad98ceab59c7.png
     - name: Vim
       color: "#4499e4"
       icon: https://blogfiles.oss.fyz666.xyz/png/166c7f50-093c-46bb-b5e9-d4987affc60c.png
@@ -36,6 +39,9 @@
     - name: CSS3
       color: "#2c51db"
       icon: https://blogfiles.oss.fyz666.xyz/png/3e64359d-2f6e-43c6-a8dc-64773a2681ef.png
+    - name: OpenWrt
+      color: "#3366CC"
+      icon: https://blogfiles.oss.fyz666.xyz/svg/d496fa76-357f-47f6-9879-3de511c67ae7.svg
     - name: JS
       color: "#f7cb4f"
       icon: https://blogfiles.oss.fyz666.xyz/png/a8111226-5a9a-496d-b14d-6fd29e79a545.png

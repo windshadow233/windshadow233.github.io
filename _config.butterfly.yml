@@ -278,7 +278,7 @@ footer:
     since: 2020
   custom_text: 
     <div>
-      <a href="https://github.com/windshadow233.github.io"><img src="https://img.shields.io/badge/GitHub-Source-8A2BE2" /></a>
+      <a href="https://github.com/windshadow233.github.io"><img src="https://img.shields.io/badge/Source-GitHub-8A2BE2" /></a>
         <span class="footer-separator"></span>
       <a href="/sitemap.xml" target="_blank"><img src="https://img.shields.io/badge/Sitemap-XML-8A2BE2" /></a>
         <span class="footer-separator"></span>
@@ -1148,7 +1148,7 @@ CDN:
     # clickShowText:
     # disqusjs:
     # disqusjs_css:
-    # docsearch_css:
+    docsearch_css: /css/docsearch.css
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:

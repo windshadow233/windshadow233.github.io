@@ -21,6 +21,18 @@ p.p.center, span.p.center {
 #page:has(#about-page) .page-title {
   display: none;
 }
+#about-page ul > li {
+  list-style-type: circle;
+  margin: 4px 0;
+}
+#about-page li::marker{
+  color: #49b1f5;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+#about-page li:hover::marker {
+  color: var(--pseudo-hover);
+}
 
 .page:has(#about-page) #footer-wrap {
   opacity: 1;
@@ -78,7 +90,7 @@ p.p.center, span.p.center {
   color: var(--fyz-white);
   background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%);
   background-size: 200%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   width: 59%;
 }
 
@@ -455,7 +467,7 @@ p.p.center, span.p.center {
   justify-content: center;
   color: var(--fyz-white);
   background-size: 200%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   min-height: 200px;
   height: fit-content;
   width: 49%;
