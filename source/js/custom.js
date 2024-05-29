@@ -108,12 +108,6 @@ function setInfo(ip, city, distance, isCache) {
         }
     }
 }
-$(document).keydown(function(event) {
-   if ((event.ctrlKey || event.metaKey) && event.key === 'f') {
-       event.preventDefault();
-       $(".search").click();
-   }
-});
  $(document).on('pjax:success', function(event) {
     if (window.a2a !== undefined) a2a.init_all();
     getIpInfo();
