@@ -1673,7 +1673,7 @@ img[data-lazy-src]:not(.loaded) {
     filter: blur(0) brightness(0.8);
 }
 #ai-container{
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 10px;
     border: 1px solid var(--fyz-border);
     background-color: var(--fyz-white-acrylic1);

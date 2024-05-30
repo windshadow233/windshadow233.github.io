@@ -128,7 +128,7 @@ description: 一种零成本的博客文章AI摘要功能实现
 
 ```css
 #ai-container{
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 10px;
     border: 1px solid #c9c9c9;
     background-color: #fffd;
