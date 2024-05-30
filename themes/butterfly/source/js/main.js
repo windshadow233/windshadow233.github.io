@@ -940,4 +940,41 @@ document.addEventListener('DOMContentLoaded', function () {
       fn()
     })
   })
+  // 全局快捷键
+  if (GLOBAL_CONFIG.shortcut.enable){
+    $(document).ready(
+      function(){
+        let keyboardTimeout;
+        function checkFocusNotOnInputOrTextarea() {
+          const activeElement = document.activeElement
+          return activeElement.tagName !== 'INPUT' && activeElement.tagName !== 'TEXTAREA'
+        }
+        let switchCaseString = `
+        switch(keycode){
+            ${GLOBAL_CONFIG.shortcut.items.map(element => `
+            case ${element.keycode}:
+              ${element.script}
+              break
+            `).join('')}
+            default:
+              break
+            event.preventDefault()
+          }`
+        const executeSwitch = new Function('keycode', switchCaseString)
+        $(document).on('keyup',function(event){
+          keyboardTimeout && clearTimeout(keyboardTimeout)
+          keyboardTimeout = null
+          if(event.keyCode===16){
+            $("#keyboard-tips").hide()
+          }
+        });
+        $(document).on('keydown',function(event){
+              if(event.shiftKey && checkFocusNotOnInputOrTextarea()){
+                if (event.keyCode === 16) keyboardTimeout=setTimeout(()=>{$("#keyboard-tips").show()},GLOBAL_CONFIG.shortcut.keyboard_delay)
+                else executeSwitch(event.keyCode)
+              }
+        })
+      }
+    )
+  }
 })
