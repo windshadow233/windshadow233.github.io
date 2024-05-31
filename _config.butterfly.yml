@@ -1206,7 +1206,7 @@ CDN:
     # clickShowText:
     # disqusjs:
     # disqusjs_css:
-    docsearch_css: /css/docsearch.css
+    docsearch_css: https://blogfiles.oss.fyz666.xyz/css/docsearch.css
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
