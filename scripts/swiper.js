@@ -5,7 +5,6 @@ const pluginname = 'butterfly_swiper'
 const pug = require('pug')
 const path = require('path')
 const urlFor = require('hexo-util').url_for.bind(hexo)
-const util = require('hexo-util')
 
 hexo.extend.filter.register('after_generate', function () {
   // 获取所有文章

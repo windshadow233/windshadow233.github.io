@@ -1,3 +1,5 @@
+'use strict'
+
 function priority_history_calendar(){
     var priority = 0
     if(hexo.config.history_calendar.priority){

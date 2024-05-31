@@ -1108,6 +1108,64 @@ inject:
     - <script type="text/javascript" src="/js/custom.js"></script>
     # - <script src="xxxx"></script>
 
+shortcut:
+  enable: true
+  keyboard_delay: 300
+  keyboard_css: https://blogfiles.oss.fyz666.xyz/css/keyboard.css
+  items:
+    - keycode: 83
+      text: S
+      action: 站内搜索
+      script: $(".search").click()
+    - keycode: 82
+      text: R
+      action: 随机文章
+      script: toRandomPost()
+    - keycode: 38
+      text: ↑
+      action: 回到顶部
+      script: btf.scrollToDest()
+    - keycode: 40
+      text: ↓
+      action: 前往评论区
+      script: location.href='#post-comment'
+    - keycode: 37
+      text: ←
+      action: 回退页面
+      script: history.back()
+    - keycode: 39
+      text: →
+      action: 前进页面
+      script: history.forward()
+    - keycode: 72
+      text: H
+      action: 返回首页
+      script: pjax.loadUrl('/')
+    - keycode: 65
+      text: A
+      action: 关于博主
+      script: pjax.loadUrl('/about/')
+    - keycode: 76
+      text: L
+      action: 友情链接
+      script: pjax.loadUrl('/link/')
+    - keycode: 68
+      text: D
+      action: 浅色/深色切换
+      script: $("#darkmode").click()
+    - keycode: 84
+      text: T
+      action: 简体/繁体切换
+      script: $("#translateLink").click()
+    - keycode: 77
+      text: M
+      action: 播放/暂停音乐
+      script: aplayers[0].toggle()
+    - keycode: 32
+      text: Space
+      action: 全屏模式切换
+      script: fullScreen()
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
