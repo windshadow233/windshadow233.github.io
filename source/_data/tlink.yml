@@ -38,7 +38,7 @@
     descr: 可视化编辑LaTeX公式
   - name: 小工具
     link: https://tool.weixinbox.com/
-    avatar: https://tool.weixinbox.com/static/images/logo.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/ef7ad90c-0e00-4b9b-a547-f074654730dc.png
     descr: 在线小工具大全
   - name: CodePen
     link: http://codepen.io/
@@ -53,7 +53,7 @@
     avatar: https://shields.io/img/logo.png
     descr: 生成GitHub项目的徽章
   - name: Wayback Machine
-    link: https://wayback-api.archive.org/
+    link: https://web.archive.org/
     avatar: https://blogfiles.oss.fyz666.xyz/png/9bc3c9e5-5eab-43ca-9f52-3315b2042a1e.png
     descr: 包含大量网站历史快照的互联网档案馆
   - name: Json.cn
