@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Sat, 01 Jun 2024 18:25:16 GMT</pubDate>
+    <pubDate>Sat, 01 Jun 2024 19:46:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -688,9 +688,9 @@
       
       <category domain="https://blog.fyz666.xyz/tags/nginx/">Nginx</category>
       
-      <category domain="https://blog.fyz666.xyz/tags/cors/">CORS</category>
-      
       <category domain="https://blog.fyz666.xyz/tags/oauth/">Oauth</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/cors/">CORS</category>
       
       <category domain="https://blog.fyz666.xyz/tags/gitalk/">Gitalk</category>
       
