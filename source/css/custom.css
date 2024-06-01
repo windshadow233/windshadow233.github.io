@@ -4,6 +4,7 @@ html{
 @font-face{
     font-family: 'LXGW Marker Gothic';
     src: url('https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/ttf/LXGWMarkerGothicRegular.ttf');
+    font-display: swap;
 }
 body {
     font-family: 'LXGW Marker Gothic';
@@ -699,7 +700,7 @@ pre{
     -ms-hyphens: none;
     hyphens: none;
 }
-#post #article-container a:not(.post-meta__tags):not(img):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):hover,#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.random-post-start):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify):hover,.post-copyright a:hover,.card-announcement a:hover,.card-history a:hover,.tk-content a:not(.tk-content a[data-fancybox="gallery"]):hover{
+#post #article-container a:not(.post-meta__tags):not(img):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):not(#ai-link):hover,#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.random-post-start):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify):hover,.post-copyright a:hover,.card-announcement a:hover,.card-history a:hover,.tk-content a:not(.tk-content a[data-fancybox="gallery"]):hover{
     border-radius: 6px;
     background-color: var(--fyz-theme);
     text-decoration: none!important;
@@ -1681,6 +1682,13 @@ img[data-lazy-src]:not(.loaded) {
     padding: 4px;
     border-radius: 5px;
     transform: translateY(-2px);
+}
+#ai-link{
+    color: var(--fyz-gray)!important;
+    text-decoration: none!important;
+}
+#ai-link:hover{
+    color: var(--fyz-theme)!important;
 }
 #ai-header{
     padding: 0 10px;

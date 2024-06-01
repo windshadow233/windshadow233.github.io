@@ -68,10 +68,6 @@
     link: https://cli.im/
     avatar: https://blogfiles.oss.fyz666.xyz/png/8d124bc1-5940-47b1-a890-d76e30fd1e78.png
     descr: 提供免费的二维码解码、生成、美化服务
-  - name: UFO Test
-    link: https://www.testufo.com/
-    avatar: https://www.testufo.com/favicon.ico
-    descr: 刷新率测试
   - name: Editor.md
     link: https://pandao.github.io/editor.md/
     avatar: https://blogfiles.oss.fyz666.xyz/png/0071277f-fce3-4d92-afa7-cdfebd13fa65.png
@@ -112,7 +108,7 @@
     avatar: https://blogfiles.oss.fyz666.xyz/png/b78841cf-ee68-4217-8ba9-f1535d513760.png
     descr: 支持从YouTube, VIU, Viki, Vlive等平台下载字幕
 - class_desc: ''
-  class_name: 网络测试工具
+  class_name: 测试工具
   link_list:
   - name: 中科大测速站
     link: https://test.ustc.edu.cn/
@@ -134,6 +130,14 @@
     link: https://zh-hans.ipshu.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/0f84270b-9f95-430e-8655-fb7861f8f2c5.png
     descr: 提供最新最完整的IP地址信息、IP信息查询等内容
+  - name: UFO Test
+    link: https://www.testufo.com/
+    avatar: https://www.testufo.com/favicon.ico
+    descr: 屏幕刷新率测试
+  - name: 网站性能测试
+    link: https://pagespeed.web.dev/
+    avatar: https://www.gstatic.com/pagespeed/insights/ui/logo/favicon_48.png
+    descr: 报告网页在移动设备和桌面设备上的用户体验，并提供改进建议。
 - class_desc: ''
   class_name: 设计工具
   link_list:
@@ -153,6 +157,37 @@
     link: https://css.bqrdh.com/
     avatar: https://css.bqrdh.com/_nuxt/icons/icon_64x64.b55bda.png
     descr: 专治花里胡哨的CSS效果。
+- class_desc: ''
+  class_name: 好用的<s>MacOS</s>软件
+  link_list:
+    - name: OwlOCR
+      link: https://owlocr.com/
+      avatar: https://owlocr.com/favicon.ico
+      descr: 非常强大的文本识别软件
+    - name: Sound Source
+      link: https://rogueamoeba.com/soundsource/
+      avatar: https://rogueamoeba.com/global/images/icons/256/soundsource.png
+      descr: 更自由地控制MacOS的音频
+    - name: Rectangle
+      link: https://rectangleapp.com/
+      avatar: https://rectangleapp.com/favicon.ico
+      descr: MacOS单屏幕多窗口分屏神器
+    - name: Path Finder
+      link: https://www.cocoatech.io/
+      avatar: https://assets-global.website-files.com/62d0f1cab4e06c21d28341eb/634e8d6daf4208931b24138a_bigfav.png
+      descr: 比Finder更强大的文件浏览器
+    - name: Bartender
+      link: https://www.macbartender.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/webp/ae038bc9-69d7-4368-a992-eb7f3b37824d.webp
+      descr: 更好地管理MacOS顶部菜单栏
+    - name: Xnip
+      link: https://xnipapp.com/
+      avatar: https://xnipapp.com/images/icon.jpg
+      descr: 一款功能丰富的屏幕截取工具
+    - name: Typora
+      link: https://typora.io/
+      avatar: https://typora.io/img/favicon-128.png
+      descr: Markdown可视化编辑器
 - class_desc: 一些不错的云服务平台
   class_name: 云服务
   link_list:
