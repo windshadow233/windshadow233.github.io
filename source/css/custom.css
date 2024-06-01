@@ -3,7 +3,7 @@ html{
 }
 @font-face{
     font-family: 'LXGW Marker Gothic';
-    src: url('https://blogfiles.oss.fyz666.xyz/ttf/LXGWMarkerGothicRegular.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/ttf/LXGWMarkerGothicRegular.ttf');
 }
 body {
     font-family: 'LXGW Marker Gothic';

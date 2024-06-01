@@ -64,7 +64,7 @@ class GitHubStorage(object):
             'Authorization': f'token {token}',
             'Accept': 'application/vnd.github.v3+json',
         }
-        self.cdn = f'https://cdn.jsdelivr.net/gh/{username}/{repo}@{branch}/'
+        self.cdn = f'https://fastly.jsdelivr.net/gh/{username}/{repo}@{branch}/'
         
     def get_file_info(self, filepath):
         with open(filepath, 'rb') as file:

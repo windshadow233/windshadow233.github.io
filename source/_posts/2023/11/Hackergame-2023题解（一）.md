@@ -131,23 +131,23 @@ flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 
 与学长碰面后，他带你参观了他的学校。在校园的一个展厅内，你发现了一枚神秘的金色奖牌，它闪闪发光，令人心生羡慕。
 
-![](https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/01.JPG)
+![](https://fastly.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/01.JPG)
 
 
 🌻 中午  
 
 离开校园后，你和学长走到了附近的一家拉面馆用餐。那家店里的拉面香气扑鼻，店内的装饰和氛围也充满了日式的风格。 学长（下图左一）与你分享了不少学校的趣事。饭后，你们决定在附近散步，享受这难得的闲暇时光。当你们走到一座博物馆前时， 马路对面的喷泉和它周围的景色引起了你的注意。下午，白色的帐篷里即将举办一场大型活动，人们忙碌的身影穿梭其中，充满了期待与热情。
 
-![](https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/02.jpg)
+![](https://fastly.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/02.jpg)
 
-![](https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/03.jpg)
+![](https://fastly.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/03.jpg)
 
 
 🌻 下午和夜晚  
 
 在参观完博物馆后，学长陪你走到了上野站。你们都感到有些不舍，但知道每次的分别也是为了下次更好的相聚。 学长那天晚上将继续他的学术之旅，打算乘船欣赏东京的迷人夜景和闪耀的彩虹大桥（Rainbow Bridge）。 而你则搭乘了开往马里奥世界的电车，在那里度过了一段欢乐的时光。
 
-![](https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/04.jpg)
+![](https://fastly.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87%203.0/%E9%A2%98%E7%9B%AE%E7%85%A7%E7%89%87/04.jpg)
 
 
 
@@ -247,7 +247,7 @@ flag{We1ComE-70-hACkEr9aME-4nD-enjoY-h4Ck!nG-z0Z3}
 L 同学满眼星光地接过，**连系统都没心思升级**，就开始疯狂安装那个久闻大名的 GPT 程序，甚至雀跃地在群里晒出一张跟 GPT 对话的精彩**截图**，一时间成为了群里的焦点人物。
 
 
-![](https://cdn.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E5%A5%B6%E5%A5%B6%E7%9A%84%E7%9D%A1%E5%89%8D%20flag%20%E6%95%85%E4%BA%8B/files/screenshot.png)
+![](https://fastly.jsdelivr.net/gh/USTC-Hackergame/hackergame2023-writeups/official/%E5%A5%B6%E5%A5%B6%E7%9A%84%E7%9D%A1%E5%89%8D%20flag%20%E6%95%85%E4%BA%8B/files/screenshot.png)
 
 
 {% endnote %}

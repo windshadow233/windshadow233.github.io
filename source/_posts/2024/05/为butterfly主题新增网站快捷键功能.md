@@ -24,7 +24,7 @@ cover:
 ```yaml
 inject:
   head:
-    - <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 ```
 
 创建`themes/butterfly/scripts/filters/shortcut_keyboard.js`文件，内容如下：

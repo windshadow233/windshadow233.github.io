@@ -215,7 +215,7 @@ swiper:
     name: swiper-container
     index: 0
   default_descr:
-  swiper_css: https://blogfiles.oss.fyz666.xyz/css/swiper.min.css #swiper css依赖
-  swiper_js: https://blogfiles.oss.fyz666.xyz/js/swiper.min.js #swiper js依赖
-  custom_css: https://blogfiles.oss.fyz666.xyz/css/swiper-style.css # 适配主题样式补丁
-  custom_js: https://blogfiles.oss.fyz666.xyz/js/swiper_init.js # swiper初始化方法
+  swiper_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/swiper.min.css #swiper css依赖
+  swiper_js: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/swiper.min.js #swiper js依赖
+  custom_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/swiper-style.css # 适配主题样式补丁
+  custom_js: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/swiper_init.js # swiper初始化方法

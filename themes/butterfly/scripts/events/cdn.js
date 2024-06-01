@@ -21,12 +21,12 @@ hexo.extend.filter.register('before_generate', () => {
     },
     utils: {
       name: 'hexo-theme-butterfly',
-      file: 'js/utils.js',
+      file: 'https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/utils.js',
       version
     },
     translate: {
       name: 'hexo-theme-butterfly',
-      file: 'js/tw_cn.js',
+      file: 'https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/tw_cn.js',
       version
     },
     local_search: {
@@ -67,7 +67,7 @@ hexo.extend.filter.register('before_generate', () => {
 
       const cdnSource = {
         local: cond === 'internal' ? `${cdnjs_file + verType}` : `/pluginsSrc/${name}/${file + verType}`,
-        jsdelivr: `https://cdn.jsdelivr.net/npm/${name}${verType}/${min_file}`,
+        jsdelivr: `https://fastly.jsdelivr.net/npm/${name}${verType}/${min_file}`,
         unpkg: `https://unpkg.com/${name}${verType}/${file}`,
         cdnjs: `https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file}`,
         custom: (CDN.custom_format || '').replace(/\$\{(.+?)\}/g, (match, $1) => value[$1])

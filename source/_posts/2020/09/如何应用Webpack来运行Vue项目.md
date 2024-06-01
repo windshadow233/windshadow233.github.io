@@ -8,7 +8,7 @@ cover:
 disableNunjucks: true
 ---
 
-Vue有多种导入方式，最常见的非模块化导入就是直接往网页里插入一个诸如这样的script标签：`<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>`
+Vue有多种导入方式，最常见的非模块化导入就是直接往网页里插入一个诸如这样的script标签：`<script src="https://fastly.jsdelivr.net/npm/vue/dist/vue.js"></script>`
 
 但现在项目中一般看不见这种使用方法了，而大多使用模块化的导入方式。
 

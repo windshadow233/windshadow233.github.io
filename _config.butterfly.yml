@@ -588,7 +588,7 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: windshadow233/BlogComments
+  repo: windshadow233/BlogStorage
   repo_id: R_kgDOLhHf0w
   category_id: DIC_kwDOLhHf084Ce0EO
   theme:
@@ -898,7 +898,7 @@ preloader:
   source: 8
   pace: true
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://blogfiles.oss.fyz666.xyz/css/pace_progress_bar.css
+  pace_css_url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/pace_progress_bar.css
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -1044,11 +1044,11 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    - <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://blogfiles.oss.fyz666.xyz/js/rightmenu.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.js"></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
-    - <link rel="stylesheet" href="https://blogfiles.oss.fyz666.xyz/css/rightmenu.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script data-pjax>LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
@@ -1066,7 +1066,7 @@ inject:
          data-volume="0.4"
          data-type="playlist">
       </div>
-    - <script defer src="https://blogfiles.oss.fyz666.xyz/js/universe.js"></script>
+    - <script defer src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/universe.js"></script>
     - <script>
         function loadExternalResource(url, type) {
           return new Promise((resolve, reject) => {
@@ -1103,7 +1103,7 @@ inject:
         }
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
-    - <script src="/js/githubcalendar.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
     # - <script src="xxxx"></script>
@@ -1111,7 +1111,7 @@ inject:
 shortcut:
   enable: true
   keyboard_delay: 300
-  keyboard_css: https://blogfiles.oss.fyz666.xyz/css/keyboard.css
+  keyboard_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/keyboard.css
   items:
     - keycode: 83
       text: S
@@ -1188,7 +1188,7 @@ CDN:
   custom_format:
 
   option:
-    countup_js: /js/countup.js
+    countup_js:  https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/countup.js
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
@@ -1206,7 +1206,7 @@ CDN:
     # clickShowText:
     # disqusjs:
     # disqusjs_css:
-    docsearch_css: https://blogfiles.oss.fyz666.xyz/css/docsearch.css
+    docsearch_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/docsearch.css
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:
