@@ -7,7 +7,7 @@
     descr: 最强大的ChatBot
   - name: Kimi Chat
     link: https://kimi.moonshot.cn/
-    avatar: https://statics.moonshot.cn/kimi-chat/favicon.ico
+    avatar: https://blogfiles.oss.fyz666.xyz/png/2c952360-53e1-4944-a32d-2dd495a245ef.png
     descr: ChatGPT的国产平替，在超长文本场景下表现出众
   - name: txyz
     link: https://www.txyz.ai/
@@ -15,7 +15,7 @@
     descr: 通过AI高效阅读论文神器
   - name: Midjourney
     link: https://www.midjourney.com/
-    avatar: https://www.midjourney.com/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/8bf2bdc1-098c-452d-b0d0-cc0257b7dc2a.png
     descr: 好用的AI绘图工具
   - name: Craiyon
     link: https://www.craiyon.com/
@@ -23,7 +23,7 @@
     descr: 一款免费的AI图像生成器
   - name: Gamma
     link: https://gamma.app/
-    avatar: https://gamma.app/favicons/favicon-transparent-96x96.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/ca58545b-e947-44f1-80ad-b8a0f5070503.png
     descr: 人工智能驱动的高效演示文稿制作网站
   - name: ChatExcel
     link: https://chatexcel.com/
@@ -42,7 +42,7 @@
     descr: 在线小工具大全
   - name: CodePen
     link: http://codepen.io/
-    avatar: https://cpwebassets.codepen.io/assets/favicon/favicon-touch-de50acbf5d634ec6791894eba4ba9cf490f709b3d742597c6fc4b734e6492a5a.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/6b666e2a-bf4f-4e19-b0c4-9a9d4f3e5004.png
     descr: 前端代码编辑器兼可视化平台
   - name: Google Font to SVG
     link: https://danmarshall.github.io/google-font-to-svg-path/
@@ -50,7 +50,7 @@
     descr: 在线将Google字体转化为SVG Path
   - name: Shields.io
     link: https://shields.io/
-    avatar: https://shields.io/img/logo.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/2b77ca21-0c1a-4e87-8ce1-661654746f01.png
     descr: 生成GitHub项目的徽章
   - name: Wayback Machine
     link: https://web.archive.org/
@@ -58,7 +58,7 @@
     descr: 包含大量网站历史快照的互联网档案馆
   - name: Json.cn
     link: https://www.json.cn/
-    avatar: https://static.json.cn/r/img/favicon/favicon.ico
+    avatar: https://blogfiles.oss.fyz666.xyz/png/d646f5a5-4304-4076-8d15-a7f9703a254c.png
     descr: 前端、后端在线工具大全
   - name: FactorDB
     link: http://factordb.com/
@@ -74,18 +74,18 @@
     descr: 开源在线 Markdown 编辑器
   - name: Snap Drop
     link: https://snapdrop.net/
-    avatar: https://snapdrop.net/images/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/bf6ba59c-5647-405d-9423-f95f47f114fd.png
     descr: 最方便快捷的文件传输助手
 - class_desc: ''
   class_name: 图片、音视频工具
   link_list:
   - name: TinyPNG
     link: https://tinypng.com/
-    avatar: https://tinypng.com/images/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/6a77c996-4ef9-4595-b64c-42abe8dbce3d.png
     descr: 强大的在线图片压缩工具
   - name: Youtube视频下载器
     link: https://ytshorts.savetube.me/zh/
-    avatar: https://lh3.googleusercontent.com/t8imk98l4_G2-pP2v6WczhTRle8nm7eIuEMzyZxyaHRT88N9lNsoGh0Xa7dQxoz4YsoNFCE17oqajDgpZVz-JhxhAnK6RupVwRHPpTKseB8oxzUV1eo=h60
+    avatar: https://blogfiles.oss.fyz666.xyz/png/7ca0e138-b6d6-4297-a187-f0da16c65b4d.png
     descr: 在线下载Youtube视频
   - name: ParseVideo
     link: https://www.parsevideo.com/
@@ -93,20 +93,24 @@
     descr: 在线视频解析工具
   - name: SaveTwitter
     link: https://savetwitter.net/
-    avatar: https://savetwitter.net/icons/android-chrome-192x192.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/6b06d528-cd05-4b3e-95cb-adcd6b5e2863.png
     descr: 轻松下载Twitter中的视频与GIF
   - name: 无损生活
     link: https://flac.life/
-    avatar: https://flac.life/img/logo.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/6c001830-63b2-4dcb-902b-eb72c0541d8d.png
     descr: 免费下载全网无损音频
   - name: Photopea
     link: https://www.photopea.com/
-    avatar: https://www.photopea.com/promo/icon512.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/815dc2cb-6cb1-4b7a-af9f-70f644ae5606.png
     descr: 在线版的Photoshop
   - name: DownSub
     link: https://downsub.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/b78841cf-ee68-4217-8ba9-f1535d513760.png
     descr: 支持从YouTube, VIU, Viki, Vlive等平台下载字幕
+  - name: 11Zon
+    link: https://imagecompressor.11zon.com/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/30bc11bc-a151-4abe-a892-96fd92b3d9a3.png
+    descr: 支持各种格式的图像压缩、转换
 - class_desc: ''
   class_name: 测试工具
   link_list:
@@ -132,49 +136,49 @@
     descr: 提供最新最完整的IP地址信息、IP信息查询等内容
   - name: UFO Test
     link: https://www.testufo.com/
-    avatar: https://www.testufo.com/favicon.ico
+    avatar: https://blogfiles.oss.fyz666.xyz/png/c7c538e3-023a-4f42-8fd3-f29412bccbc1.png
     descr: 屏幕刷新率测试
   - name: 网站性能测试
     link: https://pagespeed.web.dev/
-    avatar: https://www.gstatic.com/pagespeed/insights/ui/logo/favicon_48.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/eda38a41-772b-43b3-ad3e-3b5179b15bfa.png
     descr: 报告网页在移动设备和桌面设备上的用户体验，并提供改进建议。
 - class_desc: ''
   class_name: 设计工具
   link_list:
   - name: Canva可画
     link: https://www.canva.com/
-    avatar: https://static.canva.com/static/images/android-192x192-2.png
+    avatar: https://blogfiles.oss.fyz666.xyz/webp/d080d6b5-c0d0-4bdc-aabb-1d90f72efe51.webp
     descr: 免费的在线平面设计工具
   - name: Neumorphism.io
     link: https://neumorphism.io/
-    avatar: https://neumorphism.io/android-chrome-192x192.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/2e67d32d-2cad-4cc1-99ef-37caa771a322.png
     descr: 新拟态风格CSS代码生成器
   - name: Draw.io
     link: https://app.diagrams.net/
-    avatar: https://app.diagrams.net/images/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/c717321e-1529-422f-97e3-1a7cb775dfb1.png
     descr: 开源免费的在线图表软件，可用来制作流程图、思维导图等
   - name: CSS可视化
     link: https://css.bqrdh.com/
-    avatar: https://css.bqrdh.com/_nuxt/icons/icon_64x64.b55bda.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/25687868-8789-4978-abee-3ffef916e6bb.png
     descr: 专治花里胡哨的CSS效果。
 - class_desc: ''
   class_name: 好用的<s>MacOS</s>软件
   link_list:
     - name: OwlOCR
       link: https://owlocr.com/
-      avatar: https://owlocr.com/favicon.ico
+      avatar: https://blogfiles.oss.fyz666.xyz/png/cc69f78d-2e85-465d-b9ee-73e4791e0120.png
       descr: 非常强大的文本识别软件
     - name: Sound Source
       link: https://rogueamoeba.com/soundsource/
-      avatar: https://rogueamoeba.com/global/images/icons/256/soundsource.png
+      avatar: https://blogfiles.oss.fyz666.xyz/png/64167cb1-fc0c-413d-a2ee-aeda1541b454.png
       descr: 更自由地控制MacOS的音频
     - name: Rectangle
       link: https://rectangleapp.com/
-      avatar: https://rectangleapp.com/favicon.ico
+      avatar: https://blogfiles.oss.fyz666.xyz/png/016d4a01-f3d3-4bd3-a85c-2c1e5984f87e.png
       descr: MacOS单屏幕多窗口分屏神器
     - name: Path Finder
       link: https://www.cocoatech.io/
-      avatar: https://assets-global.website-files.com/62d0f1cab4e06c21d28341eb/634e8d6daf4208931b24138a_bigfav.png
+      avatar: https://blogfiles.oss.fyz666.xyz/png/5cb0778a-7414-41b0-ab3e-049776883dda.png
       descr: 比Finder更强大的文件浏览器
     - name: Bartender
       link: https://www.macbartender.com/
@@ -182,30 +186,34 @@
       descr: 更好地管理MacOS顶部菜单栏
     - name: Xnip
       link: https://xnipapp.com/
-      avatar: https://xnipapp.com/images/icon.jpg
+      avatar: https://blogfiles.oss.fyz666.xyz/png/4393c919-9212-4163-9ee6-43fe07a845ef.png
       descr: 一款功能丰富的屏幕截取工具
     - name: Typora
       link: https://typora.io/
-      avatar: https://typora.io/img/favicon-128.png
+      avatar: https://blogfiles.oss.fyz666.xyz/png/71a2c9d0-aa74-4b8e-bb9d-1fa46618804d.png
       descr: Markdown可视化编辑器
+    - name: iTerm2
+      link: https://iterm2.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6fccf8e6-5007-4162-bea8-dbb08c3a5fa3.png
+      descr: MacOS默认终端的替代品
 - class_desc: 一些不错的云服务平台
   class_name: 云服务
   link_list:
   - name: Colossal Cloud
     link: https://cloud.luchentech.com/
-    avatar: https://cloud.luchentech.com/static/media/colossalAI.ed57d7da7b3a4d95f31aa592ec58e915.svg
+    avatar: https://blogfiles.oss.fyz666.xyz/svg/e2cd9f0e-9c6e-4bda-a01f-e026ceed21bb.svg
     descr: 云GPU租赁服务——让 AI 大模型更低成本、方便易用、高效扩展
   - name: Vultr
     link: https://www.vultr.com/
-    avatar: https://www.vultr.com/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/jpg/fa2ff3d4-d332-4f38-b939-f3c84aeacc46.jpg
     descr: 按小时计费、随用随停的海外云服务（支持IPv6）
   - name: Vercel
     link: https://vercel.com/
-    avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/120x120.png
+    avatar: https://blogfiles.oss.fyz666.xyz/png/632daf9b-aa47-4e07-a48f-f8dec16f2abd.png
     descr: 前端项目和动态网站的快速部署和托管平台
   - name: Netlify
     link: https://netlify.app/
-    avatar: https://www.netlify.com/favicon/apple-touch-icon.png
+    avatar: https://blogfiles.oss.fyz666.xyz/jpg/1f3a3140-e98a-4e25-8e5b-1d90bfa176d9.jpg
     descr: 高效的前端托管和自动化部署服务
   - name: BandwagonHost
     link: https://bandwagonhost.com/
@@ -213,11 +221,11 @@
     descr: 高性价比的VPS主机供应商
   - name: Render
     link: https://render.com/
-    avatar: https://media.licdn.com/dms/image/D4E0BAQGGDoFoqHtOvA/company-logo_200_200/0/1702595267620/renderco_logo?e=1723680000&v=beta&t=gc2S3hXuPEk-4NHx2oWsBs35P8KqE_oiXMrX4myA24E
+    avatar: https://blogfiles.oss.fyz666.xyz/jpeg/76db7fe1-29ef-4922-bede-b8c32b87c74a.jpeg
     descr: 简单到极致地构建、部署和扩展应用程序
   - name: Zeabur
     link: https://zeabur.com/
-    avatar: https://zeabur.com/favicon.svg
+    avatar: https://blogfiles.oss.fyz666.xyz/svg/26e39d98-37d1-4ac0-87dd-0f42ebb5afa6.svg
     descr: 在几秒内免费部署静态网站与Serverless函数
 - class_desc: 学生党比较穷，所以依赖于服务器性能的服务暂时就不公开了（
   class_name: 博主提供的服务

@@ -15,6 +15,7 @@ aside: false
 {% galleryGroup 桐庐 江南秘境，山水间隐逸着古镇的宁静，河畔映照着岁月的风雅，诉说着浓郁的文化与自然的和谐交融。 /gallery/travel/tonglu/ https://blogfiles.oss.fyz666.xyz/webp/655049c4-693e-4a4d-bd8b-f0a84ef6af01.webp %}
 {% galleryGroup 长沙 潇湘辣韵的传承者，湘江之畔，岳麓山下，历史与现代交织，火辣美食与革命故事并肩诉说。 /gallery/travel/changsha/ https://blogfiles.oss.fyz666.xyz/webp/6fcb6c94-3a05-4022-a6d0-f9c58639a6d4.webp %}
 {% galleryGroup 黄山 中国古画的现实投影，云雾缭绕中的松石奇观，四季变换下的绝美画卷。这里是自然与人文的完美融合。 /gallery/travel/huangshan/ https://blogfiles.oss.fyz666.xyz/jpeg/38ec12c6-54ea-4d9e-a77c-28e412300c8e.jpeg %}
+{% galleryGroup 张家界 自然奇观，峰林绝壁间，云雾缭绕，如梦似幻，山水画卷的真实再现。 /gallery/travel/zhangjiajie/ https://blogfiles.oss.fyz666.xyz/webp/fbdbba7f-018b-48e9-8636-0246e4add450.webp %}
 </div>
 
 {% btn 'javascript:window.history.go(-1);',返回,far fa-hand-point-left,outline blue larger %}

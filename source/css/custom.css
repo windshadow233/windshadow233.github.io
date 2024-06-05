@@ -1190,8 +1190,9 @@ blockquote p:first-child{
     text-align: center;
     color: white;
 }
-#article-container .btn-beautify.outline{
+#article-container .btn-beautify{
     border-radius: 30px;
+    margin: 10px 0px !important;
 }
 @-webkit-keyframes Gradient {
     0% {
