@@ -3,7 +3,7 @@ title: 在OpenWrt上配置透明代理
 id: 5380
 date: 2021-05-14 06:31:04
 categories: [瞎捣鼓经历]
-tags: ['Linux', 'OpenWrt', 'V2Ray', '科学上网', '计算机网络', '路由器']
+tags: ['Linux', 'OpenWrt', 'V2Ray', '科学上网', '计网', '路由器']
 cover: https://blogfiles.oss.fyz666.xyz/jpeg/8e58d290-35a8-4629-8534-9c9effa089cb.jpeg
 disableNunjucks: false
 ---

@@ -108,12 +108,40 @@ function setInfo(ip, city, distance, isCache) {
         }
     }
 }
- $(document).on('pjax:success', function(event) {
+function createCharts() {
+   if (!document.getElementById('blog-charts')) return;
+   let postsChart = echarts.init(document.getElementById('posts-chart'),'light');
+   postsChart.setOption(postsOption);
+   postsChart.on('click', 'series', (event) => {
+      if (event.componentType === 'series') pjax.loadUrl('/archives/' + event.name.replace('-', '/'));
+   });
+   window.addEventListener('resize', () => { 
+      postsChart.resize();
+   });
+   tagsChart = echarts.init(document.getElementById('tags-chart'),'light');
+   tagsChart.setOption(tagsOption);
+   tagsChart.on('click', (event) => {
+      if(event.name) pjax.loadUrl('/tags/' + event.name.toLowerCase());
+   });
+   window.addEventListener('resize', () => { 
+      tagsChart.resize();
+   });
+   categoriesChart = echarts.init(document.getElementById('categories-chart'),'light');
+   categoriesChart.setOption(categoriesOption);
+   categoriesChart.on('click', 'series', (event) => {
+      if(event.data.path) pjax.loadUrl('/' + event.data.path);
+   });
+   window.addEventListener('resize', () => { 
+      categoriesChart.resize();
+   });
+}
+ $(document).on('pjax:complete', function(event) {
     if (window.a2a !== undefined) a2a.init_all();
     getIpInfo();
     renderGitHubCalendar();
     loadAbstract();
     categoryBarRandomColor();
+    createCharts();
  });
  $(document).on('pjax:error', function(event) {
     Snackbar.show({
@@ -138,4 +166,5 @@ function setInfo(ip, city, distance, isCache) {
     renderGitHubCalendar();
     loadAbstract();
     categoryBarRandomColor();
+    createCharts();
 });

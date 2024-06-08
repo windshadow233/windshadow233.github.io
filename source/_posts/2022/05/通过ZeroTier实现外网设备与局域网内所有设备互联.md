@@ -3,7 +3,7 @@ title: 通过ZeroTier实现外网设备与局域网内所有设备互联
 id: 7739
 date: 2022-05-13 20:33:03
 categories: [瞎捣鼓经历]
-tags: ['OpenWrt', 'ZeroTier', '计算机网络']
+tags: ['OpenWrt', 'ZeroTier', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/png/7d09d814-9a31-43c4-8fab-51528c872dc0.png
 disableNunjucks: true
 ---

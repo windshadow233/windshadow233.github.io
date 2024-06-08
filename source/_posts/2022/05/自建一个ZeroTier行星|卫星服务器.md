@@ -3,7 +3,7 @@ title: 自建一个ZeroTier行星/卫星服务器
 id: 7728
 date: 2022-05-13 13:36:14
 categories: [瞎捣鼓经历]
-tags: ['Docker', 'ZeroTier', '计算机网络']
+tags: ['Docker', 'ZeroTier', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/png/5b4b7b2d-1c96-468f-876e-d5d1b5e24cef.png
 disableNunjucks: true
 swiper_index: 1

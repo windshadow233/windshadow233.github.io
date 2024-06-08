@@ -3,7 +3,7 @@ title: 如何在校外使用北邮人PT站
 id: 6304
 date: 2021-08-11 08:45:07
 categories: [瞎捣鼓经历]
-tags: ['IPv6', 'Linux', 'V2Ray', '树莓派', '计算机网络']
+tags: ['IPv6', 'Linux', 'V2Ray', '树莓派', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/png/ea524747-7787-48e0-8d51-c8d7ee7f9226.png
 disableNunjucks: true
 swiper_index: 1

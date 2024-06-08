@@ -3,7 +3,7 @@ title: Lede（Stones）固件下游设备无法获取公网IPv6地址的解决�
 id: 6326
 date: 2021-08-21 11:28:05
 categories: [Debug]
-tags: ['IPv6', 'Linux', 'OpenWrt', '计算机网络', '路由器']
+tags: ['IPv6', 'Linux', 'OpenWrt', '计网', '路由器']
 cover:
 disableNunjucks: true
 ---

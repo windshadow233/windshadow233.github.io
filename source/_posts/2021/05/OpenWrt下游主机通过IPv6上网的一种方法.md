@@ -3,7 +3,7 @@ title: OpenWrt下游主机通过IPv6上网的一种方法
 id: 5405
 date: 2021-05-15 16:48:28
 categories: [瞎捣鼓经历]
-tags: ['IPv6', 'OpenWrt', '计算机网络', '路由器']
+tags: ['IPv6', 'OpenWrt', '计网', '路由器']
 cover: https://blogfiles.oss.fyz666.xyz/jpg/473a6905-814e-4bea-bf27-c559d2d73d2f.jpg
 disableNunjucks: true
 ---

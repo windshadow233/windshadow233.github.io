@@ -248,7 +248,17 @@
         p 找份自己热爱、又能养家糊口的工作
       .checkbox.blue
         input(type='checkbox')
-        p 努力成为一个全栈工程师（话说的不小，其实只是想什么都会一点点）
+        p 努力成为一个全栈工程师（其实只是想什么都会一点点）
+  .author-content
+    .author-content-item.single
+      .author-content-item-tips 文章统计
+      #blog-charts
+        div(style="overflow-x:scroll;")
+          #posts-chart(style="border-radius: 8px;height: 300px;padding: 10px;min-width:768px;")
+        div(style="overflow-x:scroll;")
+          #tags-chart(style="border-radius: 8px; height: 300px; padding: 10px;min-width:768px;")
+        div(style="overflow-x:scroll;")
+          #categories-chart(style="border-radius: 8px; height: 300px; padding: 10px;min-width:768px;")
 
 script(src=url_for(theme.CDN.option.countup_js))
 script.

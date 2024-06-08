@@ -4,7 +4,7 @@ id: 9307
 date: 2024-02-21 15:37:32
 categories:
   - [博客相关]
-tags: ['Cloudflare', '计算机网络', '防火墙']
+tags: ['Cloudflare', '计网', '防火墙']
 cover: https://blogfiles.oss.fyz666.xyz/png/b20b5a0b-3f88-4f02-869c-7084db3f6d67.png
 disableNunjucks: true
 ---

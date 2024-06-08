@@ -3,7 +3,7 @@ title: 利用网关设备搭建私用无污染DNS服务器
 id: 5447
 date: 2021-05-29 08:02:30
 categories: [瞎捣鼓经历]
-tags: ['DNS', 'Linux', 'OpenWrt', '树莓派', '计算机网络']
+tags: ['DNS', 'Linux', 'OpenWrt', '树莓派', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/jpg/5a88bec1-200c-46ec-b547-a9ead0f870bd.jpg
 disableNunjucks: false
 ---

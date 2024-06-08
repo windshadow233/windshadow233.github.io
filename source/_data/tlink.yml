@@ -2,7 +2,7 @@
   class_name: 人工智能
   link_list:
   - name: ChatGPT
-    link: https://chat.openai.com/
+    link: https://chatgpt.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
     descr: 最强大的ChatBot
   - name: Kimi Chat

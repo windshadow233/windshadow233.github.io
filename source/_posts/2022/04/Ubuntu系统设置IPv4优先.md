@@ -3,7 +3,7 @@ title: Ubuntu系统设置IPv4优先
 id: 7631
 date: 2022-04-04 05:35:03
 categories: [瞎捣鼓经历]
-tags: ['Linux', '计算机网络']
+tags: ['Linux', '计网']
 cover: 
 disableNunjucks: true
 ---

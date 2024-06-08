@@ -3,7 +3,7 @@ title: 通过SSH隧道端口转发实现内网穿透
 id: 5613
 date: 2021-07-24 15:54:46
 categories: [瞎捣鼓经历]
-tags: ['Linux', 'SSH', '内网穿透', '计算机网络']
+tags: ['Linux', 'SSH', '内网穿透', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/jpg/a8f638e3-b1dd-4314-abed-f8e38315d8ce.jpg
 disableNunjucks: true
 ---

@@ -1053,6 +1053,7 @@ inject:
     - <script data-pjax>LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script data-pjax>new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"
@@ -1105,6 +1106,7 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css">
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
+    - <script type="text/javascript" src="/js/charts.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
     # - <script src="xxxx"></script>
 
