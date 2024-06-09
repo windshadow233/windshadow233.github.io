@@ -3,7 +3,7 @@ title: 局域网下禁止某些域名的AAAA解析
 id: 7934
 date: 2022-08-02 16:03:53
 categories: [瞎捣鼓经历]
-tags: ['DNS', 'IPv6', 'Linux', 'OpenWrt']
+tags: ['DNS', 'IPv6', 'OpenWrt']
 cover: 
 disableNunjucks: true
 ---

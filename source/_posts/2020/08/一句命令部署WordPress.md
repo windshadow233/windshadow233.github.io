@@ -4,7 +4,7 @@ id: 4518
 date: 2020-08-23 16:27:11
 categories:
   - [博客相关]
-tags: ['Docker', 'Linux', 'WordPress']
+tags: ['Docker', 'WordPress']
 cover: 
 disableNunjucks: true
 ---

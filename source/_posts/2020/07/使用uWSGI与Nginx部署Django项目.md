@@ -3,7 +3,7 @@ title: 使用uWSGI与Nginx部署Django项目
 id: 358
 date: 2020-07-14 16:00:00
 categories: [学习笔记]
-tags: ['Django', 'Linux', 'Nginx', 'uWSGI']
+tags: ['Django', 'Nginx', 'uWSGI']
 cover: https://blogfiles.oss.fyz666.xyz/png/37038f28-cd6b-4214-832f-40a6b0dc7e31.png
 disableNunjucks: true
 ---
