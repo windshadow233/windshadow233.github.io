@@ -31,9 +31,9 @@
                         <img class="no-lightbox" src="${lists[j].avatar}" onerror='this.onerror=null;this.src="!{url_for(theme.error_img.flink)}"' alt="${lists[j].name}" />
                       </div>
                       <div class="flink-item-name">${lists[j].name}</div> 
-                      <div class="flink-item-desc" title="${lists[j].descr}">${lists[j].descr}</div>
-                    </a>
-                  </div>`
+                      <div class="flink-item-desc" title="${lists[j].descr}">${lists[j].descr}</div>`
+                  if (lists[j].feed !== null) listResult += `<div class="flink-item-feed" style="display:none;">${lists[j].feed}</div>`;
+                  listResult += `</a></div>`
               }
 
               result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
@@ -65,9 +65,10 @@
                   </div>
                   <div class="flink-item-name">${j.name}</div> 
                   <div class="flink-item-desc" title="${j.descr}">${j.descr}</div>
-                </a>
-              </div>`
-          -
+              `
+          if j.feed
+            - listResult += `<div class="flink-item-feed" style="display:none;">${j.feed}</div>`
+          - listResult += `</a></div>`
 
         - result += `${className}${classDesc} <div class="flink-list">${listResult}</div>`
 

@@ -1,0 +1,25 @@
+#article-container
+  .title-h2-a
+    .title-h2-a-left
+      h2(style="padding-top: 0;margin:0.6rem 0 0.6rem;") 钓鱼 🎣
+      a#random-post-start(href="javascript:fetchRandomPost();",style="transition-duration: 0.3s; transform: rotate(63000deg); opacity: 1;")
+        i.fas.fa-redo-alt
+    .title-h2-a-right
+      a(href="/link/") 全部友链
+  #random-post
+  h2 鱼塘 🐟
+  .post-content
+    #cf-container 与主机通讯中……
+  script.
+    var fdata = {
+        apiurl: '!{theme.fcircle.apiurl}',
+        defaultFish: !{theme.fcircle.defaultFish},
+        hungryFish: !{theme.fcircle.hungryFish},
+        initnumber: !{theme.fcircle.initnumber},
+        stepnumber: !{theme.fcircle.stepnumber},
+        popup_article_num: !{theme.fcircle.popup_article_num},
+        article_sort: '!{theme.fcircle.article_sort}'
+    }
+  link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/fcircle.min.css")
+  script(type="text/javascript",src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/fcircle.js")
+  script(type="text/javascript",src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/random-friend.js")

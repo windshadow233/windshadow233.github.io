@@ -25,6 +25,7 @@ menu:
     一些项目: /projects/ || fas fa-project-diagram
     状态监控: https://status.fyz666.xyz/ || iconfont icon-monitor
   链接 || fas fa-link:
+    朋友圈: /fcircle/ || fab fa-galactic-republic
     友链: /link/ || fas fa-user-friends
     工具: /tlink/ || fas fa-tools
     资源: /rlink/ || fas fa-save
@@ -1167,6 +1168,15 @@ shortcut:
       text: Space
       action: 全屏模式切换
       script: fullScreen()
+
+fcircle:
+  apiurl: https://fcircle.fyz666.xyz/
+  popup_article_num: 6
+  defaultFish: 100
+  hungryFish: 100
+  initnumber: 20
+  stepnumber: 15
+  article_sort: created
 
 # CDN
 # Don't modify the following settings unless you know how they work

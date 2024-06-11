@@ -12,7 +12,8 @@ function copyFlinkTemplate() {
 - name: #博客名称
   link: #博客地址
   avatar: #博客头像
-  descr: #来点介绍
+  descr: #简单介绍一下～
+  feed: #博客订阅链接
 \`\`\``;
     navigator.clipboard.writeText(text).then(function() {
         Snackbar.show({

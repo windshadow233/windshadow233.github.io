@@ -700,11 +700,11 @@ pre{
     -ms-hyphens: none;
     hyphens: none;
 }
-#post #article-container a:not(.post-meta__tags):not(img):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):not(#ai-link):hover,#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.random-post-start):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify):hover,.post-copyright a:hover,.card-announcement a:hover,.card-history a:hover,.tk-content a:not(.tk-content a[data-fancybox="gallery"]):hover{
+#post #article-container a:not(.post-meta__tags):not(img):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):not(#ai-link):hover,#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.random-post-start):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify):not(#random-post-start):hover,.post-copyright a:hover,.card-announcement a:hover,.card-history a:hover,.tk-content a:not(.tk-content a[data-fancybox="gallery"]):hover{
     border-radius: 6px;
     background-color: var(--fyz-theme);
     text-decoration: none!important;
-    color:var(--fyz-white)!important;
+    color:var(--fyz-white);
     border:none;
     box-shadow: #dadada 0 0 8px 2px;
     -webkit-border-radius: 6px;
@@ -712,7 +712,7 @@ pre{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
-#post #article-container a:not(.post-meta__tags):not(.headerlink):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor),#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify),.post-copyright a,.card-announcement a,.card-history a,.tk-content a:not(.tk-content a[data-fancybox="gallery"]){
+#post #article-container a:not(.post-meta__tags):not(.headerlink):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor),#page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.tag-Link):not(a[data-fancybox]):not(#cf-container a):not(.markdownIt-Anchor):not(.btn-beautify):not(#random-post-start),.post-copyright a,.card-announcement a,.card-history a,.tk-content a:not(.tk-content a[data-fancybox="gallery"]){
     border-bottom: 2px solid var(--fyz-theme);
     color:var(--font-color);
     padding:4px;
@@ -1735,4 +1735,160 @@ img[data-lazy-src]:not(.loaded) {
 }
 #waifu{
     z-index: 10;
+}
+.cf-article{
+    background: var(--fyz-white-acrylic2)!important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+[data-theme="dark"] .cf-article{
+    background: var(--fyz-black-acrylic2)!important;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.cf-overshow{
+    border-radius: 10px;
+}
+#cf-overlay{
+    display: none;
+}
+.cf-article-title{
+    color:var(--font-color)!important ;
+}
+.cf-article-title:hover{
+    color:var(--fyz-theme)!important;
+}
+.cf-article-author,.cf-label,.cf-message{
+    color: var(--font-color)!important
+}
+#cf-change-updated,#cf-change-created{
+    color:var(--font-color)
+}
+#cf-container *:not(.cf-article-floor){
+    color:var(--font-color)
+}
+.cf-article-title:hover{
+    text-decoration: none!important;
+    color:var(--fyz-theme)!important;
+}
+[data-theme="dark"] .cf-overshow-content,[data-theme="dark"] .cf-overshow-content span{
+    background-color: black!important;
+    color:var(--font-color)!important;
+}
+.cf-article,#cf-state{
+    border-radius: 10px!important;
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    -ms-border-radius: 10px!important;
+    -o-border-radius: 10px!important;
+    border:1px solid var(--lyx-border)!important;
+}
+.cf-article:hover,#cf-state:hover{
+    border:1px solid var(--lyx-theme)!important;
+}
+#cf-container{
+    display: flex;
+    flex-wrap:wrap;
+    max-width: none!important;
+}
+@media screen and (min-width:1000px) {
+    .cf-article{
+        width: 31% !important;;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .cf-article{
+        width:100%;
+    }
+    
+}
+@media screen and (min-width:600px) {
+    .cf-article{
+        width:48%;
+    }
+    
+}
+.cf-article .cf-article-title{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: 80px;
+}
+.cf-img-avatar.avatar{
+    opacity: 0.3;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right:-10px;
+    bottom: -10px;
+    border-radius: 50px!important;
+    -webkit-border-radius: 50px!important;
+    -moz-border-radius: 50px!important;
+    -ms-border-radius: 50px!important;
+    -o-border-radius: 50px!important;
+}
+#random-post {
+    min-height: 32px;
+    background: var(--fyz-card-bg);
+    border: var(--style-border-always);
+    box-shadow: var(--fyz-shadow-border);
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-top: 8px;
+  }
+  .random-friends-post {
+    text-decoration: none;
+    border-bottom: 2px solid var(--fyz-lighttext);
+    color: var(--fyz-fontcolor);
+    font-weight: 700;
+    padding: 0 4px;
+  }
+  .random-friends-post:hover {
+    text-decoration: none;
+    border-bottom: 2px solid var(--fyz-none);
+    color: var(--fyz-white);
+    background: var(--fyz-main);
+    border-radius: 4px;
+    box-shadow: var(--fyz-shadow-main);
+  }
+  #random-post-start {
+    transition-duration: 0.3s;
+  }
+  #random-post-start:hover {
+    color: var(--fyz-hovertext);
+  }
+  #page .title-h2-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  #page .title-h2-a a {
+    margin-left: 0.5rem;
+    color: var(--fyz-secondtext);
+    font-weight: 700;
+  }
+  #page .title-h2-a a:hover {
+    color: var(--fyz-main);
+  }
+  #page .title-h2-a .title-h2-a-left {
+    display: flex;
+    align-items: center;
+  }
+  #page .title-h2-a .title-h2-a-right {
+    font-size: 14px;
+    color: var(--fyz-secondtext);
+  }
+  .cf-overshow a{
+    border-bottom: none!important;
+    border-radius: 15px;
+}
+.cf-overshow a:hover{
+    background:none!important;
+    color: var(--fyz-theme)!important;
+    box-shadow:none!important;
 }
