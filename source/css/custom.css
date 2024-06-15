@@ -83,7 +83,7 @@ body {
     --fyz-whitegray:#f1f1f1;
 }
 [data-theme=light] {
-  --fyz-theme: #425AEF;
+  --fyz-theme: #0084FF;
   --fyz-theme-op: #4259ef23;
   --fyz-theme-op-deep: #4259efdd;
   --fyz-theme-none: #4259ef01;
@@ -119,9 +119,8 @@ body {
   --style-border-forever: 2px solid var(--fyz-main);
   --fyz-secondtext: rgba(60,60,67,0.8);
 }
-
 [data-theme=dark] {
-  --fyz-theme: #0084FF;
+  --fyz-theme: #425AEF;
   --fyz-theme-op: #0084FF23;
   --fyz-theme-op-deep: #0084ffdd;
   --fyz-theme-none: #0084FF00;
@@ -1759,13 +1758,23 @@ img[data-lazy-src]:not(.loaded) {
     color:var(--fyz-theme)!important;
 }
 .cf-article-author,.cf-label,.cf-message{
-    color: var(--font-color)!important
+    color: var(--font-color);
 }
 #cf-change-updated,#cf-change-created{
     color:var(--font-color)
 }
 #cf-container *:not(.cf-article-floor){
     color:var(--font-color)
+}
+.cf-article-author{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--fyz-card-btn-bg);
+    cursor: pointer;
+}
+.cf-article-author:hover{
+    background-color: var(--fyz-theme);
+    transition: .3s ease-in-out;
 }
 .cf-article-title:hover{
     text-decoration: none!important;
