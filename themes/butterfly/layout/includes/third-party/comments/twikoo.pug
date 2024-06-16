@@ -1,6 +1,40 @@
 - const { envId, region, option } = theme.twikoo
 - const { use, lazyload, count } = theme.comments
-
+.comment-barrage
+script.
+  $(document).ready(function(){
+    window.commentBarrageConfig = {
+      lightColors:[
+          ['var(--fyz-white-acrylic2)','var(--fyz-black)'],
+      ],
+      darkColors:[
+          ['var(--fyz-black-acrylic2)','var(--fyz-white)'],
+      ],
+      maxBarrage: 3,
+      barrageTime: 3000,
+      twikooUrl: "https://twikoo.fyz666.xyz/",
+      accessToken: "baafee2c7bf49d5967e7a05066e284ca",
+      pageUrl: window.location.pathname,
+      barrageTimer: [],
+      barrageList: [],
+      barrageIndex: 0,
+      noAvatarType: "retro",
+      dom: document.querySelector('.comment-barrage'),
+      displayBarrage: true,
+      avatarCDN: "cravatar.cn",
+    };
+    document.onscroll = function() {
+      if(commentBarrageConfig.displayBarrage){
+          if(isInViewPortOfOne(document.getElementById("post-comment"))){
+              document.getElementsByClassName("comment-barrage")[0].setAttribute("style",`display:none;`)
+          }
+          else{
+              document.getElementsByClassName("comment-barrage")[0].setAttribute("style","")
+          }
+      }
+    }
+    initCommentBarrage();
+  })
 script.
   (() => {
     const getCount = () => {

@@ -21,6 +21,11 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
       #body-wrap(class=pageType + (isHome ? ' ' + isHome : ''))
         include ./header/index.pug
         if isHome
+          script.
+            $(document).ready(function(){
+                renderGitHubCalendar();
+                categoryBarRandomColor();
+              })
           #top.top(style="width:1500px")
             a#random-top2(style='width:100%;height:auto;padding:10px;',href='javascript:toRandomPost();')
               div 随便逛逛→

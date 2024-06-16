@@ -270,8 +270,9 @@
           #tags-chart(style="border-radius: 8px; height: 300px; padding: 10px;min-width:768px;")
         div(style="overflow-x:scroll;")
           #categories-chart(style="border-radius: 8px; height: 300px; padding: 10px;min-width:768px;")
+  script.
+    $(document).ready(function(){createCharts();})
 
-script(src=url_for(theme.CDN.option.countup_js))
 script.
   (() => {
     function isInViewPortOfOne(el) {
@@ -381,5 +382,5 @@ script.
         })
       })
   })()
-script(src=url_for(theme.CDN.option.countup_js))
 script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js")
+script(src=url_for(theme.CDN.option.countup_js))

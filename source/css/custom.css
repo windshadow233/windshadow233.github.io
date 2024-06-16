@@ -1733,6 +1733,8 @@ img[data-lazy-src]:not(.loaded) {
 }
 #waifu{
     z-index: 10;
+    left: 60px;
+    right: unset;
 }
 .cf-article{
     background: var(--fyz-card-bg);

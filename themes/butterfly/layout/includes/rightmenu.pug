@@ -8,7 +8,7 @@
             i.fa.fa-refresh
         a.rightMenu-item(href="javascript:rmf.scrollToTop();")
             i.fa.fa-arrow-up
-    .rightMenu-group.rightMenu-line.hide#menu-text
+    .rightMenu-group.rightMenu-line.hide.menu-text
         a.rightMenu-item(href="javascript:rmf.copySelect();")
             i.fa.fa-copy
             span='复制'
@@ -18,25 +18,28 @@
         a.rightMenu-item(href="javascript:rmf.searchinThisPage();")
             i.fas.fa-search
             span='站内搜索'
-    .rightMenu-group.rightMenu-line.hide#menu-too
+    .rightMenu-group.rightMenu-line.hide.menu-too
         a.rightMenu-item(href="javascript:window.open(window.getSelection().toString());")
             i.fa.fa-window-restore
             span='新窗口打开'
         a.rightMenu-item(href="javascript:window.location=window.getSelection().toString();")
             i.fa.fa-link
             span='前往此链接'
-    .rightMenu-group.rightMenu-line.hide#menu-paste
+    .rightMenu-group.rightMenu-line.hide.menu-paste
         a.rightMenu-item(href='javascript:rmf.paste();')
             i.fa.fa-copy
             span='粘贴'
-    .rightMenu-group.rightMenu-line#menu-post
-        a.rightMenu-item.hide#menu-comment(href="#post-comment")
+    .rightMenu-group.rightMenu-line.menu-post
+        a.rightMenu-item.hide.menu-comment(href="#post-comment")
             i.fas.fa-comment
             span='直达评论区'
+        a.rightMenu-item.hide#switch_commentBarrage.menu-comment(href="javascript:switchCommentBarrage();" title="开关评论弹幕")
+            i.iconfont.icon-danmu
+            span='开关评论弹幕'
         a.rightMenu-item(href="javascript:rmf.copyPageLink()")
             i.fa.fa-link
             span='复制本页链接'
-    .rightMenu-group.rightMenu-line.hide#menu-to
+    .rightMenu-group.rightMenu-line.hide.menu-to
         a.rightMenu-item(href="javascript:rmf.openInNewTab()")
             i.fa.fa-window-restore
             span='新窗口打开'
@@ -46,7 +49,7 @@
         a.rightMenu-item(href="javascript:rmf.copyLink()")
             i.fa.fa-copy
             span='复制链接'
-    .rightMenu-group.rightMenu-line.hide#menu-img
+    .rightMenu-group.rightMenu-line.hide.menu-img
         a.rightMenu-item(href="javascript:rmf.saveAs()")
             i.fa.fa-download
             span='保存图片'
@@ -66,7 +69,7 @@
         a.rightMenu-item(href="javascript:rmf.translate();")
             i.iconfont.icon-fanti
             span='繁简转换'
-        a.rightMenu-item#menu-read.hide(href="javascript:rmf.switchReadMode();")
+        a.rightMenu-item.hide.menu-read(href="javascript:rmf.switchReadMode();")
             i.fa.fa-book
             span='阅读模式'
         a.rightMenu-item(href="javascript:fullScreen();")

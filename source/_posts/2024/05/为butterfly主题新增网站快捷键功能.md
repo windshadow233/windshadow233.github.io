@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-	width: 120px;
+	min-width: 120px;
 }
 
 #keyboard-tips .keyGroup .key {
@@ -241,7 +241,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	margin-right: 10px;
 	text-align: center;
 }
-
+.keyContent{
+  width: 100%;
+}
+.keyContent .content{
+  text-align: center;
+}
 ```
 
 在主题配置文件`_config.butterfly.yml`中添加下面内容：

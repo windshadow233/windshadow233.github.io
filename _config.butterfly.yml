@@ -307,7 +307,7 @@ aside:
   hide: false
   button: true
   mobile: false # display on mobile
-  position: left # left or right
+  position: right # left or right
   display:
     archive: false
     tag: false
@@ -499,8 +499,8 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use:
-    - Giscus # Valine,Disqus
     - Twikoo
+    - Giscus # Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -1045,16 +1045,18 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <style id="barragesColor"></style>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.min.js"></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script data-pjax>LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
+    - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script data-pjax>new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+    - <script src="/js/charts.js"></script>
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"
@@ -1107,14 +1109,15 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css">
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
-    - <script type="text/javascript" src="/js/charts.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
+    - <link rel="stylesheet" href="/css/comment-barrage.css">
+    - <script type="text/javascript" src="/js/comment-barrage.js"></script>
     # - <script src="xxxx"></script>
 
 shortcut:
   enable: true
   keyboard_delay: 300
-  keyboard_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/keyboard.css
+  keyboard_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/keyboard.min.css
   items:
     - keycode: 83
       text: S
@@ -1160,6 +1163,10 @@ shortcut:
       text: T
       action: 简体/繁体切换
       script: $("#translateLink").click()
+    - keycode: 67
+      text: C
+      action: 显示/隐藏评论弹幕
+      script: switchCommentBarrage()
     - keycode: 77
       text: M
       action: 播放/暂停音乐

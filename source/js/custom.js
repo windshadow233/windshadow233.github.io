@@ -78,7 +78,6 @@ function setInfo(ip, city, distance, isCache) {
     }
  }
  function loadAbstract() {
-    if(!document.querySelector("#article-container")) return;
     let key;
     if ((match = location.pathname.match(/^\/blog\/(\d+)\/?/)) !== null) key = match[1];
     else return;
@@ -109,7 +108,6 @@ function setInfo(ip, city, distance, isCache) {
     }
 }
 function createCharts() {
-   if (!document.getElementById('blog-charts')) return;
    let postsChart = echarts.init(document.getElementById('posts-chart'),'light');
    postsChart.setOption(postsOption);
    postsChart.on('click', 'series', (event) => {
@@ -135,13 +133,9 @@ function createCharts() {
       categoriesChart.resize();
    });
 }
- $(document).on('pjax:complete', function(event) {
-    if (window.a2a !== undefined) a2a.init_all();
-    getIpInfo();
-    renderGitHubCalendar();
-    loadAbstract();
-    categoryBarRandomColor();
-    createCharts();
+ $(document).on('pjax:complete', function(event) {   
+   if (window.a2a !== undefined) a2a.init_all();
+   getIpInfo();
  });
  $(document).on('pjax:error', function(event) {
     Snackbar.show({
@@ -162,9 +156,5 @@ function createCharts() {
    pjax.loadUrl(url);
 });
  $(document).ready(function() {
-    getIpInfo();
-    renderGitHubCalendar();
-    loadAbstract();
-    categoryBarRandomColor();
-    createCharts();
+   getIpInfo();
 });
