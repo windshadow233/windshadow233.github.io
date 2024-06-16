@@ -109,7 +109,6 @@ body {
   --fyz-secondbg: #f1f3f8;
   --fyz-shadow-nav:0 5px 12px -5px rgba(102, 68, 68, 0.05);
   --fyz-card-bg: #fff;
-  --fyz-card-bg: #fff;
   --fyz-card-bg-op: var(--fyz-black-op);
   --fyz-card-bg-none: rgba(255, 255, 255, 0);
   --fyz-shadow-lightblack:0 5px 12px -5px rgba(102, 68, 68, 0.00);
@@ -1736,14 +1735,15 @@ img[data-lazy-src]:not(.loaded) {
     z-index: 10;
 }
 .cf-article{
-    background: var(--fyz-white-acrylic2)!important;
+    background: var(--fyz-card-bg);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    border: var(--style-border-always);
+    box-shadow: var(--fyz-shadow-border);
+    margin: 10px 0.5%!important;
 }
 [data-theme="dark"] .cf-article{
-    background: var(--fyz-black-acrylic2)!important;
     backdrop-filter: blur(10px);
-    border-radius: 10px;
 }
 .cf-overshow{
     border-radius: 10px;
@@ -1774,6 +1774,7 @@ img[data-lazy-src]:not(.loaded) {
 }
 .cf-article-author:hover{
     background-color: var(--fyz-theme);
+    color: var(--fyz-white)!important;
     transition: .3s ease-in-out;
 }
 .cf-article-title:hover{
@@ -1790,15 +1791,18 @@ img[data-lazy-src]:not(.loaded) {
     -moz-border-radius: 10px!important;
     -ms-border-radius: 10px!important;
     -o-border-radius: 10px!important;
-    border:1px solid var(--lyx-border)!important;
 }
-.cf-article:hover,#cf-state:hover{
-    border:1px solid var(--lyx-theme)!important;
+#cf-state, #cf-more {
+    background: var(--fyz-card-bg);
+    color: var(--cf-fontcolor);
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #cf-container{
     display: flex;
     flex-wrap:wrap;
     max-width: none!important;
+    justify-content: center;
 }
 @media screen and (min-width:1000px) {
     .cf-article{
@@ -1843,61 +1847,69 @@ img[data-lazy-src]:not(.loaded) {
 #random-post {
     min-height: 32px;
     background: var(--fyz-card-bg);
-    border: var(--style-border-always);
     box-shadow: var(--fyz-shadow-border);
     padding: 20px 30px;
     border-radius: 12px;
     margin-top: 8px;
-  }
-  .random-friends-post {
+}
+.random-friends-post {
     text-decoration: none;
     border-bottom: 2px solid var(--fyz-lighttext);
     color: var(--fyz-fontcolor);
     font-weight: 700;
     padding: 0 4px;
-  }
-  .random-friends-post:hover {
+}
+.random-friends-post:hover {
     text-decoration: none;
     border-bottom: 2px solid var(--fyz-none);
     color: var(--fyz-white);
     background: var(--fyz-main);
     border-radius: 4px;
     box-shadow: var(--fyz-shadow-main);
-  }
-  #random-post-start {
+}
+#random-post-start {
     transition-duration: 0.3s;
-  }
-  #random-post-start:hover {
+}
+#random-post-start:hover {
     color: var(--fyz-hovertext);
-  }
-  #page .title-h2-a {
+}
+#page .title-h2-a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0.5rem;
-  }
-  #page .title-h2-a a {
+}
+#page .title-h2-a a {
     margin-left: 0.5rem;
     color: var(--fyz-secondtext);
     font-weight: 700;
-  }
-  #page .title-h2-a a:hover {
+}
+#page .title-h2-a a:hover {
     color: var(--fyz-main);
-  }
-  #page .title-h2-a .title-h2-a-left {
+}
+#page .title-h2-a .title-h2-a-left {
     display: flex;
     align-items: center;
-  }
-  #page .title-h2-a .title-h2-a-right {
+}
+#page .title-h2-a .title-h2-a-right {
     font-size: 14px;
     color: var(--fyz-secondtext);
-  }
-  .cf-overshow a{
+}
+.cf-overshow a{
     border-bottom: none!important;
     border-radius: 15px;
 }
-.cf-overshow a:hover{
-    background:none!important;
-    color: var(--fyz-theme)!important;
-    box-shadow:none!important;
+#random-post,.cf-article,#cf-state,#cf-more{
+    border:1px solid var(--fyz-border)!important;
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+#random-post:hover,.cf-article:hover,#cf-state:hover,#cf-more:hover{
+    border:1px solid var(--fyz-theme)!important;
+    box-shadow:0 0 3px var(--fyz-theme)!important;
 }
