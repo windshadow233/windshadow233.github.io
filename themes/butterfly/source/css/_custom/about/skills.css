@@ -103,3 +103,6 @@
   .author-content-item.skills:hover .skills-style-group .skills-list {
     opacity: 1;
   }
+  .author-content-item.skills:hover .skills-style-group .skills-list a:hover{
+    color: var(--fyz-theme);
+  }

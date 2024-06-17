@@ -64,11 +64,12 @@
           .skills-list
             each i in site.data.creativity
               each item, index in i.creativity_list
-                .skill-info
-                  .skill-icon(style=`background: ${item.color}`)
-                    img.no-lightbox(title=item.name, src=item.icon)
-                  .skill-name
-                    span=item.name
+                a(href=item.website)
+                  .skill-info
+                    .skill-icon(style=`background: ${item.color}`)
+                      img.no-lightbox(title=item.name, src=item.icon)
+                    .skill-name
+                      span=item.name
             .etc ...
     .author-content-item.careers
       .card-content

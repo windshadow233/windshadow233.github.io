@@ -1108,11 +1108,10 @@ inject:
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage.min.css">
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
-    - <link rel="stylesheet" href="/css/comment-barrage.css">
-    - <script type="text/javascript" src="/js/comment-barrage.js"></script>
-    # - <script src="xxxx"></script>
 
 shortcut:
   enable: true
