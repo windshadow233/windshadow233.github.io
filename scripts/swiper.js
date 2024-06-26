@@ -75,9 +75,9 @@ hexo.extend.filter.register('after_generate', function () {
   //挂载容器脚本
   var user_info_js = `<script data-pjax>
   function ${pluginname}_injector_config(){
+    if (!${get_layout}) return;
     var parent_div_git = ${get_layout};
     var item_html = '${temple_html_text}';
-    // console.log('已挂载${pluginname}')
     parent_div_git.insertAdjacentHTML("${data.insertposition}",item_html)
     }
   var elist = '${data.exclude}'.split(',');

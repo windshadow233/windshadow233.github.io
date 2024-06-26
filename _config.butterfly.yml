@@ -22,6 +22,7 @@ menu:
     相册: /gallery/ || far fa-images
     音乐馆: /music/ || fas fa-music
     关于我: /about/ || fas fa-info-circle
+    说说: /talk/ || far fa-comment-dots
     一些项目: /projects/ || fas fa-project-diagram
     状态监控: https://status.fyz666.xyz/ || iconfont icon-monitor
   链接 || fas fa-link:
@@ -617,6 +618,17 @@ artalk:
   visitor: false
   option:
 
+# artitalk:
+#   enable: true
+#   appId: mC6hgu6orObIlZ0S46mD13At-MdYXbMMI
+#   appKey: VPaiQsrxd2Jk2sr99unc2Jto
+#   path: talk
+#   js:
+#   option:
+#     pageSize: 20
+#   front_matter:
+#     aside: false
+
 # Chat Services
 # --------------------------------------
 
@@ -1051,12 +1063,13 @@ inject:
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.min.js"></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
-    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
-    - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-    - <script data-pjax>new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script src="/js/charts.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js"></script>
+    - <script type="text/javascript" src="/js/random.js"></script>
+    - <script type="text/javascript" src="/js/custom.js"></script>
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"
@@ -1107,11 +1120,11 @@ inject:
         }
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage.min.css">
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
-    - <script type="text/javascript" src="/js/random.js"></script>
-    - <script type="text/javascript" src="/js/custom.js"></script>
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js" async></script>
+    - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
+    - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+    - <script data-pjax>if (window.LingQue !== undefined) new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
 
 shortcut:
   enable: true

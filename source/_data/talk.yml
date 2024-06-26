@@ -1,0 +1,64 @@
+- class_name: 即刻说说
+  title: 说说
+  subTitle: 随便写两句
+  tips: 记录日常生活与各种随想
+  buttonLink: /about/
+  buttonText: 关于我
+  limit: 30
+  top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
+  talk_list:
+    - content: 看到数学圈的大佬们纷纷联名请愿，作为一个前数学人，我感慨万千。数学界需要的正是这种求真的精神，
+        我想，所有参与讨论的人当中，最希望这起事件是真实的人群，反而恰是这帮从专业的角度提出质疑的数学圈大佬们，
+        数学圈的每个人都是爱才惜才的，恨不得中国真出一个这样的天才；而一旦这起事件最终翻车，网暴姜萍的也一定不会是这一群人
+        （相反，这群人反而会帮助她走出困境，毕竟一位十七岁的中专少女，是既没有动机，也难有能力去做到策划这整起事件的）。
+        最后，还是希望阿里达摩院以及官方能给出一个说法，还数学界以清净，是真是假，拿出来溜溜，不要再当鸵鸟了。
+      link:
+        - url: https://www.zhihu.com/question/659628342/answer/3539037805
+          name: 请愿信
+        - url: https://zhuanlan.zhihu.com/p/705650067
+          name: 北京大学袁新意教授的分析
+      date: 2024/06/27 15:33
+    - content: 终于把说说功能搞好了，参考了下面这篇文章，并进行了一些小小的修改～以后我将会在这里发表一些想法
+      date: 2024/06/27 04:00
+      link:
+        - url: https://blog.anheyu.com/posts/c248.html
+          name: 即刻短文（瀑布流）部署方案
+    - content: |
+        Jumping 事件里，多所院校表态如下：
+        复旦：先不考虑这块金子是不是真的，至少外表看起来还是很光鲜的。
+        浙大：我这有炉子，你敢把这块金子拿来炼一炼吗？
+        上交：你这块金子怎么浮在水面上啊🤣
+      date: 2024/06/26 12:02
+      link:
+        - url: https://www.zhihu.com/question/659359527/answer/3538072726
+          name: 部分高校的回应
+    - content: 这个类比可以说是十分通俗易懂了
+      date: 2024/06/26 10:51
+      link:
+        - url: https://www.zhihu.com/question/659591528/answer/3541198657
+          name: “姜萍事件”的通俗类比
+    - content: |
+        CSDN 又不干人事，黑名单网址又多一个：gitcode.com
+        再仔细一看，好家伙！技术支持：华为云，这下可以一起骂了
+      date: 2024/06/26 00:39
+      link:
+        - url: https://www.v2ex.com/t/1052717
+          name: CSDN 大规模抓取 GitHub 仓库
+    - content: |
+        17岁中专女生自学偏微分方程，爆冷逆袭高分入围全球数赛
+        数学界也拥有了自己的丁真！
+      video: 
+        - https://player.bilibili.com/player.html?isOutside=true&aid=1505621387&bvid=BV1SD421M73v&cid=1580177673&p=1
+      date: 2024/06/13 15:00
+    - content: |
+        雨天穿梭于张家界大峡谷，有点过于舒适了。
+        不过没玩滑道还是有点可惜。
+      date: 2024/06/04 14:00
+      address: 张家界
+      link:
+        - url: /gallery/travel/zhangjiajie/
+          name: 相册
+      image:
+        - https://blogfiles.oss.fyz666.xyz/webp/5d60db21-379b-4521-90ab-7eb9dfffe983.webp
+        - https://blogfiles.oss.fyz666.xyz/webp/ca3a185a-35ed-4996-a233-590f05363521.webp
+        - https://blogfiles.oss.fyz666.xyz/webp/2d4bf808-7f6e-40c4-b2ea-81e09d2aad98.webp

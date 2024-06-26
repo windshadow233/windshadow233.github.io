@@ -24,7 +24,6 @@ gulp.task('minify-html', () => {
             removeEmptyAttributes: true,          // 移除值为空的参数
             removeRedundantAttributes: true,      // 移除值跟默认值匹配的属性
             collapseBooleanAttributes: true,      // 省略布尔属性的值
-            collapseWhitespace: true,             // 移除空格和空行
             minifyCSS: true,                      // 压缩HTML中的CSS
             minifyJS: true,                       // 压缩HTML中的JS
             minifyURLs: true                      // 压缩HTML中的链接

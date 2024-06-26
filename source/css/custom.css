@@ -14,6 +14,7 @@ body {
 :root {
     --fyz-white-op: rgba(255,255,255,0.2);
     --fyz-black-op: rgba(0,0,0,0.2);
+    --fyz-gray-op: rgba(153,153,153,0.169);
     --fyz-none: var(--fyz-0);
     --fyz-main: var(--fyz-theme);
     --fyz-main-op: var(--fyz-theme-op);
