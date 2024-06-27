@@ -7,6 +7,14 @@
   limit: 30
   top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
   talk_list:
+    - content: |
+        涟水县人民政府终于出来锤了一波，点个赞！看了一下，重要的结论有两点：
+        1. 姜同学83分的网传月考成绩为真（与阿赛实力似乎不符）
+        2. 姜同学借用了他人的电脑参加了初赛（姜同学似乎没有个人电脑，这与她擅长LaTeX不是十分相符）
+      link:
+        - url: https://ssl.huaian.gov.cn/letterClientController/info.do?view=/cms/letter/client/letterInfo_ls.jsp&letterId=2c94938e9047dbee019049843247003b
+          name: 涟水县人民政府的回复
+      date: 2024/06/28 00:41
     - content: 看到数学圈的大佬们纷纷联名请愿，作为一个前数学人，我感慨万千。数学界需要的正是这种求真的精神，
         我想，所有参与讨论的人当中，最希望这起事件是真实的人群，反而恰是这帮从专业的角度提出质疑的数学圈大佬们，
         数学圈的每个人都是爱才惜才的，恨不得中国真出一个这样的天才；而一旦这起事件最终翻车，网暴姜萍的也一定不会是这一群人
