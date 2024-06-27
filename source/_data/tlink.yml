@@ -196,6 +196,10 @@
       link: https://iterm2.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/6fccf8e6-5007-4162-bea8-dbb08c3a5fa3.png
       descr: MacOS默认终端的替代品
+    - name: xmake
+      link: https://github.com/xmake-io/xmake
+      avatar: https://blogfiles.oss.fyz666.xyz/png/e876b998-3e2d-4719-bba2-c047966fa597.png
+      descr: 基于 Lua 的跨平台构建实用程序
 - class_desc: 一些不错的云服务平台
   class_name: 云服务
   link_list:
