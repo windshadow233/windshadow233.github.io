@@ -1060,16 +1060,17 @@ inject:
     - <style id="barragesColor"></style>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.min.js" async></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script src="/js/charts.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js"></script>
-    - <script type="text/javascript" src="/js/random.js"></script>
-    - <script type="text/javascript" src="/js/custom.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar.js" async></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js" async></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/waterfall.js" async></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js" async></script>
+    - <script type="text/javascript" src="/js/random.js" async></script>
+    - <script type="text/javascript" src="/js/custom.js" async></script>
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"
@@ -1083,7 +1084,7 @@ inject:
          data-volume="0.4"
          data-type="playlist">
       </div>
-    - <script defer src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/universe.js"></script>
+    - <script async defer src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/universe.js"></script>
     - <script>
         function loadExternalResource(url, type) {
           return new Promise((resolve, reject) => {
