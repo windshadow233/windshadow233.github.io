@@ -1,7 +1,7 @@
-- class_name: 即刻说说
+- class_name: 说说
   title: 说说
-  subTitle: 随便写两句
-  tips: 记录日常生活与各种随想
+  subTitle: 心之所向，笔之所至
+  tips: 记录日常生活与随想
   buttonLink: /about/
   buttonText: 关于我
   limit: 30
