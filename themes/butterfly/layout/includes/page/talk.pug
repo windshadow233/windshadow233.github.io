@@ -1,4 +1,3 @@
-link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.0.5.css")
 script.
   $(document).ready(() => {
     talk.changeTimeInTalk();
@@ -26,11 +25,13 @@ if site.data.talk
                   .bber-content
                     p.datacont(style="white-space:pre-wrap;")=item.content
                       if item.image
-                        - l = item.image.length
                         .bber-container-img
                           each iten, indey in item.image
-                            a.bber-content-img(href=url_for(item.image[indey]),target="_blank",data-fancybox="gallery",data-caption="",style="max-width:calc(100% / " + l + " - 5px);")
+                            a.bber-content-img(href=url_for(item.image[indey]),target="_blank",data-fancybox="gallery",data-caption="")
                               img(src=url_for(item.image[indey]))
+                          .bber-content-noimg
+                          .bber-content-noimg
+                          .bber-content-noimg
                       if item.video
                         .bber-container-video
                           each iten, indey in item.video  
@@ -40,6 +41,9 @@ if site.data.talk
                             else
                               a.bber-content-video(href=url_for(item.video[indey]),data-fancybox="gallery",data-caption="")
                                 video(src=url_for(item.video[indey]))
+                          .bber-content-noimg
+                          .bber-content-noimg
+                          .bber-content-noimg
                       if item.aplayer
                         .bber-music
                           .aplayer.no-destroy(data-id=item.aplayer.id,data-server=item.aplayer.server,data-type="song",data-order="list",data-preload="none",data-autoplay="false",data-mutex="true",data-theme='var(--fyz-main)')
