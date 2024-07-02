@@ -1,4 +1,4 @@
-link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.0.1.css")
+link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.0.4.css")
 script.
   $(document).ready(() => {
     talk.changeTimeInTalk();
@@ -26,13 +26,11 @@ if site.data.talk
                   .bber-content
                     p.datacont(style="white-space:pre-wrap;")=item.content
                       if item.image
+                        - l = item.image.length
                         .bber-container-img
                           each iten, indey in item.image
-                            a.bber-content-img(href=url_for(item.image[indey]), target="_blank", data-fancybox="gallery", data-caption="")
+                            a.bber-content-img(href=url_for(item.image[indey]),target="_blank",data-fancybox="gallery",data-caption="",style="max-width:calc(100% / " + l + " - 5px);")
                               img(src=url_for(item.image[indey]))
-                          .bber-content-noimg
-                          .bber-content-noimg
-                          .bber-content-noimg
                       if item.video
                         .bber-container-img
                           each iten, indey in item.video  
