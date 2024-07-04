@@ -8,6 +8,14 @@
       color: "#99CCFF"
       icon: https://blogfiles.oss.fyz666.xyz/png/efae609e-fef9-435f-a2e8-dfa7ddc58efb.png
       website: https://www.python.org/
+    - name: ChatGPT
+      color: "#4aa181"
+      icon: https://blogfiles.oss.fyz666.xyz/png/0805f6ce-553e-4fbd-9caf-9a89c1a77621.png
+      website: https://chatgpt.com/
+    - name: Stable Diffusion
+      color: "#003399"
+      icon: https://blogfiles.oss.fyz666.xyz/png/79d437a1-e2b7-4afc-b00e-17ec75c7705c.png
+      website: https://arxiv.org/abs/2112.10752
     - name: Docker
       color: "#57b6e6"
       icon: https://blogfiles.oss.fyz666.xyz/png/c8845077-0d6b-479d-9b20-f86f8e268df4.png
