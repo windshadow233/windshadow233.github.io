@@ -711,9 +711,11 @@ google_adsense:
 
 site_verification:
   - name: google-site-verification
-    content: "qs4w3HQcWsP2MnxYN-ccrDZXv8lbkIZ7FRTams_no7w"
+    content: qs4w3HQcWsP2MnxYN-ccrDZXv8lbkIZ7FRTams_no7w
   - name: baidu-site-verification
-    content: "7a52f3352214d3debf7bdc94e16e4d98"
+    content: 7a52f3352214d3debf7bdc94e16e4d98
+  - name: msvalidate.01
+    content: A886BA7ACEE7B91223E9CAC00117689A
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
