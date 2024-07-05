@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Thu, 04 Jul 2024 20:48:38 GMT</pubDate>
+    <pubDate>Fri, 05 Jul 2024 10:29:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -463,9 +463,9 @@
       
       <category domain="https://blog.fyz666.xyz/tags/nodejs/">NodeJS</category>
       
-      <category domain="https://blog.fyz666.xyz/tags/gulp/">Gulp</category>
-      
       <category domain="https://blog.fyz666.xyz/tags/hexo/">Hexo</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/gulp/">Gulp</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/11084/#disqus_thread</comments>
