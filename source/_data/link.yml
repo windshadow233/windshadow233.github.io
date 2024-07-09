@@ -67,7 +67,7 @@
     - name: 杜老师说
       link: https://dusays.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/1c0553ad-5002-437b-94d4-55f685c2fb67.png
-      descr:  师者，传道，授业，解惑！
+      descr: 师者，传道，授业，解惑！
       feed: https://dusays.com/atom.xml
     - name: 科学空间
       link: https://spaces.ac.cn/
@@ -84,3 +84,8 @@
       avatar: https://blogfiles.oss.fyz666.xyz/png/9ac68b10-d715-4bae-906d-6ee3cd59c2dd.png
       descr: 零度解说的博客
       feed: https://www.freedidi.com/feed/
+    - name: 云游君的小站
+      link: https://www.yunyoujun.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/jpg/3d8f18b8-df69-478a-bbd9-9c0b43283738.jpg
+      descr: 一位有趣的开源大佬
+      feed: https://www.yunyoujun.cn/atom.xml
