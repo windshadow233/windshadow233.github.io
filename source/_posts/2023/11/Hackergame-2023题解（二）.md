@@ -618,9 +618,9 @@ X最后两个token是`71、10735`（即hacker），并且模型在X上输出的l
 
 一个可行的解：
 
-{% note success no-pangu simple%}
-"FE龍喚士 tissue Night coachaxpie viewpoints sharingLt sternedd Tit poured hedge"
-{% endnote %}
+```raw
+FE龍喚士 tissue Night coachaxpie viewpoints sharingLt sternedd Tit poured hedge
+```
 
 由于三、四题的解题代码几乎是一模一样的，只是改了几个参数，因此到第四题下再贴。
 
@@ -637,17 +637,16 @@ X最后两个token是`71、10735`（即hacker），并且模型在X上输出的l
 上面所说的分词的问题也是跑出来的解很多时候并不能通过题目的原因。
 
 鉴于跑了好几次最后的结果都包含106这个没法用的特殊token（后来发现其实不止一个），我草率地在前面计算最大余弦相似度的代码里把106列手动调成了-1。结果跑出来一个201字符的解（开头有一个空格）： 
-{% note success simple %}
-"&nbsp;state contemplasm heel desert desert surf的的 investigatesSeven continues Marie their bench Esp sleepy swinging suffer repeated revisit causing porch formula observed ButLater destined negotiations tree"
 
-{% endnote %}
+```raw
+&nbsp;state contemplasm heel desert desert surf的的 investigatesSeven continues Marie their bench Esp sleepy swinging suffer repeated revisit causing porch formula observed ButLater destined negotiations tree
+```
 
 这个解运气非常好，先encode再decode的结果和原来一样，并且在本地可以输出🐮，但长度超了1，就很难受。但好不容易跑出来的解，直接就放弃了又十分可惜，黔驴技穷之际，我想到有可能上面那个解删掉某个空格后并不影响其分词，也就不影响模型的input token，遂试了几个，最终真的找到了一个解： 
 
-{% note success simple %}
-"&nbsp;state contemplasm heel desert desert surf的的 investigatesSeven continues Marie their bench Esp sleepy swinging suffer repeatedrevisit causing porch formula observed ButLater destined negotiations tree"
-
-{% endnote %}
+```raw
+&nbsp;state contemplasm heel desert desert surf的的 investigatesSeven continues Marie their bench Esp sleepy swinging suffer repeatedrevisit causing porch formula observed ButLater destined negotiations tree"
+```
 
 ![](https://blogfiles.oss.fyz666.xyz/png/77b1c894-1c2d-4281-8220-abbe592d0e30.png)
 [三、四题的代码](https://gist.github.com/windshadow233/998b9b6a7765c911e77a0de239f99749#file-solve_flag3-py)
