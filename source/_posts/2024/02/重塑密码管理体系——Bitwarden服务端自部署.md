@@ -42,11 +42,12 @@ description: 自部署一个密码管理平台
 事实上这样的软件有非常之多，例如比较有名的1Password。我这里选择了一款名为Bitwarden的软件，原因是它免费、开源且可自部署<s>（还不是因为开不起1Password的会员）</s>，这篇文章就用来记录一下部署的过程。
 
 ![](https://blogfiles.oss.fyz666.xyz/png/84f9ac75-6609-487a-9190-8b45a38064df.png)
+
 ## 部署Bitwarden
 
 项目的GitHub地址如下：
 
-{%link bitwarden_rs,GitHub,https://github.com/mprasil/bitwarden_rs %}
+{%link vaultwarden,GitHub,https://github.com/dani-garcia/vaultwarden %}
 
 
 为方便起见，使用docker进行部署。
@@ -59,9 +60,9 @@ version: '3'
 
 services:
   bitwarden:
-    image: bitwardenrs/server:latest
-    container_name: bitwarden
-    restart: always
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
     volumes:
       - ./bw-data:/data
     environment:
@@ -70,7 +71,7 @@ services:
       - WEB_VAULT_ENABLED=true
       - ADMIN_TOKEN=xxxxxxxx
       - SHOW_PASSWORD_HINT=true
-      - DOMAIN=xxxxxxxxx
+      - DOMAIN=yourdomain.tld
     ports:
       - "127.0.0.1:8889:80"
       - "127.0.0.1:8810:3012"
@@ -82,22 +83,35 @@ services:
 ## 配置Nginx
 
 
-另外，我们在容器外部用Nginx做一个反向代理，代理到443端口并提供TLS证书（以我个人的配置为例）：
+另外，我们在容器外部用Nginx做一个反向代理，代理到443端口并提供TLS证书：
 
 ```nginx
+upstream bitwarden-default { server 127.0.0.1:8889; }
+upstream bitwarden-ws { server 127.0.0.1:8810; }
+
 server {
     listen 80;
-    listen 443 ssl;
-    server_name bitwarden.fyz666.xyz;
+    listen 443 ssl http2;
+    server_name yourdomain.tld;
 
-    ssl_certificate /path/to/fullchain.pem;
-    ssl_certificate_key /path/to/privkey.pem;
+    ssl_certificate /path/to/cert;
+    ssl_certificate_key /path/to/key;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+
     if ($scheme = http){
       return 301 https://$host$request_uri;
     }
 
-    client_max_body_size 128M;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header Content-Security-Policy upgrade-insecure-requests;
+    add_header X-Frame-Options DENY;
+    add_header X-Content-Type-Options nosniff;
+    add_header X-XSS-Protection "1; mode=block";
+    add_header Referrer-Policy "no-referrer-when-downgrade";
 
+    client_max_body_size 128M;
     # reverse proxy
     location / {
         proxy_set_header Host $host;
@@ -119,19 +133,16 @@ server {
 
     location /notifications/hub {
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection $http_connection;
+        proxy_set_header Connection "upgrade";
         proxy_set_header X-Real-IP $remote_addr;
-
         proxy_pass http://bitwarden-ws;
-    }
-    location = /identity/accounts/prelogin {
-    	rewrite ^/identity/accounts/prelogin$ /api/accounts/prelogin;
-    	proxy_pass http://127.0.0.1:5000/;
     }
 }
 ```
 
 如此一来，bitwarden就配置好了。
+
+(不过不知为啥notifications没配置成功，但不影响基本的使用)
 
 
 ## 配置自动备份
@@ -151,14 +162,14 @@ username=xxx
 password=xxx
 
 filename="bitwarden-`date +%F`.tar.gz"
-cd /root/bitwarden/
+cd /path/to/your/vaultwarden-basedir/
 tar czf "${filename}" bw-data/
 curl -u "${username}:${password}" -T "${filename}" "https://dav.jianguoyun.com/dav/bitwarden/"
 
 rm "${filename}"
 ```
 
-上面代码中，需要将username和password分别修改为坚果云的账号以及前面申请的访问密码。
+上面代码中，需要将`username`和`password`分别修改为坚果云的账号以及前面申请的访问密码。
 
 
 最后，设置一条crontab定时任务，一天执行一次该脚本。
