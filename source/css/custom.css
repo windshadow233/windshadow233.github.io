@@ -1900,6 +1900,9 @@ img[data-lazy-src]:not(.loaded) {
     -ms-transition: all .3s;
     transition: all .3s;
 }
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap a:hover {
+    color: var(--fyz-theme);
+}
 #random-post:hover,.cf-article:hover,#cf-state:hover,#cf-more:hover{
     border:1px solid var(--fyz-theme)!important;
     box-shadow:0 0 3px var(--fyz-theme)!important;
