@@ -1,8 +1,13 @@
 script.
   $(document).ready(() => {
     talk.changeTimeInTalk();
-    talk.reflashTalkWaterFall();
     loadMeting();
+    document.querySelectorAll('.bber-content-img img').forEach(function(img) {
+        img.onload = function() {
+            talk.reflashTalkWaterFall();
+        }
+    });
+
   })
 if site.data.talk
   each i in site.data.talk
