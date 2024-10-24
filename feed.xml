@@ -15,8 +15,37 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Mon, 21 Oct 2024 15:21:48 GMT</pubDate>
+    <pubDate>Thu, 24 Oct 2024 10:58:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Ubuntu Server开机失败: &quot;Fail to start nvidia-powerd service&quot; 解决方法</title>
+      <link>https://blog.fyz666.xyz/blog/12074/</link>
+      <guid>https://blog.fyz666.xyz/blog/12074/</guid>
+      <pubDate>Thu, 24 Oct 2024 18:43:15 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;今天远程连实验室服务器没成功连上，跑到实验室一看发现死机了，重启也启动不起来，进入了左上角光标不闪烁的画面。而之前我已解决过类似的情况：&lt;a href=&quot;/blog/6585/&quot;&gt;Ubuntu</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>今天远程连实验室服务器没成功连上，跑到实验室一看发现死机了，重启也启动不起来，进入了左上角光标不闪烁的画面。而之前我已解决过类似的情况：<a href="/blog/6585/">Ubuntu 开机黑屏左上角光标不闪烁的解决办法</a>，于是熟练地打开grub，切到另一个内核，重启。然而还是失败了。在一闪而过的终端输出内容中，我定位到一条可能有用的信息：</p><pre class="line-numbers language-raw" data-language="raw"><code class="language-raw">[FAILED] Fail to start nvidia-powerd service.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>果然还是显卡驱动出问题了。找到一条Nvidia forums上的解决方案：</p><a class="tag-Link" target="_blank" href="https://forums.developer.nvidia.com/t/ubuntu-does-not-booting-failed-to-start-nvidia-powerd-service/258557">    <div class="tag-link-tips">引用站外地址，不保证站点的可用性和安全性</div>    <div class="tag-link-bottom">        <div class="tag-link-left">            <img src="https://api.iowen.cn/favicon/forums.developer.nvidia.com/t/ubuntu-does-not-booting-failed-to-start-nvidia-powerd-service/258557.png" onerror="this.onerror=null;this.src='/images/default-link.png';" />        </div>        <div class="tag-link-right">            <div class="tag-link-title">解决方案</div>            <div class="tag-link-sitename">Nvidia forums</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><p>根据帖子里的内容，进入Recovery mode后，用root登录终端，然后执行下面的命令即可：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> remove <span class="token parameter variable">--purge</span> <span class="token string">'^nvidia-.*'</span><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ubuntu-desktop<span class="token function">sudo</span> <span class="token function">rm</span> /etc/X11/xorg.conf<span class="token builtin class-name">echo</span> <span class="token string">'nouveau'</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> <span class="token parameter variable">-a</span> /etc/modulesSudo Reboot<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>不过我并不想装<code>ubuntu-desktop</code>，于是把第二条命令删了。</p>]]></content:encoded>
+      
+      
+      <category domain="https://blog.fyz666.xyz/categories/debug/">Debug</category>
+      
+      
+      <category domain="https://blog.fyz666.xyz/tags/linux/">Linux</category>
+      
+      
+      <comments>https://blog.fyz666.xyz/blog/12074/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>GeekGame 2024 题解 (三)</title>
@@ -651,38 +680,6 @@
       
       
       <comments>https://blog.fyz666.xyz/blog/10094/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>优雅地管理SSL证书及其关联服务</title>
-      <link>https://blog.fyz666.xyz/blog/10068/</link>
-      <guid>https://blog.fyz666.xyz/blog/10068/</guid>
-      <pubDate>Tue, 02 Apr 2024 15:09:38 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;我的服务器上开着一堆服务，其中有一些需要用到SSL证书，例如Nginx及前面刚刚部署的邮件服务。我的SSL证书是通过certbot向Let’s Encrypt申请的，证书有效期为90天，也就是说每隔80多天就得更新一下证书。&lt;/p&gt;
-&lt;h2 id=&quot;动机&quot;&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>我的服务器上开着一堆服务，其中有一些需要用到SSL证书，例如Nginx及前面刚刚部署的邮件服务。我的SSL证书是通过certbot向Let’s Encrypt申请的，证书有效期为90天，也就是说每隔80多天就得更新一下证书。</p><h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>在证书更新后，自然需要将所有用到证书的服务reload一下，以加载新的证书，通常我会写一条crontab作业来干这件事。之前我只有一台服务器A跑Nginx服务的时候，这样感觉还比较舒服，而现在情况变得更加复杂了：</p><p>这两年我都在维护我们实验室主办的学术会议的官网（规模不大，因此把官网部署在我的服务器上完全没问题），所以需要同时维护两个域名的证书。另外，我现在还同时维护着另一台B服务器——两台服务器上的服务共享着同一个域名证书，所以需要在A服务器上的证书更新时同步到B服务器上，并在B服务器上reload所有用到证书的服务。</p><p>于是原先的方法感觉就不太优雅了。正巧这两天iBug大佬发布了一篇文章，介绍了一种通过systemd来reload一些服务的方法：</p><a class="tag-Link" target="_blank" href="https://ibug.io/blog/2024/03/reload-ssl-cert-with-systemd/">    <div class="tag-link-tips">引用站外地址，不保证站点的可用性和安全性</div>    <div class="tag-link-bottom">        <div class="tag-link-left">            <img src="https://api.iowen.cn/favicon/ibug.io/blog/2024/03/reload-ssl-cert-with-systemd/.png" onerror="this.onerror=null;this.src='/images/default-link.png';" />        </div>        <div class="tag-link-right">            <div class="tag-link-title">Reload SSL certificates with systemd</div>            <div class="tag-link-sitename">iBug</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><p>看上去非常优雅，于是我学习了一下，也给整了起来。</p><h2 id="服务器A上的操作"><a href="#服务器A上的操作" class="headerlink" title="服务器A上的操作"></a>服务器A上的操作</h2><p>首先我将申请证书的脚本从certbot换成了更轻量的<a href="https://github.com/acmesh-official/acme.sh">acme.sh</a>，安装完成后直接支持通过接入cloudflare以及godaddy的dns api来更新泛域名证书（而certbot则需要分别安装两者的插件，感觉稍显笨重）</p><p>我将A服务器作为更新证书的机器，更新证书后自动同步给B，在A服务器上只有Nginx服务需要reload，因此先创建<code>/etc/systemd/system/ssl-certificate.target</code>：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># /etc/systemd/system/ssl-certificate.target</span><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span><span class="token assign-left variable">Description</span><span class="token operator">=</span>SSL certificates reload helper<span class="token assign-left variable">PropagatesReloadTo</span><span class="token operator">=</span>nginx.service<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>然后创建一个path文件<code>/etc/systemd/system/ssl-certificate.path</code>来监听证书文件的变更事件：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># /etc/systemd/system/ssl-certificate.path</span><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span><span class="token assign-left variable">Description</span><span class="token operator">=</span>SSL certificate reload helper<span class="token assign-left variable">Wants</span><span class="token operator">=</span>%N.target<span class="token punctuation">[</span>Path<span class="token punctuation">]</span><span class="token assign-left variable">PathChanged</span><span class="token operator">=</span>/path/to/cert1/fullchain.cer<span class="token assign-left variable">PathChanged</span><span class="token operator">=</span>/path/to/cert2/fullchain.cer<span class="token punctuation">[</span>Install<span class="token punctuation">]</span><span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>我有两个证书，所以这里加了两条<code>PathChanged</code>字段分别监听证书1和证书2的变更事件。</p><p>最后由于path单元只能激活服务而没办法重载服务，所以需要创建一个“一次性”的（oneshot）service，每次激活时来reload服务：</p><p><code>/etc/systemd/system/ssl-certificate.service</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># /etc/systemd/system/ssl-certificate.service</span><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span><span class="token assign-left variable">Description</span><span class="token operator">=</span>SSL certificate reload helper<span class="token assign-left variable">StartLimitIntervalSec</span><span class="token operator">=</span>5s<span class="token assign-left variable">StartLimitBurst</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">[</span>Service<span class="token punctuation">]</span><span class="token assign-left variable">Type</span><span class="token operator">=</span>oneshot<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/bin/sh <span class="token parameter variable">-c</span> <span class="token string">'/bin/systemctl reload %N.target; /usr/local/bin/rsync_cert.sh'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里我需要额外执行的工作还有向B服务器同步证书1，因此采用了将两条命令写在一起的方式。同步证书则使用了<code>rsync</code>命令。</p><p><code>/usr/local/bin/rsync_cert.sh</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token function">rsync</span> <span class="token parameter variable">-avzL</span> <span class="token parameter variable">-e</span> <span class="token string">'ssh -i /path/to/priv_key'</span> /path/to/cert1/ user@serverB:/path/to/cert1/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>需要先手动执行一下这个脚本将服务器B的公钥写入到<code>~/.ssh/known_hosts</code>，后面就能自动化了。</p><p>最后启动创建的path单元：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">systemctl daemon-reloadsystemctl <span class="token builtin class-name">enable</span> <span class="token parameter variable">--now</span> ssl-certificate.path<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="服务器B上的操作"><a href="#服务器B上的操作" class="headerlink" title="服务器B上的操作"></a>服务器B上的操作</h2><p>在服务器B上，同样可以创建与前面相似的<code>target</code>、<code>path</code>及<code>service</code>单元，这样当新的证书同步过去后，也会触发reload。</p><p>由于我的mailserver是部署在docker里的，好像不太好通过systemd来维护，因此同样采用了这种更愚蠢的办法，只是因为命令比较多，就干脆专门写了一个文件：</p><p><code>/etc/systemd/system/ssl-certificate.service</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># /etc/systemd/system/ssl-certificate.service</span><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span><span class="token assign-left variable">Description</span><span class="token operator">=</span>SSL certificate reload helper<span class="token assign-left variable">StartLimitIntervalSec</span><span class="token operator">=</span>5s<span class="token assign-left variable">StartLimitBurst</span><span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">[</span>Service<span class="token punctuation">]</span><span class="token assign-left variable">Type</span><span class="token operator">=</span>oneshot<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/local/bin/reload-services.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><code>/usr/local/bin/reload-services.sh</code></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span><span class="token builtin class-name">set</span> +e/bin/systemctl reload ssl-certificate.target/bin/docker <span class="token builtin class-name">exec</span> mailserver postfix reload/bin/docker <span class="token builtin class-name">exec</span> mailserver dovecot reload<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如此配置，当SSL证书更新时，两台服务器上的所有相关服务都可以顺利自动重新加载证书了！</p>]]></content:encoded>
-      
-      
-      <category domain="https://blog.fyz666.xyz/categories/%E7%9E%8E%E6%8D%A3%E9%BC%93%E7%BB%8F%E5%8E%86/">瞎捣鼓经历</category>
-      
-      
-      <category domain="https://blog.fyz666.xyz/tags/linux/">Linux</category>
-      
-      <category domain="https://blog.fyz666.xyz/tags/ssl/">SSL</category>
-      
-      
-      <comments>https://blog.fyz666.xyz/blog/10068/#disqus_thread</comments>
       
     </item>
     

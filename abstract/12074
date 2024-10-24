@@ -1,0 +1,1 @@
+文章提供了一个解决Ubuntu Server因Nvidia驱动问题导致开机失败的方法，通过移除Nvidia驱动并重启系统来修复。
