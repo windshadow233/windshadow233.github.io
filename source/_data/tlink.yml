@@ -76,6 +76,21 @@
     link: https://snapdrop.net/
     avatar: https://blogfiles.oss.fyz666.xyz/png/bf6ba59c-5647-405d-9423-f95f47f114fd.png
     descr: 最方便快捷的文件传输助手
+- class_desc: '收集一些玩CTF的过程中遇到的好用的在线工具。持续更新中...'
+  class_name: CTF在线工具
+  link_list:
+  - name: CTFever
+    link: https://ctf.cestlavie.moe/
+    avatar: https://blogfiles.oss.fyz666.xyz/svg/ecc1d9d8-d4d3-43a8-b8f9-5d1f05798c6b.svg
+    descr: 集成了一堆CTF工具
+  - name: PyLingual
+    link: https://pylingual.io/
+    avatar: https://blogfiles.oss.fyz666.xyz/jpg/931c7059-1074-4df7-8a94-14db663002fe.jpg
+    descr: pyc文件反编译
+  - name: DTMF Decoder
+    link: https://dtmf.netlify.app/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/ed087f52-e4d9-420f-8cb8-3689f89c0f4c.png
+    descr: DTMF解码器
 - class_desc: ''
   class_name: 图片、音视频工具
   link_list:
