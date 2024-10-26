@@ -1132,7 +1132,7 @@ inject:
 
 shortcut:
   enable: true
-  keyboard_delay: 300
+  keyboard_delay: 500
   keyboard_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/keyboard.min.css
   items:
     - keycode: 83
