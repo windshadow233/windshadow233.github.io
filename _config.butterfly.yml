@@ -1073,7 +1073,7 @@ inject:
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.0.9.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.1.1.css">
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"

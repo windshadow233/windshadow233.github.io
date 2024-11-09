@@ -57,7 +57,7 @@ if site.data.talk
                         time.datatime(datetime= item.date)= datedata
                       if item.link 
                         each i in item.link
-                          a.bber-content-link(title="跳转到短文指引的链接",href=url_for(i.url),rel="external nofollow")
+                          a.bber-content-link(href=url_for(i.url),rel="external nofollow")
                             i.fas.fa-link
                             | #{i.name}
                       if item.from

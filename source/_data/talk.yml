@@ -8,6 +8,18 @@
   top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
   talk_list:
     - content: |
+        参加了一年一度的 Hackergame 2024，喜提组内二等奖。又可以去提货了，舒服！
+      date: 2024/11/10 17:57
+      image:
+        - https://blogfiles.oss.fyz666.xyz/png/2a3d517b-bdd5-4710-8633-43cb03af4eb9.png
+      link:
+        - url: https://hack.lug.ustc.edu.cn/
+          name: 比赛平台
+        - url: https://github.com/USTC-Hackergame/hackergame2024-writeups
+          name: 官方存档及题解
+        - url: /blog/12095/
+          name: 我的题解
+    - content: |
         今日麻将乐事：
         （主视角为我的下家）
         下家：咦，红中点了？小事，一番罢了。

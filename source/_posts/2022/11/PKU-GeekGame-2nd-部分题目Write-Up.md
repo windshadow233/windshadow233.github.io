@@ -1145,9 +1145,7 @@ flag{md5_1s_re41ly_1n5ecur3}
 
 虽然终端也能实现相同的逻辑，但是趣味性就差很多了”
 
-<div style="text-align:right;width:100%;">
-——zzh1996
-</div>
+<p align="right">——zzh1996</p>
 
 因此我们今年就做了一个更好玩的扫雷游戏。
 

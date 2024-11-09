@@ -3,8 +3,9 @@ function link(args) {
     let title = args[0];
     let sitename = args[1];
     let link = args[2];
-    let urlNoProtocol = link.replace(/^https?\:\/\//i, "");
-    let imgUrl = "https://api.iowen.cn/favicon/" + urlNoProtocol + ".png";
+    // let urlNoProtocol = link.replace(/^https?\:\/\//i, "");
+    let hostname = new URL(link).hostname;
+    let imgUrl = "https://logo.clearbit.com/" + hostname + "?size=256";
     let fallbackImgUrl = "/images/default-link.png";
 
     return `<a class="tag-Link" target="_blank" href="${link}">
