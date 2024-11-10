@@ -61,11 +61,11 @@ hexo.extend.filter.register('after_generate',function() {
         var history_calendar = hexo.config.history_calendar;
         if(hexo.config.swiper && hexo.config.swiper.enable){
             var css_text =`<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/baiduhistorycalendar.css">`;
-            var js_text =`<script data-pjax src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/baiduhistorycalendar.js"></script>`
+            var js_text =`<script data-pjax src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/baiduhistorycalendar@v1.0.1.js"></script>`
 
         }else{
             var css_text =`<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/baiduhistorycalendar.css">`;
-            var js_text =`<script src="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/baiduhistorycalendar.js"></script>`
+            var js_text =`<script src="https://fastly.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script><script data-pjax src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/baiduhistorycalendar@v1.0.1.js"></script>`
 
         }
         common_injector('history_calendar', history_calendar,history_calendar.temple_html,js_text,css_text)

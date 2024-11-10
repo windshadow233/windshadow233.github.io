@@ -20,7 +20,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/0e71694e-9772-4998-aecb-3bb41267a07
 
 {% note primary %}
 
-为了给同学分享动画片，小 T 启动了自己之前用超安全的 Rust 语言写的 Web server，允许你访问「当前目录」的文件，当然了，flag 可不在当前目录。不过因为快到饭点了，小 T 还没来得及复制视频文件到对应的目录，于是就只在自己最常使用的、**几年前编译的某祖传终端模拟器**里面跑起了自己的 `fileserver`，然后就去锁屏吃饭了。
+为了给同学分享动画片，小 T 启动了自己之前用超安全的 Rust 语言写的 Web server，允许你访问「当前目录」的文件，当然了，flag 可不在当前目录。不过因为快到饭点了，小 T 还没来得及复制视频文件到对应的目录，于是就只在自己最常使用的、**几年前编译的某~~祖传~~终端模拟器**里面跑起了自己的 `fileserver`，然后就去锁屏吃饭了。
 
 小 T：「诶，我不过就分享个文件，而且目录里面也没别的东西，所以没关系吧～而且我特地搞了个 chroot，就算我真写出了什么漏洞，你也休想看到我的 flag！」
 
@@ -41,7 +41,31 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/0e71694e-9772-4998-aecb-3bb41267a07
 
 ### 只要不停下 HTTP 服务，响应就会不断延伸
 
-我们看到服务端的源代码：
+我们要让小 T 的`fileserver`无法正常处理请求，即让下面函数返回`False`:
+
+```python
+def health_check() -> bool:
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(2.0)
+
+        sock.connect(("127.0.0.1", 8000))
+
+        request = f"GET / HTTP/1.1\r\nConnection: close\r\n\r\n"
+        sock.sendall(request.encode("utf-8"))
+
+        sock.recv(8192)
+
+        sock.close()
+
+        return True
+
+    except Exception as e:
+        # print(f"Error: {e}")
+        return False
+```
+
+我们看到`fileserver`的源代码：
 
 ```rust
 use std::fs;
@@ -727,7 +751,7 @@ In txx xxxnd xxll of Hxxxxxxxxx 2024, wxxxx txx wxlls xxx linxd witx sxxxxns sxo
 
 {% endhideToggle %}
 
-## 「行吧就算标题可以很长但是 flag 一定要短点」
+### 「行吧就算标题可以很长但是 flag 一定要短点」
 
 大语言模型生成一段关于Hackergame 2024的段落，然后把其中的`hackergame`里的字母全替换成了`x`。
 

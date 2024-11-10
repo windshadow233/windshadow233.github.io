@@ -40,6 +40,42 @@ description: Hackergame 2024，再次喜提二等奖～
 
   动画分享、关灯（除Impossible）、禁止内卷、哈希三碰撞（三碰撞之一）、零知识数独（除无解之谜）、先104🤣」（「行吧就算标题可以很长但是 flag 一定要短点」）
 
+## 没解出的题
+
+这里分享我认为最可惜的一道题：**ZFS文件恢复**。我在这道题上花了不少时间，最终却一分也没有拿到。
+
+拿到zfs镜像以后首先注意到zfs有快照功能，但进到快照路径下发现里面什么也没有，这是怎么回事呢？难道没有开快照？经过查找发现确实有这种可能，我直接非常傻逼地认为这题的考点和快照无关（毕竟做的人确实不多，显然不可能看到快照就找到flag），开始考虑另一种可能，即文件没进快照就被删除了，但还没有被覆盖。
+
+由于`flag2.sh`这个文件的内容只需要`grep`一下就能出，我接下来开始在镜像里疯狂找`mtime`和`atime`这两个文件元数据，因为如果文件还没被覆盖的话，元数据应该也还在吧。
+
+然后我找了很多数据恢复软件，似乎没有一个能work的（其实就是还没找全，用UFS Explorer Professional Recovery就能直接出这两个元数据），遂考虑用`zdb`来分析一下镜像，到了这里，其实我已经很接近真相了，我研究了很久`zdb`怎么用，最后打出这样两条命令：
+
+```bash
+$ sudo zdb -ddddd -e hg2024/data | grep atime
+WARNING: ignoring tunable zfs_arc_max (using 4148263936 instead)
+	atime	Wed Oct 23 21:37:22 2024
+$ sudo zdb -ddddd -e hg2024/data | grep mtime
+WARNING: ignoring tunable zfs_arc_max (using 4148263936 instead)
+	mtime	Wed Oct 23 21:37:22 2024
+```
+
+执行了下发现只找到了`Wed Oct 23 21:37:22 2024`，而这个时间我可太熟悉了，就是这个镜像的制作时间，似乎没有任何其他有价值的信息，遂放弃。赛后发现应该去分析快照：
+
+```bash
+$ sudo zdb -ddddd -e hg2024/data@mysnap | grep atime
+WARNING: ignoring tunable zfs_arc_max (using 4148263936 instead)
+	atime	Thu Mar  9 23:56:50 2006
+	atime	Mon Nov 10 04:49:03 2036
+	atime	Wed Oct 23 21:37:22 2024
+$ sudo zdb -ddddd -e hg2024/data@mysnap | grep mtime
+WARNING: ignoring tunable zfs_arc_max (using 4148263936 instead)
+	mtime	Sun May 29 03:49:29 1977
+	mtime	Sat Jan 12 01:18:00 2013
+	mtime	Wed Oct 23 21:37:22 2024
+```
+
+我这才发现自己一开始就忽略了一种可能：就是这两个文件是先进了快照再被删除的。暂且不论这种解释是否正确，但如果当时想到了，我一定会去试一下，这样flag2就出了。由于被删除的文件的元数据被我翻到了，接下来，我自然会想到flag1的相关信息就藏在`atime`和`mtime`的附近，问问GPT再稍微研究一下肯定就出了。现在想来，实在遗憾。
+
 ## 总结
 
 今年的题难度有所提升，但我的总分居然和去年差不多（不过题目的总分也多了）。而且Binary神奇的没有爆0（出了哈希三碰撞的第一小问），实乃一大长进！
