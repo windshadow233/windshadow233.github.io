@@ -934,7 +934,7 @@ flag{Rev3sEtiM^5}
 
 于是你开始研究起来这个二维码。
 
-![](https://blogfiles.oss.fyz666.xyz/bmp/5e328a71-054a-43e9-95ab-97f8e722af30.bmp)
+![](https://raw.githubusercontent.com/USTC-Hackergame/hackergame2021-writeups/refs/heads/master/official/%E9%A9%AC%E8%B5%9B%E5%85%8B/src/pixelated_qrcode.bmp)
 
 [本题附件](https://github.com/USTC-Hackergame/hackergame2021-writeups/raw/master/official/%E9%A9%AC%E8%B5%9B%E5%85%8B/src/mosaic.zip)
 
@@ -955,7 +955,7 @@ N = 20              # 马赛克块的数量（共N*N块）
 BOX_SIZE = 23       # 每个马赛克块的大小（边长，单位为像素）
 PIXEL_SIZE = 11     # 二维码每个块的大小（边长，单位为像素）
 
-img = Image.open('https://blogfiles.oss.fyz666.xyz/bmp/5e328a71-054a-43e9-95ab-97f8e722af30.bmp').convert('L')
+img = Image.open('pixelated_qrcode.bmp').convert('L')
 img = np.array(img)
 
 def fill(x, y, strict=True):
