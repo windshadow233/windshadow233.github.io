@@ -1,0 +1,1 @@
+本文深入探讨了MT19937算法的逆向分析，包括逆向'tempering'和'twist'操作的详细步骤和代码实现，以及如何逆向'extract_number'操作以预测Python随机数。
