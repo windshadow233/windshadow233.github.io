@@ -8,6 +8,6 @@ link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogSto
               - var contentText = item.image ? item.content + ' [图片]' : item.content
               - contentText += item.video ? ' [视频]' : ''
               - contentText += item.link ? ' [链接]': ''
-              .li-style.swiper-slide= contentText
+              .li-style.swiper-slide !{contentText}
 
     i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`pjax.loadUrl("/talk/")`,title="查看全文")

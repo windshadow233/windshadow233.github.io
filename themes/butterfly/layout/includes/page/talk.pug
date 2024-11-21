@@ -29,7 +29,7 @@ if site.data.talk
               if index < i.limit
                 li.bber-item
                   .bber-content
-                    p.datacont(style="white-space:pre-wrap;")=item.content
+                    p.datacont(style="white-space:pre-wrap;") !{item.content}
                       if item.image
                         - l = Math.min(item.image.length, 4)
                         .bber-container-img

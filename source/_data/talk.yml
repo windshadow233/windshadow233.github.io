@@ -8,6 +8,23 @@
   top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
   talk_list:
     - content: |
+        <a href="https://space.bilibili.com/163637592">赛博丁真</a> 又发力了。
+        
+        赛博丁真的最近一期视频《我用36万行备忘录做了个动画…》的0:56处，提到“所以我们专门写了一个软件”，
+        然而视频画面显示这个所谓的“自己写的软件”其实是 GitHub 上某活跃程序员 <a href="https://github.com/vietnh1009">vietnh1009</a> 的开源仓库 <a href="https://github.com/vietnh1009/ASCII-generator/">ASCII-generator</a>。
+        且不说视频里“直接在 GitHub 下载源代码压缩包并放在 Downloads 目录下解压运行”这种不专业的事（毕竟也不是一次两次了），你把人家代码里的作者版权信息给删了是什么意思？
+        甚至道歉公关文还辩称自己“确实不严谨”，我看未必，你们团队在“该严谨的地方”倒是非常的严谨，作者版权信息删的那叫一个干净。
+        在质疑声越来越大且惊动 GitHub 仓库的原作者后，赛博丁真团队火速删除了视频，这操作真是给人乐麻了。
+        
+        赛博丁真团队的这出操作严重违反了 MIT 开源协议（说起来为什么这么宽松的协议你还去违反），毫无版权意识，在被戳穿以后甚至不愿意发一个诚恳的道歉，这等up为何还能在中文互联网上游刃有余？
+      date: 2014/11/21 23:51
+      image:
+        - https://blogfiles.oss.fyz666.xyz/webp/7dcb0ac3-a5d3-4705-b7af-d7d7bc7d13ee.webp
+        - https://blogfiles.oss.fyz666.xyz/webp/7f61c8db-cae1-4631-b797-0af5b04c8090.webp
+      link:
+        - url: https://github.com/vietnh1009/ASCII-generator/issues/25
+          name: 相关 issue
+    - content: |
         参加了一年一度的 Hackergame 2024，喜提组内二等奖。又可以去提货了，舒服！
       date: 2024/11/10 17:57
       image:
@@ -33,7 +50,7 @@
         - url: https://game.maj-soul.com/1/?paipu=jmkkmm-0t5u6828-0367-6gg9-fkkn-hltnlwxwqny0_a31454929_2
           name: 牌谱
     - content: |
-        大胆GPT！竟敢质疑自己的祖师爷，拖出去斩了！
+        大胆 GPT！竟敢质疑自己的祖师爷，拖出去斩了！
       date: 2024/10/09 03:24
       image:
         - https://blogfiles.oss.fyz666.xyz/webp/572bf5e4-4dee-4c4a-97d1-b94f3f1df7e5.webp
