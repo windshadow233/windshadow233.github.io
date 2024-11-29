@@ -1,0 +1,1 @@
+文章介绍了一道MT19937随机数预测实战题的分析过程。通过分析sympy.randprime的随机数生成机制，利用help函数获取随机数bit，并使用SymRandCracker工具还原内部状态，作者成功预测了大整数分解，获取了flag。
