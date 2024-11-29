@@ -1,5 +1,5 @@
 ---
-title: MT19937算法分析、逆向与预测（四）
+title: Python随机数的背后：MT19937算法之——实战演练
 disableNunjucks: false
 mathjax: true
 id: 12395
