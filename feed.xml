@@ -15,11 +15,11 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Fri, 29 Nov 2024 15:53:24 GMT</pubDate>
+    <pubDate>Fri, 29 Nov 2024 19:36:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>MT19937算法分析、逆向与预测（四）</title>
+      <title>Python随机数的背后：MT19937算法之——实战演练</title>
       <link>https://blog.fyz666.xyz/blog/12395/</link>
       <guid>https://blog.fyz666.xyz/blog/12395/</guid>
       <pubDate>Fri, 29 Nov 2024 19:42:29 GMT</pubDate>
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>MT19937算法分析、逆向与预测（三）</title>
+      <title>Python随机数的背后：MT19937算法之——小试牛刀</title>
       <link>https://blog.fyz666.xyz/blog/12343/</link>
       <guid>https://blog.fyz666.xyz/blog/12343/</guid>
       <pubDate>Thu, 21 Nov 2024 05:27:45 GMT</pubDate>
@@ -87,7 +87,7 @@
     </item>
     
     <item>
-      <title>MT19937算法分析、逆向与预测（二）</title>
+      <title>Python随机数的背后：MT19937算法之——预测</title>
       <link>https://blog.fyz666.xyz/blog/12317/</link>
       <guid>https://blog.fyz666.xyz/blog/12317/</guid>
       <pubDate>Thu, 21 Nov 2024 04:41:57 GMT</pubDate>
@@ -120,7 +120,7 @@
     </item>
     
     <item>
-      <title>MT19937算法分析、逆向与预测（一）</title>
+      <title>Python随机数的背后：MT19937算法之——逆向</title>
       <link>https://blog.fyz666.xyz/blog/12283/</link>
       <guid>https://blog.fyz666.xyz/blog/12283/</guid>
       <pubDate>Thu, 21 Nov 2024 00:23:13 GMT</pubDate>
@@ -154,7 +154,7 @@
     </item>
     
     <item>
-      <title>MT19937算法分析、逆向与预测（零）</title>
+      <title>Python随机数的背后：MT19937算法之——分析</title>
       <link>https://blog.fyz666.xyz/blog/12239/</link>
       <guid>https://blog.fyz666.xyz/blog/12239/</guid>
       <pubDate>Wed, 20 Nov 2024 19:16:24 GMT</pubDate>
