@@ -1,5 +1,5 @@
 ---
-title: Python随机数的背后：MT19937算法之——预测
+title: Python随机数的背后：MT19937算法之——状态恢复
 disableNunjucks: false
 mathjax: true
 id: 12317
@@ -13,7 +13,7 @@ tags:
 cover: https://blogfiles.oss.fyz666.xyz/webp/4de41354-86bb-42e2-8812-9d13cd1c164b.webp
 ---
 
-[前一篇文章](/blog/12283/)中，我们已经逆向了Python中的随机算法，在本文中，我们将对MT19937进行预测。
+[前一篇文章](/blog/12283/)中，我们已经逆向了Python中的随机算法，在本文中，我们将在前文的基础上对MT19937的状态数组进行恢复，从而达到预测随机数的效果。
 
 ---
 

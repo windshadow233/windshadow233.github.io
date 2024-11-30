@@ -13,7 +13,7 @@ tags:
 cover: https://blogfiles.oss.fyz666.xyz/webp/4de41354-86bb-42e2-8812-9d13cd1c164b.webp
 ---
 
-本文为几道MT19937预测题的题解。这些题都非常基础+典型，非常适合入门。
+本文为几道MT19937预测题的题解。这些题都非常基础+典型，十分适合入门。
 
 本文用到的`mt19937`来自[此gist](https://gist.github.com/windshadow233/229ec53e67577bedb8965e652fdc7466)。
 

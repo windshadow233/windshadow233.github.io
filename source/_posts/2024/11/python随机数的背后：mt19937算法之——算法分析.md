@@ -1,5 +1,5 @@
 ---
-title: Python随机数的背后：MT19937算法之——分析
+title: Python随机数的背后：MT19937算法之——算法分析
 disableNunjucks: false
 mathjax: true
 id: 12239

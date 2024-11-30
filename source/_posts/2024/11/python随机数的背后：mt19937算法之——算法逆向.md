@@ -1,5 +1,5 @@
 ---
-title: Python随机数的背后：MT19937算法之——逆向
+title: Python随机数的背后：MT19937算法之——算法逆向
 disableNunjucks: false
 mathjax: true
 id: 12283
