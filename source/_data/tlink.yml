@@ -4,23 +4,23 @@
   - name: ChatGPT
     link: https://chatgpt.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
-    descr: 最强大的ChatBot
+    descr: 最强大的 ChatBot
   - name: Kimi Chat
     link: https://kimi.moonshot.cn/
     avatar: https://blogfiles.oss.fyz666.xyz/png/2c952360-53e1-4944-a32d-2dd495a245ef.png
-    descr: ChatGPT的国产平替，在超长文本场景下表现出众
+    descr: ChatGPT 的国产平替，在超长文本场景下表现出众
   - name: txyz
     link: https://www.txyz.ai/
     avatar: https://blogfiles.oss.fyz666.xyz/jpg/5273612e-faad-4a69-80c1-4521d988cd70.jpg
-    descr: 通过AI高效阅读论文神器
+    descr: 通过 AI 高效阅读论文神器
   - name: Midjourney
     link: https://www.midjourney.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/8bf2bdc1-098c-452d-b0d0-cc0257b7dc2a.png
-    descr: 好用的AI绘图工具
+    descr: 好用的 AI 绘图工具
   - name: Craiyon
     link: https://www.craiyon.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/18b0475f-adfc-4e23-bfcc-e58b07d59aef.png
-    descr: 一款免费的AI图像生成器
+    descr: 一款免费的 AI 图像生成器
   - name: Gamma
     link: https://gamma.app/
     avatar: https://blogfiles.oss.fyz666.xyz/png/ca58545b-e947-44f1-80ad-b8a0f5070503.png
@@ -51,7 +51,7 @@
   - name: Shields.io
     link: https://shields.io/
     avatar: https://blogfiles.oss.fyz666.xyz/png/2b77ca21-0c1a-4e87-8ce1-661654746f01.png
-    descr: 生成GitHub项目的徽章
+    descr: 生成 GitHub 项目的徽章
   - name: Wayback Machine
     link: https://web.archive.org/
     avatar: https://blogfiles.oss.fyz666.xyz/png/9bc3c9e5-5eab-43ca-9f52-3315b2042a1e.png
@@ -60,10 +60,6 @@
     link: https://www.json.cn/
     avatar: https://blogfiles.oss.fyz666.xyz/png/d646f5a5-4304-4076-8d15-a7f9703a254c.png
     descr: 前端、后端在线工具大全
-  - name: FactorDB
-    link: http://factordb.com/
-    avatar: '#'
-    descr: 在线大整数因子分解
   - name: 草料二维码生成器
     link: https://cli.im/
     avatar: https://blogfiles.oss.fyz666.xyz/png/8d124bc1-5940-47b1-a890-d76e30fd1e78.png
@@ -76,21 +72,33 @@
     link: https://snapdrop.net/
     avatar: https://blogfiles.oss.fyz666.xyz/png/bf6ba59c-5647-405d-9423-f95f47f114fd.png
     descr: 最方便快捷的文件传输助手
-- class_desc: '收集一些玩CTF的过程中遇到的好用的在线工具。持续更新中...'
-  class_name: CTF在线工具
+  - name: V86
+    link: https://copy.sh/v86/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/0b5d1eee-255b-468a-a84d-30a9a84dbd8f.png
+    descr: 在浏览器中模拟运行各种操作系统
+- class_desc: '收集一些玩 CTF 的过程中遇到的好用的在线工具。持续更新中...'
+  class_name: CTF 在线工具
   link_list:
+  - name: FactorDB
+    link: http://factordb.com/
+    avatar: '#'
+    descr: 在线大整数因子分解
   - name: CTFever
     link: https://ctf.cestlavie.moe/
     avatar: https://blogfiles.oss.fyz666.xyz/svg/ecc1d9d8-d4d3-43a8-b8f9-5d1f05798c6b.svg
-    descr: 集成了一堆CTF工具
+    descr: 集成了一堆 CTF 工具
   - name: PyLingual
     link: https://pylingual.io/
     avatar: https://blogfiles.oss.fyz666.xyz/jpg/931c7059-1074-4df7-8a94-14db663002fe.jpg
-    descr: pyc文件反编译
+    descr: pyc 文件反编译
   - name: DTMF Decoder
     link: https://dtmf.netlify.app/
     avatar: https://blogfiles.oss.fyz666.xyz/png/ed087f52-e4d9-420f-8cb8-3689f89c0f4c.png
-    descr: DTMF解码器
+    descr: DTMF 解码器
+  - name: CRC RevEng
+    link: https://crc-reveng.septs.app/
+    avatar: '#'
+    descr: 功能强大的在线 CRC 计算器
 - class_desc: ''
   class_name: 图片、音视频工具
   link_list:
@@ -176,6 +184,14 @@
     link: https://css.bqrdh.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/25687868-8789-4978-abee-3ffef916e6bb.png
     descr: 专治花里胡哨的CSS效果。
+  - name: Coverview
+    link: https://coverview.vercel.app/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/c1d28cad-572c-4656-b2f6-70a33c3ba565.png
+    descr: 在线博客文章封面制作
+  - name: Slidev
+    link: https://sli.dev/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/4fb22e7b-07c7-4788-9e06-a6cdbc010b45.png
+    descr: 用 Markdown 语法制作精美的幻灯片
 - class_desc: ''
   class_name: 好用的<s>MacOS</s>软件
   link_list:
@@ -237,7 +253,7 @@
   - name: BandwagonHost
     link: https://bandwagonhost.com/
     avatar: https://blogfiles.oss.fyz666.xyz/webp/9d534615-4b14-4286-a565-5e4de100cde3.webp
-    descr: 高性价比的VPS主机供应商
+    descr: 高性价比的 VPS 主机供应商
   - name: Render
     link: https://render.com/
     avatar: https://blogfiles.oss.fyz666.xyz/jpeg/76db7fe1-29ef-4922-bede-b8c32b87c74a.jpeg
@@ -245,14 +261,14 @@
   - name: Zeabur
     link: https://zeabur.com/
     avatar: https://blogfiles.oss.fyz666.xyz/svg/26e39d98-37d1-4ac0-87dd-0f42ebb5afa6.svg
-    descr: 在几秒内免费部署静态网站与Serverless函数
+    descr: 在几秒内免费部署静态网站与 Serverless 函数
 - class_desc: 学生党比较穷，所以依赖于服务器性能的服务暂时就不公开了（
   class_name: 博主提供的服务
   link_list:
   - name: KMS服务器
     link: /kms/
     avatar: https://blogfiles.oss.fyz666.xyz/png/f623291c-a2a6-4acf-999f-a572f1cfdfeb.png
-    descr: 在线激活VL版Windows、MS Office
+    descr: 在线激活 VL 版 Windows、MS Office
   - name: 对象存储服务
     link: https://oss-console.fyz666.xyz/
     avatar: https://blogfiles.oss.fyz666.xyz/png/bc239232-2184-4c47-83df-05f582bfeb3b.png
@@ -268,4 +284,4 @@
   - name: ZeroTier Moon
     link: https://zerotier.fyz666.xyz/
     avatar: https://blogfiles.oss.fyz666.xyz/png/2d2d5ef2-2ec7-4289-98fd-e2f2ed6bbb06.png
-    descr: ZeroTier卫星服务器
+    descr: ZeroTier 卫星服务器
