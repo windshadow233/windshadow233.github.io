@@ -665,7 +665,7 @@ while 1:
 
 > "If the proof is correct, then no other recognition is needed."
 
-> — by Grigori Perelman
+> <cite>— by Grigori Perelman</cite>
 
 **ZK 验证逻辑**
 

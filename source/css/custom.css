@@ -951,10 +951,45 @@ code {
         margin-bottom: 1rem;
     }
 }
-blockquote {
+blockquote{
+    border-radius: 12px;
+    font-size: 1em;
+    font-family:Open Sans;
+    padding:1.2em 30px 1.2em 35px;
+    border: 1px solid #78C0A8;
+    border-left:8px solid #78C0A8;
+    line-height:1.6;
+    position: relative;
+    background:var(--fyz-post-blockquote-bg);
+}
+
+blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:#78C0A8;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+    margin-right: 0.25em;
+}
+
+blockquote::after{
+    content: '';
+    bottom: -40px;
+    height: 40px;
+    width: 1px;
+}
+
+blockquote cite{
+    display:block;
+    font-weight: bold;
+    margin-top:1em;
+    font-style:italic;
+}
+/* blockquote {
     border: 1px solid var(--fyz-border);
     border-radius: 12px;
-    background-color: var(--fyz-gray);
     padding: 10px;
 }
 blockquote p:first-child{
@@ -962,7 +997,7 @@ blockquote p:first-child{
 }
 [data-theme="dark"] blockquote{
     background-color: black!important;
-}
+} */
 .page:not(.page.home) #page {
     width: 100%;
 }

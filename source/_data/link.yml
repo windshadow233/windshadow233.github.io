@@ -6,11 +6,11 @@
       avatar: https://blogfiles.oss.fyz666.xyz/jpg/14381d13-8a25-4e32-998b-9401ca6b50ef.jpg
       descr: An AI Algorithm Engineer working in HPC-AI Tech.
       feed: http://zyt.plus/feed/
-    - name: Randwind's Blog
-      link: https://randwind.com/
+    - name: Hanvin's Blog
+      link: https://hanvin.com/
       avatar: https://blogfiles.oss.fyz666.xyz/svg/64e5a25c-d812-494e-9574-5859a42eff52.svg
       descr: 做自由的风
-      feed: https://randwind.com/feed.xml
+      feed: https://hanvin.com/feed.xml
 
 - class_name: 一些大佬
   class_desc: (Dalao们，顺序不分先后) 向大佬们学习！

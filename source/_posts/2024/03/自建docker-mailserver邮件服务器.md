@@ -164,7 +164,7 @@ SSL_KEY_PATH=/path/to/privkey.pem
 > **发件人策略框架**（英语：**Sender Policy Framework**；简称**SPF**； RFC 4408）是一套电子邮件认证机制，可以确认电子邮件确实是由网域授权的邮件服务器寄出，防止有人伪冒身份网络钓鱼或寄出垃圾电邮。SPF允许管理员设定一个DNS TXT记录或SPF记录设定发送邮件服务器的IP范围，如有任何邮件并非从上述指明授权的IP地址寄出，则很可能该邮件并非确实由真正的寄件者寄出（邮件上声称的“寄件者”为假冒）。
 > 
 > 
-> [维基百科：SPF](https://zh.wikipedia.org/wiki/%E5%8F%91%E4%BB%B6%E4%BA%BA%E7%AD%96%E7%95%A5%E6%A1%86%E6%9E%B6)
+> <cite>[维基百科：SPF](https://zh.wikipedia.org/wiki/%E5%8F%91%E4%BB%B6%E4%BA%BA%E7%AD%96%E7%95%A5%E6%A1%86%E6%9E%B6)</cite>
 
 `TXT mail -> "v=spf1 a mx ip4:1.2.3.4 ~all"`
 
@@ -178,7 +178,7 @@ SPF语法详见[此链接](http://www.open-spf.org/SPF_Record_Syntax/)。
 > **基于域的消息认证，报告和一致性**（英语：**Domain-based Message Authentication, Reporting and Conformance**，简称**DMARC**）是一套以SPF及DKIM为基础的电子邮件认证机制，可以检测及防止伪冒身份、对付网络钓鱼或垃圾电邮。
 > 
 > 
-> [维基百科：DMARC](https://zh.wikipedia.org/wiki/%E5%9F%BA%E4%BA%8E%E5%9F%9F%E7%9A%84%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%EF%BC%8C%E6%8A%A5%E5%91%8A%E5%92%8C%E4%B8%80%E8%87%B4%E6%80%A7)
+> <cite>[维基百科：DMARC](https://zh.wikipedia.org/wiki/%E5%9F%BA%E4%BA%8E%E5%9F%9F%E7%9A%84%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%EF%BC%8C%E6%8A%A5%E5%91%8A%E5%92%8C%E4%B8%80%E8%87%B4%E6%80%A7)</cite>
 
 `TXT _dmarc.mail -> "v=DMARC1; p=quarantine; sp=none; fo=0; adkim=r; aspf=r; pct=100; rf=afrf; ri=86400; rua=mailto:postmaster@mail.example.com; ruf=mailto:postmaster@mail.example.com"`
 
@@ -192,7 +192,7 @@ DMARC的详细配置见[此链接](https://github.com/internetstandards/toolbox-
 > **域名密钥识别邮件**（英语：**DomainKeys Identified Mail**，简称**DKIM**）是一套电子邮件认证机制，使用公开密钥加密的基础提供了数字签名与身份验证的功能，以检测寄件者、主旨、内文、附件等部分有否被伪冒或窜改。
 > 
 > 
-> [维基百科：DKIM](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E5%AF%86%E9%92%A5%E8%AF%86%E5%88%AB%E9%82%AE%E4%BB%B6)
+> <cite>[维基百科：DKIM](https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E5%AF%86%E9%92%A5%E8%AF%86%E5%88%AB%E9%82%AE%E4%BB%B6)</cite>
 
 
 这个相当于将公钥通过DNS解析的方式分发到客户端，发件服务器用私钥签名，从而收件方可验证来源。

@@ -30,6 +30,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/4de41354-86bb-42e2-8812-9d13cd1c164
 > The Mersenne Twister was designed specifically to rectify most of the flaws found in older PRNGs.
 >
 > The most commonly used version of the Mersenne Twister algorithm is based on the Mersenne prime $2^{19937}-1$​. The standard implementation of that, MT19937, uses a [32-bit](https://en.wikipedia.org/wiki/32-bit) word length. There is another implementation (with five variants) that uses a 64-bit word length, MT19937-64; it generates a different sequence.
+> <cite>[Wikipedia: Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister)</cite>
 
 Python的伪随机数（`random`库）所使用的即是梅森旋转算法的一种常见变体：MT19937。其具有长达$$2^{19937}-1$$的周期，以及非常优良的性能：
 
@@ -41,6 +42,7 @@ Python的伪随机数（`random`库）所使用的即是梅森旋转算法的一
 > (trunc_v(x_i), trunc_v(x_{i+1}),\dots,trunc_v(x_{i+k-1}))\qquad(0\le i \lt P)
 > $$
 > Then each of the $2^{kv}$ possible combinations of bits occurs the same number of times in a period, except for the all-zero combination that occurs once less often.
+> <cite>[Mersenne Twister: k-distribution](https://en.wikipedia.org/wiki/Mersenne_Twister#k-distribution)</cite>
 
 根据以上k-distributed to v-bit accuracy（k-维 v-比特准确）的定义，如果一个伪随机数生成器$PRNG$可以产生周期为$P$的w-bit的序列$\left\lbrace x_{i}\right\rbrace$，我们将此序列中的元素的高$v$位截取出来，记为$trunc_v(x_i)$，然后构造下面的二进制数：
 $$

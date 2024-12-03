@@ -397,7 +397,7 @@ flag{becAr3fu11dUd3da218b048a}
 > ...
 > 
 > 
-> [https://en.wikibooks.org/wiki/TeX/catcode](https://en.wikibooks.org/wiki/TeX/catcode)
+> <cite>[TeX/catcode](https://en.wikibooks.org/wiki/TeX/catcode)</cite>
 
 
 对于这题，我们只要：

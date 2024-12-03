@@ -15,7 +15,7 @@ cover:
 
 Butterfly主题在版本`4.0.0`引入了友情链接的`json`远程拉取：
 
-{% link 友情链接添加,Butterfly,https://butterfly.js.org/posts/dc584b87/#%E5%8F%8B%E6%83%85%E9%8F%88%E6%8E%A5%E6%B7%BB%E5%8A%A0 %}
+{% link 友情链接添加,Butterfly,https://butterfly.js.org/posts/dc584b87/#%E5%8F%8B%E6%83%85%E9%8F%88%E6%8E%A5 %}
 
 大意是在front-matter中设置`flink_url`（指向一个`json`文件链接）来导入`json`格式的数据。
 
