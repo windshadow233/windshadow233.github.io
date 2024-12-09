@@ -183,7 +183,7 @@ $$
 由此可知，我们在展开到第五项时，彻底消去了等号右侧的$y$，因此：
 
 $$
-X=X_1\oplus X_2\oplus X_3\oplus X_4\oplus X_5
+X=X_1\oplus X_2\oplus X_3\oplus X_4
 $$
 
 至此，我们已经可以写出这一步的逆向代码：
