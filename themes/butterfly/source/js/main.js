@@ -961,18 +961,28 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault()
           }`
         const executeSwitch = new Function('keycode', switchCaseString)
-        window.onfocus=()=>{$('#keyboard-tips').hide()}
-        $(document).on('keyup',function(event){
+        function clearKeyboardTimeout() {
           keyboardTimeout && clearTimeout(keyboardTimeout)
           keyboardTimeout = null
-          if(event.keyCode===16){
+        }
+        window.onfocus = () => { $('#keyboard-tips').hide() }
+        window.onblur = () => {
+          clearKeyboardTimeout()
+          $('#keyboard-tips').hide()
+        }
+        $(document).on('keyup',function(event){
+          clearKeyboardTimeout()
+          if(event.keyCode === 16){
             $("#keyboard-tips").hide()
           }
         })
         $(document).on('keydown',function(event){
               if(event.shiftKey && checkFocusNotOnInputOrTextarea()){
-                if (event.keyCode === 16) keyboardTimeout=setTimeout(()=>{$("#keyboard-tips").show()},GLOBAL_CONFIG.shortcut.keyboard_delay)
-                else executeSwitch(event.keyCode)
+                if (event.keyCode === 16) keyboardTimeout = setTimeout(()=>{$("#keyboard-tips").show()},GLOBAL_CONFIG.shortcut.keyboard_delay)
+                else {
+                  $("#keyboard-tips").hide()
+                  executeSwitch(event.keyCode)
+                }
               }
         })
       }
