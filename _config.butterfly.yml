@@ -1126,7 +1126,7 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage.min.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf",screenRecord:true});</script>
+    - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf"});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
     - <script data-pjax>if (window.LingQue !== undefined) new LingQue.Monitor().init({id:"KQWCzIs71YhLYfcB",sendSuspicious:true,sendSpaPv:true});</script>
 
