@@ -24,8 +24,10 @@ script.
       avatarCDN: "cravatar.cn",
     };
     document.onscroll = function() {
+      let el = document.getElementById("post-comment");
+      if (el === null) return;
       if(commentBarrageConfig.displayBarrage){
-          if(isInViewPortOfOne(document.getElementById("post-comment"))){
+          if(isInViewPortOfOne(el)){
               document.getElementsByClassName("comment-barrage")[0].setAttribute("style",`display:none;`)
           }
           else{

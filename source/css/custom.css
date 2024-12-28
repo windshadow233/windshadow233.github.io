@@ -771,7 +771,10 @@ code {
     }
 }
 @media screen and (max-width: 900px) {
-
+    #aside-content {
+        max-width: 100%;
+        display: none;
+    }
     .card-widget:not(#card-toc) {
         display: none;
     }
