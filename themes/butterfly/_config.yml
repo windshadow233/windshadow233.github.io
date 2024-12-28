@@ -272,7 +272,7 @@ aside:
 
 # busuanzi count for PV / UV in site
 # 訪問人數
-busuanzi:
+site_counter:
   site_uv: true
   site_pv: true
   page_pv: true

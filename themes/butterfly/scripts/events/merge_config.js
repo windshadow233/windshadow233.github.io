@@ -186,7 +186,7 @@ hexo.extend.filter.register('before_generate', () => {
         order: -1
       }
     },
-    busuanzi: {
+    site_counter: {
       site_uv: true,
       site_pv: true,
       page_pv: true

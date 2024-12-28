@@ -17,15 +17,15 @@ if theme.aside.card_webinfo.enable
         .webinfo-item
           .item-name=_p('aside.card_webinfo.site_wordcount') + " :"
           .item-count=totalcount(site)
-      if theme.busuanzi.site_uv
+      if theme.site_counter.site_uv
         .webinfo-item
           .item-name= _p('aside.card_webinfo.site_uv_name') + " :"
-          .item-count#busuanzi_value_site_uv
+          .item-count#vercount_value_site_uv
             i.fa-solid.fa-spinner.fa-spin
-      if theme.busuanzi.site_pv
+      if theme.site_counter.site_pv
         .webinfo-item
           .item-name= _p('aside.card_webinfo.site_pv_name') + " :"
-          .item-count#busuanzi_value_site_pv
+          .item-count#vercount_value_site_pv
             i.fa-solid.fa-spinner.fa-spin
       if theme.aside.card_webinfo.last_push_date
         .webinfo-item

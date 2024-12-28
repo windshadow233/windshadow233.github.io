@@ -59,7 +59,7 @@ div
   if theme.pjax.enable
     != partial("includes/third-party/pjax", {}, { cache: true })
 
-  if theme.busuanzi.site_uv || theme.busuanzi.site_pv || theme.busuanzi.page_pv
-    script(async data-pjax src= theme.asset.busuanzi || theme.busuanzi.url)
+  if theme.site_counter.site_uv || theme.site_counter.site_pv || theme.site_counter.page_pv
+    script(async data-pjax src= theme.asset.site_counter || theme.site_counter.url)
 
   !=partial('includes/third-party/search/index', {}, {cache: true})

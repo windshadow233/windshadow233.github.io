@@ -364,7 +364,7 @@ aside:
 
 # busuanzi count for PV / UV in site
 # 訪問人數
-busuanzi:
+site_counter:
   # url: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   url: https://cn.vercount.one/js
   site_uv: true
