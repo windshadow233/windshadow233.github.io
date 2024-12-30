@@ -18,3 +18,35 @@
         img(src='https://img.shields.io/badge/Font-%E9%9C%9E%E9%B9%9C%E6%BC%AB%E9%BB%91-informational')
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
+  if theme.footer.runtimeshow.enable
+    #runtime-footer
+      i#heartbeat
+      | 本站已持续运行
+      span
+    - var publishDate = date_xml(theme.runtimeshow.publish_date)
+    script.
+      $(document).ready(function() {
+        var publishDate = new Date('#{publishDate}');
+        var runtimeElement = document.querySelector('#runtime-footer span');
+        function formatTime(unit) {
+          return unit.toString().padStart(2, '0');
+        }
+
+        function updateRuntime() {
+          var currentDate = new Date();
+          var timeDiff = currentDate - publishDate;
+
+          var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+          runtimeElement.innerHTML = 
+            "<span class='numeric'>" + days + "</span>天" +
+            "<span class='numeric'>" + formatTime(hours) + "</span>小时" +
+            "<span class='numeric'>" + formatTime(minutes) + "</span>分" +
+            "<span class='numeric'>" + formatTime(seconds) + "</span>秒";
+        }
+
+        setInterval(updateRuntime, 1000);
+      });

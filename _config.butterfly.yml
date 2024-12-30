@@ -299,6 +299,8 @@ footer:
       <a href="https://letsencrypt.org/"><img src="https://img.shields.io/badge/SSL-Let's_Encrypt-ff69b4" /></a>
     </div>
   copyright: true # Copyright of theme and framework
+  runtimeshow:
+    enable: true
 
 # aside (側邊欄)
 # --------------------------------------
