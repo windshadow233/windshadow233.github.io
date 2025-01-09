@@ -30,6 +30,7 @@ menu:
     友链: /link/ || fas fa-user-friends
     工具: /tlink/ || fas fa-tools
     资源: /rlink/ || fas fa-save
+    CFOP: /cfop/ || fa-solid fa-cube
   线路 || iconfont icon-global:
     主站点: https://blog.fyz666.xyz/ || || _blank
     GitHub: https://gh.fyz666.xyz/
@@ -1127,7 +1128,7 @@ inject:
         }
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage.min.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage@v0.0.1.min.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf"});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>

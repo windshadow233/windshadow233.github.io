@@ -1,0 +1,138 @@
+script.
+  $(document).ready(() => {
+    import('https://cdn.cubing.net/v0/js/cubing/twisty');
+  });
+style.
+    .page-title {
+        display: none;
+    }
+    .twisty-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 20px;
+    }
+    .twisty-container .algo-simulate{
+        width:calc(100% / 4 - 15px);
+        border: 2px double var(--fyz-theme);
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .twisty-container twisty-player {
+        width: 100%;
+    }
+    .twisty-container .algo-text {
+        font-size: 25px;
+        text-align: center;
+        line-height: 110%;
+        margin: 10px 5px;
+    }
+    @media screen and (max-width: 1200px) {
+        .twisty-container .algo-simulate{
+            width:calc(100% / 3 - 15px);
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .twisty-container .algo-simulate{
+            width:calc(100% / 2 - 15px);
+        }
+    }
+    @media screen and (max-width: 512px) {
+        .twisty-container .algo-simulate{
+            width:calc(100% / 1 - 15px);
+        }
+    }
+    .category-page {
+        margin-bottom: 20px;
+    }
+    .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .pagination .page-btn {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(135deg, #6a5af9, #727cf5);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .pagination .page-btn:hover {
+        background: linear-gradient(135deg, #5a4af9, #606cf5);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .pagination .page-btn.active {
+        background: linear-gradient(135deg, #f74a62, #fc5a72);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+    }
+
+script.
+  $(document).ready(() => {
+    const pages = document.querySelectorAll(".category-page");
+    const buttons = document.querySelectorAll(".page-btn");
+
+    function showPage(index) {
+      pages.forEach((page, i) => {
+        page.style.display = i === index ? "" : "none";
+      });
+
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle("active", i === index);
+      });
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const index = parseInt(btn.getAttribute("data-index"));
+        showPage(index);
+      });
+    });
+    
+    showPage(0);
+  });
+
+
+h1 记录自用的魔方公式，方便查阅。
+
+strong 此页面将长期更新
+
+if site.data.cfop
+  .pagination
+    each category, index in site.data.cfop
+      button.page-btn(
+        data-index=index,
+        class=(index === 0 ? 'active' : '')
+      ) #{category.page_name}
+  #category-pages
+    each category, index in site.data.cfop
+      .category-page(data-index=index style=(index === 0 ? '' : 'display: none;'))
+        h2= category.algo_name
+        .twisty-container
+          each item in category.algo_list
+            .algo-simulate
+              twisty-player(
+                  alg=item.algo,
+                  experimental-setup-anchor="end",
+                  experimental-stickering=category.algo_type,
+                  experimental-drag-input="auto",
+                  viewer-link="none"
+              )
+              .algo-text= item.algo
+
