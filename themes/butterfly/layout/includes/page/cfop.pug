@@ -9,42 +9,51 @@ style.
     .twisty-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 20px;
-      padding: 20px;
+      justify-content: center;
+      gap: 10px;
+    }
+    .twisty-container twisty-player {
+        width: 100%;
+        border: 4px double #00000044;
+        background: grey;
+        border-radius: 15px 15px 0 0;
+        height: 200px
+    }
+    [data-theme="light"] .twisty-container twisty-player {
+        background: none;
+    }
+    twisty-alg-viewer {
+        margin: 10px 5px;
+        font-size: 12px;
     }
     .twisty-container .algo-simulate{
-        width:calc(100% / 4 - 15px);
-        border: 2px double var(--fyz-theme);
-        margin-bottom: 20px;
+        width: calc(100% / 8 - 15px);
+        border: 3px solid var(--fyz-theme);
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 10px 0;
         text-align: center;
-    }
-    .twisty-container twisty-player {
-        width: 100%;
-    }
-    .twisty-container .algo-text {
-        font-size: 25px;
-        text-align: center;
-        line-height: 110%;
-        margin: 10px 5px;
+        border-radius: 20px;
     }
     @media screen and (max-width: 1200px) {
         .twisty-container .algo-simulate{
-            width:calc(100% / 3 - 15px);
+            width: calc(100% / 6 - 15px);
+        }
+    }
+    @media screen and (max-width: 900px) {
+        .twisty-container .algo-simulate{
+            width: calc(100% / 4 - 15px);
         }
     }
     @media screen and (max-width: 768px) {
         .twisty-container .algo-simulate{
-            width:calc(100% / 2 - 15px);
+            width: calc(100% / 2 - 15px);
         }
     }
-    @media screen and (max-width: 512px) {
+    @media screen and (max-width: 384px) {
         .twisty-container .algo-simulate{
-            width:calc(100% / 1 - 15px);
+            width: calc(100% / 1 - 15px);
         }
     }
     .category-page {
@@ -109,7 +118,7 @@ script.
   });
 
 
-h1 记录自用的魔方公式，方便查阅。
+h1 记录自用的魔方公式，以便随时查阅。
 
 strong 此页面将长期更新
 
@@ -125,14 +134,18 @@ if site.data.cfop
       .category-page(data-index=index style=(index === 0 ? '' : 'display: none;'))
         h2= category.algo_name
         .twisty-container
+          - let algoCounter = 0;
           each item in category.algo_list
+            - let id = category.id_prefix + '-' + algoCounter++;
             .algo-simulate
               twisty-player(
+                  id=id,
                   alg=item.algo,
                   experimental-setup-anchor="end",
                   experimental-stickering=category.algo_type,
                   experimental-drag-input="auto",
-                  viewer-link="none"
+                  viewer-link="none",
+                  background="none",
+                  visualization="3D"
               )
-              .algo-text= item.algo
-
+              twisty-alg-viewer(for=id)

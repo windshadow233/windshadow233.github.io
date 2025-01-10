@@ -9,7 +9,8 @@ html{
 body {
     font-family: 'LXGW Marker Gothic';
     font-size: 16px;
-    word-break: break-all;
+    hyphens: auto;
+    -webkit-hyphens: auto;
 }
 :root {
     --fyz-white-op: rgba(255,255,255,0.2);
