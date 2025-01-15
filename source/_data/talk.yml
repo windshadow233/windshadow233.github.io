@@ -1,12 +1,17 @@
 - class_name: 说说
   title: 说说
-  subTitle: 心之所向，笔之所至
-  tips: 记录日常生活与随想
+  subTitle: 博主的摸鱼日常
+  tips: 记录日常生活、各种想法和吐槽
   buttonLink: /about/
   buttonText: 关于我
   limit: 30
   top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
   talk_list:
+    - content: 做了个页面用来记录个人自用的魔方公式。
+      date: 2025/01/15 17:18
+      link:
+        - url: /cfop/
+          name: CFOP 公式
     - content: |
         2025年元旦，我和相处近七年的女朋友终于订婚啦！
         三年前，她努力考到了我所在的学校，结束了我俩的异地恋，在我的研究生学习期间一直陪在我身边，给予了我莫大的支持与鼓励，也让我生活中99.95%的时间充满了好心情。

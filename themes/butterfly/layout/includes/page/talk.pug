@@ -55,6 +55,10 @@ if site.data.talk
                         - var datedata = new Date(item.date).toISOString()
                         i.fas.fa-clock
                         time.datatime(datetime= item.date)= datedata
+                      if item.address
+                        .bber-info-from
+                          i.fas.fa-map-marker-alt
+                          span=item.address
                       if item.link 
                         each i in item.link
                           a.bber-content-link(href=url_for(i.url),rel="external nofollow")
@@ -64,10 +68,6 @@ if site.data.talk
                         .bber-info-from
                           i.fas.fa-fire-alt
                           span=item.from
-                      if item.address
-                        .bber-info-from
-                          i.fas.fa-map-marker-alt
-                          span=item.address
                     - var content = item.content.replace(/<[^>]*>/g, '');
                     .bber-reply(onclick="talk.commentText(" + JSON.stringify(content.length > 50 ? content.substring(0, 50) + '...' : content) + ")")
                       i.far.fa-comment-alt
