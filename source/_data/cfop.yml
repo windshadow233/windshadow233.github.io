@@ -132,11 +132,11 @@
     - algo: (l U' R' D) (R U R' D') (R U R' D) (R U' R' D') x
     - algo: (R U R' U') (R' F R2 U' R' U') (R U R' F')
     - algo: (R U R' F') (R U R' U') (R' F R2 U' R' U')
-    - algo: x (R2' F R F') (R U2' r' U r U2') x'
+    - algo: M' (R' F R F') (R U2' r' U r U2' r')
     - algo: F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')
     - algo: (R' U' F') (R U R' U') (R' F R2 U') (R' U' R U R' U R)
     - algo: (R' U R' U') (R D' R' D) R' (U D') (R2 U' R2' D R2)
-    - algo: (R U' R' U') (R U R D) (R' U' R D') (R' U2' R' U')
+    - algo: (R U R' F') (R U2' R' U2') (R' F R U) (R U2' R' U')
     - algo: (R' U2') (R U2') (R' F R U R' U') (R' F' R2 U')
     - algo: (R U R' U) (R U R' F') (R U R' U') R' F R2 U' R' U2' (R U' R')
     - algo: (R' U R U') R' (F' U' F) (R U R' F) R' F' (R U' R)
