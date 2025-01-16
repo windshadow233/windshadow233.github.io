@@ -1,5 +1,5 @@
-- class_desc: 让AI为生产力加速！
-  class_name: 人工智能
+- class_name: 人工智能
+  class_desc: 让AI为生产力加速！
   link_list:
   - name: ChatGPT
     link: https://chatgpt.com/
@@ -29,8 +29,8 @@
     link: https://chatexcel.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/61444f7d-d858-4057-94b6-c61532572320.png
     descr: 通过自然语言操作Excel表格
-- class_desc: 一些很不错的在线工具
-  class_name: 实用工具
+- class_name: 实用工具
+  class_desc: 一些很不错的在线工具
   link_list:
   - name: LaTeX公式编辑器
     link: https://www.latexlive.com/
@@ -76,8 +76,9 @@
     link: https://copy.sh/v86/
     avatar: https://blogfiles.oss.fyz666.xyz/png/0b5d1eee-255b-468a-a84d-30a9a84dbd8f.png
     descr: 在浏览器中模拟运行各种操作系统
-- class_desc: '收集一些玩 CTF 的过程中遇到的好用的在线工具。持续更新中...'
-  class_name: CTF 在线工具
+
+- class_name: CTF 在线工具
+  class_desc: '收集一些玩 CTF 的过程中遇到的好用的在线工具。持续更新中...'
   link_list:
   - name: FactorDB
     link: http://factordb.com/
@@ -99,8 +100,9 @@
     link: https://crc-reveng.septs.app/
     avatar: '#'
     descr: 功能强大的在线 CRC 计算器
-- class_desc: ''
-  class_name: 图片、音视频工具
+
+- class_name: 图片、音视频工具
+  class_desc: ''
   link_list:
   - name: TinyPNG
     link: https://tinypng.com/
@@ -134,8 +136,9 @@
     link: https://imagecompressor.11zon.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/30bc11bc-a151-4abe-a892-96fd92b3d9a3.png
     descr: 支持各种格式的图像压缩、转换
-- class_desc: ''
-  class_name: 测试工具
+
+- class_name: 测试工具
+  class_desc: ''
   link_list:
   - name: 中科大测速站
     link: https://test.ustc.edu.cn/
@@ -165,8 +168,9 @@
     link: https://pagespeed.web.dev/
     avatar: https://blogfiles.oss.fyz666.xyz/png/eda38a41-772b-43b3-ad3e-3b5179b15bfa.png
     descr: 报告网页在移动设备和桌面设备上的用户体验，并提供改进建议。
-- class_desc: ''
-  class_name: 设计工具
+
+- class_name: 设计工具
+  class_desc: ''  
   link_list:
   - name: Canva可画
     link: https://www.canva.com/
@@ -192,8 +196,9 @@
     link: https://sli.dev/
     avatar: https://blogfiles.oss.fyz666.xyz/png/4fb22e7b-07c7-4788-9e06-a6cdbc010b45.png
     descr: 用 Markdown 语法制作精美的幻灯片
-- class_desc: ''
-  class_name: 好用的<s>MacOS</s>软件
+
+- class_name: 好用的<s>MacOS</s>软件
+  class_desc: ''
   link_list:
     - name: OwlOCR
       link: https://owlocr.com/
@@ -231,8 +236,9 @@
       link: https://github.com/xmake-io/xmake
       avatar: https://blogfiles.oss.fyz666.xyz/png/e876b998-3e2d-4719-bba2-c047966fa597.png
       descr: 基于 Lua 的跨平台构建实用程序
-- class_desc: 一些不错的云服务平台
-  class_name: 云服务
+
+- class_name: 云服务
+  class_desc: 一些不错的云服务平台
   link_list:
   - name: Colossal Cloud
     link: https://cloud.luchentech.com/
@@ -262,8 +268,9 @@
     link: https://zeabur.com/
     avatar: https://blogfiles.oss.fyz666.xyz/svg/26e39d98-37d1-4ac0-87dd-0f42ebb5afa6.svg
     descr: 在几秒内免费部署静态网站与 Serverless 函数
-- class_desc: 学生党比较穷，所以依赖于服务器性能的服务暂时就不公开了（
-  class_name: 博主提供的服务
+
+- class_name: 博主提供的服务
+  class_desc: 学生党比较穷，所以依赖于服务器性能的服务暂时就不公开了（
   link_list:
   - name: KMS服务器
     link: /kms/

@@ -1,5 +1,5 @@
-- class_desc: 毕竟——没有它们就没有这个站点
-  class_name: 博客开发相关
+- class_name: 博客开发相关
+  class_desc: 毕竟——没有它们就没有这个站点  
   link_list:
   - name: Hexo
     link: https://hexo.io/
@@ -9,8 +9,9 @@
     link: https://butterfly.js.org/
     avatar: https://blogfiles.oss.fyz666.xyz/png/6c8c0c62-87cf-4921-b3f0-18c8030b1ce8.png
     descr: 一个美观、支持高度自定义的Hexo主题
-- class_desc: 中科大LUG社团的一些相关网站
-  class_name: USTC LUG
+
+- class_name: USTC LUG
+  class_desc: 中科大LUG社团的一些相关网站  
   link_list:
   - name: 官网
     link: https://lug.ustc.edu.cn/
@@ -40,8 +41,9 @@
     link: https://tuna.moe/
     avatar: https://blogfiles.oss.fyz666.xyz/png/f591bc36-6433-4591-aba7-19848be079f5.png
     descr: 清华网络技术和开源软件爱好者、技术宅组成的团体
-- class_desc: ''
-  class_name: 算法刷题
+
+- class_name: 算法刷题
+  class_desc: ''
   link_list:
   - name: 洛谷
     link: https://www.luogu.com.cn/
@@ -51,8 +53,8 @@
     link: https://leetcode.cn/
     avatar: https://blogfiles.oss.fyz666.xyz/png/58115adc-70d5-46ba-8406-059324606539.png
     descr: 海量技术面试题库
-- class_desc: ''
-  class_name: CTF相关
+- class_name: CTF相关
+  class_desc: ''
   link_list:
   - name: Hackergame
     link: https://hack.lug.ustc.edu.cn/
@@ -70,8 +72,9 @@
     link: https://firmianay.gitbook.io/ctf-all-in-one
     avatar: https://blogfiles.oss.fyz666.xyz/png/782b1161-72bf-448b-b522-1cc0f3f4f23a.png
     descr: CTF竞赛权威指南
-- class_desc: ''
-  class_name: 各类素材
+
+- class_name: 各类素材
+  class_desc: ''
   link_list:
   - name: Font Awesome
     link: https://fontawesome.com/
@@ -101,8 +104,9 @@
     link: https://www.flaticon.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/aa289aa7-0af7-4bb0-b8bb-c0c2499849b1.png
     descr: 海量免费图标下载
-- class_desc: ''
-  class_name: 其他资源
+
+- class_name: 其他资源
+  class_desc: ''  
   link_list:
   - name: 北邮人PT
     link: https://byr.pt/
@@ -120,8 +124,8 @@
     link: https://greasyfork.org/
     avatar: https://blogfiles.oss.fyz666.xyz/png/03d2f8b7-3081-4149-a341-6ec1bde7f43f.png
     descr: 包含海量的油猴用户脚本
-- class_desc: 在线书籍、学习资料
-  class_name: 学习指南
+- class_name: 学习指南
+  class_desc: 在线书籍、学习资料  
   link_list:
   - name: Linux 101
     link: https://101.lug.ustc.edu.cn/
@@ -143,8 +147,9 @@
     link: https://wangdoc.com/clang/
     avatar: https://blogfiles.oss.fyz666.xyz/png/5d50bd26-87bd-4d0e-99e5-0eb44a804288.png
     descr: 阮一峰老师维护编写的 C 语言入门教程
-- class_desc: ''
-  class_name: 常用科大网络资源
+
+- class_name: 常用科大网络资源
+  class_desc: ''
   link_list:
   - name: USTC导航
     link: https://ustc.life/
@@ -210,3 +215,23 @@
     link: https://icourse.club/
     avatar: https://blogfiles.oss.fyz666.xyz/png/5f945ae1-53a4-4357-9e5f-6587d2ca07f8.png
     descr: 科大学生点评课程，获取课程信息的平台
+
+- class_name: 魔方
+  class_desc: 博主甚至还是个魔友（虽然中途有十年没玩了并且贼菜）
+  link_list:
+  - name: CFOP
+    link: /cfop/
+    avatar: https://blogfiles.oss.fyz666.xyz/webp/71a106e8-419c-492e-bb5f-98de492e58bd.webp
+    descr: 博主自用的公式集（长期更新）
+  - name: CubeSkills
+    link: https://www.cubeskills.com/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/55e9b5a3-2b6f-4263-8f03-6aad9364ab48.png
+    descr: 由 Feliks Zemdegs（菲神）创建的魔方教学网站
+  - name: 魔方小站
+    link: http://www.rubik.com.cn/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/2894b66e-5add-4aec-8295-9d8883f0d4db.png
+    descr: 童年玩魔方时梦开始的地方
+  - name: Solve The Cube
+    link: https://solvethecube.com/
+    avatar: https://blogfiles.oss.fyz666.xyz/png/41a5e267-8869-4723-964f-c50ad7aef41c.png
+    descr: 一个海外的魔方教学网站
