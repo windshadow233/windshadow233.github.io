@@ -8,7 +8,7 @@
     - algo: y' U' (R' U R)
     - algo: U R U' R'
     - algo: U' (R U R' U) (R U R')
-    - algo: (R U' R' U)2 (U R U' R')
+    - algo: (R U' R' U) (R U' R' U2) (R U' R')
     - algo: U' (R U' R' U) (R U R')
     - algo: (U' R U' R') d (R' U' R)
     - algo: (U' R U2' R') d (R' U' R)
@@ -40,10 +40,10 @@
     - algo: y' (R' U' R U2') (R' U' R U) (R' U' R)
     - algo: (U R U' R') (U' R U' R') (U R U' R')
     - algo: (R U' R' U) (R U2' R') U (R U' R')
-    - algo: (R U R' U') (R U' R' U2') y' (R' U' R)
+    - algo: (R U' R' d) (U R' U' R) (U' R' U R)
     - algo: (R U' R') U' (R U R') U2' (R U' R')
     - algo: (R U' R' U') (R U' R' d) (R' U' R)
-    - algo: (R' F R F') (R U' R' U)2 (U R U' R')
+    - algo: (R' F R F') (R U' R' U) (R U' R' U2) (R U' R')
 - algo_type: F2L
   algo_name: 非标态 F2L 或标态其他方向的解法
   page_name: 进阶 F2L
@@ -114,9 +114,11 @@
     - algo: (R' U' R U' R' U2' R) F (R U R' U') F'
     - algo: r2' D' (r U r' D) (r2 U' r' U' r)
     - algo: r' D' (r U' r' D) r2 U' (r' U r U r')
+    - algo: F (U R U') (R2' F' R) (U R U' R')
+    - algo: (R' F) (R U R' F' R) y' (R U' R')
     - algo: (R' F' U') F (U' R U R' U R)
     - algo: (r U r') (U R U' R')2 (r U' r')
-    - algo: (R U2') (R2' U') (R U') (R' U2') (F R F')
+    - algo: (R' F) (R U R U') (R2' F' R2 U') (R' U R U R')
     - algo: (M U) (R U R' U') M2' (U R U' r') 
 - algo_type: PLL
   algo_name: PLL (Permutation of the Last Layer)
@@ -143,4 +145,4 @@
     - algo: R2 U (R' U R' U') (R U' R2') (U' D) (R' U R D')
     - algo: D (R' U' R) (U D') R2 U (R' U R U') (R U' R2')
     - algo: (R2' F2) (R U2')2 R' F (R U R' U') R' F R2
-    - algo: (R U R') (U' D) R2 U' (R U' R' U) R' U R2 D'
+    - algo: D' (R U R') (U' D) R2 U' (R U' R' U) R' U R2
