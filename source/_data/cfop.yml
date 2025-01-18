@@ -116,6 +116,8 @@
     - algo: r' D' (r U' r' D) r2 U' (r' U r U r')
     - algo: F (U R U') (R2' F' R) (U R U' R')
     - algo: (R' F) (R U R' F' R) y' (R U' R')
+    - algo: (r U r') (R U R' U') (r U' r')
+    - algo: (r' U' r) (R' U' R U) (r' U r)
     - algo: (R' F' U') F (U' R U R' U R)
     - algo: (r U r') (U R U' R')2 (r U' r')
     - algo: (R' F) (R U R U') (R2' F' R2 U') (R' U R U R')
