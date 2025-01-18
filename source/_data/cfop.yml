@@ -62,6 +62,8 @@
     - algo: (U' R U R2') (U' R)
     - algo: (U R' U' R2) (U R')
     - algo: (R2' U) (R2 U' R2')
+    - algo: R2 U' R2' U R2
+    - algo: R2' U R2 U' R2'
 - algo_type: OLL
   algo_name: OLL (Orientation of the Last Layer)
   page_name: OLL
