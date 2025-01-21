@@ -30,6 +30,7 @@
     - algo: (R U2' R') U' (R U R')
     - algo: y' (R' U2' R) U (R' U' R)
     - algo: (R U' R' U2') y' (R' U' R)
+    - algo: (R U R' U2') (R U' R' U) (R U' R')
     - algo: (R' D' R U') R' D (R U R U' R')
     - algo: U' (R' F R F') (R U' R')
     - algo: (R U R' U')2 (R U R')
@@ -37,7 +38,8 @@
     - algo: y' (R' U R) U' (R' U R)
     - algo: (R U R' U') (R U R')
     - algo: (R' F R F') (U R U' R')
-    - algo: y' (R' U' R U2') (R' U' R U) (R' U' R)
+    - algo: U' (R U R2' F R F') (R U' R')
+    - algo: F (U R U' R') (F' R U' R')
     - algo: (U R U' R') (U' R U' R') (U R U' R')
     - algo: (R U' R' U) (R U2' R') U (R U' R')
     - algo: (R U' R' d) (U R' U' R) (U' R' U R)
@@ -51,19 +53,22 @@
   algo_list:
     - algo: r' U' R U M'
     - algo: F' r U r'
+    - algo: f R f'
     - algo: (r U' R' U) (R U r')
     - algo: (R U2' R2' U') (R2 U' R')
     - algo: (R' U' R U) (R' U' R)
     - algo: U (R' F) (R2 U' R' U2') F'
     - algo: U (R' F R F') (R' U' R)
     - algo: F R' U R F'
-    - algo: (R U R') (R' F R F') (R U' R')
+    - algo: R' F U' F' R
+    - algo: (R U R2' F R F') (R U' R')
     - algo: (U R' U' R2) (U R2' U' R)
     - algo: (U' R U R2') (U' R)
     - algo: (U R' U' R2) (U R')
     - algo: (R2' U) (R2 U' R2')
     - algo: R2 U' R2' U R2
     - algo: R2' U R2 U' R2'
+    - algo: R' u' R' u R
 - algo_type: OLL
   algo_name: OLL (Orientation of the Last Layer)
   page_name: OLL
@@ -87,7 +92,7 @@
     - algo: r' U (r2 U' r2' U') r2 U r'
     - algo: r U' (r2' U r2 U) r2' U' r
     - algo: f (R U R' U')2 f'
-    - algo: F (R U R' U') F' f (R U R' U') f'
+    - algo: (R U' R2' D') (r U r' D) (R2 U R')
     - algo: f (R U R' U') f' U' F (R U R' U') F'
     - algo: f (R U R' U') f' U F (R U R' U') F'
     - algo: (R U2') (R2' F R F') U2' (R' F R F')
@@ -100,6 +105,8 @@
     - algo: (R U R' U) (R' F R F') U2' (R' F R F')
     - algo: R U2' (R2' F R F') U2' M' (U R U' r')
     - algo: M U (R U R' U') M' (R' F R F')
+    - algo: (R U R' U) (R' F R F') (R U2' R')
+    - algo: (R U R' U') (R' F) (R2 U R' U') F'
     - algo: (r U R' U') r' R (U R U' R')
     - algo: (R U R' U') r R' (U R U' r')
     - algo: R' U' (R' F R F') U R
@@ -108,7 +115,8 @@
     - algo: (R' U' R U') (R' U R U) x' (R U' R' U) x
     - algo: (M' R') (U' R U' R' U2' R U') r' R
     - algo: r' R2 (U R' U R U2' R') U M'
-    - algo: (R U) (B' U') (R' U R B R')
+    - algo: (R U B' U') (R' U R B R')
+    - algo: S (R U R' U') (R' F R f')
     - algo: (R' U' F) (U R U') (R' F' R)
     - algo: R' F (R U R' U') F' (U R)
     - algo: (R U R' F') U' F (U R U2' R')
@@ -132,20 +140,22 @@
     - algo: (R U' R) U (R U R U') (R' U' R2)
     - algo: (R2' U) (R U R' U') (R3 U') (R' U R')
     - algo: M2' U' M2' U2' M2' U' M2'
-    - algo: (M2' U')2 (M' U2') (M2' U2') (M' U2')
-    - algo: x' R2 D2 (R' U' R) D2 (R' U R') x
+    - algo: (M2' U')2 (M' U2') (M2' U2') M'
+    - algo: x' R2 D2 (R' U' R) D2 (R' U l')
     - algo: x' (R U' R) D2 (R' U R) D2 R2' x
     - algo: (l U' R' D) (R U R' D') (R U R' D) (R U' R' D') x
     - algo: (R U R' U') (R' F R2 U' R' U') (R U R' F')
-    - algo: (R U R' F') (R U R' U') (R' F R2 U' R' U')
-    - algo: M' (R' F R F') (R U2' r' U r U2' r')
+    - algo: (R U R' F') (R U R' U') (R' F R2 U' R')
+    - algo: r (R2' F R F') (R U2' r' U r U2' r')
     - algo: F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')
     - algo: (R' U' F') (R U R' U') (R' F R2 U') (R' U' R U R' U R)
     - algo: (R' U R' U') (R D' R' D) R' (U D') (R2 U' R2' D R2)
-    - algo: (R U R' F') (R U2' R' U2') (R' F R U) (R U2' R' U')
-    - algo: (R' U2') (R U2') (R' F R U R' U') (R' F' R2 U')
+    - algo: (R U R' F') (R U2' R' U2') (R' F R U) (R U2' R')
+    - algo: (R' U2') (R U2') (R' F R U R' U') (R' F' R2)
     - algo: (R U R' U) (R U R' F') (R U R' U') R' F R2 U' R' U2' (R U' R')
-    - algo: (R' U R U') R' (F' U' F) (R U R' F) R' F' (R U' R)
+    - algo: (R' U' R U') r (R2' F R F') (R U2' r' U r U2' r') (U R' U R)
+    - algo: (R' U R' F) (R F' R U') (R' F' U F) (R U R' U' R)
+    - algo: (R' U R U') (R' F' U' F) (R U R' F) (R' F' R U' R) 
     - algo: R2 U (R' U R' U') (R U' R2') (U' D) (R' U R D')
     - algo: D (R' U' R) (U D') R2 U (R' U R U') (R U' R2')
     - algo: (R2' F2) (R U2')2 R' F (R U R' U') R' F R2
