@@ -54,7 +54,8 @@
     - algo: r' U' R U M'
     - algo: F' r U r'
     - algo: f R f'
-    - algo: (r U' R' U) (R U r')
+    - algo: U' (r U' R' U) (R U r')
+    - algo: U' (R B' r' U) (r B R')
     - algo: (R U2' R2' U') (R2 U' R')
     - algo: (R' U' R U) (R' U' R)
     - algo: U (R' F) (R2 U' R' U2') F'
@@ -69,6 +70,10 @@
     - algo: R2 U' R2' U R2
     - algo: R2' U R2 U' R2'
     - algo: R' u' R' u R
+    - algo: (U r' U R) (U' R' U' r)
+    - algo: (R U)2 (R U' R' U' R')
+    - algo: (U R' U' R) (U' R' U) (R' F R F' R)
+    - algo: (R' F R U') (F' R U' R')
 - algo_type: OLL
   algo_name: OLL (Orientation of the Last Layer)
   page_name: OLL
@@ -158,5 +163,6 @@
     - algo: (R' U R U') (R' F' U' F) (R U R' F) (R' F' R U' R) 
     - algo: R2 U (R' U R' U') (R U' R2') (U' D) (R' U R D')
     - algo: D (R' U' R) (U D') R2 U (R' U R U') (R U' R2')
+    - algo: (R' U2' R U') F (R U R' U') (R' F') U' (R U R U' R')
     - algo: (R2' F2) (R U2')2 R' F (R U R' U') R' F R2
     - algo: D' (R U R') (U' D) R2 U' (R U' R' U) R' U R2
