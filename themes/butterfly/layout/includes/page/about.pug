@@ -135,14 +135,6 @@
         a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC') 调停者
       .image
         img.no-lightbox(src='https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg')
-    .author-content-item.maxim
-      .author-content-item-tips 座右铭
-      span.maxim-title
-        span(style='opacity:.6;margin-bottom:8px') 行所欲行，
-        |
-        span 无问西东。
-      .post-tips 翻译: 
-        | 想干啥就干啥，不听劝。
   .author-content
     .author-content-item.buff
       .card-content
@@ -158,6 +150,15 @@
             span.inline-word Max
       .card-background-icon
         i.fas.fa-dice-d20
+    .author-content-item.maxim
+      .author-content-item-tips 座右铭
+      span.maxim-title
+        span(style='opacity:.6;margin-bottom:8px') 行所欲行，
+        |
+        span 无问西东。
+      .post-tips 翻译: 
+        | 想干啥就干啥，人生苦短，及时行乐主义。
+  .author-content
     .author-content-item.game(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/335c2e46-52a4-49c3-ad6c-490c406aee77.webp);")
       .card-content
         .author-content-item-tips 爱好游戏
@@ -165,6 +166,16 @@
         .title2 混迹于雀魂、天凤等平台，更热衷于线下
         .content-bottom
           .tips.game-uid UID: 49666973
+    .author-content-item.hobby(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/b1c7c034-82df-4266-9143-a9fd3aa24d7d.webp);")
+      .card-content
+        .author-content-item-tips 最近爱玩
+        span.author-content-item-title 魔方
+        .title2 三速 sub 20、四速（曾） sub 1分半菜鸟。曾会三盲彳亍法（记性不好得花3分多，而且现在不会了）。掌握各种高阶（但不爱玩）
+        .banner-button-group
+          a.banner-button(href="/cfop/")
+            i.fas.fa-circle-right
+            |
+            span.banner-button-text 个人使用的公式集
 
   .author-content
     .author-content-item.like-technology(style="background-image: url(https://blogfiles.oss.fyz666.xyz/webp/311e87a2-738e-4769-a150-df1ee78b4d20.webp);")
@@ -194,11 +205,11 @@
         | 攻读
         strong 数据科学专业
         | 的博士学位，因
-        psw 不屑于水论文
+        psw 不屑于靠吹牛皮讲故事来水论文
         | 水平太差而没有什么拿得出手的科研成果，且由于始终感觉在做的事情意义不大而逐渐丧失科研兴趣。不过，我会始终保持对计算机相关领域的热情，毕竟——科研只是计算机领域的冰山一角，甚至我还认为，搞科研能让我学到的技术少之又少，
         psw 在我所涉足的科研领域，大部分人只是毫无意义的缝合怪+擅长讲故事的Paper Machine罢了。
       h2 网名的由来
-      p 我的网名叫「风的影子」，英文版「WindShadow」，这是我小学刚注册QQ时的QQ昵称，在当时也算比较非主流（不过已经忘了当时是如何想出这个名字的），后面才发现这个网名的首字母缩写包含了我的名字的首字母，于是就一直沿用了下来。
+      p 我的网名叫「风的影子」，英文版「WindShadow」，这是我小学刚注册QQ时的QQ网名，在当时也算比较非主流（不过已经忘了当时是如何想出这个名字的），后面才发现这个网名的首字母缩写包含了我的名字的首字母，于是就一直沿用了下来。
       h2 我与计算机的结缘之
         psw 弯
         | 路
@@ -249,10 +260,16 @@
       .checkbox.blue.checked
         input(type='checkbox', checked)
         p 找个优秀、体贴的对象
-        .hide-block
+        .hide-block(style="margin: 0;")
           button.hide-button(onclick="this.classList.add('open');") Click
           .hide-content
             pre const girlfriend = new Girl({ name: 'HYZ', birthday: 905011200 });
+        .checkbox.sub-checkbox
+          input(type='checkbox', checked)
+          p 订婚
+        .checkbox.sub-checkbox
+          input(type='checkbox')
+          p 结婚
       .checkbox.blue.checked
         input(type='checkbox', checked)
         p 拿到学士学位（这不是有手就行）
