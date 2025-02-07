@@ -86,6 +86,7 @@
     - algo: (R' U' R' D') (R U R' D R2)
     - algo: x' (R U' R' D) (R U R' D') x
     - algo: (R2 D') (R U2') (R' D) (R U2' R)
+    - algo: F (R U' R' U) (R U R' U) (R U' R' F')
     - algo: F (R U R' U') F'
     - algo: f (R U R' U') f'
     - algo: (R' U' F') (U F R)
@@ -144,8 +145,8 @@
   algo_list:
     - algo: (R U' R) U (R U R U') (R' U' R2)
     - algo: (R2' U) (R U R' U') (R3 U') (R' U R')
-    - algo: M2' U' M2' U2' M2' U' M2'
-    - algo: (M2' U')2 (M' U2') (M2' U2') M'
+    - algo: M2' U M2' U2 M2' U M2'
+    - algo: (M2' U)2 (M' U2) (M2' U2) M'
     - algo: x' R2 D2 (R' U' R) D2 (R' U l')
     - algo: x' (R U' R) D2 (R' U R) D2 R2' x
     - algo: (l U' R' D) (R U R' D') (R U R' D) (R U' R' D') x
