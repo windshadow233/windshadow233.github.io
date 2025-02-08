@@ -71,9 +71,11 @@
     - algo: R2' U R2 U' R2'
     - algo: R' u' R' u R
     - algo: (U r' U R) (U' R' U' r)
+    - algo: (U R' F) (r U' r' F') R
     - algo: (R U)2 (R U' R' U' R')
     - algo: (U R' U' R) (U' R' U) (R' F R F' R)
     - algo: (R' F R U') (F' R U' R')
+    - algo: (R' U R U2') (R' U R' F) (R F' R)
 - algo_type: OLL
   algo_name: OLL (Orientation of the Last Layer)
   page_name: OLL
@@ -155,7 +157,9 @@
     - algo: r (R2' F R F') (R U2' r' U r U2' r')
     - algo: F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')
     - algo: (R' U' F') (R U R' U') (R' F R2 U') (R' U' R U R' U R)
+    - algo: (R' U2 R' d') R' (F' R2) (U' R' U R' F R) U' F
     - algo: (R' U R' U') (R D' R' D) R' (U D') (R2 U' R2' D R2)
+    - algo: (R' U R' d') R' (F' R2) (U' R' U R' F R) F
     - algo: (R U R' F') (R U2' R' U2') (R' F R U) (R U2' R')
     - algo: (R' U2') (R U2') (R' F R U R' U') (R' F' R2)
     - algo: (R U R' U) (R U R' F') (R U R' U') R' F R2 U' R' U2' (R U' R')
