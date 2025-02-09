@@ -47,7 +47,7 @@
     - algo: (R U' R' U') (R U' R' d) (R' U' R)
     - algo: (R' F R F') (R U' R' U) (R U' R' U2) (R U' R')
 - algo_type: F2L
-  algo_name: 非标态 F2L 或标态其他方向的解法
+  algo_name: 标态其他方向的解法 或 非标态 F2L
   page_name: 进阶 F2L
   id_prefix: f2l+
   algo_list:
@@ -56,8 +56,20 @@
     - algo: f R f'
     - algo: U' (r U' R' U) (R U r')
     - algo: U' (R B' r' U) (r B R')
+    - algo: (U r' U R) (U' R' U' r)
+    - algo: (U R' F) (r U' r' F' R)
+    - algo: (U R' U' R) (U' R' U' R)
     - algo: (R U2' R2' U') (R2 U' R')
     - algo: (R' U' R U) (R' U' R)
+    - algo: (R U)2 (R U' R' U' R')
+    - algo: (U R' U' R) (U' R' U) (R' F R F' R)
+    - algo: (R' F R U') (F' R U' R')
+    - algo: (R' U R U2') (R' U R' F) (R F' R)
+    - algo: (U' R U') (R2' F R F') (R U' R')
+    - algo: (R' U2 R U') (R' U' R U') (R' U R)
+    - algo: (r U' r' U2') (r U r')
+    - algo: (R' F R F') (R U' R' U) (R U' R')
+
     - algo: U (R' F) (R2 U' R' U2') F'
     - algo: U (R' F R F') (R' U' R)
     - algo: F R' U R F'
@@ -70,12 +82,6 @@
     - algo: R2 U' R2' U R2
     - algo: R2' U R2 U' R2'
     - algo: R' u' R' u R
-    - algo: (U r' U R) (U' R' U' r)
-    - algo: (U R' F) (r U' r' F') R
-    - algo: (R U)2 (R U' R' U' R')
-    - algo: (U R' U' R) (U' R' U) (R' F R F' R)
-    - algo: (R' F R U') (F' R U' R')
-    - algo: (R' U R U2') (R' U R' F) (R F' R)
 - algo_type: OLL
   algo_name: OLL (Orientation of the Last Layer)
   page_name: OLL
@@ -133,6 +139,7 @@
     - algo: r2' D' (r U r' D) (r2 U' r' U' r)
     - algo: r' D' (r U' r' D) r2 U' (r' U r U r')
     - algo: F (U R U') (R2' F' R) (U R U' R')
+    - algo: F (U R U2') (R' U' R U R') F'
     - algo: (R' F) (R U R' F' R) y' (R U' R')
     - algo: (r U r') (R U R' U') (r U' r')
     - algo: (r' U' r) (R' U' R U) (r' U r)
