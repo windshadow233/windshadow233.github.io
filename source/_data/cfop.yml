@@ -66,15 +66,18 @@
   id_prefix: f2l-fl
   algo_list:
     - algo: (U R' F) (r U' r' F' R)
-    - algo: (L' U L U2') (L' U' L)
     - algo: (r' F r U')2 (U' L' U L)
+    - algo: (L' U' L U2) (L' U L U') (L' U L)
+    - algo: (U' L' U L U) (L' U L U') (L' U L)
     - algo: (L' U2 L) (U L' U' L)
+    - algo: (L' U L U2') (L' U' L)
     - algo: (U' L' U2 L) (U' L' U L)
+    - algo: (R' F R) U2' (R' F' R)
     - algo: (U' L' U L) (U L' U L) (U' L' U L)
     - algo: (L' U L U') (L' U L)
     - algo: (L' U' L U) (L' U' L)
     - algo: (r U' r' F)2
-    - algo: (U L' U' L)2 (U' L' U L)
+    - algo: (U' L' U L)3
     - algo: R' D (R U' R' D') R
     - algo: (U L' U L) (U2' L' U L)
     - algo: (U2' L' U' L) (F' r U r')
