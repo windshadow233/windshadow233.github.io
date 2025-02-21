@@ -955,7 +955,7 @@ code {
         margin-bottom: 1rem;
     }
 }
-.page blockquote{
+blockquote{
     border-radius: 12px;
     font-size: 1em;
     font-family:Open Sans;
@@ -966,7 +966,7 @@ code {
     position: relative;
     background:var(--fyz-post-blockquote-bg);
 }
-.page blockquote::before{
+blockquote::before{
     font-family:Arial;
     content: "\201C";
     color:#78C0A8;
@@ -977,14 +977,14 @@ code {
     margin-right: 0.25em;
 }
 
-.page blockquote::after{
+blockquote::after{
     content: '';
     bottom: -40px;
     height: 40px;
     width: 1px;
 }
 
-.page blockquote cite{
+blockquote cite{
     display:block;
     font-weight: bold;
     margin-top:1em;
