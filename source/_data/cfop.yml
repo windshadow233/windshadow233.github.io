@@ -69,6 +69,8 @@
   page_name: F2L FL槽
   id_prefix: f2l-fl
   algo_list:
+    - algo: (U L' U' L) (U2' L' U L)
+    - algo: (U L' U2 L) (U2' L' U L)
     - algo: (U R' F) (r U' r' F' R)
     - algo: (r' F r U')2 (U' L' U L)
     - algo: (L' U' L U2) (L' U L U') (L' U L)
@@ -76,6 +78,7 @@
     - algo: (L' U2 L) (U L' U' L)
     - algo: (L' U L U2') (L' U' L)
     - algo: (U' L' U2 L) (U' L' U L)
+    - algo: (R U2' R' U2') (R' F R U' F')
     - algo: (R' F R) U2' (R' F' R)
     - algo: (U' L' U L) (U L' U L) (U' L' U L)
     - algo: (L' U L U') (L' U L)
@@ -87,6 +90,7 @@
     - algo: (U2' L' U' L) (F' r U r')
     - algo: (L' U L U') (L' U2 L U') (L' U L)
     - algo: (L' U L U) (L' U' L U2') (L' U L)
+    - algo: (r U r' U') (r' F r F')
 - algo_type: F2L
   algo_name: F2L BR槽
   page_name: F2L BR槽
@@ -96,6 +100,8 @@
     - algo: f R f'
     - algo: (U r' U R) (U' R' U' r)
     - algo: r U2' R2' U' R2 U' r'
+    - algo: (U R' U' R) (U2' R' U R)
+    - algo: (U R' U2' R) (U2' R' U R)
     - algo: (U R' U' R) (U' R' U' R)
     - algo: (U R' U2' R) (U' f R f')
     - algo: (R U2' R2' U') (R2 U' R')
@@ -127,10 +133,15 @@
   id_prefix: f2l-bl
   algo_list:
     - algo: U' (R B' r' U) (r B R')
+    - algo: (l' U2 L2 U) (L2' U l)
+    - algo: (U' L U L') (U2 L U' L')
+    - algo: (U' L U2 L') (U2 L U' L')
     - algo: (L' U2 L2 U) (L2' U L)
     - algo: (L U2 L') (U' L U L')
     - algo: (U L U2 L') (U L U' L')
     - algo: (L U' L' U2) (L U L')
+    - algo: (l U' l' U2) (l U l')
+    - algo: (R' U2 R U2') (R B' R' U B)
     - algo: (U L U' L') (U' L U' L') (U L U' L')
     - algo: (L U L' U') (L U L')
     - algo: (U' L U L')2 (U L U' L')
