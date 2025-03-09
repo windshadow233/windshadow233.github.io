@@ -1958,23 +1958,28 @@ img[data-lazy-src]:not(.loaded) {
 #random-post .random-friends-post:hover{
     color: var(--fyz-white)!important;
 }
-#heartbeat::before{
-    display: inline-block;
-    font-size: 1rem;
-    animation: heartbeat .5s infinite;
-    content: '💗';
-    font-style: normal;
-    margin-right: 5px;
-  }
+.heartbeat{
+    animation: heartbeat 1.2s ease-in-out infinite;
+    color: red;
+}
   
-  @keyframes heartbeat {
-    0%, 100% {
-      transform: scale(1);
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1)
     }
-    50% {
-      transform: scale(1.2);
+
+    10%,30% {
+        transform: scale(.88)
     }
-  }
+
+    20%,40%,60%,80% {
+        transform: scale(1.08)
+    }
+
+    50%,70% {
+        transform: scale(1.08)
+    }
+}
 #runtime-footer {
     color: var(--fyz-white);
 }

@@ -20,8 +20,8 @@
     .footer_custom_text!=`${theme.footer.custom_text}`
   if theme.footer.runtimeshow.enable
     #runtime-footer
-      i#heartbeat
-      | 本站已持续运行
+      i.fas.fa-heart.heartbeat
+      |  本站已持续运行
       span
     - var publishDate = date_xml(theme.runtimeshow.publish_date)
     script.
