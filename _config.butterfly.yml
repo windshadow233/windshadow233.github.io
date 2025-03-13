@@ -370,7 +370,7 @@ aside:
 site_counter:
   # url: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   # url: https://cn.vercount.one/js
-  url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/vercount@v0.0.3.js
+  url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/vercount@v0.1.0.js
   site_uv: true
   site_pv: true
   page_pv: true
