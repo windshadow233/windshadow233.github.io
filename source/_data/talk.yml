@@ -14,6 +14,9 @@
         - https://blogfiles.oss.fyz666.xyz/webp/04b8a2fd-cf21-44e0-8108-351f5b6a53f5.webp
         - https://blogfiles.oss.fyz666.xyz/webp/e03e2432-6903-4865-881b-3fd36f612371.webp
         - https://blogfiles.oss.fyz666.xyz/webp/b97992ff-6d54-4773-8902-fe342cb3205c.webp
+      tag:
+        - 博士开题
+        - 魔方
     - content: |
         记一次行李箱被错拿的惨痛经历：
         在回校的高铁上，习惯性的把我和女朋友的行李箱放在了最后一排座位的靠背后（正好一左一右两个坑）。下车的时候，一看发现女朋友的粉色行李箱（如图 1）不见了，在原来的位置上赫然放了一个蓝色的很胖的行李箱（如图 2）。
@@ -45,6 +48,8 @@
         - https://blogfiles.oss.fyz666.xyz/png/b7878213-a583-4f7f-bbbe-dccdcf32ed8f.png
         - https://blogfiles.oss.fyz666.xyz/jpg/03af2905-2110-4b5c-87db-c00fb2a6c31f.jpg
       date: 2025/02/27 23:55
+      tag:
+        - 高铁行李箱错拿
     - content: 情人节快乐！
       date: 2025/02/14 16:36
       image:
@@ -65,11 +70,15 @@
       date: 2025/02/06 12:09
       image:
         - https://blogfiles.oss.fyz666.xyz/png/046ace12-cdc9-4cf8-8b42-2e5fc22e0ab0.png
+      tag:
+        - 魔方
     - content: 做了个页面用来记录个人自用的魔方公式。
       date: 2025/01/15 17:18
       link:
         - url: /cfop/
           name: CFOP 公式
+      tag:
+        - 魔方
     - content: |
         2025年元旦，我和相处近七年的女朋友终于订婚啦！
         三年前，她努力考到了我所在的学校，结束了我俩的异地恋，在我的研究生学习期间一直陪在我身边，给予了我莫大的支持与鼓励，也让我生活中99.95%的时间充满了好心情。
@@ -110,6 +119,8 @@
       link:
         - url: https://github.com/vietnh1009/ASCII-generator/issues/23#issuecomment-2487520201
           name: 赛博丁真的回复
+      tag:
+        - 赛博丁真
     - content: |
         <a href="https://space.bilibili.com/163637592">赛博丁真</a> 又发力了。
         
@@ -127,6 +138,8 @@
       link:
         - url: https://github.com/vietnh1009/ASCII-generator/issues/25
           name: 相关 issue
+      tag:
+        - 赛博丁真
     - content: |
         参加了一年一度的 Hackergame，喜提组内二等奖。又可以去提货了，舒服！
       date: 2024/11/10 17:57
@@ -139,6 +152,8 @@
           name: 官方存档及题解
         - url: /blog/12095/
           name: 我的题解
+      tag:
+        - Hackergame
     - content: |
         今日麻将乐事：
         （主视角为我的下家）
@@ -152,6 +167,9 @@
       link:
         - url: https://game.maj-soul.com/1/?paipu=jmkkmm-0t5u6828-0367-6gg9-fkkn-hltnlwxwqny0_a31454929_2
           name: 牌谱
+      tag:
+        - 日麻
+        - 雀魂
     - content: |
         大胆 GPT！竟敢质疑自己的祖师爷，拖出去斩了！
       date: 2024/10/09 03:24
@@ -186,6 +204,9 @@
         - https://www.youtube.com/embed/gzK7XgzQRmY?si=SfCgHMrl5JM0cPgl
       image:
         - https://blogfiles.oss.fyz666.xyz/jpg/183ee377-fee7-4814-89f3-8db24ecd384d.jpg
+      tag:
+        - Steam
+        - 血压游戏
     - content: |
         UTC+8时间2024年9月18日20时08分，合肥肥东县发生4.9级地震，位于合肥市区建筑内的同学都表示有较强烈的震感，我刚好那个时间点出门了，因此没有感受到。作为老家江浙一带的人，这也是我人生中离地震最近的一次，希望合肥一切平安！
       date: 2024/09/18 21:30
@@ -195,6 +216,8 @@
       link:
         - url: https://earthquake.usgs.gov/earthquakes/eventpage/us6000nsvh/executive
           name: 来自 USGS 的信息
+      tag:
+        - 合肥地震
     - content: |
         打游戏（划掉）写论文写到凌晨5点半，突然想起今天是和npy在一起六周年纪念日。赶紧发条消息防止醒来被骂。
       date: 2024/08/15 05:50
@@ -206,6 +229,8 @@
       date: 2024/07/12 21:17
       image:
         - https://blogfiles.oss.fyz666.xyz/png/10acda4d-e69e-4ae4-aed2-a3a82300e7ea.png
+      tag:
+        - Steam
     - content: 是谁，这个点还在水论文？哦，原来是我🤡🤡🤡
       date: 2024/07/08 04:46
       image:
@@ -217,6 +242,9 @@
       link:
         - url: https://game.maj-soul.com/1/?paipu=jmjrln-3pq6sz40-xz6f-6d4f-i8hb-ghqtorxtpun0_a31454929_2
           name: 牌谱
+      tag:
+        - 日麻
+        - 雀魂
     - content: 苏州“6.24”日本人学校校车袭击案，一名乘务员胡友平挺身而出，阻止了暴徒上车造成更大的社会危害，但她本人身中数刀并于26日离世。日本驻华大使馆为其降半旗致敬，并表示“相信她的勇气与善良也代表了广大中国民众”。在此，我向胡女士表示敬意，同时希望严惩凶手，也希望今后恶劣的社会事件能越来越少。
       date: 2024/06/28 18:53
       link:
@@ -232,12 +260,16 @@
         - url: https://ssl.huaian.gov.cn/letterClientController/info.do?view=/cms/letter/client/letterInfo_ls.jsp&letterId=2c94938e9047dbee019049843247003b
           name: 涟水县人民政府的回复
       date: 2024/06/28 00:41
+      tag:
+        - 姜萍事件
     - content: 看到数学圈的大佬们纷纷联名请愿，作为一个前数学人，我感慨万千。数学界需要的正是这种求真的精神，我想，所有参与讨论的人当中，最希望这起事件是真实的人群，反而恰是这帮从专业的角度提出质疑的数学圈大佬们，数学圈的每个人都是爱才惜才的，恨不得中国真出一个这样的天才；而一旦这起事件最终翻车，网暴姜萍的也一定不会是这一群人（相反，这群人反而会帮助她走出困境，毕竟一位十七岁的中专少女，是既没有动机，也难有能力去做到策划这整起事件的）。最后，还是希望阿里达摩院以及官方能给出一个说法，还数学界以清净，是真是假，拿出来溜溜，不要再当鸵鸟了。
       link:
         - url: https://www.zhihu.com/question/659628342/answer/3539037805
           name: 请愿信
         - url: https://zhuanlan.zhihu.com/p/705650067
           name: 北大袁教授的分析
+      tag:
+        - 姜萍事件
       date: 2024/06/27 15:33
     - content: 终于把说说功能搞好了，参考了下面这篇文章，并进行了一些小小的修改～以后我将会在这里发表一些想法
       date: 2024/06/27 04:00
@@ -253,11 +285,15 @@
       link:
         - url: https://www.zhihu.com/question/659359527/answer/3538072726
           name: 部分高校的回应
+      tag:
+        - 姜萍事件
     - content: 这个类比可以说是十分通俗易懂了
       date: 2024/06/26 10:51
       link:
         - url: https://www.zhihu.com/question/659591528/answer/3542523632
           name: “姜萍事件”的通俗类比
+      tag:
+        - 姜萍事件
     - content: |
         CSDN 又不干人事，黑名单网址又多一个：gitcode.com
         再仔细一看，好家伙！技术支持：华为云，这下可以一起骂了
@@ -270,6 +306,8 @@
         数学界也拥有了自己的丁真！
         (<a href="https://player.bilibili.com/player.html?isOutside=true&aid=1505621387&bvid=BV1SD421M73v&cid=1580177673&p=1&autoplay=0">原视频</a>已失效)
       date: 2024/06/13 15:00
+      tag:
+        - 姜萍事件
     - content: |
         雨天穿梭于张家界大峡谷，有点过于舒适了。
         不过没玩滑道还是有点可惜。

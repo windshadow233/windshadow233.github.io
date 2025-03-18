@@ -64,6 +64,11 @@ if site.data.talk
                           a.bber-content-link(href=url_for(i.url),rel="external nofollow")
                             i.fas.fa-link
                             | #{i.name}
+                      if item.tag
+                        each i in item.tag
+                          .bber-tag
+                            i.fa-solid.fa-tag
+                            | #{i}
                       if item.from
                         .bber-info-from
                           i.fas.fa-fire-alt
