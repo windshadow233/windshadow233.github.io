@@ -11,6 +11,11 @@
       avatar: https://blogfiles.oss.fyz666.xyz/svg/64e5a25c-d812-494e-9574-5859a42eff52.svg
       descr: 做自由的风
       feed: https://hanvin.com/feed.xml
+    - name: 小码同学
+      link: https://blog.hikki.site
+      avatar: https://bu.dusays.com/2025/03/02/67c4531250141.jpg
+      descr: 喜欢的东西就努力去追求，万一成功了呢!
+      feed: https://blog.hikki.site/atom.xml
 
 - class_name: 一些大佬
   class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
