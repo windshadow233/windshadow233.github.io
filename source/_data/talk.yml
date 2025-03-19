@@ -9,38 +9,23 @@
   talk_list:
     - content: |
         博士开题顺利通过✅ 可喜可贺！
-        虽然讲的磕磕绊绊，但好像很水的样子，不像实验室内部流传的那样「比较难」，答辩组老师们也十分和蔼可亲。
+        虽然讲的磕磕绊绊，但好像很水的样子，不像实验室内部流传的那样「比较难」、「容易挂人」，答辩组老师们也十分和蔼可亲。
       date: 2025/03/19 17:38
       tag:
         - 博士开题
     - content: |
         又破 PB 了：12.29s。
-        运气好，出了个 XC，后面三个 F 都比较顺，OLL 和 PLL 几乎是最顺手的两个公式，就这样才只有12s，真是太菜了。
-        附上打乱：R' L2 F L2 B D2 B2 U2 L2 B' R2 B2 D2 L U2 F2 D' B' L U' F'
-        以及我的解法：
-        x'  // inspection
-        L D U' B' R' U F x' // XC
-        R U' R' U' R U' R' U R U' R' // 2nd slot
-        R' U' R U2' R' U R // 3rd slot
-        L U' L' U2'  y' L' U' L // 4th slot
-        U' R' U' R U' R' U2' R // OLL
-        U2' R U R' F' R U R' U' R' F R2 U' R' // PLL
-        U' // AUF
-        <script>$(document).ready(() => {import('https://cdn.cubing.net/v0/js/cubing/twisty');});</script>
-        <twisty-player style="width: 100%"
-          experimental-setup-alg="R' L2 F L2 B D2 B2 U2 L2 B' R2 B2 D2 L U2 F2 D' B' L U' F'"
-          alg="x'
-            L D U' B' R' U F x'
-            R U' R' U' R U' R' U R U' R'
-            R' U' R U2' R' U R
-            L U' L' U2'  y' L' U' L
-            U' R' U' R U' R' U2' R
-            U2' R U R' F' R U R' U' R' F R2 U' R'
-            U'"
-        ></twisty-player>
+        运气好，出了个 XC，后面三个 F 都比较顺，OLL 和 PLL 几乎是最顺手的两个公式，就这样才只有12s，实在是太菜了。
+
+        并且后来复盘发现还有一个解法可以直接跳 P，慢拧都能sub 10。
       date: 2025/03/19 01:12
       image:
         - https://blogfiles.oss.fyz666.xyz/png/e4003c82-80f1-451b-870e-0e9fe1d6c815.png
+      link:
+        - url: https://alg.cubing.net/?setup=R-_L2_F_L2_B_D2_B2_U2_L2_B-_R2_B2_D2_L_U2_F2_D-_B-_L_U-_F-&alg=x-_%2F%2F_inspection%0AL_D_U-_x-_U-_R-_F_D_%2F%2F_XC%0AR_U-_R-_U-_R_U-_R-_U_R_U-_R-_%2F%2F_2nd_slot%0AR-_U-_R_U2-_R-_U_R_%2F%2F_3rd_slot%0AL_U-_L-_U2-__y-_L-_U-_L_%2F%2F_4th_slot%0AU-_R-_U-_R_U-_R-_U2-_R_%2F%2F_OLL%0AU2-_R_U_R-_F-_R_U_R-_U-_R-_F_R2_U-_R-_%2F%2F_PLL%0AU-_%2F%2F_AUF
+          name: 我的解法
+        - url: https://alg.cubing.net/?setup=R-_L2_F_L2_B_D2_B2_U2_L2_B-_R2_B2_D2_L_U2_F2_D-_B-_L_U-_F-&alg=x-_%2F%2F_inspection%0AL_D_U-_x-_U-_R-_F_D_%2F%2F_XC%0AR_U-_R-_U_R-_U-_R_%2F%2F_2nd_slot%0AU-_R_U-_R-_U_R_U-_R-_%2F%2F_3rd_slot%0Ay-_U_L-_U2_L_U2-_L-_U_L_%2F%2F_4th_slot%0AU-_R-_U-_F_U_R_U-_R-_F-_R_%2F%2F_OLL_%2F_1LLL
+          name: 更好的解法
       tag:
         - 魔方
     - content: |
@@ -60,7 +45,7 @@
         列车到达武汉站后，警方发现车上有一个行李箱无人认领，恰好就是那个蓝色行李箱。于是，大概率就是这个蓝色行李箱的主人（后文记为 A）错拿了我们的粉色箱子下去。
         鉴于两个箱子无论是颜色还是形状都完全不一样，我们觉得 A 在下车以后很快就会发现箱子拿错了，理应会立刻联系铁路方，故我们麻烦列车长有任何消息便告知我们。
         另一方面，武汉警方调取了车内监控，在监控盲区人脸辨识度不高的情况下，判定蓝色行李箱是在杭州东站上车的，不过此时尚未定位到人，也暂未发现我们的箱子是何时被人拿下去的。
-        此时已经两天过去了，列车长那边没有任何消息，这意味着 A 很可能还没有意识到自己拿错了箱子，这件事非常不合常理。考虑到丢失的行李箱内的一些物品价值较大（上万元），我们开始对错拿箱子的人产生了怀疑。
+        此时已经两天过去了，列车长那边没有任何消息，这似乎意味着 A 还没有意识到自己拿错了箱子，然而这非常不合常理。考虑到丢失的行李箱内的一些物品价值较大（上万元），我们开始对错拿箱子的人产生了怀疑。
         在这两天当中，我们也没闲着，我们给所有途经站的失物招领处都打了电话，（以防 A 在发现错拿了箱子以后直接丢在高铁站），然而都没有找到。
         
         第四天，警方联系我们，表示在申请调取了更多的监控后，又有了一些新的线索，同时警方也已经获取到了本次列车的乘客实名信息。经过两个小时左右的信息比对，终于破案了。
