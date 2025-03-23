@@ -1,12 +1,24 @@
 - class_name: 说说
   title: 说说
   subTitle: 博主的摸鱼日常
-  tips: 记录日常生活、各种想法和吐槽
+  tips: 分享日常生活，偶尔发表各种想法与吐槽
   buttonLink: /about/
   buttonText: 关于我
   limit: 50
   top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
   talk_list:
+    - content: |
+        再破 PB：10.77s
+        喜闻乐见，今天手感一直很差，但遇到了个比较简单的打乱，运气很好：四步白底 Cross， 三个不用换手的 F，还跳了 P。
+        记录一下打乱和解法。
+      date: 2025/03/23 18:06
+      tag:
+        - 魔方
+      image:
+        - https://blogfiles.oss.fyz666.xyz/webp/919611f1-690f-4e6c-a460-01ba093955f6.webp
+      link:
+        - url: https://alpha.twizzle.net/edit/?setup-alg=L2+U2+F%27+R2+B%27+U2+R2+B%27+R2+F2+R2+D+U%27+B+L+F%27+U2+L%27&alg=x2+y+%2F%2F+inspection%0AD+L+R%27+D+%2F%2F+Cross%0AR%27+U+R+U%27+R%27+U%27+R+%2F%2F+1st+slot%0AU2%27+R+U+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AL%27+U2+L+U+L%27+U%27+L+%2F%2F+3rd+slot%0Ay%27+L%27+U%27+L+U2+L%27+U+L+U%27+L%27+U+L+%2F%2F+4th+slot%0AR+U+R%27+U%27+M%27+U+R+U%27+r%27+%2F%2F+OLL+%2F+1LLL%0AU+%2F%2F+AUF
+          name: 我的解法
     - content: |
         博士开题顺利通过✅ 可喜可贺！
         虽然讲的磕磕绊绊，但好像很水的样子，不像实验室内部流传的那样「比较难」、「容易挂人」，答辩组老师们也十分和蔼可亲。

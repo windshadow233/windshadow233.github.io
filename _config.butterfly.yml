@@ -234,7 +234,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  text: 觉得本文有用？请作者喝奶茶吧～
+  text: 觉得本文有用？V 我 50 看看实力！
   QR_code:
     - img: /images/wechat.png
     #   link:
