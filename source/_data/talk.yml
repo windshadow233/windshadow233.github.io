@@ -34,9 +34,9 @@
       image:
         - https://blogfiles.oss.fyz666.xyz/png/e4003c82-80f1-451b-870e-0e9fe1d6c815.png
       link:
-        - url: https://alg.cubing.net/?setup=R-_L2_F_L2_B_D2_B2_U2_L2_B-_R2_B2_D2_L_U2_F2_D-_B-_L_U-_F-&alg=x-_%2F%2F_inspection%0AL_D_U-_x-_U-_R-_F_D_%2F%2F_XC%0AR_U-_R-_U-_R_U-_R-_U_R_U-_R-_%2F%2F_2nd_slot%0AR-_U-_R_U2-_R-_U_R_%2F%2F_3rd_slot%0AL_U-_L-_U2-__y-_L-_U-_L_%2F%2F_4th_slot%0AU-_R-_U-_R_U-_R-_U2-_R_%2F%2F_OLL%0AU2-_R_U_R-_F-_R_U_R-_U-_R-_F_R2_U-_R-_%2F%2F_PLL%0AU-_%2F%2F_AUF
+        - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AR%27+U%27+R+U2%27+R%27+U+R+%2F%2F+3rd+slot%0AL+U%27+L%27+U2%27+y%27+L%27+U%27+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+R+U%27+R%27+U2%27+R+%2F%2F+OLL%0AU2%27+R+U+R%27+F%27+R+U+R%27+U%27+R%27+F+R2+U%27+R%27+%2F%2F+PLL%0AU%27+%2F%2F+AUF&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
           name: 我的解法
-        - url: https://alg.cubing.net/?setup=R-_L2_F_L2_B_D2_B2_U2_L2_B-_R2_B2_D2_L_U2_F2_D-_B-_L_U-_F-&alg=x-_%2F%2F_inspection%0AL_D_U-_x-_U-_R-_F_D_%2F%2F_XC%0AR_U-_R-_U_R-_U-_R_%2F%2F_2nd_slot%0AU-_R_U-_R-_U_R_U-_R-_%2F%2F_3rd_slot%0Ay-_U_L-_U2_L_U2-_L-_U_L_%2F%2F_4th_slot%0AU-_R-_U-_F_U_R_U-_R-_F-_R_%2F%2F_OLL_%2F_1LLL
+        - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U+R%27+U%27+R+%2F%2F+2nd+slot%0AU%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+3rd+slot%0Ay%27+U+L%27+U2+L+U2%27+L%27+U+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+F+U+R+U%27+R%27+F%27+R+%2F%2F+OLL+%2F+1LLL&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
           name: 更好的解法
       tag:
         - 魔方

@@ -523,6 +523,7 @@ p.p.center, span.p.center {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 75%;
 }
 .author-content-item .content-bottom .icon-group {
   display: flex;
