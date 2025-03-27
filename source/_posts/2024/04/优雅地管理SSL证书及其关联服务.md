@@ -84,6 +84,21 @@ rsync -avzL -e 'ssh -i /path/to/priv_key' /path/to/cert1/ user@serverB:/path/to/
 
 需要先手动执行一下这个脚本将服务器B的公钥写入到`~/.ssh/known_hosts`，后面就能自动化了。
 
+不过这里将私钥放在服务器上是一个很不好的行为，但为了自动化操作又不好用`ssh-agent`转发本地私钥过去，因此这里的折中方法是，在远程服务器上创建一个「只用于`rsync`命令的公钥」，然后将其私钥放到`/path/to/priv_key`。
+
+在服务器B上的操作如下：
+
+```bash
+ssh-keygen -t rsa -b 4096 -f rsync_key -C "rsync-only"  # 创建一个新的密钥对，仅用于 rsync
+```
+
+在`authorized_keys`最后添加新的公钥，不过在前面加个`command=...`：
+
+```raw
+command="case \"$SSH_ORIGINAL_COMMAND\" in rsync\ --server*\ /path/to/cert1/*) exec $SSH_ORIGINAL_COMMAND ;; *) echo Access Denied; exit 1 ;; esac",restrict ssh-rsa AAAA...
+```
+
+使用公钥文件的`command`参数来指定该公钥只能用于相应的命令，一定程度上更加安全。
 
 最后启动创建的path单元：
 

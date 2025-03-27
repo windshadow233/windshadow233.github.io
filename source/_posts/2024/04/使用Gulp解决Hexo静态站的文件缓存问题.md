@@ -137,7 +137,7 @@ gulp.task('default', gulp.parallel(
 
 ---
 
-最近发现有个奇怪的bug，我只要用了`gulp-html-minifier-terser`，就会有一个html文件被”优化”成了空文件，研究了下发现原来不应该将最后的`rev`任务和前面三个并行起来，改成下面这样就好了:
+最近发现有个奇怪的bug，我只要用了`gulp-html-minifier-terser`，就会有一个html文件被“优化”成了空文件，研究了下发现原来不应该将最后的`rev`任务和前面三个并行起来，改成下面这样就好了:
 
 ```js
 gulp.task('default', gulp.series(
