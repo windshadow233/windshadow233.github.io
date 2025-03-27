@@ -13,6 +13,5 @@
 - Vercel 镜像站: https://vc.fyz666.xyz/
 - Netlify 镜像站: https://ntl.fyz666.xyz/
 - Render 镜像站: https://rd.fyz666.xyz/
-- Zeabur 镜像站: https://zb.fyz666.xyz/
 
 通过此仓库的 GitHub Actions 自动部署到主站及 GitHub 镜像站，并自动同步至其他镜像站。

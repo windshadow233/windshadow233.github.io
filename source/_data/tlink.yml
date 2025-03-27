@@ -264,10 +264,6 @@
     link: https://render.com/
     avatar: https://blogfiles.oss.fyz666.xyz/jpeg/76db7fe1-29ef-4922-bede-b8c32b87c74a.jpeg
     descr: 简单到极致地构建、部署和扩展应用程序
-  - name: Zeabur
-    link: https://zeabur.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/svg/26e39d98-37d1-4ac0-87dd-0f42ebb5afa6.svg
-    descr: 在几秒内免费部署静态网站与 Serverless 函数
 
 - class_name: 博主提供的服务
   class_desc: 学生党比较穷，所以依赖于服务器性能的服务暂时就不公开了（
