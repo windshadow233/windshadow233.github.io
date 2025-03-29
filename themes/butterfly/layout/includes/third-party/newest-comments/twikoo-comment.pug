@@ -3,6 +3,7 @@ script.
     const changeContent = (content) => {
       if (content === '') return content
 
+      content = content.replace(/<blockquote.*?>(.*?)<\/blockquote>/isg, '[!{_p("aside.card_newest_comments.quote")}]') // replace quote
       content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[!{_p("aside.card_newest_comments.image")}]') // replace image link
       content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[!{_p("aside.card_newest_comments.link")}]') // replace url
       content = content.replace(/<pre><code>.*?<\/pre>/gi, '[!{_p("aside.card_newest_comments.code")}]') // replace code
@@ -20,7 +21,7 @@ script.
           envId: '!{theme.twikoo.envId}',
           region: '!{theme.twikoo.region}',
           pageSize: !{theme.newest_comments.limit},
-          includeReply: true
+          includeReply: !{theme.newest_comments.includeReply}
         }).then(function (res) {
           const twikooArray = res.map(e => {
             return {

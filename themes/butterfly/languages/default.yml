@@ -81,6 +81,7 @@ aside:
     image: image
     link: link
     code: code
+    quote: quote
   card_toc: Contents
   card_post_series: Series
 
