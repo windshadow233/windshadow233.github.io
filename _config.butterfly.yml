@@ -81,7 +81,7 @@ index_img: https://blogfiles.oss.fyz666.xyz/webp/1fa952df-86cb-43a6-8511-1287eef
 default_top_img: https://blogfiles.oss.fyz666.xyz/webp/1fa952df-86cb-43a6-8511-1287eefeeafe.webp
 
 # The banner image of archive page
-archive_img:
+archive_img: false
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -326,8 +326,8 @@ aside:
   card_announcement:
     enable: true
     content: |
-      <div class="welcome">欢迎来自<span id="city">火星</span>的小伙伴～（位置信息可能存在延迟）<br>您当前的IP地址为: <span id="local-ip">0.0.0.0</span><br>
-        您现在距离我大约<span id="distance">1919810</span>公里
+      <div class="welcome">欢迎来自<span id="city">火星</span>的小伙伴～（位置信息可能存在延迟）<br>您当前的IP地址为: <span id="local-ip">11.4.5.14</span><br>
+        您现在距离我大约 <span id="distance">1919810</span> 公里
       </div>
   card_recent_post:
     enable: false
@@ -1077,7 +1077,7 @@ inject:
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.1.4.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.1.5.css">
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"

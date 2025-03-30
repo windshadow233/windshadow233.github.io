@@ -1,14 +1,23 @@
+- title: 工具与服务
+  subTitle: 博主觉得好用的一些工具
+  tips: 此页面将长期更新
+  top_background: https://blogfiles.oss.fyz666.xyz/webp/deb9fa48-e8a3-4898-bc34-8932465eb29f.webp
+
 - class_name: 人工智能
   class_desc: 让AI为生产力加速！
   link_list:
+  - name: DeepSeek
+    link: https://chat.deepseek.com/
+    avatar: https://blogfiles.oss.fyz666.xyz/svg/afe310dd-6af1-41ea-b485-affd0bae56de.svg
+    descr: 国产“弯道超车”大模型
   - name: ChatGPT
     link: https://chatgpt.com/
     avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
-    descr: 最强大的 ChatBot
+    descr: 大模型领域的先驱
   - name: Kimi Chat
     link: https://kimi.moonshot.cn/
     avatar: https://blogfiles.oss.fyz666.xyz/png/2c952360-53e1-4944-a32d-2dd495a245ef.png
-    descr: ChatGPT 的国产平替，在超长文本场景下表现出众
+    descr: 在超长文本场景下表现出众
   - name: txyz
     link: https://www.txyz.ai/
     avatar: https://blogfiles.oss.fyz666.xyz/jpg/5273612e-faad-4a69-80c1-4521d988cd70.jpg
@@ -67,7 +76,7 @@
   - name: Editor.md
     link: https://pandao.github.io/editor.md/
     avatar: https://blogfiles.oss.fyz666.xyz/png/0071277f-fce3-4d92-afa7-cdfebd13fa65.png
-    descr: 开源在线 Markdown 编辑器
+    descr: 开源在线的 Markdown 编辑器
   - name: Snap Drop
     link: https://snapdrop.net/
     avatar: https://blogfiles.oss.fyz666.xyz/png/bf6ba59c-5647-405d-9423-f95f47f114fd.png

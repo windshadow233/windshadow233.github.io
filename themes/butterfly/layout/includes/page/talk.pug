@@ -12,7 +12,7 @@ script.
 if site.data.talk
   each i in site.data.talk
     #talk_page
-      .author-content.author-content-item.talkPage.single(style = i.top_background ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
+      .author-content.author-content-item.top-background.single(style=i.top_background ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
         .card-content
           .author-content-item-tips=i.title
           span.author-content-item-title=i.subTitle

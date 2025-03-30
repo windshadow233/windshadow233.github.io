@@ -45,6 +45,7 @@
     - algo: (R U' R') U' (R U R') U2' (R U' R')
     - algo: (R U' R' U') (R U' R' d) (R' U' R)
     - algo: (R' F R F') (R U' R' U) (R U' R' U2) (R U' R')
+    - algo: (R2' U2' F) (R2 F' U2') (R' U R')
 - algo_type: F2L
   algo_name: 部分需要转体的标态 F2L 的免转体做法
   page_name: F2L FR槽

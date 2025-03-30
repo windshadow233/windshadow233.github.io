@@ -1,8 +1,37 @@
+style.
+  #page:has(.flink) {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  
+  #page:has(.flink) .page-title {
+    display: none;
+  }
+  .flink strong{
+    font-size: 30px;
+    margin: 5px;
+  }
+  .flink-desc{
+    font-size: 16px;
+    margin: 5px;
+  }
+  .flink p{
+    margin: 0 !important;
+  }
 #article-container
   .flink
     - let { content, random, flink_file } = page
     - let pageContent = content
-    - const linkData = flink_file ? site.data[flink_file] : site.data.link || false
+    - const [topInfo, ...linkData] = flink_file ? site.data[flink_file] : site.data.link || []
+
+    .author-content.author-content-item.top-background.single(style=topInfo.top_background ? `background: url(${topInfo.top_background}) left 28% / cover no-repeat;` : "")
+        .card-content
+          .author-content-item-tips=topInfo.title
+          span.author-content-item-title=topInfo.subTitle
+          .content-bottom
+            .tips=topInfo.tips
 
     if random
       script.
@@ -15,7 +44,7 @@
           const add = (str) => {
             for(let i = 0; i < str.length; i++){
               const replaceClassName = replaceSymbol(str[i].class_name)
-              const className = str[i].class_name ? `<h2 id="${replaceClassName}"><a href="#${replaceClassName}" class="headerlink" title="${str[i].class_name}"></a>${str[i].class_name}</h2>` : ""
+              const className = str[i].class_name ? `<strong id="${replaceClassName}"><a href="#${replaceClassName}" class="headerlink" title="${str[i].class_name}"></a>${str[i].class_name}</strong>` : ""
               const classDesc = str[i].class_desc ? `<div class="flink-desc">${str[i].class_desc}</div>` : ""
 
               let listResult = ""
@@ -50,7 +79,7 @@
     else
       - let result = ""
       each i in linkData
-        - let className = i.class_name ? markdown(`## ${i.class_name}`) : ""
+        - let className = i.class_name ? markdown(`**${i.class_name}**`) : ""
         - let classDesc = i.class_desc ? `<div class="flink-desc">${i.class_desc}</div>` : ""
 
         - let listResult = ""
