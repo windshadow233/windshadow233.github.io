@@ -1,14 +1,4 @@
 style.
-  #page:has(.flink) {
-    border: 0;
-    box-shadow: none !important;
-    padding: 0 !important;
-    background: transparent !important;
-  }
-  
-  #page:has(.flink) .page-title {
-    display: none;
-  }
   .flink strong{
     font-size: 30px;
     margin: 5px;
@@ -22,16 +12,16 @@ style.
   }
 #article-container
   .flink
-    - let { content, random, flink_file } = page
-    - let pageContent = content
-    - const [topInfo, ...linkData] = flink_file ? site.data[flink_file] : site.data.link || []
+    - var { content, random, flink_file } = page
+    - var pageContent = content
+    - var [topInfo, ...linkData] = flink_file ? site.data[flink_file] : site.data.link || []
 
     .author-content.author-content-item.top-background.single(style=topInfo.top_background ? `background: url(${topInfo.top_background}) left 28% / cover no-repeat;` : "")
-        .card-content
-          .author-content-item-tips=topInfo.title
-          span.author-content-item-title=topInfo.subTitle
-          .content-bottom
-            .tips=topInfo.tips
+      .card-content
+        .author-content-item-tips=topInfo.title
+        span.author-content-item-title=topInfo.subTitle
+        .content-bottom
+          .tips=topInfo.tips
 
     if random
       script.

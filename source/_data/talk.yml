@@ -106,6 +106,8 @@
       date: 2025/02/08 15:22
       image:
         - https://blogfiles.oss.fyz666.xyz/png/11e968d2-285d-4a31-801f-06233161cd09.png
+      tag:
+        - 魔方
     - content: 我这个快 10 年没玩魔方的老魔友经过一段时间的“复健”后，浅浅测了个速，似乎比以前要变强了一些。（其中有一把转错了最后一个公式导致 DNF 的被我删了嘿嘿。
         对于我这个老年人手速以及瞎子一般的观察预判能力而言真是不容易（争取早日 sub15！
       date: 2025/02/06 12:09
@@ -225,7 +227,7 @@
         server: netease
         id: 1472480890
     - content: |
-        The Royal Swedish Academy of Sciences has decided to award the 2024 #NobelPrize in Physics to John J. Hopfield and Geoffrey E. Hinton “for foundational discoveries and inventions that enable machine learning with artificial neural networks.”
+        <blockquote>The Royal Swedish Academy of Sciences has decided to award the 2024 #NobelPrize in Physics to John J. Hopfield and Geoffrey E. Hinton “for foundational discoveries and inventions that enable machine learning with artificial neural networks.”</blockquote>
         卧槽牛逼！
         物理已死，AI当立。岁在甲辰，天下大吉！
       date: 2024/10/08 17:59

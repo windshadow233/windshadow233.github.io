@@ -2025,3 +2025,12 @@ img[data-lazy-src]:not(.loaded) {
 [data-theme="dark"] .category-lists .category-list-item:hover .category-list-count{
     background: var(--fyz-black);
 }
+#page:has(.top-background.single){
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+#page:has(.top-background.single) .page-title {
+    display: none;
+  }
