@@ -17,7 +17,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/4de41354-86bb-42e2-8812-9d13cd1c164
 
 {% link 大整数分解锦标赛, GitHub, https://github.com/ustclug/hackergame2019-writeups/blob/master/official/%E5%A4%A7%E6%95%B4%E6%95%B0%E5%88%86%E8%A7%A3%E9%94%A6%E6%A0%87%E8%B5%9B/ %}
 
-当时我还是一个只会一点点Python的计算机小白，只写了几道简单的题就结束了自己的赛程。自然，这道题我当时根本就没看，赛后看题解也被我咕咕咕了，一直到最近才自己做了一遍。
+当时我还是一个只会一点点Python的计算机小白，只做了几道最简单的题就结束了自己的赛程。自然，这道题我当时根本就没看，赛后看题解的计划也被我咕咕咕了，一直到最近才自己做了一遍。
 
 ---
 
