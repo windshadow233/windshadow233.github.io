@@ -1,59 +1,59 @@
-- title: 我的项目
-  subTitle: 博主的一些 GitHub 仓库
-  tips: 生命不息，Coding 不止
-  top_background: https://blogfiles.oss.fyz666.xyz/jpg/864a0d33-6e9e-48c9-b256-9f7193a52753.jpg
+title: 我的项目
+subTitle: 博主的一些 GitHub 仓库
+tips: 生命不息，Coding 不止
+top_background: https://blogfiles.oss.fyz666.xyz/jpg/864a0d33-6e9e-48c9-b256-9f7193a52753.jpg
+project_list:
+  - name: This-Repo-Has-0-Stars
+    descr: 欢迎大家前来Star！
+    url: https://github.com/windshadow233/This-Repo-Has-0-Stars
+    image: https://api.star-history.com/svg?repos=windshadow233/This-Repo-Has-0-Stars&type=Date
 
-- name: This-Repo-Has-0-Stars
-  descr: 欢迎大家前来Star！
-  url: https://github.com/windshadow233/This-Repo-Has-0-Stars
-  image: https://api.star-history.com/svg?repos=windshadow233/This-Repo-Has-0-Stars&type=Date
+  - name: Blog
+    descr: 此博客的源码
+    url: https://github.com/windshadow233/windshadow233.github.io
+    image: https://s2.loli.net/2025/04/06/1esWG3t87AogcYM.png
 
-- name: Blog
-  descr: 此博客的源码
-  url: https://github.com/windshadow233/windshadow233.github.io
-  image: https://s2.loli.net/2025/04/06/1esWG3t87AogcYM.png
+  - name: Mahjong-AI
+    descr: 基于Suphx的立直麻将AI（只完成了监督学习部分）
+    url: https://github.com/windshadow233/Mahjong-AI
+    image: https://blogfiles.oss.fyz666.xyz/jpg/d98eab63-647d-4abc-919f-ff994f7aee8a.jpg
 
-- name: Mahjong-AI
-  descr: 基于Suphx的立直麻将AI（只完成了监督学习部分）
-  url: https://github.com/windshadow233/Mahjong-AI
-  image: https://blogfiles.oss.fyz666.xyz/jpg/d98eab63-647d-4abc-919f-ff994f7aee8a.jpg
+  - name: python-chinese-chess
+    descr: 随便写的中国象棋库
+    url: https://github.com/windshadow233/python-chinese-chess
+    image: https://raw.githubusercontent.com/windshadow233/python-chinese-chess/refs/heads/main/images/board_axes_type_0.svg
 
-- name: python-chinese-chess
-  descr: 随便写的中国象棋库
-  url: https://github.com/windshadow233/python-chinese-chess
-  image: https://raw.githubusercontent.com/windshadow233/python-chinese-chess/refs/heads/main/images/board_axes_type_0.svg
+  - name: autograd-with-numpy
+    descr: 基于Numpy实现的自动求导(玩具)框架
+    url: https://github.com/windshadow233/autograd-with-numpy
+    image: https://blogfiles.oss.fyz666.xyz/avif/78c092c3-216f-4b83-96bb-7a5af68f93ea.avif
 
-- name: autograd-with-numpy
-  descr: 基于Numpy实现的自动求导(玩具)框架
-  url: https://github.com/windshadow233/autograd-with-numpy
-  image: https://blogfiles.oss.fyz666.xyz/avif/78c092c3-216f-4b83-96bb-7a5af68f93ea.avif
+  - name: pvz-toolkit
+    descr: 学习Cheat Engine时写的植物大战僵尸修改器
+    url: https://github.com/windshadow233/pvz-toolkit
+    image: https://blogfiles.oss.fyz666.xyz/avif/28e915e7-85c2-47a6-b27b-156de87fea54.avif
 
-- name: pvz-toolkit
-  descr: 学习Cheat Engine时写的植物大战僵尸修改器
-  url: https://github.com/windshadow233/pvz-toolkit
-  image: https://blogfiles.oss.fyz666.xyz/avif/28e915e7-85c2-47a6-b27b-156de87fea54.avif
+  - name: Riichi-Calculator
+    descr: 可能有bug的立直麻将计算器
+    url: https://github.com/windshadow233/Riichi-Calculator
+    image: https://blogfiles.oss.fyz666.xyz/avif/1cecfa62-b575-4aaf-b885-1968fbaf7cb7.avif
 
-- name: Riichi-Calculator
-  descr: 可能有bug的立直麻将计算器
-  url: https://github.com/windshadow233/Riichi-Calculator
-  image: https://blogfiles.oss.fyz666.xyz/avif/1cecfa62-b575-4aaf-b885-1968fbaf7cb7.avif
+  - name: PGGAN
+    descr: PGGAN的PyTorch实现
+    url: https://github.com/windshadow233/PGGAN
+    image: https://blogfiles.oss.fyz666.xyz/webp/c72d1e5a-28f7-4fc6-aa2b-d5d8106bfcd2.webp
 
-- name: PGGAN
-  descr: PGGAN的PyTorch实现
-  url: https://github.com/windshadow233/PGGAN
-  image: https://blogfiles.oss.fyz666.xyz/webp/c72d1e5a-28f7-4fc6-aa2b-d5d8106bfcd2.webp
+  - name: Frontend-Table-Of-Contents
+    descr: 瞎写的纯前端目录生成器
+    url: https://github.com/windshadow233/Frontend-Table-Of-Contents
+    image: https://blogfiles.oss.fyz666.xyz/png/d360172a-25d0-44cd-80c0-84f2dd73a899.png
 
-- name: Frontend-Table-Of-Contents
-  descr: 瞎写的纯前端目录生成器
-  url: https://github.com/windshadow233/Frontend-Table-Of-Contents
-  image: https://blogfiles.oss.fyz666.xyz/png/d360172a-25d0-44cd-80c0-84f2dd73a899.png
+  - name: HandWritten-Transformer-NMT
+    descr: 机器翻译（一个深度学习课程实验罢了）
+    url: https://github.com/windshadow233/HandWritten-Transformer-NMT
+    image: https://blogfiles.oss.fyz666.xyz/webp/7a0bd280-4092-4602-8292-2b57dc25ef41.webp
 
-- name: HandWritten-Transformer-NMT
-  descr: 机器翻译（一个深度学习课程实验罢了）
-  url: https://github.com/windshadow233/HandWritten-Transformer-NMT
-  image: https://blogfiles.oss.fyz666.xyz/webp/7a0bd280-4092-4602-8292-2b57dc25ef41.webp
-
-- name: DKN-NewsRecommendation
-  descr: 新闻推荐算法（论文复现）
-  url: https://github.com/windshadow233/DKN-NewsRecommendation
-  image: https://blogfiles.oss.fyz666.xyz/webp/73dc0cdf-dd7e-4711-ba50-f59b9d924331.webp
+  - name: DKN-NewsRecommendation
+    descr: 新闻推荐算法（论文复现）
+    url: https://github.com/windshadow233/DKN-NewsRecommendation
+    image: https://blogfiles.oss.fyz666.xyz/webp/73dc0cdf-dd7e-4711-ba50-f59b9d924331.webp

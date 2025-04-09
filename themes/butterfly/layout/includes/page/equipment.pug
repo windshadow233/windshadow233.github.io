@@ -1,0 +1,40 @@
+style.
+  #equipment strong{
+    font-size: 30px;
+    margin: 5px;
+  }
+  .equip-desc{
+    font-size: 16px;
+    margin: 5px;
+  }
+  #equipment p{
+    margin: 0 !important;
+  }
+
+#equipment
+  if site.data.equipment
+    - var info = site.data.equipment
+    - var equipment_groups = info.equipment_groups
+    .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) left 28% / cover no-repeat;` : "")
+        .card-content
+          .author-content-item-tips=info.title
+          span.author-content-item-title=info.subTitle
+          .content-bottom
+            .tips=info.tips
+    each group in equipment_groups
+        p!= markdown(`**${group.class_name}**`)
+        .equipment-desc!= group.class_desc
+        .equipment-item-content
+          each item in group.equipment_list
+            .equipment-item-content-item
+              .equipment-item-content-item-cover
+                img.equipment-item-content-item-image(src=item.cover)
+              .equipment-item-content-item-info
+                .equipment-item-content-item-name(onclick=`rmf.copyText('${item.name}', '已复制物品名称')`, title=item.name, )!= item.name
+                .equipment-item-content-item-detail!= item.detail
+                .equipment-item-content-item-desc!= item.desc
+                .equipment-item-content-item-toolbar
+                  a.equipment-item-content-item-link(href=item.link.url, title=item.link.name)= item.link.name
+                  - var content = item.name
+                  .equipment-reply(onclick=`rmf.commentText('${content}')`)
+                    i.far.fa-comment-alt

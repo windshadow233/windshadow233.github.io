@@ -1,250 +1,250 @@
-- title: 在线资源
-  subTitle: 博主搜罗到的一些有用资源、网站
-  tips: 此页面将长期更新
-  top_background: https://blogfiles.oss.fyz666.xyz/webp/65bd4aa6-b921-4d15-825f-1316821035df.webp
+title: 在线资源
+subTitle: 博主搜罗到的一些有用资源、网站
+tips: 此页面将长期更新
+top_background: https://blogfiles.oss.fyz666.xyz/webp/65bd4aa6-b921-4d15-825f-1316821035df.webp
+link_groups:
+  - class_name: 博客开发相关
+    class_desc: 毕竟——没有它们就没有这个站点  
+    link_list:
+    - name: Hexo
+      link: https://hexo.io/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/aa32e2ec-691b-49bd-8815-3afe10bd35f2.svg
+      descr: 快速、简洁且高效的博客框架
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6c8c0c62-87cf-4921-b3f0-18c8030b1ce8.png
+      descr: 一个美观、支持高度自定义的Hexo主题
 
-- class_name: 博客开发相关
-  class_desc: 毕竟——没有它们就没有这个站点  
-  link_list:
-  - name: Hexo
-    link: https://hexo.io/
-    avatar: https://blogfiles.oss.fyz666.xyz/svg/aa32e2ec-691b-49bd-8815-3afe10bd35f2.svg
-    descr: 快速、简洁且高效的博客框架
-  - name: Butterfly
-    link: https://butterfly.js.org/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6c8c0c62-87cf-4921-b3f0-18c8030b1ce8.png
-    descr: 一个美观、支持高度自定义的Hexo主题
+  - class_name: USTC LUG
+    class_desc: 中科大LUG社团的一些相关网站  
+    link_list:
+    - name: 官网
+      link: https://lug.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6135bb65-6b0d-4fec-9cc9-a38a5b57dff9.png
+      descr: 主页、新闻站、LUG Planet（社团博客）
+    - name: FTP
+      link: https://ftp.lug.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/434d833b-ac84-4321-8b29-5c272f7992d3.png
+      descr: LUG FTP
+    - name: 开源镜像站
+      link: https://mirrors.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/249fa71b-22e8-4e94-88a0-490c3200cfd2.png
+      descr: 中科大开源镜像站
+    - name: GitHub账号
+      link: https://github.com/ustclug
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6135bb65-6b0d-4fec-9cc9-a38a5b57dff9.png
+      descr: LUG的官方GitHub账号
+    - name: LUG GitLab
+      link: https://git.lug.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/4ffd08c3-ff9d-4695-af5f-b89717f8d40a.svg
+      descr: LUG社团维护的代码托管平台
+    - name: VLAB
+      link: https://vlab.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6a87c5c6-e732-4a22-8b5c-20349e3cc812.png
+      descr: VLAB 实验中心
+    - name: 清华大学TUNA协会
+      link: https://tuna.moe/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/f591bc36-6433-4591-aba7-19848be079f5.png
+      descr: 清华网络技术和开源软件爱好者、技术宅组成的团体
 
-- class_name: USTC LUG
-  class_desc: 中科大LUG社团的一些相关网站  
-  link_list:
-  - name: 官网
-    link: https://lug.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6135bb65-6b0d-4fec-9cc9-a38a5b57dff9.png
-    descr: 主页、新闻站、LUG Planet（社团博客）
-  - name: FTP
-    link: https://ftp.lug.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/434d833b-ac84-4321-8b29-5c272f7992d3.png
-    descr: LUG FTP
-  - name: 开源镜像站
-    link: https://mirrors.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/249fa71b-22e8-4e94-88a0-490c3200cfd2.png
-    descr: 中科大开源镜像站
-  - name: GitHub账号
-    link: https://github.com/ustclug
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6135bb65-6b0d-4fec-9cc9-a38a5b57dff9.png
-    descr: LUG的官方GitHub账号
-  - name: LUG GitLab
-    link: https://git.lug.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/svg/4ffd08c3-ff9d-4695-af5f-b89717f8d40a.svg
-    descr: LUG社团维护的代码托管平台
-  - name: VLAB
-    link: https://vlab.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6a87c5c6-e732-4a22-8b5c-20349e3cc812.png
-    descr: VLAB 实验中心
-  - name: 清华大学TUNA协会
-    link: https://tuna.moe/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/f591bc36-6433-4591-aba7-19848be079f5.png
-    descr: 清华网络技术和开源软件爱好者、技术宅组成的团体
+  - class_name: 算法刷题
+    class_desc: ''
+    link_list:
+    - name: 洛谷
+      link: https://www.luogu.com.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/fe462595-5364-4533-9362-980adfcb67f9.png
+      descr: 一个OI刷题网站
+    - name: LeetCode
+      link: https://leetcode.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/58115adc-70d5-46ba-8406-059324606539.png
+      descr: 海量技术面试题库
+  - class_name: CTF相关
+    class_desc: ''
+    link_list:
+    - name: Hackergame
+      link: https://hack.lug.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/60dc7dff-4fc9-439d-9fed-c76873294685.svg
+      descr: 中科大LUG社团主办的娱乐向信息安全大赛
+    - name: PKU GeekGame
+      link: https://geekgame.pku.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/96b613fc-abd8-44fa-b11d-b81a46c8fe99.png
+      descr: 北京大学主办的娱乐向信息安全综合能力竞赛
+    - name: CTF Wiki
+      link: https://ctf-wiki.org/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/cb5bcf58-6bf1-4bb8-a317-80c2919ab270.png
+      descr: 一份适合新手的CTF学习指南
+    - name: CTF-All-In-One
+      link: https://firmianay.gitbook.io/ctf-all-in-one
+      avatar: https://blogfiles.oss.fyz666.xyz/png/782b1161-72bf-448b-b522-1cc0f3f4f23a.png
+      descr: CTF竞赛权威指南
 
-- class_name: 算法刷题
-  class_desc: ''
-  link_list:
-  - name: 洛谷
-    link: https://www.luogu.com.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/fe462595-5364-4533-9362-980adfcb67f9.png
-    descr: 一个OI刷题网站
-  - name: LeetCode
-    link: https://leetcode.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/58115adc-70d5-46ba-8406-059324606539.png
-    descr: 海量技术面试题库
-- class_name: CTF相关
-  class_desc: ''
-  link_list:
-  - name: Hackergame
-    link: https://hack.lug.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/svg/60dc7dff-4fc9-439d-9fed-c76873294685.svg
-    descr: 中科大LUG社团主办的娱乐向信息安全大赛
-  - name: PKU GeekGame
-    link: https://geekgame.pku.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/96b613fc-abd8-44fa-b11d-b81a46c8fe99.png
-    descr: 北京大学主办的娱乐向信息安全综合能力竞赛
-  - name: CTF Wiki
-    link: https://ctf-wiki.org/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/cb5bcf58-6bf1-4bb8-a317-80c2919ab270.png
-    descr: 一份适合新手的CTF学习指南
-  - name: CTF-All-In-One
-    link: https://firmianay.gitbook.io/ctf-all-in-one
-    avatar: https://blogfiles.oss.fyz666.xyz/png/782b1161-72bf-448b-b522-1cc0f3f4f23a.png
-    descr: CTF竞赛权威指南
+  - class_name: 各类素材
+    class_desc: ''
+    link_list:
+    - name: Font Awesome
+      link: https://fontawesome.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6a3b7cd6-2000-4e74-a14d-1557d3c181d2.png
+      descr: 美观、免费的网页图标库
+    - name: Pinterest
+      link: https://www.pinterest.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/eda5266f-5d03-4164-8467-843c47c30c86.png
+      descr: 一个以视觉方式分享、发现创意点子的社区
+    - name: Pexel
+      link: https://www.pexels.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/499c7838-1f32-4130-8caf-bb08ab9955e2.png
+      descr: 摄影图片、视频分享社区
+    - name: 阿里巴巴矢量图标库
+      link: https://www.iconfont.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/922024c5-d828-4a2a-9b50-d70a1ad97f06.png
+      descr: 包含海量矢量图标素材
+    - name: WallpapersCraft
+      link: https://wallpaperscraft.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/59b4cd78-0c2b-462c-aa48-76b1622765f4.png
+      descr: 免费下载大量高清壁纸
+    - name: macOSicons
+      link: https://macosicons.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/98976beb-c13a-4adb-b895-5a8f30295507.png
+      descr: 海量免费的MacOS系列应用程序图标包
+    - name: FlatIcon
+      link: https://www.flaticon.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/aa289aa7-0af7-4bb0-b8bb-c0c2499849b1.png
+      descr: 海量免费图标下载
 
-- class_name: 各类素材
-  class_desc: ''
-  link_list:
-  - name: Font Awesome
-    link: https://fontawesome.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6a3b7cd6-2000-4e74-a14d-1557d3c181d2.png
-    descr: 美观、免费的网页图标库
-  - name: Pinterest
-    link: https://www.pinterest.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/eda5266f-5d03-4164-8467-843c47c30c86.png
-    descr: 一个以视觉方式分享、发现创意点子的社区
-  - name: Pexel
-    link: https://www.pexels.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/499c7838-1f32-4130-8caf-bb08ab9955e2.png
-    descr: 摄影图片、视频分享社区
-  - name: 阿里巴巴矢量图标库
-    link: https://www.iconfont.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/922024c5-d828-4a2a-9b50-d70a1ad97f06.png
-    descr: 包含海量矢量图标素材
-  - name: WallpapersCraft
-    link: https://wallpaperscraft.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/59b4cd78-0c2b-462c-aa48-76b1622765f4.png
-    descr: 免费下载大量高清壁纸
-  - name: macOSicons
-    link: https://macosicons.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/98976beb-c13a-4adb-b895-5a8f30295507.png
-    descr: 海量免费的MacOS系列应用程序图标包
-  - name: FlatIcon
-    link: https://www.flaticon.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/aa289aa7-0af7-4bb0-b8bb-c0c2499849b1.png
-    descr: 海量免费图标下载
+  - class_name: 其他资源
+    class_desc: ''  
+    link_list:
+    - name: 北邮人PT
+      link: https://byr.pt/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/20f537cf-ff5c-4e75-8d1e-be78b8769174.png
+      descr: 一个资源丰富的IPv6 PT站
+    - name: CivitAI
+      link: https://civitai.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/jpg/b8fd44e3-063e-4aa2-9358-23c37ff99bbb.jpg
+      descr: 开源生成式图像AI模型大全
+    - name: Animate.css
+      link: https://animate.style/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/dd6a1244-41f0-4729-a278-3851161d8915.png
+      descr: 简洁平滑的CSS动画库
+    - name: GreasyFork
+      link: https://greasyfork.org/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/03d2f8b7-3081-4149-a341-6ec1bde7f43f.png
+      descr: 包含海量的油猴用户脚本
+  - class_name: 学习指南
+    class_desc: 在线书籍、学习资料  
+    link_list:
+    - name: Linux 101
+      link: https://101.lug.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/0c855890-0c8e-4c89-be7b-ed89969fd27d.svg
+      descr: 科大LUG社团编写的面向零基础读者的Linux指南
+    - name: OI Wiki
+      link: https://oi-wiki.org/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/86e80713-da71-4832-8eac-1b8b87ca2e52.png
+      descr: 免费开放且持续更新的编程竞赛知识整合站点
+    - name: 现代 C++ 教程
+      link: https://changkun.de/modern-cpp/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/541b79b5-ea97-4cf1-8e9a-b714679d4768.png
+      descr: 高速上手 C++ 11/14/17/20
+    - name: Hello 算法
+      link: https://www.hello-algo.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/c289d648-882e-478d-8bad-b7a82e0ea07e.png
+      descr: 动画图解、一键运行的数据结构与算法教程
+    - name: C 语言教程
+      link: https://wangdoc.com/clang/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/5d50bd26-87bd-4d0e-99e5-0eb44a804288.png
+      descr: 阮一峰老师维护编写的 C 语言入门教程
 
-- class_name: 其他资源
-  class_desc: ''  
-  link_list:
-  - name: 北邮人PT
-    link: https://byr.pt/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/20f537cf-ff5c-4e75-8d1e-be78b8769174.png
-    descr: 一个资源丰富的IPv6 PT站
-  - name: CivitAI
-    link: https://civitai.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/jpg/b8fd44e3-063e-4aa2-9358-23c37ff99bbb.jpg
-    descr: 开源生成式图像AI模型大全
-  - name: Animate.css
-    link: https://animate.style/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/dd6a1244-41f0-4729-a278-3851161d8915.png
-    descr: 简洁平滑的CSS动画库
-  - name: GreasyFork
-    link: https://greasyfork.org/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/03d2f8b7-3081-4149-a341-6ec1bde7f43f.png
-    descr: 包含海量的油猴用户脚本
-- class_name: 学习指南
-  class_desc: 在线书籍、学习资料  
-  link_list:
-  - name: Linux 101
-    link: https://101.lug.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/svg/0c855890-0c8e-4c89-be7b-ed89969fd27d.svg
-    descr: 科大LUG社团编写的面向零基础读者的Linux指南
-  - name: OI Wiki
-    link: https://oi-wiki.org/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/86e80713-da71-4832-8eac-1b8b87ca2e52.png
-    descr: 免费开放且持续更新的编程竞赛知识整合站点
-  - name: 现代 C++ 教程
-    link: https://changkun.de/modern-cpp/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/541b79b5-ea97-4cf1-8e9a-b714679d4768.png
-    descr: 高速上手 C++ 11/14/17/20
-  - name: Hello 算法
-    link: https://www.hello-algo.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/c289d648-882e-478d-8bad-b7a82e0ea07e.png
-    descr: 动画图解、一键运行的数据结构与算法教程
-  - name: C 语言教程
-    link: https://wangdoc.com/clang/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/5d50bd26-87bd-4d0e-99e5-0eb44a804288.png
-    descr: 阮一峰老师维护编写的 C 语言入门教程
+  - class_name: 常用科大网络资源
+    class_desc: ''
+    link_list:
+    - name: USTC导航
+      link: https://ustc.life/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/5284ac5b-0717-4c63-9fa0-5d747ae79755.png
+      descr: 相当全面的妮可资源导航站
+    - name: 正版软件下载平台
+      link: https://zbh.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/10493745-66e6-4a3b-b45c-30f6693c2c9c.png
+      descr: 正版软件下载，需要校园网。
+    - name: 科大邮箱
+      link: https://mail.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/b2a015b6-a226-48b6-8694-fc1b157fbb3a.png
+      descr: 学校提供的邮件系统
+    - name: 公共查询
+      link: https://catalog.ustc.edu.cn/query/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/e484fcff-1f30-4ea9-9849-2f7d117683e5.png
+      descr: 全校开课情况查询平台
+    - name: Web VPN
+      link: https://wvpn.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/6254c057-a568-4106-91fd-359d03b5079b.png
+      descr: 用来校外访问校内限定的资源
+    - name: 表白墙
+      link: http://ustcbbq.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/7f5124e7-2ec8-46dc-9de0-3821e657906c.png
+      descr: 大家都懂
+    - name: LaTeX平台
+      link: https://latex.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/c1429ce9-7fdc-458c-a157-b2dc69ea8bf9.png
+      descr: USTC LaTeX 多人协作编辑排版工具
+    - name: 个人FTP空间
+      link: https://home.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/jpg/6df834ed-4f17-4537-b231-8e85866239c8.jpg
+      descr: 可用来建立个人网站（已不再开放注册）
+    - name: 睿客网
+      link: https://rec.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/3a28bac7-60aa-4e32-a142-d14256f9a3ca.png
+      descr: 高效的存储、协作、过程管理平台
+    - name: 网络通
+      link: https://wlt.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/caf84d01-82e9-4c2e-9117-78d8157f4658.png
+      descr: 别上了四年学还不知道怎么连校园网
+    - name: 南七集市
+      link: https://nan7market.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/3a6890f3-5585-47ad-925c-2c74408c2dc9.png
+      descr: 方便科大同学进行二手交易的网络社区
+    - name: 南七茶馆
+      link: https://ustcforum.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/071214a6-02e2-4346-bb40-fcb5cc9740a4.png
+      descr: 科大学生的论坛
+    - name: 中科大测速站
+      link: https://test.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/2497338a-b74e-4738-bd64-da3b573c21f5.png
+      descr: 非常纯粹的测速站，支持IPv6
+    - name: 中科大超算中心
+      link: https://scc.ustc.edu.cn/portal/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/292ff488-20bc-4b8f-a97e-3839e581a065.png
+      descr: 科大超算算力租用平台
+    - name: 窝壳学社
+      link: https://ot.ustc.edu.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/845bb75f-c046-4b65-986e-69971bd8f0ba.png
+      descr: 面向科大学生的在线学业辅导与交流平台
+    - name: USTC评课社区
+      link: https://icourse.club/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/5f945ae1-53a4-4357-9e5f-6587d2ca07f8.png
+      descr: 科大学生点评课程，获取课程信息的平台
 
-- class_name: 常用科大网络资源
-  class_desc: ''
-  link_list:
-  - name: USTC导航
-    link: https://ustc.life/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/5284ac5b-0717-4c63-9fa0-5d747ae79755.png
-    descr: 相当全面的妮可资源导航站
-  - name: 正版软件下载平台
-    link: https://zbh.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/10493745-66e6-4a3b-b45c-30f6693c2c9c.png
-    descr: 正版软件下载，需要校园网。
-  - name: 科大邮箱
-    link: https://mail.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/b2a015b6-a226-48b6-8694-fc1b157fbb3a.png
-    descr: 学校提供的邮件系统
-  - name: 公共查询
-    link: https://catalog.ustc.edu.cn/query/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/e484fcff-1f30-4ea9-9849-2f7d117683e5.png
-    descr: 全校开课情况查询平台
-  - name: Web VPN
-    link: https://wvpn.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/6254c057-a568-4106-91fd-359d03b5079b.png
-    descr: 用来校外访问校内限定的资源
-  - name: 表白墙
-    link: http://ustcbbq.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/7f5124e7-2ec8-46dc-9de0-3821e657906c.png
-    descr: 大家都懂
-  - name: LaTeX平台
-    link: https://latex.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/c1429ce9-7fdc-458c-a157-b2dc69ea8bf9.png
-    descr: USTC LaTeX 多人协作编辑排版工具
-  - name: 个人FTP空间
-    link: https://home.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/jpg/6df834ed-4f17-4537-b231-8e85866239c8.jpg
-    descr: 可用来建立个人网站（已不再开放注册）
-  - name: 睿客网
-    link: https://rec.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/3a28bac7-60aa-4e32-a142-d14256f9a3ca.png
-    descr: 高效的存储、协作、过程管理平台
-  - name: 网络通
-    link: https://wlt.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/caf84d01-82e9-4c2e-9117-78d8157f4658.png
-    descr: 别上了四年学还不知道怎么连校园网
-  - name: 南七集市
-    link: https://nan7market.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/3a6890f3-5585-47ad-925c-2c74408c2dc9.png
-    descr: 方便科大同学进行二手交易的网络社区
-  - name: 南七茶馆
-    link: https://ustcforum.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/071214a6-02e2-4346-bb40-fcb5cc9740a4.png
-    descr: 科大学生的论坛
-  - name: 中科大测速站
-    link: https://test.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/2497338a-b74e-4738-bd64-da3b573c21f5.png
-    descr: 非常纯粹的测速站，支持IPv6
-  - name: 中科大超算中心
-    link: https://scc.ustc.edu.cn/portal/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/292ff488-20bc-4b8f-a97e-3839e581a065.png
-    descr: 科大超算算力租用平台
-  - name: 窝壳学社
-    link: https://ot.ustc.edu.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/845bb75f-c046-4b65-986e-69971bd8f0ba.png
-    descr: 面向科大学生的在线学业辅导与交流平台
-  - name: USTC评课社区
-    link: https://icourse.club/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/5f945ae1-53a4-4357-9e5f-6587d2ca07f8.png
-    descr: 科大学生点评课程，获取课程信息的平台
-
-- class_name: 魔方
-  class_desc: 博主甚至还是个魔友（虽然中途有十年没玩了并且贼菜）
-  link_list:
-  - name: CFOP
-    link: /cfop/
-    avatar: https://blogfiles.oss.fyz666.xyz/webp/71a106e8-419c-492e-bb5f-98de492e58bd.webp
-    descr: 博主自用的公式集（长期更新）
-  - name: Cubing.net
-    link: https://cubing.net/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/e61d5620-72e4-43ca-8039-0cdd4855cab7.png
-    descr: 魔方相关的各种工具
-  - name: CubeSkills
-    link: https://www.cubeskills.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/55e9b5a3-2b6f-4263-8f03-6aad9364ab48.png
-    descr: 由 Feliks Zemdegs（菲神）创建的魔方教学网站
-  - name: CubingGG
-    link: https://www.cubing.gg/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/80348760-d0bb-4054-8367-99c426b0b7e7.png
-    descr: 一个魔方进阶教学平台
-  - name: 魔方小站
-    link: http://www.rubik.com.cn/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/2894b66e-5add-4aec-8295-9d8883f0d4db.png
-    descr: 童年玩魔方时梦开始的地方
-  - name: Solve The Cube
-    link: https://solvethecube.com/
-    avatar: https://blogfiles.oss.fyz666.xyz/png/41a5e267-8869-4723-964f-c50ad7aef41c.png
-    descr: 一个海外的魔方教学网站
+  - class_name: 魔方
+    class_desc: 博主甚至还是个魔友（虽然中途有十年没玩了并且贼菜）
+    link_list:
+    - name: CFOP
+      link: /cfop/
+      avatar: https://blogfiles.oss.fyz666.xyz/webp/71a106e8-419c-492e-bb5f-98de492e58bd.webp
+      descr: 博主自用的公式集（长期更新）
+    - name: Cubing.net
+      link: https://cubing.net/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/e61d5620-72e4-43ca-8039-0cdd4855cab7.png
+      descr: 魔方相关的各种工具
+    - name: CubeSkills
+      link: https://www.cubeskills.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/55e9b5a3-2b6f-4263-8f03-6aad9364ab48.png
+      descr: 由 Feliks Zemdegs（菲神）创建的魔方教学网站
+    - name: CubingGG
+      link: https://www.cubing.gg/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/80348760-d0bb-4054-8367-99c426b0b7e7.png
+      descr: 一个魔方进阶教学平台
+    - name: 魔方小站
+      link: http://www.rubik.com.cn/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/2894b66e-5add-4aec-8295-9d8883f0d4db.png
+      descr: 童年玩魔方时梦开始的地方
+    - name: Solve The Cube
+      link: https://solvethecube.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/41a5e267-8869-4723-964f-c50ad7aef41c.png
+      descr: 一个海外的魔方教学网站

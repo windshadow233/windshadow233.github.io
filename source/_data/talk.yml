@@ -1,365 +1,364 @@
-- class_name: 说说
-  title: 说说
-  subTitle: 博主的摸鱼日常
-  tips: 分享日常生活，偶尔发表各种想法与吐槽
-  buttonLink: /about/
-  buttonText: 关于我
-  limit: 50
-  top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
-  talk_list:
-    - content: |
-        这几天每天抽出点空闲的时间，断断续续的拼了个 1000 片的拼图🧩：梵高的《星月夜》。非常好看，裱起来以后挂家里～
-      date: 2025/04/05 01:45
-      tag:
-        - 拼图
-      image:
-        - https://blogfiles.oss.fyz666.xyz/avif/ad02be68-e077-4cc9-8aae-0ae7524452ea.avif
-        - https://blogfiles.oss.fyz666.xyz/avif/e9f482e9-ff08-44e5-b523-fd6649fe605c.avif
-    - content: |
-        再破 PB：10.77s
-        喜闻乐见，今天手感一直很差，但遇到了个比较简单的打乱，运气很好：四步白底 Cross， 三个不用换手的 F，还跳了 P。
-        记录一下打乱和解法。
-      date: 2025/03/23 18:06
-      tag:
-        - 魔方
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/919611f1-690f-4e6c-a460-01ba093955f6.webp
-      link:
-        - url: https://alpha.twizzle.net/edit/?setup-alg=L2+U2+F%27+R2+B%27+U2+R2+B%27+R2+F2+R2+D+U%27+B+L+F%27+U2+L%27&alg=x2+y+%2F%2F+inspection%0AD+L+R%27+D+%2F%2F+Cross%0AR%27+U+R+U%27+R%27+U%27+R+%2F%2F+1st+slot%0AU2%27+R+U+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AL%27+U2+L+U+L%27+U%27+L+%2F%2F+3rd+slot%0Ay%27+L%27+U%27+L+U2+L%27+U+L+U%27+L%27+U+L+%2F%2F+4th+slot%0AR+U+R%27+U%27+M%27+U+R+U%27+r%27+%2F%2F+OLL+%2F+1LLL%0AU+%2F%2F+AUF
-          name: 我的解法
-    - content: |
-        博士开题顺利通过✅ 可喜可贺！
-        虽然讲的磕磕绊绊，但好像很水的样子，不像实验室内部流传的那样「比较难」、「容易挂人」，答辩组老师们也十分和蔼可亲。
-      date: 2025/03/19 17:38
-      tag:
-        - 博士开题
-    - content: |
-        又破 PB 了：12.29s。
-        运气好，出了个 XC，后面三个 F 都比较顺，OLL 和 PLL 几乎是最顺手的两个公式，就这样才只有12s，实在是太菜了。
+title: 说说
+subTitle: 博主的摸鱼日常
+tips: 分享日常生活，偶尔发表各种想法与吐槽
+buttonLink: /about/
+buttonText: 关于我
+limit: 50
+top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
+talk_list:
+  - content: |
+      这几天每天抽出点空闲的时间，断断续续的拼了个 1000 片的拼图🧩：梵高的《星月夜》。非常好看，裱起来以后挂家里～
+    date: 2025/04/05 01:45
+    tag:
+      - 拼图
+    image:
+      - https://blogfiles.oss.fyz666.xyz/avif/ad02be68-e077-4cc9-8aae-0ae7524452ea.avif
+      - https://blogfiles.oss.fyz666.xyz/avif/e9f482e9-ff08-44e5-b523-fd6649fe605c.avif
+  - content: |
+      再破 PB：10.77s
+      喜闻乐见，今天手感一直很差，但遇到了个比较简单的打乱，运气很好：四步白底 Cross， 三个不用换手的 F，还跳了 P。
+      记录一下打乱和解法。
+    date: 2025/03/23 18:06
+    tag:
+      - 魔方
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/919611f1-690f-4e6c-a460-01ba093955f6.webp
+    link:
+      - url: https://alpha.twizzle.net/edit/?setup-alg=L2+U2+F%27+R2+B%27+U2+R2+B%27+R2+F2+R2+D+U%27+B+L+F%27+U2+L%27&alg=x2+y+%2F%2F+inspection%0AD+L+R%27+D+%2F%2F+Cross%0AR%27+U+R+U%27+R%27+U%27+R+%2F%2F+1st+slot%0AU2%27+R+U+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AL%27+U2+L+U+L%27+U%27+L+%2F%2F+3rd+slot%0Ay%27+L%27+U%27+L+U2+L%27+U+L+U%27+L%27+U+L+%2F%2F+4th+slot%0AR+U+R%27+U%27+M%27+U+R+U%27+r%27+%2F%2F+OLL+%2F+1LLL%0AU+%2F%2F+AUF
+        name: 我的解法
+  - content: |
+      博士开题顺利通过✅ 可喜可贺！
+      虽然讲的磕磕绊绊，但好像很水的样子，不像实验室内部流传的那样「比较难」、「容易挂人」，答辩组老师们也十分和蔼可亲。
+    date: 2025/03/19 17:38
+    tag:
+      - 博士开题
+  - content: |
+      又破 PB 了：12.29s。
+      运气好，出了个 XC，后面三个 F 都比较顺，OLL 和 PLL 几乎是最顺手的两个公式，就这样才只有12s，实在是太菜了。
 
-        并且后来复盘发现还有一个解法可以直接跳 P，慢拧都能sub 10。
-      date: 2025/03/19 01:12
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/e4003c82-80f1-451b-870e-0e9fe1d6c815.png
-      link:
-        - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AR%27+U%27+R+U2%27+R%27+U+R+%2F%2F+3rd+slot%0AL+U%27+L%27+U2%27+y%27+L%27+U%27+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+R+U%27+R%27+U2%27+R+%2F%2F+OLL%0AU2%27+R+U+R%27+F%27+R+U+R%27+U%27+R%27+F+R2+U%27+R%27+%2F%2F+PLL%0AU%27+%2F%2F+AUF&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
-          name: 我的解法
-        - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U+R%27+U%27+R+%2F%2F+2nd+slot%0AU%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+3rd+slot%0Ay%27+U+L%27+U2+L+U2%27+L%27+U+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+F+U+R+U%27+R%27+F%27+R+%2F%2F+OLL+%2F+1LLL&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
-          name: 更好的解法
-      tag:
-        - 魔方
-    - content: |
-        明天博士开题答辩，肝了一个礼拜开题报告+PPT之后，自以为做好了我的垃圾水平所能及的准备了。遂玩了几把魔方放松心情，发现水平有了一点提升～
-      date: 2025/03/18 15:13
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/04b8a2fd-cf21-44e0-8108-351f5b6a53f5.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/e03e2432-6903-4865-881b-3fd36f612371.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/b97992ff-6d54-4773-8902-fe342cb3205c.webp
-      tag:
-        - 博士开题
-        - 魔方
-    - content: |
-        记一次行李箱被错拿的惨痛经历：
-        在回校的高铁上，习惯性的把我和女朋友的行李箱放在了最后一排座位的靠背后（正好一左一右两个坑）。下车的时候，一看发现女朋友的粉色行李箱（如图 1）不见了，在原来的位置上赫然放了一个蓝色的很胖的行李箱（如图 2）。
-        火速叫来了列车长、乘警，在邻近的车厢搜寻了一番未果后联系了终点站（武汉站）的警方。警方表示需要等列车入库后调取监控，于是我们只能先回合肥等消息。
-        列车到达武汉站后，警方发现车上有一个行李箱无人认领，恰好就是那个蓝色行李箱。于是，大概率就是这个蓝色行李箱的主人（后文记为 A）错拿了我们的粉色箱子下去。
-        鉴于两个箱子无论是颜色还是形状都完全不一样，我们觉得 A 在下车以后很快就会发现箱子拿错了，理应会立刻联系铁路方，故我们麻烦列车长有任何消息便告知我们。
-        另一方面，武汉警方调取了车内监控，在监控盲区人脸辨识度不高的情况下，判定蓝色行李箱是在杭州东站上车的，不过此时尚未定位到人，也暂未发现我们的箱子是何时被人拿下去的。
-        此时已经两天过去了，列车长那边没有任何消息，这似乎意味着 A 还没有意识到自己拿错了箱子，然而这非常不合常理。考虑到丢失的行李箱内的一些物品价值较大（上万元），我们开始对错拿箱子的人产生了怀疑。
-        在这两天当中，我们也没闲着，我们给所有途经站的失物招领处都打了电话，（以防 A 在发现错拿了箱子以后直接丢在高铁站），然而都没有找到。
-        
-        第四天，警方联系我们，表示在申请调取了更多的监控后，又有了一些新的线索，同时警方也已经获取到了本次列车的乘客实名信息。经过两个小时左右的信息比对，终于破案了。
-        <div class="hide-block">
-          <button class="hide-button" onclick="this.classList.add('open');talk.reflashTalkWaterFall();">到底是怎么一回事呢？</button>
-          <div class="hide-content" style="font-size: 13px;color: white;">
-          以下事情经过来自警方对 A 的询问。
-          <br>
-          A 在合肥南下车（甚至和我们同一站）时，因匆忙赶路误拿了我们的箱子，随后我们赶到，发现箱子被调包。
-          <br>
-          A 下车后，匆忙赶高铁换乘，一路拖着错误的行李箱上了另一辆高铁，奇怪的是，直到上车放好箱子时，她都没有发现自己拿错了（后文将解释为什么会断定她此时还没发现）。
-          <br> A 坐了一站准备下车时，终于发现了问题，她发现她原来放箱子的地方放了一个粉色的箱子，并不是自己的蓝色箱子。
-          <br> A 心急火燎，在车上和列车长 battle，笃定在这辆车上有人拿了她的箱子（这可以解释「我断定前面她上车放完箱子的时候还没发现」），并试图找到自己的箱子，故没有在该站下车。
-          <br> A 又多坐了一站后，终于决定先回家等着，同时她把我们的箱子放到了这一站（太湖南）（所以我们在前面的所有途经站都没有找到箱子）
-          <br> 由于 A 笃定是在第二辆车上丢的行李箱（为什么能这么笃定我也很纳闷），她始终没有去联系第一辆列车的列车长，因此两天过去后，那个蓝色箱子仍无人认领。
-          <br> 至此，所有的谜团真相大白，我们也终于找回了自己的箱子。在这件事上，我们由衷地感谢武汉铁路公安处武汉乘警支队的鼎力相助，尤其是雷警官，在多次被我俩催促骚扰的情况下仍耐心相助，此乃高效又不失规范为百姓办事的典范（锦旗已经在路上了）。
-          <br> 最后，以后再也不会把箱子放到那个地方了...
-          </div>
+      并且后来复盘发现还有一个解法可以直接跳 P，慢拧都能sub 10。
+    date: 2025/03/19 01:12
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/e4003c82-80f1-451b-870e-0e9fe1d6c815.png
+    link:
+      - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AR%27+U%27+R+U2%27+R%27+U+R+%2F%2F+3rd+slot%0AL+U%27+L%27+U2%27+y%27+L%27+U%27+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+R+U%27+R%27+U2%27+R+%2F%2F+OLL%0AU2%27+R+U+R%27+F%27+R+U+R%27+U%27+R%27+F+R2+U%27+R%27+%2F%2F+PLL%0AU%27+%2F%2F+AUF&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
+        name: 我的解法
+      - url: https://alpha.twizzle.net/edit/?alg=x%27+%2F%2F+inspection%0AL+D+U%27+x%27+U%27+R%27+F+D+%2F%2F+XC%0AR+U%27+R%27+U+R%27+U%27+R+%2F%2F+2nd+slot%0AU%27+R+U%27+R%27+U+R+U%27+R%27+%2F%2F+3rd+slot%0Ay%27+U+L%27+U2+L+U2%27+L%27+U+L+%2F%2F+4th+slot%0AU%27+R%27+U%27+F+U+R+U%27+R%27+F%27+R+%2F%2F+OLL+%2F+1LLL&setup-alg=R%27+L2+F+L2+B+D2+B2+U2+L2+B%27+R2+B2+D2+L+U2+F2+D%27+B%27+L+U%27+F%27
+        name: 更好的解法
+    tag:
+      - 魔方
+  - content: |
+      明天博士开题答辩，肝了一个礼拜开题报告+PPT之后，自以为做好了我的垃圾水平所能及的准备了。遂玩了几把魔方放松心情，发现水平有了一点提升～
+    date: 2025/03/18 15:13
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/04b8a2fd-cf21-44e0-8108-351f5b6a53f5.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/e03e2432-6903-4865-881b-3fd36f612371.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/b97992ff-6d54-4773-8902-fe342cb3205c.webp
+    tag:
+      - 博士开题
+      - 魔方
+  - content: |
+      记一次行李箱被错拿的惨痛经历：
+      在回校的高铁上，习惯性的把我和女朋友的行李箱放在了最后一排座位的靠背后（正好一左一右两个坑）。下车的时候，一看发现女朋友的粉色行李箱（如图 1）不见了，在原来的位置上赫然放了一个蓝色的很胖的行李箱（如图 2）。
+      火速叫来了列车长、乘警，在邻近的车厢搜寻了一番未果后联系了终点站（武汉站）的警方。警方表示需要等列车入库后调取监控，于是我们只能先回合肥等消息。
+      列车到达武汉站后，警方发现车上有一个行李箱无人认领，恰好就是那个蓝色行李箱。于是，大概率就是这个蓝色行李箱的主人（后文记为 A）错拿了我们的粉色箱子下去。
+      鉴于两个箱子无论是颜色还是形状都完全不一样，我们觉得 A 在下车以后很快就会发现箱子拿错了，理应会立刻联系铁路方，故我们麻烦列车长有任何消息便告知我们。
+      另一方面，武汉警方调取了车内监控，在监控盲区人脸辨识度不高的情况下，判定蓝色行李箱是在杭州东站上车的，不过此时尚未定位到人，也暂未发现我们的箱子是何时被人拿下去的。
+      此时已经两天过去了，列车长那边没有任何消息，这似乎意味着 A 还没有意识到自己拿错了箱子，然而这非常不合常理。考虑到丢失的行李箱内的一些物品价值较大（上万元），我们开始对错拿箱子的人产生了怀疑。
+      在这两天当中，我们也没闲着，我们给所有途经站的失物招领处都打了电话，（以防 A 在发现错拿了箱子以后直接丢在高铁站），然而都没有找到。
+      
+      第四天，警方联系我们，表示在申请调取了更多的监控后，又有了一些新的线索，同时警方也已经获取到了本次列车的乘客实名信息。经过两个小时左右的信息比对，终于破案了。
+      <div class="hide-block">
+        <button class="hide-button" onclick="this.classList.add('open');talk.reflashTalkWaterFall();">到底是怎么一回事呢？</button>
+        <div class="hide-content" style="font-size: 13px;color: white;">
+        以下事情经过来自警方对 A 的询问。
+        <br>
+        A 在合肥南下车（甚至和我们同一站）时，因匆忙赶路误拿了我们的箱子，随后我们赶到，发现箱子被调包。
+        <br>
+        A 下车后，匆忙赶高铁换乘，一路拖着错误的行李箱上了另一辆高铁，奇怪的是，直到上车放好箱子时，她都没有发现自己拿错了（后文将解释为什么会断定她此时还没发现）。
+        <br> A 坐了一站准备下车时，终于发现了问题，她发现她原来放箱子的地方放了一个粉色的箱子，并不是自己的蓝色箱子。
+        <br> A 心急火燎，在车上和列车长 battle，笃定在这辆车上有人拿了她的箱子（这可以解释「我断定前面她上车放完箱子的时候还没发现」），并试图找到自己的箱子，故没有在该站下车。
+        <br> A 又多坐了一站后，终于决定先回家等着，同时她把我们的箱子放到了这一站（太湖南）（所以我们在前面的所有途经站都没有找到箱子）
+        <br> 由于 A 笃定是在第二辆车上丢的行李箱（为什么能这么笃定我也很纳闷），她始终没有去联系第一辆列车的列车长，因此两天过去后，那个蓝色箱子仍无人认领。
+        <br> 至此，所有的谜团真相大白，我们也终于找回了自己的箱子。在这件事上，我们由衷地感谢武汉铁路公安处武汉乘警支队的鼎力相助，尤其是雷警官，在多次被我俩催促骚扰的情况下仍耐心相助，此乃高效又不失规范为百姓办事的典范（锦旗已经在路上了）。
+        <br> 最后，以后再也不会把箱子放到那个地方了...
         </div>
-      image: 
-        - https://blogfiles.oss.fyz666.xyz/png/b7878213-a583-4f7f-bbbe-dccdcf32ed8f.png
-        - https://blogfiles.oss.fyz666.xyz/jpg/03af2905-2110-4b5c-87db-c00fb2a6c31f.jpg
-      date: 2025/02/27 23:55
-      tag:
-        - 高铁行李箱错拿
-    - content: 情人节快乐！
-      date: 2025/02/14 16:36
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/76a87e7e-f7d1-4ee1-9e2d-e5cd07483a1d.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/63415a8c-7513-45ed-8456-77e47ea762d7.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/57a26826-4089-4172-9877-17789570f08f.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/3f175460-c88e-4dbb-ad92-7c3fc402965b.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/ec06b301-2b9c-4fb7-8a0e-a4b91411be67.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/9ec7dbc0-632e-4bc7-8235-68446b0962fb.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/be2df729-5c83-43a2-8d31-f7d70c3eec26.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/434f7699-e683-4633-80c8-e37f416a1219.webp
-    - content: 三步十字 + 跳o，喜破最近的 PB～
-      date: 2025/02/08 15:22
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/11e968d2-285d-4a31-801f-06233161cd09.png
-      tag:
-        - 魔方
-    - content: 我这个快 10 年没玩魔方的老魔友经过一段时间的“复健”后，浅浅测了个速，似乎比以前要变强了一些。（其中有一把转错了最后一个公式导致 DNF 的被我删了嘿嘿。
-        对于我这个老年人手速以及瞎子一般的观察预判能力而言真是不容易（争取早日 sub15！
-      date: 2025/02/06 12:09
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/046ace12-cdc9-4cf8-8b42-2e5fc22e0ab0.png
-      tag:
-        - 魔方
-    - content: 做了个页面用来记录个人自用的魔方公式。
-      date: 2025/01/15 17:18
-      link:
-        - url: /cfop/
-          name: CFOP 公式
-      tag:
-        - 魔方
-    - content: |
-        2025年元旦，我和相处近七年的女朋友终于订婚啦！
-        三年前，她努力考到了我所在的学校，结束了我俩的异地恋，在我的研究生学习期间一直陪在我身边，给予了我莫大的支持与鼓励，也让我生活中99.95%的时间充满了好心情。
-        七年一路走来，有欢笑也有泪水，有争吵也有和解，我们一起经历了许多，也一起成长了许多，我们逐渐能够包容、理解对方的小毛病。希望在未来我们能携手走过更多的美好日子。
+      </div>
+    image: 
+      - https://blogfiles.oss.fyz666.xyz/png/b7878213-a583-4f7f-bbbe-dccdcf32ed8f.png
+      - https://blogfiles.oss.fyz666.xyz/jpg/03af2905-2110-4b5c-87db-c00fb2a6c31f.jpg
+    date: 2025/02/27 23:55
+    tag:
+      - 高铁行李箱错拿
+  - content: 情人节快乐！
+    date: 2025/02/14 16:36
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/76a87e7e-f7d1-4ee1-9e2d-e5cd07483a1d.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/63415a8c-7513-45ed-8456-77e47ea762d7.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/57a26826-4089-4172-9877-17789570f08f.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/3f175460-c88e-4dbb-ad92-7c3fc402965b.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/ec06b301-2b9c-4fb7-8a0e-a4b91411be67.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/9ec7dbc0-632e-4bc7-8235-68446b0962fb.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/be2df729-5c83-43a2-8d31-f7d70c3eec26.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/434f7699-e683-4633-80c8-e37f416a1219.webp
+  - content: 三步十字 + 跳o，喜破最近的 PB～
+    date: 2025/02/08 15:22
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/11e968d2-285d-4a31-801f-06233161cd09.png
+    tag:
+      - 魔方
+  - content: 我这个快 10 年没玩魔方的老魔友经过一段时间的“复健”后，浅浅测了个速，似乎比以前要变强了一些。（其中有一把转错了最后一个公式导致 DNF 的被我删了嘿嘿。
+      对于我这个老年人手速以及瞎子一般的观察预判能力而言真是不容易（争取早日 sub15！
+    date: 2025/02/06 12:09
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/046ace12-cdc9-4cf8-8b42-2e5fc22e0ab0.png
+    tag:
+      - 魔方
+  - content: 做了个页面用来记录个人自用的魔方公式。
+    date: 2025/01/15 17:18
+    link:
+      - url: /cfop/
+        name: CFOP 公式
+    tag:
+      - 魔方
+  - content: |
+      2025年元旦，我和相处近七年的女朋友终于订婚啦！
+      三年前，她努力考到了我所在的学校，结束了我俩的异地恋，在我的研究生学习期间一直陪在我身边，给予了我莫大的支持与鼓励，也让我生活中99.95%的时间充满了好心情。
+      七年一路走来，有欢笑也有泪水，有争吵也有和解，我们一起经历了许多，也一起成长了许多，我们逐渐能够包容、理解对方的小毛病。希望在未来我们能携手走过更多的美好日子。
 
-        （昨天实在是太累太忙了，于是过了凌晨才有时间发这么一条）
-      date: 2025/01/02 01:08
-      image:
-        - https://blogfiles.oss.fyz666.xyz/jpg/b74f0376-7181-46cf-8d5d-6b7727cff5d4.jpg
-        - https://blogfiles.oss.fyz666.xyz/jpg/56b542fb-b4bf-4fb6-a814-96d08375b53d.jpg
-        - https://blogfiles.oss.fyz666.xyz/jpg/da803836-4c4c-46a3-a683-f7d1a2566fb6.jpg
-    - content: |
-        最近正在筹划和女朋友的订婚仪式，女朋友买了一些展示用的道具，其中包含两个风格颇为喜庆的图案魔方（如图 1）。
-        作为一个曾经的魔方发烧友（大概有快十年没认真玩了），在把玩了一段时间之后，感慨自己忘掉了很多 CFOP 公式的同时，又突然激发起了对魔方的兴趣。
-        遂一番调研，然后立刻下单了一款 GAN 11M Pro（如图 2）（差生文具多了属于是）。
-      date: 2024/12/31 02:05
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/b7c5b7db-4e9d-420b-acae-dc1c6c83c38e.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/7d2867f9-f19e-40ad-bf54-d4467a2d3b94.webp
-    - content: |
-        翻到了赛博丁真在一条 issue 下的所谓道歉回复，如图 1。
-        TL;DR:
-        1. 代码不是我写的，是我员工的锅，我没沟通好，我也有责任。
-        2. 删评？不可能删评的，去问平台怎么回事。
+      （昨天实在是太累太忙了，于是过了凌晨才有时间发这么一条）
+    date: 2025/01/02 01:08
+    image:
+      - https://blogfiles.oss.fyz666.xyz/jpg/b74f0376-7181-46cf-8d5d-6b7727cff5d4.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/56b542fb-b4bf-4fb6-a814-96d08375b53d.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/da803836-4c4c-46a3-a683-f7d1a2566fb6.jpg
+  - content: |
+      最近正在筹划和女朋友的订婚仪式，女朋友买了一些展示用的道具，其中包含两个风格颇为喜庆的图案魔方（如图 1）。
+      作为一个曾经的魔方发烧友（大概有快十年没认真玩了），在把玩了一段时间之后，感慨自己忘掉了很多 CFOP 公式的同时，又突然激发起了对魔方的兴趣。
+      遂一番调研，然后立刻下单了一款 GAN 11M Pro（如图 2）（差生文具多了属于是）。
+    date: 2024/12/31 02:05
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/b7c5b7db-4e9d-420b-acae-dc1c6c83c38e.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/7d2867f9-f19e-40ad-bf54-d4467a2d3b94.webp
+  - content: |
+      翻到了赛博丁真在一条 issue 下的所谓道歉回复，如图 1。
+      TL;DR:
+      1. 代码不是我写的，是我员工的锅，我没沟通好，我也有责任。
+      2. 删评？不可能删评的，去问平台怎么回事。
 
-        这个回复除了捶死了「自己不写代码只负责一些技术无关的工作」这个事实以外，没有任何价值以及作为一个道歉应该有的诚恳态度，反倒充满了各种甩锅，
-        先是把「违反 MIT 协议」的大锅甩给同事，自己背个「没有做好沟通与核实」的不痛不痒的小锅；再把删评的锅扔给平台（反正也不会真的有人去问平台是不是他们干的），你团队的控评可是出了名的，想忽悠谁呢？
+      这个回复除了捶死了「自己不写代码只负责一些技术无关的工作」这个事实以外，没有任何价值以及作为一个道歉应该有的诚恳态度，反倒充满了各种甩锅，
+      先是把「违反 MIT 协议」的大锅甩给同事，自己背个「没有做好沟通与核实」的不痛不痒的小锅；再把删评的锅扔给平台（反正也不会真的有人去问平台是不是他们干的），你团队的控评可是出了名的，想忽悠谁呢？
 
-        不过上述评价可能充满了我的主观偏见，说个有意思的客观事实吧，我点进去了赛博丁真的 GitHub 账号，如图 2，然后发现他居然是出了事以后才注册的 GitHub 账号。
-        可能一些人不太理解这个事情意味着什么，类比一下吧，这大概相当于一个拥有国内博士学位的人没用过知网<del>（翟*临：你再骂？）</del>。
+      不过上述评价可能充满了我的主观偏见，说个有意思的客观事实吧，我点进去了赛博丁真的 GitHub 账号，如图 2，然后发现他居然是出了事以后才注册的 GitHub 账号。
+      可能一些人不太理解这个事情意味着什么，类比一下吧，这大概相当于一个拥有国内博士学位的人没用过知网<del>（翟*临：你再骂？）</del>。
 
-        当然，也有可能是为了避免影响自己的“大号”而特意创了个“小号”，不过这个可能性较低，意义也不大。
-        另一种可能是这位 up 每天顶着游客身份上 GitHub（这似乎也不太像是一位合格的代码工作者应有的行为）。
-      date: 2024/11/26 04:24
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/d5e00cb0-270b-4a29-b5d7-4fa13680c705.png
-        - https://blogfiles.oss.fyz666.xyz/png/7f902c09-c2b7-4838-9dae-c39c90112acf.png
-      link:
-        - url: https://github.com/vietnh1009/ASCII-generator/issues/23#issuecomment-2487520201
-          name: 赛博丁真的回复
-      tag:
-        - 赛博丁真
-    - content: |
-        <a href="https://space.bilibili.com/163637592">赛博丁真</a> 又发力了。
-        
-        赛博丁真的最近一期视频《我用36万行备忘录做了个动画…》的0:56处，提到“所以我们专门写了一个软件”，
-        然而视频画面显示这个所谓的“自己写的软件”其实是 GitHub 上某活跃程序员 <a href="https://github.com/vietnh1009">vietnh1009</a> 的开源仓库 <a href="https://github.com/vietnh1009/ASCII-generator/">ASCII-generator</a>。
-        且不说视频里“直接在 GitHub 下载源代码压缩包并放在 Downloads 目录下解压运行”这种不专业的事（毕竟也不是一次两次了），你把人家代码里的作者版权信息给删了是什么意思？
-        甚至道歉公关文还辩称自己“确实不严谨”，我看未必，你们团队在“该严谨的地方”倒是非常的严谨，作者版权信息删的那叫一个干净。
-        在质疑声越来越大且惊动 GitHub 仓库的原作者后，赛博丁真团队火速删除了视频，这操作真是给人乐麻了。
-        
-        赛博丁真团队的这出操作严重违反了 MIT 开源协议（说起来为什么这么宽松的协议你还去违反），毫无版权意识，在被戳穿以后甚至不愿意发一个诚恳的道歉，这等 up 为何还能在中文互联网上游刃有余？
-      date: 2024/11/21 23:51
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/7dcb0ac3-a5d3-4705-b7af-d7d7bc7d13ee.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/7f61c8db-cae1-4631-b797-0af5b04c8090.webp
-      link:
-        - url: https://github.com/vietnh1009/ASCII-generator/issues/25
-          name: 相关 issue
-      tag:
-        - 赛博丁真
-    - content: |
-        参加了一年一度的 Hackergame，喜提组内二等奖。又可以去提货了，舒服！
-      date: 2024/11/10 17:57
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/2a3d517b-bdd5-4710-8633-43cb03af4eb9.png
-      link:
-        - url: https://hack.lug.ustc.edu.cn/
-          name: 比赛平台
-        - url: https://github.com/USTC-Hackergame/hackergame2024-writeups
-          name: 官方存档及题解
-        - url: /blog/12095/
-          name: 我的题解
-      tag:
-        - Hackergame
-    - content: |
-        今日麻将乐事：
-        （主视角为我的下家）
-        下家：咦，红中点了？小事，一番罢了。
-        （一秒后）
-        下家：？？?
-      date: 2024/10/10 16:37
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/3f6fedc2-8c07-41e7-ba9b-ee41001f0101.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/eb977ad6-5ee1-48cc-9c94-0795f4059559.webp
-      link:
-        - url: https://game.maj-soul.com/1/?paipu=jmkkmm-0t5u6828-0367-6gg9-fkkn-hltnlwxwqny0_a31454929_2
-          name: 牌谱
-      tag:
-        - 日麻
-        - 雀魂
-    - content: |
-        大胆 GPT！竟敢质疑自己的祖师爷，拖出去斩了！
-      date: 2024/10/09 03:24
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/572bf5e4-4dee-4c4a-97d1-b94f3f1df7e5.webp
-    - content: |
-        推荐一首歌————群青 (Yoasobi)
-        已经洗脑单曲循环N遍了。
-        不过这里只有20秒试听(
-      date: 2024/10/09 01:52
-      aplayer:
-        server: netease
-        id: 1472480890
-    - content: |
-        <blockquote>The Royal Swedish Academy of Sciences has decided to award the 2024 #NobelPrize in Physics to John J. Hopfield and Geoffrey E. Hinton “for foundational discoveries and inventions that enable machine learning with artificial neural networks.”</blockquote>
-        卧槽牛逼！
-        物理已死，AI当立。岁在甲辰，天下大吉！
-      date: 2024/10/08 17:59
-      link:
-        - url: https://www.nobelprize.org/prizes/physics/2024/press-release/
-          name: The Nobel Prize in Physics 2024
-      image:
-        - https://blogfiles.oss.fyz666.xyz/jpeg/cf2c5211-08e3-4f22-b546-262bd5792744.jpeg
-    - content: |
-        给朋友们推荐一款Steam平台上的横版动作平台小游戏：Smilemo。这款像素画风的游戏操作简单，只需控制方向键、跳跃键等至多五个键，就可以在地图中来去自如。更重要的是，彻底治好了困扰多年的低血压。
-        朋友们快去入手这款游戏吧！
-      date: 2024/10/01 01:37
-      link:
-        - url: https://store.steampowered.com/app/1933700/Smilemo/
-          name: Smilemo
-      video:
-        - https://www.youtube.com/embed/gzK7XgzQRmY?si=SfCgHMrl5JM0cPgl
-      image:
-        - https://blogfiles.oss.fyz666.xyz/jpg/183ee377-fee7-4814-89f3-8db24ecd384d.jpg
-      tag:
-        - Steam
-        - 血压游戏
-    - content: |
-        UTC+8时间2024年9月18日20时08分，合肥肥东县发生4.9级地震，位于合肥市区建筑内的同学都表示有较强烈的震感，我刚好那个时间点出门了，因此没有感受到。作为老家江浙一带的人，这也是我人生中离地震最近的一次，希望合肥一切平安！
-      date: 2024/09/18 21:30
-      address: 安徽省合肥市
-      image:
-        - https://blogfiles.oss.fyz666.xyz/jpg/8092a3c2-1cd6-48cc-b3ca-41f066cbc3a1.jpg
-      link:
-        - url: https://earthquake.usgs.gov/earthquakes/eventpage/us6000nsvh/executive
-          name: 来自 USGS 的信息
-      tag:
-        - 合肥地震
-    - content: |
-        打游戏（划掉）写论文写到凌晨5点半，突然想起今天是和npy在一起六周年纪念日。赶紧发条消息防止醒来被骂。
-      date: 2024/08/15 05:50
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/0bb31e52-c366-465e-a758-ce65589ef86b.png
-    - content: |
-        最近入坑了一个游戏：《文明 6》，这游戏真是令人上头，玩了两把，在还不太熟悉机制的情况下肝了好几个小时，终于赢来第一把科技胜利。但因为刚开始玩完全不熟悉机制，导致打法有一堆问题，日后再慢慢学习～
-        适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
-      date: 2024/07/12 21:17
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/10acda4d-e69e-4ae4-aed2-a3a82300e7ea.png
-      tag:
-        - Steam
-    - content: 是谁，这个点还在水论文？哦，原来是我🤡🤡🤡
-      date: 2024/07/08 04:46
-      image:
-        - https://blogfiles.oss.fyz666.xyz/png/98a1fa91-63f2-4933-b3b7-ef352cf1ed7d.png
-    - content: 雀魂歹人场和出四暗刻单骑，这下友尽局了
-      date: 2024/07/01 23:30
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/a144f087-bf7b-400a-95c4-20a8b6174ed3.webp
-      link:
-        - url: https://game.maj-soul.com/1/?paipu=jmjrln-3pq6sz40-xz6f-6d4f-i8hb-ghqtorxtpun0_a31454929_2
-          name: 牌谱
-      tag:
-        - 日麻
-        - 雀魂
-    - content: 苏州“6.24”日本人学校校车袭击案，一名乘务员胡友平挺身而出，阻止了暴徒上车造成更大的社会危害，但她本人身中数刀并于26日离世。日本驻华大使馆为其降半旗致敬，并表示“相信她的勇气与善良也代表了广大中国民众”。在此，我向胡女士表示敬意，同时希望严惩凶手，也希望今后恶劣的社会事件能越来越少。
-      date: 2024/06/28 18:53
-      link:
-        - url: https://news.yahoo.co.jp/articles/c2ee88a82de0f9af2375527e5419b4f03ac355c8
-          name: Yahoo Japan 报道内容
-      video:
-        - //player.bilibili.com/player.html?isOutside=true&aid=1055827190&bvid=BV1Yn4y1X7px&cid=1595766617&p=1&autoplay=0
-    - content: |
-        涟水县人民政府终于出来锤了一波，点个赞！看了一下，重要的结论有两点：
-        1. 姜同学83分的网传月考成绩为真（与阿赛实力似乎不符）
-        2. 姜同学借用了他人的电脑参加了初赛（姜同学似乎没有个人电脑，这与她擅长LaTeX不是十分相符）
-      link:
-        - url: https://ssl.huaian.gov.cn/letterClientController/info.do?view=/cms/letter/client/letterInfo_ls.jsp&letterId=2c94938e9047dbee019049843247003b
-          name: 涟水县人民政府的回复
-      date: 2024/06/28 00:41
-      tag:
-        - 姜萍事件
-    - content: 看到数学圈的大佬们纷纷联名请愿，作为一个前数学人，我感慨万千。数学界需要的正是这种求真的精神，我想，所有参与讨论的人当中，最希望这起事件是真实的人群，反而恰是这帮从专业的角度提出质疑的数学圈大佬们，数学圈的每个人都是爱才惜才的，恨不得中国真出一个这样的天才；而一旦这起事件最终翻车，网暴姜萍的也一定不会是这一群人（相反，这群人反而会帮助她走出困境，毕竟一位十七岁的中专少女，是既没有动机，也难有能力去做到策划这整起事件的）。最后，还是希望阿里达摩院以及官方能给出一个说法，还数学界以清净，是真是假，拿出来溜溜，不要再当鸵鸟了。
-      link:
-        - url: https://www.zhihu.com/question/659628342/answer/3539037805
-          name: 请愿信
-        - url: https://zhuanlan.zhihu.com/p/705650067
-          name: 北大袁教授的分析
-      tag:
-        - 姜萍事件
-      date: 2024/06/27 15:33
-    - content: 终于把说说功能搞好了，参考了下面这篇文章，并进行了一些小小的修改～以后我将会在这里发表一些想法
-      date: 2024/06/27 04:00
-      link:
-        - url: https://blog.anheyu.com/posts/c248.html
-          name: 即刻短文（瀑布流）部署方案
-    - content: |
-        Jumping 事件里，多所院校表态如下：
-        复旦：先不考虑这块金子是不是真的，至少外表看起来还是很光鲜的。
-        浙大：我这有炉子，你敢把这块金子拿来炼一炼吗？
-        上交：你这块金子怎么浮在水面上啊🤣
-      date: 2024/06/26 12:02
-      link:
-        - url: https://www.zhihu.com/question/659359527/answer/3538072726
-          name: 部分高校的回应
-      tag:
-        - 姜萍事件
-    - content: 这个类比可以说是十分通俗易懂了
-      date: 2024/06/26 10:51
-      link:
-        - url: https://www.zhihu.com/question/659591528/answer/3542523632
-          name: “姜萍事件”的通俗类比
-      tag:
-        - 姜萍事件
-    - content: |
-        CSDN 又不干人事，黑名单网址又多一个：gitcode.com
-        再仔细一看，好家伙！技术支持：华为云，这下可以一起骂了
-      date: 2024/06/26 00:39
-      link:
-        - url: https://www.v2ex.com/t/1052717
-          name: CSDN 大规模抓取 GitHub 仓库
-    - content: |
-        17岁中专女生自学偏微分方程，爆冷逆袭高分入围全球数赛
-        数学界也拥有了自己的丁真！
-        (<a href="https://player.bilibili.com/player.html?isOutside=true&aid=1505621387&bvid=BV1SD421M73v&cid=1580177673&p=1&autoplay=0">原视频</a>已失效)
-      date: 2024/06/13 15:00
-      tag:
-        - 姜萍事件
-    - content: |
-        雨天穿梭于张家界大峡谷，有点过于舒适了。
-        不过没玩滑道还是有点可惜。
-      date: 2024/06/04 14:00
-      address: 湖南省张家界市
-      link:
-        - url: /gallery/travel/zhangjiajie/
-          name: 相册
-      image:
-        - https://blogfiles.oss.fyz666.xyz/webp/5d60db21-379b-4521-90ab-7eb9dfffe983.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/ca3a185a-35ed-4996-a233-590f05363521.webp
-        - https://blogfiles.oss.fyz666.xyz/webp/2d4bf808-7f6e-40c4-b2ea-81e09d2aad98.webp
+      当然，也有可能是为了避免影响自己的“大号”而特意创了个“小号”，不过这个可能性较低，意义也不大。
+      另一种可能是这位 up 每天顶着游客身份上 GitHub（这似乎也不太像是一位合格的代码工作者应有的行为）。
+    date: 2024/11/26 04:24
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/d5e00cb0-270b-4a29-b5d7-4fa13680c705.png
+      - https://blogfiles.oss.fyz666.xyz/png/7f902c09-c2b7-4838-9dae-c39c90112acf.png
+    link:
+      - url: https://github.com/vietnh1009/ASCII-generator/issues/23#issuecomment-2487520201
+        name: 赛博丁真的回复
+    tag:
+      - 赛博丁真
+  - content: |
+      <a href="https://space.bilibili.com/163637592">赛博丁真</a> 又发力了。
+      
+      赛博丁真的最近一期视频《我用36万行备忘录做了个动画…》的0:56处，提到“所以我们专门写了一个软件”，
+      然而视频画面显示这个所谓的“自己写的软件”其实是 GitHub 上某活跃程序员 <a href="https://github.com/vietnh1009">vietnh1009</a> 的开源仓库 <a href="https://github.com/vietnh1009/ASCII-generator/">ASCII-generator</a>。
+      且不说视频里“直接在 GitHub 下载源代码压缩包并放在 Downloads 目录下解压运行”这种不专业的事（毕竟也不是一次两次了），你把人家代码里的作者版权信息给删了是什么意思？
+      甚至道歉公关文还辩称自己“确实不严谨”，我看未必，你们团队在“该严谨的地方”倒是非常的严谨，作者版权信息删的那叫一个干净。
+      在质疑声越来越大且惊动 GitHub 仓库的原作者后，赛博丁真团队火速删除了视频，这操作真是给人乐麻了。
+      
+      赛博丁真团队的这出操作严重违反了 MIT 开源协议（说起来为什么这么宽松的协议你还去违反），毫无版权意识，在被戳穿以后甚至不愿意发一个诚恳的道歉，这等 up 为何还能在中文互联网上游刃有余？
+    date: 2024/11/21 23:51
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/7dcb0ac3-a5d3-4705-b7af-d7d7bc7d13ee.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/7f61c8db-cae1-4631-b797-0af5b04c8090.webp
+    link:
+      - url: https://github.com/vietnh1009/ASCII-generator/issues/25
+        name: 相关 issue
+    tag:
+      - 赛博丁真
+  - content: |
+      参加了一年一度的 Hackergame，喜提组内二等奖。又可以去提货了，舒服！
+    date: 2024/11/10 17:57
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/2a3d517b-bdd5-4710-8633-43cb03af4eb9.png
+    link:
+      - url: https://hack.lug.ustc.edu.cn/
+        name: 比赛平台
+      - url: https://github.com/USTC-Hackergame/hackergame2024-writeups
+        name: 官方存档及题解
+      - url: /blog/12095/
+        name: 我的题解
+    tag:
+      - Hackergame
+  - content: |
+      今日麻将乐事：
+      （主视角为我的下家）
+      下家：咦，红中点了？小事，一番罢了。
+      （一秒后）
+      下家：？？?
+    date: 2024/10/10 16:37
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/3f6fedc2-8c07-41e7-ba9b-ee41001f0101.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/eb977ad6-5ee1-48cc-9c94-0795f4059559.webp
+    link:
+      - url: https://game.maj-soul.com/1/?paipu=jmkkmm-0t5u6828-0367-6gg9-fkkn-hltnlwxwqny0_a31454929_2
+        name: 牌谱
+    tag:
+      - 日麻
+      - 雀魂
+  - content: |
+      大胆 GPT！竟敢质疑自己的祖师爷，拖出去斩了！
+    date: 2024/10/09 03:24
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/572bf5e4-4dee-4c4a-97d1-b94f3f1df7e5.webp
+  - content: |
+      推荐一首歌————群青 (Yoasobi)
+      已经洗脑单曲循环N遍了。
+      不过这里只有20秒试听(
+    date: 2024/10/09 01:52
+    aplayer:
+      server: netease
+      id: 1472480890
+  - content: |
+      <blockquote>The Royal Swedish Academy of Sciences has decided to award the 2024 #NobelPrize in Physics to John J. Hopfield and Geoffrey E. Hinton “for foundational discoveries and inventions that enable machine learning with artificial neural networks.”</blockquote>
+      卧槽牛逼！
+      物理已死，AI当立。岁在甲辰，天下大吉！
+    date: 2024/10/08 17:59
+    link:
+      - url: https://www.nobelprize.org/prizes/physics/2024/press-release/
+        name: The Nobel Prize in Physics 2024
+    image:
+      - https://blogfiles.oss.fyz666.xyz/jpeg/cf2c5211-08e3-4f22-b546-262bd5792744.jpeg
+  - content: |
+      给朋友们推荐一款Steam平台上的横版动作平台小游戏：Smilemo。这款像素画风的游戏操作简单，只需控制方向键、跳跃键等至多五个键，就可以在地图中来去自如。更重要的是，彻底治好了困扰多年的低血压。
+      朋友们快去入手这款游戏吧！
+    date: 2024/10/01 01:37
+    link:
+      - url: https://store.steampowered.com/app/1933700/Smilemo/
+        name: Smilemo
+    video:
+      - https://www.youtube.com/embed/gzK7XgzQRmY?si=SfCgHMrl5JM0cPgl
+    image:
+      - https://blogfiles.oss.fyz666.xyz/jpg/183ee377-fee7-4814-89f3-8db24ecd384d.jpg
+    tag:
+      - Steam
+      - 血压游戏
+  - content: |
+      UTC+8时间2024年9月18日20时08分，合肥肥东县发生4.9级地震，位于合肥市区建筑内的同学都表示有较强烈的震感，我刚好那个时间点出门了，因此没有感受到。作为老家江浙一带的人，这也是我人生中离地震最近的一次，希望合肥一切平安！
+    date: 2024/09/18 21:30
+    address: 安徽省合肥市
+    image:
+      - https://blogfiles.oss.fyz666.xyz/jpg/8092a3c2-1cd6-48cc-b3ca-41f066cbc3a1.jpg
+    link:
+      - url: https://earthquake.usgs.gov/earthquakes/eventpage/us6000nsvh/executive
+        name: 来自 USGS 的信息
+    tag:
+      - 合肥地震
+  - content: |
+      打游戏（划掉）写论文写到凌晨5点半，突然想起今天是和npy在一起六周年纪念日。赶紧发条消息防止醒来被骂。
+    date: 2024/08/15 05:50
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/0bb31e52-c366-465e-a758-ce65589ef86b.png
+  - content: |
+      最近入坑了一个游戏：《文明 6》，这游戏真是令人上头，玩了两把，在还不太熟悉机制的情况下肝了好几个小时，终于赢来第一把科技胜利。但因为刚开始玩完全不熟悉机制，导致打法有一堆问题，日后再慢慢学习～
+      适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+    date: 2024/07/12 21:17
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/10acda4d-e69e-4ae4-aed2-a3a82300e7ea.png
+    tag:
+      - Steam
+  - content: 是谁，这个点还在水论文？哦，原来是我🤡🤡🤡
+    date: 2024/07/08 04:46
+    image:
+      - https://blogfiles.oss.fyz666.xyz/png/98a1fa91-63f2-4933-b3b7-ef352cf1ed7d.png
+  - content: 雀魂歹人场和出四暗刻单骑，这下友尽局了
+    date: 2024/07/01 23:30
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/a144f087-bf7b-400a-95c4-20a8b6174ed3.webp
+    link:
+      - url: https://game.maj-soul.com/1/?paipu=jmjrln-3pq6sz40-xz6f-6d4f-i8hb-ghqtorxtpun0_a31454929_2
+        name: 牌谱
+    tag:
+      - 日麻
+      - 雀魂
+  - content: 苏州“6.24”日本人学校校车袭击案，一名乘务员胡友平挺身而出，阻止了暴徒上车造成更大的社会危害，但她本人身中数刀并于26日离世。日本驻华大使馆为其降半旗致敬，并表示“相信她的勇气与善良也代表了广大中国民众”。在此，我向胡女士表示敬意，同时希望严惩凶手，也希望今后恶劣的社会事件能越来越少。
+    date: 2024/06/28 18:53
+    link:
+      - url: https://news.yahoo.co.jp/articles/c2ee88a82de0f9af2375527e5419b4f03ac355c8
+        name: Yahoo Japan 报道内容
+    video:
+      - //player.bilibili.com/player.html?isOutside=true&aid=1055827190&bvid=BV1Yn4y1X7px&cid=1595766617&p=1&autoplay=0
+  - content: |
+      涟水县人民政府终于出来锤了一波，点个赞！看了一下，重要的结论有两点：
+      1. 姜同学83分的网传月考成绩为真（与阿赛实力似乎不符）
+      2. 姜同学借用了他人的电脑参加了初赛（姜同学似乎没有个人电脑，这与她擅长LaTeX不是十分相符）
+    link:
+      - url: https://ssl.huaian.gov.cn/letterClientController/info.do?view=/cms/letter/client/letterInfo_ls.jsp&letterId=2c94938e9047dbee019049843247003b
+        name: 涟水县人民政府的回复
+    date: 2024/06/28 00:41
+    tag:
+      - 姜萍事件
+  - content: 看到数学圈的大佬们纷纷联名请愿，作为一个前数学人，我感慨万千。数学界需要的正是这种求真的精神，我想，所有参与讨论的人当中，最希望这起事件是真实的人群，反而恰是这帮从专业的角度提出质疑的数学圈大佬们，数学圈的每个人都是爱才惜才的，恨不得中国真出一个这样的天才；而一旦这起事件最终翻车，网暴姜萍的也一定不会是这一群人（相反，这群人反而会帮助她走出困境，毕竟一位十七岁的中专少女，是既没有动机，也难有能力去做到策划这整起事件的）。最后，还是希望阿里达摩院以及官方能给出一个说法，还数学界以清净，是真是假，拿出来溜溜，不要再当鸵鸟了。
+    link:
+      - url: https://www.zhihu.com/question/659628342/answer/3539037805
+        name: 请愿信
+      - url: https://zhuanlan.zhihu.com/p/705650067
+        name: 北大袁教授的分析
+    tag:
+      - 姜萍事件
+    date: 2024/06/27 15:33
+  - content: 终于把说说功能搞好了，参考了下面这篇文章，并进行了一些小小的修改～以后我将会在这里发表一些想法
+    date: 2024/06/27 04:00
+    link:
+      - url: https://blog.anheyu.com/posts/c248.html
+        name: 即刻短文（瀑布流）部署方案
+  - content: |
+      Jumping 事件里，多所院校表态如下：
+      复旦：先不考虑这块金子是不是真的，至少外表看起来还是很光鲜的。
+      浙大：我这有炉子，你敢把这块金子拿来炼一炼吗？
+      上交：你这块金子怎么浮在水面上啊🤣
+    date: 2024/06/26 12:02
+    link:
+      - url: https://www.zhihu.com/question/659359527/answer/3538072726
+        name: 部分高校的回应
+    tag:
+      - 姜萍事件
+  - content: 这个类比可以说是十分通俗易懂了
+    date: 2024/06/26 10:51
+    link:
+      - url: https://www.zhihu.com/question/659591528/answer/3542523632
+        name: “姜萍事件”的通俗类比
+    tag:
+      - 姜萍事件
+  - content: |
+      CSDN 又不干人事，黑名单网址又多一个：gitcode.com
+      再仔细一看，好家伙！技术支持：华为云，这下可以一起骂了
+    date: 2024/06/26 00:39
+    link:
+      - url: https://www.v2ex.com/t/1052717
+        name: CSDN 大规模抓取 GitHub 仓库
+  - content: |
+      17岁中专女生自学偏微分方程，爆冷逆袭高分入围全球数赛
+      数学界也拥有了自己的丁真！
+      (<a href="https://player.bilibili.com/player.html?isOutside=true&aid=1505621387&bvid=BV1SD421M73v&cid=1580177673&p=1&autoplay=0">原视频</a>已失效)
+    date: 2024/06/13 15:00
+    tag:
+      - 姜萍事件
+  - content: |
+      雨天穿梭于张家界大峡谷，有点过于舒适了。
+      不过没玩滑道还是有点可惜。
+    date: 2024/06/04 14:00
+    address: 湖南省张家界市
+    link:
+      - url: /gallery/travel/zhangjiajie/
+        name: 相册
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/5d60db21-379b-4521-90ab-7eb9dfffe983.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/ca3a185a-35ed-4996-a233-590f05363521.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/2d4bf808-7f6e-40c4-b2ea-81e09d2aad98.webp

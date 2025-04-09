@@ -2,18 +2,17 @@ link(rel="stylesheet",href="https://fastly.jsdelivr.net/gh/windshadow233/BlogSto
 #bbTimeList.bbTimeList.container
     #bbtalk.swiper-container.swiper-no-swiping.talk_bar_swiper_container(tabindex="-1")
       #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/talk/")`)
-        each i in site.data.talk
-          each item, index in i.talk_list.slice(0, 10)
-            - var contentText = item.content
-            if item.tag
-              - var tags = '<div class="bber-tag"><i class="fa-solid fa-tags"></i> '
-              each tag in item.tag
-                - tags += tag + '、'
-              - tags = tags.slice(0, -1) + '</div>'
-              - contentText = tags + contentText
-            - contentText += item.image ? ' [图片]' : ''
-            - contentText += item.video ? ' [视频]' : ''
-            - contentText += item.link ? ' [链接]': ''
-            .li-style.swiper-slide !{contentText}
+        each item, index in site.data.talk.talk_list.slice(0, 10)
+          - var contentText = item.content
+          if item.tag
+            - var tags = '<div class="bber-tag"><i class="fa-solid fa-tags"></i> '
+            each tag in item.tag
+              - tags += tag + '、'
+            - tags = tags.slice(0, -1) + '</div>'
+            - contentText = tags + contentText
+          - contentText += item.image ? ' [图片]' : ''
+          - contentText += item.video ? ' [视频]' : ''
+          - contentText += item.link ? ' [链接]': ''
+          .li-style.swiper-slide !{contentText}
 
     i.bber-gotobb.fas.fa-arrow-circle-right(onclick=`pjax.loadUrl("/talk/")`,title="查看全文")

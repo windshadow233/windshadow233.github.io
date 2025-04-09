@@ -1,14 +1,15 @@
 #article-container
   .projects
-    - var [topInfo, ...linkData] = site.data.project
-    .author-content.author-content-item.top-background.single(style=topInfo.top_background ? `background: url(${topInfo.top_background}) left 28% / cover no-repeat;` : "")
+    - var info = site.data.project
+    - var projects = info.project_list
+    .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) left 28% / cover no-repeat;` : "")
       .card-content
-        .author-content-item-tips=topInfo.title
-        span.author-content-item-title=topInfo.subTitle
+        .author-content-item-tips=info.title
+        span.author-content-item-title=info.subTitle
         .content-bottom
-            .tips=topInfo.tips
+            .tips=info.tips
     .gallery-group-main(style="margin-top: 20px;")
-      each item in linkData
+      each item in projects
         figure.gallery-group
           img.gallery-group-img.no-lightbox(data-lazy-src=item.image)
           figcaption

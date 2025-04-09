@@ -23,13 +23,14 @@ menu:
     音乐馆: /music/ || fas fa-music
     关于我: /about/ || fas fa-info-circle
     说说: /talk/ || far fa-comment-dots
-    一些项目: /projects/ || fas fa-project-diagram
+    我的装备: /equipment/ || fa-solid fa-toolbox
     状态监控: https://status.fyz666.xyz/ || iconfont icon-monitor
   链接 || fas fa-link:
     朋友圈: /fcircle/ || fab fa-galactic-republic
     友链: /link/ || fas fa-user-friends
     工具: /tlink/ || fas fa-tools
     资源: /rlink/ || fas fa-save
+    我的项目: /projects/ || fas fa-project-diagram
     CFOP: /cfop/ || fa-solid fa-cube
   线路 || iconfont icon-global:
     主站点: https://blog.fyz666.xyz/ || || _blank
@@ -1066,7 +1067,7 @@ inject:
     - <style id="barragesColor"></style>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu.min.js" async></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu@v0.0.8.js" async></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
@@ -1074,7 +1075,7 @@ inject:
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar@v0.0.2.js"></script>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/waterfall.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk@v0.0.3.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.1.5.css">

@@ -1,101 +1,101 @@
-- title: 友人帐
-  subTitle: 本博客的友情链接
-  tips: 欢迎大佬们前来添加！！！
-  top_background: https://blogfiles.oss.fyz666.xyz/jpg/68811bbd-a409-4dcd-a3ff-62cd9c09b049.jpg
+title: 友人帐
+subTitle: 本博客的友情链接
+tips: 欢迎大佬们前来添加！！！
+top_background: https://blogfiles.oss.fyz666.xyz/jpg/68811bbd-a409-4dcd-a3ff-62cd9c09b049.jpg
+link_groups:
+  - class_name: 小伙伴们
+    class_desc: 作为一个 I 人似乎比较缺乏现实生活中的朋友...更别说拥有个人博客的朋友了。欢迎各位小伙伴们<a href="javascript:btf.scrollToDest(document.getElementById('如何申请友链').offsetTop);">交换友链</a>～
+    link_list:
+      - name: PseudoProgrammer
+        link: http://zyt.plus/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpg/14381d13-8a25-4e32-998b-9401ca6b50ef.jpg
+        descr: An AI Algorithm Engineer working in HPC-AI Tech.
+        feed: http://zyt.plus/feed/
+      - name: Hanvin's Blog
+        link: https://hanvin.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/svg/64e5a25c-d812-494e-9574-5859a42eff52.svg
+        descr: 做自由的风
+        feed: https://hanvin.com/feed.xml
+      - name: 小码同学
+        link: https://blog.hikki.site
+        avatar: https://bu.dusays.com/2025/03/02/67c4531250141.jpg
+        descr: 喜欢的东西就努力去追求，万一成功了呢!
+        feed: https://blog.hikki.site/atom.xml
 
-- class_name: 小伙伴们
-  class_desc: 作为一个 I 人似乎比较缺乏现实生活中的朋友...更别说拥有个人博客的朋友了。欢迎各位小伙伴们<a href="javascript:btf.scrollToDest(document.getElementById('如何申请友链').offsetTop);">交换友链</a>～
-  link_list:
-    - name: PseudoProgrammer
-      link: http://zyt.plus/
-      avatar: https://blogfiles.oss.fyz666.xyz/jpg/14381d13-8a25-4e32-998b-9401ca6b50ef.jpg
-      descr: An AI Algorithm Engineer working in HPC-AI Tech.
-      feed: http://zyt.plus/feed/
-    - name: Hanvin's Blog
-      link: https://hanvin.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/svg/64e5a25c-d812-494e-9574-5859a42eff52.svg
-      descr: 做自由的风
-      feed: https://hanvin.com/feed.xml
-    - name: 小码同学
-      link: https://blog.hikki.site
-      avatar: https://bu.dusays.com/2025/03/02/67c4531250141.jpg
-      descr: 喜欢的东西就努力去追求，万一成功了呢!
-      feed: https://blog.hikki.site/atom.xml
+  - class_name: 一些大佬
+    class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
+    link_list:
+      - name: iBug
+        link: https://ibug.io/blog/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/4f967a36-b102-4ac9-ae42-9fc5058e9d5e.png
+        descr: Developer, system administrator, geek
+        feed: https://ibug.io/feed.xml
+      - name: taoky's blog
+        link: https://blog.taoky.moe/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/206ba0fc-9cab-4fce-bb1e-65d1b53e816e.png
+        descr: It's taoky!
+        feed: https://blog.taoky.moe/feed.xml
+      - name: 负一的平方根
+        link: https://sqrt-1.me/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpeg/4f51aa9f-72e2-410d-8a82-8c99127eab10.jpeg
+        descr: 宇宙的本质是计算
+        feed: https://sqrt-1.me/?feed=rss2
+      - name: Hypercube
+        link: https://0x01.me/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/478ce1e2-05a8-4296-adf7-19e76bfd6f80.png
+        descr: 机智的超立方体
+        feed: 
+      - name: Volltin
+        link: https://blog.volltin.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpeg/eb2156c0-d4b3-48c6-ae7b-14165a493257.jpeg
+        descr: 一颗豆豆
+        feed: https://blog.volltin.com/feed/
+      - name: GZTime's blog
+        link: https://blog.gzti.me/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/1ca2316d-5d3f-4d4b-88b8-c45583b4480a.png
+        descr: Walking on the Time Axis
+        feed: https://blog.gzti.me/atom.xml
+      - name: mcfx
+        link: https://mcfx.us/
+        avatar: https://blogfiles.oss.fyz666.xyz/svg/50925553-09bc-418b-9e7d-c0b710927ff5.svg
+        descr: 打Hackergame发现的清华巨佬
+        feed: https://mcfx.us/feed.xml
+      - name: Mivik
+        link: https://mivik.moe/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/67f74cea-1816-4d19-86ba-1f7a84edc47e.png
+        descr: 兴趣使然のProgrammer
+        feed: https://mivik.moe/rss.xml
 
-- class_name: 一些大佬
-  class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
-  link_list:
-    - name: iBug
-      link: https://ibug.io/blog/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/4f967a36-b102-4ac9-ae42-9fc5058e9d5e.png
-      descr: Developer, system administrator, geek
-      feed: https://ibug.io/feed.xml
-    - name: taoky's blog
-      link: https://blog.taoky.moe/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/206ba0fc-9cab-4fce-bb1e-65d1b53e816e.png
-      descr: It's taoky!
-      feed: https://blog.taoky.moe/feed.xml
-    - name: 负一的平方根
-      link: https://sqrt-1.me/
-      avatar: https://blogfiles.oss.fyz666.xyz/jpeg/4f51aa9f-72e2-410d-8a82-8c99127eab10.jpeg
-      descr: 宇宙的本质是计算
-      feed: https://sqrt-1.me/?feed=rss2
-    - name: Hypercube
-      link: https://0x01.me/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/478ce1e2-05a8-4296-adf7-19e76bfd6f80.png
-      descr: 机智的超立方体
-      feed: 
-    - name: Volltin
-      link: https://blog.volltin.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/jpeg/eb2156c0-d4b3-48c6-ae7b-14165a493257.jpeg
-      descr: 一颗豆豆
-      feed: https://blog.volltin.com/feed/
-    - name: GZTime's blog
-      link: https://blog.gzti.me/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/1ca2316d-5d3f-4d4b-88b8-c45583b4480a.png
-      descr: Walking on the Time Axis
-      feed: https://blog.gzti.me/atom.xml
-    - name: mcfx
-      link: https://mcfx.us/
-      avatar: https://blogfiles.oss.fyz666.xyz/svg/50925553-09bc-418b-9e7d-c0b710927ff5.svg
-      descr: 打Hackergame发现的清华巨佬
-      feed: https://mcfx.us/feed.xml
-    - name: Mivik
-      link: https://mivik.moe/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/67f74cea-1816-4d19-86ba-1f7a84edc47e.png
-      descr: 兴趣使然のProgrammer
-      feed: https://mivik.moe/rss.xml
-
-- class_name: 宝藏博主
-  class_desc: 偶遇到的优质博客（顺序不分先后！）
-  link_list:
-    - name: 张洪 Heo
-      link: https://blog.zhheo.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/5f8a9818-8a9e-4555-b370-440ed4466534.png
-      descr: 分享设计与科技生活
-      feed: https://blog.zhheo.com/rss.xml
-    - name: 杜老师说
-      link: https://dusays.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/1c0553ad-5002-437b-94d4-55f685c2fb67.png
-      descr: 师者，传道，授业，解惑！
-      feed: https://dusays.com/atom.xml
-    - name: 科学空间
-      link: https://spaces.ac.cn/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/3f3ffc05-400b-441a-96fc-8d0c8b10deed.png
-      descr: 致力于各类前沿理工类论文、知识分享
-      feed: https://spaces.ac.cn/feed
-    - name: 阮一峰的网络日志
-      link: https://www.ruanyifeng.com/blog/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/071d6fbe-8efa-4a62-b871-7b6581c7d114.png
-      descr: 沉淀了大量技术相关的知识
-      feed: https://feeds.feedburner.com/ruanyifeng
-    - name: 零度博客
-      link: https://www.freedidi.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/png/9ac68b10-d715-4bae-906d-6ee3cd59c2dd.png
-      descr: 零度解说的博客
-      feed: https://www.freedidi.com/feed/
-    - name: 云游君的小站
-      link: https://www.yunyoujun.cn/
-      avatar: https://blogfiles.oss.fyz666.xyz/jpg/3d8f18b8-df69-478a-bbd9-9c0b43283738.jpg
-      descr: 一位有趣的开源大佬
-      feed: https://www.yunyoujun.cn/atom.xml
+  - class_name: 宝藏博主
+    class_desc: 偶遇到的优质博客（顺序不分先后！）
+    link_list:
+      - name: 张洪 Heo
+        link: https://blog.zhheo.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/5f8a9818-8a9e-4555-b370-440ed4466534.png
+        descr: 分享设计与科技生活
+        feed: https://blog.zhheo.com/rss.xml
+      - name: 杜老师说
+        link: https://dusays.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/1c0553ad-5002-437b-94d4-55f685c2fb67.png
+        descr: 师者，传道，授业，解惑！
+        feed: https://dusays.com/atom.xml
+      - name: 科学空间
+        link: https://spaces.ac.cn/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/3f3ffc05-400b-441a-96fc-8d0c8b10deed.png
+        descr: 致力于各类前沿理工类论文、知识分享
+        feed: https://spaces.ac.cn/feed
+      - name: 阮一峰的网络日志
+        link: https://www.ruanyifeng.com/blog/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/071d6fbe-8efa-4a62-b871-7b6581c7d114.png
+        descr: 沉淀了大量技术相关的知识
+        feed: https://feeds.feedburner.com/ruanyifeng
+      - name: 零度博客
+        link: https://www.freedidi.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/9ac68b10-d715-4bae-906d-6ee3cd59c2dd.png
+        descr: 零度解说的博客
+        feed: https://www.freedidi.com/feed/
+      - name: 云游君的小站
+        link: https://www.yunyoujun.cn/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpg/3d8f18b8-df69-478a-bbd9-9c0b43283738.jpg
+        descr: 一位有趣的开源大佬
+        feed: https://www.yunyoujun.cn/atom.xml

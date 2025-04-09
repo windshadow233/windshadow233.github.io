@@ -8,6 +8,10 @@
             i.fa.fa-refresh
         a.rightMenu-item(href="javascript:rmf.scrollToTop();")
             i.fa.fa-arrow-up
+    .rightMenu-group.rightMenu-line.menu-copy-link
+        a.rightMenu-item(href="javascript:rmf.copyPageLink()")
+            i.fa.fa-link
+            span='复制本页链接'
     .rightMenu-group.rightMenu-line.hide.menu-text
         a.rightMenu-item(href="javascript:rmf.copySelect();")
             i.fa.fa-copy
@@ -29,16 +33,16 @@
         a.rightMenu-item(href='javascript:rmf.paste();')
             i.fa.fa-copy
             span='粘贴'
-    .rightMenu-group.rightMenu-line.menu-post
-        a.rightMenu-item.hide.menu-comment(href="#post-comment")
+    .rightMenu-group.rightMenu-line.menu-post.hide.menu-comment
+        a.rightMenu-item(href="#post-comment")
             i.fas.fa-comment
             span='直达评论区'
-        a.rightMenu-item.hide#switch_commentBarrage.menu-comment(href="javascript:switchCommentBarrage();" title="开关评论弹幕")
+        a.rightMenu-item#switch_commentBarrage(href="javascript:switchCommentBarrage();")
             i.iconfont.icon-danmu
             span='开关评论弹幕'
-        a.rightMenu-item(href="javascript:rmf.copyPageLink()")
-            i.fa.fa-link
-            span='复制本页链接'
+        a.rightMenu-item.hide.comment-select(href="javascript:rmf.commentSelect();")
+            i.far.fa-comment-alt
+            span='评论所选内容'
     .rightMenu-group.rightMenu-line.hide.menu-to
         a.rightMenu-item(href="javascript:rmf.openInNewTab()")
             i.fa.fa-window-restore
