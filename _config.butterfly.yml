@@ -3,7 +3,7 @@
 # --------------------------------------
 
 nav:
-  logo: /images/avatar.png # image
+  logo: /images/avatar.webp # image
   display_title: true
   fixed: true # fixed navigation bar
 
@@ -64,12 +64,12 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/avatar.png
+favicon: /images/avatar.webp
 
 # Avatar (頭像)
 avatar:
 
-  img: /images/avatar.png
+  img: /images/avatar.webp
   effect: false
 
 # Disable all banner image
@@ -236,10 +236,10 @@ reward:
   enable: true
   text: 觉得本文有用？V 我 50 看看实力！
   QR_code:
-    - img: /images/wechat.png
+    - img: /images/wechat_pay.png
     #   link:
       text: V me 50!
-    - img: /images/alipay.png
+    - img: /images/ali_pay.png
     #   link:
       text: Alipay is also ok~
 
