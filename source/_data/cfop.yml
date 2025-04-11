@@ -90,6 +90,7 @@ algo_groups:
       - algo: (L' U L U') (L' U L)
       - algo: (L' U' L U) (L' U' L)
       - algo: (r U' r' F)2
+      - algo: (U r U' L') (U r' U L)
       - algo: (U' L' U L)3
       - algo: R' D (R U' R' D') R
       - algo: (U L' U L) (U2' L' U L)
@@ -109,6 +110,7 @@ algo_groups:
       - algo: (U R' U' R) (U2' R' U R)
       - algo: (U R' U2' R) (U2' R' U R)
       - algo: (U R' U' R) (U' R' U' R)
+      - algo: (U' r' U' R U) (M' R') U R
       - algo: (U R' U2' R) (U' f R f')
       - algo: (R U2' R2' U') (R2 U' R')
       - algo: (R' U' R U) (R' U' R)
@@ -151,6 +153,7 @@ algo_groups:
       - algo: (R' U2 R U2') (R B' R' U B)
       - algo: (U L U' L') (U' L U' L') (U L U' L')
       - algo: (L U L' U') (L U L')
+      - algo: (L U' L F') (L' F L')
       - algo: (U' L U L')2 (U L U' L')
       - algo: (U' L U' L') (U2 L U' L')
       - algo: (U' L U2 L') (U L U L')
