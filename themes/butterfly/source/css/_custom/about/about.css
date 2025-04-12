@@ -26,7 +26,7 @@ p.p.center, span.p.center {
   margin: 4px 0;
 }
 #about-page li::marker{
-  color: #49b1f5;
+  color: var(--fyz-theme);
   font-weight: 600;
   font-size: 1.05em;
 }

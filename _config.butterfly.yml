@@ -326,6 +326,7 @@ aside:
       link: https://github.com/windshadow233
   card_announcement:
     enable: true
+    enable_page: home
     content: |
       <div class="welcome">欢迎来自<span id="city">火星</span>的小伙伴～（位置信息可能存在延迟）<br>您当前的IP地址为: <span id="local-ip">11.4.5.14</span><br>
         您现在距离我大约 <span id="distance">1919810</span> 公里
@@ -364,6 +365,27 @@ aside:
     series_title: false # The title shows the series name
     orderBy: 'date' # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  card_mbti:
+    enable: true
+    mbti_text: 'INFP-A'
+    date: '2025-04-13'
+    image: https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg
+    ei:
+      value: 75
+      type: 'I'
+    sn:
+      value: 59
+      type: 'N'
+    tf:
+      value: 69
+      type: 'F'
+    jp:
+      value: 71
+      type: 'P'
+    at:
+      value: 96
+      type: 'A'
+
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -1205,6 +1227,30 @@ fcircle:
   initnumber: 18
   stepnumber: 18
   article_sort: created
+
+history_calendar:
+  enable: true
+  priority: 4
+  enable_page: page
+  layout:
+    type: class
+    name: sticky_layout
+    index: 0
+  template_html: |
+    <div class="card-widget card-history">
+      <div class="card-content">
+        <div class="item-headline">
+          <i class="fas fa-clock fa-spin"></i>
+          <span>那年今日</span>
+        </div>
+        <div id="history-baidu" style="height: 100px;overflow: hidden">
+          <div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%">
+            <div class="swiper-wrapper" id="history_container_wrapper" style="height:20px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work

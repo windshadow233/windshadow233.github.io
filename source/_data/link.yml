@@ -57,8 +57,8 @@ link_groups:
         feed: https://blog.gzti.me/atom.xml
       - name: mcfx
         link: https://mcfx.us/
-        avatar: https://blogfiles.oss.fyz666.xyz/svg/50925553-09bc-418b-9e7d-c0b710927ff5.svg
-        descr: 打Hackergame发现的清华巨佬
+        avatar: https://blogfiles.oss.fyz666.xyz/svg/b7f8eb7e-8512-4f45-b904-26cf799488b3.svg
+        descr: 打 Hackergame 时发现的清华巨佬
         feed: https://mcfx.us/feed.xml
       - name: Mivik
         link: https://mivik.moe/
@@ -99,3 +99,8 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/jpg/3d8f18b8-df69-478a-bbd9-9c0b43283738.jpg
         descr: 一位有趣的开源大佬
         feed: https://www.yunyoujun.cn/atom.xml
+      - name: 安知鱼
+        link: https://blog.anheyu.com/
+        avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+        descr: 生活明朗，万物可爱
+        feed: https://blog.anheyu.com/atom.xml

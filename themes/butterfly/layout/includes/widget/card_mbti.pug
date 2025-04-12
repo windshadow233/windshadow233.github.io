@@ -1,0 +1,122 @@
+style.
+    :root{
+      --mbti-blue: #4298b4;
+      --mbti-orange: #e4ae3a;
+      --mbti-green: #33a474;
+      --mbti-purple: #88619a;
+      --mbti-red: #f25e62;
+    }
+    .card-mbti {
+      width: 100%;
+      padding: 5px;
+    }
+    .bar-group {
+      margin-bottom: 0px;
+    }
+    .bar-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-top: 0px;
+    }
+    .bar-label {
+      width: fit-content;
+      position: relative;
+      transform: translateX(-50%);
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+    .bar-container {
+      position: relative;
+      height: 10px;
+      background-color: #eee;
+      border-radius: 10px;
+    }
+    .bar-fill {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      width: 100%;
+    }
+    .bar-marker {
+      position: absolute;
+      z-index: 1;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      box-shadow: 0 4px 10px rgba(29, 36, 50, .15);
+      border: 3px solid white;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    .mbti-date {
+      font-size: 12px;
+      float: right;
+    }
+    .color-blue {color: var(--mbti-blue);}
+    .color-orange {color: var(--mbti-orange);}
+    .color-green {color: var(--mbti-green);}
+    .color-purple {color: var(--mbti-purple);}
+    .color-red {color: var(--mbti-red);}
+
+    .blue   { background-color: var(--mbti-blue); }
+    .orange { background-color: var(--mbti-orange); }
+    .green  { background-color: var(--mbti-green); }
+    .purple { background-color: var(--mbti-purple); }
+    .red    { background-color: var(--mbti-red); }
+
+    .card-mbti .image {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        width: 75px;
+        transition: transform 2s cubic-bezier(.13, .45, .21, 1.02);
+        opacity: 0.8;
+    }
+    .card-mbti .image img {
+        display: block;
+        max-width: 100%;
+        transition: filter 375ms ease-in .2s
+    }
+    .card-mbti:hover .image {
+        transform: rotate(-10deg);
+    }
+
+- const mbtiMap = { E: '外倾', I: '内倾', S: '现实', N: '直觉', T: '理性', F: '感性', J: '有计划', P: '灵活' }
+- const atMap = {A: '坚决', T: '动荡'}
+- const flipType = ['E', 'N', 'T', 'J']
+- const mbtiKeys = ['ei', 'sn', 'tf', 'jp']
+- const colors = ['blue', 'orange', 'green', 'purple', 'red']
+- const card_mbti = theme.aside.card_mbti
+- const mbtiValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
+- const percentValues = mbtiValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
+
+.card-widget
+  .item-headline
+    i.iconfont.icon-MBTI
+    span= `MBTI（${card_mbti.mbti_text}）`
+
+  .card-mbti
+    each val, i in ['ei', 'sn', 'tf', 'jp', 'at']
+      - const value = card_mbti[val].value
+      - const type = card_mbti[val].type
+      - const percent = percentValues[i]
+      - const color = colors[i]
+      - const labelMap = val === 'at' ? atMap : mbtiMap
+      - const label1 = val === 'ei' ? '外倾' : val === 'sn' ? '直觉' : val === 'tf' ? '理性' : val === 'jp' ? '有计划' : '坚决'
+      - const label2 = val === 'ei' ? '内倾' : val === 'sn' ? '现实' : val === 'tf' ? '感性' : val === 'jp' ? '灵活' : '动荡'
+
+      .bar-group
+        .bar-label(class=`color-${color}` style=`left: ${percent}%`) #{value}% #{labelMap[type]}
+        .bar-container
+          .bar-fill(class=color)
+          .bar-marker(class=color style=`left: ${percent}%`)
+        .bar-labels
+          span= label1
+          span= label2
+    .image
+      img(src=card_mbti.image)
+    .mbti-date= `更新于：${card_mbti.date}`
+

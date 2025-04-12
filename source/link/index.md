@@ -65,7 +65,7 @@ function copyFlinkTemplate() {
   link: https://blog.fyz666.xyz/
   avatar: https://s2.loli.net/2025/04/12/KqFxMtPRpu5bjTy.webp
   descr: 行所欲行，无问西东。
-  siteshot: https://s2.loli.net/2024/04/23/qU5AHNo2agutiEc.jpg
+  siteshot: https://s2.loli.net/2025/04/12/r8qHDfvZocJCgdO.webp
 ```
 <!-- endtab -->
 

@@ -1,22 +1,150 @@
 style.
-  #page{
-    box-shadow: none !important;
-    background: transparent !important;
-    padding: 0 !important;
+  #friends-circle .title-h2-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
   }
-  #page .page-title {
-    display: none;
+  #friends-circle .title-h2-a a {
+      margin-left: 0.5rem;
+      color: var(--fyz-secondtext);
+      font-weight: 700;
   }
-#article-container
+  #friends-circle .title-h2-a a:hover {
+      color: var(--fyz-main);
+  }
+  #friends-circle .title-h2-a .title-h2-a-left {
+      display: flex;
+      align-items: center;
+  }
+  #friends-circle strong{
+    font-size: 30px;
+    margin: 5px;
+  }
+  #friends-circle p{
+    margin: 0 !important;
+  }
+  .cf-overshow a{
+    border-bottom: none!important;
+    border-radius: 15px;
+  }
+  #random-post,.cf-article,#cf-state,#cf-more{
+    border:1px solid var(--fyz-border)!important;
+    -webkit-box-shadow: var(--card-box-shadow);
+    box-shadow: var(--card-box-shadow);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+  }
+  #recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap a:hover {
+      color: var(--fyz-theme);
+  }
+  #random-post:hover,.cf-article:hover,#cf-state:hover,#cf-more:hover{
+      border:1px solid var(--fyz-theme)!important;
+      box-shadow:0 0 3px var(--fyz-theme)!important;
+  }
+  .cf-overshow a:hover{
+      text-decoration: none!important;
+      color: var(--fyz-theme)!important;
+  }
+  [data-theme="dark"] .cf-overshow p span{
+      color: var(--fyz-white);
+  }
+  [data-theme="light"] .cf-overshow p span{
+      color: var(--fyz-black);
+  }
+  #random-post .random-friends-post:hover{
+      color: var(--fyz-white)!important;
+  }
+
+  .cf-article .cf-article-title{
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      white-space: normal;
+      height: 80px;
+  }
+  .cf-img-avatar.avatar{
+      opacity: 0.3;
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      right:-10px;
+      bottom: -10px;
+      border-radius: 50px!important;
+      -webkit-border-radius: 50px!important;
+      -moz-border-radius: 50px!important;
+      -ms-border-radius: 50px!important;
+      -o-border-radius: 50px!important;
+  }
+  #random-post {
+      min-height: 32px;
+      background: var(--fyz-card-bg);
+      box-shadow: var(--fyz-shadow-border);
+      padding: 20px 30px;
+      border-radius: 12px;
+      margin-top: 8px;
+  }
+  .random-friends-post {
+      text-decoration: none;
+      border-bottom: 2px solid var(--fyz-lighttext);
+      color: var(--fyz-fontcolor);
+      font-weight: 700;
+      padding: 0 4px;
+  }
+  .random-friends-post:hover {
+      text-decoration: none;
+      border-bottom: 2px solid var(--fyz-none);
+      color: var(--fyz-white);
+      background: var(--fyz-main);
+      border-radius: 4px;
+      box-shadow: var(--fyz-shadow-main);
+  }
+  #random-post-start {
+      transition-duration: 0.3s;
+  }
+  #random-post-start:hover {
+      color: var(--fyz-hovertext);
+  }
+  a.random-friends-post:hover{
+        border-radius: 6px;
+    background-color: var(--fyz-theme);
+    text-decoration: none!important;
+    color:var(--fyz-white);
+    border:none;
+    box-shadow: #dadada 0 0 8px 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  a.random-friends-post{
+    border-bottom: 2px solid var(--fyz-lighttext);
+    color:var(--font-color);
+    padding:4px;
+  }
+#friends-circle
+  .author-content.author-content-item.top-background.single(style="background: url(https://blogfiles.oss.fyz666.xyz/webp/5e76e094-e74d-4150-ac79-4e682ffd92ca.webp) left 28% / cover no-repeat;")
+    .card-content
+      .author-content-item-tips="朋友圈"
+      span.author-content-item-title="我的友链文章"
+      .content-bottom
+        .tips="此页面每日更新"
+      .banner-button-group
+        a.banner-button(href='/link/')
+          i.fas.fa-circle-right
+          span.banner-button-text="友链页面"
   .title-h2-a
     .title-h2-a-left
-      h2(style="padding-top: 0;margin:0.6rem 0 0.6rem;") 钓鱼 🎣
+      strong(style="padding-top: 0;margin:0.6rem 0 0.6rem;") 钓鱼 🎣
       a#random-post-start(href="javascript:fetchRandomPost();",style="transition-duration: 0.3s; transform: rotate(63000deg); opacity: 1;")
         i.fas.fa-redo-alt
-    .title-h2-a-right
-      a(href="/link/") 全部友链
   #random-post
-  h2 鱼塘 🐟
+  strong 鱼塘 🐟
   .post-content
     #cf-container 与主机通讯中……
   script.

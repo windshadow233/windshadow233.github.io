@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3498204 */
-  src: url('/ttf/iconfont.ttf?v=1718569475706528') format('truetype');
+  font-family: "iconfont";
+  src: url('/ttf/iconfont.ttf?v=1744571257086004') format('truetype');
 }
 
 .iconfont {
@@ -64,4 +64,7 @@
 }
 .icon-danmu:before {
   content: "\e65c";
+}
+.icon-MBTI:before {
+  content: "\e622";
 }
