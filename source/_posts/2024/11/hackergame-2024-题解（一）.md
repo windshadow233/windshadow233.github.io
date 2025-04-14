@@ -55,7 +55,7 @@ Hackergame的挑战让头脑清醒🤯🤯
 
 {% endhideToggle %}
 
-众所周知，中国科学技术大学校内CTF战队是Nebula，招新主页位于https://www.nebuu.la/
+众所周知，中国科学技术大学校内CTF战队是Nebula，找到[招新主页](https://www.nebuu.la/)。
 
 打开发现是个网页模拟的终端，发现`ls -a`可以找到第二个flag，`env`可以找到第一个flag。(第一个flag找了半天，因为一开始完全没想到去看环境变量)
 

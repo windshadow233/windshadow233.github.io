@@ -1086,8 +1086,9 @@ blockquote p:first-child{
 #sidebar-menus{
     padding-top: 60px;
 }
-#sidebar #sidebar-menus .menus_items .site-page:hover{
-    background:var(--fyz-theme);
+#sidebar #sidebar-menus .menus_items .site-page:hover,#menus .menus_items .li:hover{
+    background: var(--fyz-theme)!important;;
+    color: var(--fyz-white)!important;
 }
 @media screen and (max-width: 955px){
     .menus_items:not(#sidebar-menus .menus_items),#name-container{
@@ -1125,9 +1126,6 @@ blockquote p:first-child{
     -o-animation: sub_menus 0.3s 0.1s ease both;
     -ms-animation: sub_menus 0.3s 0.1s ease both;
     animation: sub_menus 0.3s 0.1s ease both;
-}
-#sidebar #sidebar-menus .menus_items .site-page:hover {
-    color: var(--fyz-white);
 }
 .menus_item:not(#sidebar-menus .menus_item) .site-page:not(.child){
     margin: 0 auto;
