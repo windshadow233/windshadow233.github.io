@@ -9,16 +9,16 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2024
-cover: https://blogfiles.oss.fyz666.xyz/webp/0e71694e-9772-4998-aecb-3bb41267a079.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/c49ffab9-5549-4d5b-b22e-287c109dfdeb.webp
 swiper_index: 1
 description: Hackergame 2024，再次喜提二等奖～
 ---
 
-经过一个礼拜的科研划水，我终于给 Hackergame 2024 画上了一个还算比较完美的句号。相比于去年的题，今年的题总体难度似乎更高，最终拿下总榜26（比去年翻了个倍）校内第4，喜提二等奖。
+经过一个礼拜的科研划水，我终于给 Hackergame 2024 画上了一个还算比较完美的句号。相比于去年的题，今年的题总体难度似乎更高，最终拿下总榜26（比去年翻了个倍）校内第4（也翻了个倍...），喜提二等奖。
 
 <img src="https://blogfiles.oss.fyz666.xyz/png/c8fe2a86-0135-4d8a-b6ac-ee96f0b9144d.png" alt="image-20241109221945024" style="zoom:50%;" />
 
-搞错了，上面这张是瞬时最高排名。
+搞错了，上面这张是最高瞬时排名。
 
 <img src="https://blogfiles.oss.fyz666.xyz/png/2a3d517b-bdd5-4710-8633-43cb03af4eb9.png" alt="image-20241109222029410" style="zoom:65%;" />
 
@@ -86,4 +86,4 @@ WARNING: ignoring tunable zfs_arc_max (using 4148263936 instead)
 
 不过话说回来，这次比赛居然没有出现涉及到随机数预测的题（大概）因为前段时间的GeekGame结束后稍微学了一点，还想着能够试试水，结果一题没有，~~成功把学的全忘了~~。
 
-总之，今年比赛收获颇丰，还成功在校内第一的位置上待了十几个小时，明年的比赛，大概率我就要坐校外选手那桌了，作为一个从19年开始打这个比赛的“老选手”，其实还是比较不舍的~~（拿不到奖品了）~~，希望Hackergame越办越好！
+总之，今年比赛收获颇丰，还成功在校内第一的位置上待了十几个小时，明年的比赛，~~大概率我就要坐校外选手那桌了~~ 博士毕业失败，还能坐校内那桌（😊），作为一个从19年开始打这个比赛的“老选手”，其实还是比较不舍的~~（拿不到奖品了）~~，希望Hackergame越办越好！

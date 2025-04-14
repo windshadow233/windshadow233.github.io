@@ -9,7 +9,7 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2024
-cover: https://blogfiles.oss.fyz666.xyz/webp/0e71694e-9772-4998-aecb-3bb41267a079.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/c49ffab9-5549-4d5b-b22e-287c109dfdeb.webp
 ---
 
 本文是Hackergame 2024 题解的第三部分。
@@ -546,12 +546,7 @@ v12 = [bytes.fromhex(_) for _ in hexes]
 print(v12)
 ans = [0, 0, 0]  # v9 v10 v11
 v15 = bytearray(b'\x00' * 30)  # -142 -> -8
-# 30->61  取 58 59 60 61 # 第一次hash的最后四个字节
-# 62->93  取 90 91 92 93  # 第二次hash的最后四个字节
-# 94->125  取 122 123 124 125 # 第三次hash的最后四个字节
-# -84 -83 -82 -81
-# -52 -51 -50 -49
-# -20 -19 -18 -17
+
 for j in range(3):
     v15.extend(sha256(v12[j]).digest())
     for k in range(4):
@@ -563,7 +558,7 @@ for j in range(3):
 
 这样看就清晰多了，我们其实只要碰撞`sha256`的最后4个字节就行了，这平均也就只需要碰撞256 ** 4次，似乎是可接受的。
 
-不过这如果用`Python`来写，得跑到猴年马月了。于是我（在GPT的辅助下）写了个C程序：
+不过这如果用 Python 来写，估计得跑到猴年马月。于是我（在GPT的辅助下）写了个C程序：
 
 ```c
 #include <stdio.h>

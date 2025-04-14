@@ -9,7 +9,7 @@ categories:
 tags:
   - Hackergame
   - Hackergame 2024
-cover: https://blogfiles.oss.fyz666.xyz/webp/0e71694e-9772-4998-aecb-3bb41267a079.webp
+cover: https://blogfiles.oss.fyz666.xyz/webp/c49ffab9-5549-4d5b-b22e-287c109dfdeb.webp
 ---
 
 本文是Hackergame 2024 题解的第二部分。
