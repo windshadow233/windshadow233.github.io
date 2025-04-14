@@ -295,8 +295,10 @@
   script.
     $(document).ready(function(){createCharts();})
 
+script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js")
+script(src=url_for(theme.CDN.option.countup_js))
 script.
-  (() => {
+  $(document).ready(() => {
     function isInViewPortOfOne(el) {
       if (!el) return;
       const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -344,29 +346,28 @@ script.
             document.removeEventListener('scroll', throttleStatisticUP);
           }
         }
-
-        const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 919526400, 0, 2, {
-          useEasing: true,
-          useGrouping: false,
-          separator: ',',
-          decimal: '.',
-          prefix: '',
-          suffix: ''
-        })
-
-        function scrollSelfInfoContentYear() {
-          let selfInfoContentYearElment = document.querySelector('.author-content-item.selfInfo.single');
-          if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
-            selfInfoContentYear.start()
-            document.removeEventListener('scroll', throttleScrollSelfInfoContentYear);
-          }
-        }
         const throttleStatisticUP = btf.throttle(statisticUP, 200)
         document.addEventListener('scroll', throttleStatisticUP, {passive: true})
-
-        const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
-        document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
     });
+
+    const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 919526400, 0, 2, {
+      useEasing: true,
+      useGrouping: false,
+      separator: ',',
+      decimal: '.',
+      prefix: '',
+      suffix: ''
+    })
+    const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
+    document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
+
+    function scrollSelfInfoContentYear() {
+      let selfInfoContentYearElment = document.querySelector('.author-content-item.selfInfo.single');
+      if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
+        selfInfoContentYear.start()
+        document.removeEventListener('scroll', throttleScrollSelfInfoContentYear);
+      }
+    }
 
     var pursuitInterval = null;
       pursuitInterval = setInterval(function () {
@@ -403,6 +404,4 @@ script.
           stagger: -0.1
         })
       })
-  })()
-script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js")
-script(src=url_for(theme.CDN.option.countup_js))
+  })
