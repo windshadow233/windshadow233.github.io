@@ -11,7 +11,7 @@ project_list:
   - name: Blog
     descr: 此博客的源码
     url: https://github.com/windshadow233/windshadow233.github.io
-    image: https://s2.loli.net/2025/04/12/r8qHDfvZocJCgdO.webp
+    image: https://blogfiles.oss.fyz666.xyz/webp/e4592f55-2cc6-4d31-8159-8e27f0d2831f.webp
 
   - name: Mahjong-AI
     descr: 基于Suphx的立直麻将AI（只完成了监督学习部分）
