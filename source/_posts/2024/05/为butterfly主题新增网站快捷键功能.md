@@ -59,7 +59,7 @@ script.
   }
 ```
 
-修改`themes/butterfly/source/js/main.js`，在最后添加一些代码（下面第3至第40行）：
+修改`themes/butterfly/source/js/main.js`，在最后添加一些代码（下面第3行开始的部分）：
 
 ```js
 document.addEventListener('DOMContentLoaded', function () {
