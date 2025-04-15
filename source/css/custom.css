@@ -2,16 +2,16 @@ html{
     scroll-behavior:smooth;
 }
 :fullscreen {
-    overflow-y: scroll;
+    overflow: auto;
 }
 :-ms-fullscreen {
-    overflow-y: scroll;
+    overflow: auto;
 }
 :-webkit-full-screen {
-    overflow-y: scroll;
+    overflow: auto;
 }
 :-moz-full-screen {
-    overflow-y: scroll;
+    overflow: auto;
 }
 @font-face{
     font-family: 'LXGW Marker Gothic';

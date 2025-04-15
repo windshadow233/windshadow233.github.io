@@ -1089,9 +1089,9 @@ inject:
     - <style id="barragesColor"></style>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu@v0.0.8.js" async></script>
+    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu@v0.0.9.js" async></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu@v0.0.1.css">
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script src="/js/charts.js"></script>
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar@v0.0.2.js"></script>
@@ -1166,6 +1166,10 @@ shortcut:
       text: S
       action: 站内搜索
       script: $(".search").click()
+    - keycode: 32
+      text: Space
+      action: 刷新页面
+      script: pjax.loadUrl('')
     - keycode: 82
       text: R
       action: 随机文章
@@ -1214,10 +1218,6 @@ shortcut:
       text: M
       action: 播放/暂停音乐
       script: aplayers[0].toggle()
-    - keycode: 32
-      text: Space
-      action: 全屏模式切换
-      script: fullScreen()
 
 fcircle:
   apiurl: https://fcircle.fyz666.xyz/

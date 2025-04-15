@@ -1,18 +1,32 @@
-function setInfo(ip, city, distance, isCache) {
-    $('.welcome #local-ip').text(ip);
-    $('.welcome #city').text(city);
-    $('.welcome #distance').text(distance);
-    if (isCache) return;
-    var expiresDate= new Date();
-    expiresDate.setTime(expiresDate.getTime() + (5 * 60 * 1000));
-    var s = JSON.stringify({
-       "ip": ip,
-       "city": city,
-       "distance": distance
-    });
-    $.cookie('locationInfo', s, {expires: expiresDate, path: '/' });
+function isFullScreen() {
+   return !!(document.fullscreen || document.mozFullScreen || document.webkitIsFullScreen || document.webkitFullScreen || document.msFullScreen)
+}
+function fullScreen() {
+   const element = document.body;
+ 
+   if (isFullScreen()) {
+     if (document.exitFullscreen) {
+       document.exitFullscreen();
+     } else if (document.mozCancelFullScreen) {
+       document.mozCancelFullScreen();
+     } else if (document.webkitExitFullscreen) {
+       document.webkitExitFullscreen();
+     } else if (document.msExitFullscreen) {
+       document.msExitFullscreen();
+     }
+   } else {
+     if (element.requestFullscreen) {
+       element.requestFullscreen();
+     } else if (element.mozRequestFullScreen) {
+       element.mozRequestFullScreen();
+     } else if (element.webkitRequestFullscreen) {
+       element.webkitRequestFullscreen();
+     } else if (element.msRequestFullscreen) {
+       element.msRequestFullscreen();
+     }
+   }
  }
- function getDistance(e, t, n, o) {
+function getDistance(e, t, n, o) {
     const {sin: a, cos: s, asin: i, PI: c, hypot: r} = Math;
     let l = (e,t)=>(e *= c / 180,
     {
