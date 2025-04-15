@@ -26,6 +26,20 @@ function fullScreen() {
      }
    }
  }
+ function setInfo(ip, city, distance, isCache) {
+   $('.welcome #local-ip').text(ip);
+   $('.welcome #city').text(city);
+   $('.welcome #distance').text(distance);
+   if (isCache) return;
+   var expiresDate= new Date();
+   expiresDate.setTime(expiresDate.getTime() + (5 * 60 * 1000));
+   var s = JSON.stringify({
+      "ip": ip,
+      "city": city,
+      "distance": distance
+   });
+   $.cookie('locationInfo', s, {expires: expiresDate, path: '/' });
+}
 function getDistance(e, t, n, o) {
     const {sin: a, cos: s, asin: i, PI: c, hypot: r} = Math;
     let l = (e,t)=>(e *= c / 180,
