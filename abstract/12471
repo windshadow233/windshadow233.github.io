@@ -1,0 +1,1 @@
+文章介绍了如何在MacBook上使用MCPM（Model Context Protocol Manager）配置LLM（大语言模型）与本地工具（如iTerm2）的集成。通过安装MCPM和相关服务（如iterm-mcp），作者实现了让LLM直接调用本地终端命令，展示了如何通过LLM独立解决CTF挑战题。文章还提到了未来尝试更多服务以提升生产力的计划。
