@@ -322,7 +322,7 @@ kbd {
 
 .aplayer.aplayer-fixed .aplayer-body:hover {
     border: 1px solid var(--fyz-theme)!important;
-    box-shadow: 0 0 3px var(--fyz-theme)!important
+    box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
 b,strong {
@@ -464,7 +464,7 @@ b,strong {
 }
 
 .article-sort-item:not(.year):hover {
-    border: 1px solid var(--fyz-theme)
+    border: 1px solid var(--fyz-theme);
 }
 
 .article-sort-item-a {
@@ -810,17 +810,12 @@ pre {
 }
 
 code {
-    word-break: break-all
+    word-break: break-all;
 }
 
 #recent-posts>.recent-post-item:hover {
     border: 1px solid var(--fyz-theme)!important;
-    box-shadow: 0 0 3px var(--fyz-theme)!important
-}
-
-.recent-post-item:hover {
-    border: 1px solid var(--fyz-theme);
-    box-shadow: 0 0 3px var(--fyz-theme)!important
+    box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
 [data-theme=light] #recent-posts>.recent-post-item {
@@ -893,7 +888,7 @@ code {
 }
 
 #pagination .page-number.current,.menus_item_child li:hover {
-    background: var(--fyz-theme)!important
+    background: var(--fyz-theme)!important;
 }
 
 #universe-background {
@@ -1256,7 +1251,7 @@ blockquote cite {
 
 .card-widget:hover {
     border: 1px solid var(--fyz-theme)!important;
-    box-shadow: 0 0 3px var(--fyz-theme)!important
+    box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
 .toggle>.toggle-button {
@@ -1516,7 +1511,7 @@ blockquote cite {
 
 .cards #categoryBar,.cards #random-top,.cards #swiper-container,.cards .github_container {
     -webkit-box-shadow: var(--card-box-shadow);
-    box-shadow: var(--card-box-shadow)
+    box-shadow: var(--card-box-shadow);
 }
 
 .cards #categoryBar {
@@ -1530,16 +1525,16 @@ blockquote cite {
 }
 
 .cards #swiper-container {
-    -webkit-transition: box-shadow .3s;
-    -moz-transition: box-shadow .3s;
-    -o-transition: box-shadow .3s;
-    -ms-transition: box-shadow .3s;
-    transition: box-shadow .3s
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
 }
 
 #random-top2:hover,.cards #categoryBar:hover,.cards #random-top:hover,.cards #swiper-container:hover,.cards .github_container:hover {
     border: 1px solid var(--fyz-theme)!important;
-    box-shadow: 0 0 3px var(--fyz-theme)!important
+    box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
 .top {
@@ -1882,7 +1877,7 @@ img[data-lazy-src]:not(.loaded) {
 
 #post .post-copyright:hover,.relatedPosts>.relatedPosts-list>div:hover {
     border: 1px solid var(--fyz-theme);
-    box-shadow: 0 0 3px var(--fyz-theme)!important
+    box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
 .reward-button,.reward-item .post-qr-code-img,.reward-main .reward-all {
@@ -2250,10 +2245,16 @@ img[data-lazy-src]:not(.loaded) {
 
 #post .tag_share .post-meta__tags {
     color: var(--fyz-theme);
-    border: 1px solid var(--fyz-theme)
+    border: 1px solid var(--fyz-theme);
 }
 
 #post .tag_share .post-meta__tags:hover {
     color: var(--fyz-white);
-    background: var(--fyz-theme)
+    background: var(--fyz-theme);
+}
+#archive .page-number.current {
+    border-radius: 6px!important;
+}
+#archive a.page-number:hover,#archive a.extend:hover{
+    color: var(--fyz-theme)!important;
 }

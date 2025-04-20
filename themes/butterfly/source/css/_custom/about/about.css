@@ -103,7 +103,7 @@ p.p.center, span.p.center {
   overflow: hidden;
   border: 1px solid var(--fyz-border);
   box-shadow: var(--card-box-shadow);
-  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .author-content-item:hover{
   border: 1px solid var(--fyz-theme);
@@ -112,7 +112,7 @@ p.p.center, span.p.center {
 .hello-about{
   border: 1px solid var(--fyz-border);
   box-shadow: var(--card-box-shadow);
-  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hello-about:hover{
   border: 1px solid var(--fyz-theme);
@@ -212,6 +212,7 @@ p.p.center, span.p.center {
   background-size: cover;
   color: var(--fyz-white);
   overflow: hidden;
+  transition: 0.3s all ease-in-out;
 }
 #about-page .about-statistic::after {
   box-shadow: 0 -159px 173px 71px #0c1c2c inset;
