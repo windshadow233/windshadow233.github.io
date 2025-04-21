@@ -14,6 +14,10 @@ link_groups:
       link: https://chatgpt.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
       descr: 大模型领域的先驱
+    - name: Claude
+      link: https://claude.ai/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/c9ee9939-db1f-4052-82cb-7476c25d4d4d.png
+      descr: 由 Anthropic 开发的 AI 助手
     - name: Google AI Studio
       link: https://aistudio.google.com/
       avatar: https://blogfiles.oss.fyz666.xyz/webp/f6f0648b-4868-4b13-83ff-4f2c794589a9.webp
@@ -42,6 +46,10 @@ link_groups:
       link: https://chatexcel.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/61444f7d-d858-4057-94b6-c61532572320.png
       descr: 通过自然语言操作Excel表格
+    - name: MCP Manager
+      link: https://mcpm.sh/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/12cfd9b5-66e5-434e-bb2f-5d195f8d97a6.svg
+      descr: 一款开源的 MCP 服务器命令行管理工具
   - class_name: 实用工具
     class_desc: 一些很不错的在线工具
     link_list:
@@ -149,6 +157,10 @@ link_groups:
       link: https://imagecompressor.11zon.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/30bc11bc-a151-4abe-a892-96fd92b3d9a3.png
       descr: 支持各种格式的图像压缩、转换
+    - name: removebg
+      link: https://www.remove.bg/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/9ad53970-a2bc-4bb1-97e0-065c766d981c.png
+      descr: 懒得打开PS？直接在线去背景
 
   - class_name: 测试工具
     class_desc: ''
