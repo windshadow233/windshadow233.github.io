@@ -135,7 +135,7 @@ Command: npx -y iterm-mcp
 > - For multi-step tasks, you may need to interrupt the model if it goes off track. Start with smaller, focused tasks until you're familiar with how the model behaves.
 > <cite><a href="https://github.com/ferrislucas/iterm-mcp?tab=readme-ov-file#safety-considerations">Safety Considerations of iterm-mcp</a></cite>
 
-一句话：你得检查大模型给出的命令是否安全。
+总结：你得检查大模型给出的命令是否安全。
 {% endnote %}
 
 ## 使用示例
