@@ -3,8 +3,8 @@ subTitle: 博主日常使用的设备
 tips: 工欲善其事，必先利其器
 top_background: https://blogfiles.oss.fyz666.xyz/jpg/8cf15d52-96ae-462f-b1ed-81d442ce8c23.jpg
 equipment_groups:
-  - class_name: 生产力
-    class_desc: 开发、娱乐或日常使用的核心设备
+  - class_name: 主力设备
+    class_desc: 用于开发、创作和日常工作的高性能设备
     equipment_list:
       - name: MacBook Pro 2021 16 英寸
         detail: 深空灰 / Apple M1 Pro (16 GB / 512 GB)
@@ -27,8 +27,8 @@ equipment_groups:
         link:
           name: 详情
           url: https://www.apple.com.cn/shop/buy-iphone/iphone-15/MTLM3CH/A
-  - class_name: 配件与外设
-    class_desc: 提升使用体验的辅助设备
+  - class_name: 外设配件
+    class_desc: 提升效率与舒适度的辅助工具
     equipment_list:
       - name: Beats Solo 4
         detail: 岩青色
@@ -58,8 +58,8 @@ equipment_groups:
         link:
           name: 详情
           url: https://cuktech.com.cn/show_procon.thtml?id=8
-  - class_name: 网络与家用服务
-    class_desc: 家里的一些网络设备和服务设备    
+  - class_name: 网络与服务
+    class_desc: 家庭网络与本地服务部署设备    
     equipment_list:
       - name: 树莓派 4B
         detail: 4 GB RAM
