@@ -31,6 +31,8 @@
       !=partial('includes/widget/card_announcement', {}, {cache: true})
     if theme.aside.card_announcement.enable_page === 'home' && is_home()
       !=partial('includes/widget/card_announcement', {}, {cache: true})
+    if is_home() && theme.aside.card_weather.enable
+      !=partial('includes/widget/card_weather', {}, {cache: true})
     if is_home() && theme.aside.card_mbti.enable
       !=partial('includes/widget/card_mbti', {}, {cache: true})
     if theme.history_calendar.enable_page === 'all' || theme.history_calendar.enable_page === 'page'

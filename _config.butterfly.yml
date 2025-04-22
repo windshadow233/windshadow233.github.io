@@ -365,6 +365,9 @@ aside:
     series_title: false # The title shows the series name
     orderBy: 'date' # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+  card_weather:
+    enable: true
+    image_url: https://gh.fyz666.xyz/heweather/weather.png
   card_mbti:
     enable: true
     mbti_text: 'INFP-A'

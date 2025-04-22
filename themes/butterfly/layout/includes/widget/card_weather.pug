@@ -1,0 +1,10 @@
+.card-widget.card-weather(style="height: 500px;background-position:center center;background-size:cover;background-repeat:no-repeat")
+script.
+  $(document).ready(function(){
+    const widget = document.querySelector(".card-weather");
+    if (widget) {
+      const timestamp = Date.now();
+      const imageUrl = !{JSON.stringify(theme.aside.card_weather.image_url)};
+      widget.style.backgroundImage = `url(${imageUrl}?t=${timestamp})`;
+    }
+  });
