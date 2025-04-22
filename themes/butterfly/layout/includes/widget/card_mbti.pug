@@ -6,7 +6,7 @@ style.
       --mbti-purple: #88619a;
       --mbti-red: #f25e62;
     }
-    .card-mbti {
+    .mbti {
       width: 100%;
       padding: 5px;
     }
@@ -67,7 +67,7 @@ style.
     .purple { background-color: var(--mbti-purple); }
     .red    { background-color: var(--mbti-red); }
 
-    .card-mbti .image {
+    .mbti .image {
         position: absolute;
         right: 0px;
         top: 10px;
@@ -75,12 +75,12 @@ style.
         transition: transform 2s cubic-bezier(.13, .45, .21, 1.02);
         opacity: 0.8;
     }
-    .card-mbti .image img {
+    .mbti .image img {
         display: block;
         max-width: 100%;
         transition: filter 375ms ease-in .2s
     }
-    .card-mbti:hover .image {
+    .mbti:hover .image {
         transform: rotate(-10deg);
     }
 
@@ -93,12 +93,12 @@ style.
 - const mbtiValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
 - const percentValues = mbtiValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
 
-.card-widget
+.card-widget.card-mbti
   .item-headline
     i.iconfont.icon-MBTI
     span= `MBTI（${card_mbti.mbti_text}）`
 
-  .card-mbti
+  .mbti
     each val, i in ['ei', 'sn', 'tf', 'jp', 'at']
       - const value = card_mbti[val].value
       - const type = card_mbti[val].type
