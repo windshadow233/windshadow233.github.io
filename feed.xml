@@ -15,11 +15,11 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Thu, 24 Apr 2025 08:37:13 GMT</pubDate>
+    <pubDate>Thu, 24 Apr 2025 09:28:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>配置MCPM：让LLM调用你电脑上的一切工具</title>
+      <title>MCPM：让LLM调用你电脑上的一切工具</title>
       <link>https://blog.fyz666.xyz/blog/12471/</link>
       <guid>https://blog.fyz666.xyz/blog/12471/</guid>
       <pubDate>Sun, 20 Apr 2025 14:23:53 GMT</pubDate>
