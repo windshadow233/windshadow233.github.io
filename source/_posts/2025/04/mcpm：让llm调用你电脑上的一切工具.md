@@ -1,5 +1,5 @@
 ---
-title: 从零配置MCPM：让LLM调用你电脑上的一切工具
+title: MCPM：让LLM调用你电脑上的一切工具
 disableNunjucks: false
 mathjax: false
 id: 12471
