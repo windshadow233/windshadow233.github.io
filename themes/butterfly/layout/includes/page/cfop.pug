@@ -114,12 +114,16 @@ script.
 
 if site.data.cfop
   - var info = site.data.cfop
-  .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) left 28% / cover no-repeat;` : "")
+  .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) center 28% / cover no-repeat;` : "")
     .card-content
       .author-content-item-tips=info.title
       span.author-content-item-title=info.subTitle
       .content-bottom
         .tips=info.tips
+      .banner-button-group
+        a.banner-button(href=info.buttonLink)
+          i.fas.fa-circle-right
+          span.banner-button-text=info.buttonText
   - var algo_groups = site.data.cfop.algo_groups
   .pagination
     each category, index in algo_groups

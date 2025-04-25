@@ -1,7 +1,9 @@
 title: 我的项目
-subTitle: 博主的一些 GitHub 仓库
+subTitle: GitHub Repos
 tips: 生命不息，Coding 不止
-top_background: https://blogfiles.oss.fyz666.xyz/jpg/864a0d33-6e9e-48c9-b256-9f7193a52753.jpg
+top_background: https://blogfiles.oss.fyz666.xyz/webp/319d1d4b-8a72-46a3-990a-46b48bf027fd.webp
+buttonLink: https://github.com/windshadow233?tab=repositories
+buttonText: 全部仓库
 project_list:
   - name: This-Repo-Has-0-Stars
     descr: 欢迎大家前来Star！
@@ -24,7 +26,7 @@ project_list:
     image: https://raw.githubusercontent.com/windshadow233/python-chinese-chess/refs/heads/main/images/board_axes_type_0.svg
 
   - name: autograd-with-numpy
-    descr: 基于Numpy实现的自动求导(玩具)框架
+    descr: 基于Numpy实现的自动求梯度(玩具)框架
     url: https://github.com/windshadow233/autograd-with-numpy
     image: https://blogfiles.oss.fyz666.xyz/avif/78c092c3-216f-4b83-96bb-7a5af68f93ea.avif
 
@@ -57,3 +59,8 @@ project_list:
     descr: 新闻推荐算法（论文复现）
     url: https://github.com/windshadow233/DKN-NewsRecommendation
     image: https://blogfiles.oss.fyz666.xyz/webp/73dc0cdf-dd7e-4711-ba50-f59b9d924331.webp
+
+  - name: heweather
+    descr: 和风天气接口可视化
+    url: https://github.com/windshadow233/heweather/
+    image: https://blogfiles.oss.fyz666.xyz/webp/40fe8a44-d9a1-4dda-a10d-5d36b98a6e04.webp

@@ -292,8 +292,8 @@ p.p.center, span.p.center {
   width: fit-content;
   border-radius: 20px;
   justify-content: center;
-  background: var(--fyz-card-bg);
-  color: var(--font-color);
+  background: var(--fyz-card-bg)!important;
+  color: var(--font-color)!important;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -301,6 +301,7 @@ p.p.center, span.p.center {
   cursor: pointer;
   border-bottom: 0 !important;
   padding: 5px 5px 5px 10px;
+  box-shadow: none!important;
 }
 .author-content-item .card-content .banner-button-group .banner-button i {
   margin-right: 8px;
@@ -311,8 +312,8 @@ p.p.center, span.p.center {
 }
 
 .author-content-item .card-content .banner-button-group .banner-button:hover {
-  background: var(--fyz-main);
-  color: var(--fyz-white);
+  background: var(--fyz-main)!important;
+  color: var(--fyz-white)!important;
   border-radius: 20px !important;
 }
 .author-content-item.personalities {

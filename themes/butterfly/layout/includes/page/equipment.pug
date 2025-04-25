@@ -15,7 +15,7 @@ style.
   if site.data.equipment
     - var info = site.data.equipment
     - var equipment_groups = info.equipment_groups
-    .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) left 28% / cover no-repeat;` : "")
+    .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) center 28% / cover no-repeat;` : "")
         .card-content
           .author-content-item-tips=info.title
           span.author-content-item-title=info.subTitle
