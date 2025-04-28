@@ -1,7 +1,7 @@
 title: 我的装备
 subTitle: 博主日常使用的设备
 tips: 工欲善其事，必先利其器
-top_background: https://blogfiles.oss.fyz666.xyz/jpg/8cf15d52-96ae-462f-b1ed-81d442ce8c23.jpg
+top_background: https://blogfiles.oss.fyz666.xyz/webp/d4c9749d-ad5e-4cb2-b333-873a96abafb9.webp
 equipment_groups:
   - class_name: 主力设备
     class_desc: 用于开发、创作和日常工作的高性能设备
@@ -30,6 +30,13 @@ equipment_groups:
   - class_name: 外设配件
     class_desc: 提升效率与舒适度的辅助工具
     equipment_list:
+      - name: Apple Watch Series 10
+        detail: 铝金属 + 亮黑色 / 回环式表带 / GPS / 46mm
+        desc: 女朋友发工资送我的礼物🥳
+        cover: https://blogfiles.oss.fyz666.xyz/webp/1e0e14a4-9e2d-4a0e-96f0-371772df8086.webp
+        link:
+          name: 详情
+          url: https://www.apple.com.cn/apple-watch-series-10/
       - name: Beats Solo 4
         detail: 岩青色
         desc: 入耳式耳机戴久了不是太舒服，因此买了个头戴式的，音质还不错，续航时间非常久。
