@@ -2098,11 +2098,11 @@ img[data-lazy-src]:not(.loaded) {
     border: 1px solid var(--fyz-border);
     overflow: hidden;
     background: var(--fyz-card-bg);
-    min-height: 400px;
+    min-height: 460px;
     position: relative;
     -webkit-box-shadow: var(--card-box-shadow);
     box-shadow: var(--card-box-shadow);
-    margin: 8px 2% 8px 6px;
+    margin: 6px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
@@ -2110,15 +2110,25 @@ img[data-lazy-src]:not(.loaded) {
     transition: all .3s
 }
 
+.equipment-item-content .equipment-item-content-item  {
+    width: calc(100%/4 - 15px)
+}
+
 @media screen and (max-width:1200px) {
-    .equipment-item-content .equipment-item-content-item {
-        width: calc(50% - 12px)
+    .equipment-item-content .equipment-item-content-item  {
+        width: calc(100%/3 - 15px)
     }
 }
 
 @media screen and (max-width:768px) {
-    .equipment-item-content .equipment-item-content-item {
-        width: 100%
+    .equipment-item-content .equipment-item-content-item  {
+        width: calc(100%/2 - 15px)
+    }
+}
+
+@media screen and (max-width:512px) {
+    .equipment-item-content .equipment-item-content-item  {
+        width: calc(100% - 15px)
     }
 }
 
@@ -2159,7 +2169,7 @@ img[data-lazy-src]:not(.loaded) {
 .equipment-item-content .equipment-item-content-item .equipment-item-content-item-desc {
     line-height: 20px;
     color: var(--fyz-secondtext);
-    height: 80px;
+    height: 130px;
     display: -webkit-box;
     overflow: scroll;
     -webkit-box-orient: vertical;
@@ -2181,7 +2191,7 @@ img[data-lazy-src]:not(.loaded) {
 
 .equipment-item-content .equipment-item-content-item .equipment-item-content-item-cover {
     width: 100%;
-    height: 200px;
+    height: 210px;
     background: var(--fyz-secondbg);
     display: -webkit-box;
     display: -moz-box;
@@ -2204,7 +2214,7 @@ img[data-lazy-src]:not(.loaded) {
 }
 
 .equipment-item-content .equipment-item-content-item .equipment-item-content-item-cover:hover img.equipment-item-content-item-image {
-    transform: scale(1.2)
+    transform: scale(1.1);
 }
 
 .equipment-item-content .equipment-item-content-item img.equipment-item-content-item-image {
