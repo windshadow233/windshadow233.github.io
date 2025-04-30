@@ -23,9 +23,7 @@ mathjax: true
 ## 池化
 
 
-池化运算（Pooling），是一种对数据的采样方式，通过减小数据的分辨率尺寸来加速运算，其本质是信息完整性与运算速度的妥协。最常用的池化操作即最大池化（MaxPooling），过程如下图所示：
-
-
+池化运算（Pooling），是一种对数据的采样方式，通过减小数据的分辨率尺寸来加速运算，其本质是信息完整性与运算速度的妥协。最常用的池化操作即最大池化（`MaxPooling`），过程如下图所示：
 
 ![](https://blogfiles.oss.fyz666.xyz/png/271ef5b2-5f10-4f0c-802d-7c6c8f799e43.png)
 一般而言，以上面这种池化核尺寸为2、步长为2的池化操作最为常用。还有一种平均值池化，则是把每一块的最大值运算换成平均值运算。
@@ -65,8 +63,6 @@ def max_pool2d(x: Tensor, kernel_size, stride=None):
 
 我直接用循环解决了：
 
-
-
 ```python
 class MaxPool2dBackward(BackwardFcn):
     def calculate_grad(self, grad, children, place):
@@ -86,10 +82,7 @@ class MaxPool2dBackward(BackwardFcn):
 这里的代码都非常容易理解，我就不再解读了（其实是因为太不优雅了而不想解读）。
 
 
-AvgPooling和MaxPooling类似，这里不再贴代码。
-
-
-
+`AvgPooling`和`MaxPooling`类似，这里不再贴代码。
 
 ---
 
@@ -117,7 +110,7 @@ $$y^{(k)}=\gamma^{(k)}\hat{x}^{(k)}+\beta^{(k)}, k=1,2,\dots,C$$
 $y$，即是BN层最后的输出结果。
 
 
-在测试阶段，BN层使用训练时收集到的running_mean和running_var对数据进行归一化，使用训练时学习到的$\gamma$与$\beta$进行affine变换。
+在测试阶段，BN层使用训练时收集到的`running_mean`和`running_var`对数据进行归一化，使用训练时学习到的$\gamma$与$\beta$进行affine变换。
 
 
 ### 数学推导
@@ -136,7 +129,6 @@ $$y_i=\gamma \hat{x_i}+\beta$$
 
 
 下面来计算梯度，为清晰起见，我们先画出上述式子的计算图：
-
 
 
 ![](https://blogfiles.oss.fyz666.xyz/png/0aafd5c7-7fd1-4f27-ba11-de8656976bff.png)
@@ -206,9 +198,6 @@ $$\frac{\partial\sigma}{\partial x_i}=\frac{x_i-\mu}{n\sigma}$$
 
 $$\begin{aligned}\delta_{x_i}&=\delta_{\hat{x}_i}\frac{\partial\hat{x}_i}{\partial x_i}+\delta_\mu\frac{\partial\mu}{\partial x_i}+\delta_\sigma\frac{\partial\sigma}{\partial x_i}\\&=\frac{\delta_{\hat{x}_i}}{\sigma}-\frac{1}{n\sigma}\sum_{j=1}^n\delta_{\hat{x}_j}-\frac{x_i-\mu}{n\sigma^3}\sum_{j=1}^n\delta_{\hat{x}_j}(x_j-\mu)\\&=\frac{1}{n\sigma}(n\delta_{\hat{x}_i}-\sum_{j=1}^n\delta_{\hat{x}_j}-\frac{x_i-\mu}{\sigma}\sum_{j=1}^n\delta_{\hat{x}_j}\frac{x_j-\mu}{\sigma})\\&=\frac{1}{n\sigma}(n\delta_{\hat{x}_i}-\sum_{j=1}^n\delta_{\hat{x}_j}-\hat{x}_i\sum_{j=1}^n\delta_{\hat{x}_j}\hat{x}_j)\end{aligned}$$
 
-
-
-
 ---
 
 ### 代码
@@ -216,10 +205,7 @@ $$\begin{aligned}\delta_{x_i}&=\delta_{\hat{x}_i}\frac{\partial\hat{x}_i}{\parti
 
 最后，给出BN层正反向传播的代码：
 
-
 正向传播
-
-
 
 ```python
 def forward(self, x: Tensor)
@@ -240,8 +226,6 @@ def forward(self, x: Tensor)
 
 首先，根据输入数据x的维数（3或4），确定计算均值和方差时用到的axis（相当于去掉了Channel所在的1轴），接下来的操作分为training阶段或eval阶段，具体过程前面已经讲过了，这里省略一千字，直接来到最后调用的`batch_norm`函数。
 
-
-
 ```python
 def batch_norm(x: Tensor, mean: Tensor, var: Tensor, gamma: Tensor, beta: Tensor, eps=1e-5):
     axis = (0, -1, -2)[:x.ndim - 1]
@@ -253,15 +237,13 @@ def batch_norm(x: Tensor, mean: Tensor, var: Tensor, gamma: Tensor, beta: Tensor
     return output
 ```
 
-`batch_norm`函数也没啥好讲的，就是老老实实按前面的公式进行计算得到$y$即可，唯一需要注意的是gamma、beta在这里没办法直接broadcast（它俩的形状都是`(C,)`，而x_hat的形状则是`(B, C, H, W)`或`(B, C, L)`，因此需要手动扩展维度再进行affine运算）。
+`batch_norm`函数也没啥好讲的，就是老老实实按前面的公式进行计算得到$y$即可，唯一需要注意的是`gamma`、`beta`在这里没办法直接broadcast（它俩的形状都是`(C,)`，而x_hat的形状则是`(B, C, H, W)`或`(B, C, L)`，因此需要手动扩展维度再进行affine运算）。
 
 
-在计算图的children中，也额外放了一些信息，分别对应前面公式里的$\hat{x},\mu,\sigma^2$，以便于梯度的计算。
+在计算图的`children`中，也额外放了一些信息，分别对应前面公式里的$\hat{x},\mu,\sigma^2$，以便于梯度的计算。
 
 
 接下来是反向传播代码：
-
-
 
 ```python
 class BatchNormBackward(BackwardFcn):
@@ -286,9 +268,6 @@ class BatchNormBackward(BackwardFcn):
 
 
 可能有朋友会问，我们不是已经实现了这些基本运算的梯度传播了嘛，为什么还要大费周章地进行人力求导呢？这是因为我们计算了梯度之后发现，x的梯度可以利用很多已经得到的信息（如x_hat）进行快速计算，把这个计算图的反向传播过程打包成一个BatchNormBackward，在运算效率上有一定的提升，这样的例子还有不少，例如我前面已经提过一次的交叉熵损失函数。
-
-
-
 
 ---
 

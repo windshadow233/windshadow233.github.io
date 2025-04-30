@@ -185,7 +185,7 @@ print(r.recvall().decode())
 
 {% endhideToggle %}
 
-既然是用Python打包的可执行文件，那就用[Pyinstxtractor](https://github.com/extremecoders-re/)这个工具来反编译一下（这里得去Linux系统下反编译，不然似乎拿不到`PYZ-00.pyz_extracted`这个目录下的文件，没法做后面两个flag）
+既然是用Python打包的可执行文件，那就用[Pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor)这个工具来反编译一下（这里得去Linux系统下反编译，不然似乎拿不到`PYZ-00.pyz_extracted`这个目录下的文件，没法做后面两个flag）
 
 ### 源码中遗留的隐藏信息
 
