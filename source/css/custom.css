@@ -1537,6 +1537,10 @@ blockquote cite {
     box-shadow: 0 0 3px var(--fyz-theme)!important;
 }
 
+.cards .github_container .float-left a:hover{
+    color: var(--fyz-theme)!important;
+}
+
 .top {
     display: flex;
     flex-flow: column;
