@@ -313,3 +313,7 @@ link_groups:
       link: https://zerotier.fyz666.xyz/
       avatar: https://blogfiles.oss.fyz666.xyz/png/2d2d5ef2-2ec7-4289-98fd-e2f2ed6bbb06.png
       descr: ZeroTier 卫星服务器
+    - name: Cashbook
+      link: https://cashbook.fyz666.xyz/
+      avatar: https://blogfiles.oss.fyz666.xyz/webp/00dfb780-eb13-4108-932d-d8bc76aa1d4f.webp
+      descr: 个人收支记账本
