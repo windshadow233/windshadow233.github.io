@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Sat, 03 May 2025 12:22:00 GMT</pubDate>
+    <pubDate>Mon, 05 May 2025 10:37:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -35,6 +35,10 @@
       
       
       <category domain="https://blog.fyz666.xyz/tags/llm/">LLM</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/mcp/">MCP</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/mcpm/">MCPM</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/12471/#disqus_thread</comments>
