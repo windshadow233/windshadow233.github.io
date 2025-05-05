@@ -115,7 +115,6 @@ body {
     --fyz-maskbgdeep: rgba(255, 255, 255, 0.85);
     --fyz-hovertext: var(--fyz-main);
     --fyz-ahoverbg: #F7F7FA;
-    --fyz-scrollbar: rgba(60, 60, 67, 0.4);
     --fyz-card-btn-bg: #edf0f7;
     --fyz-post-blockquote-bg: #fafcff;
     --fyz-post-tabs-bg: #f2f5f8;
@@ -128,7 +127,6 @@ body {
     --fyz-card-border: #e3e8f7;
     --fyz-shadow-border: 0 8px 16px -4px #2c2d300c;
     --style-border-forever: 2px solid var(--fyz-main);
-    --fyz-card-bg: #121212;
     --fyz-border: #c9c9c9;
     --fyz-light-grey: #F2F2F2;
     --fyz-lighttext: var(--fyz-theme);
@@ -141,8 +139,8 @@ body {
     --fyz-white-acrylic2: #fffa;
     --fyz-blackgray: #797979;
     --fyz-0: #0000;
+    --fyz-whitegray: #f1f1f1;
     --fyz-scrollbar: #acacacDD;
-    --fyz-whitegray: #f1f1f1
 }
 
 [data-theme=light] {
