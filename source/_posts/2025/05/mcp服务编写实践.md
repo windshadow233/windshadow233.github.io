@@ -16,7 +16,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/712eb975-8859-44dc-9878-985f2775b0d
 
 前文曾提到可以使用MCPM管理各种现成的MCP服务以使得大语言模型接入许多现成工具，那么自然会想要自己写一个适合自身需求的工具来让大模型调用，本文就来简单记录一下这个过程。
 
-关于MCP服务的编写，已经有了现成的库了：
+关于MCP服务的编写，GitHub上已经有了现成的仓库了：
 
 {% link modelcontextprotocol, GitHub, https://github.com/modelcontextprotocol/ %}
 
@@ -54,17 +54,26 @@ uv add "mcp[cli]"
 uv add pdfplumber pandas
 ```
 
-先编写`pdf2csv.py`：
+编写`cash_classifier.py`：
 
 ```python
+from mcp.server.fastmcp import FastMCP
+import os
 import json
 
 import pdfplumber
 import logging
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
+mcp = FastMCP('cash-classifier')
 
-def extract_tables(filapath):
+
+@mcp.tool()
+async def parse_cashbook(filapath):
+    """解析pdf账单，将表格提取出来
+    Args:
+        filepath: 字符串，账单文件绝对路径
+    """
     with pdfplumber.open(filapath) as pdf:
         data = []
         headers = ['交易时间', '收/支', '交易分类', '收/付款方式', '金额', '流水归属', '交易对方', '备注']
@@ -90,22 +99,7 @@ def extract_tables(filapath):
 
 ```
 
-这里暂时只实现了解析PDF文件并转为JSON字符串的逻辑，然后编写`main.py`文件：
-
-```python
-from mcp.server.fastmcp import FastMCP
-import os
-from pdf2csv import *
-
-mcp = FastMCP('windshadow-universe')
-
-
-@mcp.tool()
-def parse_cashbook(filepath):
-    """将账单pdf文件转化为json字典，包含headers和data字段"""
-    return extract_tables(filepath)
-
-```
+这里暂时只实现了解析PDF文件并转为JSON字符串的逻辑。
 
 ## 配置Claude Desktop
 
@@ -115,7 +109,7 @@ def parse_cashbook(filepath):
 {
   "mcpServers": {
     ...
-    "windshadow-universe": {
+    "cash-classifier": {
       "command": "/absolute/path/to/uv",
       "args": [
         "run",
@@ -123,14 +117,14 @@ def parse_cashbook(filepath):
         "/absolute/path/to/project/dir/mcp_server",
         "mcp",
         "run",
-        "/absolute/path/to/project/dir/mcp_server/main.py"
+        "/absolute/path/to/project/dir/mcp_server/cash_classifier.py"
       ]
     }
   }
 }
 ```
 
-这里有三个绝对路径需要替换，分别是`uv`的绝对路径、通过`uv`初始化生成的项目目录`mcp_server`的绝对路径，以及前面创建的`main.py`文件的绝对路径。如使用相对路径则会失败（
+这里有三个绝对路径需要替换，分别是`uv`的绝对路径、通过`uv`初始化生成的项目目录`mcp_server`的绝对路径，以及前面创建的`cash_classifier.py`文件的绝对路径。如使用相对路径则会失败（
 
 接下来打开Claude Desktop，并让它解析账单内容，Claude会作出回应调用我们刚刚写的函数：
 
