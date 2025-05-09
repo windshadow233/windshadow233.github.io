@@ -48,58 +48,23 @@ uv add "mcp[cli]"
 
 ## 编写代码
 
-我希望让LLM为我处理一个PDF格式的账单文件，将它其中的数据条目进行细致的分类，再生成csv，因此我额外安装了两个库：
+这里，我们让LLM来做一件简单的事：列出我桌面上的所有文件
 
-```shell
-uv add pdfplumber pandas
-```
-
-编写`cash_classifier.py`：
+编写`main.py`：
 
 ```python
-from mcp.server.fastmcp import FastMCP
 import os
-import json
+from mcp.server.fastmcp import FastMCP
 
-import pdfplumber
-import logging
-logging.getLogger("pdfminer").setLevel(logging.ERROR)
-
-mcp = FastMCP('cash-classifier')
+mcp = FastMCP('windshadow-universe')
 
 
 @mcp.tool()
-async def parse_cashbook(filapath):
-    """解析pdf账单，将表格提取出来
-    Args:
-        filepath: 字符串，账单文件绝对路径
-    """
-    with pdfplumber.open(filapath) as pdf:
-        data = []
-        headers = ['交易时间', '收/支', '交易分类', '收/付款方式', '金额', '流水归属', '交易对方', '备注']
-        for page in pdf.pages:
-            table = page.extract_tables()[0]
-            for row in table[1:]:
-                number = float(row[3].replace(',', ''))
-                data.append([
-                    row[0],
-                    '支出' if number < 0 else '收入',
-                    row[5],
-                    row[6],
-                    abs(number),
-                    '',
-                    row[9],
-                    row[8]
-                ])
-            data.append(table[1:])
-    return json.dumps({
-        'headers': headers,
-        'data': data
-    }, ensure_ascii=False, indent=None, separators=(',', ':'))
+async def list_desktop_files():
+    """列出桌面上的文件"""
+    return os.listdir(os.path.expanduser('~/Desktop'))
 
 ```
-
-这里暂时只实现了解析PDF文件并转为JSON字符串的逻辑。
 
 ## 配置Claude Desktop
 
@@ -109,7 +74,7 @@ async def parse_cashbook(filapath):
 {
   "mcpServers": {
     ...
-    "cash-classifier": {
+    "windshadow-universe": {
       "command": "/absolute/path/to/uv",
       "args": [
         "run",
@@ -117,24 +82,18 @@ async def parse_cashbook(filapath):
         "/absolute/path/to/project/dir/mcp_server",
         "mcp",
         "run",
-        "/absolute/path/to/project/dir/mcp_server/cash_classifier.py"
+        "/absolute/path/to/project/dir/mcp_server/main.py"
       ]
     }
   }
 }
 ```
 
-这里有三个绝对路径需要替换，分别是`uv`的绝对路径、通过`uv`初始化生成的项目目录`mcp_server`的绝对路径，以及前面创建的`cash_classifier.py`文件的绝对路径。如使用相对路径则会失败（
+这里有三个绝对路径需要替换，分别是`uv`的绝对路径、通过`uv`初始化生成的项目目录`mcp_server`的绝对路径，以及前面创建的`main.py`文件的绝对路径。如使用相对路径则会失败（
 
-接下来打开Claude Desktop，并让它解析账单内容，Claude会作出回应调用我们刚刚写的函数：
+接下来打开Claude Desktop，并让它列出我的桌面文件，Claude会作出回应调用我们刚刚写的函数：
 
-<img src="https://blogfiles.oss.fyz666.xyz/png/9dda4212-0a0a-4d99-9354-6c1797bf03b0.png" alt="image-20250505234328124" style="zoom:50%;" />
-
-可见Claude已经成功调用我们写的函数，解析得到账单的信息了，然而：
-
-<img src="https://blogfiles.oss.fyz666.xyz/png/17ddfcea-7891-45ae-b213-946c9a95ef7b.png" alt="image-20250505234414773" style="zoom:50%;" />
-
-草。因此后续的处理流程还没有写。
+<img src="https://blogfiles.oss.fyz666.xyz/png/2f4a0278-2484-4935-bb62-a94509868826.png" alt="image-20250509144540460" style="zoom:50%;" />
 
 ---
 

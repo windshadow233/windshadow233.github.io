@@ -1,1 +1,1 @@
-本文介绍了如何使用Python SDK编写自定义的MCP服务，以便让大语言模型（如Claude Desktop）调用本地工具。作者通过安装uv环境管理工具、初始化项目目录、安装SDK和相关依赖（如pdfplumber和pandas），编写了一个将PDF账单文件解析为JSON格式的工具。最后，作者将该工具集成到Claude Desktop中，并成功实现了让LLM调用该工具的功能。
+本文介绍了如何使用Python SDK编写自定义的MCP服务，以便让大语言模型（如Claude Desktop）调用本地工具。作者通过安装uv环境管理工具、初始化项目目录、安装SDK，并编写了一个简单的list_desktop_files函数来列出桌面上的文件。最后，作者将该服务集成到Claude Desktop中，并成功实现了调用。
