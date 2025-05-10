@@ -1300,7 +1300,8 @@ blockquote cite {
 
 .welcome span {
     font-weight: bolder;
-    color: var(--fyz-theme)
+    color: var(--fyz-theme);
+    overflow-wrap: break-word;
 }
 
 .site-name {
