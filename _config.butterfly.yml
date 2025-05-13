@@ -1048,6 +1048,8 @@ pangu:
     - 'article-container'
     - 'top'
     - 'about-page'
+    - 'talk_page'
+    - 'equipment'
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
