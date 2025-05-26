@@ -100,6 +100,8 @@ algo_groups:
       - algo: (L' U L U') (L' U2 L U') (L' U L)
       - algo: (L' U L U) (L' U' L U2') (L' U L)
       - algo: (r U r' U') (r' F r F')
+      - algo: (U' R' F) (R U R' F') (R U) (L' U' L)
+      - algo: (U' M') (U' r' F R) (L' U L)
   - algo_type: F2L
     algo_name: F2L BR槽
     page_name: F2L BR槽
