@@ -259,6 +259,7 @@ algo_groups:
       - algo: (R2' U) (R U R' U') (R3 U') (R' U R')
       - algo: (R' U R' U') (R3 U') (R' U R U) R2'
       - algo: M2' U M2' U2 M2' U M2'
+      - algo: M2 U' M' U2 M2 U2 M' U M2
       - algo: (M2' U)2 (M' U2) (M2' U2) M'
       - algo: x' R2 D2 (R' U' R) D2 (R' U l')
       - algo: (l' U R') D2 (R U' R') D2 R2 x'
