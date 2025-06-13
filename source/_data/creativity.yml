@@ -8,6 +8,14 @@
       color: "#99CCFF"
       icon: https://blogfiles.oss.fyz666.xyz/png/efae609e-fef9-435f-a2e8-dfa7ddc58efb.png
       website: https://www.python.org/
+    - name: Cursor
+      color: "#4f4f4f"
+      icon: https://blogfiles.oss.fyz666.xyz/png/5c99750b-0fd6-497b-aebb-e06f666a6322.png
+      website: https://www.cursor.com/
+    - name: VS Code
+      color: "#66CCFF"
+      icon: https://blogfiles.oss.fyz666.xyz/svg/e7e2ad27-e146-426d-8602-a6e22308fed4.svg
+      website: https://code.visualstudio.com/
     - name: ChatGPT
       color: "#4aa181"
       icon: https://blogfiles.oss.fyz666.xyz/png/0805f6ce-553e-4fbd-9caf-9a89c1a77621.png
@@ -16,6 +24,10 @@
       color: "#003399"
       icon: https://blogfiles.oss.fyz666.xyz/png/79d437a1-e2b7-4afc-b00e-17ec75c7705c.png
       website: https://arxiv.org/abs/2112.10752
+    - name: Ubuntu
+      color: "#CC6600"
+      icon: https://blogfiles.oss.fyz666.xyz/png/52263707-baa4-4819-876f-cbdc8c77ea01.png
+      website: https://ubuntu.com/
     - name: Docker
       color: "#57b6e6"
       icon: https://blogfiles.oss.fyz666.xyz/png/c8845077-0d6b-479d-9b20-f86f8e268df4.png
@@ -36,10 +48,6 @@
       color: "#999966"
       icon: https://blogfiles.oss.fyz666.xyz/png/72a41dbd-0f71-43f9-afc5-b3d939cc8be3.png
       website: https://www.latex-project.org/
-    - name: Ubuntu
-      color: "#CC6600"
-      icon: https://blogfiles.oss.fyz666.xyz/png/52263707-baa4-4819-876f-cbdc8c77ea01.png
-      website: https://ubuntu.com/
     - name: Bash
       color: "#937df7"
       icon: https://blogfiles.oss.fyz666.xyz/png/ec0aaa69-66e6-4835-b431-4ccfa0b66a18.png
@@ -52,10 +60,6 @@
       color: "#4499e4"
       icon: https://blogfiles.oss.fyz666.xyz/png/166c7f50-093c-46bb-b5e9-d4987affc60c.png
       website: https://www.vim.org/
-    - name: VS Code
-      color: "#66CCFF"
-      icon: https://blogfiles.oss.fyz666.xyz/svg/e7e2ad27-e146-426d-8602-a6e22308fed4.svg
-      website: https://code.visualstudio.com/
     - name: CSS3
       color: "#2c51db"
       icon: https://blogfiles.oss.fyz666.xyz/png/3e64359d-2f6e-43c6-a8dc-64773a2681ef.png
