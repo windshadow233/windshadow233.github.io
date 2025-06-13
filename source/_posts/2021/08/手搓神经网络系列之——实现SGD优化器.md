@@ -1,8 +1,10 @@
 ---
-title: 手撸神经网络系列之——实现SGD优化器
+title: 手搓神经网络系列之——实现SGD优化器
 id: 6256
 date: 2021-08-06 15:29:56
-categories: [机器学习]
+categories:
+    - [机器学习]
+    - [手搓神经网络]
 tags: ['Python', 'SGD', '神经网络']
 cover: https://blogfiles.oss.fyz666.xyz/jpeg/937faa7f-b6e2-4d2c-b8a6-1aef82ee5a12.jpeg
 disableNunjucks: false

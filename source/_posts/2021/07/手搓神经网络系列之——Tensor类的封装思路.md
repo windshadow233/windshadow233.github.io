@@ -1,8 +1,10 @@
 ---
-title: 手撸神经网络系列之——Tensor类的封装思路
+title: 手搓神经网络系列之——Tensor类的封装思路
 id: 5719
 date: 2021-07-28 10:39:49
-categories: [机器学习]
+categories:
+    - [机器学习]
+    - [手搓神经网络]
 tags: ['Python', '反向传播', '神经网络']
 cover: https://blogfiles.oss.fyz666.xyz/png/2d8a895f-23b6-4a8b-80ef-523f618a22ef.png
 disableNunjucks: false

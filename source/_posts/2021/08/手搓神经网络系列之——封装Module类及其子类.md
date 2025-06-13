@@ -1,8 +1,10 @@
 ---
-title: 手撸神经网络系列之——封装Module类及其子类
+title: 手搓神经网络系列之——封装Module类及其子类
 id: 6243
 date: 2021-08-06 09:21:38
-categories: [机器学习]
+categories:
+    - [机器学习]
+    - [手搓神经网络]
 tags: ['Python', '神经网络']
 cover: 
 disableNunjucks: false
