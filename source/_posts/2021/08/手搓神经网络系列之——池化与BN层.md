@@ -3,9 +3,8 @@ title: 手搓神经网络系列之——池化与BN层
 id: 6123
 date: 2021-08-05 17:45:41
 categories:
-    - [机器学习]
     - [手搓神经网络]
-tags: ['Python', '卷积神经网络', '反向传播', '神经网络']
+tags: ['Python', '卷积神经网络', '反向传播', '神经网络', '机器学习', '深度学习']
 cover: https://blogfiles.oss.fyz666.xyz/png/271ef5b2-5f10-4f0c-802d-7c6c8f799e43.png
 disableNunjucks: false
 mathjax: true

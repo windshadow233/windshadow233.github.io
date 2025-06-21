@@ -3,9 +3,8 @@ title: 浅谈Softmax与Cross Entropy Loss
 id: 5174
 date: 2020-09-25 13:05:46
 categories:
-  - [机器学习]
-  - [学习笔记]
-tags: ['神经网络']
+  - ['学习笔记']
+tags: ['神经网络', '机器学习', '深度学习']
 cover: 
 disableNunjucks: true
 mathjax: true
