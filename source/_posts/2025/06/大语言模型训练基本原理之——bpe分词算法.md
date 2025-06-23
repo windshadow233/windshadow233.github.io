@@ -127,27 +127,7 @@ understanding misunderstand misunderstanding
 
 我们首先拿到所有单词按字符的拆分，同时在末尾添加一个符号`</w>`表示词尾：
 
-```raw
-low                  → l o w </w>
-lower                → l o w e r </w>
-lowest               → l o w e s t </w>
-play                 → p l a y </w>
-played               → p l a y e d </w>
-playing              → p l a y i n g </w>
-player               → p l a y e r </w>
-happy                → h a p p y </w>
-happier              → h a p p i e r </w>
-happiest             → h a p p i e s t </w>
-running              → r u n n i n g </w>
-runs                 → r u n s </w>
-runner               → r u n n e r </w>
-international        → i n t e r n a t i o n a l </w>
-internationalization → i n t e r n a t i o n a l i z a t i o n </w>
-internationalize     → i n t e r n a t i o n a l i z e </w>
-understanding        → u n d e r s t a n d i n g </w>
-misunderstand        → m i s u n d e r s t a n d </w>
-misunderstanding     → m i s u n d e r s t a n d i n g </w>
-```
+<img src="https://blogfiles.oss.fyz666.xyz/webp/f6afae5c-b578-49a1-bf9c-caf476539aea.webp" alt="bpe" style="zoom:50%;" />
 
 将所有出现过的字符记录下来，作为当前的词表（词表大小为19）：
 
@@ -172,27 +152,7 @@ misunderstanding     → m i s u n d e r s t a n d i n g </w>
 
 找到出现频率最高的组合：`('e', 'r')`，然后遍历所有拆分列表，将所有该组合进行合并，得到新的单词拆分方式：
 
-```raw
-low                  → l o w </w>
-lower                → l o w er </w>
-lowest               → l o w e s t </w>
-play                 → p l a y </w>
-played               → p l a y e d </w>
-playing              → p l a y i n g </w>
-player               → p l a y er </w>
-happy                → h a p p y </w>
-happier              → h a p p i er </w>
-happiest             → h a p p i e s t </w>
-running              → r u n n i n g </w>
-runs                 → r u n s </w>
-runner               → r u n n er </w>
-international        → i n t er n a t i o n a l </w>
-internationalization → i n t er n a t i o n a l i z a t i o n </w>
-internationalize     → i n t er n a t i o n a l i z e </w>
-understanding        → u n d er s t a n d i n g </w>
-misunderstand        → m i s u n d er s t a n d </w>
-misunderstanding     → m i s u n d er s t a n d i n g </w>
-```
+<img src="https://blogfiles.oss.fyz666.xyz/webp/c9e8a75d-986d-4ec3-9877-df2937a2e4a8.webp" alt="bpe" style="zoom:50%;" />
 
 将组合`er`添加到词表中，不过此时单词的拆分中仍存在独立的`e`和`r`，故将它们保留在词表中。当前词表大小：20。
 
@@ -221,14 +181,18 @@ misunderstanding     → m i s u n d er s t a n d i n g </w>
 ...
 ```
 
-合并`u`与`n`，将`un`加入词表，此时，发现已经没有单独出现的字符`u`了，因此从词表中移除`u`。当前词表大小：21。
+合并`u`与`n`，将`un`加入词表：
+
+<img src="https://blogfiles.oss.fyz666.xyz/webp/3a8df37e-695e-47e0-891a-46616dcbf22d.webp" alt="bpe" style="zoom:50%;" />
+
+此时，发现已经没有单独出现的字符`u`了，因此从词表中移除`u`。当前词表大小：21。
 
 ---
 
 持续进行上述操作，直到达到下面两个终止条件之一：
 
 1. 词表大小达到我们的预设值：本例中为25。
-2. 没有可合并的相邻字符对。
+2. 没有可合并的**高频**相邻字符对。（可自定义频率阈值）
 
 （不过一般而言都会是第一种）
 
