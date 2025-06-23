@@ -140,7 +140,7 @@ class LoraLinear(torch.nn.Module):
 $$
 \min_\theta\mathbb E(x,y)\sim\mathcal{D}[-\log P_\theta(y|x)]
 $$
-其中$$x$$和$$y$$分别为用户的prompt和人类标注的参考回答。
+其中 $$x$$ 和 $$y$$ 分别为用户的prompt和人类标注的参考回答。
 
 ---
 
