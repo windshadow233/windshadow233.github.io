@@ -8,9 +8,9 @@ categories:
   - [学习笔记]
 tags:
   - LLM
+  - BPE 算法
   - 机器学习
   - 深度学习
-  - BPE 算法
 cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e6584.webp
 
 ---
