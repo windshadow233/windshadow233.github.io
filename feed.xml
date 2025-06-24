@@ -15,8 +15,45 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Tue, 24 Jun 2025 11:55:05 GMT</pubDate>
+    <pubDate>Tue, 24 Jun 2025 18:45:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>大语言模型训练基本原理之——PPO算法</title>
+      <link>https://blog.fyz666.xyz/blog/12706/</link>
+      <guid>https://blog.fyz666.xyz/blog/12706/</guid>
+      <pubDate>Tue, 24 Jun 2025 05:01:20 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;在大语言模型的训练流程中，通常会先经过预训练和监督微调，经过这两个步骤后，模型已经能够理解语言结构，也能掌握基本的知识和指令执行能力，但你可能会发现，模型有时候仍会胡说八道、答非所问——这是由于监督微调出来的模型还不够聪明，它只是单纯能模仿人类已经写好的答案，但并不明白什么</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>在大语言模型的训练流程中，通常会先经过预训练和监督微调，经过这两个步骤后，模型已经能够理解语言结构，也能掌握基本的知识和指令执行能力，但你可能会发现，模型有时候仍会胡说八道、答非所问——这是由于监督微调出来的模型还不够聪明，它只是单纯能模仿人类已经写好的答案，但并不明白什么样的回答是「好」的（更符合人类偏好）。说白了，模型在监督微调阶段学的是<strong>「怎么答」</strong>，但没学会<strong>「怎么才能答得好」</strong>。</p><p>为了进一步提升模型输出的质量和对齐程度，研究者引入了<strong>基于人类反馈的强化学习（RLHF）</strong>。通过奖励模型对不同响应进行偏好打分，再利用强化学习算法对语言模型进行微调，使其在生成文本时更加贴合人类价值与偏好。其中，<strong>PPO（Proximal Policy Optimization）</strong> 是 RLHF 阶段最常用的优化算法，也是在 InstructGPT 和 ChatGPT 等模型中取得显著效果的关键技术。</p><p>本文将先从这个PPO算法入手，拆解此算法的核心理论。</p><hr><h2 id="策略梯度算法"><a href="#策略梯度算法" class="headerlink" title="策略梯度算法"></a>策略梯度算法</h2><p>PPO算法是一种<strong>On-Policy</strong>的<strong>策略梯度算法</strong>，关于策略梯度，我在<a href="/blog/12633/">之前的一篇文章</a>中曾提到过其核心公式的推导：</p><script type="math/tex; mode=display">\nabla_\theta J(\theta)=\mathbb{E}_{s\in S}\mathbb{E}_{a_t\sim\pi_\theta(*|s)}[\nabla_\theta(\log{\pi_\theta(a_t|s)})Q(s,a_t)]</script><p>这里 <script type="math/tex">J(\theta)=\mathbb{E}_{s\in S}[V_{\pi_\theta}(s)]</script> 表示采取 以<script type="math/tex">\theta</script> 为参数的动作策略 <script type="math/tex">\pi_\theta</script>​ 时，能获得的所有状态下的回报的期望值。</p><p>简单来说，我们希望优化 <script type="math/tex">\theta</script>，让 <script type="math/tex">J(\theta)</script> 变得更大。但策略梯度算法在实际应用时极不稳定，这种更新的方法容易让策略变化太剧烈，尤其是对于像大语言模型这样参数量巨大的网络（也算一种策略网络）而言，更是难以承受。为了引入对策略变化的约束，后续又提出了一些新的方法，例如<strong>TRPO</strong>、<strong>PPO</strong>等，前者直接在训练时强行限制新旧策略之间的KL散度，而后者则提出了一种更简单并且非常有效的手段。</p><h2 id="PPO算法"><a href="#PPO算法" class="headerlink" title="PPO算法"></a>PPO算法</h2><p>我们回到 <script type="math/tex">J(\theta)</script> 期望内部的 <script type="math/tex">V</script> 函数的定义：</p><script type="math/tex; mode=display">V_{\pi_\theta}(s_t)=\mathbb{E}_{a_t\sim\pi_\theta(*|s_t)}[Q(s_t,a_t)]</script><p>我们要最大化 <script type="math/tex">J(\theta)</script>，其实就相当于最大化 <script type="math/tex">V</script> 函数： </p><script type="math/tex; mode=display">\max_{\theta} V_{\pi_\theta}(s_t),\forall s_t</script><p>将 <script type="math/tex">V</script> 函数中的期望展开为积分：</p><script type="math/tex; mode=display">\max_{\theta} \int_{a\in A}\pi_\theta(a|s_t)Q(s_t,a)</script><p>我们发现，在给定状态 <script type="math/tex">s_t</script> 的情况下，<script type="math/tex">Q(s_t,a)</script> 为关于动作 <script type="math/tex">a</script> 的单变量函数，此时有两种情况：</p><ol><li><script type="math/tex">Q(s_t,a)>0</script>，说明它给我们带来的价值是正的，意味着这是一个比较好的动作，我们就应该<strong>进一步</strong>去提升<strong>当前状态</strong>下这个动作被取到的概率，也就是 <script type="math/tex">\pi_\theta(a|s_t)</script> 的值。</li><li><script type="math/tex">Q(s_t,a)\le 0</script>​​，说明它没有给我们带来价值或带来了负价值，意味着这个动作比较差，同理我们应该<strong>进一步</strong>去降低<strong>当前状态</strong>下这个动作被取到的概率。</li></ol><h3 id="重要性采样"><a href="#重要性采样" class="headerlink" title="重要性采样"></a>重要性采样</h3><p>对于上面的两种情况，我们想要定量地描述<strong>「进一步」</strong>这个词，很自然地会想到，如果将优化前后的概率值做一个比值：</p><script type="math/tex; mode=display">\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}</script><p><strong>固定分母</strong>，优化分子，就可以体现新概率相对于旧概率的变化。</p><p>对于情况 1，我们希望新概率变大，故需要对 <script type="math/tex">\pi_\theta(a|s_t)</script> 梯度上升；对于情况 2，我们希望新概率变小，故需要对 <script type="math/tex">\pi_\theta(a|s_t)</script> 梯度下降。合而为一，我们总是需要对下式：</p><script type="math/tex; mode=display">\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}Q(s_t|a)</script><p>进行梯度上升。</p><p>这就将原先的优化目标转化为了：</p><script type="math/tex; mode=display">\max_{\theta} \int_{a\in A}\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}Q(s_t,a)</script><p>这个操作也被称为<strong>重要性采样</strong>。</p><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3><p>回想策略梯度算法的缺陷：难以在优化过程中控制新旧策略的差异，导致策略剧烈波动，使得训练不稳定。</p><p>在经过了<strong>重要性采样</strong>以后，如何规避这个缺陷？</p><p>盯着<strong>重要性采样</strong>引出的优化目标看，这不答案已经拍脸上了吗？直接约束新旧概率之间的差距不就行了？</p><p>对于这件事，<strong>PPO</strong>算法使用的约束方法是对新旧概率的比值，也就是优化目标左边那一坨东西，进行一个裁剪：</p><script type="math/tex; mode=display">\text{clip}(\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)</script><p>将概率的比值保持在区间 <script type="math/tex">[1-\epsilon, 1+\epsilon]</script>​​​ 之内，简单粗暴地控制了策略的差异，让策略在训练过程中能够逐步收敛，不至于步子跨太大。</p><hr><p>另外，在大语言模型的训练中，我们还要对新策略和原始策略之间的KL散度进行惩罚，这同样也是防止新策略跑的离旧策略太远。计算KL散度有多种方式，这里暂时不管。</p><h3 id="优势函数"><a href="#优势函数" class="headerlink" title="优势函数"></a>优势函数</h3><p>设想我们的 Agent 因为<del>前面操作太垃</del>种种原因，处在一个已经非常糟糕的状态 <script type="math/tex">s_t</script> ，这个状态下，无论这个 Agent 采取哪个动作 <script type="math/tex">a</script>，价值函数 <script type="math/tex">Q(a|s_t)</script>​ 都是负的，由刚刚<strong>重要性采样</strong>部分得出的结论，我们发现对于每个动作都要降低它被取到的概率，<del>这不就是摆烂么</del>。难道对于 Agent 而言，就此摆烂才是最优解？</p><p><img src="https://blogfiles.oss.fyz666.xyz/webp/59c510e5-7883-406e-8d8a-e95798bc9cd5.webp" alt=""></p><p>虽然对于心理承受能力比较普通的人类玩家而言，恐怕大部分人都会选择摆烂吧，但 Agent 毕竟不是情绪化的玩家。作为没有任何感情的 Bot，它应该做的绝对不是摆烂，而是在逆境中找到那一记也许能够力挽狂澜的神之一手，无论最终结局如何。</p><p>从强化学习的角度来看，我们先前优化目标中的 <script type="math/tex">Q</script> 函数就显得不够合理了，因此需要找出一个新的函数来代替 <script type="math/tex">Q</script>​ 函数，其能够更准确地衡量某一个动作在当前局势下的优劣程度。</p><p>这便是<strong>优势函数</strong>。</p><p>我们定义 <script type="math/tex">s_t</script> 状态下，采取动作 <script type="math/tex">a</script> 的优势函数如下：</p><script type="math/tex; mode=display">A(s_t,a)=Q(s_t,a) - V_{\pi_\theta}(s_t)</script><p>也就是采取了 动作 <script type="math/tex">a</script> 以后，能得到的预期回报与<strong>「遵循策略时能带来的预期回报的期望」</strong>之差。</p><p>说白了就是衡量你这个动作能让局势改善多少。如果有所改善，说明该动作是比原策略更优的，我们要增大这个动作的概率，反之亦然。</p><p>于是我们的优化目标变为了：</p><script type="math/tex; mode=display">\max_{\theta} \int_{a\in A}\text{clip}(\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)A(s_t,a)</script><h3 id="如何估计优势函数"><a href="#如何估计优势函数" class="headerlink" title="如何估计优势函数"></a>如何估计优势函数</h3><p>优势函数这个东西看上去十分抽象，要怎么去估计呢？</p><p>为方便起见，我们记 <script type="math/tex">A_t^{(k)}</script> 为 <script type="math/tex">A(s_t)</script> 的 <script type="math/tex">k</script> 阶近似估计，<script type="math/tex">Q_t^{(k)}</script> 为 <script type="math/tex">Q(s_t,a)</script> 的 <script type="math/tex">k</script> 阶近似估计，<script type="math/tex">V_t\overset{\triangle}{=}V_{\pi_\theta}(s_t)</script> ，写出 <script type="math/tex">t</script> 时刻优势函数的 1 阶近似估计：</p><script type="math/tex; mode=display">A_t^{(1)}=\underbrace{R_t + \gamma V_{t+1}}_{Q_t^{(1)}} - V_t</script><p>同理，2 阶近似估计：</p><script type="math/tex; mode=display">A_{t}^{(2)}=\underbrace{R_t+\gamma R_{t+1}+\gamma^2V_{t+2}}_{Q_{t}^{(2)}}-V_t</script><p>我们可以写出 <script type="math/tex">k</script> 阶近似估计的通项：</p><script type="math/tex; mode=display">A_{t}^{(k)}=\underbrace{(\sum_{i=1}^{k-1}\gamma^iR_{i})+\gamma^kV_{t+k}}_{Q_{t}^{(k)}}-V_t</script><p>近似阶数 <script type="math/tex">k</script> 越大，我们得到的估计值的<strong>偏差越小</strong>，但其中包含的随机变量（<script type="math/tex">\{R_i,\ i=1,\dots,k-1\}</script>）越多，因此<strong>方差反而变大</strong>。</p><p>接下来有个操作叫 <strong><script type="math/tex">\lambda-\text{return}</script></strong> 算法，它的作用是平衡这些估计的偏差与方差。</p><p>简而言之，该方法使用一个 <script type="math/tex">(0,1)</script> 上的系数 <script type="math/tex">\lambda</script> ，对这些估计进行加权求和，即：</p><script type="math/tex; mode=display">\sum_{i=0}^\infty\lambda^iA_t^{(i)}</script><p>阶数越高的估计值，权重越小，以此降低其方差。由此得到的和式能够兼顾偏差和方差。</p><p>由于所有的 <script type="math/tex">A_t^{(i)}</script> 都是 <script type="math/tex">A_t</script> 的估计，上式的期望差不多相当于 <script type="math/tex">\frac{1}{1-\lambda}A_t</script>, 因此我们还应该乘上一个系数，才能得到真正对 <script type="math/tex">A_t</script> 的估计：</p><script type="math/tex; mode=display">A_t=(1-\lambda)\sum_{i=0}^\infty\lambda^iA_t^{(i)}</script><p>这便是<strong>广义优势估计 (GAE) </strong>算法。</p><hr><p>对于PPO算法的基本原理就讲到这儿，接下来让我们来看看这个算法是如何应用在大语言模型的训练流程中的。为了让PPO能够发挥作用，我们还缺少一个模块，那就是用来计算上文中多次出现的 <script type="math/tex">R_i</script> 的值（Reward）的模型，也就是所谓 <strong>Reward Model</strong>，下一篇文章我们将介绍如何训练一个 Reward Model。</p>]]></content:encoded>
+      
+      
+      <category domain="https://blog.fyz666.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</category>
+      
+      
+      <category domain="https://blog.fyz666.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/llm/">LLM</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/ppo-%E7%AE%97%E6%B3%95/">PPO 算法</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</category>
+      
+      
+      <comments>https://blog.fyz666.xyz/blog/12706/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>大语言模型训练基本原理之——监督微调(SFT)</title>
@@ -622,31 +659,6 @@
       
       
       <comments>https://blog.fyz666.xyz/blog/11906/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>GeekGame 2024 题解 (零)</title>
-      <link>https://blog.fyz666.xyz/blog/11830/</link>
-      <guid>https://blog.fyz666.xyz/blog/11830/</guid>
-      <pubDate>Fri, 18 Oct 2024 17:56:20 GMT</pubDate>
-      
-      <description>今年的GeekGame参赛人数好多，勉强拿个前百，来年再接再厉！</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>GeekGame <del>4<sup>th</sup></del> 2024 最后一个比赛日晚上，在磕了两道题无果后，我关掉了开了十几个标签页的浏览器，开始写题解。</p><p><img src="https://blogfiles.oss.fyz666.xyz/png/e6f3d7e5-fbfe-4f39-9d27-19784a00834b.png" alt="image-20241019021150378"></p><p>今年的比赛，五道口技校的大佬们也并入了进来一起卷，参赛人数较往年有了增加 ，最后的总排名为81。那么今年GeekGame的比赛是已经结束了，虽然很遗憾没有能够取得让我满意的一个结果，<del>但是取得了让我很不满意的一个结果。</del></p><p>不过话说回来，今年的比赛进行的不是非常顺利，先是时不时的被拉去做一些枯燥繁琐的科研上的事，然后又遇到好几次🪜炸了持续几个小时的情况，发现自己在没有了🪜以后真就是个互联网废柴了，下次真得准备一些应急用的。希望下个月的Hackergame能更加顺利一点。</p><a class="tag-Link" target="_blank" href="https://github.com/PKU-GeekGame/geekgame-4th">    <div class="tag-link-tips">引用站外地址，不保证站点的可用性和安全性</div>    <div class="tag-link-bottom">        <div class="tag-link-left">            <img src="https://logo.clearbit.com/github.com?size=256" onerror="this.onerror=null;this.src='/images/default-link.png';" />        </div>        <div class="tag-link-right">            <div class="tag-link-title">本次比赛的官方存档</div>            <div class="tag-link-sitename">GitHub</div>        </div>        <i class="fa-solid fa-angle-right"></i>    </div>    </a><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>下面是这次比赛成功解出的题：</p><ul><li><p><a href="/blog/11906/">GeekGame 2024 题解（一）</a>  </p><p>签到（囯内）、不知道叫什么、大模型模型虎视眈眈、新穷铁道</p></li><li><p><a href="/blog/11987/">GeekGame 2024 题解（二）</a>  </p><p>熙熙攘攘我们的天才吧（Magic Keyboard）、TAS概论大作业（你过关、只有神知道的世界）、验证码、概率题目概率过</p></li><li><p><a href="/blog/12067/">GeekGame 2024 题解（三）</a></p><p>Fast Or Clever、从零开始学Python、 打破复杂度、 神秘计算器</p></li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>今年的好多道赛题让我有一种这样的体验：虽然解不出来，但在解题过程里学到了一堆东西。等赛后去拜读一下其他大佬们的题解，看看能不能让我打通逻辑上的闭环（</p><p>GeekGame的Misc分类是真顶，<a href="https://chatgpt.com/">基于注意力机制的大模型</a>也注意不到解法，让我很失望。尤其是“新穷铁道”这题，一阶段我就已经拿到了关键线索，但由于始终无法和出题人的脑电波对齐，愣是盯不出这个线索要如何使用，在二阶段拿到了提示以后甚至还卡了一个小时才想出解法，这题解法倒是不难，但思考过程实在是过于天马行空。</p><p>另外还有“熙熙攘攘我们的天才吧”，为了解这道题我都快把Sunshine关键部分的源码背出来了，WireShark也是用到包浆，然而最后还是没能解出来，总有细节问题想不通，只好等赛后翻看大佬们的题解以解惑。后来发现我一开始做的就没问题，从WireShark导出的裸视频流就可以直接用ffplay播放，但我过于相信Windows，它自带的播放器放不了我就觉得是我的问题，导致后面在错误的路上越走越远。。。以后音视频还得用ffmpeg套件来搞。</p><p>Web题则是一如既往的难，但说实话第二题（概率题目概率过）是真不难，是我把题想复杂了，以为得学个新语言，就一直没仔细看。</p><p>在Binary方面，说起来很离谱，这是我首次在正式比赛中成功利用栈溢出解出题目——（毕竟我真的很缺这方面的基础😢），Fast Or Clever这道题，不需要太多弯弯绕绕的技术细节，非常适合我这种Binary萌新探索。</p><p>而算法分类我是一直不太行，真是愧对于数学专业的出身。这次仅勉强解出两题，这次的随机数题题面非常简单，但遇到这种类型的随机数预测题我还是没有什么头绪，这回打算借着简单的题面认真学学；至于逆转裁判题（不经意传输）目前则是属于看了要头大的范畴了。</p><hr><p>总体而言，体验不错，但我还是想吐槽一下第二阶段的部分提示：</p><p><strong>“ICS笑传之查查表”的第二阶段提示：</strong></p><ul><li>检查一下Memos的API请求</li><li>看看API源码里处理Memo或者User的部分</li></ul><p>这提示给的似乎过于不用心了，你都在解这种没有任何附件的Web题了，查看网络请求和前端源码是基操吧？还用得着提示？</p><p><strong>“熙熙攘攘我们的天才吧”的第二阶段提示：</strong></p><ul><li>Flag 2：出题人先用 WireShark 解析并导出了 RTP 报文，然后写了大约几十行的 Python 脚本来还原完全清晰的 H264 视频流，但你不需要做得这样严谨。</li></ul><p>这个倒是存疑，不过按我刚看到这条提示时的理解，我感觉它没有什么信息量，唯一可能成为信息的大概是最后的“但你不需要做得这样严谨”，猜测有什么很方便的操作可以绕开写脚本解码来实现。但我当时通过各种方法导出的裸流都没法播放成功（<del>甩锅Windows</del>），于是我后面一直认为这个流量被AES加密了，然后一直在死磕脚本。</p><p>最后发现还真是「有什么很方便的操作」(导出裸流就能直接播放)，不过对于已经在写脚本的路上走了一大段的选手来说，这样的提示似乎是在说：“不需要写很严谨的解码脚本”。</p><hr><p>最后，许愿明年能多做一两个算法题。</p>]]></content:encoded>
-      
-      
-      <category domain="https://blog.fyz666.xyz/categories/ctf%E9%A2%98%E8%A7%A3/">CTF题解</category>
-      
-      
-      <category domain="https://blog.fyz666.xyz/tags/geekgame/">GeekGame</category>
-      
-      <category domain="https://blog.fyz666.xyz/tags/geekgame-2024/">GeekGame 2024</category>
-      
-      
-      <comments>https://blog.fyz666.xyz/blog/11830/#disqus_thread</comments>
       
     </item>
     
