@@ -20,6 +20,16 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 
 而**监督微调**正是让大语言模型从通用语言能力升级到任务导向能力的必经之路。换言之，SFT让模型不仅仅局限于能够把话写通顺，还能写的**对题**。
 
+{% note primary %}
+
+另外，博主基于一款参数量约为 2.13B 的迷你大语言模型，完成了其微调流程的简要复现。相关代码已开源，详见下面链接。
+
+通过合理配置训练参数，并结合 LoRA（Low-Rank Adaptation），整个微调训练流程可在一块消费级显卡（博主使用的是 RTX 3090 Ti）上顺利完成。
+
+{% endnote %}
+
+{% link tiny-llm-training,GitHub,https://github.com/windshadow233/tiny-llm-training/ %}
+
 ## 监督微调是什么
 
 **监督微调（Supervised Fine-Tuning, SFT）**是指在预训练模型的基础上，利用一个特定任务的人类标注数据集对模型进行进一步训练，从而教会模型如何更好地执行具体指令或任务，例如问答、摘要、对话、翻译等。
@@ -54,35 +64,34 @@ Assistant: 蔡徐坤是中国内地流行歌手、演员、音乐制作人，曾
 蔡徐坤是中国内地流行歌手、演员、音乐制作人，曾因参加《偶像练习生》节目而走红。
 ```
 
-在实际训练时，这些格式会被进一步编码成 token 序列，并通过 label masking 的方式只对回答部分计算损失，这是因为我们的目的是让模型学会如何输出回答部分。
+在实际训练时，这些格式会被进一步编码成 token 序列，并通过 label masking 的方式只对回答部分计算损失，这是因为我们的目的是让模型学会如何输出回答部分。下面代码给了一个具体的例子：
 
 ```python
-from transformers import AutoTokenizer
-import torch
+def __getitem__(self, idx):
+    data = self.dataset[idx]
+    instruction = data['instruction']
+    input = data['input']
+    output = data['output']
+    if input:
+        prompt = f"指令: {instruction}\n输入: {input}\n输出: "
+    else:
+        prompt = f"指令: {instruction}\n输出: "
+    prompt_ids = self.tokenizer.encode(prompt, add_special_tokens=False)
+    response_ids = self.tokenizer.encode(output, add_special_tokens=False)
 
-tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen-7B-Chat", trust_remote_code=True)
-tokenizer.bos_token = "<|im_start|>"
-tokenizer.eos_token = "<|endoftext|>"
-tokenizer.pad_token = tokenizer.eos_token
+    input_ids = prompt_ids + [self.tokenizer.bos_token_id] + response_ids
 
+    labels = [-100] * (len(prompt_ids) + 1) + response_ids + [self.tokenizer.eos_token_id]
 
-def format_and_tokenize(prompt: str, response: str, max_length=512):
-    prompt_ids = tokenizer.encode(f"Human: {prompt}\nAssistant:", add_special_tokens=False)
-    response_ids = tokenizer.encode(response, add_special_tokens=False)
+    input_ids = input_ids[:self.max_length - 1] + [self.tokenizer.eos_token_id]
+    labels = labels[:self.max_length]
 
-    input_ids = prompt_ids + [tokenizer.bos_token_id] + response_ids
-
-    labels = [-100] * (len(prompt_ids) + 1) + response_ids + [tokenizer.eos_token_id]
-
-    input_ids = input_ids[:max_length - 1] + [tokenizer.eos_token_id]
-    labels = labels[:max_length]
-
-    pad_len = max_length - len(input_ids)
+    pad_len = self.max_length - len(input_ids)
     if pad_len > 0:
-        input_ids += [tokenizer.pad_token_id] * pad_len
+        input_ids += [self.tokenizer.pad_token_id] * pad_len
         labels += [-100] * pad_len
 
-    attention_mask = [1] * (max_length - pad_len) + [0] * pad_len
+    attention_mask = [1] * (self.max_length - pad_len) + [0] * pad_len
 
     return {
         "input_ids": torch.tensor(input_ids, dtype=torch.long),
@@ -91,7 +100,7 @@ def format_and_tokenize(prompt: str, response: str, max_length=512):
     }
 ```
 
-上述代码是一种数据处理方法的例子：
+上述代码的完整版见[此文件](https://github.com/windshadow233/tiny-llm-training/blob/main/SFT/dataset.py)。该方法做了两件事：
 
 - 将数据处理为 `prompt_ids + bos_token_id + response_ids + eos_token_id`的形式，构成完整的输入序列。
 - 使用`-100`为`labels`中的`prompt`部分以及`pad`部分打上掩码（因为这些内容模型不需要学习）。
@@ -145,10 +154,10 @@ $$
 $$
 其中 $$x$$ 和 $$y$$ 分别为用户的prompt和人类标注的参考回答。
 
+训练流程的详细代码见[此文件](https://github.com/windshadow233/tiny-llm-training/blob/main/sft_training.py)。
+
 ---
 
 到了这里，我们已经了解了大语言模型训练中的第二块拼图 —— **监督微调（SFT）**。它的核心目标，其实就是让模型“听话”：不仅能说得通顺，还要能说得符合人类的预期。
-
-笔者简单介绍了 SFT 中数据构造方式、训练时的 label masking 技巧，以及 LoRA 这种轻量微调方法。虽然背后的任务导向性完全不同，但整体流程看上去和预训练过程十分类似。
 
 接下来，我们还希望模型变得更聪明——通过人类反馈优化（比如 RLHF），进一步学会给出更加符合人类偏好的回应。
