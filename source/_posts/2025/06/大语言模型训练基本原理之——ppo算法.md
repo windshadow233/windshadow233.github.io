@@ -124,7 +124,7 @@ $$
 
 方便起见，定义 $$r \overset{\triangle}{=} \frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}$$​，则 PPO 算法最终的优化目标如下：
 $$
-\max_{\theta} \int_{a\in A}\min[\text{clip}(r, 1-\epsilon,1+\epsilon)A(s_t,a),\ r A(s_t,a)]
+\max_{\theta} \int_{a\in A}\min\{\text{clip}(r, 1-\epsilon,1+\epsilon)A(s_t,a),\ r A(s_t,a)\}
 $$
 对于这个操作，可能有一些初学者会有疑惑：**已经`clip`了为什么还要取`min`**？这一点许多其他博客都没有提到，其实可以简单分析一下如果不取`min`会发生什么预想之外的事：
 
