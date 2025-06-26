@@ -11,8 +11,6 @@ tags:
     - MinIO
     - Docker
 cover: https://blogfiles.oss.fyz666.xyz/webp/c95fcde3-2ca6-4ded-8019-604d0868453b.webp
-swiper_index: 1
-description: 考虑再三，还是选择自部署对象存储服务
 ---
 
 ## 动机

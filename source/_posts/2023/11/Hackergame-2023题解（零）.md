@@ -9,8 +9,6 @@ tags:
   - Hackergame 2023
 cover: https://blogfiles.oss.fyz666.xyz/jpg/6f00f091-9b5b-42c9-aebd-6635e13518a3.jpg
 disableNunjucks: false
-swiper_index: 1
-description: 喜提校内rank 2，感谢大佬们的不卷之恩！
 ---
 
 又是一届快乐的Hackergame，今年神仙附体，拿到校内rank2，总排名rank13，是自19年开始玩Hackergame以来的最好成绩，可喜可贺可喜可贺！

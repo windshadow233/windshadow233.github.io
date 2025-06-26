@@ -6,8 +6,6 @@ categories: [杂趣]
 tags: ['JavaScript']
 cover: https://blogfiles.oss.fyz666.xyz/png/52de5404-cde7-4dec-867d-97457ccec409.png
 disableNunjucks: false
-swiper_index: 1
-description: 一个有意思的小游戏
 ---
 
 这两天偶然发现了一个有点意思的“小游戏”，名为“The Password Game”，传送门如下：
