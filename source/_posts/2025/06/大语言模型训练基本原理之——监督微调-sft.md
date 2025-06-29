@@ -74,9 +74,9 @@ def __getitem__(self, idx):
     input = data['input']
     output = data['output']
     if input:
-        prompt = f"指令: {instruction}\n输入: {input}\n输出: "
+        prompt = f"指令:{instruction}\n{input}\n输出:"
     else:
-        prompt = f"指令: {instruction}\n输出: "
+        prompt = f"指令:{instruction}\n输出:"
     prompt_ids = self.tokenizer.encode(prompt, add_special_tokens=False)
     response_ids = self.tokenizer.encode(output, add_special_tokens=False)
 
