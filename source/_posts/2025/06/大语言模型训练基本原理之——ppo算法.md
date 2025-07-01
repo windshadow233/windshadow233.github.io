@@ -35,6 +35,10 @@ $$
 
 简单来说，我们希望优化 $$\theta$$，让 $$J(\theta)$$ 变得更大。但策略梯度算法在实际应用时极不稳定，这种更新的方法容易让策略变化太剧烈，尤其是对于像大语言模型这样参数量巨大的网络（也算一种策略网络）而言，更是难以承受。为了引入对策略变化的约束，后续又提出了一些新的方法，例如**TRPO**、**PPO**等，前者直接在训练时强行限制新旧策略之间的KL散度，而后者则提出了一种更简单并且非常有效的手段。
 
+我这里也以一个简单的小游戏：flappy bird，为具体的例子，对PPO算法进行了一个简单的实践。
+
+{% link flappy-bird-ppo, GitHub, https://github.com/windshadow233/flappy-bird-ppo/%}
+
 ## PPO算法
 
 我们回到 $$J(\theta)$$ 期望内部的 $$V$$ 函数的定义：
@@ -163,27 +167,45 @@ $$
 $$
 A_t^{(1)}=\underbrace{R_t + \gamma V_{t+1}}_{Q_t^{(1)}} - V_t
 $$
+我们发现，它正好相当于一阶的TD残差 $$\delta_t$$。
+
 同理，2 阶近似估计：
 $$
 A_{t}^{(2)}=\underbrace{R_t+\gamma R_{t+1}+\gamma^2V_{t+2}}_{Q_{t}^{(2)}}-V_t
 $$
-我们可以写出 $$k$$ 阶近似估计的通项：
+将其做一些变换，得到：
+$$
+\begin{aligned}
+A_{t}^{(2)}&=(R_t+\gamma V_{t+1}-V_t)+(\gamma R_{t+1}+\gamma^2V_{t+2}-\gamma V_{t+1})\\
+&=\delta_t + \gamma\delta_{t+1}
+\end{aligned}
+$$
+同理，我们也可以写出 $$k$$ 阶近似估计的通项：
 $$
 A_{t}^{(k)}=\underbrace{(\sum_{i=0}^{k-1}\gamma^iR_{t+i})+\gamma^kV_{t+k}}_{Q_{t}^{(k)}}-V_t
 $$
+同样可以将上式变成：
+$$
+A_{t}^{(k)}=\sum_{l=0}^{k-1}\gamma^l\delta_{t+l}
+$$
+恰好是TD残差 $$\delta$$ 序列的带衰减累计求和。
+
 近似阶数 $$k$$ 越大，我们得到的估计值的**偏差越小**，但其中包含的随机变量（$$\{R_{t+i}\ | \ i=0,\dots,k-1\}$$）越多，因此**方差反而变大**。
 
 接下来有个操作叫 **$$\lambda-\text{return}$$** 算法，它的作用是平衡这些估计的偏差与方差。
 
 简而言之，该方法使用一个 $$(0,1)$$ 上的系数 $$\lambda$$ ，对这些估计进行加权求和，即：
 $$
-\sum_{i=0}^\infty\lambda^iA_t^{(i)}
+\sum_{i=1}^\infty\lambda^{i-1}A_t^{(i)}
 $$
 阶数越高的估计值，权重越小，以此降低其方差。由此得到的和式能够兼顾偏差和方差。
 
-由于所有的 $$A_t^{(i)}$$ 都是 $$A_t$$ 的估计，上式的期望差不多相当于 $$\frac{1}{1-\lambda}A_t$$, 因此我们还应该乘上一个系数，才能得到真正对 $$A_t$$ 的估计：
+由于所有的 $$A_t^{(i)}$$ 都是 $$A_t$$ 的估计，上式的期望差不多相当于 $$\frac{1}{1-\lambda}A_t$$, 因此我们还应该乘上一个系数 $$1-\lambda$$，才能得到真正对 $$A_t$$ 的估计：
 $$
-\hat{A_t}=(1-\lambda)\sum_{i=0}^\infty\lambda^iA_t^{(i)}
+\begin{aligned}
+\hat{A_t}&=(1-\lambda)\sum_{i=1}^\infty\lambda^{i-1}A_t^{(i)}\\
+&=(1-\lambda)\sum_{i=1}^\infty\lambda^{i-1}\sum_{l=0}^{i-1}\gamma^l\delta_{t+l}
+\end{aligned}
 $$
 这便是**广义优势估计 (GAE) **算法。
 

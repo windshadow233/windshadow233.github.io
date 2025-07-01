@@ -64,6 +64,8 @@ loss = -F.logsigmoid(v_chosen - v_rejected)
 
 <img src="https://blogfiles.oss.fyz666.xyz/webp/7dbbd802-e1f0-475c-8249-7c7c34ab7e37.webp" alt="51095708-0266-4898-8437-0ee2649cfa2e" style="zoom:50%;" />
 
+<img src="https://blogfiles.oss.fyz666.xyz/webp/7f1b3a77-5d59-439d-8119-e5a8298be83a.webp" style="zoom:50%;" />
+
 可以看到随着训练的进行，两种回复得到的Reward差距也有了明显提升。
 
 ---
@@ -76,4 +78,4 @@ loss = -F.logsigmoid(v_chosen - v_rejected)
 - 模型文件：[RM/model.py](https://github.com/windshadow233/tiny-llm-training/blob/main/RM/model.py)
 - 训练文件：[rm_training.py](https://github.com/windshadow233/tiny-llm-training/blob/main/rm_training.py)
 
-到了这里，我们就已经把 RLHF 中的关键角色、主要算法介绍完了。下一篇文章，我们将进入大模型训练的最后一块拼图：RLHF，看看它是怎么把这些角色串联起来、协同合作，让大模型更贴近人类偏好。
+到了这里，我们就已经把 RLHF 中的关键角色、主要算法介绍完了。[下一篇文章](/blog/12778/)，我们将进入大模型训练的最后一块拼图：RLHF，看看它是怎么把这些角色串联起来、协同合作，让大模型更贴近人类偏好。
