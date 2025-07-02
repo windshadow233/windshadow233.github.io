@@ -15,11 +15,11 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Wed, 02 Jul 2025 10:52:42 GMT</pubDate>
+    <pubDate>Wed, 02 Jul 2025 18:56:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>大语言模型训练基本原理之 —— RLHF</title>
+      <title>大语言模型训练原理与实践（五）：RLHF</title>
       <link>https://blog.fyz666.xyz/blog/12778/</link>
       <guid>https://blog.fyz666.xyz/blog/12778/</guid>
       <pubDate>Tue, 01 Jul 2025 16:07:21 GMT</pubDate>
@@ -58,7 +58,7 @@
     </item>
     
     <item>
-      <title>大语言模型训练基本原理之 —— Reward Model</title>
+      <title>大语言模型训练原理与实践（四）：Reward Model</title>
       <link>https://blog.fyz666.xyz/blog/12760/</link>
       <guid>https://blog.fyz666.xyz/blog/12760/</guid>
       <pubDate>Thu, 26 Jun 2025 01:01:16 GMT</pubDate>
@@ -97,7 +97,7 @@
     </item>
     
     <item>
-      <title>大语言模型训练基本原理之 —— PPO算法</title>
+      <title>大语言模型训练原理与实践（三）：PPO算法</title>
       <link>https://blog.fyz666.xyz/blog/12706/</link>
       <guid>https://blog.fyz666.xyz/blog/12706/</guid>
       <pubDate>Tue, 24 Jun 2025 05:01:20 GMT</pubDate>
@@ -136,7 +136,7 @@
     </item>
     
     <item>
-      <title>大语言模型训练基本原理之 —— 监督微调(SFT)</title>
+      <title>大语言模型训练原理与实践（二）：监督微调(SFT)</title>
       <link>https://blog.fyz666.xyz/blog/12690/</link>
       <guid>https://blog.fyz666.xyz/blog/12690/</guid>
       <pubDate>Mon, 23 Jun 2025 06:25:25 GMT</pubDate>
@@ -173,7 +173,7 @@
     </item>
     
     <item>
-      <title>大语言模型训练基本原理之 —— BPE分词算法</title>
+      <title>大语言模型训练原理与实践（一）： BPE分词算法</title>
       <link>https://blog.fyz666.xyz/blog/12679/</link>
       <guid>https://blog.fyz666.xyz/blog/12679/</guid>
       <pubDate>Sun, 22 Jun 2025 04:11:13 GMT</pubDate>
@@ -210,7 +210,7 @@
     </item>
     
     <item>
-      <title>大语言模型训练基本原理之 —— 预训练</title>
+      <title>大语言模型训练原理与实践（零）：预训练</title>
       <link>https://blog.fyz666.xyz/blog/12634/</link>
       <guid>https://blog.fyz666.xyz/blog/12634/</guid>
       <pubDate>Sat, 21 Jun 2025 16:12:59 GMT</pubDate>
