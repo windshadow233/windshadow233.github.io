@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之 —— Reward Model
+title: 大语言模型训练原理与实践（四）：Reward Model
 disableNunjucks: false
 mathjax: true
 id: 12760

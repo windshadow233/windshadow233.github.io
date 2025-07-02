@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之 —— BPE分词算法
+title: 大语言模型训练原理与实践（一）： BPE分词算法
 disableNunjucks: false
 mathjax: true
 id: 12679

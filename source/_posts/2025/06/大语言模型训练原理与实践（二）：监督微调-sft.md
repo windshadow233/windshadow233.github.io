@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之 —— 监督微调(SFT)
+title: 大语言模型训练原理与实践（二）：监督微调(SFT)
 disableNunjucks: false
 mathjax: true
 id: 12690

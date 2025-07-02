@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之 —— PPO算法
+title: 大语言模型训练原理与实践（三）：PPO算法
 disableNunjucks: false
 mathjax: true
 id: 12706

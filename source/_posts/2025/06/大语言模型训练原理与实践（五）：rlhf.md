@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之 —— RLHF
+title: 大语言模型训练原理与实践（五）：RLHF
 disableNunjucks: false
 mathjax: true
 id: 12778
