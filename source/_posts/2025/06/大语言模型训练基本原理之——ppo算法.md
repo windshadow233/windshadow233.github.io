@@ -1,5 +1,5 @@
 ---
-title: 大语言模型训练基本原理之——PPO算法
+title: 大语言模型训练基本原理之 —— PPO算法
 disableNunjucks: false
 mathjax: true
 id: 12706
@@ -167,7 +167,7 @@ $$
 $$
 A_t^{(1)}=\underbrace{R_t + \gamma V_{t+1}}_{Q_t^{(1)}} - V_t
 $$
-我们发现，它正好相当于一阶的TD残差 $$\delta_t$$。
+我们发现，它正好相当于 $$t$$ 时刻的TD残差 $$\delta_t$$。
 
 同理，2 阶近似估计：
 $$

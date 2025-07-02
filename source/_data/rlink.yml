@@ -58,6 +58,7 @@ link_groups:
       link: https://leetcode.cn/
       avatar: https://blogfiles.oss.fyz666.xyz/png/58115adc-70d5-46ba-8406-059324606539.png
       descr: 海量技术面试题库
+
   - class_name: CTF相关
     class_desc: ''
     link_list:
@@ -109,6 +110,10 @@ link_groups:
       link: https://www.flaticon.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/aa289aa7-0af7-4bb0-b8bb-c0c2499849b1.png
       descr: 海量免费图标下载
+    - name: PNG Images
+      link: https://pngimg.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/webp/f22a0071-de12-4652-8092-e0e78a33b711.webp
+      descr: 拥有大量免费 PNG 图片素材
 
   - class_name: 其他资源
     class_desc: ''  

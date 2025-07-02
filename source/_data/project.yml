@@ -1,7 +1,7 @@
 title: 我的项目
 subTitle: GitHub Repos
 tips: 生命不息，Coding 不止
-top_background: https://blogfiles.oss.fyz666.xyz/webp/319d1d4b-8a72-46a3-990a-46b48bf027fd.webp
+top_background: https://blogfiles.oss.fyz666.xyz/webp/db97f929-7f47-4d7f-bfaa-b8886daaf12e.webp
 buttonLink: https://github.com/windshadow233?tab=repositories
 buttonText: 全部仓库
 project_list:
@@ -14,6 +14,16 @@ project_list:
     descr: 此博客的源码
     url: https://github.com/windshadow233/windshadow233.github.io
     image: https://blogfiles.oss.fyz666.xyz/webp/e4592f55-2cc6-4d31-8159-8e27f0d2831f.webp
+
+  - name: tiny-llm-training
+    descr: 24G显存微调小型大语言模型
+    url: https://github.com/windshadow233/tiny-llm-training
+    image: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e6584.webp
+
+  - name: flappy-bird-ppo
+    descr: 用PPO算法玩Flappy Bird
+    url: https://github.com/windshadow233/flappy-bird-ppo
+    image: https://blogfiles.oss.fyz666.xyz/webp/4e22ae1d-c249-48ef-b6dd-8bd2ec691307.webp
 
   - name: Mahjong-AI
     descr: 基于Suphx的立直麻将AI（只完成了监督学习部分）
