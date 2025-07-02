@@ -72,7 +72,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 - Critic Model：评价模型，相当于强化学习算法中对每个状态值函数的预测函数，需要在训练中微调。
 - Reward Model：奖励模型，在模型完成一个trajectory后（预测完整个句子后），给出一个最终得分。**注意：这个模型同样不需要训练。**
 
-很烦的一点是，即使我只训练 LoRA 层和回归头，我的显存仍不支持将这四个模型全部放到cuda上。
+很烦的一点是，即使我只训练 LoRA 层和回归头，我的显存大小仍不支持将这四个模型全部放到CUDA上。
 
 在训练开始之前，我们需要完善一些训练中需要用到的方法，也就是在前面PPO算法中提到的一些值的具体计算方法。
 
@@ -234,6 +234,14 @@ for batch in dataloader:
 <img src="https://blogfiles.oss.fyz666.xyz/png/434eb7c3-f1a9-4c51-a62d-5b56a7608db3.png" style="zoom:50%;" />
 
 从一些例子也可以看出，模型在面对这种问题时，已经倾向于给出更加符合人类偏好的回答。对于带有诱导性或存在争议的问题，模型不再简单地照单全收，而是能适度表达拒答、提醒或提出更中立的观点。这种行为变化正是 RLHF 带来的对齐效果：通过奖励信号引导模型学习价值导向明确、语用更恰当的响应策略。
+
+训练代码见[此文件](https://github.com/windshadow233/tiny-llm-training/blob/main/rlhf.py)。比较奇怪的是，训练最开始几个迭代，模型在推理时有时会遇到下面这种报错：
+
+```python
+/pytorch/aten/src/ATen/native/cuda/TensorCompare.cu:112: _assert_async_cuda_kernel: block: [0,0,0], thread: [0,0,0] Assertion `probability tensor contains either `inf`, `nan` or element < 0` failed.
+```
+
+初步怀疑可能是数据类型（float16）的问题，不过训练跑起来以后就不影响了。
 
 ---
 
