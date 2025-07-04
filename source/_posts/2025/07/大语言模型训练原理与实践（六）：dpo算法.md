@@ -65,7 +65,11 @@ $$
 $$
 \min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[\log\frac{\pi_\theta(y|x)}{\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))}-\log Z(x)]
 $$
-此时，左侧的对数就变成了一个KL散度的形式了，我们记 $$\pi^*(y|x)\overset{\triangle}{=}\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))$$，
+此时，左侧的对数就变成了一个KL散度的形式了，我们记 
+
+$$
+\pi^*(y|x)\overset{\triangle}{=}\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
+$$
 
 容易验证 $$\pi^*(*|x)$$ 是一个概率分布，因此，上式可以写为：
 $$
@@ -132,7 +136,7 @@ $$
 
 ### 数据集
 
-数据仍然使用了[OpenLLMAI/comparison_data](https://huggingface.co/datasets/OpenLLMAI/comparison_data)，数据集的定义方法与前面训练Reward Model时类似，不过为了便于后续计算损失函数，这里我额外算了一个`label_mask`，用来屏蔽prompt和padding部分，防止这部分参与loss的计算。
+偏好数据集仍然使用了与之前相同的[OpenLLMAI/comparison_data](https://huggingface.co/datasets/OpenLLMAI/comparison_data)，数据集的定义方法与前面训练Reward Model时类似，不过为了便于后续计算损失函数，这里我额外算了一个`label_mask`，用来屏蔽prompt和padding部分，防止这部分参与loss的计算。
 
 ```python
 def build_inputs(self, prompt_ids, response_ids):
@@ -148,10 +152,10 @@ def build_inputs(self, prompt_ids, response_ids):
     return input_ids, attention_mask, label_mask
 ```
 
-计算 $$\pi(y|x)$$ ，与前面RLHF时相同，采用取对数（`logits`）求和的方式，不过在计算得到了`logits`之后，需要用前面计算的`label_mask`对prompt和padding部分做一个屏蔽：
+计算 $$\pi(y|x)$$ ，采用了取对数概率（`logits`）然后求和的方式，不过在计算得到了`logits`之后，需要先用前面计算得到的`label_mask`对prompt和padding部分做一个屏蔽，再进行求和：
 
 ```python
-def filter_mask(values, labels_mask):
+def masked_sum(values, labels_mask):
     return (values * labels_mask[:, :-1]).sum(-1).squeeze(-1)
 ```
 
@@ -198,8 +202,8 @@ for step, batch in tqdm(enumerate(dataloader, 1), desc=f"Epoch {epoch + 1}/{num_
 
 最初尝试训练时遇到了一些问题：
 
-1. 一开始学习率设太高了（5e-5），结果模型在训练中后期迅速崩坏，什么都不输出。遂将学习率调至1e-6，问题解决。
-2. 由于我在之前做SFT时的数据量不是很大，如果这里将全部数据（大约10万条）全部用于训练，模型会忘记如何正常回答问题，对于所有问题都一视同仁地拒绝回答。于是，取出25000-30000条数据用于训练即可。
+1. 一开始学习率设太高了（5e-5），结果模型在训练中后期迅速崩坏，什么都不输出（摆烂是吧？？？）。遂将学习率调至1e-6，问题解决。
+2. 由于我在之前做SFT时的数据量不是很大，如果这里将全部数据（大约10万条）全部用于训练，模型会忘记如何正常回答问题，对于所有问题都一视同仁地拒绝回答（或许边DPO边SFT可以缓解这个问题）。于是，取出25000-30000条数据用于训练即可。
 
 分别观察Chosen Reward、Rejected Reward以及Loss的趋势：
 
