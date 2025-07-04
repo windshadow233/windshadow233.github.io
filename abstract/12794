@@ -1,1 +1,1 @@
-本文介绍了DPO（Direct Preference Optimization）算法，这是一种用于大语言模型训练的优化方法，旨在简化传统的RLHF流程。DPO通过直接利用人类偏好对比数据对模型进行优化，避免了奖励模型训练和强化学习阶段。其优化目标基于Bradley-Terry模型，通过最大化偏好数据的对数似然来调整模型生成行为，从而实现更高效、更简洁的训练过程。
+本文介绍了DPO（Direct Preference Optimization）算法的原理与实现。DPO通过人类偏好对比数据直接优化模型，避免了奖励模型训练和强化学习阶段。其优化目标基于Bradley-Terry模型，通过最大化偏好数据的对数似然来调整模型生成行为。训练中使用了OpenLLMAI/comparison_data数据集，并通过对比DPO模型与SFT模型的输出，展示了DPO在处理诱导性问题时更强的拒绝能力，同时在正常问答中保持良好响应。
