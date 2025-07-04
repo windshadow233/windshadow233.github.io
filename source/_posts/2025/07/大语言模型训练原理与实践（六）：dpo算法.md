@@ -126,4 +126,103 @@ $$
 
 ---
 
-综上，本文基本将论文中涉及到的核心过程推导了一遍，构造了一个无需奖励模型的优化目标，相比于PPO算法，DPO算法的最终形式简洁了不少，省去了显式的奖励模型训练过程，在优化过程中用到的模型也少了一半，节省了计算资源。对于该算法的具体实现，~~博主暂时还没有实现~~，博主将在下一篇文章中展开介绍，希望不咕咕咕。
+综上，我们基本将论文中涉及到的核心过程推导了一遍，构造了一个无需奖励模型的优化目标，相比于PPO算法，DPO算法的最终形式简洁了不少，省去了显式的奖励模型训练过程，在优化过程中用到的模型也少了一半，节省了计算资源。
+
+## 代码实现
+
+### 数据集
+
+数据仍然使用了[OpenLLMAI/comparison_data](https://huggingface.co/datasets/OpenLLMAI/comparison_data)，数据集的定义方法与前面训练Reward Model时类似，不过为了便于后续计算损失函数，这里我额外算了一个`label_mask`，用来屏蔽prompt和padding部分，防止这部分参与loss的计算。
+
+```python
+def build_inputs(self, prompt_ids, response_ids):
+    input_ids = prompt_ids + [self.tokenizer.bos_token_id] + response_ids
+    input_ids = input_ids[:self.max_length - 1] + [self.tokenizer.eos_token_id]
+    bos_pos = input_ids.index(self.tokenizer.bos_token_id)
+    label_mask = [0] * (bos_pos + 1) + [1] * (len(input_ids) - bos_pos - 1)
+    pad_len = self.max_length - len(input_ids)
+    if pad_len > 0:
+        input_ids += [self.tokenizer.pad_token_id] * pad_len
+        label_mask += [0] * pad_len
+    attention_mask = [1] * (self.max_length - pad_len) + [0] * pad_len
+    return input_ids, attention_mask, label_mask
+```
+
+计算 $$\pi(y|x)$$ ，与前面RLHF时相同，采用取对数（`logits`）求和的方式，不过在计算得到了`logits`之后，需要用前面计算的`label_mask`对prompt和padding部分做一个屏蔽：
+
+```python
+def filter_mask(values, labels_mask):
+    return (values * labels_mask[:, :-1]).sum(-1).squeeze(-1)
+```
+
+### 训练
+
+核心部分的代码如下：
+
+```python
+for step, batch in tqdm(enumerate(dataloader, 1), desc=f"Epoch {epoch + 1}/{num_epochs}", dynamic_ncols=True, total=len(dataloader)):
+    input_ids = batch['input_ids']
+    label_mask = batch.pop('label_mask')
+    with torch.no_grad():
+        logits_ref = model_ref(**batch).logits
+        log_prob_ref = calculate_action_logsoftmax(logits_ref[:, :-1], input_ids[:, 1:])
+        log_prob_ref = filter_mask(log_prob_ref, label_mask)
+        log_prob_ref_chosen, log_prob_ref_rejected = log_prob_ref.chunk(2, dim=0)
+    with accelerator.accumulate(model):
+        logits = model(**batch).logits
+        log_prob = calculate_action_logsoftmax(logits[:, :-1], input_ids[:, 1:])
+        log_prob = filter_mask(log_prob, label_mask)
+        log_prob_chosen, log_prob_rejected = log_prob.chunk(2, dim=0)
+        
+        reward_chosen = log_prob_chosen - log_prob_ref_chosen
+        reward_rejected = log_prob_rejected - log_prob_ref_rejected
+        loss = -logsigmoid(beta * (reward_chosen - reward_rejected)).mean()
+
+        accelerator.backward(loss)
+        if accelerator.sync_gradients:
+            accelerator.clip_grad_norm_(lora_parameters, 1.0)
+            optimizer.step()
+            scheduler.step()
+            optimizer.zero_grad()
+```
+
+在每个训练 step 中，执行如下操作：
+
+1. 计算参考模型 `model_ref` 的对数概率 `log_prob_ref`。
+2. 计算待训练模型 `model` 的 `log_prob`。
+3. 计算两个 Reward：分别对 `chosen` 和 `rejected` 样本计算 `reward`（即与 reference model 输出对数概率的差值）。
+4. DPO loss：使用 `-logsigmoid(beta * (r_c - r_r))` 作为 loss，其中 `beta` 是温度系数。
+5. 反向传播、梯度裁剪、迭代。
+
+### 训练效果
+
+最初尝试训练时遇到了一些问题：
+
+1. 一开始学习率设太高了（5e-5），结果模型在训练中后期迅速崩坏，什么都不输出。遂将学习率调至1e-6，问题解决。
+2. 由于我在之前做SFT时的数据量不是很大，如果这里将全部数据（大约10万条）全部用于训练，模型会忘记如何正常回答问题，对于所有问题都一视同仁地拒绝回答。于是，取出25000-30000条数据用于训练即可。
+
+分别观察Chosen Reward、Rejected Reward以及Loss的趋势：
+
+<img src="https://blogfiles.oss.fyz666.xyz/png/ba3ca2b2-3a86-49ff-b0f5-62030232922c.png" style="zoom:50%;" />
+
+训练过程相比于PPO更加稳定，模型也逐渐能够给出符合我们希望的正向价值观的输出，下面是几个DPO模型与SFT模型的面对诱导性问题和正常问题的回答对比示例：
+
+- 诱导性问题：
+
+![](https://blogfiles.oss.fyz666.xyz/png/43e0d57a-8205-4bf5-941b-90d0bc6cf360.png)
+
+![](https://blogfiles.oss.fyz666.xyz/png/08c2fe0b-5b64-4e9d-ba10-7b782ac06dbd.png)
+
+- 正常问题
+
+![](https://blogfiles.oss.fyz666.xyz/png/975e2a3f-400b-4e03-a9df-feae9379227c.png)
+
+![](https://blogfiles.oss.fyz666.xyz/png/e81257b1-e241-4cf3-b8a7-146aa84ce94e.png)
+
+可以看出，DPO 训练后的模型在面对诱导性问题时表现出更强的拒绝能力，而在正常问答中依然能保持良好响应，整体效果令人满意。
+
+---
+
+本文涉及的完整代码已整理并开源，详见：
+
+{% link tiny-llm-training, GitHub, https://github.com/windshadow233/tiny-llm-training/ %}
