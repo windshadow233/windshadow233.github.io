@@ -27,7 +27,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 
 ## PPO算法的优化目标
 
-前面提到的PPO算法实际上作为一种强化学习算法，其在大语言模型训练任务上，优化的最终目标是生成token序列的Reward的期望值，假设我们已经有了一个完美的Reward Model：$$R(x,y)$$，表示给定prompt $$x$$ 且模型输出token序列为 $$y$$ 时的Reward，我们可以将优化目标简单写为：
+前面提到的PPO算法作为一种强化学习算法，其在大语言模型训练任务上，优化的最终目标实际上是生成token序列的Reward的期望值，假设我们已经有了一个完美的Reward Model：$$R(x,y)$$，表示给定prompt $$x$$ 且模型输出token序列为 $$y$$ 时的Reward，我们可以将优化目标简单写为：
 $$
 \max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[R(x,y)]
 $$
@@ -46,7 +46,7 @@ $$
 $$
 \max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[R(x,y)-\beta\cdot\log\frac{\pi_\theta(y|x)}{\pi_\text{ref}(y|x)}]
 $$
-将其改为求极小值，并除去常数 $$\beta$$，并稍加变形，得到：
+将其改为求极小值，除以常数 $$\beta$$，并稍加变形，得到：
 $$
 \begin{aligned}
 &\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[\log\frac{\pi_\theta(y|x)}{\pi_\text{ref}(y|x)}-\frac{1}{\beta}\cdot R(x,y)]\\
@@ -81,13 +81,13 @@ $$
 $$
 时，KL散度达到最小值0。
 
-看上去我们已经直接求出了目标的显式解，但可惜的是，这个 $$Z(x)$$ 并不好直接算，因为它需要对于一个prompt $$x$$，遍历所有Reference Model可能产生的 $$y$$ 才能精确计算，如用蒙特卡洛方法估计，也得采样相当数量的 $$y$$​，这个过程十分消耗算力。
+看上去我们已经直接求出了目标的显式解，但可惜的是，这个 $$Z(x)$$ 并不好计算，因为它需要对于一个prompt $$x$$，遍历所有Reference Model可能产生的 $$y$$ 才能精确计算，如用蒙特卡洛方法估计，也得采样相当数量的 $$y$$​，这个过程十分消耗算力。
 
 另外，这个解还依赖于我们训练好的完美的 $$R(x,y)$$，因此在论文作者看来还不够方便，毕竟他们的目标是想要跳过后面两个步骤。
 
 ## 新的优化目标
 
-将 $$R(x,y)$$ 用两个概率分布已经 $$Z(x)$$ 反过来表示：
+将 $$R(x,y)$$ 用两个概率分布以及 $$Z(x)$$ 反过来表示：
 $$
 \begin{aligned}
 R(x,y)&=\beta\log(Z(x)\frac{\pi^*(y|x)}{\pi_\text{ref}(y|x)})\\
