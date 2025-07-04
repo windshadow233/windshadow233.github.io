@@ -59,7 +59,7 @@ $$
 $$
 Z(x) = \int_{y\sim\pi_\text{ref}(*|x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
 $$
-可见 $$Z(x)$$ 是关于 $$x$$ 的函数，并且只与 $\pi_\text{ref}$ 、奖励模型有关，与待训练模型 $$\pi_\theta$$ 无关。
+可见 $$Z(x)$$ 是关于 $$x$$ 的函数，并且只与 $$\pi_\text{ref}$$ 、奖励模型有关，与待训练模型 $$\pi_\theta$$ 无关。
 
 将 $$Z(x)$$ 引入优化目标 $$\log$$ 运算的分母，再从外部减去，我们得到：
 $$
