@@ -81,11 +81,14 @@ def __getitem__(self, idx):
     response_ids = self.tokenizer.encode(output, add_special_tokens=False)
 
     input_ids = prompt_ids + [self.tokenizer.bos_token_id] + response_ids
+    labels = [-100] * (len(prompt_ids) + 1) + response_ids
 
-    labels = [-100] * (len(prompt_ids) + 1) + response_ids + [self.tokenizer.eos_token_id]
-
-    input_ids = input_ids[:self.max_length - 1] + [self.tokenizer.eos_token_id]
+    input_ids = input_ids[:self.max_length]
     labels = labels[:self.max_length]
+    
+    if len(input_ids) < self.max_length:
+        input_ids += [self.tokenizer.eos_token_id]
+        labels += [self.tokenizer.eos_token_id]
 
     pad_len = self.max_length - len(input_ids)
     if pad_len > 0:

@@ -141,7 +141,9 @@ $$
 ```python
 def build_inputs(self, prompt_ids, response_ids):
     input_ids = prompt_ids + [self.tokenizer.bos_token_id] + response_ids
-    input_ids = input_ids[:self.max_length - 1] + [self.tokenizer.eos_token_id]
+    input_ids = input_ids[:self.max_length]
+    if len(input_ids) < self.max_length:
+        input_ids += [self.tokenizer.eos_token_id]
     bos_pos = input_ids.index(self.tokenizer.bos_token_id)
     label_mask = [0] * (bos_pos + 1) + [1] * (len(input_ids) - bos_pos - 1)
     pad_len = self.max_length - len(input_ids)
