@@ -57,7 +57,7 @@ $$
 
 定义 $$Z(x)$$：
 $$
-Z(x) = \int_{y\sim\pi_\text{ref}(*|x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
+Z(x) = \sum_{y}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
 $$
 可见 $$Z(x)$$ 是关于 $$x$$ 的函数，并且只与 $$\pi_\text{ref}$$ 、奖励模型有关，与待训练模型 $$\pi_\theta$$ 无关。
 
