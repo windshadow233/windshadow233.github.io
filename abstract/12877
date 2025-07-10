@@ -1,0 +1,1 @@
+本文介绍了GRPO（Group Relative Policy Optimization）算法的原理与实践。GRPO通过在同一prompt下采样多条输出，计算组内相对得分来优化模型，省去了Reward Model和Critic Model，使用基于规则的奖励函数。文中详细讲解了GRPO的优势函数、KL散度估计方法，并展示了在中文小学数学题数据集上的训练效果，表明模型在代码生成和准确性方面有所提升。
