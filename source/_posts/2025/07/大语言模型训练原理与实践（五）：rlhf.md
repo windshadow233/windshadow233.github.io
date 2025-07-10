@@ -82,9 +82,9 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 
 ### 动作概率
 
-在 RLHF 的 PPO 算法中，**动作概率** 指的是语言模型在某个位置生成该 token 的概率。假设通过一个 prompt 生成了一个 response，那么其 **动作序列** $$\{a_t\ |\ t=0,\dots,T-1\}$$ 就是新生成的 response token 的序列，而对应的 **策略概率** 可以按如下公式进行计算：
+在 RLHF 的 PPO 算法中，**动作概率** 指的是语言模型在某个位置生成该 token 的概率。假设通过一个 prompt 生成了一个 response，那么其 **动作序列** $$\{a_t\mid t=0,\dots,T-1\}$$ 就是新生成的 response token 的序列，而对应的 **策略概率** 可以按如下公式进行计算：
 $$
-\pi_\theta(a_t\ |\ x,a_{<t})=\text{softmax}(f_\theta(x,a_{<t}))[a_t]
+\pi_\theta(a_t \mid x,a_{<t})=\text{softmax}(f_\theta(x,a_{<t}))[a_t]
 $$
 上式中：
 

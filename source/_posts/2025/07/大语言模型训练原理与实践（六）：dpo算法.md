@@ -21,7 +21,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 
 建议有兴趣深入了解的朋友直接阅读原论文。
 
-{% link Direct Preference Optimization: Your Language Model is Secretly a Reward Model, $\text{ar}\chi\text{iv}$​, https://arxiv.org/abs/2305.18290 %}
+{% link Direct Preference Optimization, $\text{ar}\chi\text{iv}$​, https://arxiv.org/abs/2305.18290 %}
 
 ---
 
@@ -29,55 +29,55 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 
 前面提到的PPO算法作为一种强化学习算法，其在大语言模型训练任务上，优化的最终目标实际上是生成token序列的Reward的期望值，假设我们已经有了一个完美的Reward Model：$$R(x,y)$$，表示给定prompt $$x$$ 且模型输出token序列为 $$y$$ 时的Reward，我们可以将优化目标简单写为：
 $$
-\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[R(x,y)]
+\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[R(x,y)]
 $$
 不过，考虑到实际训练时需要对模型策略的KL散度做一个约束，我们还要在优化目标中添加一个惩罚项，于是优化目标实际上是：
 $$
-\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[R(x,y)-\beta\cdot\mathbb{D}_{\text{KL}}(\pi_\theta(*|x)\|\pi_\text{ref}(*|x))]
+\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[R(x,y)-\beta\cdot\mathbb{D}_{\text{KL}}(\pi_\theta(*\mid x)\|\pi_\text{ref}(*\mid x))]
 $$
-上式中，$$\beta$$ 是惩罚系数，$$\pi_{\text{ref}}(y|x)$$ 则是参考模型给出的概率分布。$$\mathbb{D}_{\text{KL}}(* \| *) $$ 表示两个概率分布的KL散度，其定义如下：
+上式中，$$\beta$$ 是惩罚系数，$$\pi_{\text{ref}}(y\mid x)$$ 则是参考模型给出的概率分布。$$\mathbb{D}_{\text{KL}}(* \| *) $$ 表示两个概率分布的KL散度，其定义如下：
 $$
-\mathbb{D}_{\text{KL}}(\pi_1(*|x) \| \pi_2(*|x)) =\mathbb{E}_{y\sim\pi_1(*|x)}[\log\frac{\pi_1(y|x)}{\pi_2(y|x)}]
+\mathbb{D}_{\text{KL}}(\pi_1(*\mid x) \| \pi_2(*\mid x)) =\mathbb{E}_{y\sim\pi_1(*\mid x)}[\log\frac{\pi_1(y\mid x)}{\pi_2(y\mid x)}]
 $$
 
 ## 求解优化目标
 
 将KL散度表达式代入优化目标，得到：
 $$
-\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[R(x,y)-\beta\cdot\log\frac{\pi_\theta(y|x)}{\pi_\text{ref}(y|x)}]
+\max_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[R(x,y)-\beta\cdot\log\frac{\pi_\theta(y\mid x)}{\pi_\text{ref}(y\mid x)}]
 $$
 将其改为求极小值，除以常数 $$\beta$$，并稍加变形，得到：
 $$
 \begin{aligned}
-&\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[\log\frac{\pi_\theta(y|x)}{\pi_\text{ref}(y|x)}-\frac{1}{\beta}\cdot R(x,y)]\\
-&=\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[\log\frac{\pi_\theta(y|x)}{\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))}]
+&\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[\log\frac{\pi_\theta(y\mid x)}{\pi_\text{ref}(y\mid x)}-\frac{1}{\beta}\cdot R(x,y)]\\
+&=\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[\log\frac{\pi_\theta(y\mid x)}{\pi_\text{ref}(y\mid x)\exp(\frac{1}{\beta}\cdot R(x,y))}]
 \end{aligned}
 $$
 这里，论文做了一个操作，强行让对数部分成为一个新的 KL散度，即让分母部分通过一个归一化操作成为概率分布：
 
 定义 $$Z(x)$$：
 $$
-Z(x) = \sum_{y}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
+Z(x) = \sum_{y}\pi_\text{ref}(y\mid x)\exp(\frac{1}{\beta}\cdot R(x,y))
 $$
 可见 $$Z(x)$$ 是关于 $$x$$ 的函数，并且只与 $$\pi_\text{ref}$$ 、奖励模型有关，与待训练模型 $$\pi_\theta$$ 无关。
 
 将 $$Z(x)$$ 引入优化目标 $$\log$$ 运算的分母，再从外部减去，我们得到：
 $$
-\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*|x)}[\log\frac{\pi_\theta(y|x)}{\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))}-\log Z(x)]
+\min_{\pi_\theta}\mathbb{E}_{x\in X,y\sim\pi_{\theta}(*\mid x)}[\log\frac{\pi_\theta(y\mid x)}{\frac{1}{Z(x)}\pi_\text{ref}(y\mid x)\exp(\frac{1}{\beta}\cdot R(x,y))}-\log Z(x)]
 $$
 此时，左侧的对数就变成了一个KL散度的形式了，我们记 
 
 $$
-\pi^*(y|x)\overset{\triangle}{=}\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
+\pi^*(y\mid x)\overset{\triangle}{=}\frac{1}{Z(x)}\pi_\text{ref}(y\mid x)\exp(\frac{1}{\beta}\cdot R(x,y))
 $$
 
-容易验证 $$\pi^*(*|x)$$ 是一个概率分布，因此，上式可以写为：
+容易验证 $$\pi^*(*\mid x)$$ 是一个概率分布，因此，上式可以写为：
 $$
-\min_{\pi_\theta}\mathbb{E}_{x\in X}[\mathbb{D}_\text{KL}(\pi_\theta(*|x)\|\pi^*(*|x))-\log Z(x)]
+\min_{\pi_\theta}\mathbb{E}_{x\in X}[\mathbb{D}_\text{KL}(\pi_\theta(*\mid x)\|\pi^*(*\mid x))-\log Z(x)]
 $$
 显然，由于上式的右侧项 $$\log Z(x)$$ 与 $$\pi_\theta$$ 无关，我们可以忽略它。又从KL散度的性质得到，当且仅当
 $$
-\pi_\theta(y|x) = \pi^*(y|x)=\frac{1}{Z(x)}\pi_\text{ref}(y|x)\exp(\frac{1}{\beta}\cdot R(x,y))
+\pi_\theta(y\mid x) = \pi^*(y\mid x)=\frac{1}{Z(x)}\pi_\text{ref}(y\mid x)\exp(\frac{1}{\beta}\cdot R(x,y))
 $$
 时，KL散度达到最小值0。
 
@@ -90,8 +90,8 @@ $$
 将 $$R(x,y)$$ 用两个概率分布以及 $$Z(x)$$ 反过来表示：
 $$
 \begin{aligned}
-R(x,y)&=\beta\log(Z(x)\frac{\pi^*(y|x)}{\pi_\text{ref}(y|x)})\\
-&=\beta\log\frac{\pi^*(y|x)}{\pi_\text{ref}(y|x)}+\beta\log Z(x)
+R(x,y)&=\beta\log(Z(x)\frac{\pi^*(y\mid x)}{\pi_\text{ref}(y\mid x)})\\
+&=\beta\log\frac{\pi^*(y\mid x)}{\pi_\text{ref}(y\mid x)}+\beta\log Z(x)
 \end{aligned}
 $$
 我们考虑前面训练Reward Model时用到的偏序数据对 $(x,y_c,y_r)$：其中 $$x$$ 为 prompt，$$y_c$$ 表示 chosen 的回复，$$y_r$$ 表示 rejected 的回复。
@@ -120,11 +120,11 @@ $$
 $$
 这个目标有一个很大的好处在于，当我们把
 $$
-R(x,y)=\beta\log\frac{\pi^*(y|x)}{\pi_\text{ref}(y|x)}+\beta\log Z(x)
+R(x,y)=\beta\log\frac{\pi^*(y\mid x)}{\pi_\text{ref}(y\mid x)}+\beta\log Z(x)
 $$
 代入时，会发现正好把那坨 $$Z(x)$$ 消掉了，从而得到下式：
 $$
--\log\sigma[\beta(\log\frac{\pi^*(y_c|x)}{\pi_\text{ref}(y_c|x)}-\frac{\pi^*(y_r|x)}{\pi_\text{ref}(y_r|x)})]
+-\log\sigma[\beta(\log\frac{\pi^*(y_c\mid x)}{\pi_\text{ref}(y_c\mid x)}-\frac{\pi^*(y_r\mid x)}{\pi_\text{ref}(y_r\mid x)})]
 $$
 这便是最终的优化目标。由此，我们的目标函数只与 $$\pi^*$$ 相关，已经绕开了之前奖励模型的训练过程。
 
@@ -154,7 +154,7 @@ def build_inputs(self, prompt_ids, response_ids):
     return input_ids, attention_mask, label_mask
 ```
 
-计算 $$\pi(y|x)$$ ，采用了取对数概率（`logits`）然后求和的方式，不过在计算得到了`logits`之后，需要先用前面计算得到的`label_mask`对prompt和padding部分做一个屏蔽，再进行求和：
+计算 $$\pi(y\mid x)$$ ，采用了取对数概率（`logits`）然后求和的方式，不过在计算得到了`logits`之后，需要先用前面计算得到的`label_mask`对prompt和padding部分做一个屏蔽，再进行求和：
 
 ```python
 def masked_sum(values, labels_mask):

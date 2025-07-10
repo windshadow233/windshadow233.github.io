@@ -154,7 +154,7 @@ class LoraLinear(torch.nn.Module):
 
 在完成数据预处理和模型结构准备（如插入 LoRA 模块）后，监督微调的训练流程与预训练阶段非常类似，核心仍是语言模型的自回归目标：
 $$
-\min_\theta\mathbb E(x,y)\sim\mathcal{D}[-\log P_\theta(y|x)]
+\min_\theta\mathbb E(x,y)\sim\mathcal{D}[-\log P_\theta(y\mid x)]
 $$
 其中 $$x$$ 和 $$y$$ 分别为用户的prompt和人类标注的参考回答。
 

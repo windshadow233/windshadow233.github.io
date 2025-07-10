@@ -29,7 +29,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e658
 PPO算法是一种**On-Policy**的**策略梯度算法**，关于策略梯度，我在[之前的一篇文章](/blog/12633/)中曾提到过其核心公式的推导：
 
 $$
-\nabla_\theta J(\theta)=\mathbb{E}_{s\in S}\mathbb{E}_{a_t\sim\pi_\theta(*|s)}[\nabla_\theta(\log{\pi_\theta(a_t|s)})Q(s,a_t)]
+\nabla_\theta J(\theta)=\mathbb{E}_{s\in S}\mathbb{E}_{a_t\sim\pi_\theta(*\mid s)}[\nabla_\theta(\log{\pi_\theta(a_t\mid s)})Q(s,a_t)]
 $$
 这里 $$J(\theta)=\mathbb{E}_{s\in S}[V_{\pi_\theta}(s)]$$ 表示采取 以 $$\theta$$ 为参数的动作策略 $$\pi_\theta$$​ 时，能获得的所有状态下的回报的期望值。
 
@@ -43,7 +43,7 @@ $$
 
 我们回到 $$J(\theta)$$ 期望内部的 $$V$$ 函数的定义：
 $$
-V_{\pi_\theta}(s_t)=\mathbb{E}_{a_t\sim\pi_\theta(*|s_t)}[Q(s_t,a_t)]
+V_{\pi_\theta}(s_t)=\mathbb{E}_{a_t\sim\pi_\theta(*\mid s_t)}[Q(s_t,a_t)]
 $$
 我们要最大化 $$J(\theta)$$，其实就相当于最大化 $$V$$ 函数： 
 $$
@@ -51,32 +51,32 @@ $$
 $$
 将 $$V$$ 函数中的期望展开为积分：
 $$
-\max_{\theta} \int_{a\in A}\pi_\theta(a|s_t)Q(s_t,a)
+\max_{\theta} \int_{a\in A}\pi_\theta(a\mid s_t)Q(s_t,a)
 $$
 
 
 我们发现，在给定状态 $$s_t$$ 的情况下，$$Q(s_t,a)$$ 为关于动作 $$a$$ 的单变量函数，此时有两种情况：
 
-1. $$Q(s_t,a)>0$$，说明它给我们带来的价值是正的，意味着这是一个比较好的动作，我们就应该**进一步提升**当前状态下这个动作被取到的概率，也就是 $$\pi_\theta(a|s_t)$$ 的值。
+1. $$Q(s_t,a)>0$$，说明它给我们带来的价值是正的，意味着这是一个比较好的动作，我们就应该**进一步提升**当前状态下这个动作被取到的概率，也就是 $$\pi_\theta(a\mid s_t)$$ 的值。
 2. $$Q(s_t,a)\le 0$$​​，说明它没有给我们带来价值或带来了负价值，意味着这个动作比较差，同理我们应该**进一步降低**当前状态下这个动作被取到的概率。
 
 ### 重要性采样
 
 对于上面的两种情况，我们想要定量地描述**「进一步」**这个词，很自然地会想到，如果将优化前后的概率值做一个比值：
 $$
-\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}
+\frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}
 $$
 **固定分母**，优化分子，就可以体现新概率相对于旧概率的变化。
 
-对于情况 1，我们希望新概率变大，故需要对 $$\pi_\theta(a|s_t)$$ 梯度上升；对于情况 2，我们希望新概率变小，故需要对 $$\pi_\theta(a|s_t)$$ 梯度下降。合而为一，我们总是需要对下式：
+对于情况 1，我们希望新概率变大，故需要对 $$\pi_\theta(a\mid s_t)$$ 梯度上升；对于情况 2，我们希望新概率变小，故需要对 $$\pi_\theta(a\mid s_t)$$ 梯度下降。合而为一，我们总是需要对下式：
 $$
-\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}Q(s_t|a)
+\frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}Q(s_t\mid a)
 $$
 进行梯度上升。
 
 这就将原先的优化目标转化为了：
 $$
-\max_{\theta} \int_{a\in A}\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}Q(s_t,a)
+\max_{\theta} \int_{a\in A}\frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}Q(s_t,a)
 $$
 这个操作也被称为**重要性采样**。
 
@@ -90,7 +90,7 @@ $$
 
 对于这件事，**PPO**算法使用的约束方法是对新旧概率的比值，也就是优化目标左边那一坨东西，进行一个裁剪：
 $$
-\text{clip}(\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)
+\text{clip}(\frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)
 $$
 将概率的比值保持在区间 $$[1-\epsilon, 1+\epsilon]$$​​​ 之内，简单粗暴地控制了策略的差异。由于`clip`在区间外不产生梯度，这个操作使得与原策略差距过大的动作不会让模型产生参数更新。让策略模型在训练过程中能够逐步收敛，不至于在一次更新中产生过大的变化。
 
@@ -102,7 +102,7 @@ $$
 
 ### 优势函数
 
-设想我们的 Agent 因为~~前面操作太垃~~种种原因，处在一个已经非常糟糕的状态 $$s_t$$ ，这个状态下，无论这个 Agent 采取哪个动作 $$a$$，价值函数 $$Q(a|s_t)$$​ 都是负的，由刚刚**重要性采样**部分得出的结论，我们发现对于每个动作都要降低它被取到的概率，~~这不就是摆烂么~~。难道对于 Agent 而言，原地摆烂才是最优解？
+设想我们的 Agent 因为~~前面操作太垃~~种种原因，处在一个已经非常糟糕的状态 $$s_t$$ ，这个状态下，无论这个 Agent 采取哪个动作 $$a$$，价值函数 $$Q(a\mid s_t)$$​ 都是负的，由刚刚**重要性采样**部分得出的结论，我们发现对于每个动作都要降低它被取到的概率，~~这不就是摆烂么~~。难道对于 Agent 而言，原地摆烂才是最优解？
 
 ![](https://blogfiles.oss.fyz666.xyz/webp/59c510e5-7883-406e-8d8a-e95798bc9cd5.webp)
 
@@ -126,14 +126,14 @@ $$
 
 于是我们的优化目标变为了：
 $$
-\max_{\theta} \int_{a\in A}\text{clip}(\frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)A(s_t,a)
+\max_{\theta} \int_{a\in A}\text{clip}(\frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}, 1-\epsilon,1+\epsilon)A(s_t,a)
 $$
 
 ### 最终的目标函数
 
 前文提到的目标函数存在一定的问题，因此在实际的应用中，还需要对优化目标进行以下 $$\min$$ 计算：
 
-方便起见，定义 $$r \overset{\triangle}{=} \frac{\pi_\theta(a|s_t)_{\text{new}}}{\pi_\theta(a|s_t)_{\text{old}}}$$​，则 PPO 算法最终的优化目标如下：
+方便起见，定义 $$r \overset{\triangle}{=} \frac{\pi_\theta(a\mid s_t)_{\text{new}}}{\pi_\theta(a\mid s_t)_{\text{old}}}$$​，则 PPO 算法最终的优化目标如下：
 $$
 \max_{\theta} \int_{a\in A}\min\{\text{clip}(r, 1-\epsilon,1+\epsilon)A(s_t,a),\ r A(s_t,a)\}
 $$
@@ -190,7 +190,7 @@ A_{t}^{(k)}=\sum_{l=0}^{k-1}\gamma^l\delta_{t+l}
 $$
 恰好是TD残差 $$\delta$$ 序列的带衰减累计求和。
 
-近似阶数 $$k$$ 越大，我们得到的估计值的**偏差越小**，但其中包含的随机变量（$$\{R_{t+i}\ | \ i=0,\dots,k-1\}$$）越多，因此**方差反而变大**。
+近似阶数 $$k$$ 越大，我们得到的估计值的**偏差越小**，但其中包含的随机变量（$$\{R_{t+i}\ \mid  \ i=0,\dots,k-1\}$$）越多，因此**方差反而变大**。
 
 接下来有个操作叫 **$$\lambda-\text{return}$$** 算法，它的作用是平衡这些估计的偏差与方差。
 
