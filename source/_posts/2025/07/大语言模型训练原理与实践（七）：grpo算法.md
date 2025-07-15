@@ -134,61 +134,57 @@ $$
 
 ## GRPO算法复现
 
-- Pretrained-Model：[Qwen/Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct) (太惨了，即使套了LoRA也只训的动1.5B)
-- Dataset：[swulling/gsm8k_chinese](https://huggingface.co/datasets/swulling/gsm8k_chinese/) 包含数千道中文小学数学题的数据集，每条数据包含一个`answer_only`字段，提供问题的答案。
-- Task：让模型具备编写代码解决数学问题的能力。
-
-{% note warning %}
-
-显然，这个任务并不容易。
-
-{% endnote %}
+- Pretrained-Model：[Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) (太惨了，即使套了LoRA也只训的动1.5B)
+- Dataset：[openai/gsm8k](https://huggingface.co/datasets/openai/gsm8k) 包含数千道英文小学数学题的数据集，每条数据包含一个`answer`字段，提供问题的解答，并且固定了纯数字答案格式：置于末尾`####`之后。
+- Task：让模型具备使用思维链解决数学问题的能力。
 
 ### 奖励函数定义
 
 与论文一致，我们主要定义了两个奖励函数：
 
-1. 准确性奖励：我们要求模型的代码部分打印出问题的答案，如答案准确则奖励。
-2. 格式奖励：要求模型将思考过程包含在一对`<think>`和`</think>`之间，并输出Python代码块，如格式准确则奖励。
+1. 准确性奖励：我们要求模型给出问题的答案，如答案准确则奖励。
+2. 格式奖励：要求模型将思考过程包含在一对`<think>`和`</think>`之间，并且将最终答案包含在一对`<answer>`和`</answer>`之间，如格式准确则奖励。
 
 另外，考虑到严格达成两个奖励函数非常困难，我们还相应地提供了两个稍宽松的奖励。
 
-1. 只要代码块输出的是一个数字，就给一定的奖励（反之，如果代码根本运行不起来，产生各种报错，则稍扣一点分）
-2. 只要匹配到了`<think>`、`</think>`或者部分代码块标志，就给一定的奖励。
+1. 只要答案是一个纯数字，就给一定的奖励。
+2. 只要匹配到了`<think>`、`</think>`、`<answer>`和`</answer>`中的一部分，就给一定的奖励。
 
 ### 数据处理
 
-我们直接套用`Qwen/Qwen2.5-Coder-1.5B-Instruct`模型对应的tokenizer所提供的chat template，并定义一个系统提示词：
+我们直接套用`Qwen/Qwen2.5-1.5B-Instruct`模型对应的tokenizer所提供的chat template，并定义一个系统提示词：
 
 ````raw
-请按下面格式思考并写代码解决数学问题，并在最后使用`print`函数打印答案。
-<think>
-你的思考过程
-</think>
-```python
-你的代码
-```
+You are given a problem.
+Think about the problem and provide your working out.
+Place it between <think> and </think>.
+Then, provide your numeric answer between <answer> and </answer>.
 ````
 
 核心代码：
 
 ```python
+def extract_hash_answer(self, text: str):
+    if "####" not in text:
+        return None
+    return text.split("####")[1].strip()
+
 def __getitem__(self, idx):
     data = self.dataset[idx]
-    question = data['question_zh-cn']
-    answer = data['answer_only']
-
+    question = data['question']
+    answer = self.extract_hash_answer(data['answer'])
+    
     prompt = self.tokenizer.apply_chat_template([
         {"role": "system", 'content': self.system_prompt},
         {"role": "user", 'content': question}
     ], add_generation_prompt=True, tokenize=False)
-
+    
     inputs = self.tokenizer(prompt, padding='max_length', max_length=self.max_length, truncation=True, return_tensors='pt')
     inputs['input_ids'] = inputs['input_ids'][0]
     inputs['attention_mask'] = inputs['attention_mask'][0]
     inputs['answer'] = str(answer)
     inputs['prompt'] = prompt
-
+    
     return inputs
 ```
 
@@ -207,23 +203,17 @@ def __getitem__(self, idx):
 
 训练曲线：
 
-<img src="https://blogfiles.oss.fyz666.xyz/png/2fefc4f6-26c8-4685-86e2-0d25bff92cbf.png" style="zoom:50%;" />
+<img src="https://blogfiles.oss.fyz666.xyz/png/576c7496-2fd9-478d-b5d6-2b4d51f5faf1.png" style="zoom:50%;" />
 
 注意到 Reward 还是在上升的。另外，每隔10次迭代，打印一下模型生成的结果，发现模型确实在准确率方面有所提升。下面先贴出几个例子，在测试集上的评测结果待日后再补充。
 
 {% gallery %}
 
-![](https://blogfiles.oss.fyz666.xyz/png/f31fcfd4-ab44-4045-bfe2-78fae57a8e3c.png)
-
-![](https://blogfiles.oss.fyz666.xyz/png/11534e35-bec7-462e-b294-9c6855b38fcb.png)
-
-![](https://blogfiles.oss.fyz666.xyz/png/998bb869-0ea0-4792-8059-03c54b690cf8.png)
-
-![](https://blogfiles.oss.fyz666.xyz/png/5d3ccdc7-3291-4286-8571-068b4a6f9746.png)
+![](https://blogfiles.oss.fyz666.xyz/png/edc7b611-eff9-4a2f-ae37-1a67f9ac8634.png)
+![](https://blogfiles.oss.fyz666.xyz/png/250d65ae-8a07-4569-a2b6-4adf72274a01.png)
+![](https://blogfiles.oss.fyz666.xyz/png/0e8d8972-bd7a-4fc2-bcc9-2af56adda240.png)
 
 {% endgallery %}
-
-但是不得不说这模型的规模还是太小了，虽然这个模型已经针对代码生成任务进行了专门的微调，但还是经常写出报错的代码。同时，模型始终无法学会使用`<think>`、`</think>`包裹思考内容，也许是相应的奖励给少了，也可能与前期的预训练数据集特征有一定关系。
 
 ---
 
