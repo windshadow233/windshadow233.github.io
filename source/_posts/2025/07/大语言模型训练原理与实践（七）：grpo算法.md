@@ -167,7 +167,7 @@ Then, provide your numeric answer between <answer> and </answer>.
 def extract_hash_answer(self, text: str):
     if "####" not in text:
         return None
-    return text.split("####")[1].strip()
+    return text.split("####")[1].strip().replace(',', '')
 
 def __getitem__(self, idx):
     data = self.dataset[idx]
