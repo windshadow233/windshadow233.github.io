@@ -211,7 +211,7 @@ def __getitem__(self, idx):
 
 训练曲线：
 
-<img src="https://blogfiles.oss.fyz666.xyz/png/cd33ab82-0cc9-4a4b-ad91-9f80638526d9.png" style="zoom:50%;" />
+<img src="https://blogfiles.oss.fyz666.xyz/png/cd33ab82-0cc9-4a4b-ad91-9f80638526d9.png" style="zoom:30%;" />
 
 注意到总体 Reward 还是在上升的，并且我们还分别记录观察了三个独立的Reward函数的变化趋势，发现模型在准确率、格式方面都有所提升，唯独这个Soft Format在上升到一定程度后有所下降，观察到模型有时会重复输出answer的闭合tag：`</answer>`，目前还不知道是什么原因（明明给了一定的惩罚？）。
 
