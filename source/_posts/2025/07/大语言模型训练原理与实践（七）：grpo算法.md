@@ -229,7 +229,7 @@ def __getitem__(self, idx):
 
 {% endgallery %}
 
-最终，博主将迭代了400个step的模型与未训了的初始模型进行了测试与对比，结果如下：
+最终，博主将迭代了400个step的模型与未经过训练的初始模型进行了测试与对比，结果如下：
 
 ```raw
 Qwen Accuracy: 0.4314 Formatted: 0.6088 GRPO Accuracy: 0.5610 Formatted: 0.9121
