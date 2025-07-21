@@ -148,7 +148,9 @@ $$
 另外，考虑到严格达成两个奖励函数非常困难，我们还相应地提供了两个稍宽松的奖励。
 
 1. 只要答案是一个纯数字，就给一定的奖励。
-2. 只要匹配到了`<think>`、`</think>`、`<answer>`和`</answer>`中的一部分，就给一定的奖励。
+2. 只要匹配到了`<think>`、`</think>`、`<answer>`和`</answer>`中的一部分，就给一定的奖励，但如果匹配到多个，则扣除奖励。
+
+奖励函数的定义详见[此文件](https://github.com/windshadow233/tiny-llm-training/blob/main/GRPO/cot_reward.py)。
 
 ### 数据处理
 
@@ -156,9 +158,15 @@ $$
 
 ````raw
 You are given a problem.
-Think about the problem and provide your working out.
+Think about it and provide your working out.
 Place it between <think> and </think>.
-Then, provide your numeric answer between <answer> and </answer>.
+Then, provide your numeric answer between <answer> and </answer>. For example:
+<think>
+...
+</think>
+<answer>
+...
+</answer>
 ````
 
 核心代码：
@@ -203,26 +211,42 @@ def __getitem__(self, idx):
 
 训练曲线：
 
-<img src="https://blogfiles.oss.fyz666.xyz/png/576c7496-2fd9-478d-b5d6-2b4d51f5faf1.png" style="zoom:50%;" />
+<img src="https://blogfiles.oss.fyz666.xyz/png/cd33ab82-0cc9-4a4b-ad91-9f80638526d9.png" style="zoom:50%;" />
 
-注意到 Reward 还是在上升的。另外，每隔10次迭代，打印一下模型生成的结果，发现模型确实在准确率方面有所提升，另外在格式上也有所对齐。下面先贴出几个例子，在测试集上的评测结果待日后再补充。
+注意到总体 Reward 还是在上升的，并且我们还分别记录观察了三个独立的Reward函数的变化趋势，发现模型在准确率、格式方面都有所提升，唯独这个Soft Format在上升到一定程度后有所下降，观察到模型有时会重复输出answer的闭合tag：`</answer>`，目前还不知道是什么原因（明明给了一定的惩罚？）。
+
+另外，每隔10次迭代，打印了一下模型生成的结果，发现模型确实能做对一些题，并且在格式上也有所对齐，思考过程有模有样。下面贴出几个例子。
 
 {% gallery %}
 
-![](https://blogfiles.oss.fyz666.xyz/png/edc7b611-eff9-4a2f-ae37-1a67f9ac8634.png)
-![](https://blogfiles.oss.fyz666.xyz/png/250d65ae-8a07-4569-a2b6-4adf72274a01.png)
-![](https://blogfiles.oss.fyz666.xyz/png/0e8d8972-bd7a-4fc2-bcc9-2af56adda240.png)
+![](https://blogfiles.oss.fyz666.xyz/png/ef15f64a-6882-474b-b237-c9a27e04b710.png)
+
+![](https://blogfiles.oss.fyz666.xyz/png/4b50a5c7-e054-4e18-aa09-52a3a2ff3207.png)
+
+![](https://blogfiles.oss.fyz666.xyz/png/4d8c53f8-110a-4b98-b351-3fb056558503.png)
+
+![](https://blogfiles.oss.fyz666.xyz/png/8da29788-480a-4dc7-bac6-c1c5b19ecf15.png)
 
 {% endgallery %}
 
+最终，博主将迭代了400个step的模型与未训了的初始模型进行了测试与对比，结果如下：
+
+```raw
+Qwen Accuracy: 0.4314 Formatted: 0.6088 GRPO Accuracy: 0.5610 Formatted: 0.9121
+```
+
+可见经过GRPO迭代的模型已经具备了较强的格式对齐能力，在准确率方面也有了一定的提升，意味着训练还是有一定的效果的。
+
 ---
 
-本文相关代码**将**开源于下面仓库：
+本文相关代码已开源于下面仓库：
 
 {% link tiny-llm-training, GitHub, https://github.com/windshadow233/tiny-llm-training/ %}
 
 {% note warning %}
 
-由于实验中途突然被抓去跑了一些别的东西，只好先把实验停了，在无法确保实验最终效果的情况下，尚未开源本文代码，敬请期待！
+~~由于实验中途突然被抓去跑了一些别的东西，只好先把实验停了，在无法确保实验最终效果的情况下，尚未开源本文代码，敬请期待！~~
+
+只是实现了一个微小的demo，在细节方面仍有所欠缺，有待进一步斟酌，希望大佬们不吝赐教！
 
 {% endnote %}
