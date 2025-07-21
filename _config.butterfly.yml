@@ -370,7 +370,6 @@ aside:
     image_url: https://weather.fyz666.xyz/weather.png
   card_mbti:
     enable: true
-    mbti_text: 'INFP-A'
     date: '2025-04-13'
     image: https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg
     ei:

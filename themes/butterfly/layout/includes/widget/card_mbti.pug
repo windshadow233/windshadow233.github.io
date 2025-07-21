@@ -92,11 +92,12 @@ style.
 - const card_mbti = theme.aside.card_mbti
 - const mbtiValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
 - const percentValues = mbtiValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
+- const mbti_text = mbtiKeys.map(k => card_mbti[k].type).join('') + '-' + card_mbti.at.type
 
 .card-widget.card-mbti
   .item-headline
     i.iconfont.icon-MBTI
-    span= `MBTI（${card_mbti.mbti_text}）`
+    span= `MBTI（${mbti_text}）`
 
   .mbti
     each val, i in ['ei', 'sn', 'tf', 'jp', 'at']
