@@ -16,6 +16,8 @@ tags:
 cover: https://blogfiles.oss.fyz666.xyz/webp/c2a660aa-d2b3-4b68-9e65-841abf6e6584.webp
 ---
 
+## 前情提要
+
 {% note primary %}
 
 2025年1月27日，因中国 AI 初创企业 DeepSeek 发布低成本高性能模型，英伟达市值单日缩水约6000亿美元，股价暴跌约17%。
