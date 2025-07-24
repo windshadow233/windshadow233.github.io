@@ -73,6 +73,7 @@ algo_groups:
       - algo: U2' (R U R') (F R' F' R)
       - algo: (F' L') U2 L F (R U R')
       - algo: (R U' R') (r U' r' U2') (r U r')
+      - algo: (r U' r' U2) (r U r') (R U R')
   - algo_type: F2L
     algo_name: F2L FL槽
     page_name: F2L FL槽
