@@ -7,6 +7,34 @@ limit: 50
 top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
 talk_list:
   - content: |
+      CVPR 又闹大笑话了。
+      大概情况是：有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
+      时隔约一个月后，在另一位网友的催促下，作者终于“不得不”出来回应（已翻译为中文，见图 2），作者表示：
+      <blockquote>Using shuffle=True will be a matter for future investigation, which could be valuable for researchers in this domain.</blockquote>
+      <div class="hide-block">
+        <button class="hide-button" onclick="this.classList.add('open');talk.reflashTalkWaterFall();">查看更多</button>
+        <div class="hide-content" style="font-size: 13px;color: white;">
+          这可真是太逆天了，众所周知，这种图像分类任务在测试的时候应该是数据互相独立的，不会出现这种因数据顺序不同而导致结果差异的情况，而作者竟公然嘴硬表示这是一个未来的研究方向，实在是让人忍俊不禁。
+          <br>对于如此离谱之言论，网友们怎肯放过，于是和论文作者在 issue 里激情对线，最终给作者怼到删库跑路了（图 3）。
+          <br>那么这究竟是怎么回事呢？我大概看了一下他的代码部分，发现了一个神奇的函数（图 4），这个函数会在 evaluate 的时候运行，但注意到，它对一个 batch 数据计算了一些统计特征，例如均值、中位数。然后将这些统计特征用于后续的处理。
+          这直接导致了 batch 中的数据在测试时互相不独立。在这种情况下，如果不打乱数据，则会导致同一批次里的图像类别分布较少（可能仅有三五个类），那么其统计特征势必会产生一个 bias，如果将这些统计特征用于后续的分类，则会显著影响其分类性能。
+          这也能解释为什么将数据打乱或者设置 batchsize 为 1 会导致准确率大幅下降。
+          <br>
+          哎，我算是知道都是哪些人在中顶会了。
+          <br>
+          最后，拍了个 README 快照（图 5），帮这位作者留个赛博案底😌。
+        </div>
+      </div>
+    date: 2025/07/24 20:50
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/bc570ce3-fa9b-423a-b482-5acc4b39e5ef.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/46ccffd0-e701-4ca2-86f2-caa2d76bbdb3.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/89fd50f5-74d7-44eb-98f1-8e9a48f23034.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/af6b7184-c7d5-44ed-b38b-aa138bb8e000.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/84046107-649e-49df-8082-9931f44087dc.webp
+    tag:
+      - CVPR
+  - content: |
       终于 get 了心心念念的 Apple Watch，在此鸣谢女朋友的全款赞助！
     date: 2025/04/29 23:42
     image:
