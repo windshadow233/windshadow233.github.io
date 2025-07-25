@@ -4,6 +4,10 @@
       color: "#FF9933"
       icon: https://blogfiles.oss.fyz666.xyz/png/82806500-a49f-47a4-8f95-30f47b391aaa.png
       website: https://pytorch.org/
+    - name: Huggingface
+      color: "#FFD700"
+      icon: https://blogfiles.oss.fyz666.xyz/webp/74c9317c-66f5-43f0-9c38-78bcef91cfab.webp
+      website: https://huggingface.co/
     - name: Python
       color: "#99CCFF"
       icon: https://blogfiles.oss.fyz666.xyz/png/efae609e-fef9-435f-a2e8-dfa7ddc58efb.png
