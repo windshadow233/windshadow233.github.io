@@ -30,6 +30,10 @@ if site.data.talk
               li.bber-item
                 .bber-content
                   p.datacont(style="white-space:pre-wrap;") !{item.content}
+                    if item.hide
+                      .hide-block
+                        .hide-button(onclick="this.classList.add('open');talk.reflashTalkWaterFall();") !{item.hide.button}
+                        .hide-content !{item.hide.content}
                     if item.image
                       - l = Math.min(item.image.length, 4)
                       .bber-container-img
