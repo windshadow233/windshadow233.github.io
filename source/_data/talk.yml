@@ -32,6 +32,9 @@ talk_list:
       - https://blogfiles.oss.fyz666.xyz/webp/84046107-649e-49df-8082-9931f44087dc.webp
     tag:
       - CVPR25
+    link:
+      - url: https://github.com/zeyuanyin/SATA_fork
+        name: 原仓库的一个 Fork
   - content: |
       终于 get 了心心念念的 Apple Watch，在此鸣谢女朋友的全款赞助！
     date: 2025/04/29 23:42
