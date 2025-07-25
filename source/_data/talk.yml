@@ -10,7 +10,7 @@ talk_list:
       CVPR 又闹大笑话了。
       大概情况是：有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
       时隔约一个月后，在另一位网友的催促下，作者终于“不得不”出来回应（已翻译为中文，见图 2），作者表示：
-      <blockquote>Using shuffle=True will be a matter for future investigation, which could be valuable for researchers in this domain.</blockquote>
+      <blockquote>Using shuffle=True would be a matter for future investigation, which could be valuable for researchers in this domain.</blockquote>
       <div class="hide-block">
         <button class="hide-button" onclick="this.classList.add('open');talk.reflashTalkWaterFall();">查看更多</button>
         <div class="hide-content" style="font-size: 13px;color: white;">
