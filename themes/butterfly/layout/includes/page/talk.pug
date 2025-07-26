@@ -12,9 +12,20 @@ script.
     document.onscrollend = () => {
       talk.reflashTalkWaterFall();
     };
+
+    let resizeTimer;
+    function onResize() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        talk.reflashTalkWaterFall();
+      }, 150);
+    }
+    window.addEventListener('resize', onResize);
+
     function handlePjaxSend() {
       document.onscrollend = originalScrollEnd;
       document.removeEventListener('pjax:send', handlePjaxSend);
+      window.removeEventListener('resize', onResize);
     }
 
     document.addEventListener('pjax:send', handlePjaxSend);
