@@ -15,7 +15,7 @@
     <atom:link href="https://blog.fyz666.xyz/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>行所欲行，无问西东。</description>
-    <pubDate>Sat, 26 Jul 2025 18:34:29 GMT</pubDate>
+    <pubDate>Sat, 26 Jul 2025 18:59:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -163,9 +163,9 @@
       
       <category domain="https://blog.fyz666.xyz/tags/llm/">LLM</category>
       
-      <category domain="https://blog.fyz666.xyz/tags/reward-model/">Reward Model</category>
-      
       <category domain="https://blog.fyz666.xyz/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/reward-model/">Reward Model</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/12760/#disqus_thread</comments>
@@ -202,9 +202,9 @@
       
       <category domain="https://blog.fyz666.xyz/tags/llm/">LLM</category>
       
-      <category domain="https://blog.fyz666.xyz/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</category>
-      
       <category domain="https://blog.fyz666.xyz/tags/ppo-%E7%AE%97%E6%B3%95/">PPO 算法</category>
+      
+      <category domain="https://blog.fyz666.xyz/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</category>
       
       
       <comments>https://blog.fyz666.xyz/blog/12706/#disqus_thread</comments>
