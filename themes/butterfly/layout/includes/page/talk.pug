@@ -8,6 +8,16 @@ script.
             talk.reflashTalkWaterFall();
         }
     });
+    const originalScrollEnd = document.onscrollend;
+    document.onscrollend = () => {
+      talk.reflashTalkWaterFall();
+    };
+    function handlePjaxSend() {
+      document.onscrollend = originalScrollEnd;
+      document.removeEventListener('pjax:send', handlePjaxSend);
+    }
+
+    document.addEventListener('pjax:send', handlePjaxSend);
   })
 if site.data.talk
   - var i = site.data.talk
