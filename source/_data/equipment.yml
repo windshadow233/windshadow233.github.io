@@ -59,12 +59,19 @@ equipment_groups:
           name: 详情
           url: https://item.jd.com/100135457206.html
       - name: 酷态科 15 号电能柱
-        detail: 20000 mAh / 150W
+        detail: 20000 mAh / 150 W
         desc: 朋友推荐的充电宝，功率非常大，带的动笔记本。亲测能带上飞机，唯一的缺点是有点重...
         cover: https://blogfiles.oss.fyz666.xyz/webp/5fa5678b-37c5-487a-8d26-6d41edc4d703.webp
         link:
           name: 详情
           url: https://cuktech.com.cn/show_procon.thtml?id=8
+      - name: 酷态科 15 号超级电能柱 Ultra
+        detail: 20000 mAh / 210 W
+        desc: 23年买的「酷态科 15 号电能柱」当时还没有带3C标识，民航新规实施后上不了飞机了，因此新购了一个「酷态科 15 号超级电能柱 Ultra」，功率更大，还带一个显示屏。
+        cover: https://blogfiles.oss.fyz666.xyz/webp/33214e05-c6bc-4afc-854d-a5008c7226e0.webp
+        link:
+          name: 详情
+          url: https://cuktech.com.cn/show_procon.thtml?id=219
   - class_name: 网络与服务
     class_desc: 家庭网络与本地服务部署设备    
     equipment_list:
