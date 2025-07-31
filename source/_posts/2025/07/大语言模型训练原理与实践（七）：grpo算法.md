@@ -189,23 +189,23 @@ def __getitem__(self, idx):
         {"role": "user", 'content': question}
     ], add_generation_prompt=True, tokenize=False)
     
-    inputs = self.tokenizer(prompt, padding='max_length', max_length=self.max_length, truncation=True, return_tensors='pt')
-    inputs['input_ids'] = inputs['input_ids'][0]
-    inputs['attention_mask'] = inputs['attention_mask'][0]
-    inputs['answer'] = str(answer)
-    inputs['prompt'] = prompt
-    
-    return inputs
+    return {
+        'prompt': prompt,
+        'answer': str(answer)
+    }
 ```
 
 ### 训练流程
 
 甚至连伪代码都懒得写了，大概写一下流程吧：
 
-1. 对一个batch（假设 Batch Size为 $$B$$）中的每条prompt分别生成 $$G$$ 条输出序列，从而得到 $$B$$ 个大小为 $$G$$ 的分组。
-2. 根据定义好的奖励函数，对每个分组内的所有输出序列计算得分，然后在组内进行比较，求得相对得分（作为优势函数）。
-3. 按前面的公式计算KL散度、损失函数。
-4. 进行策略迭代。
+0. 定义一个数据收集容器：Data Buffer。
+1. 从数据集中取一条 prompt，生成 $$G$$ 条输出序列，从而得到大小为 $$G$$ 的分组。
+2. 根据定义好的奖励函数，对步骤 1 生成分组内的所有输出序列计算得分，然后在组内进行比较，求得相对得分（作为优势函数）。由此，得到一组数据。
+3. 将步骤 2 得到的数据添加到Data Buffer。
+4. 若Data Buffer的大小达到一次迭代需要的数据量（等效 Batch size），则进入步骤 5，否则回到步骤 1。
+5. 遍历Data Buffer，每次取Batch size个数据，按前面的公式计算KL散度、损失函数，并进行策略迭代。
+6. 遍历完成，清空Data Buffer，回到步骤 1。
 
 本部分完整代码见文末仓库。
 
