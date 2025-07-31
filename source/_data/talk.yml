@@ -8,7 +8,7 @@ top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df
 talk_list:
   - content: |
       CVPR 又闹大笑话了。
-      大概情况是：有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
+      起因是有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
       时隔约一个月后，在另一位网友的催促下，作者终于不得不出来回应（已翻译为中文，见图 2），作者表示：
       <blockquote>Using shuffle=True would be a matter for future investigation, which could be valuable for researchers in this domain.</blockquote>
     hide:
