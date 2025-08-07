@@ -7,22 +7,52 @@ limit: 50
 top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
 talk_list:
   - content: |
+      2025-08-01 - 2025-08-08
+      带着女朋友去云南玩了一星期，作为一个在5000米海拔不需要吸氧的人，云贵高原自然是轻松拿捏。女朋友平时不怎么运动，高反也不太严重，且在中后期完全适应了海拔，整趟旅游用了不到一瓶氧气。
+      这几天每天行程拉满，始终抽不出时间发内容，在回肥前一天晚上终于有了点时间，趁机发条说说先简单记录一下此次旅行。等有空了再把相册补上。
+    date: 2025/08/08 00:32
+    image:
+      - https://blogfiles.oss.fyz666.xyz/jpg/ebad6247-d309-4cb3-bce7-d9e7ac47d968.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/4d7c64b4-914b-44f9-bf3c-a30dc237f42a.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/aca490ca-5260-47f8-9927-038a4a95b0bc.jpg
+      - https://blogfiles.oss.fyz666.xyz/webp/86812bf5-dd8e-418c-9af9-766e41be3496.webp
+      - https://blogfiles.oss.fyz666.xyz/jpg/c2c97e43-7802-48a9-995b-b0547255488e.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/01449d44-c643-4eb8-96c8-15ed6385bb40.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/5d9172da-e134-4e36-aff5-74ae252f7887.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/71050ba0-32e6-4a09-a828-a9d98f6b19b9.jpg
+      - https://blogfiles.oss.fyz666.xyz/jpg/b9b515ff-b01e-4813-942e-ae8a972ee499.jpg
+      - https://blogfiles.oss.fyz666.xyz/webp/b7914a70-02cb-44f8-8064-ec4d2a9f7d17.webp
+      - https://blogfiles.oss.fyz666.xyz/jpg/6bebd2de-e119-462f-8b4e-056c22829628.jpg
+      - https://blogfiles.oss.fyz666.xyz/webp/bc374941-3acd-4416-8ba3-d6fbc71e47e8.webp
+    hide:
+      button: 查看详情
+      content: |
+        Day2 -- 玉龙雪山。图 1、2: 玉龙雪山高程点打卡（不过这个季节去确实已经没多少雪了，改名玉龙矿山吧...）；图 3：云杉坪。<br>
+        Day3 -- 丽江古城。图 4: 正宗的过桥米线；图 5: 古城闲逛。<br>
+        Day4 -- 丽江➡️虎跳峡➡️香格里拉。图 6: 时隔多年再次来到虎跳峡。时过境迁，景区都已经装上电梯了...<br>
+        Day5 -- 穿藏服自驾环游纳帕海。图 7、8: 大经幡打卡（个人最喜欢的照片，<psw>主要是因为女朋友过于漂亮🤗<del>凡尔赛一下</del>，同时图 7 已经成为了我的手机壁纸</psw>）；图 9: 半途而沸咖啡厅，附近风景不错，但咖啡价格略贵。图 10: 纳帕海草原美景。<br>
+        Day6 -- 巴拉格宗。参观了一座 07 年才被发现的世外桃源村落——巴拉村：图 11；香巴拉佛塔（天然形成的佛塔形雪山），不过因季节原因，现在并没有雪：图 12。<br>
+        Day7 -- 普达措国家公园。没啥好说的，毕竟是国家公园～图略。
+    tag:
+      - 旅行
+    address: 云南
+  - content: |
       CVPR 又闹大笑话了。
       起因是有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
       时隔约一个月后，在另一位网友的催促下，作者终于不得不出来回应（已翻译为中文，见图 2），作者表示：
       <blockquote>Using shuffle=True would be a matter for future investigation, which could be valuable for researchers in this domain.</blockquote>
     hide:
-        button: 查看更多
-        content: |
-          这可真是太逆天了，众所周知，这种图像分类任务在测试的时候应该是数据互相独立的，不会出现这种因数据顺序不同而导致结果差异的情况，而作者竟公然嘴硬表示这是一个未来的研究方向，实在是令人忍俊不禁。
-          <br>对于如此离谱之言论，网友们怎肯放过，于是和论文作者在 issue 里激情对线，最终给作者怼到删库跑路了（图 3）。
-          <br>那么这究竟是怎么回事呢？我大概看了一下他的代码部分，发现了一个神奇的函数（图 4），这个函数会在 evaluate 的时候运行，但注意到，它对一个 batch 数据计算了一些统计特征，例如均值、中位数。然后将这些统计特征用于后续的处理。
-          这直接导致了 batch 中的数据在测试时互相不独立。在这种情况下，如果不打乱数据，则会导致同一批次里的图像类别数量较少（例如一个 batch 里的 128 张图片仅有三五个类），那么其统计特征势必会产生一个 bias，如果将这些统计特征用于后续的分类，则会显著影响其分类性能。
-          这也能解释为什么将数据打乱或者设置 batchsize 为 1 会导致准确率大幅下降。
-          <br>
-          哎，我算是知道都是哪些人在中顶会了。
-          <br>
-          最后，拍了个 README 快照（图 5），帮这位作者留个赛博案底😌。
+      button: 查看更多
+      content: |
+        这可真是太逆天了，众所周知，这种图像分类任务在测试的时候应该是数据互相独立的，不会出现这种因数据顺序不同而导致结果差异的情况，而作者竟公然嘴硬表示这是一个未来的研究方向，实在是令人忍俊不禁。
+        <br>对于如此离谱之言论，网友们怎肯放过，于是和论文作者在 issue 里激情对线，最终给作者怼到删库跑路了（图 3）。
+        <br>那么这究竟是怎么回事呢？我大概看了一下他的代码部分，发现了一个神奇的函数（图 4），这个函数会在 evaluate 的时候运行，但注意到，它对一个 batch 数据计算了一些统计特征，例如均值、中位数。然后将这些统计特征用于后续的处理。
+        这直接导致了 batch 中的数据在测试时互相不独立。在这种情况下，如果不打乱数据，则会导致同一批次里的图像类别数量较少（例如一个 batch 里的 128 张图片仅有三五个类），那么其统计特征势必会产生一个 bias，如果将这些统计特征用于后续的分类，则会显著影响其分类性能。
+        这也能解释为什么将数据打乱或者设置 batchsize 为 1 会导致准确率大幅下降。
+        <br>
+        哎，我算是知道都是哪些人在中顶会了。
+        <br>
+        最后，拍了个 README 快照（图 5），帮这位作者留个赛博案底😌。
     date: 2025/07/24 20:50
     image:
       - https://blogfiles.oss.fyz666.xyz/webp/bc570ce3-fa9b-423a-b482-5acc4b39e5ef.webp
@@ -399,6 +429,8 @@ talk_list:
       雨天穿梭于张家界大峡谷，有点过于舒适了。
       不过没玩滑道还是有点可惜。
     date: 2024/06/04 14:00
+    tag:
+      - 旅行
     address: 湖南省张家界市
     link:
       - url: /gallery/travel/zhangjiajie/
