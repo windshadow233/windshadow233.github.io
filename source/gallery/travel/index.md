@@ -19,4 +19,4 @@ top_img: false
 {% galleryGroup 张家界 自然奇观，峰林绝壁间，云雾缭绕，如梦似幻，山水画卷的真实再现。 /gallery/travel/zhangjiajie/ https://blogfiles.oss.fyz666.xyz/webp/fbdbba7f-018b-48e9-8636-0246e4add450.webp %}
 </div>
 
-{% btn 'javascript:window.history.go(-1);',返回,far fa-hand-point-left,outline blue larger %}
+{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}

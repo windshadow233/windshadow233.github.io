@@ -56,7 +56,6 @@ if site.data.talk
                         .hide-button(onclick="this.classList.add('open');talk.reflashTalkWaterFall();") !{item.hide.button}
                         .hide-content !{item.hide.content}
                     if item.image
-                      - l = Math.min(item.image.length, 4)
                       .bber-container-img
                         each iten, indey in item.image
                           a.bber-content-img(href=url_for(item.image[indey]),target="_blank",data-fancybox="gallery",data-caption="",style="")

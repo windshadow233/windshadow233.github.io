@@ -72,4 +72,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/e3d3d9f9-24e5-4ce9-8a47-ba38350ea22f.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,far fa-hand-point-left,outline blue larger %}
+{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
