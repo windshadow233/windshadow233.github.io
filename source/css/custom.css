@@ -2295,3 +2295,9 @@ img[data-lazy-src]:not(.loaded) {
     color: var(--fyz-theme);
     text-decoration: none;
 }
+.author-content.author-content-item.top-background {
+    height: 19rem;
+    color: var(--fyz-white);
+    overflow: hidden;
+    margin-top: 0px;
+  }

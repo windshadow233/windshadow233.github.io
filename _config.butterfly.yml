@@ -1100,11 +1100,10 @@ inject:
     - <script src="/js/charts.js"></script>
     - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar@v0.0.2.js"></script>
     - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/waterfall.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk@v0.0.3.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/waterfall@v2.0.0.js"></script>
+    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk@v0.0.5.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.1.13.css">
   bottom:
     - <canvas id="universe-background"></canvas>
     - <div class="aplayer no-destroy"

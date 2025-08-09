@@ -3,7 +3,8 @@ subTitle: 博主的摸鱼日常
 tips: 分享日常生活，偶尔发表各种想法与吐槽
 buttonLink: /about/
 buttonText: 关于我
-limit: 60
+limit: 100
+limitPerPage: 15
 top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
 talk_list:
   - content: |
@@ -332,7 +333,8 @@ talk_list:
   - content: |
       UTC+8时间2024年9月18日20时08分，合肥肥东县发生4.9级地震，位于合肥市区建筑内的同学都表示有较强烈的震感，我刚好那个时间点出门了，因此没有感受到。作为老家江浙一带的人，这也是我人生中离地震最近的一次，希望合肥一切平安！
     date: 2024/09/18 21:30
-    address: 安徽省合肥市
+    address:
+      - 安徽省合肥市
     image:
       - https://blogfiles.oss.fyz666.xyz/jpg/8092a3c2-1cd6-48cc-b3ca-41f066cbc3a1.jpg
     link:
