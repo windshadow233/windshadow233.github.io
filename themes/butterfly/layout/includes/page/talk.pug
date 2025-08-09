@@ -129,19 +129,17 @@ script.
       }
       setTimeout(() => {
         $batch.css('visibility', 'visible');
+        var hiddenCount = $('#waterfall .talk-hidden').length;
+        if (hiddenCount === 0) {
+          var $btn = $('#talk-more');
+          $btn.html('<span>一切皆有尽头</span>');
+          $btn.attr('onclick',
+            "this.remove();" +
+            "window.scrollTo({top: $('#bber').offset().top, behavior: 'smooth'});" +
+            "$('#bber-tips').show();"
+          );
+          return;
+        }
       }, 250);
-
-      var hiddenCount = $('#waterfall .talk-hidden').length;
-
-      if (hiddenCount === 0) {
-        var $btn = $('#talk-more');
-        $btn.html('<span>一切皆有尽头</span>');
-        $btn.attr('onclick',
-          "this.remove();" +
-          "window.scrollTo({top: $('#bber').offset().top, behavior: 'smooth'});" +
-          "$('#bber-tips').show();"
-        );
-        return;
-      }
     };
   })(jQuery);
