@@ -1,6 +1,6 @@
 ---
 title: 广东
-comments: false
+comments: true
 aside: false
 date: 2024-04-14 21:58:16
 top_img: false
@@ -65,4 +65,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/54e5261a-204e-4954-8ecd-903f7a8f5d0f.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
+{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

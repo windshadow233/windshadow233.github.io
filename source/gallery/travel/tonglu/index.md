@@ -1,6 +1,6 @@
 ---
 title: 桐庐
-comments: false
+comments: true
 aside: false
 date: 2024-04-14 22:00:16
 top_img: false
@@ -52,4 +52,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/877fc618-fcd1-42d9-9f84-331651638e47.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
+{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

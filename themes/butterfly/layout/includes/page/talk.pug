@@ -80,9 +80,10 @@ if site.data.talk
                       i.fas.fa-clock
                       time.datatime(datetime= item.date)= datedata
                     if item.address
-                      .bber-info-from
-                        i.fas.fa-map-marker-alt
-                        span=item.address
+                      each i in item.address
+                        .bber-info-from
+                          i.fas.fa-map-marker-alt
+                          span=i
                     if item.link 
                       each i in item.link
                         a.bber-content-link(href=url_for(i.url),rel="external nofollow")

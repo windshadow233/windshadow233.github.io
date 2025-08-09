@@ -1,6 +1,6 @@
 ---
 title: 你科校内随拍
-comments: false
+comments: true
 aside: false
 date: 2024-04-15 21:18:36
 top_img: false
@@ -56,4 +56,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/6568cacd-3b81-43ea-adc7-3d9b8e82f8aa.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
+{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

@@ -1,6 +1,6 @@
 ---
 title: 长沙
-comments: false
+comments: true
 aside: false
 date: 2024-04-14 22:00:56
 top_img: false
@@ -25,4 +25,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/ce7d4c1d-2d91-4d9a-a066-f7956ec2c4a0.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
+{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

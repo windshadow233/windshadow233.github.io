@@ -1,6 +1,6 @@
 ---
 title: 张家界
-comments: false
+comments: true
 aside: false
 date: 2024-06-05 09:43:11
 top_img: false
@@ -72,4 +72,4 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/e3d3d9f9-24e5-4ce9-8a47-ba38350ea22f.webp)
 {% endgallery %}
 
-{% btn 'javascript:window.history.go(-1);',返回,fa-solid fa-arrow-left,outline blue larger %}
+{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

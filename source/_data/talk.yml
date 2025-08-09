@@ -22,8 +22,8 @@ talk_list:
       - https://blogfiles.oss.fyz666.xyz/jpg/71050ba0-32e6-4a09-a828-a9d98f6b19b9.jpg
       - https://blogfiles.oss.fyz666.xyz/jpg/b9b515ff-b01e-4813-942e-ae8a972ee499.jpg
       - https://blogfiles.oss.fyz666.xyz/webp/b7914a70-02cb-44f8-8064-ec4d2a9f7d17.webp
-      - https://blogfiles.oss.fyz666.xyz/jpg/6bebd2de-e119-462f-8b4e-056c22829628.jpg
-      - https://blogfiles.oss.fyz666.xyz/webp/bc374941-3acd-4416-8ba3-d6fbc71e47e8.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/63137108-d006-4015-b6fd-32cc4a71a4fc.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/2625febb-9fd5-41af-b209-edf8e7c9065a.webp
     hide:
       button: 查看详情
       content: |
@@ -35,7 +35,12 @@ talk_list:
         Day7 -- 普达措国家公园。没啥好说的，毕竟是国家公园～图略。
     tag:
       - 旅行
-    address: 云南
+    address:
+      - 云南省丽江市
+      - 云南省香格里拉市
+    link:
+      - url: /gallery/travel/yunnan/
+        name: 相册
   - content: |
       CVPR 又闹大笑话了。
       起因是有人发现把 evaluate 的代码中 Dataloader 的参数 shuffle=False 改成 shuffle=True ，会导致准确率掉40%左右，因此提出质疑（图 1）。
@@ -431,7 +436,8 @@ talk_list:
     date: 2024/06/04 14:00
     tag:
       - 旅行
-    address: 湖南省张家界市
+    address: 
+      - 湖南省张家界市
     link:
       - url: /gallery/travel/zhangjiajie/
         name: 相册
