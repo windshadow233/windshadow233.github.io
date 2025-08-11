@@ -53,6 +53,13 @@ style.
     .category-page {
         margin-bottom: 20px;
     }
+    .category-page h2 {
+      margin: 20px 0 0;
+    }
+    .category-page span {
+      color: var(--fyz-lighttext);
+      font-size: 18px;
+    }
     .pagination {
         display: flex;
         flex-wrap: wrap;
@@ -114,17 +121,23 @@ script.
 
 if site.data.cfop
   - var info = site.data.cfop
+  - var algo_groups = site.data.cfop.algo_groups
+  - var algo_count = 0
+  each category, index in algo_groups
+    - algo_count += category.algo_list.length
   .author-content.author-content-item.top-background.single(style=info.top_background ? `background: url(${info.top_background}) center 28% / cover no-repeat;` : "")
     .card-content
       .author-content-item-tips=info.title
       span.author-content-item-title=info.subTitle
       .content-bottom
-        .tips=info.tips
+        .tips
+          span(style="color: var(--fyz-lighttext)") 此页面共收集公式 #{algo_count} 条
+          br
+          | #{info.tips}
       .banner-button-group
         a.banner-button(href=info.buttonLink)
           i.fas.fa-circle-right
           span.banner-button-text=info.buttonText
-  - var algo_groups = site.data.cfop.algo_groups
   .pagination
     each category, index in algo_groups
       button.page-btn(
@@ -135,6 +148,7 @@ if site.data.cfop
     each category, index in algo_groups
       .category-page(data-index=index style=(index === 0 ? '' : 'display: none;'))
         h2= category.algo_name
+        span 共 #{category.algo_list.length} 条
         .twisty-container
           - let algoCounter = 0;
           each item in category.algo_list

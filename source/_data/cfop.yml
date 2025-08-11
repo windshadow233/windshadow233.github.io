@@ -3,7 +3,7 @@ subTitle: 记录自用的魔方公式，以便随时查阅。
 tips: 当前三速 PB：10.77s
 top_background: https://blogfiles.oss.fyz666.xyz/webp/9afd1938-35ca-4403-996c-e7d118b4c266.webp
 buttonLink: https://alpha.twizzle.net/edit/?setup-alg=L2+U2+F%27+R2+B%27+U2+R2+B%27+R2+F2+R2+D+U%27+B+L+F%27+U2+L%27&alg=x2+y+%2F%2F+inspection%0AD+L+R%27+D+%2F%2F+Cross%0AR%27+U+R+U%27+R%27+U%27+R+%2F%2F+1st+slot%0AU2%27+R+U+R%27+U+R+U%27+R%27+%2F%2F+2nd+slot%0AL%27+U2+L+U+L%27+U%27+L+%2F%2F+3rd+slot%0Ay%27+L%27+U%27+L+U2+L%27+U+L+U%27+L%27+U+L+%2F%2F+4th+slot%0AR+U+R%27+U%27+M%27+U+R+U%27+r%27+%2F%2F+OLL+%2F+1LLL%0AU+%2F%2F+AUF
-buttonText: PB 打乱与解法
+buttonText: PB Scramble & Solution
 algo_groups:
   - algo_type: F2L
     algo_name: 标态 F2L (First Two Layers) 常规做法
