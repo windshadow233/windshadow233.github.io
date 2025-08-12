@@ -30,7 +30,7 @@ cover: https://blogfiles.oss.fyz666.xyz/webp/92f8a569-59ab-47f4-b704-5a44b55ab91
 
 为尽可能减少专业知识领域的幻觉问题，这种名为**检索增强生成**的方案应运而生。
 
-简单说来，就是通过一些文本相似度算法，从非常多的专业语料数据中检索出与用户的提问相关度较高的内容，一并作为上下文告诉模型。如此，模型的上下文内容中仅仅包含了与用户提问相关度最高的信息，而非所有的专业知识，上下文的相关性被大大提升，但长度则大幅下降，从而使得模型能给出更专业的回答。
+简单说来，就是通过一些文本相似度算法，从非常多的专业语料数据中检索出与用户的提问相关度较高的内容，一并作为上下文告诉模型。如此，模型的上下文内容中仅仅包含了与用户提问相关度最高的信息，而非所有的专业知识，上下文的相关性被大大提升，而长度则大幅下降，从而使得模型能给出更专业、更可信的回答。
 
 纸上得来终觉浅，在知道其原理后，我们来尝试一下吧！
 
@@ -110,7 +110,7 @@ retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 10})
 
 ### 部署大模型
 
-说是大模型，其实就是个7b的中小型模型罢了。这里我使用了[Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)。
+说是大模型，其实就是个7b的小模型罢了。这里我使用了[Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)。
 
 将模型下载到本地：
 
@@ -130,7 +130,7 @@ python3 -m vllm.entrypoints.openai.api_server \
   --max-num-seqs 4
 ```
 
-稍等片刻启动完成后（吃掉了约20G显存（模型自身占用$7\times2=14$GB，KV-cache占用约6.7GB）...），我们就可以直接通过OpenAI提供的api来与之交互：
+稍等片刻启动完成后（吃掉了约20G显存...（模型自身占用$7\times2=14$GB，KV-cache占用约6.7GB）），我们就可以直接通过OpenAI提供的api来与之交互：
 
 ```python
 from openai import OpenAI
