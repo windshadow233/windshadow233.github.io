@@ -6,7 +6,7 @@ buttonLink: https://alpha.twizzle.net/edit/?setup-alg=L2+U2+F%27+R2+B%27+U2+R2+B
 buttonText: PB Scramble & Solution
 algo_groups:
   - algo_type: F2L
-    algo_name: 标态 F2L (First Two Layers) 常规做法
+    algo_name: 标准 F2L (First Two Layers) ，即常规做法
     page_name: F2L
     id_prefix: f2l
     algo_list:
@@ -54,7 +54,7 @@ algo_groups:
       - algo: (R' F R F') (R U' R' U) (R U' R' U2) (R U' R')
       - algo: (R2' U2' F) (R2 F' U2') (R' U R')
   - algo_type: F2L
-    algo_name: 部分需要转体的标态 F2L 的免转体做法
+    algo_name: 部分需要转体的标准 F2L 的免转体做法
     page_name: F2L FR槽
     id_prefix: f2l-fr
     algo_list:
@@ -197,7 +197,9 @@ algo_groups:
       - algo: (R2' D') (R U2') (R' D) (R U2' R)
       - algo: (R2 D) (R' U2) (R D') (R' U2 R')
       - algo: F (R U R' U') F'
+      - algo: f (U R U' R') f'
       - algo: f (R U R' U') f'
+      - algo: F (U R U' R') F'
       - algo: (R' U' F') (U F R)
       - algo: (R U R' U') (R' F R F')
       - algo: F (R U R' U')2 F'
