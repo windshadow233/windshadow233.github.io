@@ -240,8 +240,7 @@ def summarize_context_query(question: str, history: list) -> str:
     
     # 构建历史对话列表
     history = [f'Q: {user_msg}\nA: {response}' for user_msg, response in history[-3:]]  # 最近3轮
-    
-    summary_prompt = f"""
+    system_prompt = f"""
 你是一个重写助手，任务是将用户当前的问题结合历史对话重写为一个**自包含、清晰明确的问题句子**，以便发送给问答系统。
 
 请遵循以下规则：
@@ -250,7 +249,9 @@ def summarize_context_query(question: str, history: list) -> str:
 3. 推理指代、补全省略，使问题独立完整；
 4. 不引入历史中未提及的信息； 
 5. 只输出**重写后的问题句子**，不添加任何解释或注释。
-
+"""
+    
+    summary_prompt = f"""
 历史对话：
 {chr(20).join([f"{i+1}. {q}" for i, q in enumerate(history)])}
 
@@ -261,7 +262,8 @@ def summarize_context_query(question: str, history: list) -> str:
 """
     
     try:
-        messages = [{"role": "user", "content": summary_prompt}]
+        messages = [{"role": "system", "content": system_prompt},
+                    {"role": "user", "content": summary_prompt}]
         response = client.chat.completions.create(
             model="./model/Qwen2.5-7B-Instruct",
             messages=messages,
@@ -436,8 +438,7 @@ def summarize_context_query(question: str, history: list) -> str:
     
     # 构建历史对话列表
     history = [f'Q: {user_msg}\nA: {response}' for user_msg, response in history[-3:]]  # 最近3轮
-    
-    summary_prompt = f"""
+    system_prompt = f"""
 你是一个重写助手，任务是将用户当前的问题结合历史对话重写为一个**自包含、清晰明确的问题句子**，以便发送给问答系统。
 
 请遵循以下规则：
@@ -446,7 +447,9 @@ def summarize_context_query(question: str, history: list) -> str:
 3. 推理指代、补全省略，使问题独立完整；
 4. 不引入历史中未提及的信息； 
 5. 只输出**重写后的问题句子**，不添加任何解释或注释。
-
+"""
+    
+    summary_prompt = f"""
 历史对话：
 {chr(20).join([f"{i+1}. {q}" for i, q in enumerate(history)])}
 
@@ -457,7 +460,8 @@ def summarize_context_query(question: str, history: list) -> str:
 """
     
     try:
-        messages = [{"role": "user", "content": summary_prompt}]
+        messages = [{"role": "system", "content": system_prompt},
+                    {"role": "user", "content": summary_prompt}]
         response = client.chat.completions.create(
             model="./model/Qwen2.5-7B-Instruct",
             messages=messages,
