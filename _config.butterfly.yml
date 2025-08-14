@@ -370,22 +370,22 @@ aside:
     image_url: https://weather.fyz666.xyz/weather.png
   card_mbti:
     enable: true
-    date: '2025-04-13'
+    date: '2025-08-14'
     image: https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg
     ei:
-      value: 75
+      value: 86
       type: 'I'
     sn:
-      value: 59
+      value: 56
       type: 'N'
     tf:
-      value: 69
+      value: 51
       type: 'F'
     jp:
-      value: 71
+      value: 69
       type: 'P'
     at:
-      value: 96
+      value: 92
       type: 'A'
 
 

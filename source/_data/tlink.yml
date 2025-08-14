@@ -269,7 +269,7 @@ link_groups:
   - class_name: 云服务
     class_desc: 一些不错的云服务平台
     link_list:
-    - name: Colossal Cloud
+    - name: 潞晨云
       link: https://cloud.luchentech.com/
       avatar: https://blogfiles.oss.fyz666.xyz/svg/e2cd9f0e-9c6e-4bda-a01f-e026ceed21bb.svg
       descr: 云GPU租赁服务——让 AI 大模型更低成本、方便易用、高效扩展
