@@ -115,8 +115,8 @@ each key in mbtiKeys
   if (val < 50)
     - card_mbti[key].type = flipMap[key][type]
     - card_mbti[key].value = 100 - val
-- const mbtiValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
-- const percentValues = mbtiValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
+- let percentValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
+- percentValues = percentValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
 - let mbti_text = mbtiKeys.map(k => card_mbti[k].type).join('')
 - const image = mbtiImages[mbti_text]
 - mbti_text = mbti_text + '-' + card_mbti.at.type
