@@ -84,15 +84,24 @@ style.
         transform: rotate(-10deg);
     }
 
-- const mbtiMap = { E: '外倾', I: '内倾', S: '现实', N: '直觉', T: '理性', F: '感性', J: '有计划', P: '灵活' }
+- const mbtiMap = {E: '外倾', I: '内倾', S: '现实', N: '直觉', T: '理性', F: '感性', J: '有计划', P: '灵活'}
 - const atMap = {A: '坚决', T: '动荡'}
 - const flipType = ['E', 'N', 'T', 'J']
+- const flipMap = {ei: { E: 'I', I: 'E' }, sn: { S: 'N', N: 'S' }, tf: { T: 'F', F: 'T' }, jp: { J: 'P', P: 'J' }, at: { A: 'T', T: 'A' }}
 - const mbtiKeys = ['ei', 'sn', 'tf', 'jp']
 - const colors = ['blue', 'orange', 'green', 'purple', 'red']
 - const card_mbti = theme.aside.card_mbti
+
+each key in mbtiKeys
+  - let val = card_mbti[key].value
+  - let type = card_mbti[key].type
+  if (val < 50)
+    - card_mbti[key].type = flipMap[key][type]
+    - card_mbti[key].value = 100 - val
 - const mbtiValues = mbtiKeys.map(k => flipType.includes(card_mbti[k].type) ? 100 - card_mbti[k].value : card_mbti[k].value)
 - const percentValues = mbtiValues.concat(card_mbti.at.type === 'A' ? 100 - card_mbti.at.value : card_mbti.at.value)
 - const mbti_text = mbtiKeys.map(k => card_mbti[k].type).join('') + '-' + card_mbti.at.type
+
 
 .card-widget.card-mbti
   .item-headline
