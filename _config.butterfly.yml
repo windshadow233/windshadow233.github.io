@@ -371,7 +371,6 @@ aside:
   card_mbti:
     enable: true
     date: '2025-08-14'
-    image: https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg
     ei:
       value: 86
       type: 'I'
