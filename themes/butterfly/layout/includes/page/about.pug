@@ -126,15 +126,15 @@
   .author-content
     .author-content-item.personalities
       .author-content-item-tips MBTI
-      span.author-content-item-title 调停者
-      .title2(style='color:#ac899c') INFP-A
+      span.author-content-item-title= mbti.name
+      .title2(style='color:#ac899c')= mbti.mbti_text_full
       .post-tips
         | 前往
         a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
         | 了解更多关于
-        a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC') 调停者
+        a(target='_blank', rel='noopener external nofollow', href=`https://www.16personalities.com/ch/${mbti.mbti_text}-%E4%BA%BA%E6%A0%BC`)= mbti.name
       .image
-        img.no-lightbox(src='https://blogfiles.oss.fyz666.xyz/svg/39e1659f-5eef-4709-bc5f-c5e588168293.svg')
+        img.no-lightbox(src=mbti.image)
   .author-content
     .author-content-item.buff
       .card-content
