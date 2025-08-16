@@ -138,6 +138,8 @@ link_groups:
       link: https://metshop.cn/
       avatar: https://blogfiles.oss.fyz666.xyz/webp/52f0fd18-0daf-42d2-9d46-4bcf0a45ae3c.webp
       descr: 一站式流媒体合租平台
+      
+  - class_name: 学习指南
     class_desc: 在线书籍、学习资料  
     link_list:
     - name: Linux 101
