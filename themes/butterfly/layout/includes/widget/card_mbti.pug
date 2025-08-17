@@ -68,20 +68,16 @@ style.
     .red    { background-color: var(--mbti-red); }
 
     .mbti .image {
-        position: absolute;
-        right: 0px;
-        top: 10px;
-        width: 75px;
-        transition: transform 2s cubic-bezier(.13, .45, .21, 1.02);
-        opacity: 0.8;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      opacity: 0.5;
+      width: 80%;
     }
-    .mbti .image img {
-        display: block;
-        max-width: 100%;
-        transition: filter 375ms ease-in .2s
-    }
-    .mbti:hover .image {
-        transform: rotate(-10deg);
+    .mbti .image #mbti-image {
+      display: block;
+      max-width: 100%;
     }
 
 - const mbtiMap = {E: '外倾', I: '内倾', S: '现实', N: '直觉', T: '理性', F: '感性', J: '有计划', P: '灵活'}
@@ -113,6 +109,16 @@ style.
           span= label1
           span= label2
     .image
-      img(src=mbti.image alt=mbti.mbti_text)
+      div(id="mbti-image")
     .mbti-date= `更新于：${mbti.update}`
 
+script.
+  $(document).ready(function() {
+    lottie.loadAnimation({
+      container: document.getElementById('mbti-image'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "#{mbti.animation}"
+    });
+  });

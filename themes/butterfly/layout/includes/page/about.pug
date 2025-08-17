@@ -134,7 +134,17 @@
         | 了解更多关于
         a(target='_blank', rel='noopener external nofollow', href=`https://www.16personalities.com/ch/${mbti.mbti_text}-%E4%BA%BA%E6%A0%BC`)= mbti.name
       .image
-        img.no-lightbox(src=mbti.image)
+        #mbti-image
+      script.
+          $(document).ready(function() {
+            lottie.loadAnimation({
+              container: document.getElementById('mbti-image'),
+              renderer: 'svg',
+              loop: true,
+              autoplay: true,
+              path: "#{mbti.animation}"
+            });
+          });
   .author-content
     .author-content-item.buff
       .card-content
