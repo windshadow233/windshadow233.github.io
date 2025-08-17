@@ -6,3 +6,4 @@ public/
 /db.json
 /*.code-workspace
 ignores
+.vscode/
