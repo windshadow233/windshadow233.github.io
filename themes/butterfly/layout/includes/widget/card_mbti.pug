@@ -1,84 +1,84 @@
 style.
-    :root{
-      --mbti-blue: #4298b4;
-      --mbti-orange: #e4ae3a;
-      --mbti-green: #33a474;
-      --mbti-purple: #88619a;
-      --mbti-red: #f25e62;
-    }
-    .mbti {
-      width: 100%;
-      padding: 5px;
-    }
-    .bar-group {
-      margin-bottom: 0px;
-    }
-    .bar-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      margin-top: 0px;
-    }
-    .bar-label {
-      width: fit-content;
-      position: relative;
-      transform: translateX(-50%);
-      margin-bottom: 0px;
-      font-size: 12px;
-    }
-    .bar-container {
-      position: relative;
-      height: 10px;
-      background-color: #eee;
-      border-radius: 10px;
-    }
-    .bar-fill {
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 10px;
-      width: 100%;
-    }
-    .bar-marker {
-      position: absolute;
-      z-index: 1;
-      width: 12px;
-      height: 12px;
-      border-radius: 100%;
-      box-shadow: 0 4px 10px rgba(29, 36, 50, .15);
-      border: 3px solid white;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-    }
-    .mbti-date {
-      font-size: 12px;
-      float: right;
-    }
-    .color-blue {color: var(--mbti-blue);}
-    .color-orange {color: var(--mbti-orange);}
-    .color-green {color: var(--mbti-green);}
-    .color-purple {color: var(--mbti-purple);}
-    .color-red {color: var(--mbti-red);}
+  :root{
+    --mbti-blue: #4298b4;
+    --mbti-orange: #e4ae3a;
+    --mbti-green: #33a474;
+    --mbti-purple: #88619a;
+    --mbti-red: #f25e62;
+  }
+  .mbti {
+    width: 100%;
+    padding: 5px;
+  }
+  .bar-group {
+    margin-bottom: 0px;
+  }
+  .bar-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .bar-label {
+    width: fit-content;
+    position: relative;
+    transform: translateX(-50%);
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+  .bar-container {
+    position: relative;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  .bar-fill {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .bar-marker {
+    position: absolute;
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px rgba(29, 36, 50, .15);
+    border: 3px solid white;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .mbti-date {
+    font-size: 12px;
+    float: right;
+  }
+  .color-blue {color: var(--mbti-blue);}
+  .color-orange {color: var(--mbti-orange);}
+  .color-green {color: var(--mbti-green);}
+  .color-purple {color: var(--mbti-purple);}
+  .color-red {color: var(--mbti-red);}
 
-    .blue   { background-color: var(--mbti-blue); }
-    .orange { background-color: var(--mbti-orange); }
-    .green  { background-color: var(--mbti-green); }
-    .purple { background-color: var(--mbti-purple); }
-    .red    { background-color: var(--mbti-red); }
+  .blue   { background-color: var(--mbti-blue); }
+  .orange { background-color: var(--mbti-orange); }
+  .green  { background-color: var(--mbti-green); }
+  .purple { background-color: var(--mbti-purple); }
+  .red    { background-color: var(--mbti-red); }
 
-    .mbti .image {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      opacity: 0.5;
-      width: 80%;
-    }
-    .mbti .image #mbti-image {
-      display: block;
-      max-width: 100%;
-    }
+  .mbti .image {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    opacity: 0.5;
+    width: 80%;
+  }
+  .mbti .image #mbti-image {
+    display: block;
+    max-width: 100%;
+  }
 
 - const mbtiMap = {E: '外倾', I: '内倾', S: '现实', N: '直觉', T: '理性', F: '感性', J: '有计划', P: '灵活'}
 - const atMap = {A: '坚决', T: '动荡'}
@@ -121,4 +121,8 @@ script.
       autoplay: true,
       path: "#{mbti.animation}"
     });
+    if (btf.diffDate !== undefined) {
+      let update = "#{mbti.update}";
+      $('.mbti-date').text(`更新于：${btf.diffDate(update, true)}`);
+    }
   });
