@@ -1,13 +1,20 @@
 .hello-about {
-    margin: 20px auto;
     border-radius: 24px;
     background: var(--fyz-card-bg);
-    border: var(--style-border-always);
-    box-shadow: var(--fyz-shadow-border);
-    position: relative;
     overflow: hidden;
     user-select: none;
+    border: 1px solid var(--fyz-border);
+    box-shadow: var(--card-box-shadow);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    position: relative;
+    padding: 0;
   }
+
+.hello-about:hover{
+  border: 1px solid var(--fyz-theme);
+  box-shadow: 0 0 3px var(--fyz-theme) !important;
+}
   
   .shapes {
     position: relative;

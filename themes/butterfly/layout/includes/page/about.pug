@@ -15,9 +15,14 @@
         | 是一名 在读博士研究生、
         span.inline-word 博主
       .title1
-        | 我的GPG Key: 
+        | GPG Key: 
         span.inline-word
           a(href="https://keys.openpgp.org/search?q=B8674F373ACBD2AD") B8674F373ACBD2AD
+      .title1
+        | LinkedIn: 
+        span.inline-word
+          a(href="https://www.linkedin.com/in/yizhanfan") yizhanfan
+
     .aboutsiteTips.author-content-item
       .author-content-item-tips 追求
       h2
@@ -33,15 +38,15 @@
           span(data-up) 代码
           |
           span(data-show) 程序
-
-  .hello-about
-    .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-    .shapes
-      .shape.shape-1(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-      .shape.shape-2(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-      .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-    .content
-      h1 Hello there!
+  .author-content
+    .author-content-item.hello-about
+      .cursor(style='position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);')
+      .shapes
+        .shape.shape-1(style='position: absolute;top: 50%;left: 50%;')
+        .shape.shape-2(style='position: absolute;top: 50%;left: 50%;')
+        .shape.shape-3(style='position: absolute;top: 50%;left: 50%;')
+      .content
+        h1 Hello there!
 
   .author-content
     .author-content-item.skills
@@ -399,19 +404,25 @@ script.
         clearInterval(pursuitInterval);
       });
 
-      var helloAboutEl = document.querySelector('.hello-about')
-      helloAboutEl.addEventListener("mousemove", evt => {
-        const mouseX = evt.offsetX;
-        const mouseY = evt.offsetY;
-        gsap.set(".cursor", {
-          x: mouseX,
-          y: mouseY,
-        })
+      const helloAboutEl = document.querySelector('.hello-about')
 
-        gsap.to(".shape", {
-          x: mouseX,
-          y: mouseY,
-          stagger: -0.1
-        })
+    helloAboutEl.addEventListener("mousemove", evt => {
+      const mouseX = evt.offsetX - helloAboutEl.offsetWidth / 2;
+      const mouseY = evt.offsetY - helloAboutEl.offsetHeight / 2;
+
+      gsap.to(".cursor", {
+        x: mouseX,
+        y: mouseY,
+        duration: 0.2,
+        ease: "power2.out"
       })
+
+      gsap.to(".shape", {
+        x: mouseX,
+        y: mouseY,
+        stagger: -0.1,
+        duration: 0.6,
+        ease: "power3.out"
+      })
+    })
   })

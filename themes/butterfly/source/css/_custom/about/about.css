@@ -109,15 +109,6 @@ p.p.center, span.p.center {
   border: 1px solid var(--fyz-theme);
   box-shadow: 0 0 3px var(--fyz-theme) !important;
 }
-.hello-about{
-  border: 1px solid var(--fyz-border);
-  box-shadow: var(--card-box-shadow);
-  transition: all 0.3s ease-in-out;
-}
-.hello-about:hover{
-  border: 1px solid var(--fyz-theme);
-  box-shadow: 0 0 3px var(--fyz-theme) !important;
-}
 
 #about-page .myInfoAndSayHello .title1 {
   opacity: 0.8;
@@ -133,7 +124,6 @@ p.p.center, span.p.center {
 .inline-word a{
   color: #CCFF66;
   white-space: nowrap;
-  display: block;
   text-overflow:ellipsis;
   overflow:hidden;
   font-weight: bolder;
@@ -386,7 +376,6 @@ p.p.center, span.p.center {
 .author-content-item.selfInfo div {
   display: flex;
   flex-direction: column;
-  /* margin: 0.5rem 2rem 0.5rem 0; */
   height: 100%;
   width: 33.333%;
 }
