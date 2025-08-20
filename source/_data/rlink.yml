@@ -144,8 +144,12 @@ link_groups:
     link_list:
     - name: Linux 101
       link: https://101.lug.ustc.edu.cn/
-      avatar: https://blogfiles.oss.fyz666.xyz/svg/0c855890-0c8e-4c89-be7b-ed89969fd27d.svg
+      avatar: https://blogfiles.oss.fyz666.xyz/png/dfd89b8f-ab5b-4063-b575-51ee8c38ec09.png
       descr: 科大LUG社团编写的面向零基础读者的Linux指南
+    - name: Linux 201
+      link: https://201.ustclug.org/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/dfd89b8f-ab5b-4063-b575-51ee8c38ec09.png
+      descr: 科大LUG社团编写的一份更进阶的Linux服务器运维指南
     - name: OI Wiki
       link: https://oi-wiki.org/
       avatar: https://blogfiles.oss.fyz666.xyz/png/86e80713-da71-4832-8eac-1b8b87ca2e52.png
