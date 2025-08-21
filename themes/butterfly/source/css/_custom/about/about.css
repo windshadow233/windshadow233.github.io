@@ -94,7 +94,7 @@ p.p.center, span.p.center {
 }
 
 .author-content-item.linkedin{
-  --left-translate: 15px;
+  --left-translate: 5px;
   --top-translate: 3px;
   display: flex;
   align-items: flex-start;
@@ -113,9 +113,10 @@ p.p.center, span.p.center {
 }
 .badge-base iframe {
     display: block;
-    width: 330px !important;
+    width: 331px !important;
+    height: 261px !important;
     top: calc(-1 * var(--top-translate));
-    left: calc(-1 * var(--left-translate));
+    left: calc(-1 * var(--left-translate) - 5px);
     position: relative;
 }
 
