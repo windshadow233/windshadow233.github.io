@@ -90,8 +90,33 @@ p.p.center, span.p.center {
   color: var(--fyz-white);
   background: linear-gradient(120deg, #5b27ff 0, #00d4ff 100%);
   background-size: 200%;
-  /* animation: gradient 15s ease infinite; */
   width: 59%;
+}
+
+.author-content-item.linkedin{
+  --left-translate: 15px;
+  --top-translate: 3px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 34%;
+  padding: 0;
+  background: linear-gradient(
+    #38434f 0 calc(42px + var(--top-translate)),
+    #000 calc(42px + var(--top-translate)) 100%
+  );
+  position: relative;
+  padding-left: var(--left-translate);
+  padding-top: var(--top-translate);
+  overflow: scroll;
+  min-height: 280px;
+}
+.badge-base iframe {
+    display: block;
+    width: 330px !important;
+    top: calc(-1 * var(--top-translate));
+    left: calc(-1 * var(--left-translate));
+    position: relative;
 }
 
 .author-content-item {

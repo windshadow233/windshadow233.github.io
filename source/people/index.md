@@ -1,5 +1,6 @@
 ---
 layout: false
+sitemap: false
 ---
 
 <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/people.css">
