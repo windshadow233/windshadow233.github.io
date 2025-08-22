@@ -27,6 +27,8 @@
   .shape {
     will-change: transform;
     position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 50%;
   }
   
@@ -93,10 +95,12 @@
   
   .cursor {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #2128bd;
     width: 20px;
     height: 20px;
-    margin: -10px 0 0 -10px;
     border-radius: 50%;
     will-change: transform;
     user-select: none;
