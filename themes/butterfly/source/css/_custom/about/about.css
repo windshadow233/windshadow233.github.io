@@ -101,7 +101,7 @@ p.p.center, span.p.center {
   padding: 0;
   position: relative;
   overflow: scroll;
-  min-height: 280px;
+  min-height: 315px;
 }
 .badge-base, .badge-wrapper{
   height: 100%;
