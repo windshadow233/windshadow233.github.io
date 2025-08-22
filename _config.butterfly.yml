@@ -58,7 +58,12 @@ social:
   fab fa-qq: tencent://message/?uin=1010954322&Site=fdfdf&Menu=yes || QQ
   fab fa-telegram: https://t.me/windshadow233 || Telegram
   fab fa-instagram: https://www.instagram.com/ericcc_fan/ || Instagram
-  fab fa-facebook-square: https://www.facebook.com/yizhan.fan.35 || Facebook
+  # fab fa-facebook-square: https://www.facebook.com/yizhan.fan.35 || Facebook
+  fa-brands fa-linkedin: https://www.linkedin.com/in/yizhanfan/ || LinkedIn
+
+linkedin_profile:
+  lang: en_US
+  vanityname: yizhanfan
 
 # Image (圖片設置)
 # --------------------------------------
