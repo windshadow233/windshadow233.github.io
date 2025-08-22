@@ -94,29 +94,23 @@ p.p.center, span.p.center {
 }
 
 .author-content-item.linkedin{
-  --left-translate: 5px;
-  --top-translate: 3px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 34%;
   padding: 0;
-  background: linear-gradient(
-    #38434f 0 calc(42px + var(--top-translate)),
-    #000 calc(42px + var(--top-translate)) 100%
-  );
   position: relative;
-  padding-left: var(--left-translate);
-  padding-top: var(--top-translate);
   overflow: scroll;
   min-height: 280px;
 }
+.badge-base, .badge-wrapper{
+  height: 100%;
+  width: 100%;
+}
 .badge-base iframe {
     display: block;
-    width: 331px !important;
-    height: 261px !important;
-    top: calc(-1 * var(--top-translate));
-    left: calc(-1 * var(--left-translate) - 5px);
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
