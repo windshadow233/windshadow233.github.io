@@ -931,6 +931,12 @@ code {
     display: flex;
     flex-wrap: nowrap
 }
+#nav-right .menus_item .social-icon i {
+    width: 18px;
+}
+#nav-right .social-icon {
+    text-align: center;
+}
 
 #nav :not(.site-name)::after {
     background-color: transparent!important
