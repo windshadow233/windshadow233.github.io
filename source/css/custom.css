@@ -1736,13 +1736,19 @@ blockquote cite {
 #categoryBar a.category-list-link {
     color: #fff!important;
     font-size: 20px!important;
-    padding: 15px!important
+    padding-top: 15px!important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
 }
 
 #categoryBar a.category-list-link::before {
     content: "|"!important;
     color: #fff!important;
-    font-size: 20px!important
+    font-size: 20px!important;
 }
 
 #categoryBar a.category-list-link:after {
@@ -1775,7 +1781,8 @@ blockquote cite {
     color: #fff!important;
     font-size: 20px!important;
     position: relative;
-    top: -10px
+    /* top: -10px */
+    left: 15px;
 }
 
 #categoryBar span.category-list-count::before {

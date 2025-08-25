@@ -6,7 +6,7 @@ id: 12760
 date: 2025-06-26 09:01:16
 categories:
   - [学习笔记]
-  - [大语言模型实践笔记]
+  - [大语言模型实践]
 tags:
   - LLM
   - Reward Model

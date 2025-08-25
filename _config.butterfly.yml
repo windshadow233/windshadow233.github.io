@@ -1052,10 +1052,12 @@ pangu:
     - 'recent-posts'
     - 'archive'
     - 'article-container'
-    - 'top'
+    - 'swiper-container'
+    - 'bbTimeList'
     - 'about-page'
     - 'talk_page'
     - 'equipment'
+    - 'cfop'
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload

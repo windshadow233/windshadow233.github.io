@@ -50,13 +50,13 @@ style.
             width: calc(100% / 1 - 15px);
         }
     }
-    .category-page {
+    .cube-algorithm-page {
         margin-bottom: 20px;
     }
-    .category-page h2 {
+    .cube-algorithm-page h2 {
       margin: 20px 0 0;
     }
-    .category-page span {
+    .cube-algorithm-page span {
       color: var(--fyz-lighttext);
       font-size: 18px;
     }
@@ -95,7 +95,7 @@ style.
 
 script.
   $(document).ready(() => {
-    const pages = document.querySelectorAll(".category-page");
+    const pages = document.querySelectorAll(".cube-algorithm-page");
     const buttons = document.querySelectorAll(".page-btn");
 
     function showPage(index) {
@@ -144,9 +144,9 @@ if site.data.cfop
         data-index=index,
         class=(index === 0 ? 'active' : '')
       ) #{category.page_name}
-  #category-pages
+  #cfop
     each category, index in algo_groups
-      .category-page(data-index=index style=(index === 0 ? '' : 'display: none;'))
+      .cube-algorithm-page(data-index=index style=(index === 0 ? '' : 'display: none;'))
         h2= category.algo_name
         span 共 #{category.algo_list.length} 条
         .twisty-container
