@@ -104,6 +104,7 @@ algo_groups:
       - algo: (r U r' U') (r' F r F')
       - algo: (U' R' F) (R U R' F') (R U) (L' U' L)
       - algo: (U' M') (U' r' F R) (L' U L)
+      - algo: (L' U L) (l' U l U2') (l' U' l)
   - algo_type: F2L
     algo_name: F2L BR槽
     page_name: F2L BR槽
@@ -142,6 +143,7 @@ algo_groups:
       - algo: (R' U R U') (R' U2' R U') (R' U R)
       - algo: (R' U' R U) (R' U2' R U) (R' U' R)
       - algo: (R' U R r) (U2' R2' U' R2 U' r')
+      - algo: (R' U R) (r' U r U2') (r' U' r)
   - algo_type: F2L
     algo_name: F2L BL槽
     page_name: F2L BL槽
@@ -164,6 +166,7 @@ algo_groups:
       - algo: (U' L U' L') (U2 L U' L')
       - algo: (U' L U2 L') (U L U L')
       - algo: (L U L' U') (L U2' L' U') (L U L')
+      - algo: (L U' L') (l U' l' U2') (l U l') 
   - algo_type: F2L
     algo_name: 非标态 F2L
     page_name: F2L 非标
