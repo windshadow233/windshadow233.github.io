@@ -33,6 +33,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/fe48e813-f4db-41e7-9ae8-5755c078357a.webp
         descr: 岩间琉璃云间月
         feed: https://xsl.im/atom.xml
+      - name: 天海博客
+        link: https://woolyun.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpg/562c62e7-4df4-45a2-911a-01b8592bcdd8.jpg
+        descr: 建站经验记录，实用工具推荐，免费资源分享。
+        feed:
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
