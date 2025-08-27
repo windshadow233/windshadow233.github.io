@@ -233,6 +233,7 @@ algo_groups:
       - algo: (R U R' U') r R' (U R U' r')
       - algo: R' U' (R' F R F') U R
       - algo: (R U R2' U') (R' F) (R U) (R U') F'
+      - algo: F (R U R' U') (R' F') (r U R U' r')
       - algo: (f R f') (U' r' U' R U M')
       - algo: (R U R' U) (R U' R' U') (R' F R F')
       - algo: (R U R' F') (R U R' U') (R' F R U') (R' F R F')
