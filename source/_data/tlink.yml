@@ -54,6 +54,10 @@ link_groups:
       link: https://www.napkin.ai/
       avatar: https://blogfiles.oss.fyz666.xyz/webp/56cfa102-7be1-472d-96d2-b01e07eb3f44.webp
       descr: 将文字快速转化为可视化图示
+    - name: Cherry Studio
+      link: https://www.cherry-ai.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/png/2bec7263-064c-4175-8909-81ec8f70ae23.png
+      descr: 一款非常好用的 AI 集成工具
   - class_name: 实用工具
     class_desc: 一些很不错的在线工具
     link_list:
