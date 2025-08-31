@@ -9,6 +9,7 @@ categories:
   - [大语言模型实践]
 tags:
   - LLM
+  - Qwen
   - llama_cpp
 cover: https://blogfiles.oss.fyz666.xyz/webp/1451ed00-4795-418e-b8ef-17a9370e2d8e.webp
 ---

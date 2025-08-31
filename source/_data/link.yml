@@ -38,6 +38,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/jpg/562c62e7-4df4-45a2-911a-01b8592bcdd8.jpg
         descr: 建站经验记录，实用工具推荐，免费资源分享。
         feed:
+      - name: 怀抱希望
+        link: https://gaoliheng.com
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/da60b202-6b5e-4e39-b57e-707ab6adc660.webp
+        descr: 记录一些随笔，比如停电夜晚的思绪
+        feed: https://gaoliheng.com/feed/
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
