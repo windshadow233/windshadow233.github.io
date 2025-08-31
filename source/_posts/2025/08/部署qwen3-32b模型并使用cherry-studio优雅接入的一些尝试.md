@@ -145,43 +145,30 @@ UPSTREAM_API_KEY = "" # 可选, 若上游需要鉴权则设置
 app = FastAPI(title="LLM Proxy")
 
 
-_api_keys_cache: Set[str] = set()
-_api_keys_mtime: float = 0.0
+_api_keys: Set[str] = set()
 _api_keys_file = "./.llama_api_keys"
 
 
 def read_api_keys() -> Set[str]:
-    global _api_keys_cache, _api_keys_mtime
+    keys = set()
+    with open(_api_keys_file, "r", encoding="utf-8") as f:
+        for line in f:
+            k = line.strip()
+            if k:
+                keys.add(k)
+        print(f"[INFO] Loaded API keys: {len(keys)} keys")
 
-    if not os.path.isfile(_api_keys_file):
-        return set()
-
-    try:
-        mtime = os.path.getmtime(_api_keys_file)
-        if mtime != _api_keys_mtime:
-            new_keys = set()
-            with open(_api_keys_file, "r", encoding="utf-8") as f:
-                for line in f:
-                    k = line.strip()
-                    if k:
-                        new_keys.add(k)
-            _api_keys_cache = new_keys
-            _api_keys_mtime = mtime
-            print(f"[INFO] Reloaded API keys: {len(new_keys)} keys")
-    except Exception as e:
-        print(f"Error reading {_api_keys_file}: {e}")
-
-    return _api_keys_cache
+    return keys
 
 
-read_api_keys()
+_api_keys = read_api_keys()
 
 def check_auth(auth: str | None):
-    if not _api_keys_cache:
+    if not _api_keys:
         return  # 未设置则不启用代理鉴权
     if not auth or not auth.startswith("Bearer "):
         raise HTTPException(status_code=401, detail="Missing Authorization Bearer")
-    if auth.split(" ", 1)[1].strip() not in _api_keys_cache:
+    if auth.split(" ", 1)[1].strip() not in _api_keys:
         raise HTTPException(status_code=403, detail="Invalid API key")
 
 def upstream_headers(orig_auth: str | None):
