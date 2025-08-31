@@ -27,71 +27,91 @@ cover:
 首先是到处乱抄糊了一个jinja模板，命名为了`my-template.jinja`
 
 ```jinja2
-{%- if not add_generation_prompt is defined -%}
-    {%- set add_generation_prompt = false -%}
-{%- endif -%}
-{%- set ns = namespace(is_first=false, is_tool_outputs=false, is_output_first=true, system_prompt='') -%}
-{%- for message in messages -%}
-    {%- if message['role'] == 'system' -%}
-        {%- set ns.system_prompt = message['content'] -%}
-    {%- endif -%}
-{%- endfor -%}
-{{bos_token}}
-{{ns.system_prompt}}
-{%- macro flush_tool_outputs() -%}
-    {%- if ns.is_tool_outputs -%}
-        {{- '<｜tool▁outputs▁end｜><｜im_end｜>' -}}
-        {%- set ns.is_tool_outputs = false -%}
-    {%- endif -%}
-{%- endmacro -%}
-{{- flush_tool_outputs() -}}
-{%- for message in messages -%}
-    {%- if message['role'] != 'tool' -%}
-        {{- flush_tool_outputs() -}}
-    {%- endif -%}
-    {%- if message['role'] == 'user' -%}
-        {{- '<｜User｜>' + message['content'] + '<｜im_end｜>' -}}
-    {%- endif -%}
-    {%- if message['role'] == 'assistant' and message['content'] is none -%}
-        {{- '<｜Assistant｜><｜tool▁calls▁begin｜>' -}}
-        {%- set ns.is_first = true -%}
-        {%- for tc in message['tool_calls'] -%}
-            {%- if ns.is_first -%}
-                {%- set ns.is_first = false -%}
-            {%- else -%}
-                {{- '\n' -}}
-            {%- endif -%}
-            {%- set tool_name = tc['function']['name'] -%}
-            {%- set tool_args = tc['function']['arguments'] -%}
-            {{- '<｜tool▁call▁begin｜>' + tc['type'] + '<｜tool▁sep｜>' + tool_name + '\n' + '```json' + '\n' + tool_args + '\n' + '```' + '<｜tool▁call▁end｜>' -}}
-        {%- endfor -%}
-        {{- '<｜tool▁calls▁end｜><｜im_end｜>' -}}
-    {%- endif -%}
-    {%- if message['role'] == 'assistant' and message['content'] is  not none -%}
-        {{- flush_tool_outputs() -}}
-        {%- set content = message['content'] -%}
-        {%- if '</think>' in content -%}
-            {%- set content = content.split('</think>')[-1] -%}
-        {%- endif -%}
-        {{- '<｜Assistant｜>' + content + '<｜im_end｜>' -}}
-    {%- endif -%}
-    {%- if message['role'] == 'tool' -%}
-        {%- set ns.is_tool_outputs = true -%}
-        {%- if ns.is_output_first -%}
-            {{- '<｜tool▁outputs▁begin｜>' -}}
-            {%- set ns.is_output_first = false -%}
-        {%- endif -%}
-        {{- '\n<｜tool▁output▁begin｜>' + message['content'] + '<｜tool▁output▁end｜>' -}}
-    {%- endif -%}
-{%- endfor -%}
-{{- flush_tool_outputs() -}}
-
-{%- if add_generation_prompt and not ns.is_tool_outputs -%}
-    {{- '<｜Assistant｜>' -}}
-    {%- if enable_thinking is defined and enable_thinking is false -%}
-        {{- '<think>\n\n</think>\n\n' -}}
-    {%- endif -%}
-{%- endif -%}
+{%- if messages[0].role == 'system' %}
+    {{- '<|im_start|>system\n' + messages[0].content + '<|im_end|>\n' }}
+{%- endif %}
+{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}
+{%- for forward_message in messages %}
+    {%- set index = (messages|length - 1) - loop.index0 %}
+    {%- set message = messages[index] %}
+    {%- set current_content = message.content if message.content is not none else '' %}
+    {%- set tool_start = '<tool_response>' %}
+    {%- set tool_start_length = tool_start|length %}
+    {%- set start_of_message = current_content[:tool_start_length] %}
+    {%- set tool_end = '</tool_response>' %}
+    {%- set tool_end_length = tool_end|length %}
+    {%- set start_pos = (current_content|length) - tool_end_length %}
+    {%- if start_pos < 0 %}
+        {%- set start_pos = 0 %}
+    {%- endif %}
+    {%- set end_of_message = current_content[start_pos:] %}
+    {%- if ns.multi_step_tool and message.role == "user" and not(start_of_message == tool_start and end_of_message == tool_end) %}
+        {%- set ns.multi_step_tool = false %}
+        {%- set ns.last_query_index = index %}
+    {%- endif %}
+{%- endfor %}
+{%- for message in messages %}
+    {%- if (message.role == "user") or (message.role == "system" and not loop.first) %}
+        {{- '<|im_start|>' + message.role + '\n' + message.content + '<|im_end|>' + '\n' }}
+    {%- elif message.role == "assistant" %}
+        {%- set content = message.content %}
+        {%- set reasoning_content = '' %}
+        {%- if message.reasoning_content is defined and message.reasoning_content is not none %}
+            {%- set reasoning_content = message.reasoning_content %}
+        {%- else %}
+            {%- if '</think>' in message.content %}
+                {%- set content = (message.content.split('</think>')|last).lstrip('\n') %}
+                {%- set reasoning_content = (message.content.split('</think>')|first).rstrip('\n') %}
+                {%- set reasoning_content = (reasoning_content.split('<think>')|last).lstrip('\n') %}
+            {%- endif %}
+        {%- endif %}
+        {%- if loop.index0 > ns.last_query_index %}
+            {%- if loop.last or (not loop.last and reasoning_content) %}
+                {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content.strip('\n') + '\n</think>\n\n' + content.lstrip('\n') }}
+            {%- else %}
+                {{- '<|im_start|>' + message.role + '\n' + content }}
+            {%- endif %}
+        {%- else %}
+            {{- '<|im_start|>' + message.role + '\n' + content }}
+        {%- endif %}
+        {%- if message.tool_calls %}
+            {%- for tool_call in message.tool_calls %}
+                {%- if (loop.first and content) or (not loop.first) %}
+                    {{- '\n' }}
+                {%- endif %}
+                {%- if tool_call.function %}
+                    {%- set tool_call = tool_call.function %}
+                {%- endif %}
+                {{- '<tool_call>\n{"name": "' }}
+                {{- tool_call.name }}
+                {{- '", "arguments": ' }}
+                {%- if tool_call.arguments is string %}
+                    {{- tool_call.arguments }}
+                {%- else %}
+                    {{- tool_call.arguments | tojson }}
+                {%- endif %}
+                {{- '}\n</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+        {%- if loop.first or (messages[loop.index0 - 1].role != "tool") %}
+            {{- '<|im_start|>user' }}
+        {%- endif %}
+        {{- '\n<tool_response>\n' }}
+        {{- message.content }}
+        {{- '\n</tool_response>' }}
+        {%- if loop.last or (messages[loop.index0 + 1].role != "tool") %}
+            {{- '<|im_end|>\n' }}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- endif %}
+{%- endif %}
 ```
 
 可以注意到主要是在提示词中拼接了工具的调用过程（即和function call相关）。另外还有最后增加了一个thinking mode的开关：`enable_thinking`，通过指定此参数为`False`，可以直接让`<think>`标签对闭合，以使得模型跳过思考。
