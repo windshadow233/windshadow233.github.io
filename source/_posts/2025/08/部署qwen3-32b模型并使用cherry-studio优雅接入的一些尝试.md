@@ -128,6 +128,7 @@ llama-server \
     --alias "Qwen3-32B" \
     --n-gpu-layers 65 \
     --ctx-size 49152 \
+    --context-shift \
     --parallel 3 \
     --cache-type-k q8_0 \
     --cache-type-v q8_0 \
