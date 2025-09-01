@@ -788,11 +788,6 @@ pre {
     hyphens: none
 }
 
-[data-theme='dark'] pre {
-    background: #2d2a26;
-    color: #f8f8f2;
-}
-
 #page #article-container a:not(.post-meta__tags):not(.headerlink):not(img):not(.flink-list-item>a):not(.random-post-start):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):not(.btn-beautify):not(#random-post-start):not(.cf-article-title):not(.cf-overshow a):hover,#post #article-container a:not(.post-meta__tags):not(img):not(.tag-Link):not(a[data-fancybox]):not(.markdownIt-Anchor):not(#ai-link):hover,.card-announcement a:hover,.card-history a:hover,.post-copyright a:hover,.tk-content a:not(.tk-content a[data-fancybox=gallery]):hover {
     border-radius: 6px;
     background-color: var(--fyz-theme);
