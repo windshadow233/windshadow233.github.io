@@ -13,7 +13,7 @@ tags:
   - Qwen
   - llama_cpp
   - Cherry Studio
-cover:
+cover: https://blogfiles.oss.fyz666.xyz/webp/6bcafaac-012b-43c9-a0ff-4d56238dcf24.webp
 ---
 
 前两天尝试在一块3090上部署了一个QwQ-32B（见[这篇文章](/blog/12935)），不过这个模型是一个推理模型（Reasoning model），它面对任何问题都会“陷入沉思”，思考过后之后才给出回答，对于某些需要快速响应但比较简单的任务而言就有点令人不耐烦了，因此，后来我又重新尝试了其他的模型，例如Qwen3-32B，这个模型则是个混合推理模型（Hybrid reasoning model），也就是说这个模型存在两种模式：思考模型与非思考模式，可针对复杂问题启用多步逻辑推理，简单任务则快速响应。
