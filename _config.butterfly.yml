@@ -410,7 +410,7 @@ site_counter:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2020/06/29
+  publish_date: 2020/06/29 15:58:00
 
 # Aside widget - Newest Comments
 newest_comments:
