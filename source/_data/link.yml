@@ -43,7 +43,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/da60b202-6b5e-4e39-b57e-707ab6adc660.webp
         descr: 记录一些随笔，比如停电夜晚的思绪
         feed: https://gaoliheng.com/feed/
-
+      - name: Ldyer
+        link: https://ldyer.top/
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/3279f12e-1f6e-4101-9556-b552770885fe.webp
+        descr: 一个人行走的范围，就是他的世界。
+        feed: 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
     link_list:
