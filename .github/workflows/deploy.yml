@@ -25,12 +25,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
 
-    - name: Clean npm cache and rebuild lock
-      run: |
-        npm cache clean --force
-        rm -rf node_modules package-lock.json
-        npm install --package-lock-only
-
     - name: Install Dependencies
       run: npm ci
 
