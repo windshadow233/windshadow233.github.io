@@ -313,10 +313,10 @@ link_groups:
       link: https://bitwarden.fyz666.xyz/
       avatar: https://blogfiles.oss.fyz666.xyz/png/19c87ee7-66be-40db-a895-9d616d0810ad.png
       descr: 再也不怕忘记密码了...(大概)
-    - name: 立直麻将点数计算器
+    - name: 立直麻将工具箱
       link: https://riichi.fyz666.xyz/
       avatar: https://blogfiles.oss.fyz666.xyz/png/85b19b2b-3e03-43fe-bf53-064ae85f251e.png
-      descr: 除了计算器功能外，还有“常见役种”与“点数速查表”
+      descr: 除了计算器功能外，还有“役种一览”、“点数速查表”等功能
     - name: ZeroTier Moon
       link: https://zerotier.fyz666.xyz/
       avatar: https://blogfiles.oss.fyz666.xyz/png/2d2d5ef2-2ec7-4289-98fd-e2f2ed6bbb06.png
