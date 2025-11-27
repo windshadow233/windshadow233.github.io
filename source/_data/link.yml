@@ -48,6 +48,12 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/3279f12e-1f6e-4101-9556-b552770885fe.webp
         descr: 一个人行走的范围，就是他的世界。
         feed: 
+      - name: lznauy
+        link: https://lznauy.cn/
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/04ea2909-ba52-4f30-839a-aea744c6c91e.webp
+        descr: 生之微欢，俄而感怀，奋勉有得，相携互舍，所谓幸福
+        feed: https://lznauy.cn/index.xml
+
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
     link_list:
