@@ -45,20 +45,15 @@ project_list:
     url: https://github.com/windshadow233/pvz-toolkit
     image: https://blogfiles.oss.fyz666.xyz/avif/28e915e7-85c2-47a6-b27b-156de87fea54.avif
 
-  - name: Riichi-Calculator
-    descr: 可能有bug的立直麻将计算器
+  - name: Riichi-Tools
+    descr: 立直麻将工具箱
     url: https://github.com/windshadow233/Riichi-Calculator
-    image: https://blogfiles.oss.fyz666.xyz/avif/1cecfa62-b575-4aaf-b885-1968fbaf7cb7.avif
+    image: https://blogfiles.oss.fyz666.xyz/webp/d2485adc-ccee-46af-b080-b0975d7ae58e.webp
 
   - name: PGGAN
     descr: PGGAN的PyTorch实现
     url: https://github.com/windshadow233/PGGAN
     image: https://blogfiles.oss.fyz666.xyz/webp/c72d1e5a-28f7-4fc6-aa2b-d5d8106bfcd2.webp
-
-  - name: Frontend-Table-Of-Contents
-    descr: 瞎写的纯前端目录生成器
-    url: https://github.com/windshadow233/Frontend-Table-Of-Contents
-    image: https://blogfiles.oss.fyz666.xyz/png/d360172a-25d0-44cd-80c0-84f2dd73a899.png
 
   - name: HandWritten-Transformer-NMT
     descr: 机器翻译（一个深度学习课程实验罢了）
