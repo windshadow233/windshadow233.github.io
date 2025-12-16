@@ -6,14 +6,18 @@ link_groups:
   - class_name: 人工智能
     class_desc: 让AI为生产力加速！
     link_list:
-    - name: DeepSeek
-      link: https://chat.deepseek.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/svg/afe310dd-6af1-41ea-b485-affd0bae56de.svg
-      descr: 国产“弯道超车”大模型
+    - name: Gemini Pro
+      link: https://gemini.google.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/webp/abd2b4c9-0387-490b-ae18-90211bf6929c.webp
+      descr: Google 的大模型，让我成功白嫖了一年，因此放在首位强烈推荐！
     - name: ChatGPT
       link: https://chatgpt.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
       descr: 大模型领域的先驱
+    - name: DeepSeek
+      link: https://chat.deepseek.com/
+      avatar: https://blogfiles.oss.fyz666.xyz/svg/afe310dd-6af1-41ea-b485-affd0bae56de.svg
+      descr: 国产“弯道超车”大模型
     - name: Claude
       link: https://claude.ai/
       avatar: https://blogfiles.oss.fyz666.xyz/png/c9ee9939-db1f-4052-82cb-7476c25d4d4d.png
