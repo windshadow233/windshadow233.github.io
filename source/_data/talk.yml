@@ -7,6 +7,40 @@ limit: 100
 limitPerPage: 15
 top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
 talk_list:
+  - content: |
+      2025-12-23 - 2025-12-28
+      和女朋友一起打卡成都～
+    hide:
+      button: 查看详情
+      content: |
+        P1: 大熊猫基地蹲到了花花的背影。<br>
+        P2: 本土的钵钵鸡味道确实不错😋。<br>
+        P3: IFS附近的巨大圣诞树。<br>
+        P4: 太古里打卡。<br>
+        P5: 一家颇具圣诞氛围的小酒馆。<br>
+        P6: 武侯祠出师表，感受丞相的一片赤诚之心。<br>
+        P7-P10: 三星堆博物馆，感受古蜀人的神秘文化，这种历史的交错感只能用震撼来形容。<br>
+        P11-P12: 都江堰景区，感受古代水利工程的伟大。<br>
+
+        这里只展示了一部分照片，更多照片会放在相册里，等我有空了再补上～
+    date: 2026-01-02 02:52
+    tag:
+      - 旅行
+    address:
+      - 四川省成都市
+    image:
+      - https://blogfiles.oss.fyz666.xyz/webp/d53410fd-2534-44cd-8589-d62df1c24f5c.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/533eaba5-cda2-4915-9fa6-cbeaaef75edc.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/cdd65989-4c93-41d9-b6b9-d6a448f13e0e.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/1553f95e-743d-43d8-9c53-e742107a78fe.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/677a0cc2-a7a1-47cf-9750-37d04fda2a5a.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/0c316419-2a06-46db-8402-0f015d50d027.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/a7dd96e5-4020-44e4-a339-7bcb5ce467e2.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/92c174aa-2173-4dda-9370-9084b78783bc.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/26011f6e-57aa-4951-bd62-f59696df794a.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/7c376d46-cf8e-479b-9726-0668a3f48df7.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/44fe38dc-d4c5-4bde-9d80-e2d6cb99fbe1.webp
+      - https://blogfiles.oss.fyz666.xyz/webp/059cc405-cd53-4511-b254-5ebf3e2e74bf.webp
   - content: 6巡能是什么大牌？/doge
     date: 2025-10-08 16:49
     image:
