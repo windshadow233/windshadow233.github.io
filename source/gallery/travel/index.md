@@ -7,12 +7,23 @@ top_img: false
 ---
 
 <style>
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .sub-page {
     display: none;
     margin-bottom: 20px;
 }
 .sub-page.active {
     display: block;
+    animation: zoomIn 0.3s ease forwards;
 }
 .pagination {
     display: flex;

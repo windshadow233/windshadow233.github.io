@@ -50,12 +50,23 @@ style.
             width: calc(100% / 1 - 15px);
         }
     }
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
     .sub-page {
         margin-bottom: 20px;
         display: none;
     }
     .sub-page.active {
         display: block;
+        animation: slideInRight 0.3s ease forwards;
     }
     .sub-page h2 {
       margin: 20px 0 0;
