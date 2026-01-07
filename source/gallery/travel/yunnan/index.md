@@ -6,6 +6,8 @@ date: 2025-08-09 16:04:57
 top_img: false
 ---
 
+{% btn "javascript:pjax.loadUrl('..')",返回,fa-solid fa-arrow-left,outline blue larger %}
+
 {% gallery %}
 
 ![](https://blogfiles.oss.fyz666.xyz/webp/a836e315-e32c-4231-884b-f81ad1ad80b9.webp)
@@ -309,5 +311,3 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/90d03d3b-d4d9-46cb-b894-c30474553e67.webp)
 
 {% endgallery %}
-
-{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

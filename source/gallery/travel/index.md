@@ -103,6 +103,8 @@ $(document).ready(() => {
 });
 </script>
 
+{% btn "javascript:pjax.loadUrl('..')",返回,fa-solid fa-arrow-left,outline blue larger %}
+
 <div class='pagination'></div>
 
 
@@ -123,4 +125,3 @@ $(document).ready(() => {
 {% galleryGroup 成都 天府之国的安逸底色，三星堆的古蜀秘境与武侯祠的三国志气交相辉映。都江堰水流千年，滋养出宽窄巷子的市井烟火。看熊猫憨态可掬，品火锅热辣滚烫，在锦官城的慢时光里，感悟生活最本真的真谛。 /gallery/travel/chengdu/ https://blogfiles.oss.fyz666.xyz/webp/0c316419-2a06-46db-8402-0f015d50d027.webp %}
 </div>
 
-{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

@@ -6,6 +6,8 @@ date: 2024-04-14 21:43:39
 top_img: false
 ---
 
+{% btn "javascript:pjax.loadUrl('..')",返回,fa-solid fa-arrow-left,outline blue larger %}
+
 {% gallery %}
 ![](https://blogfiles.oss.fyz666.xyz/webp/596aa8c7-a21a-4fbe-a948-18d1ef9dea51.webp)
 ![](https://blogfiles.oss.fyz666.xyz/webp/cbf05840-45cb-4871-9d84-97a07677ed30.webp)
@@ -28,5 +30,3 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/fb31e7ff-be54-416f-bf95-63aef29650c8.webp)
 ![](https://blogfiles.oss.fyz666.xyz/webp/5b24da63-7a4d-49f3-8d1e-3f0974fe87bd.webp)
 {% endgallery %}
-
-{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}

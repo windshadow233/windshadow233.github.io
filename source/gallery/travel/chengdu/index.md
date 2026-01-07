@@ -6,6 +6,8 @@ date: 2026-01-03 00:58:00
 top_img: false
 ---
 
+{% btn "javascript:pjax.loadUrl('..')",返回,fa-solid fa-arrow-left,outline blue larger %}
+
 {% gallery %}
 
 ![](https://blogfiles.oss.fyz666.xyz/webp/d53410fd-2534-44cd-8589-d62df1c24f5c.webp)
@@ -85,5 +87,3 @@ top_img: false
 ![](https://blogfiles.oss.fyz666.xyz/webp/95abc910-0df1-4ba1-8033-2e2512d12b96.webp)
 
 {% endgallery %}
-
-{% btn "javascript:location.href = '..'",返回,fa-solid fa-arrow-left,outline blue larger %}
