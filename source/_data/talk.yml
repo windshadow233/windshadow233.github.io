@@ -8,6 +8,12 @@ limitPerPage: 15
 top_background: https://blogfiles.oss.fyz666.xyz/webp/70061b93-acea-4a1a-9111-df81571199ed.webp
 talk_list:
   - content: |
+      最近开始用「爱发电」啦～欢迎大家支持～
+    date: 2026-01-09 17:25
+    link:
+      - url: https://afdian.com/a/windshadow
+        name: 我的爱发电主页
+  - content: |
       2025-12-23 - 2025-12-28
       和女朋友一起打卡成都～
     hide:
