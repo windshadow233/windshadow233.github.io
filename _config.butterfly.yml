@@ -378,12 +378,12 @@ aside:
     image_url: https://weather.fyz666.xyz/weather.png
   card_mbti:
     enable: true
-    date: '2025-09-17 23:27'
+    date: '2026-03-01 23:58'
     ei:
-      value: 86
+      value: 83
       type: 'I'
     sn:
-      value: 51
+      value: 60
       type: 'N'
     tf:
       value: 61
@@ -392,7 +392,7 @@ aside:
       value: 71
       type: 'P'
     at:
-      value: 90
+      value: 96
       type: 'A'
 
 
