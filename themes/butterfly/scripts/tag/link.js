@@ -18,7 +18,7 @@ function link(args) {
         imgUrl = '/images/avatar.webp';
     } else {
         tip = '引用站外地址，不保证站点的可用性和安全性';
-        imgUrl = "https://logo.clearbit.com/" + hostname + "?size=256";
+        imgUrl = "https://www.google.com/s2/favicons?sz=256&domain=" + hostname;
     }
     
     let fallbackImgUrl = "/images/default-link.png";

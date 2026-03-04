@@ -3,7 +3,7 @@ title: 从零开始的麻将AI论文复现（零）
 id: 8394
 date: 2023-09-14 16:42:22
 categories: [学习笔记]
-tags: ['Mahjong AI', 'Suphx', '深度学习', '机器学习']
+tags: ['Mahjong AI', 'Suphx', '深度学习', '机器学习', '立直麻将']
 cover: https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp
 disableNunjucks: false
 swiper_index: 1
