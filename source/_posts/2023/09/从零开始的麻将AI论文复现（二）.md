@@ -47,7 +47,7 @@ disableNunjucks: false
 {% mahjong 111p %}
 →「３」
 {% mahjong 222333444s %}
-→「３」
+→「３３３」
 {% mahjong 234456p %}
 →「１１２１１」
 
