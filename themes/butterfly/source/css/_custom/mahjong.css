@@ -6,19 +6,33 @@
 */
 
 :root {
-  --mahjong-size: 40px;
+  --mahjong-size: 56px;
   --mahjong-gap: 3px;
+  /* container width bounds */
+  --mahjong-min-width: 240px; /* 最小容器宽度 */
+  --mahjong-max-width: 960px; /* 最大容器宽度 */
+  /* tile size will scale between min and max based on viewport
+     within the container width bounds */
+  --mahjong-size: clamp(32px, calc(2.6vw + 8px), 56px);
 }
 
 .mahjong-wrap {
   display: flex;
-  width: 100%;
-  justify-content: center; /* center the whole tile group horizontally */
-  flex-wrap: wrap; /* only wrap when container is too small */
+  width: 100%; /* full width so centering works */
+  justify-content: center; /* center inner container horizontally */
+  margin: 20px 0;
+}
+
+.mahjong-inner {
+  /* constrained inner container that actually holds tiles */
+  width: clamp(var(--mahjong-min-width), 100%, var(--mahjong-max-width));
+  max-width: var(--mahjong-max-width);
+  display: flex;
   gap: var(--mahjong-gap);
+  justify-content: center;
+  flex-wrap: wrap; /* wrap only when tiles overflow inner width */
   align-items: center;
   line-height: 0; /* avoid extra inline-gap from img descenders */
-  margin: 20px 0;
 }
 
 .mahjong-wrap img {
@@ -26,7 +40,7 @@
 }
 
 .mahjong-tile {
-  max-height: var(--mahjong-size);
+  height: var(--mahjong-size);
   width: auto; /* preserve aspect ratio */
   max-width: 100%;
   object-fit: contain;
@@ -42,5 +56,5 @@
 
 /* responsive: shrink tiles when container narrower */
 @media (max-width: 480px) {
-  :root { --mahjong-size: 32px; }
+  :root { --mahjong-size: 32px; --mahjong-gap: 1px;}
 }

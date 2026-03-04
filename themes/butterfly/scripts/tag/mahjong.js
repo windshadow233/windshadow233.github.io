@@ -112,7 +112,7 @@ function renderMahjong (tilesStr) {
     if (i !== called.length - 1) parts.push(BLANK)
   }
 
-  return `<span class=\"mahjong-wrap\">${parts.join('')}</span>`
+  return `<div class=\"mahjong-wrap\"><div class=\"mahjong-inner\">${parts.join('')}</div></div>`
 }
 
 const mahjongTag = (args) => {
