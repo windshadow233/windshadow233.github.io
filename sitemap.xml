@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/rlink/</loc>
+    <loc>https://blog.fyz666.xyz/tags/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/</loc>
+    <loc>https://blog.fyz666.xyz/rlink/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -75,33 +75,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/music/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/equipment/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/fcircle/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/gallery/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -191,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/gallery/travel/xiamen/</loc>
+    <loc>https://blog.fyz666.xyz/gallery/travel/xi-an/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -200,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/gallery/travel/xi-an/</loc>
+    <loc>https://blog.fyz666.xyz/gallery/travel/xiamen/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -227,6 +200,33 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/equipment/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/fcircle/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/gallery/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/categories/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -237,51 +237,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/cfop/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/13157/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/about/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12778/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12794/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12897/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -317,6 +272,24 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/blog/13157/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/about/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/blog/12471/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -326,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/12561/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12679/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -335,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/12679/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12690/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -362,15 +335,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/12690/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/12634/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -389,6 +353,15 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/blog/12561/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/blog/12877/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -398,7 +371,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/12067/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12778/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -407,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11987/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12794/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -416,25 +389,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11830/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12074/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12168/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12897/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -452,24 +407,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/12395/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/12160/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/12196/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -479,7 +416,25 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/blog/12168/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/blog/12343/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/12395/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -515,7 +470,43 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11219/</loc>
+    <loc>https://blog.fyz666.xyz/blog/12067/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/11987/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/12074/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/11830/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/12160/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -525,6 +516,15 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/10068/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/11219/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -596,15 +596,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11277/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/11765/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -614,7 +605,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11574/</loc>
+    <loc>https://blog.fyz666.xyz/blog/11277/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -623,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/11475/</loc>
+    <loc>https://blog.fyz666.xyz/blog/11574/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -650,6 +641,15 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/blog/11475/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/blog/11906/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -659,7 +659,79 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/blog/8784/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/8782/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/8773/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/9864/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/blog/9097/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/9827/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/10026/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/9930/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/10001/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -695,51 +767,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/9864/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/10026/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/9827/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/9930/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/10001/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/11197/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -750,6 +777,24 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/8437/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/8472/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/8394/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -794,7 +839,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/8784/</loc>
+    <loc>https://blog.fyz666.xyz/blog/7640/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -803,34 +848,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/8782/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/8773/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/8394/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/8472/</loc>
+    <loc>https://blog.fyz666.xyz/blog/7767/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -884,7 +902,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/7934/</loc>
+    <loc>https://blog.fyz666.xyz/blog/7728/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -902,7 +920,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/7728/</loc>
+    <loc>https://blog.fyz666.xyz/blog/7934/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -956,15 +974,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/6797/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/6585/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -974,7 +983,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/7311/</loc>
+    <loc>https://blog.fyz666.xyz/blog/6797/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -992,16 +1001,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/7640/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/7767/</loc>
+    <loc>https://blog.fyz666.xyz/blog/7311/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1064,7 +1064,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5783/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5646/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1073,7 +1073,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5646/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5783/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1199,7 +1199,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5883/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5837/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1208,7 +1208,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5837/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5883/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1262,7 +1262,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5356/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5313/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1271,7 +1271,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5313/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5356/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1316,7 +1316,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5473/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5447/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1325,7 +1325,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5447/</loc>
+    <loc>https://blog.fyz666.xyz/blog/5473/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1344,6 +1344,96 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/5547/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5077/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/4966/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5162/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5026/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5079/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/4968/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5156/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5158/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5174/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/5130/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1433,7 +1523,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/3835/</loc>
+    <loc>https://blog.fyz666.xyz/blog/3847/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1442,7 +1532,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/3847/</loc>
+    <loc>https://blog.fyz666.xyz/blog/3835/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1523,7 +1613,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5130/</loc>
+    <loc>https://blog.fyz666.xyz/blog/2036/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1532,88 +1622,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/5077/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5162/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/4966/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5026/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5079/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/4968/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5156/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5158/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/5174/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/1537/</loc>
+    <loc>https://blog.fyz666.xyz/blog/186/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1632,6 +1641,15 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/blog/1479/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/1537/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1712,15 +1730,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/2784/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/blog/1830/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -1730,7 +1739,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/1868/</loc>
+    <loc>https://blog.fyz666.xyz/blog/3096/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1739,7 +1748,16 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/blog/3096/</loc>
+    <loc>https://blog.fyz666.xyz/blog/2784/</loc>
+    
+    <lastmod>2026-03-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/blog/1868/</loc>
     
     <lastmod>2026-03-04</lastmod>
     
@@ -1810,24 +1828,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/186/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/blog/2036/</loc>
-    
-    <lastmod>2026-03-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://blog.fyz666.xyz/</loc>
@@ -1836,6 +1836,20 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/javascript/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/web%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/docker/</loc>
@@ -1860,20 +1874,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/sharelatex/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/javascript/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/web%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1957,7 +1957,70 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/wsl/</loc>
+    <loc>https://blog.fyz666.xyz/tags/web%E5%90%8E%E7%AB%AF/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/npm/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/vue/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/webpack/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/nodejs/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/oauth/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1965,6 +2028,13 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/cors/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/wsl/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2055,76 +2125,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/npm/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/vue/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/webpack/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/nodejs/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/web%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/oauth/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/tags/ubuntu/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2160,20 +2160,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/v2ray/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/tags/dns/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2182,6 +2168,20 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/v2ray/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2300,6 +2300,13 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/tags/geekgame-2nd/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/tags/mahjong-ai/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2321,13 +2328,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/geekgame-2nd/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/tags/geekgame-3rd/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2342,6 +2342,34 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/tags/gitalk/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/github-api/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/dns-over-https/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/docker-mailserver/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/tags/api-gateway/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2350,13 +2378,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/aws-lambda/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/github-api/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2385,27 +2406,6 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/bitwarden/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/gitalk/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/dns-over-https/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/docker-mailserver/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2538,6 +2538,13 @@
   </url>
   
   <url>
+    <loc>https://blog.fyz666.xyz/tags/sft/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.fyz666.xyz/tags/ppo-%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2559,20 +2566,6 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/sft/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.fyz666.xyz/tags/rlhf/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.fyz666.xyz/tags/grpo-%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -2580,7 +2573,7 @@
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/tags/rag/</loc>
+    <loc>https://blog.fyz666.xyz/tags/rlhf/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2595,6 +2588,13 @@
   
   <url>
     <loc>https://blog.fyz666.xyz/tags/llama-cpp/</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.fyz666.xyz/tags/rag/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2631,14 +2631,14 @@
 
   
   <url>
-    <loc>https://blog.fyz666.xyz/categories/%E7%9E%8E%E6%8D%A3%E9%BC%93%E7%BB%8F%E5%8E%86/</loc>
+    <loc>https://blog.fyz666.xyz/categories/debug/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.fyz666.xyz/categories/debug/</loc>
+    <loc>https://blog.fyz666.xyz/categories/%E7%9E%8E%E6%8D%A3%E9%BC%93%E7%BB%8F%E5%8E%86/</loc>
     <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
