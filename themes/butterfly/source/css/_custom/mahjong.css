@@ -1,0 +1,46 @@
+/* Mahjong tile styles
+   - Horizontal layout, wrap only when overflow
+   - Control tile size via --mahjong-size (default 40px)
+   - Preserve aspect ratio (no distortion)
+   - BLANK images keep layout space but are invisible
+*/
+
+:root {
+  --mahjong-size: 40px;
+  --mahjong-gap: 3px;
+}
+
+.mahjong-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* center the whole tile group horizontally */
+  flex-wrap: wrap; /* only wrap when container is too small */
+  gap: var(--mahjong-gap);
+  align-items: center;
+  line-height: 0; /* avoid extra inline-gap from img descenders */
+  margin: 20px 0;
+}
+
+.mahjong-wrap img {
+  display: block;
+}
+
+.mahjong-tile {
+  height: var(--mahjong-size);
+  width: auto; /* preserve aspect ratio */
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 0!important;
+  border-radius: 4px!important;
+}
+
+.blank-tile {
+  visibility: hidden; /* keep space but invisible */
+  height: var(--mahjong-size);
+  width: var(--mahjong-gap);
+}
+
+/* responsive: shrink tiles when container narrower */
+@media (max-width: 480px) {
+  :root { --mahjong-size: 32px; }
+}
