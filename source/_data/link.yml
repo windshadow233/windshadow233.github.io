@@ -17,7 +17,7 @@ link_groups:
         link: https://hanvin.com/
         avatar: https://blogfiles.oss.fyz666.xyz/svg/64e5a25c-d812-494e-9574-5859a42eff52.svg
         descr: 做自由的风
-        feed: https://hanvin.com/feed.xml
+        feed: https://hanvin.com/blog/feed.xml
       - name: 小码同学
         link: https://blog.hikki.site
         avatar: https://bu.dusays.com/2025/03/02/67c4531250141.jpg
@@ -135,4 +135,4 @@ link_groups:
         link: https://blog.anheyu.com/
         avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
         descr: 生活明朗，万物可爱
-        feed: https://blog.anheyu.com/atom.xml
+        feed: 
