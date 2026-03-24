@@ -1,4 +1,9 @@
 link(rel="stylesheet", href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.2.1.css", onload="onCSSLoaded()")
+style.
+  .bbItem-grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
 script.
   function onCSSLoaded() {
     document.getElementById('talk_page').style.display = 'block';
@@ -53,7 +58,8 @@ if site.data.talk
           each item, index in i.talk_list
             if index < i.limit
               - var __hidden = index >= i.limitPerPage
-              li.bber-item(class= __hidden ? 'talk-hidden' : '', style= __hidden ? 'display:none;' : '')
+              - var __grayscale = item.grayscale
+              li.bber-item(class={ 'talk-hidden': __hidden, 'bbItem-grayscale': __grayscale }, style= __hidden ? 'display:none;' : '')
                 .bber-content
                   p.datacont(style="white-space:pre-wrap;") !{item.content}
                     if item.hide
