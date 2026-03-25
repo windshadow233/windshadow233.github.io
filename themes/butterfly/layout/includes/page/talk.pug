@@ -1,13 +1,10 @@
-link(rel="stylesheet", href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.2.1.css", onload="onCSSLoaded()")
+link(rel="stylesheet", href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/mytalk@v1.2.1.css")
 style.
   .bbItem-grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
 script.
-  function onCSSLoaded() {
-    document.getElementById('talk_page').style.display = 'block';
-  }
   $(document).ready(() => {
     talk.changeTimeInTalk();
     talk.reflashTalkWaterFall();
@@ -41,7 +38,7 @@ script.
   })
 if site.data.talk
   - var i = site.data.talk
-  #talk_page(style="display: none;")
+  #talk_page
     .author-content.author-content-item.top-background.single(style=i.top_background ? `background: url(${i.top_background}) center 28% / cover no-repeat;` : "")
       .card-content
         .author-content-item-tips=i.title
