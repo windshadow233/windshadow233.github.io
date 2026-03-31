@@ -6,8 +6,6 @@ categories: [杂趣]
 tags: ['API GateWay', 'AWS Lambda', 'GitHub API', 'Python', 'Webhook']
 cover: https://api.star-history.com/svg?repos=windshadow233/This-Repo-Has-0-Stars&type=Date
 disableNunjucks: false
-swiper_index: 1
-description: 一个有意思的GitHub仓库
 ---
 
 几年前曾看到过@iBug大佬的[一个GitHub仓库](https://github.com/iBug/This-Repo-Has-0-Stars)，这个仓库的名字以及描述会实时显示当前的Star数量，令当时的我觉得非常有意思，不过那会我并没有去研究原理。几年过去了，却不知昨天为啥突然想到，于是读了一下大佬的[文章](https://ibug.io/p/41)，试着复现了一下。

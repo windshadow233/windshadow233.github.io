@@ -6,8 +6,6 @@ categories: [瞎捣鼓经历]
 tags: ['Docker', 'Docker-mailserver', 'Email']
 cover: https://blogfiles.oss.fyz666.xyz/png/69767e44-ab15-4b61-a5f5-a6567361e09b.png
 disableNunjucks: true
-swiper_index: 1
-description: 用docker部署了个邮件服务器～
 ---
 
 大约两年前我就想过整一个自己域名的邮件服务，这样就可以随意注册邮箱账号了，~~而且看上去很帅~~。然而这件事却一拖再拖，到今天总算是整上了，于是就在这里记录一下整的过程。
