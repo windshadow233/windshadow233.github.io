@@ -36,8 +36,12 @@ script.
 
     document.addEventListener('pjax:send', handlePjaxSend);
   })
-if site.data.talk
-  - var i = site.data.talk
+
+- var { talk_file } = page
+- var talk = site.data[talk_file] || site.data.talk
+if talk
+  - var i = talk
+  - var blockquote = i.blockquote
   #talk_page
     .author-content.author-content-item.top-background.single(style=i.top_background ? `background: url(${i.top_background}) center 28% / cover no-repeat;` : "")
       .card-content
@@ -45,20 +49,26 @@ if site.data.talk
         span.author-content-item-title=i.subTitle
         .content-bottom
           .tips=i.tips
-        .banner-button-group
-          a.banner-button(href=i.buttonLink)
-            i.fas.fa-circle-right
-            span.banner-button-text=i.buttonText
+        if typeof i.buttonText !== 'undefined'
+          .banner-button-group
+            a.banner-button(href=i.buttonLink)
+              i.fas.fa-circle-right
+              span.banner-button-text=i.buttonText
     #bber
       section.timeline.page-1
-        ul#waterfall.list
-          each item, index in i.talk_list
-            if index < i.limit
+        if i.talk_list && i.talk_list.length
+          ul#waterfall.list
+            each item, index in i.talk_list
+              if typeof i.limit === 'undefined' || index < i.limit
               - var __hidden = index >= i.limitPerPage
               - var __grayscale = item.grayscale
               li.bber-item(class={ 'talk-hidden': __hidden, 'bbItem-grayscale': __grayscale }, style= __hidden ? 'display:none;' : '')
                 .bber-content
-                  p.datacont(style="white-space:pre-wrap;") !{item.content}
+                  p.datacont(style="white-space:pre-wrap;")
+                    if item.blockquote || blockquote
+                      blockquote !{item.content}
+                    else
+                      | !{item.content}
                     if item.hide
                       .hide-block
                         .hide-button(onclick="this.classList.add('open');talk.reflashTalkWaterFall();") !{item.hide.button}
@@ -83,10 +93,11 @@ if site.data.talk
                 hr
                 .bber-bottom
                   .bber-info
-                    .bber-info-time
-                      - var datedata = new Date(item.date).toISOString()
-                      i.fas.fa-clock
-                      time.datatime(datetime= item.date)= datedata
+                    if item.date
+                      .bber-info-time
+                        - var datedata = new Date(item.date).toISOString()
+                        i.fas.fa-clock
+                        time.datatime(datetime= item.date)= datedata
                     if item.address
                       each i in item.address
                         .bber-info-from
@@ -109,10 +120,13 @@ if site.data.talk
                   - var content = item.content.replace(/<[^>]*>/g, '');
                   .bber-reply(onclick="rmf.commentText(" + JSON.stringify(content) + ")")
                     i.far.fa-comment-alt
-    #bber-tips(style='color: var(--fyz-secondtext);display: none;')
-      ="- 只展示最近" + i.limit + "条说说 -"
+    if i.limit !== undefined
+      #bber-tips(style='color: var(--fyz-secondtext);display: none;')
+        ="- 只展示最近" + i.limit + "条说说 -"
     #talk-more.talk-new-add(onclick="loadNextTalks()")
       i.fas.fa-angle-double-down
+
+!= page.content
 
 script.
   (function($){

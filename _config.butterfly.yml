@@ -18,6 +18,7 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
+  张雪峰老师语录: /in-memory-of-zhangxuefeng/ || fa-regular fa-message
   本站 || fas fa-sitemap:
     相册: /gallery/ || far fa-images
     音乐馆: /music/ || fas fa-music
