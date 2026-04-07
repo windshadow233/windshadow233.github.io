@@ -11,7 +11,7 @@ tags:
   - Python
 cover:
 swiper_index: 1
-description: 时隔四年，我终于把博客从WordPress迁移到了Hexo
+swiper_description: 时隔四年，我终于把博客从WordPress迁移到了Hexo
 ---
 
 用WordPress写个人博客四年后，我终于下定决心把它迁移到了静态博客。本文是我使用Hexo框架写的第一篇文章。

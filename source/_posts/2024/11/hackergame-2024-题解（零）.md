@@ -11,7 +11,7 @@ tags:
   - Hackergame 2024
 cover: https://blogfiles.oss.fyz666.xyz/webp/c49ffab9-5549-4d5b-b22e-287c109dfdeb.webp
 swiper_index: 1
-description: Hackergame 2024，再次喜提二等奖～
+swiper_description: Hackergame 2024，再次喜提二等奖～
 ---
 
 经过一个礼拜的科研摸鱼，Hackergame 2024 终于结束了（再不结束就打不动了）。相比于去年的题，今年的题总体难度似乎更高，最终拿下总榜26（比去年翻了个倍）校内第4（也翻了个倍...），喜提二等奖。

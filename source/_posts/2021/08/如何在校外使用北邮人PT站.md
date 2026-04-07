@@ -7,7 +7,7 @@ tags: ['IPv6', 'V2Ray', '树莓派', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/png/ea524747-7787-48e0-8d51-c8d7ee7f9226.png
 disableNunjucks: true
 swiper_index: 1
-description: 完美解决离校后无法使用北邮人PT站的问题
+swiper_description: 完美解决离校后无法使用北邮人PT站的问题
 ---
 
 两年前在朋友的邀请下加入了北邮人PT站（[bt.byr.cn](https://bt.byr.cn)，最近更改了域名为[byr.pt](https://byr.pt/)），该站点是一个纯IPv6站，且屏蔽了国内三大运营商的IPv6地址，在国内只能通过教育网来访问

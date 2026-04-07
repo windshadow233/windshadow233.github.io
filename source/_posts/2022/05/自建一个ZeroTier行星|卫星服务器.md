@@ -7,7 +7,7 @@ tags: ['Docker', 'ZeroTier', '计网']
 cover: https://blogfiles.oss.fyz666.xyz/png/5b4b7b2d-1c96-468f-876e-d5d1b5e24cef.png
 disableNunjucks: true
 swiper_index: 1
-description: P2P异地组网神器——ZeroTier的自部署方法
+swiper_description: P2P异地组网神器——ZeroTier的自部署方法
 ---
 
 ZeroTier是一款好用的P2P虚拟局域网开源软件，通过它可以实现外网到内网设备的访问。本文从服务端到客户端一条龙搭建一个简单的ZeroTier虚拟局域网，实现从外网对内网树莓派的访问。

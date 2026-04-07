@@ -12,7 +12,7 @@
               else
                 span.blog-slider__code= item.date.format('YYYY-MM-DD')
               a.blog-slider__title(onclick=`pjax.loadUrl("` + item.path + `");` href='javascript:void(0);'   alt='')= item.title
-              .blog-slider__text= item.description ? item.description : default_descr
+              .blog-slider__text= item.swiper_description ? item.swiper_description : default_descr
       else
         each item in swiper_list
           .blog-slider__item.swiper-slide(style='width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; background: url(' + item.cover + ');')
@@ -22,6 +22,6 @@
               else
                 span.blog-slider__code= item.date.format('YYYY-MM-DD')
               a.blog-slider__title(href=item.path alt='')= item.title
-              .blog-slider__text= item.description ? item.description : default_descr
+              .blog-slider__text= item.swiper_description ? item.swiper_description : default_descr
     //- 轮播图组件 
     .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets

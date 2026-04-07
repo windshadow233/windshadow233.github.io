@@ -11,7 +11,7 @@ tags:
   - GeekGame 2024
 cover: https://blogfiles.oss.fyz666.xyz/png/48f1d9cd-cd8c-4abd-ba92-7390d9ec1b32.png
 swiper_index: 1
-description: 今年的GeekGame参赛人数好多，勉强拿个前百，来年再接再厉！
+swiper_description: 今年的GeekGame参赛人数好多，勉强拿个前百，来年再接再厉！
 ---
 
 GeekGame ~~4<sup>th</sup>~~ 2024 最后一个比赛日晚上，在磕了两道题无果后，我关掉了开了十几个标签页的浏览器，开始写题解。

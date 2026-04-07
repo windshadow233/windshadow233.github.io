@@ -7,7 +7,7 @@ tags: ['Bitwarden', 'Docker']
 cover: https://blogfiles.oss.fyz666.xyz/png/84f9ac75-6609-487a-9190-8b45a38064df.png
 disableNunjucks: false
 swiper_index: 1
-description: 自部署一个密码管理平台
+swiper_description: 自部署一个密码管理平台
 ---
 
 经常问我借账号的朋友都知道，我这个人记性不好，也因此，我所有平台的密码都长的大同小异（基本都是由同一个字符串通过变换字母大小写、截取子串，或者添加一两个特殊符号得来的）。

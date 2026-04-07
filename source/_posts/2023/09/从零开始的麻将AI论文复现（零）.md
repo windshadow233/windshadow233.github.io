@@ -7,7 +7,7 @@ tags: ['Mahjong AI', 'Suphx', '深度学习', '机器学习', '立直麻将']
 cover: https://blogfiles.oss.fyz666.xyz/webp/d5b9bb46-0e19-4831-933f-d99bd2380e5d.webp
 disableNunjucks: false
 swiper_index: 1
-description: 写了个麻将AI，不过暂时只实现了监督学习
+swiper_description: 写了个麻将AI，不过暂时只实现了监督学习
 ---
 
 前段时间，博主突然开始~~沉迷~~偶尔玩玩立直麻将，受自己“职业病”的影响，遂想着能不能搞个AI出来~~帮我上段~~。

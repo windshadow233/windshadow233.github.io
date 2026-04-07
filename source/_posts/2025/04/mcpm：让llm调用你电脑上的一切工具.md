@@ -12,7 +12,7 @@ tags:
     - MCPM
 cover: https://blogfiles.oss.fyz666.xyz/webp/0105b834-95aa-4865-9188-29b1e008a929.webp
 swiper_index: 1
-description: MCPM：高效利用大语言模型的利器
+swiper_description: MCPM：高效利用大语言模型的利器
 ---
 
 ## 前言
