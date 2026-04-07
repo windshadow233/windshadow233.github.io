@@ -3,6 +3,7 @@ subTitle: 时代的清醒剂，寒门的领路人
 tips: 谨以此页面纪念那位在荒原中为我们指明方向的引路人...
 limitPerPage: 20
 blockquote: true
+bottom: false
 top_background: https://blogfiles.oss.fyz666.xyz/webp/37441ab4-1c83-4204-b8dd-efee20d085bb.webp
 talk_list:
   - content: |

@@ -42,6 +42,7 @@ script.
 if talk
   - var i = talk
   - var blockquote = i.blockquote
+  - var bottom = i.bottom
   #talk_page
     .author-content.author-content-item.top-background.single(style=i.top_background ? `background: url(${i.top_background}) center 28% / cover no-repeat;` : "")
       .card-content
@@ -65,7 +66,7 @@ if talk
               li.bber-item(class={ 'talk-hidden': __hidden, 'bbItem-grayscale': __grayscale }, style= __hidden ? 'display:none;' : '')
                 .bber-content
                   p.datacont(style="white-space:pre-wrap;")
-                    if item.blockquote || blockquote
+                    if (typeof item.blockquote !== 'undefined' ? item.blockquote : blockquote)
                       blockquote !{item.content}
                     else
                       | !{item.content}
@@ -90,8 +91,9 @@ if talk
                     if item.aplayer
                       .bber-music
                         .aplayer.no-destroy(data-id=item.aplayer.id,data-server=item.aplayer.server,data-type="song",data-order="list",data-preload="none",data-autoplay="false",data-mutex="true",data-theme='var(--fyz-main)')
-                hr
-                .bber-bottom
+                if (typeof item.bottom !== 'undefined' ? item.bottom : bottom)
+                  hr
+                  .bber-bottom
                   .bber-info
                     if item.date
                       .bber-info-time
