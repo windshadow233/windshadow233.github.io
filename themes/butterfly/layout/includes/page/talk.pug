@@ -41,8 +41,8 @@ script.
 - var talk = site.data[talk_file] || site.data.talk
 if talk
   - var i = talk
-  - var blockquote = i.blockquote
-  - var bottom = i.bottom
+    - var blockquote = (typeof i.blockquote === 'undefined' ? false : i.blockquote)
+    - var bottom = (typeof i.bottom === 'undefined' ? true : i.bottom)
   #talk_page
     .author-content.author-content-item.top-background.single(style=i.top_background ? `background: url(${i.top_background}) center 28% / cover no-repeat;` : "")
       .card-content
@@ -94,34 +94,34 @@ if talk
                 if (typeof item.bottom !== 'undefined' ? item.bottom : bottom)
                   hr
                   .bber-bottom
-                  .bber-info
-                    if item.date
-                      .bber-info-time
-                        - var datedata = new Date(item.date).toISOString()
-                        i.fas.fa-clock
-                        time.datatime(datetime= item.date)= datedata
-                    if item.address
-                      each i in item.address
+                    .bber-info
+                      if item.date
+                        .bber-info-time
+                          - var datedata = new Date(item.date).toISOString()
+                          i.fas.fa-clock
+                          time.datatime(datetime= item.date)= datedata
+                      if item.address
+                        each i in item.address
+                          .bber-info-from
+                            i.fas.fa-map-marker-alt
+                            span=i
+                      if item.link 
+                        each i in item.link
+                          a.bber-content-link(href=url_for(i.url),rel="external nofollow")
+                            i.fas.fa-link
+                            | #{i.name}
+                      if item.tag
+                        each i in item.tag
+                          .bber-tag
+                            i.fa-solid.fa-tag
+                            | #{i}
+                      if item.from
                         .bber-info-from
-                          i.fas.fa-map-marker-alt
-                          span=i
-                    if item.link 
-                      each i in item.link
-                        a.bber-content-link(href=url_for(i.url),rel="external nofollow")
-                          i.fas.fa-link
-                          | #{i.name}
-                    if item.tag
-                      each i in item.tag
-                        .bber-tag
-                          i.fa-solid.fa-tag
-                          | #{i}
-                    if item.from
-                      .bber-info-from
-                        i.fas.fa-fire-alt
-                        span=item.from
-                  - var content = item.content.replace(/<[^>]*>/g, '');
-                  .bber-reply(onclick="rmf.commentText(" + JSON.stringify(content) + ")")
-                    i.far.fa-comment-alt
+                          i.fas.fa-fire-alt
+                          span=item.from
+                    - var content = item.content.replace(/<[^>]*>/g, '');
+                    .bber-reply(onclick="rmf.commentText(" + JSON.stringify(content) + ")")
+                      i.far.fa-comment-alt
     if i.limit !== undefined
       #bber-tips(style='color: var(--fyz-secondtext);display: none;')
         ="- 只展示最近" + i.limit + "条说说 -"
