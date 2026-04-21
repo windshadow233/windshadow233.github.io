@@ -10,6 +10,7 @@ nav:
 # Menu 目錄
 menu:
   首页: / || fas fa-home
+  张雪峰老师语录: /in-memory-of-zhangxuefeng/ || fa-regular fa-message
   文章 || fas fa-blog:
     随便逛逛: javascript:toRandomPost(); || fa fa-paper-plane
     归档: /archives/ || fas fa-archive
@@ -18,7 +19,6 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  张雪峰老师语录: /in-memory-of-zhangxuefeng/ || fa-regular fa-message
   本站 || fas fa-sitemap:
     相册: /gallery/ || far fa-images
     音乐馆: /music/ || fas fa-music
