@@ -10,7 +10,6 @@ nav:
 # Menu 目錄
 menu:
   首页: / || fas fa-home
-  张雪峰老师语录: /in-memory-of-zhangxuefeng/ || fa-regular fa-message
   文章 || fas fa-blog:
     随便逛逛: javascript:toRandomPost(); || fa fa-paper-plane
     归档: /archives/ || fas fa-archive
@@ -33,6 +32,7 @@ menu:
     资源: /rlink/ || fas fa-save
     我的项目: /projects/ || fas fa-project-diagram
     CFOP: /cfop/ || fa-solid fa-cube
+    张雪峰老师语录: /in-memory-of-zhangxuefeng/ || fa-regular fa-message
   线路 || iconfont icon-global:
     主站点: https://blog.fyz666.xyz/ || || _blank
     GitHub: https://gh.fyz666.xyz/

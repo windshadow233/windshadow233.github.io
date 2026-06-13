@@ -101,6 +101,21 @@ link_groups:
   - class_name: 宝藏博主
     class_desc: 偶遇到的优质博客（顺序不分先后！）
     link_list:
+      - name: 科学空间
+        link: https://spaces.ac.cn/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/3f3ffc05-400b-441a-96fc-8d0c8b10deed.png
+        descr: 致力于各类前沿理工类论文、知识分享
+        feed: https://spaces.ac.cn/feed
+      - name: 周弈帆的博客
+        link: https://zhouyifan.net/
+        avatar: #
+        descr: Designer, artist, philosopher, researcher.
+        feed: https://zhouyifan.net/atom.xml
+      - name: 阮一峰的网络日志
+        link: https://www.ruanyifeng.com/blog/
+        avatar: https://blogfiles.oss.fyz666.xyz/png/071d6fbe-8efa-4a62-b871-7b6581c7d114.png
+        descr: 沉淀了大量技术相关的知识
+        feed: https://feeds.feedburner.com/ruanyifeng
       - name: 张洪 Heo
         link: https://blog.zhheo.com/
         avatar: https://blogfiles.oss.fyz666.xyz/png/5f8a9818-8a9e-4555-b370-440ed4466534.png
@@ -111,16 +126,6 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/png/1c0553ad-5002-437b-94d4-55f685c2fb67.png
         descr: 师者，传道，授业，解惑！
         feed: https://dusays.com/atom.xml
-      - name: 科学空间
-        link: https://spaces.ac.cn/
-        avatar: https://blogfiles.oss.fyz666.xyz/png/3f3ffc05-400b-441a-96fc-8d0c8b10deed.png
-        descr: 致力于各类前沿理工类论文、知识分享
-        feed: https://spaces.ac.cn/feed
-      - name: 阮一峰的网络日志
-        link: https://www.ruanyifeng.com/blog/
-        avatar: https://blogfiles.oss.fyz666.xyz/png/071d6fbe-8efa-4a62-b871-7b6581c7d114.png
-        descr: 沉淀了大量技术相关的知识
-        feed: https://feeds.feedburner.com/ruanyifeng
       - name: 零度博客
         link: https://www.freedidi.com/
         avatar: https://blogfiles.oss.fyz666.xyz/png/9ac68b10-d715-4bae-906d-6ee3cd59c2dd.png
