@@ -1838,9 +1838,9 @@ img[data-lazy-src]:not(.loaded) {
     filter: blur(8px) brightness(1)
 }
 
-[data-theme=dark] img,img[data-lazy-src].error {
+/* [data-theme=dark] img,img[data-lazy-src].error {
     filter: blur(0) brightness(.8)
-}
+} */
 
 #ai-container {
     margin: 10px 0;

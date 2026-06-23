@@ -27,6 +27,13 @@ equipment_groups:
         link:
           name: 详情
           url: https://www.apple.com.cn/shop/buy-iphone/iphone-15/MTLM3CH/A
+      - name: 拓竹 P2S 3D 打印机
+        detail: 多色套装包含AMS2 Pro
+        cover: https://blogfiles.oss.fyz666.xyz/webp/5b368217-9f71-4d8d-9e2f-f0dc3672712b.webp
+        desc: 感谢本科舍友 @nxp 全额赞助了这台 3D 打印机🥳，具备多色打印能力，打印精度非常高，可玩性很强，就是从此多了一大笔耗材开销...
+        link:
+          name: 详情
+          url: https://bambulab.com/zh/p2s
   - class_name: 外设配件
     class_desc: 提升效率与舒适度的辅助工具
     equipment_list:
@@ -99,3 +106,14 @@ equipment_groups:
         link:
           name: 详情
           url: https://www.thecubicle.com/en-asia/products/gan-11-m-pro-3x3
+  - class_name: 无人机
+    equipment_list:
+      - name: DJI Neo 2
+        detail: 畅飞套装官方标配
+        desc: |
+            感谢老婆的研究生同学 @lxd 送的礼物🥳。
+            这款无人机体型小巧却五脏俱全，具备日间全向避障能力，单电池续航时间约为13分钟，既能自动跟拍又能完成一定程度的航拍，相机在光照充足的环境下效果出色，性价比非常高。
+        cover: https://blogfiles.oss.fyz666.xyz/webp/140f5c01-5f06-4a66-9c9a-71e3d214c1ee.webp
+        link:
+          name: 详情
+          url: https://www.dji.com/cn/neo-2
