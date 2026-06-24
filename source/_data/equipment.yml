@@ -34,6 +34,13 @@ equipment_groups:
         link:
           name: 详情
           url: https://bambulab.com/zh/p2s
+      - name: Nintendo Switch 2
+        detail: 港版
+        cover: https://blogfiles.oss.fyz666.xyz/webp/580e7776-570b-4399-ae72-5abbc1490c59.webp
+        desc: 感谢高中好朋友 @zyt 全额赞助了这台 Nintendo Switch 2🥳，这也是我人生中第一台游戏机。
+        link:
+          name: 详情
+          url: https://www.nintendo.com/zh-hans-hk/hardware/switch2/
   - class_name: 外设配件
     class_desc: 提升效率与舒适度的辅助工具
     equipment_list:
@@ -79,6 +86,13 @@ equipment_groups:
         link:
           name: 详情
           url: https://cuktech.com.cn/show_procon.thtml?id=219
+      - name: 哈曼卡顿蓝牙音箱
+        detail: 琉璃5代
+        desc: 本科舍友 @furry 送的礼物🥳，人生第一台音箱，灯光帅气很赛博朋克，音质非常好，给了我这个向来听不出音质差别的人一点大大的震撼。
+        cover: https://blogfiles.oss.fyz666.xyz/webp/06ee7132-a018-4ebe-be3c-615c9165baca.webp
+        link:
+          name: 详情
+          url: https://www.harmankardon.com/home-audio/AURA-STUDIO-5.html
   - class_name: 网络与服务
     class_desc: 家庭网络与本地服务部署设备    
     equipment_list:
