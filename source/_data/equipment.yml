@@ -131,3 +131,14 @@ equipment_groups:
         link:
           name: 详情
           url: https://www.dji.com/cn/neo-2
+      - name: DJI Mini 5 Pro
+        detail: 长续航畅飞套装（DJI RC2增强图传）
+        desc: |
+            老婆为庆祝我水完毕业论文送我的礼物🥳。
+            目前在大疆消费级航拍机中性能排行第三，具备夜景级全向避障能力，
+            相机方面，5000万像素的1英寸相机，云台带225度旋转功能。
+            作为一款比较专业的航拍无人机，性价比很高，适合入门。
+        cover: https://blogfiles.oss.fyz666.xyz/webp/0f18009e-dd51-45e9-b506-e2c04f307e8d.webp
+        link:
+          name: 详情
+          url: https://www.dji.com/cn/mini-5-pro
