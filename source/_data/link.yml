@@ -53,6 +53,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/04ea2909-ba52-4f30-839a-aea744c6c91e.webp
         descr: 生之微欢，俄而感怀，奋勉有得，相携互舍，所谓幸福
         feed: https://lznauy.cn/index.xml
+      - name: Sunrise.博客 | Sunrise's blog
+        link: https://wowtang.top
+        avatar: https://wowtang.top/images/avatar.png
+        descr: 心境自成天地，地狱可化作桃源，天堂也能沦为苦海。
+        feed: https://wowtang.top/feed.xml
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
