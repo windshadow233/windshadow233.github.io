@@ -55,7 +55,7 @@ link_groups:
         feed: https://lznauy.cn/index.xml
       - name: Sunrise's blog
         link: https://wowtang.top
-        avatar: https://wowtang.top/images/avatar.png
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/cd7d0aa5-45db-4784-bc66-a77b98cdd7ee.webp
         descr: 心境自成天地，地狱可化作桃源，天堂也能沦为苦海。
         feed: https://wowtang.top/feed.xml
 

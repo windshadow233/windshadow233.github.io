@@ -8,6 +8,10 @@
       color: "#FFD700"
       icon: https://blogfiles.oss.fyz666.xyz/webp/74c9317c-66f5-43f0-9c38-78bcef91cfab.webp
       website: https://huggingface.co/
+    - name: Claude Code
+      color: "#E77834"
+      icon: https://blogfiles.oss.fyz666.xyz/webp/92311493-5be3-470a-a641-e83e06c051eb.webp
+      website: https://claude.com/product/claude-code
     - name: Python
       color: "#99CCFF"
       icon: https://blogfiles.oss.fyz666.xyz/png/efae609e-fef9-435f-a2e8-dfa7ddc58efb.png
