@@ -58,6 +58,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/cd7d0aa5-45db-4784-bc66-a77b98cdd7ee.webp
         descr: 心境自成天地，地狱可化作桃源，天堂也能沦为苦海。
         feed: https://wowtang.top/feed.xml
+      - name: 叹惋博客
+        link: https://twbk.cn/
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/11970cdf-39ba-4e93-adfa-67dcb89cb885.webp
+        descr: 唉…
+        feed: https://twbk.cn/feed
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
