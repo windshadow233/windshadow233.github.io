@@ -31,15 +31,15 @@ jobs:
     - name: Generate Static Files
       run: npm run b
 
-    - name: Set up SSH key
-      uses: webfactory/ssh-agent@v0.9.0
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    # - name: Set up SSH key
+    #   uses: webfactory/ssh-agent@v0.9.0
+    #   with:
+    #     ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Deploy to Server
-      run: |
-        ssh-keyscan -p 22 -H ${{ vars.SERVER_IP }} >> ~/.ssh/known_hosts
-        rsync -avz --delete -e "ssh -p 22" ./public/ root@${{ vars.SERVER_IP }}:/var/www/blog/
+    # - name: Deploy to Server
+    #   run: |
+    #     ssh-keyscan -p 22 -H ${{ vars.SERVER_IP }} >> ~/.ssh/known_hosts
+    #     rsync -avz --delete -e "ssh -p 22" ./public/ root@${{ vars.SERVER_IP }}:/var/www/blog/
 
     - name: Deploy to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4
