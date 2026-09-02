@@ -74,7 +74,7 @@ function getDistance(e, t, n, o) {
        success: function(res) {
           let { result = {} } = res
           if(result && result.location) {
-             let distance = getDistance(117.22901, 31.82057, result.location.lng, result.location.lat);
+             let distance = getDistance(120.267609, 30.204311, result.location.lng, result.location.lat);
              setInfo(result.ip, result.ad_info.province + result.ad_info.city + result.ad_info.district, distance, false);
           }
        }
