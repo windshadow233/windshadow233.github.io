@@ -354,7 +354,8 @@ p.p.center, span.p.center {
 }
 
 .author-content-item.map {
-  background-image: url(https://blogfiles.oss.fyz666.xyz/png/b71ddffe-b869-4639-aefb-5897ccafb536.png);
+  /* background-image: url(https://blogfiles.oss.fyz666.xyz/png/b71ddffe-b869-4639-aefb-5897ccafb536.png); */
+  background-image: url(https://blogfiles.oss.fyz666.xyz/png/45f34c68-7dff-4b5d-8f24-dc4ac8f68c94.png);
   min-height: 160px;
   max-height: 400px;
   position: relative;
@@ -365,7 +366,8 @@ p.p.center, span.p.center {
   transition: 1s ease-in-out;
 }
 [data-theme="dark"] .author-content-item.map {
-  background-image: url(https://blogfiles.oss.fyz666.xyz/png/6cbfad87-eaae-461c-9507-430ffdc52d94.png);
+  /* background-image: url(https://blogfiles.oss.fyz666.xyz/png/6cbfad87-eaae-461c-9507-430ffdc52d94.png); */
+  background-image: url(https://blogfiles.oss.fyz666.xyz/png/ac490046-115a-41d0-b025-ef61823b2fe4.png);
   background-size: 100%;
 }
 
