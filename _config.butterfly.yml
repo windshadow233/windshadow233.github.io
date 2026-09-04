@@ -242,10 +242,10 @@ reward:
   enable: true
   text: 觉得本文有用？V 我 50 看看实力！
   QR_code:
-    - img: /images/wechat_pay.png
+    - img: /images/wechat.webp
     #   link:
       text: V me 50!
-    - img: /images/ali_pay.png
+    - img: /images/alipay.webp
     #   link:
       text: Alipay is also ok~
 
