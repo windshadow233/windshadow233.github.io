@@ -402,7 +402,7 @@ aside:
 site_counter:
   # url: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
   # url: https://cn.vercount.one/js
-  url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/vercount@v0.1.1.js
+  url: https://blogfiles.oss.fyz666.xyz/js/vercount@v0.1.1.js
   site_uv: true
   site_pv: true
   page_pv: true
@@ -950,7 +950,7 @@ preloader:
   source: 8
   pace: true
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/pace_progress_bar.css
+  pace_css_url: https://blogfiles.oss.fyz666.xyz/css/pace_progress_bar.css
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -1101,18 +1101,18 @@ css_prefix: true
 inject:
   head:
     - <style id="barragesColor"></style>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/rightmenu@v0.1.0.js" async></script>
+    - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/jquery@3.7.1.min.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/jquery.cookie@1.4.1.min.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/rightmenu@v0.1.0.js" async></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/rightmenu@v0.0.2.css">
+    - <link rel="stylesheet" href="https://blogfiles.oss.fyz666.xyz/css/rightmenu@v0.0.2.css">
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
     - <script src="/js/charts.js"></script>
-    - <script src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/githubcalendar@v0.0.2.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/comment-barrage@v0.0.1.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/waterfall@v2.0.0.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/mytalk@v0.0.5.js"></script>
-    - <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/lottie_light@v5.13.0.min.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/githubcalendar@v0.0.2.js"></script>
+    - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/comment-barrage@v0.0.1.js"></script>
+    - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/waterfall@v2.0.0.js"></script>
+    - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/mytalk@v0.0.5.js"></script>
+    - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/lottie_light@v5.13.0.min.js"></script>
     - <script type="text/javascript" src="/js/random.js"></script>
     - <script type="text/javascript" src="/js/custom.js"></script>
   bottom:
@@ -1128,7 +1128,7 @@ inject:
          data-volume="0.4"
          data-type="playlist">
       </div>
-    - <script async defer src="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/universe.js"></script>
+    - <script async defer src="https://blogfiles.oss.fyz666.xyz/js/universe.js"></script>
     - <script>
         function loadExternalResource(url, type) {
           return new Promise((resolve, reject) => {
@@ -1165,7 +1165,7 @@ inject:
         }
       </script>
     - <link rel="stylesheet" href="/css/custom.css">
-    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/comment-barrage@v0.0.1.min.css">
+    - <link rel="stylesheet" href="https://blogfiles.oss.fyz666.xyz/css/comment-barrage@v0.0.1.min.css">
     - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     - <script data-pjax>if (window.LA !== undefined) LA.init({id:"JNnEmA8RDMZCf0Vf",ck:"JNnEmA8RDMZCf0Vf"});</script>
     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
@@ -1174,7 +1174,7 @@ inject:
 shortcut:
   enable: true
   keyboard_delay: 500
-  keyboard_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/keyboard.min.css
+  keyboard_css: https://blogfiles.oss.fyz666.xyz/css/keyboard.min.css
   items:
     - keycode: 83
       text: S
@@ -1288,7 +1288,7 @@ CDN:
   custom_format:
 
   option:
-    countup_js:  https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/countup.js
+    countup_js:  https://blogfiles.oss.fyz666.xyz/js/countup.js
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
@@ -1306,7 +1306,7 @@ CDN:
     # clickShowText:
     # disqusjs:
     # disqusjs_css:
-    docsearch_css: https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/css/docsearch.css
+    docsearch_css: https://blogfiles.oss.fyz666.xyz/css/docsearch.css
     # docsearch_js:
     # egjs_infinitegrid:
     # fancybox:

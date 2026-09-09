@@ -21,12 +21,12 @@ hexo.extend.filter.register('before_generate', () => {
     },
     utils: {
       name: 'hexo-theme-butterfly',
-      file: 'https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/utils.js',
+      file: 'https://blogfiles.oss.fyz666.xyz/js/utils.js',
       version
     },
     translate: {
       name: 'hexo-theme-butterfly',
-      file: 'https://fastly.jsdelivr.net/gh/windshadow233/BlogStorage@files/js/tw_cn.js',
+      file: 'https://blogfiles.oss.fyz666.xyz/js/tw_cn.js',
       version
     },
     local_search: {
