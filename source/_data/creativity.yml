@@ -8,6 +8,10 @@
       color: "#FFD700"
       icon: https://blogfiles.oss.fyz666.xyz/webp/74c9317c-66f5-43f0-9c38-78bcef91cfab.webp
       website: https://huggingface.co/
+    - name: Codex
+      color: "#4aa181"
+      icon: https://blogfiles.oss.fyz666.xyz/png/0805f6ce-553e-4fbd-9caf-9a89c1a77621.png
+      website: https://openai.com/codex/
     - name: Claude Code
       color: "#E77834"
       icon: https://blogfiles.oss.fyz666.xyz/webp/92311493-5be3-470a-a641-e83e06c051eb.webp
@@ -24,10 +28,6 @@
       color: "#66CCFF"
       icon: https://blogfiles.oss.fyz666.xyz/svg/e7e2ad27-e146-426d-8602-a6e22308fed4.svg
       website: https://code.visualstudio.com/
-    - name: ChatGPT
-      color: "#4aa181"
-      icon: https://blogfiles.oss.fyz666.xyz/png/0805f6ce-553e-4fbd-9caf-9a89c1a77621.png
-      website: https://chatgpt.com/
     - name: Cherry Studio
       color: "#a62727"
       icon: https://blogfiles.oss.fyz666.xyz/png/2bec7263-064c-4175-8909-81ec8f70ae23.png
