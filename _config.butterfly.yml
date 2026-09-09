@@ -1106,10 +1106,10 @@ inject:
     - <script src="https://blogfiles.oss.fyz666.xyz/js/rightmenu@v0.1.0.js" async></script>
     - <link rel="stylesheet" href="/css/iconfont.css">
     - <link rel="stylesheet" href="https://blogfiles.oss.fyz666.xyz/css/rightmenu@v0.0.2.css">
-    - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/echarts@4.9.0.min.js"></script>
     - <script src="/js/charts.js"></script>
     - <script src="https://blogfiles.oss.fyz666.xyz/js/githubcalendar@v0.0.2.js"></script>
-    - <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    - <script src="https://blogfiles.oss.fyz666.xyz/js/gsap@3.9.1.min.js"></script>
     - <script src="https://blogfiles.oss.fyz666.xyz/js/countup.js"></script>
     - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/comment-barrage@v0.0.1.js"></script>
     - <script type="text/javascript" src="https://blogfiles.oss.fyz666.xyz/js/waterfall@v2.0.0.js"></script>
@@ -1290,7 +1290,6 @@ CDN:
   custom_format:
 
   option:
-    countup_js:  https://blogfiles.oss.fyz666.xyz/js/countup.js
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
