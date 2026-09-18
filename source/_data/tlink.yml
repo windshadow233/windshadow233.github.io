@@ -6,10 +6,10 @@ link_groups:
   - class_name: 人工智能
     class_desc: 让AI为生产力加速！
     link_list:
-    - name: Gemini Pro
-      link: https://gemini.google.com/
-      avatar: https://blogfiles.oss.fyz666.xyz/webp/abd2b4c9-0387-490b-ae18-90211bf6929c.webp
-      descr: Google 的大模型，让我成功白嫖了一年，因此放在首位强烈推荐！
+    # - name: Gemini Pro
+    #   link: https://gemini.google.com/
+    #   avatar: https://blogfiles.oss.fyz666.xyz/webp/abd2b4c9-0387-490b-ae18-90211bf6929c.webp
+    #   descr: 豆包海外版还是算了吧
     - name: ChatGPT
       link: https://chatgpt.com/
       avatar: https://blogfiles.oss.fyz666.xyz/png/4f6eed48-398c-44f3-856d-b1bac8094503.png
