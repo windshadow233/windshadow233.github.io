@@ -36,9 +36,17 @@
           span(data-show) 程序
   .author-content
     .author-content-item.linkedin
-      script(src="https://blogfiles.oss.fyz666.xyz/js/linkedin-profile@v0.0.5.js" async defer type="text/javascript")
-      .badge-wrapper
-        .badge-base.LI-profile-badge(data-locale=`${theme.linkedin_profile.lang}` data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity=`${theme.linkedin_profile.vanityname}` data-version="v1")
+      .linkedin-profile-card
+        .linkedin-profile-header(aria-label="LinkedIn")
+          span Linked
+          span.linkedin-profile-logo in
+        .linkedin-profile-body
+          img.linkedin-profile-avatar.no-lightbox(src=theme.avatar.img alt="Yizhan Fan")
+          .linkedin-profile-info
+            h2 Yizhan Fan
+            p Ph.D. student in Data Science, Computer Science and Technology
+            a.linkedin-profile-school(href="https://www.linkedin.com/school/university-of-science-and-technology-of-china/?trk=public-profile-badge-profile-badge_school-name" target="_blank" rel="noopener noreferrer") University of Science and Technology of China
+          a.linkedin-profile-button(href="https://www.linkedin.com/in/yizhanfan?trk=public-profile-badge-profile-badge-view-profile-cta" target="_blank" rel="noopener noreferrer") View profile
     .author-content-item.hello-about
       .cursor
       .shapes
