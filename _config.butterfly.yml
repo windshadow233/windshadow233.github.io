@@ -63,8 +63,13 @@ social:
   fa-brands fa-linkedin: https://www.linkedin.com/in/yizhanfan/ || LinkedIn
 
 linkedin_profile:
-  lang: en_US
-  vanityname: yizhanfan
+  name: Yizhan Fan
+  desc: Ph.D. student in Data Science, Computer Science and Technology
+  photo: https://blogfiles.oss.fyz666.xyz/webp/48a253ff-79bb-4aae-8325-b04d3c0dbf71.webp
+  link: https://www.linkedin.com/in/yizhanfan?trk=public-profile-badge-profile-badge-view-profile-cta
+  university:
+    name: University of Science and Technology of China
+    link: https://www.linkedin.com/school/university-of-science-and-technology-of-china/?trk=public-profile-badge-profile-badge_school-name
 
 # Image (圖片設置)
 # --------------------------------------

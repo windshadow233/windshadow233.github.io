@@ -41,12 +41,12 @@
           span Linked
           span.linkedin-profile-logo in
         .linkedin-profile-body
-          img.linkedin-profile-avatar.no-lightbox(src="https://blogfiles.oss.fyz666.xyz/webp/48a253ff-79bb-4aae-8325-b04d3c0dbf71.webp" alt="Yizhan Fan")
+          img.linkedin-profile-avatar.no-lightbox(src=theme.linkedin_profile.photo alt="LinkedIn profile photo")
           .linkedin-profile-info
-            h2 Yizhan Fan
-            p Ph.D. student in Data Science, Computer Science and Technology
-            a.linkedin-profile-school(href="https://www.linkedin.com/school/university-of-science-and-technology-of-china/?trk=public-profile-badge-profile-badge_school-name" target="_blank" rel="noopener noreferrer") University of Science and Technology of China
-          a.linkedin-profile-button(href="https://www.linkedin.com/in/yizhanfan?trk=public-profile-badge-profile-badge-view-profile-cta" target="_blank" rel="noopener noreferrer") View profile
+            h2= theme.linkedin_profile.name
+            p= theme.linkedin_profile.desc
+            a.linkedin-profile-school(href=theme.linkedin_profile.university.link target="_blank" rel="noopener noreferrer")= theme.linkedin_profile.university.name
+          a.linkedin-profile-button(href=theme.linkedin_profile.link target="_blank" rel="noopener noreferrer") View profile
     .author-content-item.hello-about
       .cursor
       .shapes
