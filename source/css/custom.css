@@ -1595,12 +1595,36 @@ blockquote cite {
 .cards #swiper-container {
     width: 60%;
     border: 1px solid var(--fyz-border);
-    display: flex
+    display: flex;
+    overflow: hidden
 }
 
 .cards #swiper-container .recent-post-item {
     border-radius: 8px;
-    border: unset
+    border: unset;
+    overflow: hidden
+}
+
+.cards #swiper-container .blog-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.cards #swiper-container .blog-slider__wrp {
+    height: 100%;
+    flex-wrap: nowrap
+}
+
+.cards #swiper-container .blog-slider__item {
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+    overflow: hidden
+}
+
+.cards #swiper-container .blog-slider:not(.swiper-initialized) .blog-slider__item:not(:first-child) {
+    display: none
 }
 
 .gc {

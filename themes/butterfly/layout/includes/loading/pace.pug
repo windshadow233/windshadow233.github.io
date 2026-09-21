@@ -1,10 +1,14 @@
 script.
   window.paceOptions = {
-    restartOnPushState: false
+    restartOnPushState: false,
+    restartOnRequestAfter: false,
+    ajax: false,
+    document: false,
+    eventLag: false
   }
 
   btf.addGlobalFn('pjaxSend', () => {
-    Pace.restart()
+    if (window.Pace) Pace.restart()
   }, 'pace_restart')
 
 
