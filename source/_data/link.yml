@@ -63,6 +63,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/11970cdf-39ba-4e93-adfa-67dcb89cb885.webp
         descr: 唉…
         feed: https://twbk.cn/feed
+      - name: fhbの博客
+        link: https://blog.fanghongbo.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/webp/a593fa39-4ab4-40eb-93e2-20c851c4e80d.webp
+        descr: 我在等风，也在等你 ..
+        feed: https://blog.fanghongbo.com/rss.xml
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
