@@ -80,7 +80,7 @@
     font: inherit;
     vertical-align: baseline;
     line-height: 1;
-    font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
+    font-size: calc((0.0989119683 * 50vw + (58.5558852621px)));
     width: 100%;
     height: 100%;
     display: flex;
@@ -89,7 +89,7 @@
   }
   @media (min-width: 419px) {
     .hello-about h1 {
-      font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
+      font-size: calc((0.0989119683 * 50vw + (58.5558852621px)));
     }
   }
   
