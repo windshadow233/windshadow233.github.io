@@ -41,6 +41,13 @@ equipment_groups:
         link:
           name: 详情
           url: https://www.nintendo.com/zh-hans-hk/hardware/switch2/
+      - name: Osmo Pocket 4P
+        detail: Vlog 套装
+        cover: https://blogfiles.oss.fyz666.xyz/webp/ef977cd3-07d3-45ea-8f8b-60c3e621a648.webp
+        desc: 心血来潮买了一台用于出行记录与日常拍摄，最明显的体验就是方便且稳定，拍摄效果也很不错，调参方式简单易懂，即使是摄影小白也能轻松上手的好物。
+        link:
+          name: 详情
+          url: https://www.dji.com/cn/osmo-pocket-4p
   - class_name: 外设配件
     class_desc: 提升效率与舒适度的辅助工具
     equipment_list:
