@@ -68,6 +68,11 @@ link_groups:
         avatar: https://blogfiles.oss.fyz666.xyz/webp/a593fa39-4ab4-40eb-93e2-20c851c4e80d.webp
         descr: 我在等风，也在等你 ..
         feed: https://blog.fanghongbo.com/rss.xml
+      - name: 愈见博客
+        link: https://cpumind.com/
+        avatar: https://blogfiles.oss.fyz666.xyz/jpg/f7927d64-e71e-4206-9d62-f2878a1904a5.jpg
+        descr: 开放拥抱世界，经验记录思考，乐于分享新知。
+        feed: https://cpumind.com/feed/
 
   - class_name: 一些大佬
     class_desc: (Dalao们，顺序不分先后) 向大佬们学习！
